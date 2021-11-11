@@ -77,7 +77,7 @@
             <path value="Composition.section"/>
             <sliceName value="demographics"/>
             <short value="Decedent demographics section"/>
-            <definition value="This section contains demographic information about the decended that is not represented in the VRDR-Decedent profile."/>
+            <definition value="This section contains demographic information about the decedent that is not represented in the VRDR-Decedent profile."/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
