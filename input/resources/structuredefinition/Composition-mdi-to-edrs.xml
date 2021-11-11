@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Composition-mdi-to-edrs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-11-11T05:43:48.088+00:00"/>
+        <source value="#zHN0L9gcrFLAZtgF"/>
+    </meta>
+    <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+    <name value="CompositionMDItoEDRS"/>
+    <title value="Composition - MDI to EDRS"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to EDRS"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+        </element>
+        <element id="Composition.status">
+            <path value="Composition.status"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.type">
+            <path value="Composition.type"/>
+            <short value="MDI to EDRS"/>
+            <definition value="MDI to EDRS"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject"/>
+            <short value="The subject of the composition is the decedent"/>
+            <definition value="The subject of the composition is the decedent"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.author">
+            <path value="Composition.author"/>
+            <short value="The author is the person who verifies/approves the accuracy of the data to be sent to the EDRS."/>
+            <definition value="The author is the person who verifies/approves the accuracy of the data to be sent to the EDRS."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <short value="The Composition is broken into sections that, where possible, align with the sections in the 'Common data elements working document'."/>
+            <definition value="The Composition is broken into sections that, where possible, align with the sections in the 'Common data elements working document'."/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:demographics">
+            <path value="Composition.section"/>
+            <sliceName value="demographics"/>
+            <short value="Decedent demographics section"/>
+            <definition value="This section contains demographic information about the decended that is not represented in the VRDR-Decedent profile."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:demographics.code">
+            <path value="Composition.section.code"/>
+            <short value="Prenatal records"/>
+            <definition value="Prenatal records"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="57073-9"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:demographics.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the Demographics section"/>
+            <definition value="Entries that are contained in the Demographics section"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:demographics.entry:decedentAge">
+            <path value="Composition.section.entry"/>
+            <sliceName value="decedentAge"/>
+            <short value="The decedent's chronological age at the time of death."/>
+            <definition value="The decedent's chronological age at the time of death."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent-Age"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

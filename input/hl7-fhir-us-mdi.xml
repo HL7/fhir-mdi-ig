@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide
+    xmlns="http://hl7.org/fhir">
+    <id value="hl7-fhir-us-mdi"/>
+    <meta>
+        <versionId value="12"/>
+        <lastUpdated value="2021-11-11T05:49:38.910+00:00"/>
+        <source value="#u1scuHqn0gmBm7Vk"/>
+    </meta>
+    <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
+    <version value="4.0.1"/>
+    <name value="MedicolegalDeathInvestigation"/>
+    <title value="Medicolegal Death Investigation (MDI)"/>
+    <status value="draft"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="This US-specific IG provides guidance to implementers and jurisdictions on the exchange of information to and from a case management systems. It supports interoperability between the case management systems of medical examiner and coroner departments, hospital electronic health record (EHR) systems, toxicology and other laboratory information systems (LIS), jurisdictional vital records offices, and public health departments. Data workflows include the receipt of toxicology information into a case management system and sending information to a jurisdictional health department. Additionally, it supports medical examiners/coroners (ME/C) in viewing information from a decedent’s EHR for death investigations. The design intent of this IG is to create a base that states can further specify for exchange state-specific data."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <packageId value="hl7.fhir.us.mdi"/>
+    <fhirVersion value="4.0.1"/>
+    <dependsOn id="hl7fhirusvrdr">
+        <uri value="http://hl7.org/fhir/us/vrdr/ImplementationGuide/hl7.fhir.us.vrdr#1.2.0"/>
+        <packageId value="hl7.fhir.us.vrdr"/>
+        <version value="1.2.0"/>
+    </dependsOn>
+    <dependsOn id="hl7fhiruscore">
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.0.0"/>
+        <packageId value="hl7.fhir.us.core"/>
+        <version value="4.0.1"/>
+    </dependsOn>
+    <definition>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-mdi-to-edrs"/>
+                <display value="Composition - MDI to EDRS"/>
+            </reference>
+            <name value="Composition - MDI to EDRS"/>
+            <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to EDRS"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <page>
+            <nameUrl value="index.html"/>
+            <title value="Home Page"/>
+            <generation value="markdown"/>
+        </page>
+        <parameter>
+            <code value="copyrightyear"/>
+            <value value="2020+"/>
+        </parameter>
+        <parameter>
+            <code value="releaselabel"/>
+            <value value="CI Build"/>
+        </parameter>
+    </definition>
+</ImplementationGuide>
