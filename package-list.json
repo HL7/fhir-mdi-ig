@@ -1,0 +1,15 @@
+{
+    "list": [
+        {
+            "status": "ci-build",
+            "version": "current",
+            "path": "https://fhir.org/fhir/US/mdi/ImplementationGuide/mdi",
+            "desc": "tbd",
+            "fhirversion": "4.0.1",
+            "current": true
+        }
+    ],
+    "title": "Medicolegal Death Investigation (MDI)",
+    "package-id": "hl7.fhir.us.mdi",
+    "canonical": "https://fhir.org/fhir/us/mdi"
+}
