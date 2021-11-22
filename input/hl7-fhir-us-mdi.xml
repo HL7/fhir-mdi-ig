@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2021-11-11T05:49:38.910+00:00"/>
-        <source value="#u1scuHqn0gmBm7Vk"/>
+        <versionId value="31"/>
+        <lastUpdated value="2021-11-18T21:20:13.796+00:00"/>
+        <source value="#GQIa6DCEPRXqoxQf"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="4.0.1"/>
@@ -40,6 +40,11 @@
         <packageId value="hl7.fhir.us.core"/>
         <version value="4.0.1"/>
     </dependsOn>
+    <dependsOn id="hl7fhirusodh">
+        <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh#1.1.0"/>
+        <packageId value="hl7.fhir.us.odh"/>
+        <version value="1.1.0"/>
+    </dependsOn>
     <definition>
         <resource>
             <reference>
@@ -48,6 +53,65 @@
             </reference>
             <name value="Composition - MDI to EDRS"/>
             <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to EDRS"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+                <display value="CompositionToxicologyToMDI"/>
+            </reference>
+            <name value="DiagnosticReport - Toxicology Lab Result to MDI"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Specimen-toxicology-lab"/>
+                <display value="SpecimenToxicologyLab"/>
+            </reference>
+            <name value="Specimen - Toxicology Lab"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/server-tox"/>
+                <display value="Toxicology CapabilityStatement Server"/>
+            </reference>
+            <name value="Toxicology CapabilityStatement Server"/>
+            <description value="This Section describes the expected capabilities of the Toxicology lab Server actor which is responsible for providing responses to the queries submitted by Toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Toxicology lab Servers are defined. Toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/server-cme"/>
+                <display value="Coroner/Medical Examiner Server CapabilityStatement"/>
+            </reference>
+            <name value="Coroner/Medical Examiner Server CapabilityStatement"/>
+            <description value="This Section describes the expected capabilities of the Coroner/Medical Examiner (C/ME) case management system Server actor which is responsible for providing responses to the queries submitted by the C/ME Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by C/ME Servers are defined. C/ME Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+                <display value="MessageHeaderToxicologyToMDI"/>
+            </reference>
+            <name value="MessageHeader Toxicology To MDI"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/server-edrs"/>
+                <display value="Electronic Death Reporting System (EDRS) CapabilityStatement Server"/>
+            </reference>
+            <name value="Electronic Death Reporting System (EDRS) CapabilityStatement Server"/>
+            <description value="This Section describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-toxicology-to-mdi"/>
+                <display value="ObservationToxicologyToMDI"/>
+            </reference>
+            <name value="Observation Toxicology To MDI"/>
             <exampleBoolean value="false"/>
         </resource>
         <page>

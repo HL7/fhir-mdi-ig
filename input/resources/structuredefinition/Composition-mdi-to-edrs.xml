@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-11-11T05:43:48.088+00:00"/>
-        <source value="#zHN0L9gcrFLAZtgF"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-11-12T00:13:07.089+00:00"/>
+        <source value="#kfUAf3IElHBy2E78"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDItoEDRS"/>
@@ -78,6 +78,7 @@
             <sliceName value="demographics"/>
             <short value="Decedent demographics section"/>
             <definition value="This section contains demographic information about the decedent that is not represented in the VRDR-Decedent profile."/>
+            <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -119,6 +120,87 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent-Age"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:demographics.entry:slice3530">
+            <path value="Composition.section.entry"/>
+            <sliceName value="slice3530"/>
+        </element>
+        <element id="Composition.section:demographics.entry:slice9810">
+            <path value="Composition.section.entry"/>
+            <sliceName value="slice9810"/>
+        </element>
+        <element id="Composition.section:demographics.entry:slice9094">
+            <path value="Composition.section.entry"/>
+            <sliceName value="slice9094"/>
+        </element>
+        <element id="Composition.section:demographics.entry:slice3482">
+            <path value="Composition.section.entry"/>
+            <sliceName value="slice3482"/>
+        </element>
+        <element id="Composition.section:demographics.entry:slice8096">
+            <path value="Composition.section.entry"/>
+            <sliceName value="slice8096"/>
+        </element>
+        <element id="Composition.section:demographics.entry:slice1522">
+            <path value="Composition.section.entry"/>
+            <sliceName value="slice1522"/>
+        </element>
+        <element id="Composition.section:demographics.entry:slice8016">
+            <path value="Composition.section.entry"/>
+            <sliceName value="slice8016"/>
+        </element>
+        <element id="Composition.section:demographics.entry:slice7845">
+            <path value="Composition.section.entry"/>
+            <sliceName value="slice7845"/>
+        </element>
+        <element id="Composition.section:circumstances">
+            <path value="Composition.section"/>
+            <sliceName value="circumstances"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:jurisdiction">
+            <path value="Composition.section"/>
+            <sliceName value="jurisdiction"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:cause_manner">
+            <path value="Composition.section"/>
+            <sliceName value="cause_manner"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:locations">
+            <path value="Composition.section"/>
+            <sliceName value="locations"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:date_time">
+            <path value="Composition.section"/>
+            <sliceName value="date_time"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medical_history">
+            <path value="Composition.section"/>
+            <sliceName value="medical_history"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:exam_autopsy">
+            <path value="Composition.section"/>
+            <sliceName value="exam_autopsy"/>
+            <min value="1"/>
+            <max value="1"/>
             <mustSupport value="true"/>
         </element>
     </differential>

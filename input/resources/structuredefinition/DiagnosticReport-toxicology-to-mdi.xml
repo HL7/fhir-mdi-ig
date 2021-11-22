@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="DiagnosticReport-toxicology-to-mdi"/>
+    <meta>
+        <versionId value="7"/>
+        <lastUpdated value="2021-11-18T21:24:43.405+00:00"/>
+        <source value="#inGK15z2YPIAxcVP"/>
+    </meta>
+    <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+    <name value="CompositionToxicologyToMDI"/>
+    <title value="DiagnosticReport - Toxicology Lab Result to MDI"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="DiagnosticReport"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="DiagnosticReport">
+            <path value="DiagnosticReport"/>
+        </element>
+        <element id="DiagnosticReport.identifier">
+            <path value="DiagnosticReport.identifier"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="DiagnosticReport.identifier:case_number">
+            <path value="DiagnosticReport.identifier"/>
+            <sliceName value="case_number"/>
+        </element>
+        <element id="DiagnosticReport.subject">
+            <path value="DiagnosticReport.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent"/>
+            </type>
+        </element>
+        <element id="DiagnosticReport.specimen">
+            <path value="DiagnosticReport.specimen"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.result">
+            <path value="DiagnosticReport.result"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-to-mdi"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

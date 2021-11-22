@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Specimen-toxicology-lab"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2021-11-18T21:19:29.514+00:00"/>
+        <source value="#Q05RRvMXNFYSEZSS"/>
+    </meta>
+    <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+    <name value="SpecimenToxicologyLab"/>
+    <title value="Specimen - Toxicology Lab"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Specimen"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Specimen">
+            <path value="Specimen"/>
+        </element>
+        <element id="Specimen.subject">
+            <path value="Specimen.subject"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.container">
+            <path value="Specimen.container"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Specimen.container:in_etoh">
+            <path value="Specimen.container"/>
+            <sliceName value="in_etoh"/>
+        </element>
+        <element id="Specimen.container:in_etoh.additive[x]">
+            <path value="Specimen.container.additive[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="419442005"/>
+                    <display value="Ethanol (substance)"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+    </differential>
+</StructureDefinition>
