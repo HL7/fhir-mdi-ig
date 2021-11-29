@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="OrganWeight"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-11-22T20:54:22.046+00:00"/>
+        <source value="#oxplYR5odtQbjUq8"/>
+    </meta>
+    <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/OrganWeight"/>
+    <name value="OrganWeight"/>
+    <title value="Organ Weight"/>
+    <status value="active"/>
+    <publisher value="Public Health"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+    </differential>
+</StructureDefinition>

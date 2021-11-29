@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="31"/>
-        <lastUpdated value="2021-11-18T21:20:13.796+00:00"/>
-        <source value="#GQIa6DCEPRXqoxQf"/>
+        <versionId value="33"/>
+        <lastUpdated value="2021-11-22T20:54:22.094+00:00"/>
+        <source value="#zlvPHeFSgpyQi7Ls"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="4.0.1"/>
@@ -52,7 +52,7 @@
                 <display value="Composition - MDI to EDRS"/>
             </reference>
             <name value="Composition - MDI to EDRS"/>
-            <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to EDRS"/>
+            <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to EDRS."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -112,6 +112,14 @@
                 <display value="ObservationToxicologyToMDI"/>
             </reference>
             <name value="Observation Toxicology To MDI"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/OrganWeight"/>
+                <display value="OrganWeight"/>
+            </reference>
+            <name value="Organ Weight"/>
             <exampleBoolean value="false"/>
         </resource>
         <page>
