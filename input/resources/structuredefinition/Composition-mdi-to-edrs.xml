@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="85"/>
-        <lastUpdated value="2021-12-11T03:50:34.731+00:00"/>
-        <source value="#Nk8ca1N3L0fyqAX2"/>
+        <versionId value="86"/>
+        <lastUpdated value="2021-12-11T04:20:40.321+00:00"/>
+        <source value="#KpHixW8056p8Y3Z6"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDItoEDRS"/>
@@ -31,7 +31,6 @@
         <element id="Composition">
             <path value="Composition"/>
         </element>
-        <!--<element id="Composition.extension"><path value="Composition.extension"/><slicing><discriminator><type value="value"/><path value="url"/></discriminator><rules value="open"/></slicing><type><code value="Extension"/></type><mustSupport value="true"/></element>-->
         <element id="Composition.extension:extension-tracking-numbers">
             <path value="Composition.extension"/>
             <sliceName value="extension-tracking-numbers"/>
@@ -163,6 +162,10 @@
         <element id="Composition.section:circumstances.entry">
             <path value="Composition.section.entry"/>
             <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
                 <rules value="open"/>
             </slicing>
             <mustSupport value="true"/>
@@ -235,6 +238,10 @@
         <element id="Composition.section:jurisdiction.entry">
             <path value="Composition.section.entry"/>
             <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
                 <rules value="open"/>
             </slicing>
             <mustSupport value="true"/>
@@ -283,6 +290,10 @@
         <element id="Composition.section:cause-manner.entry">
             <path value="Composition.section.entry"/>
             <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
                 <rules value="open"/>
             </slicing>
             <mustSupport value="true"/>
