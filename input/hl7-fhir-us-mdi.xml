@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="33"/>
-        <lastUpdated value="2021-11-22T20:54:22.094+00:00"/>
-        <source value="#zlvPHeFSgpyQi7Ls"/>
+        <versionId value="41"/>
+        <lastUpdated value="2021-12-11T03:48:05.460+00:00"/>
+        <source value="#F8Zf3RY6wLTwMgU0"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="4.0.1"/>
@@ -116,10 +116,47 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/OrganWeight"/>
-                <display value="OrganWeight"/>
+                <reference value="CodeSystem/CodeSystem-mdi-codes"/>
+                <display value="MDI Code System"/>
             </reference>
-            <name value="Organ Weight"/>
+            <name value="MDI Code System"/>
+            <description value="This code system contains codes for use in MDI."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-tracking-number"/>
+                <display value="Extension - Tracking Number"/>
+            </reference>
+            <name value="Extension - Tracking Number"/>
+            <description value="Contains a tracking number, such as FILENO, CASENUMBER, and can represent other tracking numbers, if required."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-tracking-number-type"/>
+                <display value="Tracking Number Type"/>
+            </reference>
+            <name value="Tracking Number Type"/>
+            <description value="This value set contains codes to that identify the type of tracking number."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-death-injury-at-work"/>
+                <display value="Observation - Death Injury/Event Occurred at Work"/>
+            </reference>
+            <name value="Observation - Death Injury/Event Occurred at Work"/>
+            <description value="Whether or not death resulted from events/injury that occurred at work."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-how-death-injury-occurred"/>
+                <display value="Observation - How Death Injury Occurred"/>
+            </reference>
+            <name value="Observation - How Death Injury Occurred"/>
+            <description value="Certified explanation of how the injury leading to death occurred."/>
             <exampleBoolean value="false"/>
         </resource>
         <page>

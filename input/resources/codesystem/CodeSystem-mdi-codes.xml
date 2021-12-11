@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem
+    xmlns="http://hl7.org/fhir">
+    <id value="CodeSystem-mdi-codes"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-12-11T01:07:04.735+00:00"/>
+        <source value="#6xKLrVxr8gqiWR6s"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+    <version value="1.0.0"/>
+    <name value="MDICodeSystem"/>
+    <title value="MDI Code System"/>
+    <status value="active"/>
+    <date value="2021-12-01"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This code system contains codes for use in MDI."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <content value="complete"/>
+    <concept>
+        <code value="demographics"/>
+        <display value="Demographics Section"/>
+        <definition value="Demographic information section"/>
+    </concept>
+    <concept>
+        <code value="circumstances"/>
+        <display value="Circumstances of the Death Section"/>
+        <definition value="Circumstances of the death section"/>
+    </concept>
+    <concept>
+        <code value="jurisdiction"/>
+        <display value="Jurisdiction Section"/>
+        <definition value="Jurisdiction section"/>
+    </concept>
+    <concept>
+        <code value="cause-manner"/>
+        <display value="Cause and Manner of Death Section"/>
+        <definition value="Cause and manner of death section"/>
+    </concept>
+    <concept>
+        <code value="medical-history"/>
+        <display value="Medical History Section"/>
+        <definition value="Medical history section"/>
+    </concept>
+    <concept>
+        <code value="exam-autopsy"/>
+        <display value="Exam/Autopsy Section"/>
+        <definition value="Exam/Autopsy section"/>
+    </concept>
+    <concept>
+        <code value="mdi-case-number"/>
+        <display value="MDI Case Number"/>
+        <definition value="MDI Case Number"/>
+    </concept>
+    <concept>
+        <code value="edrs-file-number"/>
+        <display value="EDRS File Number"/>
+        <definition value="EDRS File Number"/>
+    </concept>
+</CodeSystem>

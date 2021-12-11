@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2021-11-29T05:10:09.696+00:00"/>
-        <source value="#FCg32M7ed69qDQkY"/>
+        <versionId value="85"/>
+        <lastUpdated value="2021-12-11T03:50:34.731+00:00"/>
+        <source value="#Nk8ca1N3L0fyqAX2"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDItoEDRS"/>
@@ -30,6 +30,16 @@
     <differential>
         <element id="Composition">
             <path value="Composition"/>
+        </element>
+        <!--<element id="Composition.extension"><path value="Composition.extension"/><slicing><discriminator><type value="value"/><path value="url"/></discriminator><rules value="open"/></slicing><type><code value="Extension"/></type><mustSupport value="true"/></element>-->
+        <element id="Composition.extension:extension-tracking-numbers">
+            <path value="Composition.extension"/>
+            <sliceName value="extension-tracking-numbers"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.status">
             <path value="Composition.status"/>
@@ -76,21 +86,20 @@
         <element id="Composition.section:demographics">
             <path value="Composition.section"/>
             <sliceName value="demographics"/>
-            <short value="Decedent demographics section"/>
-            <definition value="This section contains demographic information about the decedent that is not represented in the VRDR-Decedent profile."/>
+            <short value="This section contains demographic information about the decedent that is not represented in the decedent Patient profile."/>
+            <definition value="This section contains demographic information about the decedent that is not represented in the decedent Patient profile."/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:demographics.code">
             <path value="Composition.section.code"/>
-            <short value="Prenatal records"/>
-            <definition value="Prenatal records"/>
+            <definition value="Demographic information section"/>
             <min value="1"/>
             <patternCodeableConcept>
                 <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="57073-9"/>
+                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                    <code value="demographics"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>
@@ -110,9 +119,9 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:demographics.entry:decedentAge">
+        <element id="Composition.section:demographics.entry:decedent-age">
             <path value="Composition.section.entry"/>
-            <sliceName value="decedentAge"/>
+            <sliceName value="decedent-age"/>
             <short value="The decedent's chronological age at the time of death."/>
             <definition value="The decedent's chronological age at the time of death."/>
             <max value="1"/>
@@ -122,104 +131,248 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:demographics.entry:slice3530">
+        <element id="Composition.section:demographics.entry:decedent-occupation-industry">
             <path value="Composition.section.entry"/>
-            <sliceName value="slice3530"/>
-        </element>
-        <element id="Composition.section:demographics.entry:slice9810">
-            <path value="Composition.section.entry"/>
-            <sliceName value="slice9810"/>
-        </element>
-        <element id="Composition.section:demographics.entry:slice9094">
-            <path value="Composition.section.entry"/>
-            <sliceName value="slice9094"/>
-        </element>
-        <element id="Composition.section:demographics.entry:slice3482">
-            <path value="Composition.section.entry"/>
-            <sliceName value="slice3482"/>
-        </element>
-        <element id="Composition.section:demographics.entry:slice8096">
-            <path value="Composition.section.entry"/>
-            <sliceName value="slice8096"/>
-        </element>
-        <element id="Composition.section:demographics.entry:slice1522">
-            <path value="Composition.section.entry"/>
-            <sliceName value="slice1522"/>
-        </element>
-        <element id="Composition.section:demographics.entry:slice8016">
-            <path value="Composition.section.entry"/>
-            <sliceName value="slice8016"/>
-        </element>
-        <element id="Composition.section:demographics.entry:slice7845">
-            <path value="Composition.section.entry"/>
-            <sliceName value="slice7845"/>
+            <sliceName value="decedent-occupation-industry"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent-Usual-Work"/>
+            </type>
         </element>
         <element id="Composition.section:circumstances">
             <path value="Composition.section"/>
             <sliceName value="circumstances"/>
+            <short value="This section contains circumstances of the death."/>
+            <definition value="This section contains circumstances of the death."/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:circumstances.code">
+            <path value="Composition.section.code"/>
+            <definition value="Circumstances of the death section"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                    <code value="circumstances"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:circumstances.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:circumstances.entry:death-location">
+            <path value="Composition.section.entry"/>
+            <sliceName value="death-location"/>
+            <short value="Apparent address where death actually occurred"/>
+            <definition value="Apparent address where death actually occurred"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Death-Location"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:circumstances.entry:work-injury">
+            <path value="Composition.section.entry"/>
+            <sliceName value="work-injury"/>
+            <short value="Whether or not death resulted from events/injury that occurred at work."/>
+            <definition value="Whether or not death resulted from events/injury that occurred at work."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:circumstances.entry:tobacco-use-contributed-to-death">
+            <path value="Composition.section.entry"/>
+            <sliceName value="tobacco-use-contributed-to-death"/>
+            <short value="Whether or not tobacco use contributed to death."/>
+            <definition value="Whether or not tobacco use contributed to death."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Tobacco-Use-Contributed-To-Death"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:circumstances.entry:decedent-pregnancy">
+            <path value="Composition.section.entry"/>
+            <sliceName value="decedent-pregnancy"/>
+            <short value="Pregnancy status of the decedent."/>
+            <definition value="Pregnancy status of the decedent."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent-Pregnancy"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:jurisdiction">
             <path value="Composition.section"/>
             <sliceName value="jurisdiction"/>
+            <short value="This section contains jurisdictional information about the death."/>
+            <definition value="This section contains jurisdictional information about the death."/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:cause_manner">
-            <path value="Composition.section"/>
-            <sliceName value="cause_manner"/>
+        <element id="Composition.section:jurisdiction.code">
+            <path value="Composition.section.code"/>
+            <definition value="Jurisdiction section"/>
             <min value="1"/>
-            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                    <code value="jurisdiction"/>
+                </coding>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:locations">
-            <path value="Composition.section"/>
-            <sliceName value="locations"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:date_time">
-            <path value="Composition.section"/>
-            <sliceName value="date_time"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:medical_history">
-            <path value="Composition.section"/>
-            <sliceName value="medical_history"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:exam_autopsy">
-            <path value="Composition.section"/>
-            <sliceName value="exam_autopsy"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:exam_autopsy.entry">
+        <element id="Composition.section:jurisdiction.entry">
             <path value="Composition.section.entry"/>
             <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="resolve()"/>
-                </discriminator>
                 <rules value="open"/>
             </slicing>
+            <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:exam_autopsy.entry:organWeight">
+        <element id="Composition.section:jurisdiction.entry:death-date">
             <path value="Composition.section.entry"/>
-            <sliceName value="organWeight"/>
+            <sliceName value="death-date"/>
+            <short value="The estimated and pronounced date of death, also contains the death pronouncer practitioner"/>
+            <definition value="The estimated and pronounced date of death, also contains the death pronouncer practitioner"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="https://fhir.org/fhir/us/mdi/StructureDefinition/OrganWeight"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Death-Date"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:jurisdiction.entry:medical-examiner-coroner">
+            <path value="Composition.section.entry"/>
+            <sliceName value="medical-examiner-coroner"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:cause-manner">
+            <path value="Composition.section"/>
+            <sliceName value="cause-manner"/>
+            <short value="This section contains information about the cause and manner of death."/>
+            <definition value="This section contains information about the cause and manner of death."/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:cause-manner.code">
+            <path value="Composition.section.code"/>
+            <definition value="Cause and manner of death section"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                    <code value="cause-manner"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:cause-manner.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:cause-manner.entry:cause">
+            <path value="Composition.section.entry"/>
+            <sliceName value="cause"/>
+            <short value="Up to 5 lines of cause of death."/>
+            <definition value="Up to 5 lines of cause of death."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Cause-of-Death-Pathway"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:cause-manner.entry:other-condition">
+            <path value="Composition.section.entry"/>
+            <sliceName value="other-condition"/>
+            <short value="Other significant conditions contributing to death but not resulting in the underlying cause."/>
+            <definition value="Other significant conditions contributing to death but not resulting in the underlying cause."/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Condition-Contributing-To-Death"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:cause-manner.entry:manner">
+            <path value="Composition.section.entry"/>
+            <sliceName value="manner"/>
+            <short value="Manner of death."/>
+            <definition value="Manner of death."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Manner-of-Death"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:cause-manner.entry:how-injury">
+            <path value="Composition.section.entry"/>
+            <sliceName value="how-injury"/>
+            <short value="Certified explanation of how injury occurred."/>
+            <definition value="Certified explanation of how injury occurred."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medical-history">
+            <path value="Composition.section"/>
+            <sliceName value="medical-history"/>
+            <short value="This section contains relevant medical history about the decedent."/>
+            <definition value="This section contains relevant medical history about the decedent."/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medical-history.code">
+            <path value="Composition.section.code"/>
+            <definition value="Medical history section"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                    <code value="medical-history"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:exam-autopsy">
+            <path value="Composition.section"/>
+            <sliceName value="exam-autopsy"/>
+            <short value="This section contains exam and autopsy information."/>
+            <definition value="This section contains exam and autopsy information."/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:exam-autopsy.code">
+            <path value="Composition.section.code"/>
+            <definition value="Exam/Autopsy section"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                    <code value="exam-autopsy"/>
+                </coding>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
     </differential>

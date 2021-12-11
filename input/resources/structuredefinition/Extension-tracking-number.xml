@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-tracking-number"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-12-11T01:53:50.532+00:00"/>
+        <source value="#spFz2bV9GS24NxF5"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
+    <version value="1.0"/>
+    <name value="ExtensionTrackingNumber"/>
+    <title value="Extension - Tracking Number"/>
+    <status value="draft"/>
+    <publisher value="Health Level Seven International"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="Contains a tracking number, such as FILENO, CASENUMBER, and can represent other tracking numbers, if required."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="US Realm"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Composition"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Tracking Numbers Extension"/>
+            <definition value="Contains multiple tracking numbers, such as FILENO, CASENUMBER, and can represent other tracking numbers, if required."/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Extension.value[x].type">
+            <path value="Extension.value[x].type"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-tracking-number-type"/>
+            </binding>
+        </element>
+        <element id="Extension.value[x].value">
+            <path value="Extension.value[x].value"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

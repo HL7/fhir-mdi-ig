@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-toxicology-lab"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-11-18T21:19:29.514+00:00"/>
-        <source value="#Q05RRvMXNFYSEZSS"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-12-11T02:15:12.182+00:00"/>
+        <source value="#HfufXR5At346YckM"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     <name value="SpecimenToxicologyLab"/>
@@ -36,11 +36,11 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Specimen.container:in_etoh">
+        <element id="Specimen.container:in-etoh">
             <path value="Specimen.container"/>
-            <sliceName value="in_etoh"/>
+            <sliceName value="in-etoh"/>
         </element>
-        <element id="Specimen.container:in_etoh.additive[x]">
+        <element id="Specimen.container:in-etoh.additive[x]">
             <path value="Specimen.container.additive[x]"/>
             <min value="1"/>
             <type>
