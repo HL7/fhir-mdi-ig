@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="86"/>
-        <lastUpdated value="2021-12-11T04:20:40.321+00:00"/>
-        <source value="#KpHixW8056p8Y3Z6"/>
+        <versionId value="93"/>
+        <lastUpdated value="2021-12-13T20:29:46.466+00:00"/>
+        <source value="#7beT6iwngAJecAW5"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDItoEDRS"/>
@@ -63,10 +63,28 @@
         </element>
         <element id="Composition.author">
             <path value="Composition.author"/>
-            <short value="The author is the person who verifies/approves the accuracy of the data to be sent to the EDRS."/>
-            <definition value="The author is the person who verifies/approves the accuracy of the data to be sent to the EDRS."/>
+            <short value="The author is the medical examiner responsible for the case. There can be multiple medical examiners per case."/>
+            <definition value="The author is the medical examiner responsible for the case. There can be multiple medical examiners per case."/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.attester">
+            <path value="Composition.attester"/>
+            <short value="The attester is the death certifier who verifies/approves the accuracy of the data to be sent to the EDRS."/>
+            <definition value="The attester is the death certifier who verifies/approves the accuracy of the data to be sent to the EDRS."/>
             <max value="1"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Composition.attester.party">
+            <path value="Composition.attester.party"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Certifier"/>
+            </type>
         </element>
         <element id="Composition.section">
             <path value="Composition.section"/>
@@ -87,7 +105,7 @@
             <sliceName value="demographics"/>
             <short value="This section contains demographic information about the decedent that is not represented in the decedent Patient profile."/>
             <definition value="This section contains demographic information about the decedent that is not represented in the decedent Patient profile."/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -115,7 +133,7 @@
             </slicing>
             <short value="Entries that are contained in the Demographics section"/>
             <definition value="Entries that are contained in the Demographics section"/>
-            <min value="1"/>
+            <min value="0"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:demographics.entry:decedent-age">
@@ -214,6 +232,9 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:circumstances.emptyReason">
+            <path value="Composition.section.emptyReason"/>
+        </element>
         <element id="Composition.section:jurisdiction">
             <path value="Composition.section"/>
             <sliceName value="jurisdiction"/>
@@ -257,14 +278,8 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:jurisdiction.entry:medical-examiner-coroner">
-            <path value="Composition.section.entry"/>
-            <sliceName value="medical-examiner-coroner"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-            </type>
-            <mustSupport value="true"/>
+        <element id="Composition.section:jurisdiction.emptyReason">
+            <path value="Composition.section.emptyReason"/>
         </element>
         <element id="Composition.section:cause-manner">
             <path value="Composition.section"/>
@@ -344,6 +359,9 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:cause-manner.emptyReason">
+            <path value="Composition.section.emptyReason"/>
+        </element>
         <element id="Composition.section:medical-history">
             <path value="Composition.section"/>
             <sliceName value="medical-history"/>
@@ -365,12 +383,15 @@
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:medical-history.emptyReason">
+            <path value="Composition.section.emptyReason"/>
+        </element>
         <element id="Composition.section:exam-autopsy">
             <path value="Composition.section"/>
             <sliceName value="exam-autopsy"/>
             <short value="This section contains exam and autopsy information."/>
             <definition value="This section contains exam and autopsy information."/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
