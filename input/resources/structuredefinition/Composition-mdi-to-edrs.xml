@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="93"/>
-        <lastUpdated value="2021-12-13T20:29:46.466+00:00"/>
-        <source value="#7beT6iwngAJecAW5"/>
+        <versionId value="110"/>
+        <lastUpdated value="2021-12-14T21:26:09.228+00:00"/>
+        <source value="#IpuHr0xtEdV2Zl26"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDItoEDRS"/>
@@ -13,7 +13,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to EDRS."/>
+    <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to an EDRS."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34,10 +34,19 @@
         <element id="Composition.extension:extension-tracking-numbers">
             <path value="Composition.extension"/>
             <sliceName value="extension-tracking-numbers"/>
+            <short value="A tracking number, such as a case number or file number assigned by a case management system or EDRS."/>
+            <definition value="A tracking number, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.identifier">
+            <path value="Composition.identifier"/>
+            <short value="System-generated identifier for this Composition."/>
+            <definition value="System-generated identifier for this Composition."/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.status">
@@ -52,8 +61,8 @@
         </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
-            <short value="The subject of the composition is the decedent"/>
-            <definition value="The subject of the composition is the decedent"/>
+            <short value="The subject of the composition is the decedent."/>
+            <definition value="The subject of the composition is the decedent."/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
@@ -63,8 +72,8 @@
         </element>
         <element id="Composition.author">
             <path value="Composition.author"/>
-            <short value="The author is the medical examiner responsible for the case. There can be multiple medical examiners per case."/>
-            <definition value="The author is the medical examiner responsible for the case. There can be multiple medical examiners per case."/>
+            <short value="The author is the medical examiner/coroner (ME/C) responsible for the case. There can be multiple ME/Cs per case."/>
+            <definition value="The author is the medical examiner/coroner (ME/C) responsible for the case. There can be multiple ME/Cs per case."/>
             <max value="*"/>
             <type>
                 <code value="Reference"/>
@@ -81,6 +90,8 @@
         </element>
         <element id="Composition.attester.party">
             <path value="Composition.attester.party"/>
+            <short value="The practitioner who certifies death, the manner of death, and the causes of death"/>
+            <definition value="The practitioner (coroner, medical examiner, or physician) who certifies death, the manner of death, and the causes of death"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Certifier"/>
@@ -151,10 +162,13 @@
         <element id="Composition.section:demographics.entry:decedent-occupation-industry">
             <path value="Composition.section.entry"/>
             <sliceName value="decedent-occupation-industry"/>
+            <short value="The usual work industry and occupation of the decedent"/>
+            <definition value="The usual work industry and occupation of the decedent"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent-Usual-Work"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:circumstances">
             <path value="Composition.section"/>
@@ -186,6 +200,8 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <short value="Entries that are contained in the Circumstances section"/>
+            <definition value="Entries that are contained in the Circumstances section"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:circumstances.entry:death-location">
@@ -265,6 +281,8 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <short value="Entries that are contained in the Jurisdiction section"/>
+            <definition value="Entries that are contained in the Jurisdiction section"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:jurisdiction.entry:death-date">
@@ -311,13 +329,15 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <short value="Entries that are contained in the Cause-Manner section"/>
+            <definition value="Entries that are contained in the Cause-Manner section"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:cause-manner.entry:cause">
             <path value="Composition.section.entry"/>
             <sliceName value="cause"/>
             <short value="Up to 5 lines of cause of death."/>
-            <definition value="Up to 5 lines of cause of death."/>
+            <definition value="Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death."/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
@@ -341,7 +361,7 @@
             <path value="Composition.section.entry"/>
             <sliceName value="manner"/>
             <short value="Manner of death."/>
-            <definition value="Manner of death."/>
+            <definition value="The conclusion arrived at upon completion of death investigation regarding the manner of death."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Manner-of-Death"/>

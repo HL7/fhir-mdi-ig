@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-injury-at-work"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-12-11T03:48:52.020+00:00"/>
-        <source value="#6TIv9V4vVBfvbJGV"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-12-14T21:21:26.761+00:00"/>
+        <source value="#BjlNf4ZAallyED8V"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
     <version value="0.1.0"/>
@@ -19,7 +19,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Whether or not death resulted from events/injury that occurred at work."/>
+    <description value="This Observation identifies whether or not death resulted from events or an injury that occurred at work."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -36,10 +36,13 @@
     <differential>
         <element id="Observation">
             <path value="Observation"/>
+            <short value="Identifies whether or not death resulted from events or an injury that occurred at work"/>
+            <definition value="Identifies whether or not death resulted from events or an injury that occurred at work"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="Did death result from injury at work"/>
+            <short value="Did death result from injury at work?"/>
+            <definition value="Did death result from injury at work?"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
@@ -50,6 +53,8 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
+            <short value="The subject of the observation is the decedent."/>
+            <definition value="The subject of the observation is the decedent."/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>

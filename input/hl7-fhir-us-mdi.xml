@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="41"/>
-        <lastUpdated value="2021-12-11T03:48:05.460+00:00"/>
-        <source value="#F8Zf3RY6wLTwMgU0"/>
+        <versionId value="48"/>
+        <lastUpdated value="2021-12-14T23:21:51.960+00:00"/>
+        <source value="#iAhlTxwpXzbcsHBc"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="4.0.1"/>
@@ -19,7 +19,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This US-specific IG provides guidance to implementers and jurisdictions on the exchange of information to and from a case management systems. It supports interoperability between the case management systems of medical examiner and coroner departments, hospital electronic health record (EHR) systems, toxicology and other laboratory information systems (LIS), jurisdictional vital records offices, and public health departments. Data workflows include the receipt of toxicology information into a case management system and sending information to a jurisdictional health department. Additionally, it supports medical examiners/coroners (ME/C) in viewing information from a decedent’s EHR for death investigations. The design intent of this IG is to create a base that states can further specify for exchange state-specific data."/>
+    <description value="This US-specific implementation guide (IG) provides guidance to implementers and jurisdictions on the exchange of information to and from a case management system. It supports interoperability between the case management systems of medical examiner and coroner departments, toxicology and other laboratory information systems (LIS), and electronic death reporting systems (EDRS) of jurisdictional vital records offices. Data workflows include the receipt of toxicology information into a case management system and sending information to an EDRS. The design intent of this IG is to create a base that states can further specify for exchange state-specific data."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -52,7 +52,7 @@
                 <display value="Composition - MDI to EDRS"/>
             </reference>
             <name value="Composition - MDI to EDRS"/>
-            <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to EDRS."/>
+            <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to an EDRS."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -61,6 +61,7 @@
                 <display value="CompositionToxicologyToMDI"/>
             </reference>
             <name value="DiagnosticReport - Toxicology Lab Result to MDI"/>
+            <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a toxicology lab information system to an MDI case management system."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -69,24 +70,7 @@
                 <display value="SpecimenToxicologyLab"/>
             </reference>
             <name value="Specimen - Toxicology Lab"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/server-tox"/>
-                <display value="Toxicology CapabilityStatement Server"/>
-            </reference>
-            <name value="Toxicology CapabilityStatement Server"/>
-            <description value="This Section describes the expected capabilities of the Toxicology lab Server actor which is responsible for providing responses to the queries submitted by Toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Toxicology lab Servers are defined. Toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/server-cme"/>
-                <display value="Coroner/Medical Examiner Server CapabilityStatement"/>
-            </reference>
-            <name value="Coroner/Medical Examiner Server CapabilityStatement"/>
-            <description value="This Section describes the expected capabilities of the Coroner/Medical Examiner (C/ME) case management system Server actor which is responsible for providing responses to the queries submitted by the C/ME Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by C/ME Servers are defined. C/ME Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -94,16 +78,8 @@
                 <reference value="StructureDefinition/MessageHeader-toxicology-to-mdi"/>
                 <display value="MessageHeaderToxicologyToMDI"/>
             </reference>
-            <name value="MessageHeader Toxicology To MDI"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/server-edrs"/>
-                <display value="Electronic Death Reporting System (EDRS) CapabilityStatement Server"/>
-            </reference>
-            <name value="Electronic Death Reporting System (EDRS) CapabilityStatement Server"/>
-            <description value="This Section describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <name value="MessageHeader Toxicology to MDI"/>
+            <description value="This MessageHeader identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -111,7 +87,8 @@
                 <reference value="StructureDefinition/Observation-toxicology-to-mdi"/>
                 <display value="ObservationToxicologyToMDI"/>
             </reference>
-            <name value="Observation Toxicology To MDI"/>
+            <name value="Observation Toxicology to MDI"/>
+            <description value="This Observation contains the toxicology lab analysis results for a specimen."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -129,7 +106,7 @@
                 <display value="Extension - Tracking Number"/>
             </reference>
             <name value="Extension - Tracking Number"/>
-            <description value="Contains a tracking number, such as FILENO, CASENUMBER, and can represent other tracking numbers, if required."/>
+            <description value="This Extension contains a tracking number, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -147,7 +124,7 @@
                 <display value="Observation - Death Injury/Event Occurred at Work"/>
             </reference>
             <name value="Observation - Death Injury/Event Occurred at Work"/>
-            <description value="Whether or not death resulted from events/injury that occurred at work."/>
+            <description value="This Observation identifies whether or not death resulted from events or an injury that occurred at work."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -156,8 +133,15 @@
                 <display value="Observation - How Death Injury Occurred"/>
             </reference>
             <name value="Observation - How Death Injury Occurred"/>
-            <description value="Certified explanation of how the injury leading to death occurred."/>
+            <description value="This Observation provides the certified explanation of how the injury leading to death occurred."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/Patient-VRDR-Decedent-Rogers"/></reference>
+            <name value="Example for VRDR Decedent: Jasmine Rogers"/>
+            <description value="Example for VRDR Decedent: Jasmine Rogers"/>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

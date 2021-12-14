@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-tracking-number"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-12-11T01:53:50.532+00:00"/>
-        <source value="#spFz2bV9GS24NxF5"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-12-14T18:05:04.840+00:00"/>
+        <source value="#NmDecOGlQ5Syz0jg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
     <version value="1.0"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Contains a tracking number, such as FILENO, CASENUMBER, and can represent other tracking numbers, if required."/>
+    <description value="This Extension contains a tracking number, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -43,7 +43,7 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="Tracking Numbers Extension"/>
-            <definition value="Contains multiple tracking numbers, such as FILENO, CASENUMBER, and can represent other tracking numbers, if required."/>
+            <definition value="Contains multiple tracking numbers, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."/>
             <min value="0"/>
             <max value="*"/>
         </element>
@@ -53,6 +53,7 @@
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
+            <short value="Value of extension"/>
             <type>
                 <code value="Identifier"/>
             </type>
@@ -60,6 +61,7 @@
         </element>
         <element id="Extension.value[x].type">
             <path value="Extension.value[x].type"/>
+            <short value="Tracking Number Type (extensible value set)"/>
             <mustSupport value="true"/>
             <binding>
                 <strength value="extensible"/>

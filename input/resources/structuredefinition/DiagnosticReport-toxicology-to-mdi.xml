@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-toxicology-to-mdi"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2021-12-11T02:14:13.518+00:00"/>
-        <source value="#lnKSap2yIf2R5bjt"/>
+        <versionId value="21"/>
+        <lastUpdated value="2021-12-14T21:26:20.807+00:00"/>
+        <source value="#RRxrFvxrOoj1jErw"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     <name value="CompositionToxicologyToMDI"/>
     <title value="DiagnosticReport - Toxicology Lab Result to MDI"/>
     <status value="active"/>
+    <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a toxicology lab information system to an MDI case management system."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -21,18 +22,33 @@
         <element id="DiagnosticReport">
             <path value="DiagnosticReport"/>
         </element>
+        <element id="DiagnosticReport.extension">
+            <path value="DiagnosticReport.extension"/>
+            <short value="A tracking number, such as a case number or file number assigned by a case management system or EDRS."/>
+            <definition value="A tracking number, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."/>
+            <type>
+                <code value="Extension"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
+            </type>
+        </element>
         <element id="DiagnosticReport.identifier">
             <path value="DiagnosticReport.identifier"/>
             <slicing>
                 <rules value="open"/>
             </slicing>
+            <short value="Identifiers for diagnostic report."/>
+            <definition value="Identifiers for diagnostic report."/>
         </element>
-        <element id="DiagnosticReport.identifier:case_number">
+        <element id="DiagnosticReport.identifier:tox_case_number">
             <path value="DiagnosticReport.identifier"/>
-            <sliceName value="case_number"/>
+            <sliceName value="tox_case_number"/>
+            <short value="Case number assigned by toxicology lab."/>
+            <definition value="Case number assigned by toxicology lab."/>
         </element>
         <element id="DiagnosticReport.subject">
             <path value="DiagnosticReport.subject"/>
+            <short value="The subject of the diagnostic report is the decedent."/>
+            <definition value="The subject of the diagnostic report is the decedent."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent"/>
@@ -40,6 +56,8 @@
         </element>
         <element id="DiagnosticReport.specimen">
             <path value="DiagnosticReport.specimen"/>
+            <short value="The specimen sent by a Medical Examiner, Coroner, or autopsy performer to the toxicology lab for analysis."/>
+            <definition value="The specimen sent by a Medical Examiner, Coroner, or autopsy performer to the toxicology lab for analysis."/>
             <max value="*"/>
             <type>
                 <code value="Reference"/>
@@ -49,6 +67,8 @@
         </element>
         <element id="DiagnosticReport.result">
             <path value="DiagnosticReport.result"/>
+            <short value="The toxicology lab analysis results being reported."/>
+            <definition value="The toxicology lab analysis results being reported."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-to-mdi"/>

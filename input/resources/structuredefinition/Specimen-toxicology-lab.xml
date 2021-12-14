@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-toxicology-lab"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2021-12-11T02:15:12.182+00:00"/>
-        <source value="#HfufXR5At346YckM"/>
+        <versionId value="19"/>
+        <lastUpdated value="2021-12-14T21:27:45.444+00:00"/>
+        <source value="#CPEL5JYxQmwNWZUE"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     <name value="SpecimenToxicologyLab"/>
     <title value="Specimen - Toxicology Lab"/>
     <status value="active"/>
+    <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -20,9 +21,25 @@
     <differential>
         <element id="Specimen">
             <path value="Specimen"/>
+            <short value="The specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
+            <definition value="The specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
+        </element>
+        <element id="Specimen.identifier">
+            <path value="Specimen.identifier"/>
+            <short value="System-generated identifier for this Specimen."/>
+            <definition value="System-generated identifier for this Specimen."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.type">
+            <path value="Specimen.type"/>
+            <short value="Type of tissue or material"/>
+            <definition value="Type of tissue or material (blood, etc.)."/>
+            <mustSupport value="true"/>
         </element>
         <element id="Specimen.subject">
             <path value="Specimen.subject"/>
+            <short value="The subject is the decedent."/>
+            <definition value="The subject is the decedent."/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
@@ -35,10 +52,31 @@
             <slicing>
                 <rules value="open"/>
             </slicing>
+            <min value="1"/>
+        </element>
+        <element id="Specimen.container.identifier">
+            <path value="Specimen.container.identifier"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.container.description">
+            <path value="Specimen.container.description"/>
+            <min value="1"/>
         </element>
         <element id="Specimen.container:in-etoh">
             <path value="Specimen.container"/>
             <sliceName value="in-etoh"/>
+        </element>
+        <element id="Specimen.condition">
+            <path value="Specimen.condition"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.note">
+            <path value="Specimen.note"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.container:in-etoh.description">
+            <path value="Specimen.container.description"/>
+            <min value="1"/>
         </element>
         <element id="Specimen.container:in-etoh.additive[x]">
             <path value="Specimen.container.additive[x]"/>

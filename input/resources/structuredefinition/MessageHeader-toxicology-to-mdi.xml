@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-toxicology-to-mdi"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-11-18T20:35:48.158+00:00"/>
-        <source value="#thFYoTvcZN9qD3lF"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-12-14T18:15:48.464+00:00"/>
+        <source value="#JHPXLO6ZTQbuQOL2"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
     <name value="MessageHeaderToxicologyToMDI"/>
-    <title value="MessageHeader Toxicology To MDI"/>
+    <title value="MessageHeader Toxicology to MDI"/>
     <status value="active"/>
+    <description value="This MessageHeader identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -20,12 +21,16 @@
     <differential>
         <element id="MessageHeader">
             <path value="MessageHeader"/>
+            <short value="Identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
+            <definition value="Identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
         </element>
         <element id="MessageHeader.event[x]">
             <path value="MessageHeader.event[x]"/>
         </element>
         <element id="MessageHeader.focus">
             <path value="MessageHeader.focus"/>
+            <short value="The focus of this message header is the DiagnosticReport."/>
+            <definition value="The focus of this message header is the DiagnosticReport."/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>

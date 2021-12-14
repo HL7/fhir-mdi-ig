@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-toxicology-to-mdi"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-12-11T02:14:49.365+00:00"/>
-        <source value="#GHC6IMxOi9OXoKQo"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-12-14T18:26:29.641+00:00"/>
+        <source value="#zg7mVWupTvy9LkQP"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-to-mdi"/>
     <name value="ObservationToxicologyToMDI"/>
-    <title value="Observation Toxicology To MDI"/>
+    <title value="Observation Toxicology to MDI"/>
     <status value="active"/>
+    <description value="This Observation contains the toxicology lab analysis results for a specimen."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -20,9 +21,13 @@
     <differential>
         <element id="Observation">
             <path value="Observation"/>
+            <short value="The toxicology lab analysis results for a specimen."/>
+            <definition value="The toxicology lab analysis results for a specimen."/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
+            <short value="The subject of this observation is the decedent."/>
+            <definition value="The subject of this observation is the decedent."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent"/>
@@ -39,6 +44,8 @@
         </element>
         <element id="Observation.specimen">
             <path value="Observation.specimen"/>
+            <short value="The specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
+            <definition value="The specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-tracking-number-type"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-11T01:53:14.142+00:00"/>
-        <source value="#OxwiOOjkHpwr0Ypn"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-12-13T23:21:10.161+00:00"/>
+        <source value="#1kR3mMr4fJ4KEpbt"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-tracking-number-type"/>
     <name value="TrackingNumberType"/>
@@ -22,6 +22,10 @@
             <concept>
                 <code value="edrs-file-number"/>
                 <display value="EDRS File Number"/>
+            </concept>
+            <concept>
+                <code value="tox-lab-case-number"/>
+                <display value="Toxicology Laboratory Case Number"/>
             </concept>
         </include>
     </compose>

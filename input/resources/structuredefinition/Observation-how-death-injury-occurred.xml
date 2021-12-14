@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-how-death-injury-occurred"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-12-11T04:11:00.729+00:00"/>
-        <source value="#gjSUQwr6MZqd8CqD"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-12-14T18:21:48.408+00:00"/>
+        <source value="#d83jC1OKSxlztLT1"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     <version value="0.1.0"/>
@@ -19,7 +19,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Certified explanation of how the injury leading to death occurred."/>
+    <description value="This Observation provides the certified explanation of how the injury leading to death occurred."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -36,6 +36,8 @@
     <differential>
         <element id="Observation">
             <path value="Observation"/>
+            <short value="The certified explanation of how the injury leading to death occurred."/>
+            <definition value="The certified explanation of how the injury leading to death occurred."/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -51,6 +53,8 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
+            <short value="The subject of this observation is the decedent."/>
+            <definition value="The subject of this observation is the decedent."/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
