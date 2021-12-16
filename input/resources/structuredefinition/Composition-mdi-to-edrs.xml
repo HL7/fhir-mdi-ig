@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="110"/>
-        <lastUpdated value="2021-12-14T21:26:09.228+00:00"/>
-        <source value="#IpuHr0xtEdV2Zl26"/>
+        <versionId value="112"/>
+        <lastUpdated value="2021-12-16T06:23:33.804+00:00"/>
+        <source value="#QJZeouYdLU1NRidS"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDItoEDRS"/>
@@ -80,22 +80,6 @@
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
             <mustSupport value="true"/>
-        </element>
-        <element id="Composition.attester">
-            <path value="Composition.attester"/>
-            <short value="The attester is the death certifier who verifies/approves the accuracy of the data to be sent to the EDRS."/>
-            <definition value="The attester is the death certifier who verifies/approves the accuracy of the data to be sent to the EDRS."/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.attester.party">
-            <path value="Composition.attester.party"/>
-            <short value="The practitioner who certifies death, the manner of death, and the causes of death"/>
-            <definition value="The practitioner (coroner, medical examiner, or physician) who certifies death, the manner of death, and the causes of death"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Certifier"/>
-            </type>
         </element>
         <element id="Composition.section">
             <path value="Composition.section"/>
@@ -207,8 +191,8 @@
         <element id="Composition.section:circumstances.entry:death-location">
             <path value="Composition.section.entry"/>
             <sliceName value="death-location"/>
-            <short value="Apparent address where death actually occurred"/>
-            <definition value="Apparent address where death actually occurred"/>
+            <short value="Apparent address where death actually occurred."/>
+            <definition value="Apparent address where death actually occurred."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Death-Location"/>
