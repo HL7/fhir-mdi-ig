@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="48"/>
-        <lastUpdated value="2021-12-14T23:21:51.960+00:00"/>
-        <source value="#iAhlTxwpXzbcsHBc"/>
+        <versionId value="102"/>
+        <lastUpdated value="2021-12-21T00:23:38.903+00:00"/>
+        <source value="#QxORJQKaY4JfWN67"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="4.0.1"/>
@@ -30,11 +30,6 @@
     </jurisdiction>
     <packageId value="hl7.fhir.us.mdi"/>
     <fhirVersion value="4.0.1"/>
-    <dependsOn id="hl7fhirusvrdr">
-        <uri value="http://hl7.org/fhir/us/vrdr/ImplementationGuide/hl7.fhir.us.vrdr#1.2.0"/>
-        <packageId value="hl7.fhir.us.vrdr"/>
-        <version value="1.2.0"/>
-    </dependsOn>
     <dependsOn id="hl7fhiruscore">
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.0.0"/>
         <packageId value="hl7.fhir.us.core"/>
@@ -45,7 +40,20 @@
         <packageId value="hl7.fhir.us.odh"/>
         <version value="1.1.0"/>
     </dependsOn>
+    <dependsOn id="uscdcphinvads">
+        <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
+        <packageId value="us.cdc.phinvads"/>
+        <version value="0.7.0"/>
+    </dependsOn>
     <definition>
+        <grouping id="mdi">
+            <name value="MDI"/>
+            <description value="Resources related to the MDI to EDRS data flow."/>
+        </grouping>
+        <grouping id="toxicology">
+            <name value="Toxicology"/>
+            <description value="Resources related to the toxicology data flow."/>
+        </grouping>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-mdi-to-edrs"/>
@@ -54,6 +62,7 @@
             <name value="Composition - MDI to EDRS"/>
             <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to an EDRS."/>
             <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
         </resource>
         <resource>
             <reference>
@@ -63,6 +72,7 @@
             <name value="DiagnosticReport - Toxicology Lab Result to MDI"/>
             <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a toxicology lab information system to an MDI case management system."/>
             <exampleBoolean value="false"/>
+            <groupingId value="toxicology"/>
         </resource>
         <resource>
             <reference>
@@ -72,6 +82,7 @@
             <name value="Specimen - Toxicology Lab"/>
             <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
             <exampleBoolean value="false"/>
+            <groupingId value="toxicology"/>
         </resource>
         <resource>
             <reference>
@@ -81,15 +92,7 @@
             <name value="MessageHeader Toxicology to MDI"/>
             <description value="This MessageHeader identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
             <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-toxicology-to-mdi"/>
-                <display value="ObservationToxicologyToMDI"/>
-            </reference>
-            <name value="Observation Toxicology to MDI"/>
-            <description value="This Observation contains the toxicology lab analysis results for a specimen."/>
-            <exampleBoolean value="false"/>
+            <groupingId value="toxicology"/>
         </resource>
         <resource>
             <reference>
@@ -126,6 +129,7 @@
             <name value="Observation - Death Injury/Event Occurred at Work"/>
             <description value="This Observation identifies whether or not death resulted from events or an injury that occurred at work."/>
             <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
         </resource>
         <resource>
             <reference>
@@ -135,13 +139,122 @@
             <name value="Observation - How Death Injury Occurred"/>
             <description value="This Observation provides the certified explanation of how the injury leading to death occurred."/>
             <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/Patient-VRDR-Decedent-Rogers"/></reference>
-            <name value="Example for VRDR Decedent: Jasmine Rogers"/>
-            <description value="Example for VRDR Decedent: Jasmine Rogers"/>
+                <reference value="Practitioner/us-core-practitioner-b-goldberger"/></reference>
+            <name value="US Core Practitioner - Dr. Bruce Goldberger"/>
+            <description value="Example US Core Practitioner - Dr. Bruce Goldberger"/>
             <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/us-core-practitioner-s-jones"/></reference>
+            <name value="US Core Practitioner - Dr. Sam Jones"/>
+            <description value="Example US Core Practitioner - Dr. Sam Jones"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/us-core-practitioner-j-jones"/></reference>
+            <name value="US Core Practitioner - Dr. Jane Jones"/>
+            <description value="Example US Core Practitioner - Dr. Jane Jones"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
+                <display value="Observation Tobacco Use Contributed To Death"/>
+            </reference>
+            <name value="Observation Tobacco Use Contributed To Death"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-decedent-pregnancy"/>
+                <display value="Observation - Decedent Pregnancy"/>
+            </reference>
+            <name value="Observation - Decedent Pregnancy"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-death-date"/>
+                <display value="Observation - Death Date"/>
+            </reference>
+            <name value="Observation - Death Date"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-cause-of-death"/>
+                <display value="Condition - Cause Of Death"/>
+            </reference>
+            <name value="Condition - Cause Of Death"/>
+            <description value="The Condition - Cause of Death profile reflects one of the eventually ordered causes of death asserted by the death certifier. The cause of death is initially specified with text. The Cause Of Death Condition profile builds upon the US Core Condition profile."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/List-cause-of-death-pathway"/>
+                <display value="List - Cause of Death Pathway"/>
+            </reference>
+            <name value="List - Cause of Death Pathway"/>
+            <description value="Cause of Death Pathway is an ordered list of cause of death conditions. It builds upon the FHIR LIST resource. The source of the Cause of Death Pathway (LIST.source) is a US Core Practioner."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-other-contributing-to-death"/>
+                <display value="Condition - Other Contributing To Death"/>
+            </reference>
+            <name value="Condition - Other Contributing To Death"/>
+            <description value="The Condition - Other Contributing to Death profile is used to identify factors contributing to the cause of death as asserted by the death certifier. This profile builds upon the US Core Condition profile."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-manner-of-death"/>
+                <display value="Observation - Manner of Death"/>
+            </reference>
+            <name value="Observation - Manner of Death"/>
+            <description value="The conclusion arrived at upon completion of death investigation regarding the manner of death."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
+                <display value="DocumentReference - MDI Case Notes Summary"/>
+            </reference>
+            <name value="DocumentReference - MDI Case Notes Summary"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DocumentReference-mdi-case-history"/>
+                <display value="DocumentReference - MDI Case History"/>
+            </reference>
+            <name value="DocumentReference - MDI Case History"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-observation-location"/>
+                <display value="Extension - Location"/>
+            </reference>
+            <name value="Extension - Location"/>
+            <description value="The location of the observed phenomenon or entity that is the subject of the observation."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

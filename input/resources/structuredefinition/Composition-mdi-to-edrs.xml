@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="112"/>
-        <lastUpdated value="2021-12-16T06:23:33.804+00:00"/>
-        <source value="#QJZeouYdLU1NRidS"/>
+        <versionId value="120"/>
+        <lastUpdated value="2021-12-20T22:41:07.606+00:00"/>
+        <source value="#L1IgZxHKoZ5xCng7"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDItoEDRS"/>
@@ -66,7 +66,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -79,6 +79,14 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.attester">
+            <path value="Composition.attester"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.attester.party">
+            <path value="Composition.attester.party"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section">
@@ -131,18 +139,6 @@
             <min value="0"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:demographics.entry:decedent-age">
-            <path value="Composition.section.entry"/>
-            <sliceName value="decedent-age"/>
-            <short value="The decedent's chronological age at the time of death."/>
-            <definition value="The decedent's chronological age at the time of death."/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent-Age"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
         <element id="Composition.section:demographics.entry:decedent-occupation-industry">
             <path value="Composition.section.entry"/>
             <sliceName value="decedent-occupation-industry"/>
@@ -150,7 +146,7 @@
             <definition value="The usual work industry and occupation of the decedent"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent-Usual-Work"/>
+                <targetProfile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -195,7 +191,7 @@
             <definition value="Apparent address where death actually occurred."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Death-Location"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -217,7 +213,7 @@
             <definition value="Whether or not tobacco use contributed to death."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Tobacco-Use-Contributed-To-Death"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -228,7 +224,7 @@
             <definition value="Pregnancy status of the decedent."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent-Pregnancy"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -276,7 +272,7 @@
             <definition value="The estimated and pronounced date of death, also contains the death pronouncer practitioner"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Death-Date"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -325,7 +321,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Cause-of-Death-Pathway"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -337,7 +333,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Condition-Contributing-To-Death"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-other-contributing-to-death"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -348,7 +344,7 @@
             <definition value="The conclusion arrived at upon completion of death investigation regarding the manner of death."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Manner-of-Death"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -409,6 +405,41 @@
                     <code value="exam-autopsy"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:narratives">
+            <path value="Composition.section"/>
+            <sliceName value="narratives"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:narratives.code">
+            <path value="Composition.section.code"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:narratives.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:narratives.entry:case-notes-summary">
+            <path value="Composition.section.entry"/>
+            <sliceName value="case-notes-summary"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:narratives.entry:case-history">
+            <path value="Composition.section.entry"/>
+            <sliceName value="case-history"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
+            </type>
             <mustSupport value="true"/>
         </element>
     </differential>

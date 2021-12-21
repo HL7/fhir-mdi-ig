@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-toxicology-lab"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2021-12-14T21:27:45.444+00:00"/>
-        <source value="#CPEL5JYxQmwNWZUE"/>
+        <versionId value="21"/>
+        <lastUpdated value="2021-12-20T20:12:11.756+00:00"/>
+        <source value="#NWY92Ypw1FZtF9po"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     <name value="SpecimenToxicologyLab"/>
@@ -43,7 +43,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -53,6 +53,7 @@
                 <rules value="open"/>
             </slicing>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Specimen.container.identifier">
             <path value="Specimen.container.identifier"/>
@@ -65,6 +66,7 @@
         <element id="Specimen.container:in-etoh">
             <path value="Specimen.container"/>
             <sliceName value="in-etoh"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Specimen.condition">
             <path value="Specimen.condition"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-how-death-injury-occurred"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2021-12-14T18:21:48.408+00:00"/>
-        <source value="#d83jC1OKSxlztLT1"/>
+        <versionId value="11"/>
+        <lastUpdated value="2021-12-20T21:33:38.329+00:00"/>
+        <source value="#cVr2u6x3w3Jfvspn"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     <version value="0.1.0"/>
@@ -58,7 +58,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -69,7 +69,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Certifier"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
             <mustSupport value="true"/>
         </element>

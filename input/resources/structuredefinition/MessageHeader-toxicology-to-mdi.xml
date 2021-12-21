@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-toxicology-to-mdi"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2021-12-14T18:15:48.464+00:00"/>
-        <source value="#JHPXLO6ZTQbuQOL2"/>
+        <versionId value="10"/>
+        <lastUpdated value="2021-12-17T03:51:57.058+00:00"/>
+        <source value="#urxs9lNi4Pf9Wv4Q"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
     <name value="MessageHeaderToxicologyToMDI"/>
@@ -26,6 +26,7 @@
         </element>
         <element id="MessageHeader.event[x]">
             <path value="MessageHeader.event[x]"/>
+            <mustSupport value="true"/>
         </element>
         <element id="MessageHeader.focus">
             <path value="MessageHeader.focus"/>

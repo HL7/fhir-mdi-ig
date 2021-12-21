@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Condition-cause-of-death"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-20T22:01:59.688+00:00"/>
+        <source value="#HaAsJOoO5b6gCeCq"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
+    <version value="1.0"/>
+    <name value="ConditionCauseOfDeath"/>
+    <title value="Condition - Cause Of Death"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <description value="The Condition - Cause of Death profile reflects one of the eventually ordered causes of death asserted by the death certifier. The cause of death is initially specified with text. The Cause Of Death Condition profile builds upon the US Core Condition profile."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Condition">
+            <path value="Condition"/>
+        </element>
+        <element id="Condition.id">
+            <path value="Condition.id"/>
+            <short value="id"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Condition.code">
+            <path value="Condition.code"/>
+            <label value="CauseOfDeathCondition.code"/>
+            <short value="code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Condition.code.text">
+            <path value="Condition.code.text"/>
+            <min value="1"/>
+            <max value="1"/>
+            <maxLength value="120"/>
+        </element>
+        <element id="Condition.subject">
+            <path value="Condition.subject"/>
+            <short value="subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+        </element>
+        <element id="Condition.onset[x]">
+            <path value="Condition.onset[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <short value="onset[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Age"/>
+            </type>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Condition.asserter">
+            <path value="Condition.asserter"/>
+            <short value="asserter"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

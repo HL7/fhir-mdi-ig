@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="List-cause-of-death-pathway"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-20T22:01:59.689+00:00"/>
+        <source value="#BEFvv73RLVO6q7Yt"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
+    <name value="ListCauseOfDeathPathway"/>
+    <title value="List - Cause of Death Pathway"/>
+    <status value="draft"/>
+    <description value="Cause of Death Pathway is an ordered list of cause of death conditions. It builds upon the FHIR LIST resource. The source of the Cause of Death Pathway (LIST.source) is a US Core Practioner."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="List"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/List"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="List">
+            <path value="List"/>
+        </element>
+        <element id="List.id">
+            <path value="List.id"/>
+            <short value="id"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="List.status">
+            <path value="List.status"/>
+            <short value="status"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <fixedCode value="current"/>
+        </element>
+        <element id="List.mode">
+            <path value="List.mode"/>
+            <short value="mode"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <fixedCode value="snapshot"/>
+        </element>
+        <element id="List.source">
+            <path value="List.source"/>
+            <short value="source"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practioner"/>
+            </type>
+        </element>
+        <element id="List.orderedBy">
+            <path value="List.orderedBy"/>
+            <short value="Sorted by Priority"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/list-order"/>
+                    <code value="priority"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="List.entry">
+            <path value="List.entry"/>
+            <short value="entry"/>
+            <min value="1"/>
+            <max value="5"/>
+        </element>
+        <element id="List.entry.item">
+            <path value="List.entry.item"/>
+            <short value="item"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

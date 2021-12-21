@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-injury-at-work"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2021-12-14T21:21:26.761+00:00"/>
-        <source value="#BjlNf4ZAallyED8V"/>
+        <versionId value="10"/>
+        <lastUpdated value="2021-12-20T20:12:13.575+00:00"/>
+        <source value="#jQVqisWq8PtW4LWf"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
     <version value="0.1.0"/>
@@ -58,7 +58,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
             <mustSupport value="true"/>
         </element>

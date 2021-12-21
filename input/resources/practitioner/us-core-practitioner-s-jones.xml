@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner
+    xmlns="http://hl7.org/fhir">
+    <id value="us-core-practitioner-s-jones"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-20T21:14:58.375+00:00"/>
+        <source value="#O0fK1HIgeg72P9CP"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+    </meta>
+    <identifier>
+        <system value="http://hl7.org/fhir/sid/us-npi"/>
+        <value value="3333445555"/>
+    </identifier>
+    <name>
+        <use value="official"/>
+        <family value="Jones"/>
+        <given value="Sam"/>
+        <prefix value="Dr."/>
+    </name>
+</Practitioner>
