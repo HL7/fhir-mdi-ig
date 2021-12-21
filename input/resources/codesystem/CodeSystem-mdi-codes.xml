@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-mdi-codes"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-12-20T20:25:24.302+00:00"/>
-        <source value="#naKl5mYsqqNSBWrd"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-12-21T00:58:20.784+00:00"/>
+        <source value="#UOw3aNuVpK0DWzCx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
     <version value="1.0.0"/>
@@ -23,6 +23,7 @@
         </coding>
         <text value="United States of America"/>
     </jurisdiction>
+    <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
         <code value="demographics"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="List-cause-of-death-pathway"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-20T22:01:59.689+00:00"/>
-        <source value="#BEFvv73RLVO6q7Yt"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-12-21T00:53:33.247+00:00"/>
+        <source value="#A2OOeOMjbagu5SNX"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
     <name value="ListCauseOfDeathPathway"/>
@@ -55,7 +55,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practioner"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
         </element>
         <element id="List.orderedBy">
