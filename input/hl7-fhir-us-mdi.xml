@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="102"/>
-        <lastUpdated value="2021-12-21T00:23:38.903+00:00"/>
-        <source value="#QxORJQKaY4JfWN67"/>
+        <versionId value="117"/>
+        <lastUpdated value="2021-12-21T22:56:00.258+00:00"/>
+        <source value="#xFGeMiWu8aV7YaaR"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="4.0.1"/>
@@ -89,7 +89,7 @@
                 <reference value="StructureDefinition/MessageHeader-toxicology-to-mdi"/>
                 <display value="MessageHeaderToxicologyToMDI"/>
             </reference>
-            <name value="MessageHeader Toxicology to MDI"/>
+            <name value="MessageHeader - Toxicology to MDI"/>
             <description value="This MessageHeader identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology"/>
@@ -144,7 +144,7 @@
         <resource>
             <reference>
                 <reference value="Practitioner/us-core-practitioner-b-goldberger"/></reference>
-            <name value="US Core Practitioner - Dr. Bruce Goldberger"/>
+            <name value="Example US Core Practitioner - Dr. Bruce Goldberger"/>
             <description value="Example US Core Practitioner - Dr. Bruce Goldberger"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -167,7 +167,8 @@
                 <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
                 <display value="Observation Tobacco Use Contributed To Death"/>
             </reference>
-            <name value="Observation Tobacco Use Contributed To Death"/>
+            <name value="Observation - Tobacco Use Contributed To Death"/>
+            <description value="Observation - Tobacco Use Contributed To Death"/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi"/>
         </resource>
@@ -177,6 +178,7 @@
                 <display value="Observation - Decedent Pregnancy"/>
             </reference>
             <name value="Observation - Decedent Pregnancy"/>
+            <description value="Observation - Decedent Pregnancy"/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi"/>
         </resource>
@@ -186,6 +188,7 @@
                 <display value="Observation - Death Date"/>
             </reference>
             <name value="Observation - Death Date"/>
+            <description value="Observation - Death Date"/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi"/>
         </resource>
@@ -235,6 +238,7 @@
                 <display value="DocumentReference - MDI Case Notes Summary"/>
             </reference>
             <name value="DocumentReference - MDI Case Notes Summary"/>
+            <description value="DocumentReference - MDI Case Notes Summary"/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi"/>
         </resource>
@@ -244,6 +248,7 @@
                 <display value="DocumentReference - MDI Case History"/>
             </reference>
             <name value="DocumentReference - MDI Case History"/>
+            <description value="DocumentReference - MDI Case History"/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi"/>
         </resource>
@@ -255,6 +260,176 @@
             <name value="Extension - Location"/>
             <description value="The location of the observed phenomenon or entity that is the subject of the observation."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-agency-case-history-notes"/>
+                <display value="Extension -Agency Case History Notes"/>
+            </reference>
+            <name value="Extension -Agency Case History Notes"/>
+            <description value="Extension -Agency Case History Notes"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/us-core-organization-tox-lab"/>
+                <display value="UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
+            </reference>
+            <name value="UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
+            <description value="UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/us-core-patient-t-snyder"/></reference>
+            <name value="US Core Patient Thomas Snyder"/>
+            <description value="Example US Core Patient Thomas Snyder"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MessageHeader/mdi-tox-result-report"/></reference>
+            <name value="Toxicology Report Result for Medical Examiner/Coroner"/>
+            <description value="Toxicology Report Result for Medical Examiner/Coroner"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/></reference>
+            <name value="DiagnosticReport Resulting Toxicology Report"/>
+            <description value="DiagnosticReport Resulting Toxicology Report"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-blood-toxicology"/></reference>
+            <name value="Blood Specimen for Toxicology Lab analysis"/>
+            <description value="Blood Specimen for Tox Lab analysis"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-urine-toxicology"/></reference>
+            <name value="Urine Specimen for Toxicology Lab analysis"/>
+            <description value="Urine Specimen for Toxicology Lab analysis"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-vitreous-humor-toxicology"/></reference>
+            <name value="Vitreous Humor Specimen for Toxicology Lab analysis"/>
+            <description value="Vitreous Humor Specimen for Toxicology Lab analysis"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-blood"/></reference>
+            <name value="US Core Blood ethanol lab test result"/>
+            <description value="US Core Blood ethanol lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-4-anpp-blood"/></reference>
+            <name value="US Core Blood 4-ANPP lab test result"/>
+            <description value="US Core Blood 4-ANPP lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-acetylfentanyl-blood"/></reference>
+            <name value="US Core Blood acetylfentanyl lab test result"/>
+            <description value="US Core Blood acetylfentanyl lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-fentanyl-blood"/></reference>
+            <name value="US Core Blood Blood fentanyl lab test result"/>
+            <description value="US Core Blood Blood fentanyl lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-urine"/></reference>
+            <name value="US Core Urine ethanol lab test result"/>
+            <description value="US Core Urine ethanol lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-4-anpp-urine"/></reference>
+            <name value="US Core Urine 4-ANPP lab test result"/>
+            <description value="US Core Urine 4-ANPP lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-acetylfentanyl-urine"/></reference>
+            <name value="US Core Urine acetylfentanyl lab test result"/>
+            <description value="US Core Urine acetylfentanyl lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-fentanyl-urine"/></reference>
+            <name value="US Core Urine fentanyl lab test result"/>
+            <description value="US Core Urine fentanyl lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-norfentanyl-urine"/></reference>
+            <name value="US Core Urine norfentanyl lab test result"/>
+            <description value="US Core Urine norfentanyl lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-xylazine-urine"/></reference>
+            <name value="US Core Urine xylazine lab test result"/>
+            <description value="US Core Urine xylazine lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/></reference>
+            <name value="US Core Vitreous Humor ethanol lab test result"/>
+            <description value="US Core Vitreous Humor ethanol lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DocumentReference/mdi-agency-case-notes-summary"/></reference>
+            <name value="DocumentReference for Agency History and Notes text"/>
+            <description value="DocumentReference for Agency History and Notes text"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Binary/agency-case-notes"/></reference>
+            <name value="Binary containing the base64 encoded plain text of Agency Case History and Notes"/>
+            <description value="Binary containing the base64 encoded plain text of Agency Case History and Notes"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

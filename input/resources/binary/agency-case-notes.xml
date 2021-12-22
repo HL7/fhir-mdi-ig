@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Binary
+    xmlns="http://hl7.org/fhir">
+    <id value="agency-case-notes"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-21T21:43:20.979+00:00"/>
+        <source value="#mCVndyttxm0095A1"/>
+    </meta>
+    <contentType value="application/json;charset=utf-8"/>
+    <data value="eyJyZXNvdXJjZVR5cGUiOiJCaW5hcnkiLCJpZCI6ImFnZW5jeS1jYXNlLW5vdGVzIiwiY29udGVudFR5cGUiOiJwbGFpbi90ZXh0IiwiZGF0YSI6IlFXZGxibU41SUVOaGMyVWdUbTkwWlhNNklFNXZJR1JsWTI5dGNHOXphWFJwYjI0S0NrRm5aVzVqZVNCSWFYTjBiM0o1T2lCUWNtOWlZV0pzZVNCbVpXNTBZVzU1YkNCUFJBPT0iLCJtZXRhIjp7InNlY3VyaXR5IjpbeyJzeXN0ZW0iOiJodHRwczovL3RyaWZvbGlhLWZoaXIubGFudGFuYWdyb3VwLmNvbS9zZWN1cml0eSIsImNvZGUiOiJldmVyeW9uZV5yZWFkIn0seyJzeXN0ZW0iOiJodHRwczovL3RyaWZvbGlhLWZoaXIubGFudGFuYWdyb3VwLmNvbS9zZWN1cml0eSIsImNvZGUiOiJldmVyeW9uZV53cml0ZSJ9LHsic3lzdGVtIjoiaHR0cHM6Ly90cmlmb2xpYS1maGlyLmxhbnRhbmFncm91cC5jb20vc2VjdXJpdHkiLCJjb2RlIjoidXNlcl5HNGR3T2NGdF5yZWFkIn0seyJzeXN0ZW0iOiJodHRwczovL3RyaWZvbGlhLWZoaXIubGFudGFuYWdyb3VwLmNvbS9zZWN1cml0eSIsImNvZGUiOiJ1c2VyXkc0ZHdPY0Z0XndyaXRlIn1dfX0="/>
+</Binary>

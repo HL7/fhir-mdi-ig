@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-mdi-codes"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-12-21T00:58:20.784+00:00"/>
-        <source value="#UOw3aNuVpK0DWzCx"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-12-21T03:31:00.639+00:00"/>
+        <source value="#Jg6GgotUphJmoRZq"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
     <version value="1.0.0"/>
@@ -79,5 +79,10 @@
         <code value="mdi-case-history"/>
         <display value="MDI Case History"/>
         <definition value="MDI Case History"/>
+    </concept>
+    <concept>
+        <code value="tox-result-report"/>
+        <display value="Toxicology Lab Results"/>
+        <definition value="Sending of Toxicology Lab Results"/>
     </concept>
 </CodeSystem>

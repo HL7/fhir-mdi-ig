@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen
+    xmlns="http://hl7.org/fhir">
+    <id value="specimen-vitreous-humor-toxicology"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-21T21:44:43.585+00:00"/>
+        <source value="#ARYBVUX4zkLa5qw9"/>
+    </meta>
+    <accessionIdentifier>
+        <system value="http://lab.acme.org/specimens/2021"/>
+        <value value="XXX352356"/>
+    </accessionIdentifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="258438000"/>
+            <display value="Vitreous humor sample (specimen)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/us-core-patient-t-snyder"/>
+    </subject>
+    <receivedTime value="2021-12-03T16:00:00Z"/>
+    <collection>
+        <collectedDateTime value="2021-12-03T11:00:00Z"/>
+    </collection>
+    <container>
+        <specimenQuantity>
+            <value value="3"/>
+            <unit value="ml"/>
+        </specimenQuantity>
+    </container>
+</Specimen>

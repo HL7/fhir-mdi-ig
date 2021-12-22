@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-agency-case-history-notes"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2021-12-21T23:36:46.294+00:00"/>
+        <source value="#7Xskz8YBx3mkHDaI"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-agency-case-history-notes"/>
+    <name value="ExtensionAgencyCaseHistoryNotes"/>
+    <title value="Extension -Agency Case History Notes"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="DiagnosticReport.extension"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-agency-case-history-notes"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

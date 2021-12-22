@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient
+    xmlns="http://hl7.org/fhir">
+    <id value="us-core-patient-t-snyder"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-12-21T23:44:47.252+00:00"/>
+        <source value="#bAOdTFRnBANhpKaD"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">Thomas 
+                <b>SNYDER </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>MR303303303</td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>
+                            <span>18 January 2001</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                <code value="2106-3"/>
+                <display value="White"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="White"/>
+        </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+        <valueCode value="M"/>
+    </extension>
+    <identifier>
+        <use value="usual"/>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="MR"/>
+                <display value="Medical Record Number"/>
+            </coding>
+            <text value="Medical Record Number"/>
+        </type>
+        <system value="http://hospital.smarthealthit.org"/>
+        <value value="MR303303303"/>
+    </identifier>
+    <active value="true"/>
+    <name>
+        <family value="Snyder"/>
+        <given value="Thomas"/>
+    </name>
+    <gender value="male"/>
+    <birthDate value="2001-01-18"/>
+</Patient>

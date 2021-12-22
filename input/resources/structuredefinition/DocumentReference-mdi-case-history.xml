@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DocumentReference-mdi-case-history"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-20T22:40:09.280+00:00"/>
-        <source value="#xrFzjTzQEqQ8wKV7"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-12-22T03:17:11.220+00:00"/>
+        <source value="#AT2DpPCIgFQ7FHbH"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
     <name value="DocumentReferenceMDICaseHistory"/>
@@ -23,11 +23,11 @@
         </element>
         <element id="DocumentReference.type">
             <path value="DocumentReference.type"/>
-            <short value="History general Narrative - Reported"/>
+            <short value="Summary of death note"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
-                    <code value="11329-0"/>
+                    <code value="47046-8"/>
                 </coding>
             </patternCodeableConcept>
         </element>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageHeader
+    xmlns="http://hl7.org/fhir">
+    <id value="mdi-tox-result-report"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-21T21:44:43.736+00:00"/>
+        <source value="#QvsFrBpRMt5M7xgg"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+    </meta>
+    <eventCoding>
+        <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+        <code value="tox-result-report"/>
+    </eventCoding>
+    <source>
+        <name value="University of Florida Pathology Labs, Forensic Toxicology Laboratory"/>
+        <software value="MDI Log"/>
+        <version value="1.2.3.4.5"/>
+        <contact>
+            <system value="phone"/>
+            <value value="+1 (555) 123 4567"/>
+        </contact>
+        <endpoint value="http://mdi-log.org/fhir/endpoint/1"/>
+    </source>
+    <response>
+        <identifier value="5015fe84-8e76-4526-89d8-44b322e8d4fb"/>
+        <code value="ok"/>
+    </response>
+    <focus>
+        <reference value="DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/>
+    </focus>
+</MessageHeader>

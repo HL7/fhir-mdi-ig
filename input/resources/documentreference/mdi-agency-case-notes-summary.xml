@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentReference
+    xmlns="http://hl7.org/fhir">
+    <id value="mdi-agency-case-notes-summary"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-12-22T03:19:09.327+00:00"/>
+        <source value="#QX7rXwHssZFNL4An"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
+    </meta>
+    <status value="current"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="47046-8"/>
+            <display value="Summary of death note"/>
+        </coding>
+        <text value="History general Narrative - Reported"/>
+    </type>
+    <category>
+        <coding>
+            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+            <code value="mdi-case-history"/>
+            <display value="MDI Case History"/>
+        </coding>
+        <text value="MDI Case History"/>
+    </category>
+    <subject>
+        <reference value="Patient/us-core-patient-t-snyder"/>
+        <display value="Thomas Snyder"/>
+    </subject>
+    <content>
+        <attachment>
+            <contentType value="text/plain"/>
+            <url value="http://example.org/fhir/Binary/agency-case-notes"/>
+            <title value="Uri where the data can be found: http://example.org/fhir/Binary/agency-case-notes"/>
+        </attachment>
+    </content>
+</DocumentReference>

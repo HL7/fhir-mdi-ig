@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="us-core-lab-result-fentanyl-urine"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-21T21:44:44.099+00:00"/>
+        <source value="#cbQOWMtHYFW69zZb"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+        </coding>
+        <text value="Laboratory"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="11235-9"/>
+            <display value="fentaNYL [Presence] in Urine"/>
+        </coding>
+        <text value="fentaNYL [Presence] in Urine"/>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-t-snyder"/>
+        <display value="Thomas Snyder"/>
+    </subject>
+    <effectiveDateTime value="2021-12-03"/>
+    <valueBoolean value="true"/>
+    <specimen>
+        <reference value="Specimen/specimen-urine-toxicology"/>
+    </specimen>
+</Observation>

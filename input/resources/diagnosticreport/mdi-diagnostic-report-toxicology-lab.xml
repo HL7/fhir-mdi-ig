@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport
+    xmlns="http://hl7.org/fhir">
+    <id value="mdi-diagnostic-report-toxicology-lab"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-12-22T03:39:07.125+00:00"/>
+        <source value="#r9vsl5cfQ8wMn2MV"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText"> fentaNYL and Norfentanyl panel - Specimen </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Status</td>
+                        <td>FINAL</td>
+                    </tr>
+                    <tr>
+                        <td>Issued</td>
+                        <td> 05 January 2022 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
+        <valueIdentifier>
+            <system value="http://florida-investigation-agncy.org/fhir/agency-case-numbers"/>
+            <value value="ME21-111"/>
+        </valueIdentifier>
+    </extension>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="tox-lab-case-number"/>
+            </coding>
+        </type>
+        <system value="http://uf-path-labs.org/fhir/lab-cases"/>
+        <value value="R21-01578"/>
+        <assigner>
+            <reference value="Organization/us-core-organization-tox-lab"/>
+        </assigner>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="LAB"/>
+            <display value="Laboratory"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="81273-5"/>
+            <display value="fentaNYL and Norfentanyl panel - Specimen"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-t-snyder"/>
+        <display value="Thomas Snyder"/>
+    </subject>
+    <effectiveDateTime value="2021-12-03T11:00:00Z"/>
+    <issued value="2022-01-05T11:00:00Z"/>
+    <performer>
+        <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+    </performer>
+    <specimen>
+        <reference value="Specimen/specimen-blood-toxicology"/>
+    </specimen>
+    <specimen>
+        <reference value="Specimen/specimen-urine-toxicology"/>
+    </specimen>
+    <specimen>
+        <reference value="Specimen/specimen-vitreous-humor-toxicology"/>
+    </specimen>
+    <result>
+        <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-blood"/>
+        <display value="ETOH BLOOD: 0.145 g/dL"/>
+    </result>
+    <result>
+        <reference value="Observation/us-core-lab-result-4-anpp-blood"/>
+        <display value="4-ANPP: POSITIVE"/>
+    </result>
+    <result>
+        <reference value="Observation/us-core-lab-result-acetylfentanyl-blood"/>
+        <display value="ACETYLFENTANYL: 2 ng/mL"/>
+    </result>
+    <result>
+        <reference value="Observation/us-core-lab-result-fentanyl-blood"/>
+        <display value="FENTANYL: 23 ng/mL"/>
+    </result>
+    <result>
+        <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-urine"/>
+        <display value="ETOH URINE: 0.160 g/dL"/>
+    </result>
+    <result>
+        <reference value="Observation/us-core-lab-result-4-anpp-urine"/>
+        <display value="4-ANPP: POSITIVE"/>
+    </result>
+    <result>
+        <reference value="Observation/us-core-lab-result-acetylfentanyl-urine"/>
+        <display value="ACETYLFENTANYL: POSITIVE"/>
+    </result>
+    <result>
+        <reference value="Observation/us-core-lab-result-fentanyl-urine"/>
+        <display value="FENTANYL: POSITIVE"/>
+    </result>
+    <result>
+        <reference value="Observation/us-core-lab-result-norfentanyl-urine"/>
+        <display value="NORFENTANYL: POSITIVE"/>
+    </result>
+    <result>
+        <reference value="Observation/us-core-lab-result-xylazine-urine"/>
+        <display value="XYLAZINE: POSITIVE"/>
+    </result>
+    <result>
+        <reference value="Observation/us-core-lab-result-xylazine-urine"/>
+        <display value="ETOH VITREOUS HUMOR: 0.133 g/dL"/>
+    </result>
+</DiagnosticReport>

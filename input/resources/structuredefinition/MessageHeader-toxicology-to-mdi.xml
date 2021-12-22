@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-toxicology-to-mdi"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-12-17T03:51:57.058+00:00"/>
-        <source value="#urxs9lNi4Pf9Wv4Q"/>
+        <versionId value="13"/>
+        <lastUpdated value="2021-12-21T16:27:52.746+00:00"/>
+        <source value="#oHr2JvFHkvVgXpwf"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
     <name value="MessageHeaderToxicologyToMDI"/>
-    <title value="MessageHeader Toxicology to MDI"/>
+    <title value="MessageHeader - Toxicology to MDI"/>
     <status value="active"/>
     <description value="This MessageHeader identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
     <fhirVersion value="4.0.1"/>
@@ -26,6 +26,14 @@
         </element>
         <element id="MessageHeader.event[x]">
             <path value="MessageHeader.event[x]"/>
+            <short value="Toxicology Lab Results"/>
+            <type>
+                <code value="Coding"/>
+            </type>
+            <fixedCoding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="tox-result-report"/>
+            </fixedCoding>
             <mustSupport value="true"/>
         </element>
         <element id="MessageHeader.focus">
