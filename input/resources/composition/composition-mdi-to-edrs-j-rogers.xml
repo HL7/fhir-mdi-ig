@@ -106,7 +106,7 @@
         <code>
             <coding>
                 <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
-                <code value="cause-manner"/>
+                <code value="medical-history"/>
             </coding>
         </code>
         <entry>
