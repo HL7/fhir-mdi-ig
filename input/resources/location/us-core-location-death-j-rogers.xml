@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Location
+    xmlns="http://hl7.org/fhir">
+    <id value="us-core-location-death-j-rogers"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-12-23T05:47:42.547+00:00"/>
+        <source value="#kulqByBYpAa39CTc"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+    </meta>
+    <identifier>
+        <system value="http://www.acme.org/location"/>
+        <value value="29"/>
+    </identifier>
+    <status value="active"/>
+    <name value="Top of Mount Everest"/>
+    <address>
+        <line value="3300 Washtenaw Avenue, Suite 227"/>
+        <city value="Qomolangma"/>
+        <state value="Tingri"/>
+        <postalCode value="785"/>
+        <country value="TAR"/>
+    </address>
+    <position>
+        <longitude value="27.9881"/>
+        <latitude value="86.925"/>
+    </position>
+</Location>

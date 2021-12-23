@@ -3,9 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-urine-toxicology"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-21T21:44:43.557+00:00"/>
-        <source value="#jxmJxbW1FzG2IikY"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-12-22T18:53:46.528+00:00"/>
+        <source value="#d8KHg5uhIVhDcixT"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
         <system value="http://lab.acme.org/specimens/2021"/>
@@ -27,6 +28,7 @@
         <collectedDateTime value="2021-12-03T11:00:00Z"/>
     </collection>
     <container>
+        <description value="10mL RT tube"/>
         <specimenQuantity>
             <value value="5"/>
             <unit value="ml"/>

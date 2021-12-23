@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference
     xmlns="http://hl7.org/fhir">
-    <id value="mdi-agency-case-notes-summary"/>
+    <id value="mdi-case-history"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-12-22T20:37:28.036+00:00"/>
-        <source value="#r9Tkuw7qVgMrlb1k"/>
-        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-22T20:28:05.734+00:00"/>
+        <source value="#Hd7ajg1eO7s4bI5I"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
     </meta>
     <status value="current"/>
     <type>
@@ -20,10 +20,10 @@
     <category>
         <coding>
             <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
-            <code value="mdi-case-notes-summary"/>
-            <display value="MDI Case Notes Summary"/>
+            <code value="mdi-case-history"/>
+            <display value="MDI Case History"/>
         </coding>
-        <text value="MDI Case Notes Summary"/>
+        <text value="MDI Case History"/>
     </category>
     <subject>
         <reference value="Patient/us-core-patient-t-snyder"/>

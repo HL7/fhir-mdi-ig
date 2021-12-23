@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="death-date-j-rogers"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-12-23T04:12:03.610+00:00"/>
+        <source value="#5HlEFyHwudI71bUn"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="81956-5"/>
+            <display value="Date+time of death"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-j-rogers"/>
+    </subject>
+    <effectiveDateTime value="2022-01-04T05:30:00-05:00"/>
+    <performer>
+        <reference value="Practitioner/us-core-practitioner-s-jones"/>
+    </performer>
+    <valueDateTime value="2022-01-04T05:30:00-05:00"/>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="80616-6"/>
+                <display value="Date and time pronounced dead [US Standard Certificate of Death]"/>
+            </coding>
+        </code>
+        <valueDateTime value="2022-01-04T05:30:00-05:00"/>
+    </component>
+</Observation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="death-injury-at-work-j-rogers"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2021-12-23T05:58:31.762+00:00"/>
+        <source value="#spO97QcG21BPuqDu"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="69444-8"/>
+            <display value="Did death result from injury at work"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-j-rogers"/>
+    </subject>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+            <code value="N"/>
+            <display value="No"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

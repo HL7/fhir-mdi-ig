@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="121"/>
-        <lastUpdated value="2021-12-21T00:55:13.756+00:00"/>
-        <source value="#FVEDMT3DfnxcQ3mQ"/>
+        <versionId value="125"/>
+        <lastUpdated value="2021-12-23T05:54:09.887+00:00"/>
+        <source value="#0IITFZuKk3P1PQwV"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDItoEDRS"/>
@@ -55,8 +55,14 @@
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>
-            <short value="MDI to EDRS"/>
+            <short value="MDI to EDRS (Death administrative information Document)"/>
             <definition value="MDI to EDRS"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="86807-5"/>
+                </coding>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.subject">
@@ -93,7 +99,7 @@
             <path value="Composition.section"/>
             <slicing>
                 <discriminator>
-                    <type value="pattern"/>
+                    <type value="value"/>
                     <path value="code"/>
                 </discriminator>
                 <rules value="open"/>
@@ -383,8 +389,29 @@
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:medical-history.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medical-history.entry:history-condition">
+            <path value="Composition.section.entry"/>
+            <sliceName value="history-condition"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.section:medical-history.emptyReason">
             <path value="Composition.section.emptyReason"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:exam-autopsy">
             <path value="Composition.section"/>

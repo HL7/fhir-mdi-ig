@@ -3,9 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-blood-toxicology"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-12-21T23:41:14.653+00:00"/>
-        <source value="#ZeCHrnwd5Q23gVQw"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-12-22T18:53:23.706+00:00"/>
+        <source value="#y16d1rLY5eJ1eFz6"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
         <system value="http://lab.acme.org/specimens/2021"/>
@@ -34,6 +35,7 @@
         </bodySite>
     </collection>
     <container>
+        <description value="10mL GT tube"/>
         <type>
             <coding>
                 <system value="http://snomed.info/sct"/>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-odh-usual-work-j-rogers"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-23T04:32:19.747+00:00"/>
+        <source value="#dG437xzONB4UaL1V"/>
+        <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="21843-8"/>
+            <display value="History of Usual occupation"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-j-rogers"/>
+    </subject>
+    <effectivePeriod>
+        <start value="2018-06-01"/>
+    </effectivePeriod>
+    <valueCodeableConcept>
+        <coding>
+            <system value="urn:oid:2.16.840.1.114222.4.5.314"/>
+            <code value="3600"/>
+            <display value="Nursing, psychiatric, and home health aides"/>
+        </coding>
+        <coding>
+            <system value="urn:oid:2.16.840.1.114222.4.5.327"/>
+            <code value="31-1014.00.007136"/>
+            <display value="Certified Nursing Assistant (CNA) [Nursing Assistants]"/>
+        </coding>
+    </valueCodeableConcept>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="21844-6"/>
+                <display value="History of Usual industry"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html"/>
+                <code value="8270"/>
+                <display value="Nursing care facilities"/>
+            </coding>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH"/>
+                <code value="621610.008495"/>
+                <display value="Home nursing services"/>
+            </coding>
+        </valueCodeableConcept>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="74163-7"/>
+                <display value="Usual occupation duration"/>
+            </coding>
+        </code>
+        <valueQuantity>
+            <value value="21"/>
+            <unit value="a"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="a"/>
+        </valueQuantity>
+    </component>
+</Observation>

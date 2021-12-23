@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="manner-of-death-j-rogers-accidental"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-12-23T04:13:18.315+00:00"/>
+        <source value="#cGxEbkLho3LBKEQK"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="69449-7"/>
+            <display value="Manner of death"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-j-rogers"/>
+    </subject>
+    <performer>
+        <reference value="Practitioner/us-core-practitioner-s-jones"/>
+    </performer>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="7878000"/>
+            <display value="Accidental death"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

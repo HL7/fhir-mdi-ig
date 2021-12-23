@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="117"/>
-        <lastUpdated value="2021-12-21T22:56:00.258+00:00"/>
-        <source value="#xFGeMiWu8aV7YaaR"/>
+        <versionId value="169"/>
+        <lastUpdated value="2021-12-23T05:19:47.592+00:00"/>
+        <source value="#aBN6nGoOCZcdm0Xz"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
-    <version value="4.0.1"/>
+    <version value="0.0.1"/>
     <name value="MedicolegalDeathInvestigation"/>
     <title value="Medicolegal Death Investigation (MDI)"/>
     <status value="draft"/>
@@ -19,7 +19,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This US-specific implementation guide (IG) provides guidance to implementers and jurisdictions on the exchange of information to and from a case management system. It supports interoperability between the case management systems of medical examiner and coroner departments, toxicology and other laboratory information systems (LIS), and electronic death reporting systems (EDRS) of jurisdictional vital records offices. Data workflows include the receipt of toxicology information into a case management system and sending information to an EDRS. The design intent of this IG is to create a base that states can further specify for exchange state-specific data."/>
+    <description value="This US-specific implementation guide (IG) provides guidance to implementers and jurisdictions on the exchange of information to and from a medicolegal death investigation (MDI) information system. It supports interoperability between the MDI systems of medical examiner and coroner departments, toxicology and other laboratory information systems (LIS), and electronic death reporting systems (EDRS) of jurisdictional vital records offices. Data workflows include the receipt of toxicology information into an MDI system and sending information to an EDRS. The design intent of this IG is to create a base that states can further specify for exchange state-specific data."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -53,6 +53,14 @@
         <grouping id="toxicology">
             <name value="Toxicology"/>
             <description value="Resources related to the toxicology data flow."/>
+        </grouping>
+        <grouping id="mdi-example">
+            <name value="MDI Examples"/>
+            <description value="Examples related to the MDI to EDRS data flow."/>
+        </grouping>
+        <grouping id="toxicology-examples">
+            <name value="Toxicology Examples"/>
+            <description value="Resources related to the related to the toxicology data flow."/>
         </grouping>
         <resource>
             <reference>
@@ -144,7 +152,7 @@
         <resource>
             <reference>
                 <reference value="Practitioner/us-core-practitioner-b-goldberger"/></reference>
-            <name value="Example US Core Practitioner - Dr. Bruce Goldberger"/>
+            <name value="US Core Practitioner - Dr. Bruce Goldberger"/>
             <description value="Example US Core Practitioner - Dr. Bruce Goldberger"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -275,15 +283,15 @@
                 <reference value="Organization/us-core-organization-tox-lab"/>
                 <display value="UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
             </reference>
-            <name value="UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
+            <name value="US Core Organization - UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
             <description value="UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Patient/us-core-patient-t-snyder"/></reference>
-            <name value="US Core Patient Thomas Snyder"/>
+            <name value="US Core Patient - Thomas Snyder"/>
             <description value="Example US Core Patient Thomas Snyder"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -292,136 +300,142 @@
                 <reference value="MessageHeader/mdi-tox-result-report"/></reference>
             <name value="Toxicology Report Result for Medical Examiner/Coroner"/>
             <description value="Toxicology Report Result for Medical Examiner/Coroner"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/></reference>
             <name value="DiagnosticReport Resulting Toxicology Report"/>
             <description value="DiagnosticReport Resulting Toxicology Report"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Specimen/specimen-blood-toxicology"/></reference>
             <name value="Blood Specimen for Toxicology Lab analysis"/>
             <description value="Blood Specimen for Tox Lab analysis"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Specimen/specimen-urine-toxicology"/></reference>
             <name value="Urine Specimen for Toxicology Lab analysis"/>
             <description value="Urine Specimen for Toxicology Lab analysis"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Specimen/specimen-vitreous-humor-toxicology"/></reference>
             <name value="Vitreous Humor Specimen for Toxicology Lab analysis"/>
             <description value="Vitreous Humor Specimen for Toxicology Lab analysis"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-blood"/></reference>
-            <name value="US Core Blood ethanol lab test result"/>
+            <name value="US Core Lab Result - Blood ethanol lab test result"/>
             <description value="US Core Blood ethanol lab test result"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-4-anpp-blood"/></reference>
-            <name value="US Core Blood 4-ANPP lab test result"/>
+            <name value="US Core Lab Result - Blood 4-ANPP lab test result"/>
             <description value="US Core Blood 4-ANPP lab test result"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-acetylfentanyl-blood"/></reference>
-            <name value="US Core Blood acetylfentanyl lab test result"/>
+            <name value="US Core Lab Result - Blood acetylfentanyl lab test result"/>
             <description value="US Core Blood acetylfentanyl lab test result"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-fentanyl-blood"/></reference>
-            <name value="US Core Blood Blood fentanyl lab test result"/>
+            <name value="US Core Lab Result - Blood Blood fentanyl lab test result"/>
             <description value="US Core Blood Blood fentanyl lab test result"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-urine"/></reference>
-            <name value="US Core Urine ethanol lab test result"/>
+            <name value="US Core Lab Result - Urine ethanol lab test result"/>
             <description value="US Core Urine ethanol lab test result"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-4-anpp-urine"/></reference>
-            <name value="US Core Urine 4-ANPP lab test result"/>
+            <name value="US Core Lab Result - Urine 4-ANPP lab test result"/>
             <description value="US Core Urine 4-ANPP lab test result"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-acetylfentanyl-urine"/></reference>
-            <name value="US Core Urine acetylfentanyl lab test result"/>
+            <name value="US Core Lab Result - Urine acetylfentanyl lab test result"/>
             <description value="US Core Urine acetylfentanyl lab test result"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-fentanyl-urine"/></reference>
-            <name value="US Core Urine fentanyl lab test result"/>
+            <name value="US Core Lab Result - Urine fentanyl lab test result"/>
             <description value="US Core Urine fentanyl lab test result"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-norfentanyl-urine"/></reference>
-            <name value="US Core Urine norfentanyl lab test result"/>
+            <name value="US Core Lab Result - Urine norfentanyl lab test result"/>
             <description value="US Core Urine norfentanyl lab test result"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-xylazine-urine"/></reference>
-            <name value="US Core Urine xylazine lab test result"/>
+            <name value="US Core Lab Result - Urine xylazine lab test result"/>
             <description value="US Core Urine xylazine lab test result"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/></reference>
-            <name value="US Core Vitreous Humor ethanol lab test result"/>
+            <name value="US Core Lab Result - Vitreous Humor ethanol lab test result"/>
             <description value="US Core Vitreous Humor ethanol lab test result"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="DocumentReference/mdi-agency-case-notes-summary"/></reference>
-            <name value="DocumentReference for Agency History and Notes text"/>
+            <name value="DocumentReference for Agency Case Summary and Notes text"/>
             <description value="DocumentReference for Agency History and Notes text"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
@@ -429,7 +443,138 @@
             <name value="Binary containing the base64 encoded plain text of Agency Case History and Notes"/>
             <description value="Binary containing the base64 encoded plain text of Agency Case History and Notes"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DocumentReference/mdi-case-history"/></reference>
+            <name value="DocumentReference for Agency Case History text"/>
+            <description value="DocumentReference for Agency Case History text"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/decedent-pregnancy-j-rogers"/></reference>
+            <name value="Observation - Decedent pregnancy - Rogers"/>
+            <description value="Observation - Decedent pregnancy - Rogers"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/us-core-patient-j-rogers"/></reference>
+            <name value="US Core Patient - Jasmine Rogers"/>
+            <description value="US Core Patient Jasmine Rogers"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-cause-of-death-j-rogers-1-staph-sepsis"/></reference>
+            <name value="Condition - Cause of death - Rogers - 1. Staphylococcal sepsis"/>
+            <description value="Condition - Cause of death - Rogers - 1. Staphylococcal sepsis"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/death-date-j-rogers"/></reference>
+            <name value="Observation - Death date - Rogers"/>
+            <description value="Observation - Death date - Rogers"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/how-death-injury-occurred-j-rogers-med-ingest"/></reference>
+            <name value="Observation - How death injury occurred - Rogers - medication ingestion"/>
+            <description value="Observation - How death injury occurred - Rogers - medication ingestion"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-other-contributing-to-death-j-rogers-diabetes"/></reference>
+            <name value="Condition - Other condition contributing to death - Rogers - diabetes"/>
+            <description value="Condition - Other condition contributing to death - Rogers - diabetes"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-other-contributing-to-death"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/manner-of-death-j-rogers-accidental"/></reference>
+            <name value="Observation - Manner of death - Rogers - accidental"/>
+            <description value="Observation - Manner of death - Rogers - accidental"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/tobacco-use-j-rogers"/></reference>
+            <name value="Observation - Tobacco Use - Rogers"/>
+            <description value="Observation - Tobacco Use - Rogers"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/death-injury-at-work-j-rogers"/></reference>
+            <name value="Observation - Death injury at work - Rogers"/>
+            <description value="Example of Observation - Death injury at work - Rogers"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="List/list-cause-of-death-pathway-j-rogers"/></reference>
+            <name value="List - Cause of death pathway - Rogers - Sepsis"/>
+            <description value="Example of List - Cause of Death Pathway - Rogers - Sepsis"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-odh-usual-work-j-rogers"/></reference>
+            <name value="Observation - ODH Usual Work - Rogers"/>
+            <description value="Example of Observation - ODH Usual Work - Rogers"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/us-core-condition-j-rogers-gangrene"/></reference>
+            <name value="US Core Condition - Rogers - Gangrene"/>
+            <description value="Example of US Core Condition - Rogers - Gangrene"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-mdi-to-edrs-j-rogers"/>
+                <display value="MDI to EDRS Composition"/>
+            </reference>
+            <name value="Composition - MDI to EDRS - Rogers"/>
+            <description value="Example of Composition - MDI to EDRS - Rogers"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+            <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/us-core-location-death-j-rogers"/></reference>
+            <name value="US Core Location - Death - Rogers"/>
+            <description value="Example of US Core Location - Death - Rogers"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="mdi-example"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

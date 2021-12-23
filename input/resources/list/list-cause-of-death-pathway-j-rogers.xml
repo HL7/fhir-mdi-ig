@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List
+    xmlns="http://hl7.org/fhir">
+    <id value="list-cause-of-death-pathway-j-rogers"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-23T03:43:56.455+00:00"/>
+        <source value="#YVCJdPBsKX0usOPv"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
+    </meta>
+    <status value="current"/>
+    <mode value="snapshot"/>
+    <subject>
+        <reference value="Patient/us-core-patient-j-rogers"/>
+    </subject>
+    <source>
+        <reference value="Practitioner/us-core-practitioner-j-jones"/>
+    </source>
+    <orderedBy>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/list-order"/>
+            <code value="priority"/>
+            <display value="Sorted by Priority"/>
+        </coding>
+    </orderedBy>
+    <entry>
+        <item>
+            <reference value="Condition/condition-cause-of-death-j-rogers-1-staph-sepsis"/>
+        </item>
+    </entry>
+</List>

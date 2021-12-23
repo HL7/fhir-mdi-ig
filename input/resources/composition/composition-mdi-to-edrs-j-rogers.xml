@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition
+    xmlns="http://hl7.org/fhir">
+    <id value="composition-mdi-to-edrs-j-rogers"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-23T05:07:43.608+00:00"/>
+        <source value="#rNCqIXN5cLK0tfos"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
+        <valueIdentifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="BCT"/>
+                </coding>
+            </type>
+            <value value="15075"/>
+        </valueIdentifier>
+    </extension>
+    <identifier>
+        <value value="a03eab8c-11e8-4d0c-ad2a-b385395e27de"/>
+    </identifier>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="86807-5"/>
+            <display value="Death administrative information Document"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/us-core-patient-j-rogers"/>
+    </subject>
+    <date value="2021-12-20"/>
+    <author>
+        <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+    </author>
+    <title value="MDI to EDRS Composition"/>
+    <section>
+        <title value="Demographic Information Section"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="demographics"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/observation-odh-usual-work-j-rogers"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Circumstances Section"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="circumstances"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Location/us-core-location-death-j-rogers"/>
+        </entry>
+        <entry>
+            <reference value="Observation/death-injury-at-work-j-rogers"/>
+        </entry>
+        <entry>
+            <reference value="Observation/tobacco-use-j-rogers"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Jurisdiction Section"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="jurisdiction"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/death-date-j-rogers"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Cause and Manner of Death Section"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="cause-manner"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="List/list-cause-of-death-pathway-j-rogers"/>
+        </entry>
+        <entry>
+            <reference value="Condition/condition-other-contributing-to-death-j-rogers-diabetes"/>
+        </entry>
+        <entry>
+            <reference value="Observation/manner-of-death-j-rogers-accidental"/>
+        </entry>
+        <entry>
+            <reference value="Observation/how-death-injury-occurred-j-rogers-med-ingest"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Medical History Section"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="cause-manner"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Condition/us-core-condition-j-rogers-gangrene"/>
+        </entry>
+    </section>
+</Composition>

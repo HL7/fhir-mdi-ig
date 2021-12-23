@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="us-core-condition-j-rogers-gangrene"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-23T05:04:21.391+00:00"/>
+        <source value="#AjWjUc5wS8pqUKQY"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    </meta>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="372070002"/>
+            <display value="Gangrenous disorder (disorder)"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-j-rogers"/>
+    </subject>
+</Condition>

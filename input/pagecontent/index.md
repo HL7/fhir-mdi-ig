@@ -1,6 +1,6 @@
 ### Overview
 
-This US-specific implementation guide (IG) provides guidance to implementers and jurisdictions on the exchange of information to and from a case management system. It supports interoperability between the case management systems of medical examiner and coroner departments, toxicology and other laboratory information systems (LIS), and electronic death reporting systems (EDRS) of jurisdictional vital records offices. Data workflows include the receipt of toxicology information into a case management system and sending information to an EDRS. The design intent of this IG is to create a base that states can further specify for exchange state-specific data.
+This US-specific implementation guide (IG) provides guidance to implementers and jurisdictions on the exchange of information to and from a medicolegal death investigation (MDI) information system. It supports interoperability between the MDI systems of medical examiner and coroner departments, toxicology and other laboratory information systems (LIS), and electronic death reporting systems (EDRS) of jurisdictional vital records offices. Data workflows include the receipt of toxicology information into an MDI system and sending information to an EDRS. The design intent of this IG is to create a base that states can further specify for exchange state-specific data.
 
 
 

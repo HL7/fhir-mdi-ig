@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-toxicology-lab"/>
     <meta>
-        <versionId value="23"/>
-        <lastUpdated value="2021-12-21T16:38:37.176+00:00"/>
-        <source value="#JDxzxGz1HzckKVJB"/>
+        <versionId value="27"/>
+        <lastUpdated value="2021-12-22T20:10:46.596+00:00"/>
+        <source value="#CUseZLCgIEFXccnE"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     <name value="SpecimenToxicologyLab"/>
@@ -47,18 +47,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Specimen.container">
-            <path value="Specimen.container"/>
-            <slicing>
-                <discriminator>
-                    <type value="pattern"/>
-                    <path value="$this"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Specimen.container.identifier">
             <path value="Specimen.container.identifier"/>
             <mustSupport value="true"/>
@@ -67,28 +55,9 @@
             <path value="Specimen.container.description"/>
             <min value="1"/>
         </element>
-        <element id="Specimen.container:in-etoh">
-            <path value="Specimen.container"/>
-            <sliceName value="in-etoh"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Specimen.container:in-etoh.description">
-            <path value="Specimen.container.description"/>
-            <min value="1"/>
-        </element>
-        <element id="Specimen.container:in-etoh.additive[x]">
+        <element id="Specimen.container.additive[x]">
             <path value="Specimen.container.additive[x]"/>
-            <min value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-            <fixedCodeableConcept>
-                <coding>
-                    <system value="http://snomed.info/sct"/>
-                    <code value="419442005"/>
-                    <display value="Ethanol (substance)"/>
-                </coding>
-            </fixedCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Specimen.condition">
             <path value="Specimen.condition"/>
