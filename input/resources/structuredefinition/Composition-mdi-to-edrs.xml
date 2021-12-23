@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="125"/>
-        <lastUpdated value="2021-12-23T05:54:09.887+00:00"/>
-        <source value="#0IITFZuKk3P1PQwV"/>
+        <versionId value="126"/>
+        <lastUpdated value="2021-12-23T06:12:53.397+00:00"/>
+        <source value="#oMRFjONtC3IdTqKS"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDItoEDRS"/>
@@ -442,6 +442,12 @@
         </element>
         <element id="Composition.section:narratives.code">
             <path value="Composition.section.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                    <code value="narratives"/>
+                </coding>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:narratives.entry">
