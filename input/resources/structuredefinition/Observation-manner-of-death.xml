@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-manner-of-death"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-01-03T23:45:12.879+00:00"/>
-        <source value="#sZVAeNjo2a3BNpql"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-01-04T00:44:49.901+00:00"/>
+        <source value="#A4UrbPP6lgmQhosj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
     <version value="1.0"/>
@@ -42,19 +42,18 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="code"/>
+            <short value="Manner of death"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="69449-7"/>
-                    <display value="Manner of death"/>
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">

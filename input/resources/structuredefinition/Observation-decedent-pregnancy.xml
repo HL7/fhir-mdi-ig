@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-decedent-pregnancy"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-01-03T23:42:49.078+00:00"/>
-        <source value="#kIaucXlCHdfY9Ncj"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-01-04T00:44:49.892+00:00"/>
+        <source value="#pqZUWZq15B8LuqMZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
     <version value="1.0"/>
@@ -38,19 +38,18 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="code"/>
+            <short value="Timing of recent pregnancy in relation to death"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="69442-2"/>
-                    <display value="Timing of recent pregnancy in relation to death"/>
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-toxicology-to-mdi"/>
     <meta>
-        <versionId value="44"/>
-        <lastUpdated value="2022-01-03T23:39:32.257+00:00"/>
-        <source value="#x2XMqCiDFM6U7cnP"/>
+        <versionId value="45"/>
+        <lastUpdated value="2022-01-04T00:36:26.960+00:00"/>
+        <source value="#mZ4DIErH0UuHhhiB"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     <name value="DiagnosticReportToxicologyToMDI"/>
@@ -74,12 +74,12 @@
         <element id="DiagnosticReport.identifier:tox_case_number.type">
             <path value="DiagnosticReport.identifier.type"/>
             <min value="1"/>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
                     <code value="tox-lab-case-number"/>
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.identifier:tox_case_number.system">
