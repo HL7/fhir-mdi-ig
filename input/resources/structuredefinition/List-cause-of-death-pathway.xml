@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="List-cause-of-death-pathway"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-01-03T23:37:30.936+00:00"/>
-        <source value="#SZeN5QWamrwqC939"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-01-04T00:20:36.552+00:00"/>
+        <source value="#p1GtJMa4YrW8EchZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
     <name value="ListCauseOfDeathPathway"/>
@@ -72,8 +72,8 @@
         </element>
         <element id="List.entry">
             <path value="List.entry"/>
-            <label value="The first entry.item is the IMMEDIATE CAUSE (Final disease or condition resulting in death), for each subsequent entry.item, sequentially list conditions, if any, leading to the cause recorded in the first entry.item, the last entry.item is the UNDERLYING CAUSE (disease or injury that initiated the events resulting in death)"/>
             <short value="The first entry.item is the IMMEDIATE CAUSE, for each subsequent entry.item, sequentially list conditions, if any, leading to the cause recorded in the first entry.item, the last entry.item is the UNDERLYING CAUSE"/>
+            <definition value="The first entry.item is the IMMEDIATE CAUSE (Final disease or condition resulting in death), for each subsequent entry.item, sequentially list conditions, if any, leading to the cause recorded in the first entry.item, the last entry.item is the UNDERLYING CAUSE (disease or injury that initiated the events resulting in death)"/>
             <min value="1"/>
             <max value="5"/>
             <mustSupport value="true"/>

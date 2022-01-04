@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-01-03T23:42:05.661+00:00"/>
-        <source value="#aJLA5xtMYWAx5Ntw"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-01-04T00:26:34.628+00:00"/>
+        <source value="#WSjoHnhCXLg0jqw2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     <name value="ObservationDeathDate"/>
     <title value="Observation - Death Date"/>
     <status value="active"/>
+    <description value="Actual or presumed date of death."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -54,15 +55,15 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
+            <short value="Date+time of death"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="81956-5"/>
-                    <display value="Date+time of death"/>
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
@@ -77,6 +78,8 @@
         </element>
         <element id="Observation.effective[x]">
             <path value="Observation.effective[x]"/>
+            <short value="Date/time that the observation was made"/>
+            <definition value="Date/time that the observation was made"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -96,6 +99,8 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <short value="Actual or presumed date of death"/>
+            <definition value="Actual or presumed date of death"/>
             <min value="0"/>
             <max value="1"/>
             <type>
@@ -105,6 +110,8 @@
         </element>
         <element id="Observation.note">
             <path value="Observation.note"/>
+            <short value="Notes about the actual or presumed date of death, e.g. the date of death can't be specified as a dateTime and can only be narrowed down to a decade"/>
+            <definition value="Notes about the actual or presumed date of death, e.g. the date of death can't be specified as a dateTime and can only be narrowed down to a decade"/>
             <min value="0"/>
             <max value="1"/>
         </element>

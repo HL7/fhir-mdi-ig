@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-cause-of-death"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-01-03T23:38:38.015+00:00"/>
-        <source value="#N9IEsnVibjXw7crc"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-01-04T00:19:54.521+00:00"/>
+        <source value="#MRV7W0O7oy8Frvm9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
     <version value="1.0"/>
@@ -43,8 +43,8 @@
         <element id="Condition.category:death-diagnosis">
             <path value="Condition.category"/>
             <sliceName value="death-diagnosis"/>
-            <label value="Death diagnosis"/>
             <short value="Death diagnosis"/>
+            <definition value="Death diagnosis"/>
             <max value="1"/>
             <patternCodeableConcept>
                 <coding>
