@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="174"/>
-        <lastUpdated value="2022-01-04T01:22:49.965+00:00"/>
-        <source value="#w6zwL7SY7a5TaLUi"/>
+        <versionId value="176"/>
+        <lastUpdated value="2022-01-04T01:27:55.301+00:00"/>
+        <source value="#20u5kLbILeKmYBpz"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.0.1"/>
@@ -46,24 +46,28 @@
         <version value="0.7.0"/>
     </dependsOn>
     <definition>
-        <grouping id="mdi">
-            <name value="MDI"/>
-            <description value="Resources related to the MDI to EDRS data flow."/>
+        <grouping id="mdi-profiles">
+            <name value="MDI Profiles"/>
+            <description value="Profiles related to the MDI to EDRS data flow."/>
         </grouping>
-        <grouping id="toxicology">
-            <name value="Toxicology"/>
-            <description value="Resources related to the toxicology data flow."/>
+        <grouping id="toxicology-profiles">
+            <name value="Toxicology Profiles"/>
+            <description value="Profiles related to the toxicology data flow."/>
         </grouping>
         <grouping id="participant-examples">
             <name value="Participant Examples"/>
         </grouping>
-        <grouping id="mdi-example">
+        <grouping id="mdi-examples">
             <name value="MDI Examples"/>
             <description value="Examples related to the MDI to EDRS data flow."/>
         </grouping>
         <grouping id="toxicology-examples">
             <name value="Toxicology Examples"/>
-            <description value="Resources related to the related to the toxicology data flow."/>
+            <description value="Examples related to the toxicology data flow."/>
+        </grouping>
+        <grouping id="extensions">
+            <name value="Extensions"/>
+            <description value="Extensions defined for this implementation guide"/>
         </grouping>
         <resource>
             <reference>
@@ -73,7 +77,7 @@
             <name value="Composition - MDI to EDRS"/>
             <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to an EDRS."/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -83,7 +87,7 @@
             <name value="DiagnosticReport - Toxicology Lab Result to MDI"/>
             <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a toxicology lab information system to an MDI case management system."/>
             <exampleBoolean value="false"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -93,7 +97,7 @@
             <name value="Specimen - Toxicology Lab"/>
             <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
             <exampleBoolean value="false"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -103,7 +107,7 @@
             <name value="MessageHeader - Toxicology to MDI"/>
             <description value="This MessageHeader identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
             <exampleBoolean value="false"/>
-            <groupingId value="toxicology"/>
+            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -122,6 +126,7 @@
             <name value="Extension - Tracking Number"/>
             <description value="This Extension contains a tracking number, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
         </resource>
         <resource>
             <reference>
@@ -140,7 +145,7 @@
             <name value="Observation - Death Injury/Event Occurred at Work"/>
             <description value="This Observation identifies whether or not death resulted from events or an injury that occurred at work."/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -150,7 +155,7 @@
             <name value="Observation - How Death Injury Occurred"/>
             <description value="This Observation provides the certified explanation of how the injury leading to death occurred."/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -184,7 +189,7 @@
             <name value="Observation - Tobacco Use Contributed To Death"/>
             <description value="Observation - Tobacco Use Contributed To Death"/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -194,7 +199,7 @@
             <name value="Observation - Decedent Pregnancy"/>
             <description value="Observation - Decedent Pregnancy"/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -204,7 +209,7 @@
             <name value="Observation - Death Date"/>
             <description value="Observation - Death Date"/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -214,7 +219,7 @@
             <name value="Condition - Cause Of Death"/>
             <description value="The Condition - Cause of Death profile reflects one of the eventually ordered causes of death asserted by the death certifier. The cause of death is initially specified with text. The Cause Of Death Condition profile builds upon the US Core Condition profile."/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -224,7 +229,7 @@
             <name value="List - Cause of Death Pathway"/>
             <description value="Cause of Death Pathway is an ordered list of cause of death conditions."/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -234,7 +239,7 @@
             <name value="Condition - Other Contributing To Death"/>
             <description value="The Condition - Other Contributing to Death profile is used to identify factors contributing to the cause of death as asserted by the death certifier. This profile builds upon the US Core Condition profile."/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -244,7 +249,7 @@
             <name value="Observation - Manner of Death"/>
             <description value="The conclusion arrived at upon completion of death investigation regarding the manner of death."/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -254,7 +259,7 @@
             <name value="DocumentReference - MDI Case Notes Summary"/>
             <description value="DocumentReference - MDI Case Notes Summary"/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -264,7 +269,7 @@
             <name value="DocumentReference - MDI Case History"/>
             <description value="DocumentReference - MDI Case History"/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -274,6 +279,7 @@
             <name value="Extension - Location"/>
             <description value="The location of the observed phenomenon or entity that is the subject of the observation."/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
         </resource>
         <resource>
             <reference>
@@ -283,6 +289,7 @@
             <name value="Extension -Agency Case History Notes"/>
             <description value="Extension -Agency Case History Notes"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
         </resource>
         <resource>
             <reference>
@@ -460,7 +467,7 @@
             <description value="Example of Observation - Decedent pregnancy - Rogers"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -477,7 +484,7 @@
             <description value="Example of Condition - Cause of death - Rogers - Staphylococcal sepsis"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -486,7 +493,7 @@
             <description value="Example of Observation - Death date - Rogers"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -495,7 +502,7 @@
             <description value="Example of Observation - How Death Injury Occurred - Rogers - Medication ingestion"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -504,7 +511,7 @@
             <description value="Example of Condition - Other Condition Contributing to Death - Rogers - Diabetes"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-other-contributing-to-death"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -513,7 +520,7 @@
             <description value="Example of Observation - Manner of Death - Rogers - Accidental"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -522,7 +529,7 @@
             <description value="Example of Observation - Tobacco Use - Rogers"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -531,7 +538,7 @@
             <description value="Example of Observation - Death Injury at Work - Rogers"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -540,7 +547,7 @@
             <description value="Example of List - Cause of Death Pathway - Rogers - Sepsis"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -548,7 +555,7 @@
             <name value="Observation - ODH Usual Work - Rogers"/>
             <description value="Example of Observation - ODH Usual Work - Rogers"/>
             <exampleBoolean value="true"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -556,7 +563,7 @@
             <name value="US Core Condition - Rogers - Gangrene"/>
             <description value="Example of US Core Condition - Rogers - Gangrene"/>
             <exampleBoolean value="true"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -567,7 +574,7 @@
             <description value="Example of Composition - MDI to EDRS - Rogers"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -575,7 +582,7 @@
             <name value="US Core Location - Death - Rogers"/>
             <description value="Example of US Core Location - Death - Rogers"/>
             <exampleBoolean value="true"/>
-            <groupingId value="mdi-example"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
