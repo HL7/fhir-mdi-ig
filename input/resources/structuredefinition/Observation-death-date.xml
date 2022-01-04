@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2022-01-04T00:58:48.899+00:00"/>
-        <source value="#b0FxYR2RdeqfHwVW"/>
+        <versionId value="16"/>
+        <lastUpdated value="2022-01-04T01:09:39.918+00:00"/>
+        <source value="#Emc8QDjVcIBTAlQp"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     <name value="ObservationDeathDate"/>
@@ -142,15 +142,15 @@
         </element>
         <element id="Observation.component.code">
             <path value="Observation.component.code"/>
+            <short value="Date and time pronounced dead [US Standard Certificate of Death]"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="80616-6"/>
-                    <display value="Date and time pronounced dead [US Standard Certificate of Death]"/>
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.component.value[x]">
