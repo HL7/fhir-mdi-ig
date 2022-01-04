@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="171"/>
-        <lastUpdated value="2022-01-03T23:37:48.385+00:00"/>
-        <source value="#SsbP2WTGKQ9oiaaB"/>
+        <versionId value="172"/>
+        <lastUpdated value="2022-01-04T01:06:11.718+00:00"/>
+        <source value="#u4teFT9h3Nsx7lIN"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.0.1"/>
@@ -53,6 +53,9 @@
         <grouping id="toxicology">
             <name value="Toxicology"/>
             <description value="Resources related to the toxicology data flow."/>
+        </grouping>
+        <grouping id="participant-examples">
+            <name value="Participant Examples"/>
         </grouping>
         <grouping id="mdi-example">
             <name value="MDI Examples"/>
@@ -155,6 +158,7 @@
             <name value="US Core Practitioner - Dr. Bruce Goldberger"/>
             <description value="Example US Core Practitioner - Dr. Bruce Goldberger"/>
             <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>
@@ -162,6 +166,7 @@
             <name value="US Core Practitioner - Dr. Sam Jones"/>
             <description value="Example US Core Practitioner - Dr. Sam Jones"/>
             <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>
@@ -169,6 +174,7 @@
             <name value="US Core Practitioner - Dr. Jane Jones"/>
             <description value="Example US Core Practitioner - Dr. Jane Jones"/>
             <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>
@@ -445,6 +451,7 @@
             <description value="DocumentReference for Agency Case History text"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
@@ -461,12 +468,13 @@
             <name value="US Core Patient - Jasmine Rogers"/>
             <description value="US Core Patient Jasmine Rogers"/>
             <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Condition/condition-cause-of-death-j-rogers-1-staph-sepsis"/></reference>
-            <name value="Condition - Cause of death - Rogers - 1. Staphylococcal sepsis"/>
-            <description value="Condition - Cause of death - Rogers - 1. Staphylococcal sepsis"/>
+            <name value="Condition - Cause of death - Rogers - Staphylococcal sepsis"/>
+            <description value="Condition - Cause of death - Rogers - Staphylococcal sepsis"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
             <groupingId value="mdi-example"/>
@@ -501,7 +509,7 @@
         <resource>
             <reference>
                 <reference value="Observation/manner-of-death-j-rogers-accidental"/></reference>
-            <name value="Observation - Manner of death - Rogers - accidental"/>
+            <name value="Observation - Manner of death - Rogers - Accidental"/>
             <description value="Observation - Manner of death - Rogers - accidental"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
@@ -575,7 +583,7 @@
             <name value="Us Core Patient - Alice J. Freeman"/>
             <description value="Us Core Patient - Alice J. Freeman"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology-examples"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
