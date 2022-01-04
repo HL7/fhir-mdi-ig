@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-etoh-gas-chromatography-urine"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-12-21T23:46:22.172+00:00"/>
-        <source value="#Ry2aw2liwK53BYG4"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-01-03T23:43:01.432+00:00"/>
+        <source value="#qs2LRsRvYNm989KV"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     </meta>
     <status value="final"/>
@@ -26,8 +26,8 @@
         <text value="Ethanol [Mass/volume] in Urine by Confirmatory method"/>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-t-snyder"/>
-        <display value="Thomas Snyder"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
+        <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
     <valueQuantity>

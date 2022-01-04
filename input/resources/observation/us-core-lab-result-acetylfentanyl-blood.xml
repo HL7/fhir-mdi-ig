@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-acetylfentanyl-blood"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-21T21:44:43.538+00:00"/>
-        <source value="#AiX5QWhvw0QzoNqi"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-01-03T23:41:00.696+00:00"/>
+        <source value="#vb3I6iYEEx5gAqTL"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     </meta>
     <status value="final"/>
@@ -26,8 +26,8 @@
         <text value="Acetyl norfentanyl [Mass/volume] in Serum, Plasma or Blood by Confirmatory method"/>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-t-snyder"/>
-        <display value="Thomas Snyder"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
+        <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
     <valueQuantity>

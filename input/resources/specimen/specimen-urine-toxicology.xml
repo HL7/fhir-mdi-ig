@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-urine-toxicology"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-12-22T18:53:46.528+00:00"/>
-        <source value="#d8KHg5uhIVhDcixT"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-01-03T23:46:38.969+00:00"/>
+        <source value="#BIhhYfWxSlBs1xks"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
@@ -21,7 +21,7 @@
         </coding>
     </type>
     <subject>
-        <reference value="Patient/us-core-patient-t-snyder"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
     <receivedTime value="2021-12-03T16:00:00Z"/>
     <collection>

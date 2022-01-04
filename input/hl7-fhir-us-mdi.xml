@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="169"/>
-        <lastUpdated value="2021-12-23T05:19:47.592+00:00"/>
-        <source value="#aBN6nGoOCZcdm0Xz"/>
+        <versionId value="171"/>
+        <lastUpdated value="2022-01-03T23:37:48.385+00:00"/>
+        <source value="#SsbP2WTGKQ9oiaaB"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.0.1"/>
@@ -216,7 +216,7 @@
                 <display value="List - Cause of Death Pathway"/>
             </reference>
             <name value="List - Cause of Death Pathway"/>
-            <description value="Cause of Death Pathway is an ordered list of cause of death conditions. It builds upon the FHIR LIST resource. The source of the Cause of Death Pathway (LIST.source) is a US Core Practioner."/>
+            <description value="Cause of Death Pathway is an ordered list of cause of death conditions."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi"/>
         </resource>
@@ -287,13 +287,6 @@
             <description value="UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
             <exampleBoolean value="true"/>
             <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/us-core-patient-t-snyder"/></reference>
-            <name value="US Core Patient - Thomas Snyder"/>
-            <description value="Example US Core Patient Thomas Snyder"/>
-            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
@@ -575,6 +568,14 @@
             <description value="Example of US Core Location - Death - Rogers"/>
             <exampleBoolean value="true"/>
             <groupingId value="mdi-example"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/us-core-patient-a-freeman"/></reference>
+            <name value="Us Core Patient - Alice J. Freeman"/>
+            <description value="Us Core Patient - Alice J. Freeman"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

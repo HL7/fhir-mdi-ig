@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-other-contributing-to-death"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-20T22:06:20.453+00:00"/>
-        <source value="#4r6BknZC7l0oFk1a"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-01-03T23:38:57.856+00:00"/>
+        <source value="#wx0fKP8XghLEg7ca"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-other-contributing-to-death"/>
     <version value="1.0"/>
@@ -32,15 +32,24 @@
         </element>
         <element id="Condition.category">
             <path value="Condition.category"/>
-            <min value="1"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="$this"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Condition.category:death-diagnosis">
+            <path value="Condition.category"/>
+            <sliceName value="death-diagnosis"/>
             <max value="1"/>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://snomed.info/sct"/>
                     <code value="16100001"/>
-                    <display value="Death diagnosis"/>
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
@@ -72,6 +81,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

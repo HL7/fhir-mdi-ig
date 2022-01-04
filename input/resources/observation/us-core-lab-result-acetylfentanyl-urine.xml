@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-acetylfentanyl-urine"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-21T21:44:43.572+00:00"/>
-        <source value="#r14Bk9kduEBoT5UA"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-01-03T23:42:35.886+00:00"/>
+        <source value="#FtcTJrp0Bn7VzTvO"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     </meta>
     <status value="final"/>
@@ -26,8 +26,8 @@
         <text value="Acetyl fentanyl [Presence] in Urine by Confirmatory method"/>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-t-snyder"/>
-        <display value="Thomas Snyder"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
+        <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
     <valueBoolean value="true"/>

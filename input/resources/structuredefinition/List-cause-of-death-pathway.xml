@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="List-cause-of-death-pathway"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-12-22T21:40:47.360+00:00"/>
-        <source value="#NxSKS34xlnNMrCzQ"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-01-03T23:37:30.936+00:00"/>
+        <source value="#SZeN5QWamrwqC939"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
     <name value="ListCauseOfDeathPathway"/>
     <title value="List - Cause of Death Pathway"/>
     <status value="draft"/>
-    <description value="Cause of Death Pathway is an ordered list of cause of death conditions. It builds upon the FHIR LIST resource. The source of the Cause of Death Pathway (LIST.source) is a US Core Practioner."/>
+    <description value="Cause of Death Pathway is an ordered list of cause of death conditions."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -37,6 +37,7 @@
                 <code value="code"/>
             </type>
             <fixedCode value="current"/>
+            <mustSupport value="true"/>
         </element>
         <element id="List.mode">
             <path value="List.mode"/>
@@ -47,6 +48,7 @@
                 <code value="code"/>
             </type>
             <fixedCode value="snapshot"/>
+            <mustSupport value="true"/>
         </element>
         <element id="List.subject">
             <path value="List.subject"/>
@@ -66,37 +68,27 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
-        </element>
-        <element id="List.orderedBy">
-            <path value="List.orderedBy"/>
-            <short value="Sorted by Priority"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/list-order"/>
-                    <code value="priority"/>
-                </coding>
-            </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="List.entry">
             <path value="List.entry"/>
-            <short value="entry"/>
+            <label value="The first entry.item is the IMMEDIATE CAUSE (Final disease or condition resulting in death), for each subsequent entry.item, sequentially list conditions, if any, leading to the cause recorded in the first entry.item, the last entry.item is the UNDERLYING CAUSE (disease or injury that initiated the events resulting in death)"/>
+            <short value="The first entry.item is the IMMEDIATE CAUSE, for each subsequent entry.item, sequentially list conditions, if any, leading to the cause recorded in the first entry.item, the last entry.item is the UNDERLYING CAUSE"/>
             <min value="1"/>
             <max value="5"/>
+            <mustSupport value="true"/>
         </element>
         <element id="List.entry.item">
             <path value="List.entry.item"/>
-            <short value="item"/>
+            <label value="One cause of death"/>
+            <short value="One cause of death"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

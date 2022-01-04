@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patient
     xmlns="http://hl7.org/fhir">
-    <id value="us-core-patient-t-snyder"/>
+    <id value="us-core-patient-a-freeman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-12-21T23:44:47.252+00:00"/>
-        <source value="#bAOdTFRnBANhpKaD"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-01-03T23:36:30.957+00:00"/>
+        <source value="#RtF57QYV0s1aUwl7"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <div class="hapiHeaderText">Thomas 
-                <b>SNYDER </b>
+            <div class="hapiHeaderText">Alice J. 
+                <b>FREEMAN </b>
             </div>
             <table class="hapiPropertyTable">
                 <tbody>
@@ -24,7 +24,7 @@
                     <tr>
                         <td>Date of birth</td>
                         <td>
-                            <span>18 January 2001</span>
+                            <span>12 March 1978</span>
                         </td>
                     </tr>
                 </tbody>
@@ -32,19 +32,28 @@
         </div>
     </text>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
-        <extension url="ombCategory">
+        <extension url="detailed">
             <valueCoding>
                 <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                <code value="2106-3"/>
-                <display value="White"/>
+                <code value="2029-4"/>
+                <display value="Asian Indian"/>
             </valueCoding>
         </extension>
         <extension url="text">
-            <valueString value="White"/>
+            <valueString value="Asian Indian"/>
         </extension>
     </extension>
-    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
-        <valueCode value="M"/>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                <code value="2186-5"/>
+                <display value="Not Hispanic or Latino"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="Asian Indian"/>
+        </extension>
     </extension>
     <identifier>
         <use value="usual"/>
@@ -61,9 +70,10 @@
     </identifier>
     <active value="true"/>
     <name>
-        <family value="Snyder"/>
-        <given value="Thomas"/>
+        <family value="Freeman"/>
+        <given value="Alice"/>
+        <given value="J."/>
     </name>
-    <gender value="male"/>
-    <birthDate value="2001-01-18"/>
+    <gender value="female"/>
+    <birthDate value="1978-03-12"/>
 </Patient>

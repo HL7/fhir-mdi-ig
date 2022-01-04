@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="126"/>
-        <lastUpdated value="2021-12-23T06:12:53.397+00:00"/>
-        <source value="#oMRFjONtC3IdTqKS"/>
+        <versionId value="130"/>
+        <lastUpdated value="2022-01-03T23:51:16.502+00:00"/>
+        <source value="#AzSPNu1sgraIPseo"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDItoEDRS"/>
@@ -142,7 +142,7 @@
             </slicing>
             <short value="Entries that are contained in the Demographics section"/>
             <definition value="Entries that are contained in the Demographics section"/>
-            <min value="0"/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:demographics.entry:decedent-occupation-industry">
@@ -459,24 +459,7 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:narratives.entry:case-notes-summary">
-            <path value="Composition.section.entry"/>
-            <sliceName value="case-notes-summary"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:narratives.entry:case-history">
-            <path value="Composition.section.entry"/>
-            <sliceName value="case-history"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
-            </type>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
     </differential>

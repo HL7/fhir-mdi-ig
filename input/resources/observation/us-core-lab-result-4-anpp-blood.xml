@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-4-anpp-blood"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-12-21T23:03:49.781+00:00"/>
-        <source value="#e0ywPyvBwvC9kNCt"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-01-03T23:40:28.409+00:00"/>
+        <source value="#Nb8CUrLPCVwZTv1P"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     </meta>
     <status value="final"/>
@@ -26,8 +26,8 @@
         <text value="Despropionylfentanyl [Mass/volume] in Serum or Plasma"/>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-t-snyder"/>
-        <display value="Thomas Snyder"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
+        <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
     <valueBoolean value="true"/>

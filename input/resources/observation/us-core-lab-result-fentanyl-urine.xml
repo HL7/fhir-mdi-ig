@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-fentanyl-urine"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-21T21:44:44.099+00:00"/>
-        <source value="#cbQOWMtHYFW69zZb"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-01-03T23:43:25.169+00:00"/>
+        <source value="#ZFAO2B3el9c6OgHD"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     </meta>
     <status value="final"/>
@@ -26,8 +26,8 @@
         <text value="fentaNYL [Presence] in Urine"/>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-t-snyder"/>
-        <display value="Thomas Snyder"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
+        <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
     <valueBoolean value="true"/>

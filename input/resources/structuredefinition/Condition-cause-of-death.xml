@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-cause-of-death"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-20T22:01:59.688+00:00"/>
-        <source value="#HaAsJOoO5b6gCeCq"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-01-03T23:38:38.015+00:00"/>
+        <source value="#N9IEsnVibjXw7crc"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
     <version value="1.0"/>
@@ -29,6 +29,29 @@
             <short value="id"/>
             <min value="0"/>
             <max value="1"/>
+        </element>
+        <element id="Condition.category">
+            <path value="Condition.category"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="$this"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Condition.category:death-diagnosis">
+            <path value="Condition.category"/>
+            <sliceName value="death-diagnosis"/>
+            <label value="Death diagnosis"/>
+            <short value="Death diagnosis"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="16100001"/>
+                </coding>
+            </patternCodeableConcept>
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
@@ -74,6 +97,7 @@
             <type>
                 <code value="string"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Condition.asserter">
             <path value="Condition.asserter"/>
@@ -84,6 +108,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

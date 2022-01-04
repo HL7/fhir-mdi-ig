@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="mdi-case-history"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-22T20:28:05.734+00:00"/>
-        <source value="#Hd7ajg1eO7s4bI5I"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-01-03T23:39:12.787+00:00"/>
+        <source value="#UBwfcd5D033xYzIL"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
     </meta>
     <status value="current"/>
@@ -26,8 +26,8 @@
         <text value="MDI Case History"/>
     </category>
     <subject>
-        <reference value="Patient/us-core-patient-t-snyder"/>
-        <display value="Thomas Snyder"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
+        <display value="Alice J. Freeman"/>
     </subject>
     <content>
         <attachment>

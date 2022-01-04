@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-observation-location"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-21T00:11:12.198+00:00"/>
-        <source value="#dqLPY2p6DXbum546"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-01-03T23:40:39.013+00:00"/>
+        <source value="#tJSx0S32evO0XXGE"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-observation-location"/>
     <name value="ExtensionLocation"/>
@@ -29,6 +29,7 @@
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-observation-location"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
@@ -39,6 +40,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

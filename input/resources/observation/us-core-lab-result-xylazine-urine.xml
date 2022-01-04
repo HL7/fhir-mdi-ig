@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-xylazine-urine"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-12-21T23:45:22.535+00:00"/>
-        <source value="#s1pvmXM8ZbkTw4HK"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-01-03T23:44:08.537+00:00"/>
+        <source value="#2UezPlUhsHjItCeB"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     </meta>
     <status value="final"/>
@@ -26,8 +26,8 @@
         <text value="Ketamine [Presence] in Urine"/>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-t-snyder"/>
-        <display value="Thomas Snyder"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
+        <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
     <valueBoolean value="true"/>

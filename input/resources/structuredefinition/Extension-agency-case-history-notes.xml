@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-agency-case-history-notes"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-12-21T23:36:46.294+00:00"/>
-        <source value="#7Xskz8YBx3mkHDaI"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-01-03T23:40:26.997+00:00"/>
+        <source value="#4v8aXe3UpabqccdK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-agency-case-history-notes"/>
     <name value="ExtensionAgencyCaseHistoryNotes"/>
@@ -28,6 +28,7 @@
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-agency-case-history-notes"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
@@ -36,6 +37,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
                 <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

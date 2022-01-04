@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-12-21T00:11:12.136+00:00"/>
-        <source value="#sEsjeIIQNWiS5LUA"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-01-03T23:42:05.661+00:00"/>
+        <source value="#aJLA5xtMYWAx5Ntw"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     <name value="ObservationDeathDate"/>
@@ -30,12 +30,14 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.extension:deathLocation">
             <path value="Observation.extension"/>
             <sliceName value="deathLocation"/>
             <min value="0"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.extension:deathLocation.url">
             <path value="Observation.extension.url"/>
@@ -48,6 +50,7 @@
             <min value="1"/>
             <max value="1"/>
             <fixedCode value="final"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -60,6 +63,7 @@
                     <display value="Date+time of death"/>
                 </coding>
             </fixedCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
@@ -69,6 +73,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.effective[x]">
             <path value="Observation.effective[x]"/>
@@ -77,6 +82,7 @@
             <type>
                 <code value="dateTime"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
@@ -86,6 +92,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
@@ -94,6 +101,7 @@
             <type>
                 <code value="dateTime"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.note">
             <path value="Observation.note"/>
@@ -111,11 +119,13 @@
                     <display value="Estimated"/>
                 </coding>
             </fixedCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.component">
             <path value="Observation.component"/>
             <min value="0"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.component.code">
             <path value="Observation.component.code"/>
@@ -128,6 +138,7 @@
                     <display value="Date and time pronounced dead [US Standard Certificate of Death]"/>
                 </coding>
             </fixedCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.component.value[x]">
             <path value="Observation.component.value[x]"/>
@@ -136,6 +147,7 @@
             <type>
                 <code value="dateTime"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

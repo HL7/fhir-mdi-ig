@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-blood-toxicology"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-12-22T18:53:23.706+00:00"/>
-        <source value="#y16d1rLY5eJ1eFz6"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-01-03T23:46:21.214+00:00"/>
+        <source value="#7bF3ocn9ljwiqdbT"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
@@ -21,7 +21,7 @@
         </coding>
     </type>
     <subject>
-        <reference value="Patient/us-core-patient-t-snyder"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
     <receivedTime value="2021-12-03T16:00:00Z"/>
     <collection>
