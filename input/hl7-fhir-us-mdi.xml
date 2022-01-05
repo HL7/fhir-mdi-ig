@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="185"/>
-        <lastUpdated value="2022-01-04T23:48:14.177+00:00"/>
-        <source value="#igGosD20AXaVX3aY"/>
+        <versionId value="188"/>
+        <lastUpdated value="2022-01-05T02:10:57.568+00:00"/>
+        <source value="#5S122Us8DfIlw92R"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.0.1"/>
@@ -54,9 +54,6 @@
             <name value="Toxicology Profiles"/>
             <description value="Profiles related to the toxicology data flow."/>
         </grouping>
-        <grouping id="participant-examples">
-            <name value="Participant Examples"/>
-        </grouping>
         <grouping id="mdi-examples">
             <name value="MDI Examples"/>
             <description value="Examples related to the MDI to EDRS data flow."/>
@@ -65,10 +62,56 @@
             <name value="Toxicology Examples"/>
             <description value="Examples related to the toxicology data flow."/>
         </grouping>
+        <grouping id="participant-examples">
+            <name value="Participant Examples"/>
+        </grouping>
         <grouping id="extensions">
             <name value="Extensions"/>
             <description value="Extensions defined for this implementation guide"/>
         </grouping>
+        <resource>
+            <reference>
+                <reference value="Binary/agency-case-notes"/></reference>
+            <name value="Binary - base64 encoded plain text of Agency Case History and Notes"/>
+            <description value="Example of Binary - base64 encoded plain text of Agency Case History and Notes"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-document-mdi-to-edrs"/>
+                <display value="Bundle - Document MDI to EDRS"/>
+            </reference>
+            <name value="Bundle - Document MDI to EDRS"/>
+            <description value="This Bundle profile represents a MDI to EDRS Document Bundle. It contains a Composition - MDI to EDRS."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-mdi-to-edrs-j-rogers"/></reference>
+            <name value="Bundle - Document MDI to EDRS - Rogers"/>
+            <description value="Example of Bundle - Document MDI to EDRS - Rogers"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/mdi-tox-report-message-bundle"/></reference>
+            <name value="Bundle - Message Toxicology to MDI - Freeman"/>
+            <description value="Bundle - Document MDI to EDRS"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-mdi-codes"/>
+                <display value="MDI Code System"/>
+            </reference>
+            <name value="CodeSystem - MDI"/>
+            <description value="This code system contains codes for use in MDI."/>
+            <exampleBoolean value="false"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-mdi-to-edrs"/>
@@ -76,6 +119,55 @@
             </reference>
             <name value="Composition - MDI to EDRS"/>
             <description value="This Composition profile contains constraints to address the use case for sending data from an MDI case management system to an EDRS."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-mdi-to-edrs-j-rogers"/>
+                <display value="MDI to EDRS Composition"/>
+            </reference>
+            <name value="Composition - MDI to EDRS - Rogers"/>
+            <description value="Example of Composition - MDI to EDRS - Rogers"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-cause-of-death"/>
+                <display value="Condition - Cause Of Death"/>
+            </reference>
+            <name value="Condition - Cause Of Death"/>
+            <description value="The Condition - Cause of Death profile reflects one of the eventually ordered causes of death asserted by the death certifier. The cause of death is initially specified with text. The Cause Of Death Condition profile builds upon the US Core Condition profile."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-cause-of-death-j-rogers-1-staph-sepsis"/></reference>
+            <name value="Condition - Cause of death - Rogers - Staphylococcal sepsis"/>
+            <description value="Example of Condition - Cause of death - Rogers - Staphylococcal sepsis"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-other-contributing-to-death-j-rogers-diabetes"/></reference>
+            <name value="Condition - Other Condition Contributing to Death - Rogers - Diabetes"/>
+            <description value="Example of Condition - Other Condition Contributing to Death - Rogers - Diabetes"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-other-contributing-to-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-other-contributing-to-death"/>
+                <display value="Condition - Other Contributing To Death"/>
+            </reference>
+            <name value="Condition - Other Contributing To Death"/>
+            <description value="The Condition - Other Contributing to Death profile is used to identify factors contributing to the cause of death as asserted by the death certifier. This profile builds upon the US Core Condition profile."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -91,163 +183,20 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Specimen-toxicology-lab"/>
-                <display value="SpecimenToxicologyLab"/>
-            </reference>
-            <name value="Specimen - Toxicology Lab"/>
-            <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
+                <reference value="DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/></reference>
+            <name value="DiagnosticReport - Toxicology to MDI - Resulting Toxicology Report"/>
+            <description value="Example of DiagnosticReport Toxicology to MDI - Resulting Toxicology Report"/>
             <exampleBoolean value="false"/>
-            <groupingId value="toxicology-profiles"/>
+            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/MessageHeader-toxicology-to-mdi"/>
-                <display value="MessageHeaderToxicologyToMDI"/>
+                <reference value="StructureDefinition/DocumentReference-mdi-case-history"/>
+                <display value="DocumentReference - MDI Case History"/>
             </reference>
-            <name value="MessageHeader - Toxicology to MDI"/>
-            <description value="This MessageHeader identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="toxicology-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/CodeSystem-mdi-codes"/>
-                <display value="MDI Code System"/>
-            </reference>
-            <name value="MDI Code System"/>
-            <description value="This code system contains codes for use in MDI."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-tracking-number"/>
-                <display value="Extension - Tracking Number"/>
-            </reference>
-            <name value="Extension - Tracking Number"/>
-            <description value="This Extension contains a tracking number, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-tracking-number-type"/>
-                <display value="Tracking Number Type"/>
-            </reference>
-            <name value="Tracking Number Type"/>
-            <description value="This value set contains codes to that identify the type of tracking number."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-death-injury-at-work"/>
-                <display value="Observation - Death Injury/Event Occurred at Work"/>
-            </reference>
-            <name value="Observation - Death Injury/Event Occurred at Work"/>
-            <description value="This Observation identifies whether or not death resulted from events or an injury that occurred at work."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-how-death-injury-occurred"/>
-                <display value="Observation - How Death Injury Occurred"/>
-            </reference>
-            <name value="Observation - How Death Injury Occurred"/>
-            <description value="This Observation provides the certified explanation of how the injury leading to death occurred."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/us-core-practitioner-b-goldberger"/></reference>
-            <name value="US Core Practitioner - Dr. Bruce Goldberger"/>
-            <description value="Example of US Core Practitioner - Dr. Bruce Goldberger"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/us-core-practitioner-s-jones"/></reference>
-            <name value="US Core Practitioner - Dr. Sam Jones"/>
-            <description value="Example of US Core Practitioner - Dr. Sam Jones"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/us-core-practitioner-j-jones"/></reference>
-            <name value="US Core Practitioner - Dr. Jane Jones"/>
-            <description value="Example of US Core Practitioner - Dr. Jane Jones"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
-                <display value="Observation Tobacco Use Contributed To Death"/>
-            </reference>
-            <name value="Observation - Tobacco Use Contributed To Death"/>
-            <description value="Observation - Tobacco Use Contributed To Death"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-decedent-pregnancy"/>
-                <display value="Observation - Decedent Pregnancy"/>
-            </reference>
-            <name value="Observation - Decedent Pregnancy"/>
-            <description value="Observation - Decedent Pregnancy"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-death-date"/>
-                <display value="Observation - Death Date"/>
-            </reference>
-            <name value="Observation - Death Date"/>
-            <description value="Observation - Death Date"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Condition-cause-of-death"/>
-                <display value="Condition - Cause Of Death"/>
-            </reference>
-            <name value="Condition - Cause Of Death"/>
-            <description value="The Condition - Cause of Death profile reflects one of the eventually ordered causes of death asserted by the death certifier. The cause of death is initially specified with text. The Cause Of Death Condition profile builds upon the US Core Condition profile."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/List-cause-of-death-pathway"/>
-                <display value="List - Cause of Death Pathway"/>
-            </reference>
-            <name value="List - Cause of Death Pathway"/>
-            <description value="Cause of Death Pathway is an ordered list of cause of death conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Condition-other-contributing-to-death"/>
-                <display value="Condition - Other Contributing To Death"/>
-            </reference>
-            <name value="Condition - Other Contributing To Death"/>
-            <description value="The Condition - Other Contributing to Death profile is used to identify factors contributing to the cause of death as asserted by the death certifier. This profile builds upon the US Core Condition profile."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-manner-of-death"/>
-                <display value="Observation - Manner of Death"/>
-            </reference>
-            <name value="Observation - Manner of Death"/>
-            <description value="The conclusion arrived at upon completion of death investigation regarding the manner of death."/>
+            <name value="DocumentReference - MDI Case History"/>
+            <description value="DocumentReference - MDI Case History"/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -263,13 +212,21 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/DocumentReference-mdi-case-history"/>
-                <display value="DocumentReference - MDI Case History"/>
-            </reference>
-            <name value="DocumentReference - MDI Case History"/>
-            <description value="DocumentReference - MDI Case History"/>
+                <reference value="DocumentReference/mdi-case-history"/></reference>
+            <name value="DocumentReference MDI Case History - Agency Case History text"/>
+            <description value="Example of DocumentReference MDI Case History - Agency Case History text"/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DocumentReference/mdi-agency-case-notes-summary"/></reference>
+            <name value="DocumentReference MDI Case Notes Summary - Agency History and Notes text"/>
+            <description value="Example of DocumentReference MDI Case Notes Summary - Agency History and Notes text"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
@@ -278,6 +235,16 @@
             </reference>
             <name value="Extension - Location"/>
             <description value="The location of the observed phenomenon or entity that is the subject of the observation."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-tracking-number"/>
+                <display value="Extension - Tracking Number"/>
+            </reference>
+            <name value="Extension - Tracking Number"/>
+            <description value="This Extension contains a tracking number, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -293,37 +260,179 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Organization/us-core-organization-tox-lab"/>
-                <display value="UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
+                <reference value="StructureDefinition/List-cause-of-death-pathway"/>
+                <display value="List - Cause of Death Pathway"/>
             </reference>
-            <name value="US Core Organization - UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
-            <description value="Example of US Core Organization - UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology-examples"/>
+            <name value="List - Cause of Death Pathway"/>
+            <description value="Cause of Death Pathway is an ordered list of cause of death conditions."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="List/list-cause-of-death-pathway-j-rogers"/></reference>
+            <name value="List - Cause of Death Pathway - Rogers - Sepsis"/>
+            <description value="Example of List - Cause of Death Pathway - Rogers - Sepsis"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+                <display value="MessageHeaderToxicologyToMDI"/>
+            </reference>
+            <name value="MessageHeader - Toxicology to MDI"/>
+            <description value="This MessageHeader identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MessageHeader/mdi-tox-result-report"/></reference>
-            <name value="Toxicology Report Result for Medical Examiner/Coroner"/>
-            <description value="Example of MessageHeader Toxicology to MDI - Toxicology Report Result for Medical Examiner/Coroner"/>
+            <name value="MessageHeader - Toxicology to MDI - Report Result for Medical Examiner/Coroner"/>
+            <description value="Example of MessageHeader - Toxicology to MDI - Toxicology Report Result for Medical Examiner/Coroner"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
             <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
-                <reference value="DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/></reference>
-            <name value="DiagnosticReport Resulting Toxicology Report"/>
-            <description value="Example of DiagnosticReport Toxicology to MDI - Resulting Toxicology Report"/>
+                <reference value="StructureDefinition/Observation-death-date"/>
+                <display value="Observation - Death Date"/>
+            </reference>
+            <name value="Observation - Death Date"/>
+            <description value="Observation - Death Date"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
-            <groupingId value="toxicology-examples"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/death-date-j-rogers"/></reference>
+            <name value="Observation - Death Date - Rogers"/>
+            <description value="Example of Observation - Death date - Rogers"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/death-injury-at-work-j-rogers"/></reference>
+            <name value="Observation - Death Injury at Work - Rogers"/>
+            <description value="Example of Observation - Death Injury at Work - Rogers"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-death-injury-at-work"/>
+                <display value="Observation - Death Injury/Event Occurred at Work"/>
+            </reference>
+            <name value="Observation - Death Injury/Event Occurred at Work"/>
+            <description value="This Observation identifies whether or not death resulted from events or an injury that occurred at work."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-decedent-pregnancy"/>
+                <display value="Observation - Decedent Pregnancy"/>
+            </reference>
+            <name value="Observation - Decedent Pregnancy"/>
+            <description value="Observation - Decedent Pregnancy"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/decedent-pregnancy-j-rogers"/></reference>
+            <name value="Observation - Decedent Pregnancy - Rogers"/>
+            <description value="Example of Observation - Decedent pregnancy - Rogers"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-how-death-injury-occurred"/>
+                <display value="Observation - How Death Injury Occurred"/>
+            </reference>
+            <name value="Observation - How Death Injury Occurred"/>
+            <description value="This Observation provides the certified explanation of how the injury leading to death occurred."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/how-death-injury-occurred-j-rogers-med-ingest"/></reference>
+            <name value="Observation - How Death Injury Occurred - Rogers - Medication ingestion"/>
+            <description value="Example of Observation - How Death Injury Occurred - Rogers - Medication ingestion"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-manner-of-death"/>
+                <display value="Observation - Manner of Death"/>
+            </reference>
+            <name value="Observation - Manner of Death"/>
+            <description value="The conclusion arrived at upon completion of death investigation regarding the manner of death."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/manner-of-death-j-rogers-accidental"/></reference>
+            <name value="Observation - Manner of Death - Rogers - Accidental"/>
+            <description value="Example of Observation - Manner of Death - Rogers - Accidental"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-odh-usual-work-j-rogers"/></reference>
+            <name value="Observation - ODH Usual Work - Rogers"/>
+            <description value="Example of Observation - ODH Usual Work - Rogers"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/tobacco-use-j-rogers"/></reference>
+            <name value="Observation - Tobacco Use - Rogers"/>
+            <description value="Example of Observation - Tobacco Use - Rogers"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
+                <display value="Observation Tobacco Use Contributed To Death"/>
+            </reference>
+            <name value="Observation - Tobacco Use Contributed To Death"/>
+            <description value="Observation - Tobacco Use Contributed To Death"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Specimen-toxicology-lab"/>
+                <display value="SpecimenToxicologyLab"/>
+            </reference>
+            <name value="Specimen - Toxicology Lab"/>
+            <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Specimen/specimen-blood-toxicology"/></reference>
-            <name value="Blood Specimen for Toxicology Lab analysis"/>
-            <description value="Example of Specimen Toxicology Lab - Blood Specimen for Tox Lab analysis"/>
+            <name value="Specimen Toxicology Lab - Blood specimen analysis"/>
+            <description value="Example of Specimen Toxicology Lab - Blood specimen analysis"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -331,7 +440,7 @@
         <resource>
             <reference>
                 <reference value="Specimen/specimen-urine-toxicology"/></reference>
-            <name value="Urine Specimen for Toxicology Lab analysis"/>
+            <name value="Specimen Toxicology Lab - Urine Specimen for Toxicology Lab analysis"/>
             <description value="Example of Specimen Toxicology Lab - Urine Specimen for Toxicology Lab analysis"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
@@ -340,7 +449,7 @@
         <resource>
             <reference>
                 <reference value="Specimen/specimen-vitreous-humor-toxicology"/></reference>
-            <name value="Vitreous Humor Specimen for Toxicology Lab analysis"/>
+            <name value="Specimen Toxicology Lab - Vitreous Humor Specimen for Toxicology Lab analysis"/>
             <description value="Example of Specimen Toxicology Lab - Vitreous Humor Specimen for Toxicology Lab analysis"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
@@ -348,11 +457,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-blood"/></reference>
-            <name value="US Core Lab Result - Blood ethanol lab test result"/>
-            <description value="Example of US Core Lab Result - Blood ethanol lab test result"/>
+                <reference value="Condition/us-core-condition-j-rogers-gangrene"/></reference>
+            <name value="US Core Condition - Rogers - Gangrene"/>
+            <description value="Example of US Core Condition - Rogers - Gangrene"/>
             <exampleBoolean value="true"/>
-            <groupingId value="toxicology-examples"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -380,9 +489,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-urine"/></reference>
-            <name value="US Core Lab Result - Urine ethanol lab test result"/>
-            <description value="Example of US Core Lab Result - Urine ethanol lab test result"/>
+                <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-blood"/></reference>
+            <name value="US Core Lab Result - Blood ethanol lab test result"/>
+            <description value="Example of US Core Lab Result - Blood ethanol lab test result"/>
             <exampleBoolean value="true"/>
             <groupingId value="toxicology-examples"/>
         </resource>
@@ -399,6 +508,14 @@
                 <reference value="Observation/us-core-lab-result-acetylfentanyl-urine"/></reference>
             <name value="US Core Lab Result - Urine acetylfentanyl lab test result"/>
             <description value="Example of US Core Lab Result - Urine acetylfentanyl lab test result"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-urine"/></reference>
+            <name value="US Core Lab Result - Urine ethanol lab test result"/>
+            <description value="Example of US Core Lab Result - Urine ethanol lab test result"/>
             <exampleBoolean value="true"/>
             <groupingId value="toxicology-examples"/>
         </resource>
@@ -436,153 +553,21 @@
         </resource>
         <resource>
             <reference>
-                <reference value="DocumentReference/mdi-agency-case-notes-summary"/></reference>
-            <name value="DocumentReference for Agency Case Summary and Notes text"/>
-            <description value="Example of DocumentReference MDI Case Notes Summary - Agency History and Notes text"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
-            <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Binary/agency-case-notes"/></reference>
-            <name value="Binary containing the base64 encoded plain text of Agency Case History and Notes"/>
-            <description value="Example of Binary - base64 encoded plain text of Agency Case History and Notes"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/mdi-case-history"/></reference>
-            <name value="DocumentReference for Agency Case History text"/>
-            <description value="Example of DocumentReference MDI Case History - Agency Case History text"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
-            <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/decedent-pregnancy-j-rogers"/></reference>
-            <name value="Observation - Decedent pregnancy - Rogers"/>
-            <description value="Example of Observation - Decedent pregnancy - Rogers"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/us-core-patient-j-rogers"/></reference>
-            <name value="US Core Patient - Jasmine Rogers"/>
-            <description value="Example of US Core Patient - Jasmine Rogers"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-cause-of-death-j-rogers-1-staph-sepsis"/></reference>
-            <name value="Condition - Cause of death - Rogers - Staphylococcal sepsis"/>
-            <description value="Example of Condition - Cause of death - Rogers - Staphylococcal sepsis"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/death-date-j-rogers"/></reference>
-            <name value="Observation - Death date - Rogers"/>
-            <description value="Example of Observation - Death date - Rogers"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/how-death-injury-occurred-j-rogers-med-ingest"/></reference>
-            <name value="Observation - How Death Injury Occurred - Rogers - Medication ingestion"/>
-            <description value="Example of Observation - How Death Injury Occurred - Rogers - Medication ingestion"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-other-contributing-to-death-j-rogers-diabetes"/></reference>
-            <name value="Condition - Other condition contributing to death - Rogers - diabetes"/>
-            <description value="Example of Condition - Other Condition Contributing to Death - Rogers - Diabetes"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-other-contributing-to-death"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/manner-of-death-j-rogers-accidental"/></reference>
-            <name value="Observation - Manner of Death - Rogers - Accidental"/>
-            <description value="Example of Observation - Manner of Death - Rogers - Accidental"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/tobacco-use-j-rogers"/></reference>
-            <name value="Observation - Tobacco Use - Rogers"/>
-            <description value="Example of Observation - Tobacco Use - Rogers"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/death-injury-at-work-j-rogers"/></reference>
-            <name value="Observation - Death Injury at Work - Rogers"/>
-            <description value="Example of Observation - Death Injury at Work - Rogers"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="List/list-cause-of-death-pathway-j-rogers"/></reference>
-            <name value="List - Cause of death pathway - Rogers - Sepsis"/>
-            <description value="Example of List - Cause of Death Pathway - Rogers - Sepsis"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-odh-usual-work-j-rogers"/></reference>
-            <name value="Observation - ODH Usual Work - Rogers"/>
-            <description value="Example of Observation - ODH Usual Work - Rogers"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/us-core-condition-j-rogers-gangrene"/></reference>
-            <name value="US Core Condition - Rogers - Gangrene"/>
-            <description value="Example of US Core Condition - Rogers - Gangrene"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/composition-mdi-to-edrs-j-rogers"/>
-                <display value="MDI to EDRS Composition"/>
-            </reference>
-            <name value="Composition - MDI to EDRS - Rogers"/>
-            <description value="Example of Composition - MDI to EDRS - Rogers"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Location/us-core-location-death-j-rogers"/></reference>
             <name value="US Core Location - Death - Rogers"/>
             <description value="Example of US Core Location - Death - Rogers"/>
             <exampleBoolean value="true"/>
             <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/us-core-organization-tox-lab"/>
+                <display value="UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
+            </reference>
+            <name value="US Core Organization - UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
+            <description value="Example of US Core Organization - UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
@@ -594,29 +579,44 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/bundle-mdi-to-edrs-j-rogers"/></reference>
-            <name value="Bundle - Document MDI to EDRS - Rogers"/>
-            <description value="Example of Bundle - Document MDI to EDRS - Rogers"/>
+                <reference value="Patient/us-core-patient-j-rogers"/></reference>
+            <name value="US Core Patient - Jasmine Rogers"/>
+            <description value="Example of US Core Patient - Jasmine Rogers"/>
             <exampleBoolean value="true"/>
-            <groupingId value="mdi-examples"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-document-mdi-to-edrs"/>
-                <display value="Bundle - Document MDI to EDRS"/>
+                <reference value="Practitioner/us-core-practitioner-b-goldberger"/></reference>
+            <name value="US Core Practitioner - Dr. Bruce Goldberger"/>
+            <description value="Example of US Core Practitioner - Dr. Bruce Goldberger"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/us-core-practitioner-j-jones"/></reference>
+            <name value="US Core Practitioner - Dr. Jane Jones"/>
+            <description value="Example of US Core Practitioner - Dr. Jane Jones"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/us-core-practitioner-s-jones"/></reference>
+            <name value="US Core Practitioner - Dr. Sam Jones"/>
+            <description value="Example of US Core Practitioner - Dr. Sam Jones"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-tracking-number-type"/>
+                <display value="Tracking Number Type"/>
             </reference>
-            <name value="Bundle - Document MDI to EDRS"/>
-            <description value="This Bundle profile represents a MDI to EDRS Document Bundle. It contains a Composition - MDI to EDRS."/>
+            <name value="ValueSet - Tracking Number Type"/>
+            <description value="This value set contains codes to that identify the type of tracking number."/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/mdi-tox-report-message-bundle"/></reference>
-            <name value="Bundle - Message Toxicology to MDI - Freeman"/>
-            <description value="Bundle - Document MDI to EDRS"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

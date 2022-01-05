@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="mdi-diagnostic-report-toxicology-lab"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-01-03T23:38:42.538+00:00"/>
-        <source value="#tTKPytQiZ3dfYWn1"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-01-05T01:37:19.395+00:00"/>
+        <source value="#A99tlsEidkckkU1Z"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     </meta>
     <text>
@@ -32,6 +32,16 @@
             <system value="http://florida-investigation-agncy.org/fhir/agency-case-numbers"/>
             <value value="ME21-111"/>
         </valueIdentifier>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-agency-case-history-notes">
+        <valueReference>
+            <reference value="DocumentReference/mdi-agency-case-notes-summary"/>
+        </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-agency-case-history-notes">
+        <valueReference>
+            <reference value="DocumentReference/mdi-case-history"/>
+        </valueReference>
     </extension>
     <identifier>
         <type>
@@ -120,7 +130,7 @@
         <display value="XYLAZINE: POSITIVE"/>
     </result>
     <result>
-        <reference value="Observation/us-core-lab-result-xylazine-urine"/>
+        <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/>
         <display value="ETOH VITREOUS HUMOR: 0.133 g/dL"/>
     </result>
 </DiagnosticReport>

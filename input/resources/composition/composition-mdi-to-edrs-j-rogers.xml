@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-mdi-to-edrs-j-rogers"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-12-23T06:21:35.592+00:00"/>
-        <source value="#IdsNLCk9z7nszWUn"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-01-05T01:29:41.925+00:00"/>
+        <source value="#Xwvf9JigSFPuqPPT"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
@@ -66,6 +66,9 @@
         </entry>
         <entry>
             <reference value="Observation/tobacco-use-j-rogers"/>
+        </entry>
+        <entry>
+            <reference value="Observation/decedent-pregnancy-j-rogers"/>
         </entry>
     </section>
     <section>

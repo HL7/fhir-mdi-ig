@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-to-edrs-j-rogers"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-01-04T23:28:49.694+00:00"/>
-        <source value="#BZkZqivmFeOU971m"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-01-05T01:40:33.511+00:00"/>
+        <source value="#SR1THwZDrHtEbFKl"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     </meta>
     <identifier>
@@ -19,6 +19,47 @@
         <resource>
             <Composition>
                 <id value="composition-mdi-to-edrs-j-rogers"/>
+                <text>
+                    <status value="extensions"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "composition-mdi-to-edrs-j-rogers" Version "2" Updated "2021-12-23T06:21:35.592Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #IdsNLCk9z7nszWUn!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="StructureDefinition-Composition-mdi-to-edrs.html">Composition - MDI to EDRS</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>Extension - Tracking Number</b>: Birth Certificate: 15075
+                        </p>
+                        <p>
+                            <b>identifier</b>: id: a03eab8c-11e8-4d0c-ad2a-b385395e27de
+                        </p>
+                        <p>
+                            <b>status</b>: final
+                        </p>
+                        <p>
+                            <b>type</b>: Death administrative information Document 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://loinc.org/">LOINC</a>#86807-5)
+                            </span>
+                        </p>
+                        <p>
+                            <b>date</b>: 2021-12-20
+                        </p>
+                        <p>
+                            <b>author</b>: 
+                            <a href="Practitioner-us-core-practitioner-b-goldberger.html">Practitioner/us-core-practitioner-b-goldberger</a> " GOLDBERGER"
+                        </p>
+                        <p>
+                            <b>title</b>: MDI to EDRS Composition
+                        </p>
+                    </div>
+                </text>
                 <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
                     <valueIdentifier>
                         <type>
@@ -78,6 +119,9 @@
                     <entry>
                         <reference value="Observation/tobacco-use-j-rogers"/>
                     </entry>
+                    <entry>
+                        <reference value="Observation/decedent-pregnancy-j-rogers"/>
+                    </entry>
                 </section>
                 <section>
                     <title value="Jurisdiction Section"/>
@@ -132,6 +176,45 @@
         <resource>
             <Observation>
                 <id value="how-death-injury-occurred-j-rogers-med-ingest"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "how-death-injury-occurred-j-rogers-med-ingest" Version "3" Updated "2021-12-23T05:18:39.1Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #WCDcS8eeMX2nwXfU!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="StructureDefinition-Observation-how-death-injury-occurred.html">Observation - How Death Injury Occurred</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>status</b>: final
+                        </p>
+                        <p>
+                            <b>code</b>: Injury incident description Narrative 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://loinc.org/">LOINC</a>#11374-6)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="Patient-us-core-patient-j-rogers.html">Patient/us-core-patient-j-rogers</a> " ROGERS"
+                        </p>
+                        <p>
+                            <b>effective</b>: 2018-02-19T16:48:06-05:00
+                        </p>
+                        <p>
+                            <b>performer</b>: 
+                            <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        </p>
+                        <p>
+                            <b>value</b>: How person died description
+                        </p>
+                    </div>
+                </text>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -156,6 +239,41 @@
         <resource>
             <Observation>
                 <id value="death-injury-at-work-j-rogers"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "death-injury-at-work-j-rogers" Version "4" Updated "2021-12-23T05:58:31.762Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #spO97QcG21BPuqDu!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="StructureDefinition-Observation-death-injury-at-work.html">Observation - Death Injury/Event Occurred at Work</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>status</b>: final
+                        </p>
+                        <p>
+                            <b>code</b>: Did death result from injury at work 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://loinc.org/">LOINC</a>#69444-8)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="Patient-us-core-patient-j-rogers.html">Patient/us-core-patient-j-rogers</a> " ROGERS"
+                        </p>
+                        <p>
+                            <b>value</b>: No 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0532.html">expandedYes-NoIndicator</a>#N)
+                            </span>
+                        </p>
+                    </div>
+                </text>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -182,6 +300,46 @@
         <resource>
             <Observation>
                 <id value="manner-of-death-j-rogers-accidental"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "manner-of-death-j-rogers-accidental" Version "2" Updated "2021-12-23T04:13:18.315Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #cGxEbkLho3LBKEQK!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="StructureDefinition-Observation-manner-of-death.html">Observation - Manner of Death</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>status</b>: final
+                        </p>
+                        <p>
+                            <b>code</b>: Manner of death 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://loinc.org/">LOINC</a>#69449-7)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="Patient-us-core-patient-j-rogers.html">Patient/us-core-patient-j-rogers</a> " ROGERS"
+                        </p>
+                        <p>
+                            <b>performer</b>: 
+                            <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        </p>
+                        <p>
+                            <b>value</b>: Accidental death 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://browser.ihtsdotools.org/">SNOMED
+                            CT</a>#7878000)
+                            </span>
+                        </p>
+                    </div>
+                </text>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -211,6 +369,44 @@
         <resource>
             <Condition>
                 <id value="condition-other-contributing-to-death-j-rogers-diabetes"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "condition-other-contributing-to-death-j-rogers-diabetes" Version "4" Updated "2021-12-23T05:57:14.682Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #gvG3GrZZSvuZIOis!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="StructureDefinition-Condition-other-contributing-to-death.html">Condition - Other Contributing To Death</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>category</b>: Death diagnosis 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://browser.ihtsdotools.org/">SNOMED
+                            CT</a>#16100001)
+                            </span>
+                        </p>
+                        <p>
+                            <b>code</b>: Diabetes mellitus (disorder) 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://browser.ihtsdotools.org/">SNOMED
+                                CT</a>#73211009)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="Patient-us-core-patient-j-rogers.html">Patient/us-core-patient-j-rogers</a> " ROGERS"
+                        </p>
+                        <p>
+                            <b>asserter</b>: 
+                            <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        </p>
+                    </div>
+                </text>
                 <category>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -240,6 +436,28 @@
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-b-goldberger"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "us-core-practitioner-b-goldberger" Version "1" Updated "2021-12-20T21:14:58.36Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #BzPEtIup8ZTGgv6D!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>identifier</b>: id: 555667777
+                        </p>
+                        <p>
+                            <b>name</b>: Bruce Goldberger (OFFICIAL)
+                        </p>
+                    </div>
+                </text>
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/us-npi"/>
                     <value value="555667777"/>
@@ -258,6 +476,34 @@
         <resource>
             <List>
                 <id value="list-cause-of-death-pathway-j-rogers"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <table class="clstu">
+                            <tr>
+                                <td>Mode: snapshotStatus: current</td>
+                            </tr>
+                            <tr>
+                                <td>Subject: 
+                                    <a href="Patient-us-core-patient-j-rogers.html">Patient/us-core-patient-j-rogers</a> " ROGERS"Source: (null)Order: Sorted by Priority
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="grid">
+                            <tr style="backgound-color: #eeeeee">
+                                <td>
+                                    <b>Items</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="Condition-condition-cause-of-death-j-rogers-1-staph-sepsis.html">Condition/condition-cause-of-death-j-rogers-1-staph-sepsis</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
                 <status value="current"/>
                 <mode value="snapshot"/>
                 <subject>
@@ -286,6 +532,51 @@
         <resource>
             <Location>
                 <id value="us-core-location-death-j-rogers"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "us-core-location-death-j-rogers" Version "3" Updated "2021-12-23T05:47:42.547Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #kulqByBYpAa39CTc!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-location.html">US Core Location Profile</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>identifier</b>: id: 29
+                        </p>
+                        <p>
+                            <b>status</b>: active
+                        </p>
+                        <p>
+                            <b>name</b>: Top of Mount Everest
+                        </p>
+                        <p>
+                            <b>address</b>: 3300 Washtenaw Avenue, Suite 227 Qomolangma Tingri 785 TAR 
+                        </p>
+                        <h3>Positions</h3>
+                        <table class="grid">
+                            <tr>
+                                <td>-</td>
+                                <td>
+                                    <b>Longitude</b>
+                                </td>
+                                <td>
+                                    <b>Latitude</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>27.9881</td>
+                                <td>86.925</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
                 <identifier>
                     <system value="http://www.acme.org/location"/>
                     <value value="29"/>
@@ -374,6 +665,75 @@
         <resource>
             <Observation>
                 <id value="observation-odh-usual-work-j-rogers"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "observation-odh-usual-work-j-rogers" Version "1" Updated "2021-12-23T04:32:19.747Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #dG437xzONB4UaL1V!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="http://hl7.org/fhir/us/odh/STU1.1/StructureDefinition-odh-UsualWork.html">Usual Work</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>status</b>: final
+                        </p>
+                        <p>
+                            <b>code</b>: History of Usual occupation 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://loinc.org/">LOINC</a>#21843-8)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="Patient-us-core-patient-j-rogers.html">Patient/us-core-patient-j-rogers</a> " ROGERS"
+                        </p>
+                        <p>
+                            <b>effective</b>: 2018-06-01 --&gt; (ongoing)
+                        </p>
+                        <p>
+                            <b>value</b>: Nursing, psychiatric, and home health aides 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#3600; unknown#31-1014.00.007136
+                                "Certified Nursing Assistant (CNA) [Nursing Assistants]")</span>
+                        </p>
+                        <blockquote>
+                            <p>
+                                <b>component</b>
+                            </p>
+                            <p>
+                                <b>code</b>: History of Usual industry 
+                                <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                    <a href="https://loinc.org/">LOINC</a>#21844-6)
+                                </span>
+                            </p>
+                            <p>
+                                <b>value</b>: Nursing care facilities 
+                                <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (CodeSystem-PHIndustryCDCCensus2010.html#8270; 
+                                    <a href="http://terminology.hl7.org/3.0.0/CodeSystem-PHOccupationalDataForHealthODH.html">Occupational Data for Health (ODH)</a>#621610.008495 "Home nursing services")
+                                </span>
+                            </p>
+                        </blockquote>
+                        <blockquote>
+                            <p>
+                                <b>component</b>
+                            </p>
+                            <p>
+                                <b>code</b>: Usual occupation duration 
+                                <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                    <a href="https://loinc.org/">LOINC</a>#74163-7)
+                                </span>
+                            </p>
+                            <p>
+                                <b>value</b>: 21 a
+                                <span style="background: LightGoldenRodYellow"> (Details: UCUM code a = 'a')</span>
+                            </p>
+                        </blockquote>
+                    </div>
+                </text>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -444,6 +804,39 @@
         <resource>
             <Condition>
                 <id value="us-core-condition-j-rogers-gangrene"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "us-core-condition-j-rogers-gangrene" Version "1" Updated "2021-12-23T05:04:21.391Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #AjWjUc5wS8pqUKQY!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-condition.html">US Core Condition Profile</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>category</b>: Problem List Item 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)
+                            </span>
+                        </p>
+                        <p>
+                            <b>code</b>: Gangrenous disorder (disorder) 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://browser.ihtsdotools.org/">SNOMED
+                                CT</a>#372070002)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="Patient-us-core-patient-j-rogers.html">Patient/us-core-patient-j-rogers</a> " ROGERS"
+                        </p>
+                    </div>
+                </text>
                 <category>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
@@ -468,6 +861,41 @@
         <resource>
             <Observation>
                 <id value="tobacco-use-j-rogers"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "tobacco-use-j-rogers" Version "2" Updated "2021-12-23T04:13:42.12Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #oSC9DyAigPXsLM3q!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="StructureDefinition-Observation-tobacco-use-contributed-to-death.html">Observation - Tobacco Use Contributed To Death</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>status</b>: final
+                        </p>
+                        <p>
+                            <b>code</b>: Did tobacco use contribute to death 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://loinc.org/">LOINC</a>#69443-0)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="Patient-us-core-patient-j-rogers.html">Patient/us-core-patient-j-rogers</a> " ROGERS"
+                        </p>
+                        <p>
+                            <b>value</b>: Yes 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#373066001)
+                            </span>
+                        </p>
+                    </div>
+                </text>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -494,6 +922,66 @@
         <resource>
             <Observation>
                 <id value="death-date-j-rogers"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "death-date-j-rogers" Version "2" Updated "2021-12-23T04:12:03.61Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #5HlEFyHwudI71bUn!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="StructureDefinition-Observation-death-date.html">Observation - Death Date</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>status</b>: final
+                        </p>
+                        <p>
+                            <b>code</b>: Date+time of death 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://loinc.org/">LOINC</a>#81956-5)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="Patient-us-core-patient-j-rogers.html">Patient/us-core-patient-j-rogers</a> " ROGERS"
+                        </p>
+                        <p>
+                            <b>effective</b>: 2022-01-04T05:30:00-05:00
+                        </p>
+                        <p>
+                            <b>performer</b>: 
+                            <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        </p>
+                        <p>
+                            <b>value</b>: 2022-01-04T05:30:00-05:00
+                        </p>
+                        <h3>Components</h3>
+                        <table class="grid">
+                            <tr>
+                                <td>-</td>
+                                <td>
+                                    <b>Code</b>
+                                </td>
+                                <td>
+                                    <b>Value[x]</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>Date and time pronounced dead [US Standard Certificate of Death] 
+                                    <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                        <a href="https://loinc.org/">LOINC</a>#80616-6)
+                                    </span>
+                                </td>
+                                <td>2022-01-04T05:30:00-05:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -528,6 +1016,28 @@
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-s-jones"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "us-core-practitioner-s-jones" Version "1" Updated "2021-12-20T21:14:58.375Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #O0fK1HIgeg72P9CP!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>identifier</b>: id: 3333445555
+                        </p>
+                        <p>
+                            <b>name</b>: Sam Jones (OFFICIAL)
+                        </p>
+                    </div>
+                </text>
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/us-npi"/>
                     <value value="3333445555"/>
@@ -546,6 +1056,28 @@
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-j-jones"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "us-core-practitioner-j-jones" Version "1" Updated "2021-12-20T21:14:58.376Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #itXCQUhYErheWDxb!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>identifier</b>: id: 1122334455
+                        </p>
+                        <p>
+                            <b>name</b>: Jane Jones (OFFICIAL)
+                        </p>
+                    </div>
+                </text>
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/us-npi"/>
                     <value value="1122334455"/>
@@ -564,6 +1096,47 @@
         <resource>
             <Condition>
                 <id value="condition-cause-of-death-j-rogers-1-staph-sepsis"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "condition-cause-of-death-j-rogers-1-staph-sepsis" Version "8" Updated "2021-12-23T05:44:33.867Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #OQ9b8eyuNnYHynDx!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="StructureDefinition-Condition-cause-of-death.html">Condition - Cause Of Death</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>category</b>: Death diagnosis 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://browser.ihtsdotools.org/">SNOMED
+                            CT</a>#16100001)
+                            </span>
+                        </p>
+                        <p>
+                            <b>code</b>: Sepsis (disorder) 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://browser.ihtsdotools.org/">SNOMED
+                            CT</a>#91302008)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="Patient-us-core-patient-j-rogers.html">Patient/us-core-patient-j-rogers</a> " ROGERS"
+                        </p>
+                        <p>
+                            <b>onset</b>: 5 days
+                        </p>
+                        <p>
+                            <b>asserter</b>: 
+                            <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        </p>
+                    </div>
+                </text>
                 <category>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -587,6 +1160,67 @@
                     <reference value="Practitioner/us-core-practitioner-s-jones"/>
                 </asserter>
             </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/decedent-pregnancy-j-rogers"/>
+        <resource>
+            <Observation>
+                <id value="decedent-pregnancy-j-rogers"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "decedent-pregnancy-j-rogers" Version "2" Updated "2021-12-23T04:11:25.092Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #62cVyAlVB14V0K3t!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                <a href="StructureDefinition-Observation-decedent-pregnancy.html">Observation - Decedent Pregnancy</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>status</b>: final
+                        </p>
+                        <p>
+                            <b>code</b>: Timing of recent pregnancy in relation to death 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://loinc.org/">LOINC</a>#69442-2)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="Patient-us-core-patient-j-rogers.html">Patient/us-core-patient-j-rogers</a> " ROGERS"
+                        </p>
+                        <p>
+                            <b>value</b>: not applicable 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor</a>#NA)
+                            </span>
+                        </p>
+                    </div>
+                </text>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="69442-2"/>
+                        <display value="Timing of recent pregnancy in relation to death"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                        <code value="NA"/>
+                        <display value="not applicable"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
         </resource>
     </entry>
 </Bundle>
