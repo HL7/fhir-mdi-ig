@@ -8,7 +8,7 @@
         <source value="#RtF57QYV0s1aUwl7"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
-    <text>
+    <!--<text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
@@ -30,7 +30,7 @@
                 </tbody>
             </table>
         </div>
-    </text>
+    </text>-->
     <!--<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
         <extension url="detailed">
             <valueCoding>
@@ -44,20 +44,7 @@
         </extension>
     </extension>-->
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
-        <extension url="ombCategory">
-            <valueCoding>
-                <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                <code value="2106-3"/>
-                <display value="White"/>
-            </valueCoding>
-        </extension>
-        <extension url="ombCategory">
-            <valueCoding>
-                <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                <code value="1002-5"/>
-                <display value="American Indian or Alaska Native"/>
-            </valueCoding>
-        </extension>
+        
         <extension url="ombCategory">
             <valueCoding>
                 <system value="urn:oid:2.16.840.1.113883.6.238"/>
@@ -68,19 +55,12 @@
         <extension url="detailed">
             <valueCoding>
                 <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                <code value="1586-7"/>
-                <display value="Shoshone"/>
-            </valueCoding>
-        </extension>
-        <extension url="detailed">
-            <valueCoding>
-                <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                <code value="2036-2"/>
-                <display value="Filipino"/>
+                <code value="2029-4"/>
+                <display value="Asian Indian"/>
             </valueCoding>
         </extension>
         <extension url="text">
-            <valueString value="Mixed"/>
+            <valueString value="Asian Indian"/>
         </extension>
     </extension>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
