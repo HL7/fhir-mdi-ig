@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="188"/>
-        <lastUpdated value="2022-01-05T02:10:57.568+00:00"/>
-        <source value="#5S122Us8DfIlw92R"/>
+        <versionId value="191"/>
+        <lastUpdated value="2022-01-05T23:41:23.528+00:00"/>
+        <source value="#21d2G0iFJ0uTfRz0"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.0.1"/>
     <name value="MedicolegalDeathInvestigation"/>
     <title value="Medicolegal Death Investigation (MDI)"/>
     <status value="draft"/>
+    <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
     <contact>
         <name value="HL7 International - Public Health"/>
         <telecom>
@@ -44,6 +45,11 @@
         <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
         <packageId value="us.cdc.phinvads"/>
         <version value="0.7.0"/>
+    </dependsOn>
+    <dependsOn id="hl7fhirusvrdr">
+        <uri value="http://hl7.org/fhir/us/vrdr/ImplementationGuide/hl7.fhir.us.vrdr"/>
+        <packageId value="hl7.fhir.us.vrdr"/>
+        <version value="current"/>
     </dependsOn>
     <definition>
         <grouping id="mdi-profiles">
@@ -622,6 +628,11 @@
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
             <generation value="markdown"/>
+            <page>
+                <nameUrl value="downloads.html"/>
+                <title value="Downloads"/>
+                <generation value="markdown"/>
+            </page>
         </page>
         <parameter>
             <code value="copyrightyear"/>
