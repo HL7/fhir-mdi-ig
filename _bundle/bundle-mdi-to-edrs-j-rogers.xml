@@ -1,0 +1,684 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="bundle-mdi-to-edrs-j-rogers" />
+    <meta>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs" />
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986" />
+        <value value="urn:uuid:933dde44f7664b03a20b6324f23986c0" />
+    </identifier>
+    <type value="document" />
+    <timestamp value="2022-01-04T08:51:14.637+00:00" />
+    <entry>
+        <fullUrl value="http://example.org/fhir/Composition/composition-mdi-to-edrs-j-rogers" />
+        <resource>
+            <Composition>
+                <id value="composition-mdi-to-edrs-j-rogers" />
+                <meta>
+                    <versionId value="2" />
+                    <lastUpdated value="2021-12-23T06:21:35.592+00:00" />
+                    <source value="#IdsNLCk9z7nszWUn" />
+                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs" />
+                </meta>
+                <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
+                    <valueIdentifier>
+                        <type>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                                <code value="BCT" />
+                            </coding>
+                        </type>
+                        <value value="15075" />
+                    </valueIdentifier>
+                </extension>
+                <identifier>
+                    <value value="a03eab8c-11e8-4d0c-ad2a-b385395e27de" />
+                </identifier>
+                <status value="final" />
+                <type>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="86807-5" />
+                        <display value="Death administrative information Document" />
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers" />
+                </subject>
+                <date value="2021-12-20" />
+                <author>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger" />
+                </author>
+                <title value="MDI to EDRS Composition" />
+                <section>
+                    <title value="Demographic Information Section" />
+                    <code>
+                        <coding>
+                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes" />
+                            <code value="demographics" />
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="Observation/observation-odh-usual-work-j-rogers" />
+                    </entry>
+                </section>
+                <section>
+                    <title value="Circumstances Section" />
+                    <code>
+                        <coding>
+                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes" />
+                            <code value="circumstances" />
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="Location/us-core-location-death-j-rogers" />
+                    </entry>
+                    <entry>
+                        <reference value="Observation/death-injury-at-work-j-rogers" />
+                    </entry>
+                    <entry>
+                        <reference value="Observation/tobacco-use-j-rogers" />
+                    </entry>
+                </section>
+                <section>
+                    <title value="Jurisdiction Section" />
+                    <code>
+                        <coding>
+                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes" />
+                            <code value="jurisdiction" />
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="Observation/death-date-j-rogers" />
+                    </entry>
+                </section>
+                <section>
+                    <title value="Cause and Manner of Death Section" />
+                    <code>
+                        <coding>
+                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes" />
+                            <code value="cause-manner" />
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="List/list-cause-of-death-pathway-j-rogers" />
+                    </entry>
+                    <entry>
+                        <reference value="Condition/condition-other-contributing-to-death-j-rogers-diabetes" />
+                    </entry>
+                    <entry>
+                        <reference value="Observation/manner-of-death-j-rogers-accidental" />
+                    </entry>
+                    <entry>
+                        <reference value="Observation/how-death-injury-occurred-j-rogers-med-ingest" />
+                    </entry>
+                </section>
+                <section>
+                    <title value="Medical History Section" />
+                    <code>
+                        <coding>
+                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes" />
+                            <code value="medical-history" />
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="Condition/us-core-condition-j-rogers-gangrene" />
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/how-death-injury-occurred-j-rogers-med-ingest" />
+        <resource>
+            <Observation>
+                <id value="how-death-injury-occurred-j-rogers-med-ingest" />
+                <meta>
+                    <versionId value="3" />
+                    <lastUpdated value="2021-12-23T05:18:39.100+00:00" />
+                    <source value="#WCDcS8eeMX2nwXfU" />
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred" />
+                </meta>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="11374-6" />
+                        <display value="Injury incident description Narrative" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers" />
+                </subject>
+                <effectiveDateTime value="2018-02-19T16:48:06-05:00" />
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-s-jones" />
+                </performer>
+                <valueString value="How person died description" />
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/death-injury-at-work-j-rogers" />
+        <resource>
+            <Observation>
+                <id value="death-injury-at-work-j-rogers" />
+                <meta>
+                    <versionId value="4" />
+                    <lastUpdated value="2021-12-23T05:58:31.762+00:00" />
+                    <source value="#spO97QcG21BPuqDu" />
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work" />
+                </meta>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="69444-8" />
+                        <display value="Did death result from injury at work" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers" />
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0532" />
+                        <code value="N" />
+                        <display value="No" />
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/manner-of-death-j-rogers-accidental" />
+        <resource>
+            <Observation>
+                <id value="manner-of-death-j-rogers-accidental" />
+                <meta>
+                    <versionId value="2" />
+                    <lastUpdated value="2021-12-23T04:13:18.315+00:00" />
+                    <source value="#cGxEbkLho3LBKEQK" />
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death" />
+                </meta>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="69449-7" />
+                        <display value="Manner of death" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers" />
+                </subject>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-s-jones" />
+                </performer>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="7878000" />
+                        <display value="Accidental death" />
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Condition/condition-other-contributing-to-death-j-rogers-diabetes" />
+        <resource>
+            <Condition>
+                <id value="condition-other-contributing-to-death-j-rogers-diabetes" />
+                <meta>
+                    <versionId value="4" />
+                    <lastUpdated value="2021-12-23T05:57:14.682+00:00" />
+                    <source value="#gvG3GrZZSvuZIOis" />
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-other-contributing-to-death" />
+                </meta>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="16100001" />
+                        <display value="Death diagnosis" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="73211009" />
+                        <display value="Diabetes mellitus (disorder)" />
+                    </coding>
+                    <text value="Diabetes mellitus (disorder)" />
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers" />
+                </subject>
+                <asserter>
+                    <reference value="Practitioner/us-core-practitioner-s-jones" />
+                </asserter>
+            </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Practitioner/us-core-practitioner-b-goldberger" />
+        <resource>
+            <Practitioner>
+                <id value="us-core-practitioner-b-goldberger" />
+                <meta>
+                    <versionId value="1" />
+                    <lastUpdated value="2021-12-20T21:14:58.360+00:00" />
+                    <source value="#BzPEtIup8ZTGgv6D" />
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
+                </meta>
+                <identifier>
+                    <system value="http://hl7.org/fhir/sid/us-npi" />
+                    <value value="555667777" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <family value="Goldberger" />
+                    <given value="Bruce" />
+                    <prefix value="Dr." />
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/List/list-cause-of-death-pathway-j-rogers" />
+        <resource>
+            <List>
+                <id value="list-cause-of-death-pathway-j-rogers" />
+                <meta>
+                    <versionId value="1" />
+                    <lastUpdated value="2021-12-23T03:43:56.455+00:00" />
+                    <source value="#YVCJdPBsKX0usOPv" />
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway" />
+                </meta>
+                <status value="current" />
+                <mode value="snapshot" />
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers" />
+                </subject>
+                <source>
+                    <reference value="Practitioner/us-core-practitioner-j-jones" />
+                </source>
+                <orderedBy>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/list-order" />
+                        <code value="priority" />
+                        <display value="Sorted by Priority" />
+                    </coding>
+                </orderedBy>
+                <entry>
+                    <item>
+                        <reference value="Condition/condition-cause-of-death-j-rogers-1-staph-sepsis" />
+                    </item>
+                </entry>
+            </List>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Location/us-core-location-death-j-rogers" />
+        <resource>
+            <Location>
+                <id value="us-core-location-death-j-rogers" />
+                <meta>
+                    <versionId value="3" />
+                    <lastUpdated value="2021-12-23T05:47:42.547+00:00" />
+                    <source value="#kulqByBYpAa39CTc" />
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" />
+                </meta>
+                <identifier>
+                    <system value="http://www.acme.org/location" />
+                    <value value="29" />
+                </identifier>
+                <status value="active" />
+                <name value="Top of Mount Everest" />
+                <address>
+                    <line value="3300 Washtenaw Avenue, Suite 227" />
+                    <city value="Qomolangma" />
+                    <state value="Tingri" />
+                    <postalCode value="785" />
+                    <country value="TAR" />
+                </address>
+                <position>
+                    <longitude value="27.9881" />
+                    <latitude value="86.9250" />
+                </position>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Patient/us-core-patient-j-rogers" />
+        <resource>
+            <Patient>
+                <id value="us-core-patient-j-rogers" />
+                <meta>
+                    <versionId value="1" />
+                    <lastUpdated value="2021-12-22T21:52:17.360+00:00" />
+                    <source value="#dtdhcTvWNFad31l7" />
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="hapiHeaderText">Jasmine <b>ROGERS </b>
+                        </div>
+                        <table class="hapiPropertyTable">
+                            <tbody>
+                                <!-- <tr>
+            <td>Identifier</td>
+            <td>MR303303303</td>
+          </tr> -->
+                                <tr>
+                                    <td>Date of birth</td>
+                                    <td>
+                                        <span>15 June 1966</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </text>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238" />
+                            <code value="2106-3" />
+                            <display value="White" />
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="White" />
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+                    <valueCode value="F" />
+                </extension>
+                <identifier>
+                    <use value="usual" />
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="MR" />
+                            <display value="Medical Record Number" />
+                        </coding>
+                        <text value="Medical Record Number" />
+                    </type>
+                    <system value="http://hospital.smarthealthit.org" />
+                    <value value="MR303303303" />
+                </identifier>
+                <active value="true" />
+                <name>
+                    <family value="Rogers" />
+                    <given value="Jasmine" />
+                </name>
+                <gender value="female" />
+                <birthDate value="1966-06-15" />
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-odh-usual-work-j-rogers" />
+        <resource>
+            <Observation>
+                <id value="observation-odh-usual-work-j-rogers" />
+                <meta>
+                    <versionId value="1" />
+                    <lastUpdated value="2021-12-23T04:32:19.747+00:00" />
+                    <source value="#dG437xzONB4UaL1V" />
+                    <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork" />
+                </meta>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="21843-8" />
+                        <display value="History of Usual occupation" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers" />
+                </subject>
+                <effectivePeriod>
+                    <start value="2018-06-01" />
+                </effectivePeriod>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.314" />
+                        <code value="3600" />
+                        <display value="Nursing, psychiatric, and home health aides" />
+                    </coding>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.327" />
+                        <code value="31-1014.00.007136" />
+                        <display value="Certified Nursing Assistant (CNA) [Nursing Assistants]" />
+                    </coding>
+                </valueCodeableConcept>
+                <component>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org" />
+                            <code value="21844-6" />
+                            <display value="History of Usual industry" />
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html" />
+                            <code value="8270" />
+                            <display value="Nursing care facilities" />
+                        </coding>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH" />
+                            <code value="621610.008495" />
+                            <display value="Home nursing services" />
+                        </coding>
+                    </valueCodeableConcept>
+                </component>
+                <component>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org" />
+                            <code value="74163-7" />
+                            <display value="Usual occupation duration" />
+                        </coding>
+                    </code>
+                    <valueQuantity>
+                        <value value="21" />
+                        <unit value="a" />
+                        <system value="http://unitsofmeasure.org" />
+                        <code value="a" />
+                    </valueQuantity>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Condition/us-core-condition-j-rogers-gangrene" />
+        <resource>
+            <Condition>
+                <id value="us-core-condition-j-rogers-gangrene" />
+                <meta>
+                    <versionId value="1" />
+                    <lastUpdated value="2021-12-23T05:04:21.391+00:00" />
+                    <source value="#AjWjUc5wS8pqUKQY" />
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" />
+                </meta>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-category" />
+                        <code value="problem-list-item" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="372070002" />
+                        <display value="Gangrenous disorder (disorder)" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers" />
+                </subject>
+            </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/tobacco-use-j-rogers" />
+        <resource>
+            <Observation>
+                <id value="tobacco-use-j-rogers" />
+                <meta>
+                    <versionId value="2" />
+                    <lastUpdated value="2021-12-23T04:13:42.120+00:00" />
+                    <source value="#oSC9DyAigPXsLM3q" />
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death" />
+                </meta>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="69443-0" />
+                        <display value="Did tobacco use contribute to death" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers" />
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="373066001" />
+                        <display value="Yes" />
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/death-date-j-rogers" />
+        <resource>
+            <Observation>
+                <id value="death-date-j-rogers" />
+                <meta>
+                    <versionId value="2" />
+                    <lastUpdated value="2021-12-23T04:12:03.610+00:00" />
+                    <source value="#5HlEFyHwudI71bUn" />
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date" />
+                </meta>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="81956-5" />
+                        <display value="Date+time of death" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers" />
+                </subject>
+                <effectiveDateTime value="2022-01-04T05:30:00-05:00" />
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-s-jones" />
+                </performer>
+                <valueDateTime value="2022-01-04T05:30:00-05:00" />
+                <component>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org" />
+                            <code value="80616-6" />
+                            <display value="Date and time pronounced dead [US Standard Certificate of Death]" />
+                        </coding>
+                    </code>
+                    <valueDateTime value="2022-01-04T05:30:00-05:00" />
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Practitioner/us-core-practitioner-s-jones" />
+        <resource>
+            <Practitioner>
+                <id value="us-core-practitioner-s-jones" />
+                <meta>
+                    <versionId value="1" />
+                    <lastUpdated value="2021-12-20T21:14:58.375+00:00" />
+                    <source value="#O0fK1HIgeg72P9CP" />
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
+                </meta>
+                <identifier>
+                    <system value="http://hl7.org/fhir/sid/us-npi" />
+                    <value value="3333445555" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <family value="Jones" />
+                    <given value="Sam" />
+                    <prefix value="Dr." />
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Practitioner/us-core-practitioner-j-jones" />
+        <resource>
+            <Practitioner>
+                <id value="us-core-practitioner-j-jones" />
+                <meta>
+                    <versionId value="1" />
+                    <lastUpdated value="2021-12-20T21:14:58.376+00:00" />
+                    <source value="#itXCQUhYErheWDxb" />
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
+                </meta>
+                <identifier>
+                    <system value="http://hl7.org/fhir/sid/us-npi" />
+                    <value value="1122334455" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <family value="Jones" />
+                    <given value="Jane" />
+                    <prefix value="Dr." />
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Condition/condition-cause-of-death-j-rogers-1-staph-sepsis" />
+        <resource>
+            <Condition>
+                <id value="condition-cause-of-death-j-rogers-1-staph-sepsis" />
+                <meta>
+                    <versionId value="8" />
+                    <lastUpdated value="2021-12-23T05:44:33.867+00:00" />
+                    <source value="#OQ9b8eyuNnYHynDx" />
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death" />
+                </meta>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="16100001" />
+                        <display value="Death diagnosis" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="91302008" />
+                        <display value="Sepsis (disorder)" />
+                    </coding>
+                    <text value="Sepsis (disorder)" />
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-j-rogers" />
+                </subject>
+                <onsetString value="5 days" />
+                <asserter>
+                    <reference value="Practitioner/us-core-practitioner-s-jones" />
+                </asserter>
+            </Condition>
+        </resource>
+    </entry>
+</Bundle>
