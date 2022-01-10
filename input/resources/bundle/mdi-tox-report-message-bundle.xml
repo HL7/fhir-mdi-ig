@@ -9,7 +9,7 @@
     </meta>
     <type value="message"/>
     <entry>
-        <fullUrl value="http://example.org/fhir/MessageHeader/mdi-tox-result-report"/>
+        <fullUrl value="MessageHeader/mdi-tox-result-report"/>
         <resource>
             <MessageHeader>
                 <id value="mdi-tox-result-report"/>
@@ -114,7 +114,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/>
+        <fullUrl value="DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/>
         <resource>
             <DiagnosticReport>
                 <id value="mdi-diagnostic-report-toxicology-lab"/>
@@ -247,7 +247,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Patient/us-core-patient-a-freeman"/>
+        <fullUrl value="Patient/us-core-patient-a-freeman"/>
         <resource>
             <Patient>
                 <id value="us-core-patient-a-freeman"/>
@@ -325,7 +325,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Practitioner/us-core-practitioner-b-goldberger"/>
+        <fullUrl value="Practitioner/us-core-practitioner-b-goldberger"/>
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-b-goldberger"/>
@@ -368,7 +368,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Specimen/specimen-blood-toxicology"/>
+        <fullUrl value="Specimen/specimen-blood-toxicology"/>
         <resource>
             <Specimen>
                 <id value="specimen-blood-toxicology"/>
@@ -513,7 +513,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Specimen/specimen-urine-toxicology"/>
+        <fullUrl value="Specimen/specimen-urine-toxicology"/>
         <resource>
             <Specimen>
                 <id value="specimen-urine-toxicology"/>
@@ -621,7 +621,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Specimen/specimen-vitreous-humor-toxicology"/>
+        <fullUrl value="Specimen/specimen-vitreous-humor-toxicology"/>
         <resource>
             <Specimen>
                 <id value="specimen-vitreous-humor-toxicology"/>
@@ -729,7 +729,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-blood"/>
+        <fullUrl value="Observation/us-core-lab-result-etoh-gas-chromatography-blood"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-blood"/>
@@ -825,7 +825,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-4-anpp-blood"/>
+        <fullUrl value="Observation/us-core-lab-result-4-anpp-blood"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-blood"/>
@@ -917,7 +917,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-acetylfentanyl-blood"/>
+        <fullUrl value="Observation/us-core-lab-result-acetylfentanyl-blood"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-blood"/>
@@ -1013,7 +1013,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-fentanyl-blood"/>
+        <fullUrl value="Observation/us-core-lab-result-fentanyl-blood"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-blood"/>
@@ -1109,7 +1109,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-urine"/>
+        <fullUrl value="Observation/us-core-lab-result-etoh-gas-chromatography-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-urine"/>
@@ -1205,7 +1205,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-4-anpp-urine"/>
+        <fullUrl value="Observation/us-core-lab-result-4-anpp-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-urine"/>
@@ -1297,7 +1297,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-acetylfentanyl-urine"/>
+        <fullUrl value="Observation/us-core-lab-result-acetylfentanyl-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-urine"/>
@@ -1389,7 +1389,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-fentanyl-urine"/>
+        <fullUrl value="Observation/us-core-lab-result-fentanyl-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-urine"/>
@@ -1481,7 +1481,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-norfentanyl-urine"/>
+        <fullUrl value="Observation/us-core-lab-result-norfentanyl-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-norfentanyl-urine"/>
@@ -1573,7 +1573,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-xylazine-urine"/>
+        <fullUrl value="Observation/us-core-lab-result-xylazine-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-xylazine-urine"/>
@@ -1665,7 +1665,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/>
+        <fullUrl value="Observation/us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/>
@@ -1761,7 +1761,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/DocumentReference/mdi-agency-case-notes-summary"/>
+        <fullUrl value="DocumentReference/mdi-agency-case-notes-summary"/>
         <resource>
             <DocumentReference>
                 <id value="mdi-agency-case-notes-summary"/>
@@ -1839,15 +1839,15 @@
                 <content>
                     <attachment>
                         <contentType value="text/plain"/>
-                        <url value="http://example.org/fhir/Binary/agency-case-notes"/>
-                        <title value="Uri where the data can be found: http://example.org/fhir/Binary/agency-case-notes"/>
+                        <url value="Binary/agency-case-notes"/>
+                        <title value="Uri where the data can be found: Binary/agency-case-notes"/>
                     </attachment>
                 </content>
             </DocumentReference>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/DocumentReference/mdi-case-history"/>
+        <fullUrl value="DocumentReference/mdi-case-history"/>
         <resource>
             <DocumentReference>
                 <id value="mdi-case-history"/>
@@ -1925,15 +1925,15 @@
                 <content>
                     <attachment>
                         <contentType value="text/plain"/>
-                        <url value="http://example.org/fhir/Binary/agency-case-notes"/>
-                        <title value="Uri where the data can be found: http://example.org/fhir/Binary/agency-case-notes"/>
+                        <url value="Binary/agency-case-notes"/>
+                        <title value="Uri where the data can be found: Binary/agency-case-notes"/>
                     </attachment>
                 </content>
             </DocumentReference>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Binary/agency-case-notes"/>
+        <fullUrl value="Binary/agency-case-notes"/>
         <resource>
             <Binary>
                 <id value="agency-case-notes"/>
