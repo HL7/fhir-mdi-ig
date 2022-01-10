@@ -67,8 +67,8 @@
                     <valueIdentifier>
                         <type>
                             <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                <code value="BCT"/>
+                                <system value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-tracking-number-type"/>
+                                <code value="mdi-case-number"/>
                             </coding>
                         </type>
                         <value value="15075"/>
