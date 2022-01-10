@@ -19,6 +19,9 @@
         <resource>
             <Composition>
                 <id value="composition-mdi-to-edrs-j-rogers"/>
+                <meta>
+                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs" />
+                </meta>
                 <text>
                     <status value="extensions"/>
                     <div
@@ -176,6 +179,9 @@
         <resource>
             <Observation>
                 <id value="how-death-injury-occurred-j-rogers-med-ingest"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -239,6 +245,9 @@
         <resource>
             <Observation>
                 <id value="death-injury-at-work-j-rogers"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -300,6 +309,9 @@
         <resource>
             <Observation>
                 <id value="manner-of-death-j-rogers-accidental"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -369,6 +381,9 @@
         <resource>
             <Condition>
                 <id value="condition-other-contributing-to-death-j-rogers-diabetes"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-other-contributing-to-death" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -436,6 +451,9 @@
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-b-goldberger"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -476,6 +494,9 @@
         <resource>
             <List>
                 <id value="list-cause-of-death-pathway-j-rogers"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -532,6 +553,9 @@
         <resource>
             <Location>
                 <id value="us-core-location-death-j-rogers"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -602,6 +626,9 @@
         <resource>
             <Patient>
                 <id value="us-core-patient-j-rogers"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -665,6 +692,9 @@
         <resource>
             <Observation>
                 <id value="observation-odh-usual-work-j-rogers"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -804,6 +834,9 @@
         <resource>
             <Condition>
                 <id value="us-core-condition-j-rogers-gangrene"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -861,6 +894,9 @@
         <resource>
             <Observation>
                 <id value="tobacco-use-j-rogers"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -922,6 +958,9 @@
         <resource>
             <Observation>
                 <id value="death-date-j-rogers"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1016,6 +1055,9 @@
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-s-jones"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1056,6 +1098,9 @@
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-j-jones"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1096,6 +1141,9 @@
         <resource>
             <Condition>
                 <id value="condition-cause-of-death-j-rogers-1-staph-sepsis"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1167,6 +1215,9 @@
         <resource>
             <Observation>
                 <id value="decedent-pregnancy-j-rogers"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy" />
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
