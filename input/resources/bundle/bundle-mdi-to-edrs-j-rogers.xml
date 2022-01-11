@@ -37,7 +37,7 @@
                             </p>
                         </div>
                         <p>
-                            <b>Extension - Tracking Number</b>: Birth Certificate: 15075
+                            <b>Extension - Tracking Number</b>: MDI Case Number: 15075
                         </p>
                         <p>
                             <b>identifier</b>: id: a03eab8c-11e8-4d0c-ad2a-b385395e27de
@@ -67,7 +67,7 @@
                     <valueIdentifier>
                         <type>
                             <coding>
-                                <system value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-tracking-number-type"/>
+                                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
                                 <code value="mdi-case-number"/>
                             </coding>
                         </type>
