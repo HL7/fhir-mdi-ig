@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Bundle-message-tox-to-mdi"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-01-07T17:27:17.863+00:00"/>
+        <source value="#DzD17Om8K2txnSpa"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
+    <name value="BundleMessageToxToMDI"/>
+    <title value="Bundle Message Toxicology To MDI"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.identifier">
+            <path value="Bundle.identifier"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <fixedCode value="message"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+        </element>
+        <element id="Bundle.entry:ToxtoMDIMessage">
+            <path value="Bundle.entry"/>
+            <sliceName value="ToxtoMDIMessage"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:ToxtoMDIMessage.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="191"/>
-        <lastUpdated value="2022-01-05T23:41:23.528+00:00"/>
-        <source value="#21d2G0iFJ0uTfRz0"/>
+        <versionId value="196"/>
+        <lastUpdated value="2022-01-11T17:29:17.307+00:00"/>
+        <source value="#DnlLHpVusrsC3rVG"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.0.1"/>
@@ -176,6 +176,16 @@
             <description value="The Condition - Other Contributing to Death profile is used to identify factors contributing to the cause of death as asserted by the death certifier. This profile builds upon the US Core Condition profile."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-message-tox-to-mdi"/>
+                <display value="BundleMessageToxToMDI"/>
+            </reference>
+            <name value="Bundle Message Toxicology To MDI"/>
+            <description value="Bundle Message Toxicology To MDI Profile"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -623,6 +633,30 @@
             <name value="ValueSet - Tracking Number Type"/>
             <description value="This value set contains codes to that identify the type of tracking number."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-bile-toxicology"/></reference>
+            <name value="Bile Specimen - Not Tested"/>
+            <description value="Bile Specimen - Not Tested"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-liver-toxicology"/></reference>
+            <name value="Liver Specimen - Not Tested"/>
+            <description value="Liver Specimen - Not Tested"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-stomach-contents-toxicology"/></reference>
+            <name value="Stomach Contents Specimen - Not Tested"/>
+            <description value="Stomach Contents Specimen - Not Tested"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
