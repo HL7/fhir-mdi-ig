@@ -3,16 +3,21 @@
     xmlns="http://hl7.org/fhir">
     <id value="mdi-tox-report-message-bundle"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-01-05T01:37:54.455+00:00"/>
-        <source value="#v25zxVlMcBIP5DsM"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:683dde44f7664b03a20b6324f23986d9"/>
+    </identifier>
     <type value="message"/>
     <entry>
-        <fullUrl value="http://example.org/fhir/MessageHeader/mdi-tox-result-report"/>
+        <fullUrl value="https://fhir.org/fhir/MessageHeader/mdi-tox-result-report"/>
         <resource>
             <MessageHeader>
                 <id value="mdi-tox-result-report"/>
+                <meta>
+                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -114,10 +119,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/>
+        <fullUrl value="https://fhir.org/fhir/DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/>
         <resource>
             <DiagnosticReport>
                 <id value="mdi-diagnostic-report-toxicology-lab"/>
+                <meta>
+                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -199,6 +207,15 @@
                 <specimen>
                     <reference value="Specimen/specimen-vitreous-humor-toxicology"/>
                 </specimen>
+                <specimen>
+                    <reference value="Specimen/specimen-bile-toxicology"/>
+                </specimen>
+                <specimen>
+                    <reference value="Specimen/specimen-stomach-contents-toxicology"/>
+                </specimen>
+                <specimen>
+                    <reference value="Specimen/specimen-liver-toxicology"/>
+                </specimen>
                 <result>
                     <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-blood"/>
                     <display value="ETOH BLOOD: 0.145 g/dL"/>
@@ -247,10 +264,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Patient/us-core-patient-a-freeman"/>
+        <fullUrl value="https://fhir.org/fhir/Patient/us-core-patient-a-freeman"/>
         <resource>
             <Patient>
                 <id value="us-core-patient-a-freeman"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -325,10 +345,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Practitioner/us-core-practitioner-b-goldberger"/>
+        <fullUrl value="https://fhir.org/fhir/Practitioner/us-core-practitioner-b-goldberger"/>
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-b-goldberger"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -368,10 +391,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Specimen/specimen-blood-toxicology"/>
+        <fullUrl value="https://fhir.org/fhir/Specimen/specimen-blood-toxicology"/>
         <resource>
             <Specimen>
                 <id value="specimen-blood-toxicology"/>
+                <meta>
+                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -513,10 +539,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Specimen/specimen-urine-toxicology"/>
+        <fullUrl value="https://fhir.org/fhir/Specimen/specimen-urine-toxicology"/>
         <resource>
             <Specimen>
                 <id value="specimen-urine-toxicology"/>
+                <meta>
+                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -621,10 +650,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Specimen/specimen-vitreous-humor-toxicology"/>
+        <fullUrl value="https://fhir.org/fhir/Specimen/specimen-vitreous-humor-toxicology"/>
         <resource>
             <Specimen>
                 <id value="specimen-vitreous-humor-toxicology"/>
+                <meta>
+                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -729,10 +761,118 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-blood"/>
+        <fullUrl value="https://fhir.org/fhir/Specimen/specimen-bile-toxicology"/>
+        <resource>
+            <Specimen
+                xmlns="http://hl7.org/fhir">
+                <id value="specimen-bile-toxicology"/>
+                <meta>
+                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                </meta>
+                <accessionIdentifier>
+                    <system value="http://lab.acme.org/specimens/2021"/>
+                    <value value="OO352356"/>
+                </accessionIdentifier>
+                <status value="available"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="119341000"/>
+                        <display value="Bile specimen (specimen)"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <receivedTime value="2021-12-03T16:00:00Z"/>
+                <container>
+                    <description value="5mL GT tube"/>
+                    <specimenQuantity>
+                        <value value="3"/>
+                        <unit value="ml"/>
+                    </specimenQuantity>
+                </container>
+            </Specimen>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://fhir.org/fhir/Specimen/specimen-liver-toxicology"/>
+        <resource>
+            <Specimen
+                xmlns="http://hl7.org/fhir">
+                <id value="specimen-stomach-contents-toxicology"/>
+                <meta>
+                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                </meta>
+                <accessionIdentifier>
+                    <system value="http://lab.acme.org/specimens/2021"/>
+                    <value value="MM352356"/>
+                </accessionIdentifier>
+                <status value="available"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="119379005"/>
+                        <display value="Specimen from stomach (specimen)"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <receivedTime value="2021-12-03T16:00:00Z"/>
+                <container>
+                    <description value="5mL GT tube"/>
+                    <specimenQuantity>
+                        <value value="60"/>
+                        <unit value="ml"/>
+                    </specimenQuantity>
+                </container>
+            </Specimen>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://fhir.org/fhir/Specimen/specimen-stomach-contents-toxicology"/>
+        <resource>
+            <Specimen
+                xmlns="http://hl7.org/fhir">
+                <id value="specimen-liver-toxicology"/>
+                <meta>
+                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                </meta>
+                <accessionIdentifier>
+                    <system value="http://lab.acme.org/specimens/2021"/>
+                    <value value="DD352356"/>
+                </accessionIdentifier>
+                <status value="available"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="128168004"/>
+                        <display value="Tissue specimen from liver (specimen)"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <receivedTime value="2021-12-03T16:00:00Z"/>
+                <container>
+                    <description value="5mL GT tube"/>
+                    <specimenQuantity>
+                        <value value="5"/>
+                        <unit value="ml"/>
+                    </specimenQuantity>
+                </container>
+            </Specimen>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-blood"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-blood"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -825,10 +965,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-4-anpp-blood"/>
+        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-4-anpp-blood"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-blood"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -917,10 +1060,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-acetylfentanyl-blood"/>
+        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-acetylfentanyl-blood"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-blood"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1013,10 +1159,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-fentanyl-blood"/>
+        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-fentanyl-blood"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-blood"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1109,10 +1258,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-urine"/>
+        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-urine"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1205,10 +1357,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-4-anpp-urine"/>
+        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-4-anpp-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-urine"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1297,10 +1452,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-acetylfentanyl-urine"/>
+        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-acetylfentanyl-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-urine"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1389,10 +1547,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-fentanyl-urine"/>
+        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-fentanyl-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-urine"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1481,10 +1642,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-norfentanyl-urine"/>
+        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-norfentanyl-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-norfentanyl-urine"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1573,10 +1737,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-xylazine-urine"/>
+        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-xylazine-urine"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-xylazine-urine"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1665,10 +1832,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/>
+        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1761,10 +1931,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/DocumentReference/mdi-agency-case-notes-summary"/>
+        <fullUrl value="https://fhir.org/fhir/DocumentReference/mdi-agency-case-notes-summary"/>
         <resource>
             <DocumentReference>
                 <id value="mdi-agency-case-notes-summary"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1839,18 +2012,21 @@
                 <content>
                     <attachment>
                         <contentType value="text/plain"/>
-                        <url value="http://example.org/fhir/Binary/agency-case-notes"/>
-                        <title value="Uri where the data can be found: http://example.org/fhir/Binary/agency-case-notes"/>
+                        <url value="https://fhir.org/fhir/Binary/agency-case-notes"/>
+                        <title value="Uri where the data can be found: https://fhir.org/fhir/Binary/agency-case-notes"/>
                     </attachment>
                 </content>
             </DocumentReference>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/DocumentReference/mdi-case-history"/>
+        <fullUrl value="https://fhir.org/fhir/DocumentReference/mdi-case-history"/>
         <resource>
             <DocumentReference>
                 <id value="mdi-case-history"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1925,15 +2101,15 @@
                 <content>
                     <attachment>
                         <contentType value="text/plain"/>
-                        <url value="http://example.org/fhir/Binary/agency-case-notes"/>
-                        <title value="Uri where the data can be found: http://example.org/fhir/Binary/agency-case-notes"/>
+                        <url value="https://fhir.org/fhir/Binary/agency-case-notes"/>
+                        <title value="Uri where the data can be found: https://fhir.org/fhir/Binary/agency-case-notes"/>
                     </attachment>
                 </content>
             </DocumentReference>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Binary/agency-case-notes"/>
+        <fullUrl value="https://fhir.org/fhir/Binary/agency-case-notes"/>
         <resource>
             <Binary>
                 <id value="agency-case-notes"/>
