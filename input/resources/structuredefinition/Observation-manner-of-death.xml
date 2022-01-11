@@ -90,7 +90,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="A set of code used to indicate a manner of death classification."/>
-                <valueSet value="http://hl7.org/fhir/us/vrdr/ValueSet/manner-of-death"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.6002"/>
             </binding>
         </element>
     </differential>
