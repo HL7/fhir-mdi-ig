@@ -15,7 +15,7 @@
     <type value="document"/>
     <timestamp value="2022-01-04T08:51:14.637+00:00"/>
     <entry>
-        <fullUrl value="http://example.org/fhir/Composition/composition-mdi-to-edrs-j-rogers"/>
+        <fullUrl value="Composition/composition-mdi-to-edrs-j-rogers"/>
         <resource>
             <Composition>
                 <id value="composition-mdi-to-edrs-j-rogers"/>
@@ -175,7 +175,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/how-death-injury-occurred-j-rogers-med-ingest"/>
+        <fullUrl value="Observation/how-death-injury-occurred-j-rogers-med-ingest"/>
         <resource>
             <Observation>
                 <id value="how-death-injury-occurred-j-rogers-med-ingest"/>
@@ -241,7 +241,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/death-injury-at-work-j-rogers"/>
+        <fullUrl value="Observation/death-injury-at-work-j-rogers"/>
         <resource>
             <Observation>
                 <id value="death-injury-at-work-j-rogers"/>
@@ -305,7 +305,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/manner-of-death-j-rogers-accidental"/>
+        <fullUrl value="Observation/manner-of-death-j-rogers-accidental"/>
         <resource>
             <Observation>
                 <id value="manner-of-death-j-rogers-accidental"/>
@@ -377,7 +377,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Condition/condition-other-contributing-to-death-j-rogers-diabetes"/>
+        <fullUrl value="Condition/condition-other-contributing-to-death-j-rogers-diabetes"/>
         <resource>
             <Condition>
                 <id value="condition-other-contributing-to-death-j-rogers-diabetes"/>
@@ -447,7 +447,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Practitioner/us-core-practitioner-b-goldberger"/>
+        <fullUrl value="Practitioner/us-core-practitioner-b-goldberger"/>
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-b-goldberger"/>
@@ -490,7 +490,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/List/list-cause-of-death-pathway-j-rogers"/>
+        <fullUrl value="List/list-cause-of-death-pathway-j-rogers"/>
         <resource>
             <List>
                 <id value="list-cause-of-death-pathway-j-rogers"/>
@@ -549,7 +549,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Location/us-core-location-death-j-rogers"/>
+        <fullUrl value="Location/us-core-location-death-j-rogers"/>
         <resource>
             <Location>
                 <id value="us-core-location-death-j-rogers"/>
@@ -622,7 +622,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Patient/us-core-patient-j-rogers"/>
+        <fullUrl value="Patient/us-core-patient-j-rogers"/>
         <resource>
             <Patient>
                 <id value="us-core-patient-j-rogers"/>
@@ -688,7 +688,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-odh-usual-work-j-rogers"/>
+        <fullUrl value="Observation/observation-odh-usual-work-j-rogers"/>
         <resource>
             <Observation>
                 <id value="observation-odh-usual-work-j-rogers"/>
@@ -830,7 +830,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Condition/us-core-condition-j-rogers-gangrene"/>
+        <fullUrl value="Condition/us-core-condition-j-rogers-gangrene"/>
         <resource>
             <Condition>
                 <id value="us-core-condition-j-rogers-gangrene"/>
@@ -890,7 +890,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/tobacco-use-j-rogers"/>
+        <fullUrl value="Observation/tobacco-use-j-rogers"/>
         <resource>
             <Observation>
                 <id value="tobacco-use-j-rogers"/>
@@ -954,7 +954,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/death-date-j-rogers"/>
+        <fullUrl value="Observation/death-date-j-rogers"/>
         <resource>
             <Observation>
                 <id value="death-date-j-rogers"/>
@@ -1051,7 +1051,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Practitioner/us-core-practitioner-s-jones"/>
+        <fullUrl value="Practitioner/us-core-practitioner-s-jones"/>
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-s-jones"/>
@@ -1094,7 +1094,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Practitioner/us-core-practitioner-j-jones"/>
+        <fullUrl value="Practitioner/us-core-practitioner-j-jones"/>
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-j-jones"/>
@@ -1137,7 +1137,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Condition/condition-cause-of-death-j-rogers-1-staph-sepsis"/>
+        <fullUrl value="Condition/condition-cause-of-death-j-rogers-1-staph-sepsis"/>
         <resource>
             <Condition>
                 <id value="condition-cause-of-death-j-rogers-1-staph-sepsis"/>
@@ -1211,7 +1211,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/decedent-pregnancy-j-rogers"/>
+        <fullUrl value="Observation/decedent-pregnancy-j-rogers"/>
         <resource>
             <Observation>
                 <id value="decedent-pregnancy-j-rogers"/>
