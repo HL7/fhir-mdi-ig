@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-toxicology-lab"/>
     <meta>
-        <versionId value="27"/>
-        <lastUpdated value="2021-12-22T20:10:46.596+00:00"/>
-        <source value="#CUseZLCgIEFXccnE"/>
+        <versionId value="29"/>
+        <lastUpdated value="2022-01-12T16:08:40.491+00:00"/>
+        <source value="#ajSGBl0j48hZ8Qmf"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     <name value="SpecimenToxicologyLab"/>
@@ -30,10 +30,24 @@
             <definition value="System-generated identifier for this Specimen."/>
             <mustSupport value="true"/>
         </element>
+        <element id="Specimen.accessionIdentifier">
+            <path value="Specimen.accessionIdentifier"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Specimen.type">
             <path value="Specimen.type"/>
             <short value="Type of tissue or material"/>
             <definition value="Type of tissue or material (blood, etc.)."/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.type.coding">
+            <path value="Specimen.type.coding"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.type.text">
+            <path value="Specimen.type.text"/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.subject">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="mdi-diagnostic-report-toxicology-lab"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-01-05T01:37:19.395+00:00"/>
-        <source value="#A99tlsEidkckkU1Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-01-07T17:13:42.107+00:00"/>
+        <source value="#q4XmiMpQt9rpTjkc"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     </meta>
     <text>
@@ -88,6 +88,15 @@
     </specimen>
     <specimen>
         <reference value="Specimen/specimen-vitreous-humor-toxicology"/>
+    </specimen>
+    <specimen>
+        <reference value="Specimen/specimen-bile-toxicology"/>
+    </specimen>
+    <specimen>
+        <reference value="Specimen/specimen-liver-toxicology"/>
+    </specimen>
+    <specimen>
+        <reference value="Specimen/specimen-stomach-contents-toxicology"/>
     </specimen>
     <result>
         <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-blood"/>

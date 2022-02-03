@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="196"/>
-        <lastUpdated value="2022-01-11T17:29:17.307+00:00"/>
-        <source value="#DnlLHpVusrsC3rVG"/>
+        <versionId value="201"/>
+        <lastUpdated value="2022-01-27T20:42:39.962+00:00"/>
+        <source value="#VCiAPauFzoovkImc"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
-    <version value="0.0.1"/>
+    <version value="0.1.0"/>
     <name value="MedicolegalDeathInvestigation"/>
     <title value="Medicolegal Death Investigation (MDI)"/>
     <status value="draft"/>
@@ -45,11 +45,6 @@
         <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
         <packageId value="us.cdc.phinvads"/>
         <version value="0.7.0"/>
-    </dependsOn>
-    <dependsOn id="hl7fhirusvrdr">
-        <uri value="http://hl7.org/fhir/us/vrdr/ImplementationGuide/hl7.fhir.us.vrdr"/>
-        <packageId value="hl7.fhir.us.vrdr"/>
-        <version value="current"/>
     </dependsOn>
     <definition>
         <grouping id="mdi-profiles">
@@ -189,6 +184,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="MessageHeader/mdi-tox-result-report"/></reference>
+            <name value="MessageHeader - Toxicology to MDI - Report Result for Medical Examiner/Coroner"/>
+            <description value="Example of MessageHeader - Toxicology to MDI - Toxicology Report Result for Medical Examiner/Coroner"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
                 <display value="CompositionToxicologyToMDI"/>
             </reference>
@@ -225,6 +229,16 @@
             <description value="DocumentReference - MDI Case Notes Summary"/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Specimen-toxicology-lab"/>
+                <display value="SpecimenToxicologyLab"/>
+            </reference>
+            <name value="Specimen - Toxicology Lab"/>
+            <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -302,15 +316,6 @@
             <description value="This MessageHeader identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MessageHeader/mdi-tox-result-report"/></reference>
-            <name value="MessageHeader - Toxicology to MDI - Report Result for Medical Examiner/Coroner"/>
-            <description value="Example of MessageHeader - Toxicology to MDI - Toxicology Report Result for Medical Examiner/Coroner"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
-            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
@@ -436,11 +441,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Specimen-toxicology-lab"/>
-                <display value="SpecimenToxicologyLab"/>
+                <reference value="StructureDefinition/Observation-toxicology-lab"/>
+                <display value="ObservationToxicologyLab"/>
             </reference>
-            <name value="Specimen - Toxicology Lab"/>
-            <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
+            <name value="Toxicology Lab Observation Result"/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
         </resource>

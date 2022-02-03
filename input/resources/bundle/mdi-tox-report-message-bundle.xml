@@ -3,6 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="mdi-tox-report-message-bundle"/>
     <meta>
+        <versionId value="9"/>
+        <lastUpdated value="2022-01-11T16:31:05.223+00:00"/>
+        <source value="#CGNqChzPfM5k91au"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     </meta>
     <identifier>
@@ -15,9 +18,6 @@
         <resource>
             <MessageHeader>
                 <id value="mdi-tox-result-report"/>
-                <meta>
-                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -30,11 +30,13 @@
                             <p style="margin-bottom: 0px">Information Source: #QvsFrBpRMt5M7xgg!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-MessageHeader-toxicology-to-mdi.html">MessageHeader - Toxicology to MDI</a>
                             </p>
                         </div>
                         <p>
                             <b>event</b>: Toxicology Lab Results (Details: http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes code tox-result-report = 'Toxicology Lab Results', stated as 'null')
+                        
                         
                         </p>
                         <h3>Sources</h3>
@@ -90,6 +92,7 @@
                         <p>
                             <b>focus</b>: 
                             
+                            
                             <a href="DiagnosticReport-mdi-diagnostic-report-toxicology-lab.html">DiagnosticReport/mdi-diagnostic-report-toxicology-lab</a>
                         </p>
                     </div>
@@ -123,9 +126,6 @@
         <resource>
             <DiagnosticReport>
                 <id value="mdi-diagnostic-report-toxicology-lab"/>
-                <meta>
-                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -268,15 +268,13 @@
         <resource>
             <Patient>
                 <id value="us-core-patient-a-freeman"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Alice J. 
               
+                            
                             
                             <b>FREEMAN </b>
                         </div>
@@ -349,9 +347,6 @@
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-b-goldberger"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -364,15 +359,18 @@
                             <p style="margin-bottom: 0px">Information Source: #BzPEtIup8ZTGgv6D!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>identifier</b>: id: 555667777
                         
+                        
                         </p>
                         <p>
                             <b>name</b>: Bruce Goldberger (OFFICIAL)
+                        
                         
                         </p>
                     </div>
@@ -395,9 +393,6 @@
         <resource>
             <Specimen>
                 <id value="specimen-blood-toxicology"/>
-                <meta>
-                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -410,34 +405,43 @@
                             <p style="margin-bottom: 0px">Information Source: #7bF3ocn9ljwiqdbT!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Specimen-toxicology-lab.html">Specimen - Toxicology Lab</a>
                             </p>
                         </div>
                         <p>
                             <b>accessionIdentifier</b>: id: X352356
                         
+                        
                         </p>
                         <p>
                             <b>status</b>: available
+                        
                         
                         </p>
                         <p>
                             <b>type</b>: Whole blood sample (specimen) 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#258580003)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>receivedTime</b>: 2021-12-03T16:00:00Z
+                        
                         
                         </p>
                         <h3>Collections</h3>
@@ -456,9 +460,12 @@
                                 <td>2021-12-03T11:00:00Z</td>
                                 <td>Femoral vein structure (body structure) 
                                     
+                                    
                                     <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                         
+                                        
                                         <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#83419000)
+                                    
                                     
                                     </span>
                                 </td>
@@ -483,9 +490,12 @@
                                 <td>10mL GT tube</td>
                                 <td>GT tube 
                                     
+                                    
                                     <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                         
+                                        
                                         <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#702287009 "Non-evacuated blood collection tube, potassium oxalate/sodium fluoride (physical object)")
+                                    
                                     
                                     </span>
                                 </td>
@@ -543,9 +553,6 @@
         <resource>
             <Specimen>
                 <id value="specimen-urine-toxicology"/>
-                <meta>
-                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -558,34 +565,43 @@
                             <p style="margin-bottom: 0px">Information Source: #BIhhYfWxSlBs1xks!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Specimen-toxicology-lab.html">Specimen - Toxicology Lab</a>
                             </p>
                         </div>
                         <p>
                             <b>accessionIdentifier</b>: id: ZZZ352356
                         
+                        
                         </p>
                         <p>
                             <b>status</b>: available
+                        
                         
                         </p>
                         <p>
                             <b>type</b>: Urine specimen (specimen) 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#122575003)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>receivedTime</b>: 2021-12-03T16:00:00Z
+                        
                         
                         </p>
                         <h3>Collections</h3>
@@ -654,9 +670,6 @@
         <resource>
             <Specimen>
                 <id value="specimen-vitreous-humor-toxicology"/>
-                <meta>
-                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -669,34 +682,43 @@
                             <p style="margin-bottom: 0px">Information Source: #NxHJeoloEqnB03lf!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Specimen-toxicology-lab.html">Specimen - Toxicology Lab</a>
                             </p>
                         </div>
                         <p>
                             <b>accessionIdentifier</b>: id: XXX352356
                         
+                        
                         </p>
                         <p>
                             <b>status</b>: available
+                        
                         
                         </p>
                         <p>
                             <b>type</b>: Vitreous humor sample (specimen) 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#258438000)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>receivedTime</b>: 2021-12-03T16:00:00Z
+                        
                         
                         </p>
                         <h3>Collections</h3>
@@ -763,12 +785,8 @@
     <entry>
         <fullUrl value="https://fhir.org/fhir/Specimen/specimen-bile-toxicology"/>
         <resource>
-            <Specimen
-                xmlns="http://hl7.org/fhir">
+            <Specimen>
                 <id value="specimen-bile-toxicology"/>
-                <meta>
-                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
-                </meta>
                 <accessionIdentifier>
                     <system value="http://lab.acme.org/specimens/2021"/>
                     <value value="OO352356"/>
@@ -798,12 +816,8 @@
     <entry>
         <fullUrl value="https://fhir.org/fhir/Specimen/specimen-liver-toxicology"/>
         <resource>
-            <Specimen
-                xmlns="http://hl7.org/fhir">
+            <Specimen>
                 <id value="specimen-stomach-contents-toxicology"/>
-                <meta>
-                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
-                </meta>
                 <accessionIdentifier>
                     <system value="http://lab.acme.org/specimens/2021"/>
                     <value value="MM352356"/>
@@ -833,12 +847,8 @@
     <entry>
         <fullUrl value="https://fhir.org/fhir/Specimen/specimen-stomach-contents-toxicology"/>
         <resource>
-            <Specimen
-                xmlns="http://hl7.org/fhir">
+            <Specimen>
                 <id value="specimen-liver-toxicology"/>
-                <meta>
-                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
-                </meta>
                 <accessionIdentifier>
                     <system value="http://lab.acme.org/specimens/2021"/>
                     <value value="DD352356"/>
@@ -870,9 +880,6 @@
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-blood"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -885,47 +892,60 @@
                             <p style="margin-bottom: 0px">Information Source: #bkZB6d4oBA9HZXDO!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Ethanol [Mass/volume] in Blood by Gas chromatography 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#56478-1)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2021-12-03
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: 0.145 g/dL
                         
+                        
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             
                             <a href="Specimen-specimen-blood-toxicology.html">Specimen/specimen-blood-toxicology</a>
                         </p>
@@ -969,9 +989,6 @@
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-blood"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -984,47 +1001,60 @@
                             <p style="margin-bottom: 0px">Information Source: #Nb8CUrLPCVwZTv1P!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Despropionylfentanyl [Mass/volume] in Serum or Plasma 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#11072-6)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2021-12-03
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: true
                         
+                        
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             
                             <a href="Specimen-specimen-blood-toxicology.html">Specimen/specimen-blood-toxicology</a>
                         </p>
@@ -1064,9 +1094,6 @@
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-blood"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1079,47 +1106,60 @@
                             <p style="margin-bottom: 0px">Information Source: #vb3I6iYEEx5gAqTL!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Acetyl norfentanyl [Mass/volume] in Serum, Plasma or Blood by Confirmatory method 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#86223-5)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2021-12-03
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: 2 ng/mL
                         
+                        
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             
                             <a href="Specimen-specimen-blood-toxicology.html">Specimen/specimen-blood-toxicology</a>
                         </p>
@@ -1163,9 +1203,6 @@
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-blood"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1178,47 +1215,60 @@
                             <p style="margin-bottom: 0px">Information Source: #OZELk1x0m1IX4ciu!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: fentaNYL [Mass/volume] in Blood by Confirmatory method 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#73938-3)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2021-12-03
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: 23 ng/mL
                         
+                        
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             
                             <a href="Specimen-specimen-blood-toxicology.html">Specimen/specimen-blood-toxicology</a>
                         </p>
@@ -1262,9 +1312,6 @@
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-urine"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1277,47 +1324,60 @@
                             <p style="margin-bottom: 0px">Information Source: #qs2LRsRvYNm989KV!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Ethanol [Mass/volume] in Urine by Confirmatory method 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#46983-3)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2021-12-03
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: 0.16 g/dL
                         
+                        
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             
                             <a href="Specimen-specimen-urine-toxicology.html">Specimen/specimen-urine-toxicology</a>
                         </p>
@@ -1361,9 +1421,6 @@
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-urine"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1376,47 +1433,60 @@
                             <p style="margin-bottom: 0px">Information Source: #v0ONk04HGBiAKaB6!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Despropionylfentanyl [Mass/volume] in Serum or Plasma 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#11072-6)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2021-12-03
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: true
                         
+                        
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             
                             <a href="Specimen-specimen-urine-toxicology.html">Specimen/specimen-urine-toxicology</a>
                         </p>
@@ -1456,9 +1526,6 @@
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-urine"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1471,47 +1538,60 @@
                             <p style="margin-bottom: 0px">Information Source: #FtcTJrp0Bn7VzTvO!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Acetyl fentanyl [Presence] in Urine by Confirmatory method 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#74810-3)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2021-12-03
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: true
                         
+                        
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             
                             <a href="Specimen-specimen-urine-toxicology.html">Specimen/specimen-urine-toxicology</a>
                         </p>
@@ -1551,9 +1631,6 @@
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-urine"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1566,47 +1643,60 @@
                             <p style="margin-bottom: 0px">Information Source: #ZFAO2B3el9c6OgHD!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: fentaNYL [Presence] in Urine 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#11235-9)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2021-12-03
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: true
                         
+                        
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             
                             <a href="Specimen-specimen-urine-toxicology.html">Specimen/specimen-urine-toxicology</a>
                         </p>
@@ -1646,9 +1736,6 @@
         <resource>
             <Observation>
                 <id value="us-core-lab-result-norfentanyl-urine"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1661,47 +1748,60 @@
                             <p style="margin-bottom: 0px">Information Source: #d5v5UuMWBHieRctm!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Norfentanyl [Presence] in Urine 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#43199-9)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2021-12-03
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: true
                         
+                        
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             
                             <a href="Specimen-specimen-urine-toxicology.html">Specimen/specimen-urine-toxicology</a>
                         </p>
@@ -1741,9 +1841,6 @@
         <resource>
             <Observation>
                 <id value="us-core-lab-result-xylazine-urine"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1756,47 +1853,60 @@
                             <p style="margin-bottom: 0px">Information Source: #2UezPlUhsHjItCeB!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Ketamine [Presence] in Urine 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#12327-3)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2021-12-03
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: true
                         
+                        
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             
                             <a href="Specimen-specimen-urine-toxicology.html">Specimen/specimen-urine-toxicology</a>
                         </p>
@@ -1836,9 +1946,6 @@
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1851,47 +1958,60 @@
                             <p style="margin-bottom: 0px">Information Source: #3XdNnIQRs49EuGm5!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Ethanol [Mass/volume] in Urine by Confirmatory method 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#46983-3)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2021-12-03
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: 0.133 g/dL
                         
+                        
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             
                             <a href="Specimen-specimen-vitreous-humor-toxicology.html">Specimen/specimen-vitreous-humor-toxicology</a>
                         </p>
@@ -1935,9 +2055,6 @@
         <resource>
             <DocumentReference>
                 <id value="mdi-agency-case-notes-summary"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -1950,35 +2067,45 @@
                             <p style="margin-bottom: 0px">Information Source: #PTih1BZuH47IjaZv!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-DocumentReference-mdi-case-notes-summary.html">DocumentReference - MDI Case Notes Summary</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: current
                         
+                        
                         </p>
                         <p>
                             <b>type</b>: History general Narrative - Reported 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#47046-8 "Summary of death note")
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>category</b>: MDI Case Notes Summary 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="CodeSystem-CodeSystem-mdi-codes.html">MDI Code System</a>#mdi-case-notes-summary)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <blockquote>
@@ -2024,9 +2151,6 @@
         <resource>
             <DocumentReference>
                 <id value="mdi-case-history"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
-                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -2039,35 +2163,45 @@
                             <p style="margin-bottom: 0px">Information Source: #UBwfcd5D033xYzIL!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-DocumentReference-mdi-case-history.html">DocumentReference - MDI Case History</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: current
                         
+                        
                         </p>
                         <p>
                             <b>type</b>: History general Narrative - Reported 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#47046-8 "Summary of death note")
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>category</b>: MDI Case History 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="CodeSystem-CodeSystem-mdi-codes.html">MDI Code System</a>#mdi-case-history)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman: Alice J. Freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <blockquote>
