@@ -46,11 +46,6 @@
         <packageId value="us.cdc.phinvads"/>
         <version value="0.7.0"/>
     </dependsOn>
-    <dependsOn id="hl7fhirusvrdr">
-        <uri value="http://hl7.org/fhir/us/vrdr/ImplementationGuide/hl7.fhir.us.vrdr"/>
-        <packageId value="hl7.fhir.us.vrdr"/>
-        <version value="current"/>
-    </dependsOn>
     <definition>
         <grouping id="mdi-profiles">
             <name value="MDI Profiles"/>
