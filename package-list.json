@@ -1,15 +1,34 @@
 {
     "list": [
         {
-            "status": "ci-build",
             "version": "current",
-            "path": "https://fhir.org/fhir/US/mdi/ImplementationGuide/mdi",
-            "desc": "tbd",
+            "path": "https://build.fhir.org/ig/HL7/fhir-mdi-ig/",
+            "desc": "Continuous Integration Build (latest in version control)",
             "fhirversion": "4.0.1",
+            "status": "ci-build",
             "current": true
+        },
+        {
+            "version": "0.1.0",
+            "desc": "Ballot for STU Release 1",
+            "status": "ballot",
+            "sequence": "STU1",
+            "fhirversion": "4.0.1",
+            "path": "http://hl7.org/fhir/us/mdi/2022May",
+            "date": "2022-03-27",
+            "current": false
+        },
+        {
+            "version": "current",
+            "path": "http://build.fhir.org/ig/HL7/fhir-mdi-ig/branches/Branch_Jan2022-Connectathon",
+            "desc": "Jan2022-Connectathon Build",
+            "fhirversion": "4.0.1",
+            "status": "ci-build",
+            "current": false
         }
     ],
-    "title": "Medicolegal Death Investigation (MDI)",
     "package-id": "hl7.fhir.us.mdi",
-    "canonical": "https://fhir.org/fhir/us/mdi"
+    "title": "Medicolegal Death Investigation (MDI)",
+    "canonical": "https://fhir.org/fhir/us/mdi",
+    "category": "Public Health"
 }
