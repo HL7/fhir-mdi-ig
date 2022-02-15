@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-vitreous-humor-toxicology"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-01-03T23:46:52.975+00:00"/>
-        <source value="#NxHJeoloEqnB03lf"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-02-14T22:58:12.534+00:00"/>
+        <source value="#I7sPM3TU7ol8re8O"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
@@ -19,6 +19,7 @@
             <code value="258438000"/>
             <display value="Vitreous humor sample (specimen)"/>
         </coding>
+        <text value="Vitreous humor sample (specimen)"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>

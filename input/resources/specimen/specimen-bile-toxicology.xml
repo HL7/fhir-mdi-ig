@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-bile-toxicology"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-01-07T17:46:47.301+00:00"/>
-        <source value="#qOXWqnfBOzO7FKrE"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-02-14T22:46:59.264+00:00"/>
+        <source value="#RPkaGuR3gT2g80D0"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
@@ -19,6 +19,7 @@
             <code value="119341000"/>
             <display value="Bile specimen (specimen)"/>
         </coding>
+        <text value="Bile specimen (specimen)"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>

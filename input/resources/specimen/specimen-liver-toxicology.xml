@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-liver-toxicology"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-01-07T17:46:47.300+00:00"/>
-        <source value="#6zyRHKmRI0XNBio1"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-02-14T22:57:01.215+00:00"/>
+        <source value="#3xh8s2GvrzCcviwC"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
@@ -19,6 +19,7 @@
             <code value="128168004"/>
             <display value="Tissue specimen from liver (specimen)"/>
         </coding>
+        <text value="Tissue specimen from liver (specimen)"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>

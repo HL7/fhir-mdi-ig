@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-blood-toxicology"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-01-03T23:46:21.214+00:00"/>
-        <source value="#7bF3ocn9ljwiqdbT"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-02-14T22:56:30.038+00:00"/>
+        <source value="#mVtSOlXsJdR59xUa"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
@@ -19,6 +19,7 @@
             <code value="258580003"/>
             <display value="Whole blood sample (specimen)"/>
         </coding>
+        <text value="Whole blood sample (specimen)"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>

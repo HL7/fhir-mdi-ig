@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-stomach-contents-toxicology"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-01-07T17:46:47.282+00:00"/>
-        <source value="#wdJenBY2GiNMvGH6"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-02-14T22:57:28.537+00:00"/>
+        <source value="#6ELyj31vMxOAg2G5"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
@@ -19,6 +19,7 @@
             <code value="119379005"/>
             <display value="Specimen from stomach (specimen)"/>
         </coding>
+        <text value="Specimen from stomach (specimen)"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
