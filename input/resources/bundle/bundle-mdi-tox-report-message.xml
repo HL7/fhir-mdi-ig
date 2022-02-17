@@ -99,7 +99,7 @@
                             
                             
                             
-                            <a href="DiagnosticReport-mdi-diagnostic-report-toxicology-lab.html">DiagnosticReport/mdi-diagnostic-report-toxicology-lab</a>
+                            <a href="DiagnosticReport-diagnosticreport-mdi-toxicology-lab.html">DiagnosticReport/diagnosticreport-mdi-toxicology-lab</a>
                         </p>
                     </div>
                 </text>
@@ -122,16 +122,16 @@
                     <code value="ok"/>
                 </response>
                 <focus>
-                    <reference value="DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/>
+                    <reference value="DiagnosticReport/diagnosticreport-mdi-toxicology-lab"/>
                 </focus>
             </MessageHeader>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/>
+        <fullUrl value="https://fhir.org/fhir/DiagnosticReport/diagnosticreport-mdi-toxicology-lab"/>
         <resource>
             <DiagnosticReport>
-                <id value="mdi-diagnostic-report-toxicology-lab"/>
+                <id value="diagnosticreport-mdi-toxicology-lab"/>
                 <text>
                     <status value="generated"/>
                     <div
