@@ -62,13 +62,13 @@
             <reference value="Location/us-core-location-death-j-rogers"/>
         </entry>
         <entry>
-            <reference value="Observation/death-injury-at-work-j-rogers"/>
+            <reference value="Observation/observation-death-injury-at-work-j-rogers"/>
         </entry>
         <entry>
-            <reference value="Observation/tobacco-use-j-rogers"/>
+            <reference value="Observation/observation-tobacco-use-j-rogers"/>
         </entry>
         <entry>
-            <reference value="Observation/decedent-pregnancy-j-rogers"/>
+            <reference value="Observation/observation-decedent-pregnancy-j-rogers"/>
         </entry>
     </section>
     <section>
@@ -80,7 +80,7 @@
             </coding>
         </code>
         <entry>
-            <reference value="Observation/death-date-j-rogers"/>
+            <reference value="Observation/observation-death-date-j-rogers"/>
         </entry>
     </section>
     <section>
@@ -98,10 +98,10 @@
             <reference value="Condition/condition-other-contributing-to-death-j-rogers-diabetes"/>
         </entry>
         <entry>
-            <reference value="Observation/manner-of-death-j-rogers-accidental"/>
+            <reference value="Observation/observation-manner-of-death-j-rogers-accidental"/>
         </entry>
         <entry>
-            <reference value="Observation/how-death-injury-occurred-j-rogers-med-ingest"/>
+            <reference value="Observation/observation-how-death-injury-occurred-j-rogers-med-ingest"/>
         </entry>
     </section>
     <section>

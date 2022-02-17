@@ -35,12 +35,12 @@
     </extension>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-agency-case-history-notes">
         <valueReference>
-            <reference value="DocumentReference/mdi-agency-case-notes-summary"/>
+            <reference value="DocumentReference/documentrreference-mdi-agency-case-notes-summary"/>
         </valueReference>
     </extension>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-agency-case-history-notes">
         <valueReference>
-            <reference value="DocumentReference/mdi-case-history"/>
+            <reference value="DocumentReference/documentreference-mdi-case-history"/>
         </valueReference>
     </extension>
     <identifier>
