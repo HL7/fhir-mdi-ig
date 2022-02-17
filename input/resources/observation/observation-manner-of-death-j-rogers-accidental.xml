@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="manner-of-death-j-rogers-accidental"/>
+    <id value="observation-manner-of-death-j-rogers-accidental"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-12-23T04:13:18.315+00:00"/>
-        <source value="#cGxEbkLho3LBKEQK"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-17T05:33:57.633+00:00"/>
+        <source value="#TvaXYn6iEZETlBOT"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
     </meta>
     <status value="final"/>

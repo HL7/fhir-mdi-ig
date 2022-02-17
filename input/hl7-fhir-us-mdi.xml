@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="206"/>
-        <lastUpdated value="2022-02-14T22:38:10.878+00:00"/>
-        <source value="#17dxIZcJxsdRykQo"/>
+        <versionId value="230"/>
+        <lastUpdated value="2022-02-17T05:43:23.784+00:00"/>
+        <source value="#1impxfSIjZwEj6C2"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.1.0"/>
@@ -72,7 +72,7 @@
         </grouping>
         <resource>
             <reference>
-                <reference value="Binary/agency-case-notes"/></reference>
+                <reference value="Binary/binary-agency-case-notes"/></reference>
             <name value="Binary - base64 encoded plain text of Agency Case History and Notes"/>
             <description value="Example of Binary - base64 encoded plain text of Agency Case History and Notes"/>
             <exampleBoolean value="true"/>
@@ -98,11 +98,21 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/mdi-tox-report-message-bundle"/></reference>
+                <reference value="Bundle/bundle-mdi-tox-report-message"/></reference>
             <name value="Bundle - Message Toxicology to MDI - Freeman"/>
             <description value="Bundle - Document MDI to EDRS"/>
             <exampleBoolean value="true"/>
             <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-message-tox-to-mdi"/>
+                <display value="BundleMessageToxToMDI"/>
+            </reference>
+            <name value="Bundle Message Toxicology To MDI"/>
+            <description value="Bundle Message Toxicology To MDI Profile"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -174,25 +184,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-message-tox-to-mdi"/>
-                <display value="BundleMessageToxToMDI"/>
-            </reference>
-            <name value="Bundle Message Toxicology To MDI"/>
-            <description value="Bundle Message Toxicology To MDI Profile"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="toxicology-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MessageHeader/mdi-tox-result-report"/></reference>
-            <name value="MessageHeader - Toxicology to MDI - Report Result for Medical Examiner/Coroner"/>
-            <description value="Example of MessageHeader - Toxicology to MDI - Toxicology Report Result for Medical Examiner/Coroner"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
-            <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
                 <display value="CompositionToxicologyToMDI"/>
             </reference>
@@ -203,7 +194,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="DiagnosticReport/mdi-diagnostic-report-toxicology-lab"/></reference>
+                <reference value="DiagnosticReport/diagnosticreport-mdi-toxicology-lab"/></reference>
             <name value="DiagnosticReport - Toxicology to MDI - Resulting Toxicology Report"/>
             <description value="Example of DiagnosticReport Toxicology to MDI - Resulting Toxicology Report"/>
             <exampleBoolean value="false"/>
@@ -222,6 +213,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="DocumentReference/documentreference-mdi-case-history"/></reference>
+            <name value="DocumentReference - MDI Case History - Agency Case History text"/>
+            <description value="Example of DocumentReference MDI Case History - Agency Case History text"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
                 <display value="DocumentReference - MDI Case Notes Summary"/>
             </reference>
@@ -232,27 +232,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Specimen-toxicology-lab"/>
-                <display value="SpecimenToxicologyLab"/>
-            </reference>
-            <name value="Specimen - Toxicology Lab"/>
-            <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="toxicology-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/mdi-case-history"/></reference>
-            <name value="DocumentReference MDI Case History - Agency Case History text"/>
-            <description value="Example of DocumentReference MDI Case History - Agency Case History text"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-history"/>
-            <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/mdi-agency-case-notes-summary"/></reference>
-            <name value="DocumentReference MDI Case Notes Summary - Agency History and Notes text"/>
+                <reference value="DocumentReference/documentreference-mdi-agency-case-notes-summary"/></reference>
+            <name value="DocumentReference - MDI Case Notes Summary - Agency History and Notes text"/>
             <description value="Example of DocumentReference MDI Case Notes Summary - Agency History and Notes text"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
@@ -283,7 +264,7 @@
                 <reference value="StructureDefinition/Extension-agency-case-history-notes"/>
                 <display value="Extension -Agency Case History Notes"/>
             </reference>
-            <name value="Extension -Agency Case History Notes"/>
+            <name value="Extension - Agency Case History Notes"/>
             <description value="Extension -Agency Case History Notes"/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
@@ -319,6 +300,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="MessageHeader/messageheader-mdi-tox-result-report"/></reference>
+            <name value="MessageHeader - Toxicology to MDI - University of Florida Pathology Labs Tox Result Report"/>
+            <description value="MessageHeader - Toxicology to MDI: University of Florida Pathology Labs Tox Result Report example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-death-date"/>
                 <display value="Observation - Death Date"/>
             </reference>
@@ -329,16 +319,16 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/death-date-j-rogers"/></reference>
-            <name value="Observation - Death Date - Rogers"/>
-            <description value="Example of Observation - Death date - Rogers"/>
+                <reference value="Observation/observation-death-date-j-rogers"/></reference>
+            <name value="Observation - Death Date - J Rogers"/>
+            <description value="Observation - Death Date: J Rogers example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
             <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/death-injury-at-work-j-rogers"/></reference>
+                <reference value="Observation/observation-death-injury-at-work-j-rogers"/></reference>
             <name value="Observation - Death Injury at Work - Rogers"/>
             <description value="Example of Observation - Death Injury at Work - Rogers"/>
             <exampleBoolean value="false"/>
@@ -367,7 +357,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/decedent-pregnancy-j-rogers"/></reference>
+                <reference value="Observation/observation-decedent-pregnancy-j-rogers"/></reference>
             <name value="Observation - Decedent Pregnancy - Rogers"/>
             <description value="Example of Observation - Decedent pregnancy - Rogers"/>
             <exampleBoolean value="false"/>
@@ -386,7 +376,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/how-death-injury-occurred-j-rogers-med-ingest"/></reference>
+                <reference value="Observation/observation-how-death-injury-occurred-j-rogers-med-ingest"/></reference>
             <name value="Observation - How Death Injury Occurred - Rogers - Medication ingestion"/>
             <description value="Example of Observation - How Death Injury Occurred - Rogers - Medication ingestion"/>
             <exampleBoolean value="false"/>
@@ -405,7 +395,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/manner-of-death-j-rogers-accidental"/></reference>
+                <reference value="Observation/observation-manner-of-death-j-rogers-accidental"/></reference>
             <name value="Observation - Manner of Death - Rogers - Accidental"/>
             <description value="Example of Observation - Manner of Death - Rogers - Accidental"/>
             <exampleBoolean value="false"/>
@@ -422,7 +412,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/tobacco-use-j-rogers"/></reference>
+                <reference value="Observation/observation-tobacco-use-j-rogers"/></reference>
             <name value="Observation - Tobacco Use - Rogers"/>
             <description value="Example of Observation - Tobacco Use - Rogers"/>
             <exampleBoolean value="false"/>
@@ -441,17 +431,42 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-toxicology-lab"/>
-                <display value="ObservationToxicologyLab"/>
+                <reference value="Specimen/specimen-bile-toxicology"/></reference>
+            <name value="Specimen - Bile Not Tested"/>
+            <description value="Bile Specimen - Not Tested"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-liver-toxicology"/></reference>
+            <name value="Specimen - Liver Not Tested"/>
+            <description value="Liver Specimen - Not Tested"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-stomach-contents-toxicology"/></reference>
+            <name value="Specimen - Stomach Contents Not Tested"/>
+            <description value="Stomach Contents Specimen - Not Tested"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Specimen-toxicology-lab"/>
+                <display value="SpecimenToxicologyLab"/>
             </reference>
-            <name value="Toxicology Lab Observation Result"/>
+            <name value="Specimen - Toxicology Lab"/>
+            <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Specimen/specimen-blood-toxicology"/></reference>
-            <name value="Specimen Toxicology Lab - Blood specimen analysis"/>
+            <name value="Specimen - Toxicology Lab - Blood specimen analysis"/>
             <description value="Example of Specimen Toxicology Lab - Blood specimen analysis"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
@@ -460,7 +475,7 @@
         <resource>
             <reference>
                 <reference value="Specimen/specimen-urine-toxicology"/></reference>
-            <name value="Specimen Toxicology Lab - Urine Specimen for Toxicology Lab analysis"/>
+            <name value="Specimen - Toxicology Lab - Urine Specimen for Toxicology Lab analysis"/>
             <description value="Example of Specimen Toxicology Lab - Urine Specimen for Toxicology Lab analysis"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
@@ -469,11 +484,20 @@
         <resource>
             <reference>
                 <reference value="Specimen/specimen-vitreous-humor-toxicology"/></reference>
-            <name value="Specimen Toxicology Lab - Vitreous Humor Specimen for Toxicology Lab analysis"/>
+            <name value="Specimen - Toxicology Lab - Vitreous Humor Specimen for Toxicology Lab analysis"/>
             <description value="Example of Specimen Toxicology Lab - Vitreous Humor Specimen for Toxicology Lab analysis"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-toxicology-lab"/>
+                <display value="ObservationToxicologyLab"/>
+            </reference>
+            <name value="Toxicology Lab Observation Result"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -607,6 +631,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Patient/us-core-patient-unknown-name"/></reference>
+            <name value="US Core Patient - Unknown Name"/>
+            <description value="US Core Patient: Unknown Name - Decedent where there is no information known about the patient. Assume that the system will assign an MRN."/>
+            <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Practitioner/us-core-practitioner-b-goldberger"/></reference>
             <name value="US Core Practitioner - Dr. Bruce Goldberger"/>
             <description value="Example of US Core Practitioner - Dr. Bruce Goldberger"/>
@@ -631,36 +663,21 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/ValueSet-death-date-qualifiers"/>
+                <display value="Value Set - Date Death Qualifiers"/>
+            </reference>
+            <name value="Value Set - Date Death Qualifiers"/>
+            <description value="This value set contains codes that qualify the accuracy of the date of death and are to be used in the Observation.interpretation data element."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/ValueSet-tracking-number-type"/>
                 <display value="Tracking Number Type"/>
             </reference>
             <name value="ValueSet - Tracking Number Type"/>
             <description value="This value set contains codes to that identify the type of tracking number."/>
             <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Specimen/specimen-bile-toxicology"/></reference>
-            <name value="Bile Specimen - Not Tested"/>
-            <description value="Bile Specimen - Not Tested"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Specimen/specimen-liver-toxicology"/></reference>
-            <name value="Liver Specimen - Not Tested"/>
-            <description value="Liver Specimen - Not Tested"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Specimen/specimen-stomach-contents-toxicology"/></reference>
-            <name value="Stomach Contents Specimen - Not Tested"/>
-            <description value="Stomach Contents Specimen - Not Tested"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

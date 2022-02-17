@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle
     xmlns="http://hl7.org/fhir">
-    <id value="mdi-tox-report-message-bundle"/>
+    <id value="bundle-mdi-tox-report-message"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-02-15T00:15:16.752+00:00"/>
-        <source value="#6CyU7TxZ0qtUUfex"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-17T03:26:16.194+00:00"/>
+        <source value="#Q8vTZSe2EizIL2da"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     </meta>
     <identifier>

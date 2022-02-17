@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="tobacco-use-j-rogers"/>
+    <id value="observation-tobacco-use-j-rogers"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-12-23T04:13:42.120+00:00"/>
-        <source value="#oSC9DyAigPXsLM3q"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-17T05:33:37.215+00:00"/>
+        <source value="#nsv4oqL1TTsNpnb8"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
     </meta>
     <status value="final"/>

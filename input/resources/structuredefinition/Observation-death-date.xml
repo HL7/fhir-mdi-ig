@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2022-01-04T01:09:39.918+00:00"/>
-        <source value="#Emc8QDjVcIBTAlQp"/>
+        <versionId value="19"/>
+        <lastUpdated value="2022-02-16T23:37:42.138+00:00"/>
+        <source value="#OXijeQOIKKfiFTzb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     <name value="ObservationDeathDate"/>
     <title value="Observation - Death Date"/>
     <status value="active"/>
-    <description value="Actual or presumed date of death."/>
+    <description value="Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -99,12 +99,15 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="Actual or presumed date of death"/>
-            <definition value="Actual or presumed date of death"/>
+            <short value="Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+            <definition value="Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
             <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="dateTime"/>
+            </type>
+            <type>
+                <code value="Period"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -113,6 +116,17 @@
             <short value="Indicates reason for missing all or part of the decedent's death date (further information can be recorded in the note data element)"/>
             <definition value="Indicates reason for missing all or part of the decedent's death date (further information can be recorded in the note data element)"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Observation.interpretation">
+            <path value="Observation.interpretation"/>
+            <short value="Codes that qualify the accuracy of the date of death."/>
+            <definition value="Codes that qualify the accuracy of the date of death."/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <description value="This value set contains codes that qualify the accuracy of the date of death."/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-death-date-qualifiers"/>
+            </binding>
         </element>
         <element id="Observation.note">
             <path value="Observation.note"/>

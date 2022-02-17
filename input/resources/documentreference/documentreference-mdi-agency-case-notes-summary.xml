@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference
     xmlns="http://hl7.org/fhir">
-    <id value="mdi-agency-case-notes-summary"/>
+    <id value="documentreference-mdi-agency-case-notes-summary"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-01-03T23:39:34.158+00:00"/>
-        <source value="#PTih1BZuH47IjaZv"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-17T03:28:10.453+00:00"/>
+        <source value="#Ny1kw8YfymOH0p0i"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-case-notes-summary"/>
     </meta>
     <status value="current"/>

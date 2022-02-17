@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="decedent-pregnancy-j-rogers"/>
+    <id value="observation-decedent-pregnancy-j-rogers"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-12-23T04:11:25.092+00:00"/>
-        <source value="#62cVyAlVB14V0K3t"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-17T05:32:50.238+00:00"/>
+        <source value="#jzoVQrPJvY9ouK49"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
     </meta>
     <status value="final"/>

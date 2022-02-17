@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-mdi-codes"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-12-23T06:13:25.918+00:00"/>
-        <source value="#cpThkfRp0ksIpr3F"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-02-16T23:36:17.944+00:00"/>
+        <source value="#RA3QHZ2bgDSbIYyg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
     <version value="1.0.0"/>
@@ -89,5 +89,20 @@
         <code value="narratives"/>
         <display value="Narratives"/>
         <definition value="Narratives"/>
+    </concept>
+    <concept>
+        <code value="exact"/>
+        <display value="Exact"/>
+        <definition value="Exact"/>
+    </concept>
+    <concept>
+        <code value="approximate"/>
+        <display value="Approximate"/>
+        <definition value="Approximate"/>
+    </concept>
+    <concept>
+        <code value="court-appointed"/>
+        <display value="Court Appointed"/>
+        <definition value="Court Appointed"/>
     </concept>
 </CodeSystem>
