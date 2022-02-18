@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-cause-of-death"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-01-04T00:19:54.521+00:00"/>
-        <source value="#MRV7W0O7oy8Frvm9"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-02-18T00:37:17.893+00:00"/>
+        <source value="#AeEILqojGRNfBuHo"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
     <version value="1.0"/>
     <name value="ConditionCauseOfDeath"/>
-    <title value="Condition - Cause Of Death"/>
+    <title value="Condition - Cause of Death"/>
     <status value="draft"/>
     <experimental value="false"/>
     <description value="The Condition - Cause of Death profile reflects one of the eventually ordered causes of death asserted by the death certifier. The cause of death is initially specified with text. The Cause Of Death Condition profile builds upon the US Core Condition profile."/>

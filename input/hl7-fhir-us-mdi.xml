@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="230"/>
-        <lastUpdated value="2022-02-17T05:43:23.784+00:00"/>
-        <source value="#1impxfSIjZwEj6C2"/>
+        <versionId value="241"/>
+        <lastUpdated value="2022-02-18T02:07:21.963+00:00"/>
+        <source value="#iiviryRkDYD83puJ"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.1.0"/>
@@ -65,6 +65,7 @@
         </grouping>
         <grouping id="participant-examples">
             <name value="Participant Examples"/>
+            <description value="Example participants used in other examples."/>
         </grouping>
         <grouping id="extensions">
             <name value="Extensions"/>
@@ -109,7 +110,7 @@
                 <reference value="StructureDefinition/Bundle-message-tox-to-mdi"/>
                 <display value="BundleMessageToxToMDI"/>
             </reference>
-            <name value="Bundle Message Toxicology To MDI"/>
+            <name value="Bundle - Message Toxicology to MDI"/>
             <description value="Bundle Message Toxicology To MDI Profile"/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
@@ -119,7 +120,7 @@
                 <reference value="CodeSystem/CodeSystem-mdi-codes"/>
                 <display value="MDI Code System"/>
             </reference>
-            <name value="CodeSystem - MDI"/>
+            <name value="Code System - MDI"/>
             <description value="This code system contains codes for use in MDI."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -149,7 +150,7 @@
                 <reference value="StructureDefinition/Condition-cause-of-death"/>
                 <display value="Condition - Cause Of Death"/>
             </reference>
-            <name value="Condition - Cause Of Death"/>
+            <name value="Condition - Cause of Death"/>
             <description value="The Condition - Cause of Death profile reflects one of the eventually ordered causes of death asserted by the death certifier. The cause of death is initially specified with text. The Cause Of Death Condition profile builds upon the US Core Condition profile."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
@@ -177,7 +178,7 @@
                 <reference value="StructureDefinition/Condition-other-contributing-to-death"/>
                 <display value="Condition - Other Contributing To Death"/>
             </reference>
-            <name value="Condition - Other Contributing To Death"/>
+            <name value="Condition - Other Contributing to Death"/>
             <description value="The Condition - Other Contributing to Death profile is used to identify factors contributing to the cause of death as asserted by the death certifier. This profile builds upon the US Core Condition profile."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
@@ -424,7 +425,7 @@
                 <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
                 <display value="Observation Tobacco Use Contributed To Death"/>
             </reference>
-            <name value="Observation - Tobacco Use Contributed To Death"/>
+            <name value="Observation - Tobacco Use Contributed to Death"/>
             <description value="Observation - Tobacco Use Contributed To Death"/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
@@ -492,10 +493,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-toxicology-lab"/>
-                <display value="ObservationToxicologyLab"/>
+                <reference value="StructureDefinition/Observation-toxicology-lab-result"/>
+                <display value="Observation - Toxicology Lab Result"/>
             </reference>
-            <name value="Toxicology Lab Observation Result"/>
+            <name value="Observation - Toxicology Lab Result"/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
         </resource>

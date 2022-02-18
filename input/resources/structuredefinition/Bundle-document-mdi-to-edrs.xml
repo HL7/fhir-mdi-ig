@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-document-mdi-to-edrs"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-01-07T17:25:32.099+00:00"/>
-        <source value="#g6tOoPFS1b5c6UW8"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-02-18T00:34:33.300+00:00"/>
+        <source value="#YbPuqKhQFcZgpikP"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     <version value="0.0.1"/>
-    <name value="BundleDocumentMdiToEdrs"/>
+    <name value="BundleDocumentMDIToEDRS"/>
     <title value="Bundle - Document MDI to EDRS"/>
     <status value="active"/>
     <experimental value="false"/>

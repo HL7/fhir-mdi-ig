@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-mdi-codes"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-02-16T23:36:17.944+00:00"/>
-        <source value="#RA3QHZ2bgDSbIYyg"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-02-18T00:57:59.810+00:00"/>
+        <source value="#LOzGJ1yI3DmQSq05"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
     <version value="1.0.0"/>
-    <name value="MDICodeSystem"/>
-    <title value="MDI Code System"/>
+    <name value="CodeSystemMDI"/>
+    <title value="Code System - MDI"/>
     <status value="active"/>
     <date value="2021-12-01"/>
     <publisher value="HL7 Public Health Work Group"/>
