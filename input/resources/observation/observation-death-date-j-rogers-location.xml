@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-death-date-j-rogers"/>
+    <id value="observation-death-date-j-rogers-location"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-02-22T18:38:41.902+00:00"/>
-        <source value="#Z9ezpFc2LxSpGhZY"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-02-23T16:22:33.728+00:00"/>
+        <source value="#1Y986brbAo726jBG"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     </meta>
+    <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-observation-location">
+        <valueReference>
+            <reference value="Location/us-core-location-mans-greatest-hospital"/>
+        </valueReference>
+    </extension>
     <status value="final"/>
     <code>
         <coding>

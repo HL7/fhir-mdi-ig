@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-toxicology-lab-result"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-02-18T02:07:21.858+00:00"/>
-        <source value="#Cj8EtFi8z0LeDNwR"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-02-24T21:41:23.383+00:00"/>
+        <source value="#Y6uMZqwaDQ4ui3Wr"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     <name value="ObservationToxicologyLabResult"/>
     <title value="Observation - Toxicology Lab Result"/>
     <status value="active"/>
+    <description value="This Observation profile describes forensic toxicology laboratory test results from analysis of a specimen sent by a Medical Examiner, Coroner, or autopsy performer to the laboratory."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -20,6 +21,18 @@
     <differential>
         <element id="Observation">
             <path value="Observation"/>
+        </element>
+        <element id="Observation.note">
+            <path value="Observation.note"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.specimen">
+            <path value="Observation.specimen"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.code.coding">
             <path value="Observation.code.coding"/>

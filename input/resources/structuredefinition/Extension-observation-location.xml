@@ -3,20 +3,37 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-observation-location"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-01-03T23:40:39.013+00:00"/>
-        <source value="#tJSx0S32evO0XXGE"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-02-24T02:29:53.969+00:00"/>
+        <source value="#eVP62lHh0Ov2IgYH"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-observation-location"/>
+    <version value="1.0"/>
     <name value="ExtensionLocation"/>
     <title value="Extension - Location"/>
     <status value="active"/>
+    <publisher value="Health Level Seven International"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
     <description value="The location of the observed phenomenon or entity that is the subject of the observation."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="US Realm"/>
+    </jurisdiction>
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
-        <type value="extension"/>
+        <type value="element"/>
         <expression value="Observation"/>
     </context>
     <type value="Extension"/>

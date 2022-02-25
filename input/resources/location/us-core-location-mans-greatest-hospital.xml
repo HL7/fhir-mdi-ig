@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Location
+    xmlns="http://hl7.org/fhir">
+    <id value="us-core-location-mans-greatest-hospital"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2022-02-22T17:41:13.236+00:00"/>
+        <source value="#E9Go5I6VaVcotbqf"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+    </meta>
+    <identifier>
+        <system value="http://www.acme.org/location"/>
+        <value value="29"/>
+    </identifier>
+    <status value="active"/>
+    <name value="Man's Greatest Hospital"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="(+1) 734-677-7777"/>
+    </telecom>
+    <address>
+        <line value="3300 Washtenaw Avenue, Suite 227"/>
+        <city value="Amherst"/>
+        <district value="Hampshire County"/>
+        <state value="MA"/>
+        <postalCode value="01002"/>
+        <country value="USA"/>
+    </address>
+    <position>
+        <longitude value="-72.519854"/>
+        <latitude value="42.373222"/>
+    </position>
+</Location>

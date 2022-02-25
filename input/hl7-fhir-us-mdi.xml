@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="241"/>
-        <lastUpdated value="2022-02-18T02:07:21.963+00:00"/>
-        <source value="#iiviryRkDYD83puJ"/>
+        <versionId value="315"/>
+        <lastUpdated value="2022-02-25T18:47:12.101+00:00"/>
+        <source value="#HlzJRGYTgoGPal0L"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.1.0"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This US-specific implementation guide (IG) provides guidance to implementers and jurisdictions on the exchange of information to and from a medicolegal death investigation (MDI) information system. It supports interoperability between the MDI systems of medical examiner and coroner departments, toxicology and other laboratory information systems (LIS), and electronic death reporting systems (EDRS) of jurisdictional vital records offices. Data workflows include the receipt of toxicology information into an MDI system and sending information to an EDRS. The design intent of this IG is to create a base that states can further specify for exchange state-specific data."/>
+    <description value="This US-specific implementation guide (IG) provides guidance to FHIR implementers on the exchange of information to and from medicolegal death investigation (MDI) information systems. It supports interoperability between the MDI systems of medical examiner and coroner (ME/C) offices, forensic toxicology and other laboratory information management systems (LIMS), electronic death reporting systems (EDRS) of jurisdictional vital records offices, and ancillary workflows whose systems have the capability of utilizing FHIR. The design intent of this IG is to be a base that can be further specified for exchange of local MDI data."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -497,6 +497,7 @@
                 <display value="Observation - Toxicology Lab Result"/>
             </reference>
             <name value="Observation - Toxicology Lab Result"/>
+            <description value="This Observation profile describes forensic toxicology laboratory test results from analysis of a specimen sent by a Medical Examiner, Coroner, or autopsy performer to the laboratory."/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
         </resource>
@@ -680,10 +681,55 @@
             <description value="This value set contains codes to that identify the type of tracking number."/>
             <exampleBoolean value="false"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Location/us-core-location-mans-greatest-hospital"/>
+                <display value="us-core-location-Mans-Greatest-Hospital"/>
+            </reference>
+            <name value="US Core Location- Man's Greatest Hospital"/>
+            <description value="US Core Location: Man's greatest Hospital example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-death-date-j-rogers-location"/></reference>
+            <name value="Observation - Death Date - J Rogers - Location"/>
+            <description value="Observation - Death Date: J Rogers with location example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
             <generation value="markdown"/>
+            <page>
+                <nameUrl value="background.html"/>
+                <title value="Background"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="scenarios.html"/>
+                <title value="Scenarios"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="best_practices.html"/>
+                <title value="Best Practices"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="specification.html"/>
+                <title value="Specification"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="terminology.html"/>
+                <title value="Terminology"/>
+                <generation value="markdown"/>
+            </page>
             <page>
                 <nameUrl value="downloads.html"/>
                 <title value="Downloads"/>

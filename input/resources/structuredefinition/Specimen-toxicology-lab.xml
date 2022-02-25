@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-toxicology-lab"/>
     <meta>
-        <versionId value="29"/>
-        <lastUpdated value="2022-01-12T16:08:40.491+00:00"/>
-        <source value="#ajSGBl0j48hZ8Qmf"/>
+        <versionId value="31"/>
+        <lastUpdated value="2022-02-24T21:48:08.481+00:00"/>
+        <source value="#ZmfVeesQSX5K2JY2"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     <name value="SpecimenToxicologyLab"/>
@@ -58,6 +58,14 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.parent">
+            <path value="Specimen.parent"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             </type>
             <mustSupport value="true"/>
         </element>
