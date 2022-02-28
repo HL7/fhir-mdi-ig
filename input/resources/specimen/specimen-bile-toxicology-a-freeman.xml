@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen
     xmlns="http://hl7.org/fhir">
-    <id value="specimen-stomach-contents-toxicology"/>
+    <id value="specimen-bile-toxicology-a-freeman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-02-14T22:57:28.537+00:00"/>
-        <source value="#6ELyj31vMxOAg2G5"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-27T13:10:05.148+00:00"/>
+        <source value="#af2PhcZHzNXyYQH4"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
         <system value="http://lab.acme.org/specimens/2021"/>
-        <value value="MM352356"/>
+        <value value="OO352356"/>
     </accessionIdentifier>
     <status value="available"/>
     <type>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="119379005"/>
-            <display value="Specimen from stomach (specimen)"/>
+            <code value="119341000"/>
+            <display value="Bile specimen (specimen)"/>
         </coding>
-        <text value="Specimen from stomach (specimen)"/>
+        <text value="Bile specimen (specimen)"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
     <receivedTime value="2021-12-03T16:00:00Z"/>
     <container>
-        <description value="60mL sample of stomach contents specimen"/>
+        <description value="3mL sample of bile specimen"/>
         <specimenQuantity>
-            <value value="60"/>
+            <value value="3"/>
             <unit value="ml"/>
         </specimenQuantity>
     </container>

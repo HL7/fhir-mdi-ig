@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen
     xmlns="http://hl7.org/fhir">
-    <id value="specimen-bile-toxicology"/>
+    <id value="specimen-vitreous-humor-toxicology-a-freeman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-02-14T22:46:59.264+00:00"/>
-        <source value="#RPkaGuR3gT2g80D0"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-27T13:10:05.156+00:00"/>
+        <source value="#Aj0O73RsXxB3KSl5"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
         <system value="http://lab.acme.org/specimens/2021"/>
-        <value value="OO352356"/>
+        <value value="XXX352356"/>
     </accessionIdentifier>
     <status value="available"/>
     <type>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="119341000"/>
-            <display value="Bile specimen (specimen)"/>
+            <code value="258438000"/>
+            <display value="Vitreous humor sample (specimen)"/>
         </coding>
-        <text value="Bile specimen (specimen)"/>
+        <text value="Vitreous humor sample (specimen)"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
     <receivedTime value="2021-12-03T16:00:00Z"/>
+    <collection>
+        <collectedDateTime value="2021-12-03T11:00:00Z"/>
+    </collection>
     <container>
-        <description value="3mL sample of bile specimen"/>
+        <description value="10mL RT tube"/>
         <specimenQuantity>
             <value value="3"/>
             <unit value="ml"/>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/>
+    <id value="us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-01-03T23:44:34.277+00:00"/>
-        <source value="#3XdNnIQRs49EuGm5"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-27T13:10:04.959+00:00"/>
+        <source value="#91ijYGD10wvYdNiP"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     </meta>
     <status value="final"/>
@@ -20,10 +20,10 @@
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="46983-3"/>
-            <display value="Ethanol [Mass/volume] in Urine by Confirmatory method"/>
+            <code value="56478-1"/>
+            <display value="Ethanol [Mass/volume] in Blood by Gas chromatography"/>
         </coding>
-        <text value="Ethanol [Mass/volume] in Urine by Confirmatory method"/>
+        <text value="Ethanol [Mass/volume] in Blood by Gas chromatography"/>
     </code>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
@@ -31,11 +31,11 @@
     </subject>
     <effectiveDateTime value="2021-12-03"/>
     <valueQuantity>
-        <value value="0.133"/>
+        <value value="0.145"/>
         <unit value="g/dL"/>
         <system value="http://unitsofmeasure.org"/>
     </valueQuantity>
     <specimen>
-        <reference value="Specimen/specimen-vitreous-humor-toxicology"/>
+        <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
     </specimen>
 </Observation>

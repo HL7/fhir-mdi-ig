@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-toxicology-to-mdi"/>
     <meta>
-        <versionId value="47"/>
-        <lastUpdated value="2022-02-24T21:26:29.804+00:00"/>
-        <source value="#jQC93xnAw8pJGsFx"/>
+        <versionId value="48"/>
+        <lastUpdated value="2022-02-27T21:06:27.035+00:00"/>
+        <source value="#ig36uTzaCRiWEEi7"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     <name value="DiagnosticReportToxicologyToMDI"/>
     <title value="DiagnosticReport - Toxicology Lab Result to MDI"/>
     <status value="active"/>
-    <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a toxicology lab information system to an MDI case management system."/>
+    <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a forensic toxicology laboratory information management system to an MDI information management system."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

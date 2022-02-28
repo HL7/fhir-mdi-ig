@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="List-cause-of-death-pathway"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-01-04T00:20:36.552+00:00"/>
-        <source value="#p1GtJMa4YrW8EchZ"/>
+        <versionId value="12"/>
+        <lastUpdated value="2022-02-28T05:09:22.043+00:00"/>
+        <source value="#ET3vWDXWoHy3ZHUC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
     <name value="ListCauseOfDeathPathway"/>
     <title value="List - Cause of Death Pathway"/>
     <status value="draft"/>
-    <description value="Cause of Death Pathway is an ordered list of cause of death conditions."/>
+    <description value="This List profile is an ordered list of cause of death conditions."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -86,7 +86,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Condition-cause-of-death"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-condition"/>
             </type>
             <mustSupport value="true"/>
         </element>

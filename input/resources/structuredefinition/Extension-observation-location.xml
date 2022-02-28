@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-observation-location"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-02-24T02:29:53.969+00:00"/>
-        <source value="#eVP62lHh0Ov2IgYH"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-02-27T21:18:06.946+00:00"/>
+        <source value="#ub2jcrWr7H9IaTdP"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-observation-location"/>
     <version value="1.0"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="The location of the observed phenomenon or entity that is the subject of the observation."/>
+    <description value="This Extension contains the location of the observed phenomenon or entity that is the subject of the observation."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

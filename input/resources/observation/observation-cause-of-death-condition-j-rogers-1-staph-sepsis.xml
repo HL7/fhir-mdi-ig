@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-cause-of-death-condition-j-rogers-1-staph-sepsis"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-02-28T05:28:53.355+00:00"/>
+        <source value="#TjDmNVf7anDjRmqp"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-condition"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="69453-9"/>
+            <display value="Cause of death [US Standard Certificate of Death]"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-j-rogers"/>
+    </subject>
+    <performer>
+        <reference value="Practitioner/us-core-practitioner-s-jones"/>
+    </performer>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="91302008"/>
+            <display value="Sepsis (disorder)"/>
+        </coding>
+        <text value="Sepsis (disorder)"/>
+    </valueCodeableConcept>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="69440-6"/>
+                <display value="Disease onset to death interval"/>
+            </coding>
+        </code>
+        <valueString value="5 days"/>
+    </component>
+</Observation>

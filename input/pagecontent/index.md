@@ -37,4 +37,4 @@ Implementers of this MDI FHIR standard must have the following US Core profiles 
 * Cynthia Bush (OD), pdz1@cdc.gov
 * Kate Brett (DVS), kmb5@cdc.gov
 * Margaret Warner (DVS), mmw9@cdc.gov
-* Diana Wrigh, diana.wright@lantanagroup.com
+* Diana Wright, diana.wright@lantanagroup.com

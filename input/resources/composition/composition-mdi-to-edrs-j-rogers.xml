@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-mdi-to-edrs-j-rogers"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-02-17T06:16:23.224+00:00"/>
-        <source value="#LPYTkcak77ycbqPI"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-02-28T05:32:18.702+00:00"/>
+        <source value="#ZMwak6cq8bFE3f76"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
@@ -16,7 +16,7 @@
                     <code value="BCT"/>
                 </coding>
             </type>
-            <value value="15075"/>
+            <value value="ME21-112"/>
         </valueIdentifier>
     </extension>
     <identifier>
@@ -95,7 +95,7 @@
             <reference value="List/list-cause-of-death-pathway-j-rogers"/>
         </entry>
         <entry>
-            <reference value="Condition/condition-other-contributing-to-death-j-rogers-diabetes"/>
+            <reference value="Observation/observation-condition-contributing-to-death-j-rogers-diabetes"/>
         </entry>
         <entry>
             <reference value="Observation/observation-manner-of-death-j-rogers-accidental"/>

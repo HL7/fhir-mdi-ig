@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="ValueSet-units-of-age"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-28T04:45:49.022+00:00"/>
+        <source value="#UZRTJ3gwJ3NrFuJT"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-units-of-age"/>
+    <version value="0.1.0"/>
+    <name value="ValueSetUnitsOfAge"/>
+    <title value="ValueSet - Units of Age"/>
+    <status value="active"/>
+    <date value="2022-02-27T14:45:00+00:00"/>
+    <publisher value="HL7 Public Health Working Group"/>
+    <contact>
+        <name value="HL7 Public Health Working Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="pher@lists.HL7.org"/>
+        </telecom>
+    </contact>
+    <description value="Units of Age"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="http://unitsofmeasure.org/"/>
+            <concept>
+                <code value="min"/>
+                <display value="Minutes"/>
+            </concept>
+            <concept>
+                <code value="d"/>
+                <display value="Days"/>
+            </concept>
+            <concept>
+                <code value="h"/>
+                <display value="Hours"/>
+            </concept>
+            <concept>
+                <code value="mo"/>
+                <display value="Months"/>
+            </concept>
+            <concept>
+                <code value="a"/>
+                <display value="Years"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <concept>
+                <code value="UNK"/>
+                <display value="unknown"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-document-mdi-to-edrs"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-02-18T00:34:33.300+00:00"/>
-        <source value="#YbPuqKhQFcZgpikP"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-02-27T20:47:21.231+00:00"/>
+        <source value="#RRjjz9579aHw2xrT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     <version value="0.0.1"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Bundle profile represents a MDI to EDRS Document Bundle. It contains a Composition - MDI to EDRS."/>
+    <description value="This Bundle profile represents an MDI to EDRS Document Bundle. It contains a Composition - MDI to EDRS."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

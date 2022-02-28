@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen
     xmlns="http://hl7.org/fhir">
-    <id value="specimen-vitreous-humor-toxicology"/>
+    <id value="specimen-urine-toxicology-a-freeman"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-02-14T22:58:12.534+00:00"/>
-        <source value="#I7sPM3TU7ol8re8O"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-27T13:10:05.433+00:00"/>
+        <source value="#ddLJ601hCorA7ehM"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
         <system value="http://lab.acme.org/specimens/2021"/>
-        <value value="XXX352356"/>
+        <value value="ZZZ352356"/>
     </accessionIdentifier>
     <status value="available"/>
     <type>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="258438000"/>
-            <display value="Vitreous humor sample (specimen)"/>
+            <code value="122575003"/>
+            <display value="Urine specimen (specimen)"/>
         </coding>
-        <text value="Vitreous humor sample (specimen)"/>
+        <text value="Urine specimen (specimen)"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
@@ -31,7 +31,7 @@
     <container>
         <description value="10mL RT tube"/>
         <specimenQuantity>
-            <value value="3"/>
+            <value value="5"/>
             <unit value="ml"/>
         </specimenQuantity>
     </container>

@@ -3,11 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-death-date-j-rogers"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-02-22T18:38:41.902+00:00"/>
-        <source value="#Z9ezpFc2LxSpGhZY"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-02-27T03:22:32.728+00:00"/>
+        <source value="#9QYNxTW2hEi9RKkM"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     </meta>
+    <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-observation-location">
+        <valueReference>
+            <reference value="Location/us-core-location-mans-greatest-hospital"/>
+        </valueReference>
+    </extension>
     <status value="final"/>
     <code>
         <coding>

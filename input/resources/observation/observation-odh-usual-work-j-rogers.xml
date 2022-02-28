@@ -3,11 +3,41 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-odh-usual-work-j-rogers"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-23T04:32:19.747+00:00"/>
-        <source value="#dG437xzONB4UaL1V"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-02-27T03:13:40.821+00:00"/>
+        <source value="#TFjbH0UhCKEQ3rlW"/>
         <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
     </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">Jasmine 
+                
+                <b>ROGERS </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>History of Usual Occupation:</td>
+                        <td>Computer control programmers and operators</td>
+                    </tr>
+                    <tr>
+                        <td>Effective Period:</td>
+                        <td>1989-06-01 / 2010-01-07</td>
+                    </tr>
+                    <tr>
+                        <td>History of Usual industry:</td>
+                        <td>Insurance carriers and related activities</td>
+                    </tr>
+                    <tr>
+                        <td>Usual occupation duration:</td>
+                        <td>21 years</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
     <status value="final"/>
     <code>
         <coding>
@@ -20,18 +50,14 @@
         <reference value="Patient/us-core-patient-j-rogers"/>
     </subject>
     <effectivePeriod>
-        <start value="2018-06-01"/>
+        <start value="1989-06-01"/>
+        <end value="2010-01-07"/>
     </effectivePeriod>
     <valueCodeableConcept>
         <coding>
             <system value="urn:oid:2.16.840.1.114222.4.5.314"/>
-            <code value="3600"/>
-            <display value="Nursing, psychiatric, and home health aides"/>
-        </coding>
-        <coding>
-            <system value="urn:oid:2.16.840.1.114222.4.5.327"/>
-            <code value="31-1014.00.007136"/>
-            <display value="Certified Nursing Assistant (CNA) [Nursing Assistants]"/>
+            <code value="7900"/>
+            <display value="Computer control programmers and operators"/>
         </coding>
     </valueCodeableConcept>
     <component>
@@ -45,13 +71,8 @@
         <valueCodeableConcept>
             <coding>
                 <system value="https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html"/>
-                <code value="8270"/>
-                <display value="Nursing care facilities"/>
-            </coding>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH"/>
-                <code value="621610.008495"/>
-                <display value="Home nursing services"/>
+                <code value="6990"/>
+                <display value="Insurance carriers and related activities"/>
             </coding>
         </valueCodeableConcept>
     </component>

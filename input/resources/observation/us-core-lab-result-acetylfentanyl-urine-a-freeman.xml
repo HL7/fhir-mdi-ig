@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="us-core-lab-result-fentanyl-blood"/>
+    <id value="us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-01-03T23:41:29.283+00:00"/>
-        <source value="#OZELk1x0m1IX4ciu"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-27T13:10:05.078+00:00"/>
+        <source value="#8oi0f8lHUHaEjeSP"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     </meta>
     <status value="final"/>
@@ -20,22 +20,18 @@
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="73938-3"/>
-            <display value="fentaNYL [Mass/volume] in Blood by Confirmatory method"/>
+            <code value="74810-3"/>
+            <display value="Acetyl fentanyl [Presence] in Urine by Confirmatory method"/>
         </coding>
-        <text value="fentaNYL [Mass/volume] in Blood by Confirmatory method"/>
+        <text value="Acetyl fentanyl [Presence] in Urine by Confirmatory method"/>
     </code>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
         <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
-    <valueQuantity>
-        <value value="23"/>
-        <unit value="ng/mL"/>
-        <system value="http://unitsofmeasure.org"/>
-    </valueQuantity>
+    <valueBoolean value="true"/>
     <specimen>
-        <reference value="Specimen/specimen-blood-toxicology"/>
+        <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
     </specimen>
 </Observation>

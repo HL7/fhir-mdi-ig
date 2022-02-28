@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-toxicology-to-mdi"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2022-01-04T00:37:02.425+00:00"/>
-        <source value="#PrZM0AnigxFU3MLi"/>
+        <versionId value="15"/>
+        <lastUpdated value="2022-02-27T21:20:08.919+00:00"/>
+        <source value="#YxSWC4rOJhuaIlj7"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
     <name value="MessageHeaderToxicologyToMDI"/>
     <title value="MessageHeader - Toxicology to MDI"/>
     <status value="active"/>
-    <description value="This MessageHeader identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."/>
+    <description value="This MessageHeader identifies the DiagnosticReport being sent from a forensic toxicology laboratory information system to an MDI information management system."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen
     xmlns="http://hl7.org/fhir">
-    <id value="specimen-blood-toxicology"/>
+    <id value="specimen-blood-toxicology-a-freeman"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-02-14T22:56:30.038+00:00"/>
-        <source value="#mVtSOlXsJdR59xUa"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-27T13:10:05.201+00:00"/>
+        <source value="#x0epzvnCwTuLNqoc"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>

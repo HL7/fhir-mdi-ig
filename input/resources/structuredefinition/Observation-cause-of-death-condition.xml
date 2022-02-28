@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-cause-of-death-condition"/>
+    <meta>
+        <versionId value="10"/>
+        <lastUpdated value="2022-02-28T04:50:56.236+00:00"/>
+        <source value="#1tXxwOR9g8xHVuCg"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-condition"/>
+    <version value="1.2.1"/>
+    <name value="ObservationCauseOfDeathCondition"/>
+    <title value="Observation - Cause Of Death Condition"/>
+    <status value="active"/>
+    <date value="2022-02-27T13:48:44+00:00"/>
+    <publisher value="HL7 Public Health Working Group"/>
+    <contact>
+        <name value="HL7 Public Health Working Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="pher@lists.HL7.org"/>
+        </telecom>
+    </contact>
+    <description value="The Observation - Cause of Death Condition profile reflects one of the eventually ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <short value="Cause of death [US Standard Certificate of Death]"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="69453-9"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.performer">
+            <path value="Observation.performer"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x].text">
+            <path value="Observation.value[x].text"/>
+            <maxLength value="120"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component">
+            <path value="Observation.component"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+        </element>
+        <element id="Observation.component:interval">
+            <path value="Observation.component"/>
+            <sliceName value="interval"/>
+            <short value="Disease onset to death interval"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:interval.code">
+            <path value="Observation.component.code"/>
+            <short value="Disease onset to death interval"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="69440-6"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.component:interval.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation.component:interval.valueString">
+            <path value="Observation.component.valueString"/>
+            <short value="Interval as a string"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation.component:interval.valueQuantity">
+            <path value="Observation.component.valueQuantity"/>
+            <short value="Interval as a Quantity"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation.component:interval.valueQuantity.system">
+            <path value="Observation.component.valueQuantity.system"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-units-of-age"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

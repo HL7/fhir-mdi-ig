@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="list-cause-of-death-pathway-j-rogers"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-01-05T01:26:38.603+00:00"/>
-        <source value="#JNg8sP6XlDLnFSJu"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-02-28T05:30:17.345+00:00"/>
+        <source value="#KGOBW7XvyrSP8189"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
     </meta>
     <status value="current"/>
@@ -18,7 +18,7 @@
     </source>
     <entry>
         <item>
-            <reference value="Condition/condition-cause-of-death-j-rogers-1-staph-sepsis"/>
+            <reference value="Observation/observation-cause-of-death-condition-j-rogers-1-staph-sepsis"/>
         </item>
     </entry>
 </List>

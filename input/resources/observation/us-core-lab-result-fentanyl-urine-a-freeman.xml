@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="us-core-lab-result-norfentanyl-urine"/>
+    <id value="us-core-lab-result-fentanyl-urine-a-freeman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-01-03T23:43:47.811+00:00"/>
-        <source value="#d5v5UuMWBHieRctm"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-27T13:10:04.950+00:00"/>
+        <source value="#hTW9Wml8sMxaHQ7r"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     </meta>
     <status value="final"/>
@@ -20,10 +20,10 @@
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="43199-9"/>
-            <display value="Norfentanyl [Presence] in Urine"/>
+            <code value="11235-9"/>
+            <display value="fentaNYL [Presence] in Urine"/>
         </coding>
-        <text value="Norfentanyl [Presence] in Urine"/>
+        <text value="fentaNYL [Presence] in Urine"/>
     </code>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
@@ -32,6 +32,6 @@
     <effectiveDateTime value="2021-12-03"/>
     <valueBoolean value="true"/>
     <specimen>
-        <reference value="Specimen/specimen-urine-toxicology"/>
+        <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
     </specimen>
 </Observation>

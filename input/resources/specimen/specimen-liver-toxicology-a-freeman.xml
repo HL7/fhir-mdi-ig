@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen
     xmlns="http://hl7.org/fhir">
-    <id value="specimen-urine-toxicology"/>
+    <id value="specimen-liver-toxicology-a-freeman"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-02-14T22:57:50.792+00:00"/>
-        <source value="#zRZdGK1OxJKseGir"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-27T13:10:05.433+00:00"/>
+        <source value="#3JdIL4l4fJPi7iKE"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
         <system value="http://lab.acme.org/specimens/2021"/>
-        <value value="ZZZ352356"/>
+        <value value="DD352356"/>
     </accessionIdentifier>
     <status value="available"/>
     <type>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="122575003"/>
-            <display value="Urine specimen (specimen)"/>
+            <code value="128168004"/>
+            <display value="Tissue specimen from liver (specimen)"/>
         </coding>
-        <text value="Urine specimen (specimen)"/>
+        <text value="Tissue specimen from liver (specimen)"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
     <receivedTime value="2021-12-03T16:00:00Z"/>
-    <collection>
-        <collectedDateTime value="2021-12-03T11:00:00Z"/>
-    </collection>
     <container>
-        <description value="10mL RT tube"/>
+        <description value="5mL sample of liver specimen"/>
         <specimenQuantity>
             <value value="5"/>
             <unit value="ml"/>

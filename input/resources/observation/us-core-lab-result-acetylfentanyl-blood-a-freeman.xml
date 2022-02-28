@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="us-core-lab-result-xylazine-urine"/>
+    <id value="us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-01-03T23:44:08.537+00:00"/>
-        <source value="#2UezPlUhsHjItCeB"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-27T13:10:04.933+00:00"/>
+        <source value="#o0GT1JZNfkt14wDY"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     </meta>
     <status value="final"/>
@@ -20,18 +20,22 @@
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="12327-3"/>
-            <display value="Ketamine [Presence] in Urine"/>
+            <code value="86223-5"/>
+            <display value="Acetyl norfentanyl [Mass/volume] in Serum, Plasma or Blood by Confirmatory method"/>
         </coding>
-        <text value="Ketamine [Presence] in Urine"/>
+        <text value="Acetyl norfentanyl [Mass/volume] in Serum, Plasma or Blood by Confirmatory method"/>
     </code>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
         <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
-    <valueBoolean value="true"/>
+    <valueQuantity>
+        <value value="2"/>
+        <unit value="ng/mL"/>
+        <system value="http://unitsofmeasure.org"/>
+    </valueQuantity>
     <specimen>
-        <reference value="Specimen/specimen-urine-toxicology"/>
+        <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
     </specimen>
 </Observation>

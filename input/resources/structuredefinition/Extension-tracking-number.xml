@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-tracking-number"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2021-12-21T22:25:56.327+00:00"/>
-        <source value="#2eexrN1gZTYjmGA7"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-02-27T21:19:01.369+00:00"/>
+        <source value="#dM7fMPiukV3FJEvv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
     <version value="1.0"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This Extension contains a tracking number, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."/>
+    <description value="This Extension contains a tracking number, such as a case number or file number assigned by an MDI information management system or EDRS, and can represent other tracking numbers, if required."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

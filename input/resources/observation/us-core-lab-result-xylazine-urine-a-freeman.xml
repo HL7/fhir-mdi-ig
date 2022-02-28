@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="us-core-lab-result-etoh-gas-chromatography-urine"/>
+    <id value="us-core-lab-result-xylazine-urine-a-freeman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-01-03T23:43:01.432+00:00"/>
-        <source value="#qs2LRsRvYNm989KV"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-02-27T13:10:05.079+00:00"/>
+        <source value="#tIgNAwPLlTHXXD1I"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     </meta>
     <status value="final"/>
@@ -20,22 +20,18 @@
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="46983-3"/>
-            <display value="Ethanol [Mass/volume] in Urine by Confirmatory method"/>
+            <code value="12327-3"/>
+            <display value="Ketamine [Presence] in Urine"/>
         </coding>
-        <text value="Ethanol [Mass/volume] in Urine by Confirmatory method"/>
+        <text value="Ketamine [Presence] in Urine"/>
     </code>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
         <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
-    <valueQuantity>
-        <value value="0.16"/>
-        <unit value="g/dL"/>
-        <system value="http://unitsofmeasure.org"/>
-    </valueQuantity>
+    <valueBoolean value="true"/>
     <specimen>
-        <reference value="Specimen/specimen-urine-toxicology"/>
+        <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
     </specimen>
 </Observation>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-location-mans-greatest-hospital"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-02-22T17:41:13.236+00:00"/>
-        <source value="#E9Go5I6VaVcotbqf"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-02-27T03:17:15.396+00:00"/>
+        <source value="#Mj43YK9wRRCdQNB9"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
     </meta>
     <identifier>
@@ -19,15 +19,10 @@
         <value value="(+1) 734-677-7777"/>
     </telecom>
     <address>
-        <line value="3300 Washtenaw Avenue, Suite 227"/>
-        <city value="Amherst"/>
-        <district value="Hampshire County"/>
-        <state value="MA"/>
-        <postalCode value="01002"/>
+        <line value="100 Medical Avenue"/>
+        <city value="Atlanta"/>
+        <district value="Fulton County"/>
+        <state value="GA"/>
         <country value="USA"/>
     </address>
-    <position>
-        <longitude value="-72.519854"/>
-        <latitude value="42.373222"/>
-    </position>
 </Location>
