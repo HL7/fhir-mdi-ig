@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-injury-at-work"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-12-20T20:12:13.575+00:00"/>
-        <source value="#jQVqisWq8PtW4LWf"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-03-03T05:00:05.655+00:00"/>
+        <source value="#sswHcwXKHWVIacGM"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
     <version value="0.1.0"/>
@@ -71,8 +71,8 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <description value="PHVS_YesNoNotApplicable_NCHS"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7486"/>
+                <description value="ValueSet-yes-no-not-applicable"/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-yes-no-not-applicable"/>
             </binding>
         </element>
     </differential>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-how-death-injury-occurred-j-rogers-med-ingest"/>
+    <id value="observation-how-death-injury-occurred-a-freeman-med-ingest"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-02-17T05:33:10.959+00:00"/>
-        <source value="#NFP4jwM5ag2JU720"/>
+        <lastUpdated value="2022-03-01T17:19:53.056+00:00"/>
+        <source value="#Z98BYGvx2FdhqI8b"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     </meta>
     <status value="final"/>
@@ -17,11 +17,11 @@
         </coding>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-j-rogers"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
     <effectiveDateTime value="2018-02-19T16:48:06-05:00"/>
     <performer>
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </performer>
-    <valueString value="How person died description"/>
+    <valueString value="Ingested counterfeit medication"/>
 </Observation>

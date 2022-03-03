@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Location
     xmlns="http://hl7.org/fhir">
-    <id value="us-core-location-mans-greatest-hospital"/>
+    <id value="us-core-location-atlanta-ga-death-location-a-freeman"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-02-27T03:17:15.396+00:00"/>
-        <source value="#Mj43YK9wRRCdQNB9"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-01T18:09:05.383+00:00"/>
+        <source value="#gsNPN2nD0eTwQUjk"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
     </meta>
     <identifier>
@@ -13,13 +13,11 @@
         <value value="29"/>
     </identifier>
     <status value="active"/>
-    <name value="Man's Greatest Hospital"/>
-    <telecom>
-        <system value="phone"/>
-        <value value="(+1) 734-677-7777"/>
-    </telecom>
+    <name value="Atlanta GA Death Location - Freeman"/>
     <address>
-        <line value="100 Medical Avenue"/>
+        <use value="home"/>
+        <type value="physical"/>
+        <line value="400 Windstream Street"/>
         <city value="Atlanta"/>
         <district value="Fulton County"/>
         <state value="GA"/>

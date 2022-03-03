@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="ValueSet-contributory-tobacco-use"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-03T04:49:39.578+00:00"/>
+        <source value="#FPa9DQGlEDmjRFsY"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-contributory-tobacco-use"/>
+    <version value="0.1.0"/>
+    <name value="ValueSetContributoryTobaccoUse"/>
+    <title value="ValueSet - Contributory Tobacco Use"/>
+    <status value="active"/>
+    <date value="2022-03-03T14:44:43+00:00"/>
+    <publisher value="HL7 Public Health Working Group"/>
+    <contact>
+        <name value="HL7 Public Health Working Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="pher@lists.HL7.org"/>
+        </telecom>
+    </contact>
+    <description value="A set of codes that reflect the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004)"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="373066001"/>
+                <display value="Yes"/>
+            </concept>
+            <concept>
+                <code value="373067005"/>
+                <display value="No"/>
+            </concept>
+            <concept>
+                <code value="2931005"/>
+                <display value="Probably"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <concept>
+                <code value="UNK"/>
+                <display value="Unknown"/>
+            </concept>
+            <concept>
+                <code value="NASK"/>
+                <display value="not asked"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

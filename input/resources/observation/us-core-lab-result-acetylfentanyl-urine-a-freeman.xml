@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-02-27T13:10:05.078+00:00"/>
-        <source value="#8oi0f8lHUHaEjeSP"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-01T14:13:24.438+00:00"/>
+        <source value="#yrqg441YY0qAunMZ"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
     <status value="final"/>
     <category>

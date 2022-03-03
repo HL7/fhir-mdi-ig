@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="diagnosticreport-mdi-toxicology-lab-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-02-27T13:10:05.769+00:00"/>
-        <source value="#qpGQlmo6QtHOezOu"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-03-01T15:45:01.940+00:00"/>
+        <source value="#cJhZ2bXQr1FvRRvF"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     </meta>
     <text>
@@ -32,16 +32,6 @@
             <system value="http://florida-investigation-agncy.org/fhir/agency-case-numbers"/>
             <value value="ME21-111"/>
         </valueIdentifier>
-    </extension>
-    <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-agency-case-history-notes">
-        <valueReference>
-            <reference value="DocumentReference/documentreference-mdi-agency-case-notes-summary"/>
-        </valueReference>
-    </extension>
-    <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-agency-case-history-notes">
-        <valueReference>
-            <reference value="DocumentReference/documentreference-mdi-case-history"/>
-        </valueReference>
     </extension>
     <identifier>
         <type>
@@ -81,65 +71,65 @@
         <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
     </performer>
     <specimen>
-        <reference value="Specimen/specimen-blood-toxicology"/>
+        <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
     </specimen>
     <specimen>
-        <reference value="Specimen/specimen-urine-toxicology"/>
+        <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
     </specimen>
     <specimen>
-        <reference value="Specimen/specimen-vitreous-humor-toxicology"/>
+        <reference value="Specimen/specimen-vitreous-humor-toxicology-a-freeman"/>
     </specimen>
     <specimen>
-        <reference value="Specimen/specimen-bile-toxicology"/>
+        <reference value="Specimen/specimen-bile-toxicology-a-freeman"/>
     </specimen>
     <specimen>
-        <reference value="Specimen/specimen-liver-toxicology"/>
+        <reference value="Specimen/specimen-liver-toxicology-a-freeman"/>
     </specimen>
     <specimen>
-        <reference value="Specimen/specimen-stomach-contents-toxicology"/>
+        <reference value="Specimen/specimen-stomach-contents-toxicology-a-freeman"/>
     </specimen>
     <result>
-        <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-blood"/>
+        <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
         <display value="ETOH BLOOD: 0.145 g/dL"/>
     </result>
     <result>
-        <reference value="Observation/us-core-lab-result-4-anpp-blood"/>
+        <reference value="Observation/us-core-lab-result-4-anpp-blood-a-freeman"/>
         <display value="4-ANPP: POSITIVE"/>
     </result>
     <result>
-        <reference value="Observation/us-core-lab-result-acetylfentanyl-blood"/>
+        <reference value="Observation/us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
         <display value="ACETYLFENTANYL: 2 ng/mL"/>
     </result>
     <result>
-        <reference value="Observation/us-core-lab-result-fentanyl-blood"/>
+        <reference value="Observation/us-core-lab-result-fentanyl-blood-a-freeman"/>
         <display value="FENTANYL: 23 ng/mL"/>
     </result>
     <result>
-        <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-urine"/>
+        <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
         <display value="ETOH URINE: 0.160 g/dL"/>
     </result>
     <result>
-        <reference value="Observation/us-core-lab-result-4-anpp-urine"/>
+        <reference value="Observation/us-core-lab-result-4-anpp-urine-a-freeman"/>
         <display value="4-ANPP: POSITIVE"/>
     </result>
     <result>
-        <reference value="Observation/us-core-lab-result-acetylfentanyl-urine"/>
+        <reference value="Observation/us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
         <display value="ACETYLFENTANYL: POSITIVE"/>
     </result>
     <result>
-        <reference value="Observation/us-core-lab-result-fentanyl-urine"/>
+        <reference value="Observation/us-core-lab-result-fentanyl-urine-a-freeman"/>
         <display value="FENTANYL: POSITIVE"/>
     </result>
     <result>
-        <reference value="Observation/us-core-lab-result-norfentanyl-urine"/>
+        <reference value="Observation/us-core-lab-result-norfentanyl-urine-a-freeman"/>
         <display value="NORFENTANYL: POSITIVE"/>
     </result>
     <result>
-        <reference value="Observation/us-core-lab-result-xylazine-urine"/>
+        <reference value="Observation/us-core-lab-result-xylazine-urine-a-freeman"/>
         <display value="XYLAZINE: POSITIVE"/>
     </result>
     <result>
-        <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-vitreous-humor"/>
+        <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
         <display value="ETOH VITREOUS HUMOR: 0.133 g/dL"/>
     </result>
 </DiagnosticReport>

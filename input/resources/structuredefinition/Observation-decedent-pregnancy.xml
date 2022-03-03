@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-decedent-pregnancy"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-02-27T20:56:24.119+00:00"/>
-        <source value="#uSqRi2fkepScDQIM"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-03-01T23:33:05.693+00:00"/>
+        <source value="#rOJGae2pO2mZxp4V"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
     <version value="1.0"/>
@@ -66,7 +66,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="value[x]"/>
+            <short value="Whether the decedent was pregnant at or around the time of death."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -75,8 +75,8 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <description value="PHVS_PregnancyStatus_NCHS"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.6003"/>
+                <description value="A set of codes that reflect whether the decedent was pregnant at or around the time of death."/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/vrdr-pregnancy-status-vs"/>
             </binding>
         </element>
     </differential>

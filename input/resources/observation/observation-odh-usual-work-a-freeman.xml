@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-odh-usual-work-a-freeman"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-01T23:28:12.704+00:00"/>
+        <source value="#SjvIv0MqipjpaPO1"/>
+        <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="21843-8"/>
+            <display value="History of Usual occupation"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-a-freeman"/>
+    </subject>
+    <effectivePeriod>
+        <start value="1998-06-01"/>
+        <end value="2022-01-07"/>
+    </effectivePeriod>
+    <valueCodeableConcept>
+        <coding>
+            <system value="urn:oid:2.16.840.1.114222.4.5.314"/>
+            <code value="4030"/>
+            <display value="Food preparation workers"/>
+        </coding>
+    </valueCodeableConcept>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="21844-6"/>
+                <display value="History of Usual industry"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html"/>
+                <code value="8680"/>
+                <display value="Restaurants and other food services"/>
+            </coding>
+        </valueCodeableConcept>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="74163-7"/>
+                <display value="Usual occupation duration"/>
+            </coding>
+        </code>
+    </component>
+</Observation>

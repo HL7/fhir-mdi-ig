@@ -1,9 +1,0 @@
-# MDI Example Scenario: Oxycodone & Alprazolam Overdose
-The scenario illustrated in the MDI example files is of Jasmine M. Rogers, a 55-year-old woman admitted to Man’s Greatest Hospital with lethargy and fever on 1/1/22 from a skilled nursing home where she was a resident for 12 years. She was diagnosed with *Staphylococcal sepsis* arising from large decubitus ulcers of her back and buttocks. Despite treatment with intravenous antibiotics, she developed worsening hypotension and septic shock and died on the 3rd hospital day.
-
-The decedent had a remote history of drug abuse. When she was 43 years old, she became a resident of the skilled nursing facility after she survived an overdose of alprazolam and oxycodone but was left with anoxic brain damage and was unable to care for herself. She periodically developed pressure ulcers from mostly being confined to bed. Over the 4 months before her death, she developed new pressure ulcers that were unresponsive to treatment because of her poor nutritional status.
-
-# Toxicology Example Scenario: Fentanyl Overdose
-The scenario illustrated in the Toxicology example files is of Alice J. Freeman, a 42-year-old woman found unresponsive on a couch in a house where she was attending a party. Responding paramedics found her pulseless and apneic. Resuscitative efforts were unsuccessful. Her friend stated that earlier in the evening she had purchased some “oxy” from a neighbor. There was a history of high blood pressure.
-
-At autopsy, the heart was enlarged, and the left ventricle was thickened consistent with hypertensive heart disease. No other pathologic findings were identified. Blood contained a fatal concentration of Fentanyl and a trace amount of delta-9 tetrahydrocannabinol. No oxycodone or other substances were detected.

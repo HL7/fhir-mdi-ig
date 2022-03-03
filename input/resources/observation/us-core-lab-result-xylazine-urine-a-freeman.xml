@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-xylazine-urine-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-02-27T13:10:05.079+00:00"/>
-        <source value="#tIgNAwPLlTHXXD1I"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-01T14:15:48.855+00:00"/>
+        <source value="#buBIH9ddfiXqInsB"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
     <status value="final"/>
     <category>

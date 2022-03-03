@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date"/>
     <meta>
-        <versionId value="24"/>
-        <lastUpdated value="2022-02-27T20:53:33.695+00:00"/>
-        <source value="#rkPfG7gJh2RMBm33"/>
+        <versionId value="27"/>
+        <lastUpdated value="2022-03-03T06:00:23.489+00:00"/>
+        <source value="#xxE8sLbipbwWEoUg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     <name value="ObservationDeathDate"/>
@@ -102,17 +102,6 @@
             <definition value="Indicates reason for missing all or part of the decedent's death date (further information can be recorded in the note data element)"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.interpretation">
-            <path value="Observation.interpretation"/>
-            <short value="Codes that qualify the accuracy of the date of death."/>
-            <definition value="Codes that qualify the accuracy of the date of death."/>
-            <mustSupport value="true"/>
-            <binding>
-                <strength value="extensible"/>
-                <description value="This value set contains codes that qualify the accuracy of the date of death."/>
-                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-death-date-qualifiers"/>
-            </binding>
-        </element>
         <element id="Observation.note">
             <path value="Observation.note"/>
             <short value="Notes about the actual or presumed date of death, e.g. the date of death can't be specified as a dateTime and can only be narrowed down to a decade"/>
@@ -122,9 +111,15 @@
         </element>
         <element id="Observation.method">
             <path value="Observation.method"/>
+            <short value="Codes that describe the method of establishing a date."/>
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <description value="ValueSetDateEstablishmentMethods"/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-date-establishment-methods"/>
+            </binding>
         </element>
         <element id="Observation.component">
             <path value="Observation.component"/>

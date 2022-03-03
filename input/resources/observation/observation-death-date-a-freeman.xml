@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-death-date-j-rogers"/>
+    <id value="observation-death-date-a-freeman"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-02-27T03:22:32.728+00:00"/>
-        <source value="#9QYNxTW2hEi9RKkM"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-03T06:04:19.068+00:00"/>
+        <source value="#Bgc5w0haHPAzHFBr"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-observation-location">
         <valueReference>
-            <reference value="Location/us-core-location-mans-greatest-hospital"/>
+            <reference value="Location/us-core-location-atlanta-ga-death-location-a-freeman"/>
         </valueReference>
     </extension>
     <status value="final"/>
@@ -22,13 +22,20 @@
         </coding>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-j-rogers"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
-    <effectiveDateTime value="2022-01-04T05:30:00-05:00"/>
+    <effectiveDateTime value="2022-01-08T15:30:00-05:00"/>
     <performer>
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </performer>
-    <valueDateTime value="2022-01-04T05:30:00-05:00"/>
+    <valueDateTime value="2022-01-08T14:04:00-05:00"/>
+    <method>
+        <coding>
+            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+            <code value="exact"/>
+            <display value="Exact"/>
+        </coding>
+    </method>
     <component>
         <code>
             <coding>
@@ -37,6 +44,6 @@
                 <display value="Date and time pronounced dead [US Standard Certificate of Death]"/>
             </coding>
         </code>
-        <valueDateTime value="2022-01-04T05:30:00-05:00"/>
+        <valueDateTime value="2022-01-08T15:30:00-05:00"/>
     </component>
 </Observation>

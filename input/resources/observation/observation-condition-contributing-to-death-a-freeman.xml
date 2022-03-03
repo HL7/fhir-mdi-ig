@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-condition-contributing-to-death-j-rogers-diabetes"/>
+    <id value="observation-condition-contributing-to-death-a-freeman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-02-28T05:28:53.355+00:00"/>
-        <source value="#yts5wBr5NsHMiEkD"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-01T17:19:53.055+00:00"/>
+        <source value="#S3wDMdBKaPzYcNyu"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-condition-contributing-to-death"/>
     </meta>
     <status value="final"/>
@@ -17,7 +17,7 @@
         </coding>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-j-rogers"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
     <performer>
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
@@ -25,9 +25,9 @@
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="73211009"/>
-            <display value="Diabetes mellitus (disorder)"/>
+            <code value="64715009"/>
+            <display value="Hypertensive heart disease (disorder)"/>
         </coding>
-        <text value="Diabetes mellitus (disorder)"/>
+        <text value="Hypertensive heart disease (disorder)"/>
     </valueCodeableConcept>
 </Observation>

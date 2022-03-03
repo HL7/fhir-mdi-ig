@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-toxicology-lab-result"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-02-24T21:41:23.383+00:00"/>
-        <source value="#Y6uMZqwaDQ4ui3Wr"/>
+        <versionId value="12"/>
+        <lastUpdated value="2022-03-02T17:17:14.816+00:00"/>
+        <source value="#hEHk2lHHhHIcwxSD"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     <name value="ObservationToxicologyLabResult"/>
@@ -22,6 +22,15 @@
         <element id="Observation">
             <path value="Observation"/>
         </element>
+        <element id="Observation.code.coding">
+            <path value="Observation.code.coding"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.code.text">
+            <path value="Observation.code.text"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Observation.note">
             <path value="Observation.note"/>
             <mustSupport value="true"/>
@@ -32,15 +41,6 @@
                 <code value="Reference"/>
                 <targetProfile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.code.coding">
-            <path value="Observation.code.coding"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.code.text">
-            <path value="Observation.code.text"/>
-            <min value="1"/>
             <mustSupport value="true"/>
         </element>
     </differential>

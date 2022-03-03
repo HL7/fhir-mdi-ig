@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle
+    xmlns="http://hl7.org/fhir">
+    <id value="bundle-mdi-to-edrs-a-freeman"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2022-03-03T06:05:38.000+00:00"/>
+        <source value="#CUwFeGfqe2QgAbPu"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:933dde44f7664b03a20b6324f23986c0"/>
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2022-01-04T08:51:14.637+00:00"/>
+    <entry>
+        <fullUrl value="Composition/composition-mdi-to-edrs-a-freeman"/>
+        <resource>
+            <Composition>
+                <id value="composition-mdi-to-edrs-a-freeman"/>
+                <meta>
+                    <versionId value="11"/>
+                    <lastUpdated value="2022-03-02T20:42:32.260+00:00"/>
+                    <source value="#DtcvjXyynMA9Hyyo"/>
+                    <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+                </meta>
+                <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
+                    <valueIdentifier>
+                        <type>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                <code value="BCT"/>
+                            </coding>
+                        </type>
+                        <value value="ME21-113"/>
+                    </valueIdentifier>
+                </extension>
+                <identifier>
+                    <value value="a03eab8c-11e8-4d0c-ad2a-b385395e27de"/>
+                </identifier>
+                <status value="final"/>
+                <type>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="86807-5"/>
+                        <display value="Death administrative information Document"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <date value="2022-02-20"/>
+                <author>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </author>
+                <title value="MDI to EDRS Composition"/>
+                <section>
+                    <title value="Demographic Information Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                            <code value="demographics"/>
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="Observation/observation-odh-usual-work-a-freeman"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="Circumstances Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                            <code value="circumstances"/>
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="Location/us-core-location-atlanta-ga-death-location-a-freeman"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-death-injury-at-work-a-freeman"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-tobacco-use-a-freeman"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-decedent-pregnancy-a-freeman"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="Jurisdiction Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                            <code value="jurisdiction"/>
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="Observation/observation-death-date-a-freeman"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="Cause and Manner of Death Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                            <code value="cause-manner"/>
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="List/list-cause-of-death-pathway-a-freeman"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-condition-contributing-to-death-a-freeman"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-manner-of-death-a-freeman-accidental"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-how-death-injury-occurred-a-freeman-med-ingest"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="Medical History Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                            <code value="medical-history"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="additional"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>No Medical History information</p>
+                        </div>
+                    </text>
+                    <emptyReason>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/list-empty-reason"/>
+                            <code value="unavailable"/>
+                            <display value="Unavailable"/>
+                        </coding>
+                        <text value="Decedent's medical history not available"/>
+                    </emptyReason>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-how-death-injury-occurred-a-freeman-med-ingest"/>
+        <resource>
+            <Observation>
+                <id value="observation-how-death-injury-occurred-a-freeman-med-ingest"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2022-03-01T17:19:53.056+00:00"/>
+                    <source value="#Z98BYGvx2FdhqI8b"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="11374-6"/>
+                        <display value="Injury incident description Narrative"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <effectiveDateTime value="2018-02-19T16:48:06-05:00"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-s-jones"/>
+                </performer>
+                <valueString value="Ingested counterfeit medication"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-death-injury-at-work-a-freeman"/>
+        <resource>
+            <Observation>
+                <id value="observation-death-injury-at-work-a-freeman"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2022-03-01T17:19:53.055+00:00"/>
+                    <source value="#jVKCYomVfJCRczEG"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="69444-8"/>
+                        <display value="Did death result from injury at work"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="N"/>
+                        <display value="No"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-manner-of-death-a-freeman-accidental"/>
+        <resource>
+            <Observation>
+                <id value="observation-manner-of-death-a-freeman-accidental"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2022-03-01T17:19:53.053+00:00"/>
+                    <source value="#zVxxUgTQkw6sVJZZ"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="69449-7"/>
+                        <display value="Manner of death"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-s-jones"/>
+                </performer>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="7878000"/>
+                        <display value="Accidental death"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-condition-contributing-to-death-a-freeman"/>
+        <resource>
+            <Observation>
+                <id value="observation-condition-contributing-to-death-a-freeman"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2022-03-01T17:19:53.055+00:00"/>
+                    <source value="#S3wDMdBKaPzYcNyu"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-condition-contributing-to-death"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="69441-4"/>
+                        <display value="Other significant causes or conditions of death"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-s-jones"/>
+                </performer>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="64715009"/>
+                        <display value="Hypertensive heart disease (disorder)"/>
+                    </coding>
+                    <text value="Hypertensive heart disease (disorder)"/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Practitioner/us-core-practitioner-b-goldberger"/>
+        <resource>
+            <Practitioner>
+                <id value="us-core-practitioner-b-goldberger"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource
+                                "us-core-practitioner-b-goldberger" Version "1" Updated
+                                "2021-12-20T21:14:58.36Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #BzPEtIup8ZTGgv6D!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                
+                                
+                                <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>identifier</b>: id: 555667777 
+                        
+                        
+                        </p>
+                        <p>
+                            <b>name</b>: Bruce Goldberger (OFFICIAL) 
+                        
+                        
+                        </p>
+                    </div>
+                </text>
+                <identifier>
+                    <system value="http://hl7.org/fhir/sid/us-npi"/>
+                    <value value="555667777"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Goldberger"/>
+                    <given value="Bruce"/>
+                    <prefix value="Dr."/>
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="List/list-cause-of-death-pathway-a-freeman"/>
+        <resource>
+            <List>
+                <id value="list-cause-of-death-pathway-a-freeman"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2022-03-02T01:49:33.301+00:00"/>
+                    <source value="#ILyeEdQknvn5VQpV"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
+                </meta>
+                <status value="current"/>
+                <mode value="snapshot"/>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <source>
+                    <reference value="Practitioner/us-core-practitioner-j-jones"/>
+                </source>
+                <entry>
+                    <item>
+                        <reference value="Observation/observation-cause-of-death-condition-a-freeman-1"/>
+                    </item>
+                </entry>
+            </List>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Location/us-core-location-atlanta-ga-death-location-a-freeman"/>
+        <resource>
+            <Location>
+                <id value="us-core-location-atlanta-ga-death-location-a-freeman"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2022-03-01T18:09:05.383+00:00"/>
+                    <source value="#gsNPN2nD0eTwQUjk"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+                </meta>
+                <identifier>
+                    <system value="http://www.acme.org/location"/>
+                    <value value="29"/>
+                </identifier>
+                <status value="active"/>
+                <name value="Atlanta GA Death Location - Freeman"/>
+                <address>
+                    <use value="home"/>
+                    <type value="physical"/>
+                    <line value="400 Windstream Street"/>
+                    <city value="Atlanta"/>
+                    <district value="Fulton County"/>
+                    <state value="GA"/>
+                    <country value="USA"/>
+                </address>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Patient/us-core-patient-a-freeman"/>
+        <resource>
+            <Patient>
+                <id value="us-core-patient-a-freeman"/>
+                <meta>
+                    <versionId value="5"/>
+                    <lastUpdated value="2022-03-01T16:06:20.614+00:00"/>
+                    <source value="#3yPjJh3fl3EYCoHD"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="hapiHeaderText">Alice J. 
+                            
+                            
+                            <b>FREEMAN </b>
+                        </div>
+                        <table class="hapiPropertyTable">
+                            <tbody>
+                                <tr>
+                                    <td>Identifier</td>
+                                    <td>987054321</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>
+                                        <span>112 Miramar Ct </span>
+                                        <br/>
+                                        <span>Danville </span>
+                                        <span>Nova Scotia </span>
+                                        <span>CA </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Date of birth</td>
+                                    <td>
+                                        <span>12 March 1978</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </text>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+                    <extension url="detailed">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2029-7"/>
+                            <display value="Asian Indian"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="Asian Indian"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2186-5"/>
+                            <display value="Not Hispanic or Latino"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="Not Hispanic or Latino"/>
+                    </extension>
+                </extension>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="SS"/>
+                            <display value="Social Security number"/>
+                        </coding>
+                        <text value="Social Security number"/>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="987054321"/>
+                </identifier>
+                <active value="true"/>
+                <name>
+                    <family value="Freeman"/>
+                    <given value="Alice"/>
+                    <given value="J."/>
+                </name>
+                <gender value="female"/>
+                <birthDate value="1978-03-12"/>
+                <address>
+                    <use value="home"/>
+                    <line value="112 Miramar Ct"/>
+                    <city value="Danville"/>
+                    <state value="Nova Scotia"/>
+                    <country value="CA"/>
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-odh-usual-work-a-freeman"/>
+        <resource>
+            <Observation>
+                <id value="observation-odh-usual-work-a-freeman"/>
+                <meta>
+                    <versionId value="3"/>
+                    <lastUpdated value="2022-03-01T23:28:12.704+00:00"/>
+                    <source value="#SjvIv0MqipjpaPO1"/>
+                    <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="21843-8"/>
+                        <display value="History of Usual occupation"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <effectivePeriod>
+                    <start value="1998-06-01"/>
+                    <end value="2022-01-07"/>
+                </effectivePeriod>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.314"/>
+                        <code value="4030"/>
+                        <display value="Food preparation workers"/>
+                    </coding>
+                </valueCodeableConcept>
+                <component>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="21844-6"/>
+                            <display value="History of Usual industry"/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html"/>
+                            <code value="8680"/>
+                            <display value="Restaurants and other food services"/>
+                        </coding>
+                    </valueCodeableConcept>
+                </component>
+                <component>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="74163-7"/>
+                            <display value="Usual occupation duration"/>
+                        </coding>
+                    </code>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-tobacco-use-a-freeman"/>
+        <resource>
+            <Observation>
+                <id value="observation-tobacco-use-a-freeman"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2022-03-01T17:19:53.053+00:00"/>
+                    <source value="#X7OSBNoW2MPKH7eN"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="69443-0"/>
+                        <display value="Did tobacco use contribute to death"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="373067005"/>
+                        <display value="No"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-death-date-a-freeman"/>
+        <resource>
+            <Observation>
+                <id value="observation-death-date-a-freeman"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2022-03-01T17:19:53.058+00:00"/>
+                    <source value="#8xICjnTh18z7ywoE"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+                </meta>
+                <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-observation-location">
+                    <valueReference>
+                        <reference value="Location/us-core-location-atlanta-ga-death-location-a-freeman"/>
+                    </valueReference>
+                </extension>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="81956-5"/>
+                        <display value="Date+time of death"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <effectiveDateTime value="2022-01-08T15:30:00-05:00"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-s-jones"/>
+                </performer>
+                <valueDateTime value="2022-01-08T14:04:00-05:00"/>
+                <method>
+                    <coding>
+                        <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                        <code value="exact"/>
+                        <display value="Exact"/>
+                    </coding>
+                </method>
+                <component>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="80616-6"/>
+                            <display value="Date and time pronounced dead [US Standard Certificate of Death]"/>
+                        </coding>
+                    </code>
+                    <valueDateTime value="2022-01-08T15:30:00-05:00"/>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Practitioner/us-core-practitioner-s-jones"/>
+        <resource>
+            <Practitioner>
+                <id value="us-core-practitioner-s-jones"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "us-core-practitioner-s-jones"
+                                Version "1" Updated "2021-12-20T21:14:58.375Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #O0fK1HIgeg72P9CP!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                
+                                
+                                <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>identifier</b>: id: 3333445555 
+                        
+                        
+                        </p>
+                        <p>
+                            <b>name</b>: Sam Jones (OFFICIAL) 
+                        
+                        
+                        </p>
+                    </div>
+                </text>
+                <identifier>
+                    <system value="http://hl7.org/fhir/sid/us-npi"/>
+                    <value value="3333445555"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Jones"/>
+                    <given value="Sam"/>
+                    <prefix value="Dr."/>
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Practitioner/us-core-practitioner-j-jones"/>
+        <resource>
+            <Practitioner>
+                <id value="us-core-practitioner-j-jones"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "us-core-practitioner-j-jones"
+                                Version "1" Updated "2021-12-20T21:14:58.376Z" </p>
+                            <p style="margin-bottom: 0px">Information Source: #itXCQUhYErheWDxb!</p>
+                            <p style="margin-bottom: 0px">Profile: 
+                                
+                                
+                                <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
+                            </p>
+                        </div>
+                        <p>
+                            <b>identifier</b>: id: 1122334455 
+                        
+                        
+                        </p>
+                        <p>
+                            <b>name</b>: Jane Jones (OFFICIAL) 
+                        
+                        
+                        </p>
+                    </div>
+                </text>
+                <identifier>
+                    <system value="http://hl7.org/fhir/sid/us-npi"/>
+                    <value value="1122334455"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Jones"/>
+                    <given value="Jane"/>
+                    <prefix value="Dr."/>
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-cause-of-death-condition-a-freeman-1"/>
+        <resource>
+            <Observation>
+                <id value="observation-cause-of-death-condition-a-freeman-1"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2022-03-01T17:19:53.056+00:00"/>
+                    <source value="#VHUEowzyVUs2LUH0"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-condition"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="69453-9"/>
+                        <display value="Cause of death [US Standard Certificate of Death]"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-s-jones"/>
+                </performer>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="295193008"/>
+                        <display value="Fentanyl overdose (disorder)"/>
+                    </coding>
+                    <text value="Fentanyl overdose (disorder)"/>
+                </valueCodeableConcept>
+                <component>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="69440-6"/>
+                            <display value="Disease onset to death interval"/>
+                        </coding>
+                    </code>
+                    <valueString value="minutes to hours"/>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-decedent-pregnancy-a-freeman"/>
+        <resource>
+            <Observation>
+                <id value="observation-decedent-pregnancy-a-freeman"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2022-03-01T17:19:53.055+00:00"/>
+                    <source value="#bA5w4W9yn2EYc2DO"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="69442-2"/>
+                        <display value="Timing of recent pregnancy in relation to death"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/us-core-patient-a-freeman"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                        <code value="NA"/>
+                        <display value="not applicable"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+</Bundle>

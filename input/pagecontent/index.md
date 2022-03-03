@@ -10,7 +10,6 @@ This version of the IG defines FHIR resources to support two workflows:
 This IG includes the following sections, listed at the top of each page in the menu bar: 
 * [Home](index.html): Summary description and technical overview to this IG.
 * [Background](background.html): Information on MDI dataflows and actors, the current work, and relationship to other IGs, as well as likely future MDI IG development.
-* [Scenarios](scenarios.html): Fictional context for the example files.
 * [Best Practices](best_practices.html): Guidance on implementation and use of the IG.
 * [Specification](specification.html): Technical details on implementing the IG.
 * [Terminology](terminology.html): Listing of all value sets used in this guide.

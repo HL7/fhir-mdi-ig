@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-toxicology-to-mdi"/>
     <meta>
-        <versionId value="48"/>
-        <lastUpdated value="2022-02-27T21:06:27.035+00:00"/>
-        <source value="#ig36uTzaCRiWEEi7"/>
+        <versionId value="49"/>
+        <lastUpdated value="2022-03-01T15:25:26.722+00:00"/>
+        <source value="#8xGLuQeyXX6YCJPN"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     <name value="DiagnosticReportToxicologyToMDI"/>
@@ -21,35 +21,6 @@
     <differential>
         <element id="DiagnosticReport">
             <path value="DiagnosticReport"/>
-        </element>
-        <element id="DiagnosticReport.extension">
-            <path value="DiagnosticReport.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="$this"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <mustSupport value="true"/>
-        </element>
-        <element id="DiagnosticReport.extension:extension_tracking_number">
-            <path value="DiagnosticReport.extension"/>
-            <sliceName value="extension_tracking_number"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="DiagnosticReport.extension:agency_case_history_notes">
-            <path value="DiagnosticReport.extension"/>
-            <sliceName value="agency_case_history_notes"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-agency-case-history-notes"/>
-            </type>
-            <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.identifier">
             <path value="DiagnosticReport.identifier"/>

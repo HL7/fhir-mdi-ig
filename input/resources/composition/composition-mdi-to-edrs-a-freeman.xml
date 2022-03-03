@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Composition
     xmlns="http://hl7.org/fhir">
-    <id value="composition-mdi-to-edrs-j-rogers"/>
+    <id value="composition-mdi-to-edrs-a-freeman"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-02-28T05:32:18.702+00:00"/>
-        <source value="#ZMwak6cq8bFE3f76"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-03-02T20:42:32.260+00:00"/>
+        <source value="#DtcvjXyynMA9Hyyo"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
@@ -16,7 +16,7 @@
                     <code value="BCT"/>
                 </coding>
             </type>
-            <value value="ME21-112"/>
+            <value value="ME21-113"/>
         </valueIdentifier>
     </extension>
     <identifier>
@@ -31,9 +31,9 @@
         </coding>
     </type>
     <subject>
-        <reference value="Patient/us-core-patient-j-rogers"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
-    <date value="2021-12-20"/>
+    <date value="2022-02-20"/>
     <author>
         <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
     </author>
@@ -47,7 +47,7 @@
             </coding>
         </code>
         <entry>
-            <reference value="Observation/observation-odh-usual-work-j-rogers"/>
+            <reference value="Observation/observation-odh-usual-work-a-freeman"/>
         </entry>
     </section>
     <section>
@@ -59,16 +59,16 @@
             </coding>
         </code>
         <entry>
-            <reference value="Location/us-core-location-death-j-rogers"/>
+            <reference value="Location/us-core-location-atlanta-ga-death-location-a-freeman"/>
         </entry>
         <entry>
-            <reference value="Observation/observation-death-injury-at-work-j-rogers"/>
+            <reference value="Observation/observation-death-injury-at-work-a-freeman"/>
         </entry>
         <entry>
-            <reference value="Observation/observation-tobacco-use-j-rogers"/>
+            <reference value="Observation/observation-tobacco-use-a-freeman"/>
         </entry>
         <entry>
-            <reference value="Observation/observation-decedent-pregnancy-j-rogers"/>
+            <reference value="Observation/observation-decedent-pregnancy-a-freeman"/>
         </entry>
     </section>
     <section>
@@ -80,7 +80,7 @@
             </coding>
         </code>
         <entry>
-            <reference value="Observation/observation-death-date-j-rogers"/>
+            <reference value="Observation/observation-death-date-a-freeman"/>
         </entry>
     </section>
     <section>
@@ -92,16 +92,16 @@
             </coding>
         </code>
         <entry>
-            <reference value="List/list-cause-of-death-pathway-j-rogers"/>
+            <reference value="List/list-cause-of-death-pathway-a-freeman"/>
         </entry>
         <entry>
-            <reference value="Observation/observation-condition-contributing-to-death-j-rogers-diabetes"/>
+            <reference value="Observation/observation-condition-contributing-to-death-a-freeman"/>
         </entry>
         <entry>
-            <reference value="Observation/observation-manner-of-death-j-rogers-accidental"/>
+            <reference value="Observation/observation-manner-of-death-a-freeman-accidental"/>
         </entry>
         <entry>
-            <reference value="Observation/observation-how-death-injury-occurred-j-rogers-med-ingest"/>
+            <reference value="Observation/observation-how-death-injury-occurred-a-freeman-med-ingest"/>
         </entry>
     </section>
     <section>
@@ -112,8 +112,20 @@
                 <code value="medical-history"/>
             </coding>
         </code>
-        <entry>
-            <reference value="Condition/us-core-condition-j-rogers-gangrene"/>
-        </entry>
+        <text>
+            <status value="additional"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <p>No Medical History information</p>
+            </div>
+        </text>
+        <emptyReason>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/list-empty-reason"/>
+                <code value="unavailable"/>
+                <display value="Unavailable"/>
+            </coding>
+            <text value="Decedent's medical history not available"/>
+        </emptyReason>
     </section>
 </Composition>

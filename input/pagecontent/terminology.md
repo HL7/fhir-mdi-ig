@@ -1,6 +1,10 @@
 # IG Defined Value Sets
-* [ValueSetDateDeathQualifiers](https://trifolia-fhir.lantanagroup.com/igs/lantana_hapi_r4/hl7-fhir-us-mdi/ValueSet-ValueSet-death-date-qualifiers.html)
-* [ValueSetTrackingNumberType](https://trifolia-fhir.lantanagroup.com/igs/lantana_hapi_r4/hl7-fhir-us-mdi/ValueSet-ValueSet-tracking-number-type.html)
+* [ValueSetContributoryTobaccoUse](ValueSet-ValueSet-contributory-tobacco-use.html)
+* [ValueSetDateEstablishmentMethods](ValueSet-ValueSet-date-establishment-methods.html)
+* [ValueSetDeathPregnancyStatus](ValueSet-ValueSet-death-pregnancy-status.html)
+* [ValueSetMannerOfDeath](ValueSet-ValueSet-manner-of-death.html)
+* [ValueSetTrackingNumberType](ValueSet-ValueSet-tracking-number-type.html)
+* [ValueSetYesNoNotApplicable](ValueSet-ValueSet-yes-no-not-applicable.html)
 
 # HL7 Defined Value Sets
 * [v3.ConfidentialityClassification](http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html)
@@ -36,9 +40,3 @@
 * [Pattern: laboratory](http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html#observation-category-laboratory)
 * [Hl7VSSpecimenCondition](http://terminology.hl7.org/3.1.0/ValueSet-v2-0493.html)
 * [Hl7VSRelevantClincialInformation](http://terminology.hl7.org/3.1.0/ValueSet-v2-0916.html)
-
-# Externally Defined Value Sets
-* [PHVS_MannerOfDeath_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6002)
-* [PHVS_PregnancyStatus_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003)
-* [PHVS_ContributoryTobaccoUse_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004)
-* [PHVS_YesNoNotApplicable_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)

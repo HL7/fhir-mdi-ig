@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-cause-of-death-condition-j-rogers-1-staph-sepsis"/>
+    <id value="observation-cause-of-death-condition-a-freeman-1"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-02-28T05:28:53.355+00:00"/>
-        <source value="#TjDmNVf7anDjRmqp"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-01T17:19:53.056+00:00"/>
+        <source value="#VHUEowzyVUs2LUH0"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-condition"/>
     </meta>
     <status value="final"/>
@@ -17,7 +17,7 @@
         </coding>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-j-rogers"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
     <performer>
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
@@ -25,10 +25,10 @@
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="91302008"/>
-            <display value="Sepsis (disorder)"/>
+            <code value="295193008"/>
+            <display value="Fentanyl overdose (disorder)"/>
         </coding>
-        <text value="Sepsis (disorder)"/>
+        <text value="Fentanyl overdose (disorder)"/>
     </valueCodeableConcept>
     <component>
         <code>
@@ -38,6 +38,6 @@
                 <display value="Disease onset to death interval"/>
             </coding>
         </code>
-        <valueString value="5 days"/>
+        <valueString value="minutes to hours"/>
     </component>
 </Observation>

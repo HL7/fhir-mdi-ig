@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-manner-of-death"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-02-27T20:58:28.443+00:00"/>
-        <source value="#hASagFDxtX1eKUdL"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-03-01T20:45:17.653+00:00"/>
+        <source value="#oJ5d8AdYohyZDAkS"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
     <version value="1.0"/>
@@ -89,8 +89,8 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <description value="A set of code used to indicate a manner of death classification."/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.6002"/>
+                <description value="A set of codes to reflect the manner that a person died."/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-manner-of-death"/>
             </binding>
         </element>
     </differential>

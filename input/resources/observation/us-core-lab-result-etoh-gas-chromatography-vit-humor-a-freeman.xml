@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-02-28T05:29:42.824+00:00"/>
-        <source value="#n1sYCgc9FczaplrP"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-03-01T14:14:33.766+00:00"/>
+        <source value="#w4WKJl7sYj66PguL"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
     <status value="final"/>
     <category>

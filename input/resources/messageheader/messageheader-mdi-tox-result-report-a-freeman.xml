@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="messageheader-mdi-tox-result-report-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-02-27T13:10:05.549+00:00"/>
-        <source value="#MMjD7dUaxGRX1pGz"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-03-01T13:59:22.344+00:00"/>
+        <source value="#3JGUJh09jlv68qnS"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
     </meta>
     <eventCoding>
@@ -27,6 +27,6 @@
         <code value="ok"/>
     </response>
     <focus>
-        <reference value="DiagnosticReport/diagnosticreport-mdi-toxicology-lab"/>
+        <reference value="DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/>
     </focus>
 </MessageHeader>

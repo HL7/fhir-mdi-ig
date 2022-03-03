@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <List
     xmlns="http://hl7.org/fhir">
-    <id value="list-cause-of-death-pathway-j-rogers"/>
+    <id value="list-cause-of-death-pathway-a-freeman"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-02-28T05:30:17.345+00:00"/>
-        <source value="#KGOBW7XvyrSP8189"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-02T01:49:33.301+00:00"/>
+        <source value="#ILyeEdQknvn5VQpV"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
     </meta>
     <status value="current"/>
     <mode value="snapshot"/>
     <subject>
-        <reference value="Patient/us-core-patient-j-rogers"/>
+        <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
     <source>
         <reference value="Practitioner/us-core-practitioner-j-jones"/>
     </source>
     <entry>
         <item>
-            <reference value="Observation/observation-cause-of-death-condition-j-rogers-1-staph-sepsis"/>
+            <reference value="Observation/observation-cause-of-death-condition-a-freeman-1"/>
         </item>
     </entry>
 </List>

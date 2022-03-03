@@ -6,14 +6,14 @@ In 2015, changes to the Office of the National Coordinator (ONC) criteria in the
 Recognizing that many deaths of significant public health importance are investigated by ME/C offices, NCHS is supporting the development of additional standards and tools for interoperability among ME/C information management systems, forensic toxicology LIMS, and vital records EDRSs. This MDI FHIR IG is part of that effort to capture elements and workflows that are not currently captured in the death reporting implementation guide, and to help standardize disparate systems within the ME/C ecosystem. 
 
 # Medicolegal Death Investigation Dataflows
-Medical examiners and coroners (ME/C) access and exchange information with multiple agencies and organizations when building a death investigation case record (e.g., law enforcement, forensic laboratories, electronic health record [EHR] systems, jurisdictional death registration systems). Case records are initiated by a ME/C office and built up through the investigation of multiple entities that can be either internal or external to the office.
+Medical examiners and coroners (ME/C) access and exchange information with multiple agencies and organizations when building a death investigation case record (e.g., law enforcement, forensic laboratories, electronic health record [EHR] systems, jurisdictional death registration systems). Case records are initiated by an ME/C office and added to throughout the investigation by multiple entities that can be either internal or external to the ME/C office.
 
 According to the U.S. Department of Justice, Office of Justice Programs, Bureau of Justice Statistics report, [*Medical Examiner and Coroner Offices, 2018*](https://bjs.ojp.gov/content/pub/pdf/meco18.pdf), in 2018 2,040 ME/C offices accepted 605,000 referrals for investigation to determine the cause and manner of death across federal, state, and local jurisdictions. Many entities rely on MDI-generated data. For example the CDC monitors trends in unintentional injury, homicides, suicides, and sudden or unexpected infant deaths and develops policy recommendations and prevention strategies for such deaths. The National Highway Traffic Safety Administration (NHTSA) monitors trends in traffic-related fatalities and the U.S. Consumer Product Safety Commission (CPSC) uses mortality data to identify problematic products for investigation and potential recall.
 
 MDI information management systems vary by organization and location or jurisdiction and these systems are often not interoperable with either producers or consumers of MDI-related data, which creates obstacles to timely investigations and forensic science research.
 
 **Figure: Data Flows Supported by the MDI IG**
-<table><tr><td><img src="image-MDI-data-flows.png" /></td></tr></table>
+<table><tr><td><img src="IG-image-MDI-data-flows.png" /></td></tr></table>
 
 # Current Project
 The scope of the current MDI IG is defining FHIR resources and guidance for the following data flows:

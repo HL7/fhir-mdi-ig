@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
+    <id value="us-core-lab-result-fentanyl-blood-a-freeman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-03-01T14:13:04.227+00:00"/>
-        <source value="#wRAI5XPPuljbXSPJ"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-03-01T14:16:22.418+00:00"/>
+        <source value="#eObZ5SOcilqqz2Qs"/>
         <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
     <status value="final"/>
@@ -20,10 +20,10 @@
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="86223-5"/>
-            <display value="Acetyl norfentanyl [Mass/volume] in Serum, Plasma or Blood by Confirmatory method"/>
+            <code value="73938-3"/>
+            <display value="fentaNYL [Mass/volume] in Blood by Confirmatory method"/>
         </coding>
-        <text value="Acetyl norfentanyl [Mass/volume] in Serum, Plasma or Blood by Confirmatory method"/>
+        <text value="fentaNYL [Mass/volume] in Blood by Confirmatory method"/>
     </code>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
@@ -31,7 +31,7 @@
     </subject>
     <effectiveDateTime value="2021-12-03"/>
     <valueQuantity>
-        <value value="2"/>
+        <value value="23"/>
         <unit value="ng/mL"/>
         <system value="http://unitsofmeasure.org"/>
     </valueQuantity>

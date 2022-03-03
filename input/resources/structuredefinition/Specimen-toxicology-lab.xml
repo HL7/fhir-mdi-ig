@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-toxicology-lab"/>
     <meta>
-        <versionId value="31"/>
-        <lastUpdated value="2022-02-24T21:48:08.481+00:00"/>
-        <source value="#ZmfVeesQSX5K2JY2"/>
+        <versionId value="32"/>
+        <lastUpdated value="2022-03-02T03:42:37.486+00:00"/>
+        <source value="#rZuvAv1iZPcWUYUX"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     <name value="SpecimenToxicologyLab"/>
@@ -87,6 +87,8 @@
         </element>
         <element id="Specimen.note">
             <path value="Specimen.note"/>
+            <label value="Details or issues about the specimen or reason for no analysis"/>
+            <short value="Details or issues about the specimen or reason for no analysis"/>
             <mustSupport value="true"/>
         </element>
     </differential>
