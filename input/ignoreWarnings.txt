@@ -1,4 +1,16 @@
 == Suppressed Messages ==
 # Examples have optional slices that are not defined in the profile - not matching is expected behavior
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+
+# From ODH QA for same issue: The slice is defined by value sets from PHINVADS. Since the validator is not able to access those values, it is not able to distinguish the slices even though they are correctly instantiated. 
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork
+
+# External value sets/code systems
+Code System URI 'urn:oid:2.16.840.1.114222.4.5.314' is unknown so the code cannot be validated
+Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
+
 # APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (Minutes: (https://confluence.hl7.org/pages/viewpage.action?pageId=90341999)
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
