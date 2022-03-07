@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="551"/>
-        <lastUpdated value="2022-03-03T06:08:45.768+00:00"/>
-        <source value="#XupiPXtVYA1O65bd"/>
+        <versionId value="555"/>
+        <lastUpdated value="2022-03-04T12:47:36.728+00:00"/>
+        <source value="#r91xGsATa7fWj4ob"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.1.0"/>
@@ -105,7 +105,7 @@
                 <reference value="CodeSystem/CodeSystem-mdi-codes"/>
                 <display value="MDI Code System"/>
             </reference>
-            <name value="Code System - MDI"/>
+            <name value="CodeSystem - MDI"/>
             <description value="This code system contains codes for use in MDI."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -203,7 +203,7 @@
                 <reference value="StructureDefinition/Observation-cause-of-death-condition"/>
                 <display value="Observation - Cause Of Death Condition"/>
             </reference>
-            <name value="Observation - Cause Of Death Condition"/>
+            <name value="Observation - Cause of Death Condition"/>
             <description value="The Observation - Cause of Death Condition profile reflects one of the eventually ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
@@ -260,7 +260,7 @@
                 <reference value="StructureDefinition/Observation-condition-contributing-to-death"/>
                 <display value="Observation - Condition Contributing To Death"/>
             </reference>
-            <name value="Observation - Condition Contributing To Death"/>
+            <name value="Observation - Condition Contributing to Death"/>
             <description value="The Observation - Contributing to Death profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
@@ -640,7 +640,7 @@
                 <reference value="ValueSet/ValueSet-date-establishment-methods"/>
                 <display value="Value Set - Date Establishment Methods"/>
             </reference>
-            <name value="Value Set - Date Establishment Methods"/>
+            <name value="ValueSet - Date Establishment Methods"/>
             <description value="This value set contains codes that describe the method of establishing a date."/>
             <exampleBoolean value="false"/>
         </resource>

@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cause-of-death-condition"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-02-28T04:50:56.236+00:00"/>
-        <source value="#1tXxwOR9g8xHVuCg"/>
+        <versionId value="12"/>
+        <lastUpdated value="2022-03-07T06:04:47.683+00:00"/>
+        <source value="#h0Nv2fAZJ7mA0Jxv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-condition"/>
     <version value="1.2.1"/>
     <name value="ObservationCauseOfDeathCondition"/>
-    <title value="Observation - Cause Of Death Condition"/>
+    <title value="Observation - Cause of Death Condition"/>
     <status value="active"/>
     <date value="2022-02-27T13:48:44+00:00"/>
     <publisher value="HL7 Public Health Working Group"/>
@@ -74,6 +74,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <min value="1"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
@@ -81,6 +82,7 @@
         </element>
         <element id="Observation.value[x].text">
             <path value="Observation.value[x].text"/>
+            <min value="1"/>
             <maxLength value="120"/>
             <mustSupport value="true"/>
         </element>

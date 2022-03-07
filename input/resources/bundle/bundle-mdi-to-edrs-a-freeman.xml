@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-to-edrs-a-freeman"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-03-03T06:05:38.000+00:00"/>
-        <source value="#CUwFeGfqe2QgAbPu"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-03-07T06:17:01.654+00:00"/>
+        <source value="#blKWm2yE5MSye7Pa"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     </meta>
     <identifier>
@@ -271,12 +271,7 @@
                     <reference value="Practitioner/us-core-practitioner-s-jones"/>
                 </performer>
                 <valueCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="64715009"/>
-                        <display value="Hypertensive heart disease (disorder)"/>
-                    </coding>
-                    <text value="Hypertensive heart disease (disorder)"/>
+                    <text value="Hypertensive heart disease"/>
                 </valueCodeableConcept>
             </Observation>
         </resource>
@@ -301,6 +296,9 @@
                             <p style="margin-bottom: 0px">Profile: 
                                 
                                 
+                                
+                                
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                             </p>
                         </div>
@@ -308,9 +306,15 @@
                             <b>identifier</b>: id: 555667777 
                         
                         
+                        
+                        
+                        
                         </p>
                         <p>
                             <b>name</b>: Bruce Goldberger (OFFICIAL) 
+                        
+                        
+                        
                         
                         
                         </p>
@@ -401,6 +405,9 @@
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Alice J. 
+                            
+                            
+                            
                             
                             
                             <b>FREEMAN </b>
@@ -650,6 +657,9 @@
                             <p style="margin-bottom: 0px">Profile: 
                                 
                                 
+                                
+                                
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                             </p>
                         </div>
@@ -657,9 +667,15 @@
                             <b>identifier</b>: id: 3333445555 
                         
                         
+                        
+                        
+                        
                         </p>
                         <p>
                             <b>name</b>: Sam Jones (OFFICIAL) 
+                        
+                        
+                        
                         
                         
                         </p>
@@ -697,6 +713,9 @@
                             <p style="margin-bottom: 0px">Profile: 
                                 
                                 
+                                
+                                
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                             </p>
                         </div>
@@ -704,9 +723,15 @@
                             <b>identifier</b>: id: 1122334455 
                         
                         
+                        
+                        
+                        
                         </p>
                         <p>
                             <b>name</b>: Jane Jones (OFFICIAL) 
+                        
+                        
+                        
                         
                         
                         </p>
@@ -751,12 +776,7 @@
                     <reference value="Practitioner/us-core-practitioner-s-jones"/>
                 </performer>
                 <valueCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="295193008"/>
-                        <display value="Fentanyl overdose (disorder)"/>
-                    </coding>
-                    <text value="Fentanyl overdose (disorder)"/>
+                    <text value="Fentanyl toxicity"/>
                 </valueCodeableConcept>
                 <component>
                     <code>

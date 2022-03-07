@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-date-establishment-methods"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-03T05:58:27.091+00:00"/>
-        <source value="#xqgu9qQWrJlvXM9x"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-03-04T12:41:21.965+00:00"/>
+        <source value="#bIs7BQvgzOWawslw"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-date-establishment-methods"/>
     <name value="ValueSetDateEstablishmentMethods"/>
-    <title value="Value Set - Date Establishment Methods"/>
+    <title value="ValueSet - Date Establishment Methods"/>
     <status value="active"/>
     <description value="This value set contains codes that describe the method of establishing a date."/>
     <compose>

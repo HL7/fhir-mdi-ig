@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-cause-of-death-condition-a-freeman-1"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-01T17:19:53.056+00:00"/>
-        <source value="#VHUEowzyVUs2LUH0"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-07T06:09:41.846+00:00"/>
+        <source value="#l5olJGfa5vStvyU2"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-condition"/>
     </meta>
     <status value="final"/>
@@ -23,12 +23,7 @@
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </performer>
     <valueCodeableConcept>
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="295193008"/>
-            <display value="Fentanyl overdose (disorder)"/>
-        </coding>
-        <text value="Fentanyl overdose (disorder)"/>
+        <text value="Fentanyl toxicity"/>
     </valueCodeableConcept>
     <component>
         <code>

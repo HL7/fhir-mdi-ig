@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-condition-contributing-to-death"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-02-28T04:58:43.536+00:00"/>
-        <source value="#XCPz83hSVHkJUATf"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-03-04T12:26:26.688+00:00"/>
+        <source value="#nbB8AhkB8slO0P0J"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-condition-contributing-to-death"/>
     <version value="0.1.0"/>
     <name value="ObservationConditionContributingToDeath"/>
-    <title value="Observation - Condition Contributing To Death"/>
+    <title value="Observation - Condition Contributing to Death"/>
     <status value="active"/>
     <date value="2022-02-27T14:53:00+00:00"/>
     <publisher value="HL7 Public Health Working Group"/>

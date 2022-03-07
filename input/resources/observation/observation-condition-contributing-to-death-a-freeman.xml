@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-condition-contributing-to-death-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-01T17:19:53.055+00:00"/>
-        <source value="#S3wDMdBKaPzYcNyu"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-03-07T06:17:28.390+00:00"/>
+        <source value="#zWgvyqGkjy63CVnB"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-condition-contributing-to-death"/>
     </meta>
     <status value="final"/>
@@ -23,11 +23,6 @@
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </performer>
     <valueCodeableConcept>
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="64715009"/>
-            <display value="Hypertensive heart disease (disorder)"/>
-        </coding>
-        <text value="Hypertensive heart disease (disorder)"/>
+        <text value="Hypertensive heart disease"/>
     </valueCodeableConcept>
 </Observation>
