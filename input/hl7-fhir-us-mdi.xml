@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="568"/>
-        <lastUpdated value="2022-03-08T21:41:37.874+00:00"/>
-        <source value="#lXHEEJgwVq9umhby"/>
+        <versionId value="569"/>
+        <lastUpdated value="2022-03-08T22:26:11.602+00:00"/>
+        <source value="#xwpvcfBdCkeeH6VB"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.1.0"/>
@@ -732,6 +732,10 @@
                 <generation value="markdown"/>
             </page>
         </page>
+        <parameter>
+            <code value="path-expansion-params"/>
+            <value value="resources/parameters/expansion-parameters-mdi.xml"/>
+        </parameter>
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>
