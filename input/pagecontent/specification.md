@@ -18,35 +18,33 @@ This specification requires two roles in any data exchange:
 **MDI FHIR IG Actors & Roles Table**
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg td{border-color:black;border-style:solid;border-width:1px; overflow:hidden;padding:2px 2px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px; font-weight:normal;overflow:hidden;padding:2px 2px;word-break:normal;}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Actor&nbsp;&nbsp;&nbsp;</th>
-    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Data&nbsp;&nbsp;&nbsp;Source for:&nbsp;&nbsp;&nbsp;</th>
-    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Data&nbsp;&nbsp;&nbsp;Consumer of:&nbsp;&nbsp;&nbsp;</th>
+    <th class="tg-0lax"><b>Actor</b></th>
+    <th class="tg-0lax"><b>Data Source for:</b></th>
+    <th class="tg-0lax"><b>Data Consumer of:</b></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Forensic&nbsp;&nbsp;&nbsp;toxicology LIMS&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Bundle - Message&nbsp;&nbsp;&nbsp;Toxicology to MDI&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">Forensic Toxicology LIMS</td>
+    <td class="tg-0lax">Bundle - Message Toxicology to MDI </td>
+    <td class="tg-0lax">&nbsp;</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>MDI system&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Bundle -&nbsp;&nbsp;&nbsp;Document MDI to EDRS&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Bundle - Message&nbsp;&nbsp;&nbsp;Toxicology to MDI <br>&nbsp;&nbsp;&nbsp;<br>Bundle -&nbsp;&nbsp;&nbsp;Document MDI to EDRS&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">MDI System</td>
+    <td class="tg-0lax">Bundle - Document MDI to EDRS </td>
+    <td class="tg-0lax">Bundle - Message Toxicology to MDI <br>Bundle - Document MDI to EDRS </td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>EDRS&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Bundle -&nbsp;&nbsp;&nbsp;Document MDI to EDRS&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Bundle -&nbsp;&nbsp;&nbsp;Document MDI to EDRS&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">EDRS</td>
+    <td class="tg-0lax">Bundle - Document MDI to EDRS </td>
+    <td class="tg-0lax">Bundle - Document MDI to EDRS </td>
   </tr>
 </tbody>
 </table>
@@ -77,6 +75,7 @@ FHIR servers implementing this MDI IG are expected to conform to the [US Core Se
 * Receiving and consuming a valid Composition - MDI to EDRS from an MDI system
 
 **MDI FHIR Interactions Summary Table** ([definitions](https://www.hl7.org/fhir/http.html))
+**MDI FHIR Interactions Summary Table** ([definitions](https://www.hl7.org/fhir/http.html))
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -88,102 +87,103 @@ FHIR servers implementing this MDI IG are expected to conform to the [US Core Se
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0lax"></th>
-    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;&nbsp;<br>Forensic toxicology LIMS&nbsp;&nbsp;&nbsp;&nbsp;server implementing Bundle Message Toxicology To MDI&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;&nbsp;<br>MDI system server&nbsp;&nbsp;&nbsp;&nbsp;implementing Bundle Message Toxicology To MDI&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;&nbsp;<br>Server implementing&nbsp;&nbsp;&nbsp;&nbsp;Bundle - Document MDI to EDRS (MDI system or EDRS)&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th class="tg-0lax"><b>Interaction</b></th>
+    <th class="tg-0lax"></i><b>Forensic Toxicology LIMS server implementing Bundle Message Toxicology To MDI</b></th>
+    <th class="tg-0lax"></i><b>MDI system server implementing Bundle Message Toxicology To MDI</b></th>
+    <th class="tg-0lax"></i><b>Server implementing Bundle - Document MDI to EDRS</b> (MDI system or EDRS)</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax" colspan="4">&nbsp;&nbsp;&nbsp;<br>Instance Level Interactions&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax" colspan="4"><b><i>Instance Level Interactions</i></b></td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>read&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">read</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>vread&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">vread</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>update&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">update</td>
+    <td class="tg-0lax">yes</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>patch&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">patch</td>
+    <td class="tg-0lax">yes</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>delete&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">delete</td>
+    <td class="tg-0lax">yes</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>history&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">history</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax" colspan="4">&nbsp;&nbsp;&nbsp;<br>Type Level Interactions&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax" colspan="4"><b><i>Type Level Interactions</i></b></td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>create&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">create</td>
+    <td class="tg-0lax">yes</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>search&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">search</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>history&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">history</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax" colspan="4">&nbsp;&nbsp;&nbsp;<br>Whole System Interactions&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax" colspan="4"><b><i>Whole System Interactions</i></b></td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>capabilities&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">capabilities</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>batch/transaction&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">batch/transaction</td>
+    <td class="tg-0lax">yes</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>history&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">history</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>search&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>yes&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0lax">search</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes</td>
   </tr>
 </tbody>
 </table>
+
 
 # Conformance to Other Standards
 This specification is based on US Core 4.0.0. This IG defines 18 new profiles in total. These profiles are based on a US Core profile where possible. Conformance to US Core profiles is expected in all cases where 1) a US Core Profile exist and 2) where no profile has been defined here. For example, instances of Patients, Practitioners, and Organizations are expected to conform to US Core profiles, respectively.

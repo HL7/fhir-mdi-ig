@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="555"/>
-        <lastUpdated value="2022-03-04T12:47:36.728+00:00"/>
-        <source value="#r91xGsATa7fWj4ob"/>
+        <versionId value="568"/>
+        <lastUpdated value="2022-03-08T21:41:37.874+00:00"/>
+        <source value="#lXHEEJgwVq9umhby"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.1.0"/>
@@ -70,6 +70,9 @@
         <grouping id="extensions">
             <name value="Extensions"/>
             <description value="Extensions defined for this implementation guide"/>
+        </grouping>
+        <grouping id="other">
+            <name value="Other"/>
         </grouping>
         <resource>
             <reference>
@@ -688,6 +691,16 @@
             <name value="ValueSet - Yes, No, Not Applicable"/>
             <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable.  Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Parameters/expansion-parameters-mdi"/>
+                <display value="Expansion Parameters - MDI"/>
+            </reference>
+            <name value="Expansion Parameters - MDI"/>
+            <description value="Expansion Parameters - Reference to US National Library of Medicine maintained module (core metadata concept)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="other"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

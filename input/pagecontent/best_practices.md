@@ -27,19 +27,17 @@ This MDI FHIR IG provides opportunities on most profiles for naming the responsi
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg td{border-color:black;border-style:solid;border-width:1px; overflow:hidden;padding:2px 2px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px; font-weight:normal;overflow:hidden;padding:2px 2px;word-break:normal;}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0lax">Profile</th>
-    <th class="tg-0lax">Data Element &amp; Reference</th>
-    <th class="tg-0lax">Cardinality &amp; Must Support</th>
-    <th class="tg-0lax">Description</th>
+    <th class="tg-0lax"><b>Profile</b></th>
+    <th class="tg-0lax"><b>Data Element &amp; Reference</b></th>
+    <th class="tg-0lax"><b>Cardinality &amp; Must Support</b></th>
+    <th class="tg-0lax"><b>Description</b></th>
   </tr>
 </thead>
 <tbody>
@@ -183,7 +181,94 @@ The Observation – Death Date profile represents the actual or presumed date of
 * Use the status resource for qualifiers contained in the value set observation-status (registered, preliminary, final, etc.). This value set contains 8 concepts and is not extensible (cannot be added to by local implementations).
 * Use the interpretation resource codes from the extensible Value Set - Date Death Qualifiers (exact, approximate, etc.)
 
-# API Specifications
-The MDI FHIR IG is designed for RESTful API implementations supporting data exchange interactions between systems via standard operations. (For an overview, see [Restful API](https://hl7.org/FHIR/http.html0.) This IG uses a subset of the many [RESTful API operations](https://hl7.org/FHIR/operationslist.html#1.5) defined by FHIR. All API implementations of this MDI FHIR IG must conform to common design rules:
+# API Specifications & Search Operations
+The MDI FHIR IG is designed for RESTful API implementations supporting data exchange interactions between systems via FHIR extended operations. (See [RESTful API](https://hl7.org/FHIR/http.html) for an overview.) This MDI FHIR IG uses extended operations with MDI-specific search parameters and a subset of the many [RESTful API operations](https://hl7.org/FHIR/operationslist.html#1.5) defined by FHIR. All API implementations of this MDI FHIR IG must conform to common design rules:
 * MIME-type for FHIR resources is application/fhir+xml or application/fhir+json. This must be specified for Content-Type in the HTTP header.
 * application/x-www-form-urlencoded can be used for POST search requests if HTTP Form is used.
+
+An MDI-based Search API enables MDI systems to search EDRS for decedent cases. This is an idempotent operation (i.e., it has has no additional effect if it is called more than once with the same input parameters). Both POST and GET can be used with the following endpoint URL pattern:
+* POST [base]/Composition/$mdi-documents
+* GET [base]/Composition/$mdi-documents?name=value&…
+
+**MDI Search Parameter Definition Summary Table**
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;
+  overflow:hidden;padding:2px 2px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;
+  font-weight:normal;overflow:hidden;padding:2px 2px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <td class="tg-0lax"><b>Name</b> </td>
+    <td class="tg-0lax"><b>Cardinality</b> </td>
+    <td class="tg-0lax"><b>Type</b> </td>
+    <td class="tg-0lax"><b>Documentation</b> </td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax" colspan="4"><b><i>In Parameters</i></b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">id </td>
+    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">uri </td>
+    <td class="tg-0lax">Resource ID of Composition - MDI to EDRS</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">patient.birthdate </td>
+    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">date </td>
+    <td class="tg-0lax">Decedent’s date of birth </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">patient.family </td>
+    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">string </td>
+    <td class="tg-0lax">Decedent’s last name </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">patient.given </td>
+    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">string </td>
+    <td class="tg-0lax">Decedent’s first name </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">patient.gender </td>
+    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">token </td>
+    <td class="tg-0lax">Decedent’s gender </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">tracking-number</td>
+    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">token </td>
+    <td class="tg-0lax">Search by identifier in Composition - MDI to EDRS</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">death-location</td>
+    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">string </td>
+    <td class="tg-0lax">District of Death Location </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">death-date.[actual | pronounced | all]</td>
+    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">date </td>
+    <td class="tg-0lax">Date of Death. “all” applies to both actual/presumed and pronounced</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="4"><b><i>Out Parameters</i></b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">return </td>
+    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">resource (Bundle - Document MDI to EDRS) </td>
+    <td class="tg-0lax">Searchset Bundle that includes MDI document bundles. If [id] issupplied, then this should be Bundle - Document MDI to EDRS</td>
+  </tr>
+</tbody>
+</table>
