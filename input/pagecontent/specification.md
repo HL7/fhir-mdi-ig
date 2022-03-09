@@ -15,7 +15,7 @@ This specification requires two roles in any data exchange:
 * Data Source: An application that exposes a FHIR document bundle or message bundle to a data consumer. This can be thought of as the server in a client/server interaction.
 * Data Consumer: An application that consumes a FHIR document bundle or message bundle. This can be thought of as the client in a client/server interaction.
 
-**MDI FHIR IG Actors & Roles Table**
+**MDI FHIR IG Actors & Roles Summary Table**
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px; overflow:hidden;padding:2px 2px;word-break:normal;}
@@ -186,35 +186,25 @@ FHIR servers implementing this MDI IG are expected to conform to the [US Core Se
 
 
 # Conformance to Other Standards
-This specification is based on US Core 4.0.0. This IG defines 18 new profiles in total. These profiles are based on a US Core profile where possible. Conformance to US Core profiles is expected in all cases where 1) a US Core Profile exist and 2) where no profile has been defined here. For example, instances of Patients, Practitioners, and Organizations are expected to conform to US Core profiles, respectively.
+This specification is based on US Core 4.0.0. This IG defines 18 new profiles in total. These profiles are based on a US Core profile where possible. Conformance to US Core profiles is expected in all cases where 1) a US Core Profile exists and 2) where no profile has been defined by this MDI specification. For example, instances of Patients, Practitioners, and Organizations are expected to conform to US Core profiles, respectively.
 
 This specification directly uses six US Core profiles:
-* [US Core Condition Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition)
 * [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab)
 * [US Core Location Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-location)
 * [US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
 * [US Core Practitioner Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner)
 * [US Core PractitionerRole Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole)
 
-This specification uses the [Usual Work] (http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork) (Observation) profile defined in the ODH IG; conformance to this profile is expected when conveying Usual Work information.
+This specification uses the [Usual Work](http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork) (Observation) profile defined in the ODH IG; conformance to that ODH profile is expected when conveying Usual Work information.
 
 # Resources and Profiles
 This specification defines the following resources. An overview and list of examples is available on the Artifact Index page.
 
-**Profiles for forensic toxicology to MDI exchange use case:**
-* Bundle Message Toxicology To MDI
-* DiagnosticReport - Toxicology Lab Result to MDI
-* Specimen - Toxicology Lab
-* MessageHeader - Toxicology to MDI
-* Toxicology Lab Observation Result
-
 **Profiles defined for MDI to EDRS exchange use case:**
 * Bundle - Document MDI to EDRS
 * Composition - MDI to EDRS
-* Condition - Cause Of Death
-* Condition - Other Contributing To Death
-* DocumentReference - MDI Case History
-* DocumentReference - MDI Case Notes Summary
+* Observation - Cause Of Death Condition
+* Observation - Condition Contributing To Death
 * List - Cause of Death Pathway
 * Observation - Death Date
 * Observation - Death Injury/Event Occurred at Work
@@ -223,18 +213,31 @@ This specification defines the following resources. An overview and list of exam
 * Observation - Manner of Death
 * Observation - Tobacco Use Contributed To Death
 
+**Profiles for forensic toxicology to MDI exchange use case:**
+* Bundle Message Toxicology To MDI
+* DiagnosticReport - Toxicology Lab Result to MDI
+* Specimen - Toxicology Lab
+* MessageHeader - Toxicology to MDI
+* Toxicology Lab Observation Result
+
 **Extensions:**
 * Extension - Tracking Number (for MDI to EDRS exchange use case)
-* Extension -Agency Case History Notes (for forensic toxicology to MDI exchange use case)
 * Extension – Location (for both use cases)
 
 **ValueSet:**
+* ValueSet - Contributory Tobacco Use 	
+* ValueSet - Date Establishment Methods 	
+* ValueSet - Death Pregnancy Status 	
+* ValueSet - Manner of Death 	
 * ValueSet - Tracking Number Type 	
+* ValueSet - Units of Age 	
+* ValueSet - Yes, No, Not Applicable
 
 **Code System:**
-* CodeSystem - MDI 	
+* CodeSystem - MDI 
+* CodeSystem - Death Pregnancy Status 	
 
-# Must Support and Missing Data
+# MustSupport and Missing Data
 Systems claiming to conform to an MDI profile SHALL support the elements in the profile as defined below. This guide adopts the following definitions of MustSupport for all direct transactions between the data source systems and data consumer systems.
 
 **Data Source Systems**

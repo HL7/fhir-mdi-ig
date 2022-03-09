@@ -1,11 +1,11 @@
 The MDI FHIR IG is designed to be light-weight and flexible, recognizing that information management systems used for assembling medicolegal death investigation data vary widely by state, jurisdiction, and agency. This means that many data concepts have few requirements but many “must support” designations. This section provides best practice recommendations on how to address select concepts.
 
+The MDI specification is designed to be flexible to accommodate a variety of systems, recognizing that information management systems used for assembling MDI data vary widely by state, jurisdiction, and agency. This means that many data concepts have few requirements but many “must support” designations. This section provides best practice recommendations on how to address select concepts.
+
 # Decedent
 This MDI FHIR IG uses the US Core Patient for the decedent subject of:
-* Specimen - Toxicology Lab
-* Toxicology Lab Observation Result
-* DiagnosticReport - Toxicology Lab Result to MDI
-* Composition - MDI to EDRS
+* Composition - MDI to EDRS and the profiles referenced in its section entries
+* DiagnosticReport - Toxicology Lab Result to MDI and the profiles referenced for its specimens and results
 
 The [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) profile requires 
 * 1..* patient identifier, each identifier specifying a system and value
@@ -23,8 +23,7 @@ Agencies and jurisdictions have a range of requirements for certification of inf
 
 This MDI FHIR IG provides opportunities on most profiles for naming the responsible party. The legal nature of certification is a business requirement to be assigned by each agency or jurisdiction implementing this IG.
 
-**Data Elements Available as Certifiers of MDI Information**
-
+**Data Elements Available as Certifiers of MDI Information Summary Table**
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px; overflow:hidden;padding:2px 2px;word-break:normal;}
@@ -54,28 +53,16 @@ This MDI FHIR IG provides opportunities on most profiles for naming the responsi
     <td class="tg-0lax">Attests to accuracy of composition</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Condition - Cause of Death </td>
-    <td class="tg-0lax">attester</td>
-    <td class="tg-0lax">[0..*], Must Support</td>
-    <td class="tg-0lax">Attests to accuracy of composition<br>This profile identifies factors contributing to the cause of death as asserted by the death certifier.</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Condition – Other Contributing to Death </td>
-    <td class="tg-0lax">asserter <br>Reference (US CorePractitioner Profile)</td>
+    <td class="tg-0lax">Observation - Cause of Death Condition </td>
+    <td class="tg-0lax">performer <br>Reference (US CorePractitioner Profile)</td>
     <td class="tg-0lax">[1..1], Must Support</td>
-    <td class="tg-0lax">Person who asserts this condition<br>This profile identifies factors contributing to the cause of death as asserted by the death certifier.</td>
+    <td class="tg-0lax">Who is responsible for the observation<br>This profile identifies one of the eventually ordered causes of death asserted by the death certifier. The cause of death is initially specified with text.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">DocumentReference - MDI Case History </td>
-    <td class="tg-0lax">authenticator <br>Reference (Practitioner |PractitionerRole | Organization)</td>
-    <td class="tg-0lax">[0..1]</td>
-    <td class="tg-0lax">Who/what authenticated the document</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">DocumentReference - MDI Case Notes Summary </td>
-    <td class="tg-0lax">authenticator <br>Reference(Practitioner |PractitionerRole | Organization)</td>
-    <td class="tg-0lax">[0..1]</td>
-    <td class="tg-0lax">Who/what authenticated the document</td>
+    <td class="tg-0lax">Observation - Condition Contributing to Death </td>
+    <td class="tg-0lax">performer <br>Reference (US CorePractitioner Profile)</td>
+    <td class="tg-0lax">[1..1], Must Support</td>
+    <td class="tg-0lax">Who is responsible for the observation<br>This profile identifies factors contributing to the cause of death as asserted by the death certifier.</td>
   </tr>
   <tr>
     <td class="tg-0lax">List - Cause of Death Pathway </td>
@@ -166,20 +153,22 @@ This MDI FHIR IG provides opportunities on most profiles for naming the responsi
 **Specimens received but not analyzed:** ME/Cs may need to know if a forensic toxicology laboratory received a specimen but did not analyze it. In such cases, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen's Specimen - Toxicology Lab Specimen.note. Additionally, the Specimen - Toxicology Lab may use the Specimen.condition to describe the state of the specimen via codes from the extensible value set [hl7VS-specimenCondition](https://terminology.hl7.org/ValueSet-v2-0493.html) and/or use the Specimen.note to describe details or issues about the specimen.
 
 **Reporting results:** The result of a specimen analysis is required to be reported as text and may also be represented by a code. This allows exchange of the result meaning among systems that do not share code systems or do not use standardized code systems. The value of the result may be reported in several text formats:
-* Word or phrase indication presence or absences with no quality (e.g., “Detected”, “Not detected”)
+* Word or phrase indicating presence or absences with no quantity (e.g., “Detected”, “Not detected”)
 * Mathematical expression of quantity with units (e.g., “= 0.160 g/dL”)
 * Mathematical expression of quantity range with units (e.g., “< 2.5 ng/mL”)
 
 # Death Date
 The Observation – Death Date profile represents the actual or presumed date of death. It provides several opportunities to explain the date listed as Death Date:
+* Observation.value[x]: Actual or presumed date of death
+* Observation.component: Date and time pronounced dead [US Standard Certificate of Death]
 
 **Specific date or range of dates:** If the actual date of death is known (date, date-time, or partial date such as year or year + month), set value resource type to dateTime. If the date of death is not known, and a range is known, set value resource type to Period, defined by a start and end dateTime.
 
 **Unknown date:** Use the dataAbsentReason resource for missing all or part of the decedent's death date (further information can be recorded in the note data element).
 
 **Qualifying the accuracy of the date of death:**
-* Use the status resource for qualifiers contained in the value set observation-status (registered, preliminary, final, etc.). This value set contains 8 concepts and is not extensible (cannot be added to by local implementations).
-* Use the interpretation resource codes from the extensible Value Set - Date Death Qualifiers (exact, approximate, etc.)
+* Use the status resource for qualifiers contained in the value set observation-status (registered, preliminary, final, etc.). This value set contains eight concepts and is not extensible (cannot be added to by local implementations).
+* Use the interpretation resource codes from the extensible ValueSet - Date Death Qualifiers (exact, approximate, etc.)
 
 # API Specifications & Search Operations
 The MDI FHIR IG is designed for RESTful API implementations supporting data exchange interactions between systems via FHIR extended operations. (See [RESTful API](https://hl7.org/FHIR/http.html) for an overview.) This MDI FHIR IG uses extended operations with MDI-specific search parameters and a subset of the many [RESTful API operations](https://hl7.org/FHIR/operationslist.html#1.5) defined by FHIR. All API implementations of this MDI FHIR IG must conform to common design rules:
@@ -272,3 +261,5 @@ An MDI-based Search API enables MDI systems to search EDRS for decedent cases. T
   </tr>
 </tbody>
 </table>
+
+The name of search parameters is formatted as [profile].[parameter]. If [profile] is missing, then it applies to the Composition – MDI to EDRS profile.

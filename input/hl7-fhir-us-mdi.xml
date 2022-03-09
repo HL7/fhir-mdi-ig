@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="569"/>
-        <lastUpdated value="2022-03-08T22:26:11.602+00:00"/>
-        <source value="#xwpvcfBdCkeeH6VB"/>
+        <versionId value="580"/>
+        <lastUpdated value="2022-03-09T14:44:51.666+00:00"/>
+        <source value="#foMCJ854GYXVYHPd"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.1.0"/>
@@ -72,7 +72,8 @@
             <description value="Extensions defined for this implementation guide"/>
         </grouping>
         <grouping id="other">
-            <name value="Other"/>
+            <name value="Other Parameters"/>
+            <description value="Other parameters used by this implementation guide"/>
         </grouping>
         <resource>
             <reference>
@@ -698,8 +699,8 @@
                 <display value="Expansion Parameters - MDI"/>
             </reference>
             <name value="Expansion Parameters - MDI"/>
-            <description value="Expansion Parameters - Reference to US National Library of Medicine maintained module (core metadata concept)"/>
-            <exampleBoolean value="false"/>
+            <description value="This Expansion Parameters specifies the US edition of SNOMED CT reference to US National Library of Medicine maintained module (core metadata concept)"/>
+            <exampleBoolean value="true"/>
             <groupingId value="other"/>
         </resource>
         <page>
