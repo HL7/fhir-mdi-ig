@@ -1,4 +1,4 @@
-# IG Defined Value Sets
+# Value Sets Defined in This MDI Implementation Guide
 * [ValueSetContributoryTobaccoUse](ValueSet-ValueSet-contributory-tobacco-use.html)
 * [ValueSetDateEstablishmentMethods](ValueSet-ValueSet-date-establishment-methods.html)
 * [ValueSetDeathPregnancyStatus](ValueSet-ValueSet-death-pregnancy-status.html)

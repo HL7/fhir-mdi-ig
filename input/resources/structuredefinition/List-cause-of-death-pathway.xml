@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="List-cause-of-death-pathway"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2022-02-28T05:09:22.043+00:00"/>
-        <source value="#ET3vWDXWoHy3ZHUC"/>
+        <versionId value="13"/>
+        <lastUpdated value="2022-03-10T13:14:03.409+00:00"/>
+        <source value="#XAN6rudRbAsmJ5o0"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
     <name value="ListCauseOfDeathPathway"/>

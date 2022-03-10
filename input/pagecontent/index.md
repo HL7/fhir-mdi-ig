@@ -1,5 +1,5 @@
 # Description
-This US-specific implementation guide (IG) provides guidance on the exchange of information to and from medicolegal death investigation (MDI) information systems. It supports interoperability between the MDI systems of medical examiner and coroner (ME/C) offices, forensic toxicology and other laboratory information management systems (LIMS), electronic death reporting systems (EDRS) of jurisdictional vital records offices, and ancillary workflows whose systems have the capability of utilizing Fast Healthcare Interoperability Resources (FHIR). The guide provides MDI systems developers with the technical details and best practices to standardized MDI fields and interfaces. Stakeholders may use the narrative portions of this guide to inform policies and practices for data exchange between systems contributing to death investigations.This guide can serve as a base for local specifications.
+This US-specific implementation guide (IG) provides guidance on the exchange of information to and from medicolegal death investigation (MDI) information systems. It supports interoperability between the MDI systems of medical examiner and coroner (ME/C) offices, forensic toxicology and other laboratory information management systems (LIMS), electronic death reporting systems (EDRS) of jurisdictional vital records offices, and ancillary workflows whose systems have the capability of utilizing Fast Healthcare Interoperability Resources (FHIR). The guide provides MDI systems developers with the technical details and best practices to standardized MDI fields and interfaces. Stakeholders may use the narrative portions of this guide to inform policies and practices for data exchange between systems contributing to death investigations. This guide can serve as a base for local specifications.
 
 # Technical Overview
 This MDI implementation guide is based upon FHIR R4.0.1 and is a U.S. Realm Specification.
@@ -12,9 +12,9 @@ This guide includes the following sections, listed at the top of each page in th
 * [Home](index.html): Summary description and technical overview
 * [Background](background.html): Information on MDI dataflows and actors, the current work, and relationship to other implementation guides, as well as likely future MDI FHIR specification development.
 * [Best Practices](best_practices.html): Guidance on implementation and use of this specification
-* [Specification](specification.html): Technical details on implementing thespecification
+* [Specification](specification.html): Technical details on implementing the specification
 * [Terminology](terminology.html): List of all value sets used in this guide
-* [Downloads](downloads.html): Links for downloading the full implementaion guide package as well as format-specific definitions files and example files in XML, JSON, and TTL
+* [Downloads](downloads.html): Links for downloading the full implementation guide package as well as format-specific definitions files and example files in XML, JSON, and TTL
 * [Artifacts Index Summary](artifacts.html): List of all FHIR artifacts specified by this guide, with brief descriptions.
 
 # Audience

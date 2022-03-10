@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-yes-no-not-applicable"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-03T04:58:51.038+00:00"/>
-        <source value="#0PLMGHN62CkU8TaV"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-03-10T13:16:17.464+00:00"/>
+        <source value="#nIv8gQDJjoWBJcrF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-yes-no-not-applicable"/>
     <version value="0.1.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable.  Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
+    <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

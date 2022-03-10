@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="580"/>
-        <lastUpdated value="2022-03-09T14:44:51.666+00:00"/>
-        <source value="#foMCJ854GYXVYHPd"/>
+        <versionId value="592"/>
+        <lastUpdated value="2022-03-10T13:10:01.998+00:00"/>
+        <source value="#Wb1vB8KT34TBhGYN"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="0.1.0"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This US-specific implementation guide (IG) provides guidance to FHIR implementers on the exchange of information to and from medicolegal death investigation (MDI) information systems. It supports interoperability between the MDI systems of medical examiner and coroner (ME/C) offices, forensic toxicology and other laboratory information management systems (LIMS), electronic death reporting systems (EDRS) of jurisdictional vital records offices, and ancillary workflows whose systems have the capability of utilizing FHIR. The design intent of this IG is to be a base that can be further specified for exchange of local MDI data."/>
+    <description value="This US-specific implementation guide (IG) provides guidance on the exchange of information to and from medicolegal death investigation (MDI) information systems. It supports interoperability between the MDI systems of medical examiner and coroner (ME/C) offices, forensic toxicology and other laboratory information management systems (LIMS), electronic death reporting systems (EDRS) of jurisdictional vital records offices, and ancillary workflows whose systems have the capability of utilizing Fast Healthcare Interoperability Resources (FHIR). The guide provides MDI systems developers with the technical details and best practices to standardized MDI fields and interfaces. Stakeholders may use the narrative portions of this guide to inform policies and practices for data exchange between systems contributing to death investigations.This guide can serve as a base for local specifications. This MDI FHIR IG is designed to be light-weight and flexible, recognizing that information management systems used for assembling medicolegal death investigation data vary widely by state, jurisdiction, and agency."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -690,7 +690,7 @@
                 <display value="ValueSet - Yes, No, Not Applicable"/>
             </reference>
             <name value="ValueSet - Yes, No, Not Applicable"/>
-            <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable.  Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
+            <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>

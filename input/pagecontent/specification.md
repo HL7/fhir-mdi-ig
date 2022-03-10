@@ -15,7 +15,7 @@ This specification requires two roles in any data exchange:
 * Data Source: An application that exposes a FHIR document bundle or message bundle to a data consumer. This can be thought of as the server in a client/server interaction.
 * Data Consumer: An application that consumes a FHIR document bundle or message bundle. This can be thought of as the client in a client/server interaction.
 
-**MDI FHIR IG Actors & Roles Summary Table**
+**MDI Implementation Guide Actors & Roles Summary Table**
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px; overflow:hidden;padding:2px 2px;word-break:normal;}
@@ -50,38 +50,31 @@ This specification requires two roles in any data exchange:
 </table>
 
 # Capability Statements & Claiming Conformance to This Specification
-To claim conformance to this specification, FHIR servers SHALL:
-* Be able to populate all profile data elements that have a minimum cardinality >= 1 and/or are flagged as Must Support as defined by that profile’s StructureDefinition.
-* Conform to this IG’s Server Capability Statement expectations for that profile’s type.
-
-FHIR servers implementing this MDI IG are expected to conform to the [US Core Server CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html) and have the following capabilities (behaviors) for each actor.
+To claim conformance to this specification, FHIR servers SHALL be able to populate all profile data elements that have a minimum cardinality >= 1 and/or are flagged as MustSupport as defined by that profile’s StructureDefinition. FHIR servers implementing this MDI specification are expected to conform to the [US Core Server CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html) and have the following capabilities (behaviors) for each actor.
 
 **Forensic toxicology LIMS FHIR server** is responsible for:
 * Producing a valid DiagnosticReport - Toxicology Lab Result to MDI
-* Producing a valid Bundle Message Toxicology To MDI that includes the DiagnosticReport
+* Producing a valid Bundle - Message Toxicology to MDI that includes the DiagnosticReport
 * Sending the Bundle Message to an MDI system data consumer
 
 **MDI system FHIR server** is responsible for:
-* Consuming a valid Bundle Message Toxicology To MDI received from a forensic toxicology LIMS
+* Consuming a valid Bundle - Message Toxicology to MDI received from a forensic toxicology LIMS
 * Querying an EDRS for an existing case record
-* Receiving a valid Composition - MDI to EDRS from an EDRS data source
-* Creating a new valid Composition - MDI to EDRS
-* Updating an existing Composition - MDI to EDRS
-* Sending a valid Composition - MDI to EDRS to an EDRS data consumer
+* Receiving a valid Bundle - Document MDI to EDRS from an EDRS data source
+* Creating a new valid Bundle - Document MDI to EDRS
+* Updating an existing Bundle - Document MDI to EDRSS
+* Sending a valid Bundle - Document MDI to EDRS to an EDRS data consumer
 
 **Electronic Death Reporting System (EDRS) FHIR server** is responsible for:
 * Receiving a query from an MDI system
-* Producing and returning a valid Composition - MDI to EDRS to an MDI system
-* Receiving and consuming a valid Composition - MDI to EDRS from an MDI system
+* Producing and returning a valid Bundle - Document MDI to EDRS to an MDI system
+* Receiving and consuming a valid Bundle - Document MDI to EDRS from an MDI system
 
-**MDI FHIR Interactions Summary Table** ([definitions](https://www.hl7.org/fhir/http.html))
 **MDI FHIR Interactions Summary Table** ([definitions](https://www.hl7.org/fhir/http.html))
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg td{border-color:black;border-style:solid;border-width:1px; overflow:hidden;padding:2px 2px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px; font-weight:normal;overflow:hidden;padding:2px 2px;word-break:normal;}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 <table class="tg">
@@ -186,16 +179,16 @@ FHIR servers implementing this MDI IG are expected to conform to the [US Core Se
 
 
 # Conformance to Other Standards
-This specification is based on US Core 4.0.0. This IG defines 18 new profiles in total. These profiles are based on a US Core profile where possible. Conformance to US Core profiles is expected in all cases where 1) a US Core Profile exists and 2) where no profile has been defined by this MDI specification. For example, instances of Patients, Practitioners, and Organizations are expected to conform to US Core profiles, respectively.
+This specification is based on US Core 4.0.0. It defines 16 new profiles in total. These profiles are based on a US Core profile where possible. Conformance to US Core profiles is expected in all cases where 1) a US Core Profile exists and 2) where no profile has been defined by this MDI specification. For example, instances of Patients, Practitioners, and Organizations are expected to conform to US Core profiles, respectively.
 
-This specification directly uses six US Core profiles:
+This specification directly uses five US Core profiles:
 * [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab)
 * [US Core Location Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-location)
 * [US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
 * [US Core Practitioner Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner)
 * [US Core PractitionerRole Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole)
 
-This specification uses the [Usual Work](http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork) (Observation) profile defined in the ODH IG; conformance to that ODH profile is expected when conveying Usual Work information.
+This specification uses the [Usual Work](http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork) (Observation) profile defined in the Occupational Data for Health (ODH) implementation guide; conformance to that ODH profile is expected when conveying Usual Work information.
 
 # Resources and Profiles
 This specification defines the following resources. An overview and list of examples is available on the Artifact Index page.
@@ -203,28 +196,28 @@ This specification defines the following resources. An overview and list of exam
 **Profiles defined for MDI to EDRS exchange use case:**
 * Bundle - Document MDI to EDRS
 * Composition - MDI to EDRS
-* Observation - Cause Of Death Condition
-* Observation - Condition Contributing To Death
 * List - Cause of Death Pathway
+* Observation - Cause of Death Condition
+* Observation - Condition Contributing to Death
 * Observation - Death Date
 * Observation - Death Injury/Event Occurred at Work
-* Observation - Decedent Pregnancy
 * Observation - How Death Injury Occurred
 * Observation - Manner of Death
-* Observation - Tobacco Use Contributed To Death
+* Observation - Decedent Pregnancy
+* Observation - Tobacco Use Contributed to Death
 
 **Profiles for forensic toxicology to MDI exchange use case:**
-* Bundle Message Toxicology To MDI
+* Bundle - Message Toxicology to MDI
+* MessageHeader - Toxicology to MDI
 * DiagnosticReport - Toxicology Lab Result to MDI
 * Specimen - Toxicology Lab
-* MessageHeader - Toxicology to MDI
-* Toxicology Lab Observation Result
+* Observation - Toxicology Lab Result
 
 **Extensions:**
 * Extension - Tracking Number (for MDI to EDRS exchange use case)
 * Extension – Location (for both use cases)
 
-**ValueSet:**
+**Value Sets:**
 * ValueSet - Contributory Tobacco Use 	
 * ValueSet - Date Establishment Methods 	
 * ValueSet - Death Pregnancy Status 	
@@ -252,7 +245,7 @@ Systems claiming to conform to an MDI profile SHALL support the elements in the 
 * Data Consumer systems SHALL be able to process resource instances containing data elements asserting missing information without generating an error or causing the application to fail.
 
 # Search
-This IG does not define any new FHIR Search capabilities or parameters.
+This implementation guide does not define any new FHIR Search capabilities or parameters.
 
 # Privacy and Security
 This Implementation Guide is adopting the security considerations from [US Core Security](https://www.hl7.org/fhir/us/core/security.html#security)
