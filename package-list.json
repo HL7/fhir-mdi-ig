@@ -10,7 +10,7 @@
             "date": "2022-03-27"
          },
     {
-      "version": "0.1.0",
+      "version": "1.0.0-ballot",
       "desc": "Ballot for STU Release 1",
       "status": "ballot",
       "sequence": "STU1",
@@ -22,6 +22,6 @@
     ],
     "package-id": "hl7.fhir.us.mdi",    
     "title": "Medicolegal Death Investigation (MDI)",
-    "canonical": "https://fhir.org/fhir/us/mdi",
+    "canonical": "https://hl7.org/fhir/us/mdi",
     "category": "Public Health"
 }
