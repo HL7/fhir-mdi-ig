@@ -1,8 +1,7 @@
 {
-    "package-id": "hl7.fhir.us.mdi",    
-    "title": "Medicolegal Death Investigation (MDI)",
+    "package-id": "hl7.fhir.us.mdi",
     "canonical": "https://hl7.org/fhir/us/mdi",
-    "category": "Public Health",
+    "title": "Medicolegal Death Investigation (MDI)",
     "list": [
         {
             "version": "current",
@@ -12,16 +11,17 @@
             "status": "ci-build",
             "current": true,
             "date": "2022-03-27"
-         },
-    {
-      "version": "1.0.0-ballot",
-      "desc": "Ballot for STU Release 1",
-      "status": "ballot",
-      "sequence": "STU1",
-      "fhirversion": "4.0.1",
-      "path": "http://hl7.org/fhir/us/mdi/2022May",
-      "date": "2022-03-27",
-      "current": false
-    }
-    ]
+        },
+        {
+            "version": "1.0.0-ballot",
+            "desc": "Ballot for STU Release 1",
+            "status": "ballot",
+            "sequence": "STU1",
+            "fhirversion": "4.0.1",
+            "path": "http://hl7.org/fhir/us/mdi/2022May",
+            "date": "2022-03-27",
+            "current": false
+        }
+    ],
+    "category": "Public Health"
 }
