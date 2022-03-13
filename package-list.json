@@ -1,4 +1,8 @@
 {
+    "package-id": "hl7.fhir.us.mdi",    
+    "title": "Medicolegal Death Investigation (MDI)",
+    "canonical": "https://hl7.org/fhir/us/mdi",
+    "category": "Public Health",
     "list": [
         {
             "version": "current",
@@ -19,9 +23,5 @@
       "date": "2022-03-27",
       "current": false
     }
-    ],
-    "package-id": "hl7.fhir.us.mdi",    
-    "title": "Medicolegal Death Investigation (MDI)",
-    "canonical": "https://hl7.org/fhir/us/mdi",
-    "category": "Public Health"
+    ]
 }
