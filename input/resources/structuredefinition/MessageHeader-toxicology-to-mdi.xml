@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-toxicology-to-mdi"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2022-03-14T05:30:54.989+00:00"/>
-        <source value="#8uHAT2C2puLBUWXC"/>
+        <versionId value="19"/>
+        <lastUpdated value="2022-03-14T06:29:05.959+00:00"/>
+        <source value="#eVLfkVO8y24goodh"/>
     </meta>
-    <url value="http://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
     <name value="MessageHeaderToxicologyToMDI"/>
     <title value="MessageHeader - Toxicology to MDI"/>
     <status value="active"/>
@@ -43,7 +43,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
             </type>
             <mustSupport value="true"/>
         </element>

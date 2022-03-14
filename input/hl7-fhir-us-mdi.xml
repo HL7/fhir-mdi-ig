@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="603"/>
-        <lastUpdated value="2022-03-14T04:43:38.571+00:00"/>
-        <source value="#ZI4lIBj0LkEPtVh8"/>
+        <versionId value="612"/>
+        <lastUpdated value="2022-03-14T06:07:58.885+00:00"/>
+        <source value="#HIOLo5uOnro7B3fv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-ballot"/>
@@ -129,7 +129,7 @@
             <name value="DiagnosticReport - Toxicology Lab Result to MDI - Freeman"/>
             <description value="DiagnosticReport - Toxicology Lab Result to MDI: Freeman example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+            <exampleCanonical value="https://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
             <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
@@ -199,7 +199,7 @@
             <name value="MessageHeader - Toxicology to MDI - Freeman"/>
             <description value="MessageHeader - Toxicology to MDI: Freeman example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
             <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
@@ -229,7 +229,7 @@
             <name value="MDI to EDRS Composition - Freeman"/>
             <description value="MDI to EDRS Composition: Freeman example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
             <groupingId value="mdi-examples"/>
         </resource>
         <resource>
@@ -285,7 +285,7 @@
             <name value="Specimen - Toxicology Lab - Freeman Blood"/>
             <description value="Specimen - Toxicology Lab: Freeman Blood examples"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
@@ -321,7 +321,7 @@
             <name value="Observation  - Toxicology Lab Result - Fentanyl Blood Freeman"/>
             <description value="Observation  - Toxicology Lab Result: Fentanyl Blood Freeman example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
             <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
@@ -517,7 +517,7 @@
             <name value="Specimen - Toxicology Lab - Freeman Vitreous Humor"/>
             <description value="Specimen - Toxicology Lab: Freeman Vitreous Humor example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
@@ -535,7 +535,7 @@
             <name value="Specimen - Toxicology Lab - Freeman Bile"/>
             <description value="Specimen - Toxicology Lab: Freeman Bile example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
@@ -544,7 +544,7 @@
             <name value="Specimen - Toxicology Lab - Freeman Liver"/>
             <description value="Specimen - Toxicology Lab: Freeman Liver example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
@@ -553,7 +553,7 @@
             <name value="Specimen - Toxicology Lab - Freeman Stomach Contents"/>
             <description value="Specimen - Toxicology Lab: Freeman Stomach Contents example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             <groupingId value="toxicology-examples"/>
         </resource>
         <resource>

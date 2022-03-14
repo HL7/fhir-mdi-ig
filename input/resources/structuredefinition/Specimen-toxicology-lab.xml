@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-toxicology-lab"/>
     <meta>
-        <versionId value="33"/>
-        <lastUpdated value="2022-03-14T04:48:31.134+00:00"/>
-        <source value="#uKk3d0KJx4LVxQ05"/>
+        <versionId value="34"/>
+        <lastUpdated value="2022-03-14T06:03:09.524+00:00"/>
+        <source value="#C305EsbtI7UBC22n"/>
     </meta>
-    <url value="http://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     <name value="SpecimenToxicologyLab"/>
     <title value="Specimen - Toxicology Lab"/>
     <status value="active"/>

@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-toxicology-to-mdi"/>
     <meta>
-        <versionId value="52"/>
-        <lastUpdated value="2022-03-14T05:30:24.854+00:00"/>
-        <source value="#Tr1FMBck1HNldZjj"/>
+        <versionId value="55"/>
+        <lastUpdated value="2022-03-14T06:26:21.318+00:00"/>
+        <source value="#kFyGez6sCZ2Xjygh"/>
     </meta>
-    <url value="http://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     <name value="DiagnosticReportToxicologyToMDI"/>
     <title value="DiagnosticReport - Toxicology Lab Result to MDI"/>
     <status value="active"/>
@@ -84,7 +84,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -94,7 +94,7 @@
             <definition value="The toxicology lab analysis results being reported."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
             </type>
             <mustSupport value="true"/>
         </element>

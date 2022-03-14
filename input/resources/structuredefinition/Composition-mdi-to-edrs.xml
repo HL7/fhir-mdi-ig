@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="134"/>
-        <lastUpdated value="2022-03-14T04:46:19.657+00:00"/>
-        <source value="#s7RtqJs8cBgdAQWd"/>
+        <versionId value="135"/>
+        <lastUpdated value="2022-03-14T06:01:07.211+00:00"/>
+        <source value="#wvNBXk4fksmHUGmD"/>
     </meta>
-    <url value="http://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
     <title value="Composition - MDI to EDRS"/>
     <status value="active"/>

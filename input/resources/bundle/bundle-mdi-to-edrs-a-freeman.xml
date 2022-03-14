@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-to-edrs-a-freeman"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-03-14T04:51:00.793+00:00"/>
-        <source value="#dI0hWLb2h4o88d9B"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-03-14T06:09:43.332+00:00"/>
+        <source value="#7w2fgU3SQLFbAiXN"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     </meta>
     <identifier>
@@ -23,7 +23,7 @@
                     <versionId value="11"/>
                     <lastUpdated value="2022-03-02T20:42:32.260+00:00"/>
                     <source value="#DtcvjXyynMA9Hyyo"/>
-                    <profile value="http://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
                 </meta>
                 <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
                     <valueIdentifier>
