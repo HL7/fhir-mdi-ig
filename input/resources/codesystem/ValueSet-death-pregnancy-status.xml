@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem
     xmlns="http://hl7.org/fhir">
-    <id value="CodeSystem-death-pregnancy-status"/>
+    <id value="ValueSet-death-pregnancy-status"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2022-03-01T23:31:38.106+00:00"/>
         <source value="#hnznL6fwsjs4Wu6w"/>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="everyone^write"/>
-        </security>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="user^G4dwOcFt^write"/>
-        </security>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="everyone^read"/>
-        </security>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="user^G4dwOcFt^read"/>
-        </security>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-death-pregnancy-status"/>
     <version value="0.1.0"/>
