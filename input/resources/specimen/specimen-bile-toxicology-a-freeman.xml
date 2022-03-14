@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-bile-toxicology-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-02-27T13:10:05.148+00:00"/>
-        <source value="#af2PhcZHzNXyYQH4"/>
-        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-03-14T04:59:21.969+00:00"/>
+        <source value="#0lmyipv01zQWILsL"/>
+        <profile value="http://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
         <system value="http://lab.acme.org/specimens/2021"/>

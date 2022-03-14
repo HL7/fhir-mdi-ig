@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-toxicology-to-mdi"/>
     <meta>
-        <versionId value="49"/>
-        <lastUpdated value="2022-03-01T15:25:26.722+00:00"/>
-        <source value="#8xGLuQeyXX6YCJPN"/>
+        <versionId value="50"/>
+        <lastUpdated value="2022-03-14T04:46:50.731+00:00"/>
+        <source value="#zfRFZ2x7z3kuIKyk"/>
     </meta>
-    <url value="https://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+    <url value="http://fhir.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     <name value="DiagnosticReportToxicologyToMDI"/>
     <title value="DiagnosticReport - Toxicology Lab Result to MDI"/>
     <status value="active"/>
