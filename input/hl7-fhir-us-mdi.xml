@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="601"/>
-        <lastUpdated value="2022-03-14T04:19:52.461+00:00"/>
-        <source value="#FQ1trAMDFW8skLCF"/>
+        <versionId value="602"/>
+        <lastUpdated value="2022-03-14T04:32:44.026+00:00"/>
+        <source value="#lTZGORnOdJQVydZq"/>
     </meta>
-    <url value="https://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
+    <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-ballot"/>
     <name value="MedicolegalDeathInvestigation"/>
     <title value="Medicolegal Death Investigation (MDI)"/>
