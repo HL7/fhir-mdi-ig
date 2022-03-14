@@ -1,6 +1,6 @@
 {
     "package-id": "hl7.fhir.us.mdi",
-    "canonical": "https://hl7.org/fhir/us/mdi",
+    "canonical": "http://hl7.org/fhir/us/mdi",
     "title": "Medicolegal Death Investigation (MDI)",
     "list": [
         {
@@ -18,7 +18,7 @@
             "status": "ballot",
             "sequence": "STU1",
             "fhirversion": "4.0.1",
-            "path": "https://hl7.org/fhir/us/mdi/2022May",
+            "path": "http://hl7.org/fhir/us/mdi/2022May",
             "date": "2022-03-27",
             "current": false
         }
