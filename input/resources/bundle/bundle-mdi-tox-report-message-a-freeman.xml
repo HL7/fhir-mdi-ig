@@ -812,7 +812,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Specimen/specimen-urine-toxicology-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Specimen/specimen-urine-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-urine-toxicology-a-freeman"/>
@@ -987,7 +987,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Specimen/specimen-vitreous-humor-toxicology-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Specimen/specimen-vitreous-humor-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-vitreous-humor-toxicology-a-freeman"/>
@@ -1163,7 +1163,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Specimen/specimen-bile-toxicology-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Specimen/specimen-bile-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-bile-toxicology-a-freeman"/>
@@ -1195,7 +1195,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Specimen/specimen-liver-toxicology-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Specimen/specimen-liver-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-stomach-contents-toxicology-a-freeman"/>
@@ -1227,7 +1227,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Specimen/specimen-stomach-contents-toxicology-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Specimen/specimen-stomach-contents-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-liver-toxicology-a-freeman"/>
@@ -1259,7 +1259,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
@@ -1448,7 +1448,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-4-anpp-blood-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Observation/us-core-lab-result-4-anpp-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-blood-a-freeman"/>
@@ -1632,7 +1632,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Observation/us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
@@ -1822,7 +1822,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-fentanyl-blood-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Observation/us-core-lab-result-fentanyl-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-blood-a-freeman"/>
@@ -2012,7 +2012,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
@@ -2201,7 +2201,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-4-anpp-urine-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Observation/us-core-lab-result-4-anpp-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-urine-a-freeman"/>
@@ -2385,7 +2385,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Observation/us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
@@ -2571,7 +2571,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-fentanyl-urine-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Observation/us-core-lab-result-fentanyl-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-urine-a-freeman"/>
@@ -2756,7 +2756,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-norfentanyl-urine-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Observation/us-core-lab-result-norfentanyl-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-norfentanyl-urine-a-freeman"/>
@@ -2941,7 +2941,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-xylazine-urine-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Observation/us-core-lab-result-xylazine-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-xylazine-urine-a-freeman"/>
@@ -3126,7 +3126,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
+        <fullUrl value="http://fhir.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
