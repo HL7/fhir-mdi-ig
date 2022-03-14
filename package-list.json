@@ -1,6 +1,6 @@
 {
     "package-id": "hl7.fhir.us.mdi",
-    "canonical": "https://hl7.org/fhir/us/mdi",
+    "canonical": "http://hl7.org/fhir/us/mdi",
     "title": "Medicolegal Death Investigation (MDI)",
     "list": [
         {
