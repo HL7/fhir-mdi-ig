@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-message-tox-to-mdi"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-03-10T13:14:58.165+00:00"/>
-        <source value="#Ez3nrCmuoehViWJH"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-03-14T05:27:19.679+00:00"/>
+        <source value="#a6NKDuYoEsUKinkE"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     <name value="BundleMessageToxToMDI"/>
@@ -54,7 +54,7 @@
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+                <profile value="http://fhir.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
             </type>
         </element>
     </differential>
