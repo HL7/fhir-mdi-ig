@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="600"/>
-        <lastUpdated value="2022-03-13T20:57:46.034+00:00"/>
-        <source value="#1VZnSJTstljjDmkM"/>
+        <versionId value="601"/>
+        <lastUpdated value="2022-03-14T04:19:52.461+00:00"/>
+        <source value="#FQ1trAMDFW8skLCF"/>
     </meta>
     <url value="https://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-ballot"/>
