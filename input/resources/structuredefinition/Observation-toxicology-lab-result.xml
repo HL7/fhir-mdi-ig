@@ -39,7 +39,7 @@
             <path value="Observation.specimen"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                <targetProfile value="https://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             </type>
             <mustSupport value="true"/>
         </element>

@@ -6,7 +6,7 @@
         <versionId value="2"/>
         <lastUpdated value="2022-03-14T04:58:57.456+00:00"/>
         <source value="#5Bzp74WKtXXUfFKA"/>
-        <profile value="http://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>
         <system value="http://lab.acme.org/specimens/2021"/>

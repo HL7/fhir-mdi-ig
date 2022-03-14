@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="612"/>
-        <lastUpdated value="2022-03-14T06:07:58.885+00:00"/>
-        <source value="#HIOLo5uOnro7B3fv"/>
+        <versionId value="614"/>
+        <lastUpdated value="2022-03-14T06:40:37.996+00:00"/>
+        <source value="#34kRDwLar3FQ46lo"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-ballot"/>
@@ -129,7 +129,7 @@
             <name value="DiagnosticReport - Toxicology Lab Result to MDI - Freeman"/>
             <description value="DiagnosticReport - Toxicology Lab Result to MDI: Freeman example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="https://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
             <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
@@ -407,7 +407,7 @@
             <name value="Specimen - Toxicology Lab - Freeman Urine"/>
             <description value="Specimen - Toxicology Lab: Freeman Urine example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://fhir.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
