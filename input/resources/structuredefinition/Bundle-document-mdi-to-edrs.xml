@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-document-mdi-to-edrs"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-02-27T20:47:21.231+00:00"/>
-        <source value="#RRjjz9579aHw2xrT"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-03-14T05:24:14.181+00:00"/>
+        <source value="#dI12iQZDTDEfQMyB"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     <version value="0.0.1"/>
@@ -60,7 +60,7 @@
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+                <profile value="http://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
             </type>
             <mustSupport value="true"/>
         </element>
