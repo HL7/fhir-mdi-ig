@@ -76,7 +76,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="A set of codes that reflect whether the decedent was pregnant at or around the time of death."/>
-                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/vrdr-pregnancy-status-vs"/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-death-pregnancy-status"/>
             </binding>
         </element>
     </differential>
