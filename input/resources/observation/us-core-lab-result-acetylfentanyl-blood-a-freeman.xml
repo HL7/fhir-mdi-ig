@@ -6,7 +6,7 @@
         <versionId value="3"/>
         <lastUpdated value="2022-03-01T14:13:04.227+00:00"/>
         <source value="#wRAI5XPPuljbXSPJ"/>
-        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+        <profile value="http://fhir.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
     <status value="final"/>
     <category>
