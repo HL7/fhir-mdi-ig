@@ -103,7 +103,7 @@
                 <reference value="Bundle/bundle-mdi-tox-report-message-a-freeman"/>
             </reference>
             <name value="Bundle - Message Toxicology to MDI - Freeman"/>
-            <description value="Bundle - Message Toxicology to MDI:  Freeman example"/>
+            <description value="Bundle - Message Toxicology to MDI: Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical
                 value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
@@ -335,7 +335,7 @@
                 <reference value="Observation/us-core-lab-result-4-anpp-blood-a-freeman"/>
             </reference>
             <name value="Observation - Toxicology Lab Result - 4-anpp Blood Freeman"/>
-            <description value="Observation - Toxicology Lab Result:  4-anpp Blood Freeman example"/>
+            <description value="Observation - Toxicology Lab Result: 4-anpp Blood Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical
                 value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
@@ -357,9 +357,9 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-fentanyl-blood-a-freeman"/>
             </reference>
-            <name value="Observation  - Toxicology Lab Result - Fentanyl Blood Freeman"/>
+            <name value="Observation - Toxicology Lab Result - Fentanyl Blood Freeman"/>
             <description
-                value="Observation  - Toxicology Lab Result: Fentanyl Blood Freeman example"/>
+                value="Observation - Toxicology Lab Result: Fentanyl Blood Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical
                 value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
@@ -744,7 +744,7 @@
         <resource>
             <reference>
                 <reference value="ValueSet/ValueSet-contributory-tobacco-use"/>
-                <display value="ValueSet -Contributory Tobbaco Use"/>
+                <display value="ValueSet - Contributory Tobbaco Use"/>
             </reference>
             <name value="ValueSet - Contributory Tobacco Use"/>
             <description
