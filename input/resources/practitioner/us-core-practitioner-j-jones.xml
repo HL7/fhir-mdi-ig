@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-practitioner-j-jones"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-20T21:14:58.376+00:00"/>
-        <source value="#itXCQUhYErheWDxb"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-04-18T21:40:10.957+00:00"/>
+        <source value="#oXzVIVFlDaJs5fnx"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
     </meta>
     <identifier>

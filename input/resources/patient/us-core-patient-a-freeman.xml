@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-patient-a-freeman"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-03-02T21:42:51.355+00:00"/>
-        <source value="#CPCSP4o6aeX7KksO"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-04-18T21:39:49.511+00:00"/>
+        <source value="#SrnzEZF06jJ7I9MK"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>
@@ -13,6 +13,7 @@
         <div
             xmlns="http://www.w3.org/1999/xhtml">
             <div class="hapiHeaderText">Alice J. 
+                
                 <b>FREEMAN </b>
             </div>
             <table class="hapiPropertyTable">

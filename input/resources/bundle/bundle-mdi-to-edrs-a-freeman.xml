@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-to-edrs-a-freeman"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-03-14T06:09:43.332+00:00"/>
-        <source value="#7w2fgU3SQLFbAiXN"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-04-18T21:37:41.594+00:00"/>
+        <source value="#j2pzi3iNhI3oXgSp"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     </meta>
     <identifier>
@@ -300,6 +300,7 @@
                                 
                                 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                             </p>
                         </div>
@@ -311,9 +312,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>name</b>: Bruce Goldberger (OFFICIAL) 
+                        
                         
                         
                         
@@ -408,6 +411,7 @@
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Alice J. 
+                            
                             
                             
                             
@@ -665,6 +669,7 @@
                                 
                                 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                             </p>
                         </div>
@@ -676,9 +681,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>name</b>: Sam Jones (OFFICIAL) 
+                        
                         
                         
                         
@@ -724,6 +731,7 @@
                                 
                                 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                             </p>
                         </div>
@@ -735,9 +743,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>name</b>: Jane Jones (OFFICIAL) 
+                        
                         
                         
                         
