@@ -1,4 +1,4 @@
-# Value Sets Defined in This MDI Implementation Guide
+### Value Sets Defined in This MDI Implementation Guide
 * [ValueSetContributoryTobaccoUse](ValueSet-ValueSet-contributory-tobacco-use.html)
 * [ValueSetDateEstablishmentMethods](ValueSet-ValueSet-date-establishment-methods.html)
 * [ValueSetDeathPregnancyStatus](ValueSet-ValueSet-death-pregnancy-status.html)
@@ -6,7 +6,7 @@
 * [ValueSetTrackingNumberType](ValueSet-ValueSet-tracking-number-type.html)
 * [ValueSetYesNoNotApplicable](ValueSet-ValueSet-yes-no-not-applicable.html)
 
-# HL7 Defined Value Sets
+### HL7 Defined Value Sets
 * [v3.ConfidentialityClassification](http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html)
 * [CompositionAttestationMode](http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html)
 * [CompositionStatus](http://hl7.org/fhir/R4/valueset-composition-status.html)
@@ -40,3 +40,7 @@
 * [Pattern: laboratory](http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html#observation-category-laboratory)
 * [Hl7VSSpecimenCondition](http://terminology.hl7.org/3.1.0/ValueSet-v2-0493.html)
 * [Hl7VSRelevantClincialInformation](http://terminology.hl7.org/3.1.0/ValueSet-v2-0916.html)
+
+### Other Valuesets
+* [Occupation CDC Census 2010](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186)
+* [Occupation CDC ONET-SOC 2010 (ODH)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7901)

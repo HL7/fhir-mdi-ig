@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-manner-of-death"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-03-01T20:46:58.066+00:00"/>
-        <source value="#FE3Rgye7CewdaLiI"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-07-04T14:41:37.749+00:00"/>
+        <source value="#OdBX6vSUQEaFhN0n"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-manner-of-death"/>
     <version value="0.1.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="A set of codes to reflect the manner that a person died. This value set is based on [Manner of Death (NCHS)[2.16.840.1.114222.4.11.6002]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6002)."/>
+    <description value="A set of codes to reflect the manner that a person died."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

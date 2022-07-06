@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="ValueSet-date-establishment-approach"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-07-03T19:33:48.142+00:00"/>
+        <source value="#NHoZ5t02LMwmBam5"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-date-establishment-approach"/>
+    <name value="ValueSetDateEstablishmentApproach"/>
+    <title value="ValueSet - Date Establishment Approach"/>
+    <status value="active"/>
+    <description value="This value set contains codes that describe the approach to establishing a date."/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+            <concept>
+                <code value="exact"/>
+                <display value="Exact"/>
+            </concept>
+            <concept>
+                <code value="approximate"/>
+                <display value="Approximate"/>
+            </concept>
+            <concept>
+                <code value="court-appointed"/>
+                <display value="Court Appointed"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

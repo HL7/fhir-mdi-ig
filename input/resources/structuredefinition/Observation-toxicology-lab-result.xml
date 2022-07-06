@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-toxicology-lab-result"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2022-03-14T07:13:44.124+00:00"/>
-        <source value="#KSBn1QOHCMZFa0a3"/>
+        <versionId value="17"/>
+        <lastUpdated value="2022-07-04T03:09:33.180+00:00"/>
+        <source value="#TDFgvWmQ8Jw9wzzn"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     <name value="ObservationToxicologyLabResult"/>
@@ -21,6 +21,14 @@
     <differential>
         <element id="Observation">
             <path value="Observation"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.code.coding">
             <path value="Observation.code.coding"/>

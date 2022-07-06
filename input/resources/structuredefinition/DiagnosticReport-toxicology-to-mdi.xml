@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-toxicology-to-mdi"/>
     <meta>
-        <versionId value="55"/>
-        <lastUpdated value="2022-03-14T06:26:21.318+00:00"/>
-        <source value="#kFyGez6sCZ2Xjygh"/>
+        <versionId value="58"/>
+        <lastUpdated value="2022-07-06T02:08:42.901+00:00"/>
+        <source value="#dlcGWPQkcAc7Rt2w"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     <name value="DiagnosticReportToxicologyToMDI"/>
     <title value="DiagnosticReport - Toxicology Lab Result to MDI"/>
     <status value="active"/>
-    <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a forensic toxicology laboratory information management system to an MDI information management system."/>
+    <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a forensic toxicology laboratory information management system to an MDI information management system.&#xA;Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

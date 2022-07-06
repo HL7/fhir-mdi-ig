@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="631"/>
-        <lastUpdated value="2022-04-18T22:09:37.497+00:00"/>
-        <source value="#R2Gyc3qB0F5FKryl"/>
+        <versionId value="691"/>
+        <lastUpdated value="2022-07-04T21:31:51.710+00:00"/>
+        <source value="#bnspHHUwHRxGKMLz"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-ballot"/>
@@ -47,6 +47,10 @@
         <version value="0.7.0"/>
     </dependsOn>
     <definition>
+        <grouping id="capability-statements">
+            <name value="Capability Statements"/>
+            <description value="The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide. Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements."/>
+        </grouping>
         <grouping id="mdi-profiles">
             <name value="MDI Profiles"/>
             <description value="Profiles related to the MDI to EDRS data flow."/>
@@ -158,7 +162,7 @@
                 <display value="CompositionToxicologyToMDI"/>
             </reference>
             <name value="DiagnosticReport - Toxicology Lab Result to MDI"/>
-            <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a forensic toxicology laboratory information management system to an MDI information management system."/>
+            <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a forensic toxicology laboratory information management system to an MDI information management system.&#xA;Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note."/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
         </resource>
@@ -171,16 +175,6 @@
             <description value="This Extension contains a tracking number, such as a case number or file number assigned by an MDI information management system or EDRS, and can represent other tracking numbers, if required."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/List-cause-of-death-pathway"/>
-                <display value="List - Cause of Death Pathway"/>
-            </reference>
-            <name value="List - Cause of Death Pathway"/>
-            <description value="This List profile is an ordered list of cause of death conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -204,11 +198,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-cause-of-death-condition"/>
-                <display value="Observation - Cause Of Death Condition"/>
+                <reference value="StructureDefinition/Observation-cause-of-death-part1"/>
+                <display value="Observation - Cause Of Death Part 1"/>
             </reference>
-            <name value="Observation - Cause of Death Condition"/>
-            <description value="The Observation - Cause of Death Condition profile reflects one of the eventually ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
+            <name value="Observation - Cause of Death Part 1"/>
+            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -243,29 +237,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="List/list-cause-of-death-pathway-a-freeman"/></reference>
-            <name value="List - Cause of Death Pathway - Freeman"/>
-            <description value="List - Cause of Death Pathway: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-cause-of-death-condition-a-freeman-1"/></reference>
-            <name value="Observation - Cause of Death Condition - Freeman Primary"/>
-            <description value="Observation - Cause of Death Condition: Freeman Primary example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-condition"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-condition-contributing-to-death"/>
-                <display value="Observation - Condition Contributing To Death"/>
+                <reference value="StructureDefinition/Observation-contributing-cause-of-death-part2"/>
+                <display value="Observation - Contributing Cause of Death Part 2"/>
             </reference>
-            <name value="Observation - Condition Contributing to Death"/>
-            <description value="The Observation - Contributing to Death profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
+            <name value="Observation - Contributing Cause of Death Part 2"/>
+            <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -333,15 +309,6 @@
             <description value="This Observation identifies whether or not death resulted from events or an injury that occurred at work."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-condition-contributing-to-death-a-freeman"/></reference>
-            <name value="Observation - Condition Contributing to Death - Freeman - Hypertensive Heart Disease"/>
-            <description value="Observation - Condition Contributing to Death: Freeman hypertensive heart disease example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-condition-contributing-to-death"/>
-            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -443,7 +410,7 @@
                 <display value="SpecimenToxicologyLab"/>
             </reference>
             <name value="Specimen - Toxicology Lab"/>
-            <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."/>
+            <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note.&#xA;The laboratory may use the Specimen.condition to describe the state of the specimen via codes from the extensible value set hl7VS-specimenCondition and/or use the Specimen.note to describe details or issues about the specimen."/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
         </resource>
@@ -641,11 +608,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/ValueSet-date-establishment-methods"/>
-                <display value="Value Set - Date Establishment Methods"/>
+                <reference value="ValueSet/ValueSet-date-establishment-approach"/>
+                <display value="ValueSet - Date Establishment Approach"/>
             </reference>
-            <name value="ValueSet - Date Establishment Methods"/>
-            <description value="This value set contains codes that describe the method of establishing a date."/>
+            <name value="ValueSet - Date Establishment Approach"/>
+            <description value="This value set contains codes that describe the approach to establishing a date."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -663,7 +630,7 @@
                 <display value="ValueSet - Manner of Death"/>
             </reference>
             <name value="ValueSet - Manner of Death"/>
-            <description value="A set of codes to reflect the manner that a person died. This value set is based on [Manner of Death (NCHS)[2.16.840.1.114222.4.11.6002]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6002)."/>
+            <description value="A set of codes to reflect the manner that a person died."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -692,6 +659,56 @@
             <name value="ValueSet - Yes, No, Not Applicable"/>
             <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/server-tox"/>
+                <display value="Forensic Toxicology Laboratory Server CapabilityStatement"/>
+            </reference>
+            <name value="Forensic Toxicology Laboratory Server CapabilityStatement"/>
+            <description value="This resource describes the expected capabilities of the forensic toxicology LIMS server actor."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="capability-statements"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/server-edrs"/>
+                <display value="Electronic Death Reporting System (EDRS) CapabilityStatement Server"/>
+            </reference>
+            <name value="Electronic Death Reporting System (EDRS) Server CapabilityStatement"/>
+            <description value="This resource describes the expected capabilities of the Coroner/Medical Examiner (C/ME) case management system server actor responsible for consuming a message bundle received from a forensic toxicology LIMS and exchanging a document bundle with an EDRS for an MDI case record."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="capability-statements"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/server-cms"/>
+                <display value="Coroner/Medical Examiner Server CapabilityStatement"/>
+            </reference>
+            <name value="Coroner/Medical Examiner Server CapabilityStatement"/>
+            <description value="This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) server actor responsible exchanging a document bundle with an ME/C's case management system server for an MDI case record."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="capability-statements"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-contributing-cause-of-death-part2-a-freeman"/></reference>
+            <name value="Observation - Contributing Cause of Death Part 2 - Freeman"/>
+            <description value="Observation - Contributing Cause of Death Part 2: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cause-of-death-part1-a-freeman"/>
+                <display value="observation-cause-of-death-condition-a-freeman-1"/>
+            </reference>
+            <name value="Observation - Cause of Death Part 1 - Freeman"/>
+            <description value="Observation - Cause of Death Part 1: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

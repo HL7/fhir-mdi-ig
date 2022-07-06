@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-tracking-number"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-02-27T21:19:01.369+00:00"/>
-        <source value="#dM7fMPiukV3FJEvv"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-07-04T02:10:10.328+00:00"/>
+        <source value="#NI0Zm6UChG4dwqmC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
     <version value="1.0"/>
@@ -72,6 +72,10 @@
                 <strength value="extensible"/>
                 <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-tracking-number-type"/>
             </binding>
+        </element>
+        <element id="Extension.value[x].system">
+            <path value="Extension.value[x].system"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Extension.value[x].value">
             <path value="Extension.value[x].value"/>

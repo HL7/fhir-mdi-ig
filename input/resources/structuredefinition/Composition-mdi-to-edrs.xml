@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="135"/>
-        <lastUpdated value="2022-03-14T06:01:07.211+00:00"/>
-        <source value="#wvNBXk4fksmHUGmD"/>
+        <versionId value="138"/>
+        <lastUpdated value="2022-07-04T16:13:04.739+00:00"/>
+        <source value="#gHUbX29JUIkMteNC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -324,10 +324,10 @@
             <sliceName value="cause"/>
             <short value="Up to 5 lines of cause of death."/>
             <definition value="Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death."/>
-            <max value="1"/>
+            <max value="4"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/List-cause-of-death-pathway"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -339,7 +339,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-condition-contributing-to-death"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -432,6 +432,13 @@
                     <code value="exam-autopsy"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:exam-autopsy.text">
+            <path value="Composition.section.text"/>
+            <label value="Description of autopsy findings"/>
+            <short value="Description of autopsy findings"/>
+            <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:narratives">

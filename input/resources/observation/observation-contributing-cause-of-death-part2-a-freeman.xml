@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-contributing-cause-of-death-part2-a-freeman"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-07-04T20:54:30.547+00:00"/>
+        <source value="#5jVxAiDe19H2D154"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="69441-4"/>
+            <display value="Other significant causes or conditions of death"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/us-core-patient-a-freeman"/>
+    </subject>
+    <performer>
+        <reference value="Practitioner/us-core-practitioner-s-jones"/>
+    </performer>
+    <valueCodeableConcept>
+        <text value="Hypertensive heart disease"/>
+    </valueCodeableConcept>
+</Observation>

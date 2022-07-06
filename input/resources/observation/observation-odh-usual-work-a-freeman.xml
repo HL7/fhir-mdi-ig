@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-odh-usual-work-a-freeman"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-04-18T21:39:00.088+00:00"/>
-        <source value="#MGngbfot0OGJsgsp"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-07-04T23:23:53.642+00:00"/>
+        <source value="#avmggB7gmldKpQIk"/>
         <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
     </meta>
     <status value="final"/>
@@ -25,7 +25,7 @@
     </effectivePeriod>
     <valueCodeableConcept>
         <coding>
-            <system value="urn:oid:2.16.840.1.114222.4.5.314"/>
+            <system value="http://phinvads.cdc.gov/"/>
             <code value="4030"/>
             <display value="Food preparation workers"/>
         </coding>
