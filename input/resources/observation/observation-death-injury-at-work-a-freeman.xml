@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-death-injury-at-work-a-freeman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-03-03T05:08:29.918+00:00"/>
-        <source value="#oYF47VEpY2DNOjrn"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-07-23T13:11:11.303+00:00"/>
+        <source value="#nIefOXQMHg1RGs5U"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <status value="final"/>
     <code>
         <coding>

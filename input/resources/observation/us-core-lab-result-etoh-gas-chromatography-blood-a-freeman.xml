@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-03-14T06:21:25.106+00:00"/>
-        <source value="#fQ3K4DLIg39NEfbQ"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-07-23T13:22:05.153+00:00"/>
+        <source value="#U7OBCnKo6N5W0ofX"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <status value="final"/>
     <category>
         <coding>
@@ -30,11 +33,7 @@
         <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
-    <valueQuantity>
-        <value value="0.145"/>
-        <unit value="g/dL"/>
-        <system value="http://unitsofmeasure.org"/>
-    </valueQuantity>
+    <valueString value="0.145 g/dL"/>
     <specimen>
         <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
     </specimen>

@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-03-14T07:08:07.110+00:00"/>
-        <source value="#8G2sAastBJ0NKH9b"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-07-23T13:21:33.337+00:00"/>
+        <source value="#E7u6QL4hV1N2Vrf9"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <status value="final"/>
     <category>
         <coding>
@@ -30,11 +33,7 @@
         <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
-    <valueQuantity>
-        <value value="0.133"/>
-        <unit value="g/dL"/>
-        <system value="http://unitsofmeasure.org"/>
-    </valueQuantity>
+    <valueString value="0.133 g/dL"/>
     <specimen>
         <reference value="Specimen/specimen-vitreous-humor-toxicology-a-freeman"/>
     </specimen>

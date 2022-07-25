@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem
+    xmlns="http://hl7.org/fhir">
+    <id value="local-component-cs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-07-22T11:49:44.185+00:00"/>
+        <source value="#UbIzfNiKSaauWo7Y"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+    </text>
+    <url value="http://hl7.org/fhir/us/mdi/CodeSystem/local-component-cs"/>
+    <version value="1.9.0"/>
+    <name value="ComponentCS"/>
+    <title value="Local Component Codes"/>
+    <status value="active"/>
+    <date value="2022-07-21T19:28:41+00:00"/>
+    <publisher value="HL7 Public Health Working Group"/>
+    <contact>
+        <name value="HL7 Public Health Working Group"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="pher@lists.HL7.org"/>
+        </telecom>
+    </contact>
+    <description value="Local Component Codes for observation components that lack an appropriate LOINC code"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <caseSensitive value="false"/>
+    <content value="complete"/>
+    <count value="1"/>
+    <concept>
+        <code value="lineNumber"/>
+        <display value="line number"/>
+    </concept>
+</CodeSystem>

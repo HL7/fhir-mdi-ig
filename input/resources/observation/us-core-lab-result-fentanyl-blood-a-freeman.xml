@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-fentanyl-blood-a-freeman"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-03-14T07:07:55.593+00:00"/>
-        <source value="#tfUwEknZNbp8qsNT"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-07-23T13:21:08.212+00:00"/>
+        <source value="#P9utApfk5Aj6pND9"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <status value="final"/>
     <category>
         <coding>
@@ -30,11 +33,7 @@
         <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
-    <valueQuantity>
-        <value value="23"/>
-        <unit value="ng/mL"/>
-        <system value="http://unitsofmeasure.org"/>
-    </valueQuantity>
+    <valueString value="23 ng/mL"/>
     <specimen>
         <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
     </specimen>

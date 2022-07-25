@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="messageheader-mdi-tox-result-report-a-freeman"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-03-14T06:14:55.544+00:00"/>
-        <source value="#j8QLX7r5t7PkQjqD"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-07-23T13:12:06.363+00:00"/>
+        <source value="#2H5KcrCREJc5Z7Ck"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <eventCoding>
         <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
         <code value="tox-result-report"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tobacco-use-contributed-to-death"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-03-03T04:49:22.490+00:00"/>
-        <source value="#FeJQnC2ZrwABgeCB"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-07-22T19:02:47.904+00:00"/>
+        <source value="#q7acYDLvczRev9Bo"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
     <version value="1.0"/>
@@ -37,23 +37,18 @@
             <type>
                 <code value="code"/>
             </type>
-            <fixedCode value="final"/>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
             <short value="Did tobacco use contribute to death"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-            <patternCodeableConcept>
+            <fixedCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="69443-0"/>
+                    <display value="Did tobacco use contribute to death"/>
                 </coding>
-            </patternCodeableConcept>
+            </fixedCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">

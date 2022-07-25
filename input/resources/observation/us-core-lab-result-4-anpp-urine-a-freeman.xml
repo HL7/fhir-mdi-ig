@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-4-anpp-urine-a-freeman"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-03-14T07:08:16.311+00:00"/>
-        <source value="#armOCxxhC1IfIvxU"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-07-23T13:25:43.028+00:00"/>
+        <source value="#RLDIbxYitmoIrVnb"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <status value="final"/>
     <category>
         <coding>
@@ -30,7 +33,7 @@
         <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
-    <valueBoolean value="true"/>
+    <valueString value="true"/>
     <specimen>
         <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
     </specimen>

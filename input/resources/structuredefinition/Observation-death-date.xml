@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date"/>
     <meta>
-        <versionId value="41"/>
-        <lastUpdated value="2022-07-06T00:52:42.486+00:00"/>
-        <source value="#DrDi5Ga7cEbkATVL"/>
+        <versionId value="52"/>
+        <lastUpdated value="2022-07-22T15:48:12.691+00:00"/>
+        <source value="#vhzpVg6WoYl9zAOz"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     <name value="ObservationDeathDate"/>
@@ -31,15 +31,12 @@
         <element id="Observation.code">
             <path value="Observation.code"/>
             <short value="Date+time of death"/>
-            <min value="1"/>
-            <max value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="81956-5"/>
                 </coding>
             </patternCodeableConcept>
-            <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
@@ -50,16 +47,6 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.effective[x]">
-            <path value="Observation.effective[x]"/>
-            <short value="Date/time that the observation was made"/>
-            <definition value="Date/time that the observation was made"/>
-            <max value="1"/>
-            <type>
-                <code value="dateTime"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -77,23 +64,45 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Date/Time of Death"/>
             <definition value="Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
-            <min value="0"/>
-            <max value="1"/>
             <type>
                 <code value="dateTime"/>
             </type>
-            <type>
-                <code value="Period"/>
-            </type>
-            <mustSupport value="true"/>
         </element>
-        <element id="Observation.dataAbsentReason">
-            <path value="Observation.dataAbsentReason"/>
-            <short value="Indicates reason for missing all or part of the decedent's death date (further information can be recorded in the note data element)"/>
-            <definition value="Indicates reason for missing all or part of the decedent's death date (further information can be recorded in the note data element)"/>
-            <mustSupport value="true"/>
+        <element id="Observation.valueDateTime">
+            <path value="Observation.valueDateTime"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.valueDateTime.extension">
+            <path value="Observation.valueDateTime.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Observation.valueDateTime.extension:partialDateTime">
+            <path value="Observation.valueDateTime.extension"/>
+            <sliceName value="partialDateTime"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"/>
+            </type>
         </element>
         <element id="Observation.note">
             <path value="Observation.note"/>
@@ -171,7 +180,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-place-of-death-vs"/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-place-of-death"/>
             </binding>
         </element>
     </differential>

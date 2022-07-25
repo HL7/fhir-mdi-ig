@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="toxicology-message-definition"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-07-07T22:10:49.503+00:00"/>
+        <source value="#76GbGPlryd6Souey"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mdi/MessageDefinition/toxicology-message-definition"/>
+    <name value="ToxicologySystemMessageDefinition"/>
+    <title value="Toxicology System Message Definition"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2022-07-09"/>
+    <eventCoding>
+        <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+        <code value="tox-result-report"/>
+    </eventCoding>
+    <category value="notification"/>
+</MessageDefinition>

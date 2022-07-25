@@ -8,12 +8,13 @@ Recognizing that many deaths of significant public health importance are investi
 ### Medicolegal Death Investigation Dataflows
 Medical examiners and coroners (ME/C) access and exchange information with multiple agencies and organizations when building a death investigation case record (e.g., law enforcement, forensic laboratories, EHR systems, jurisdictional death registration systems). Case records are initiated by an ME/C office and may contain entries from both internal (e.g., scene investigation) and external (e.g., laboratory) sources.
 
+***Figure: Data Flows in the Death Investigation and Reporting System***
+<table><tr><td><img src="IG-image-MDI-data-flows-3-1.png" /></td></tr></table>
+
+
 According to the U.S. Department of Justice, Office of Justice Programs, Bureau of Justice Statistics report, [*Medical Examiner and Coroner Offices, 2018*](https://bjs.ojp.gov/content/pub/pdf/meco18.pdf), in 2018 2,040 ME/C offices accepted 605,000 referrals for investigation to determine the cause and manner of death across federal, state, and local jurisdictions. The information gathered from an MDI is useful to a variety of local, state, and federal agencies, and many entities rely on MDI-generated data. For example, the CDC monitors trends in unintentional injury, homicides, suicides, and sudden or unexpected infant deaths and develops policy recommendations and prevention strategies for such deaths. The National Highway Traffic Safety Administration (NHTSA) monitors trends in traffic-related fatalities and the U.S. Consumer Product Safety Commission (CPSC) uses mortality data to identify problematic products for investigation and potential recall.
 
 MDI information management systems vary by organization and location or jurisdiction, and these systems are often not interoperable with either producers or consumers of MDI-related data, which creates obstacles to timely investigations and forensic science research.
-
-**Figure: Data Flows Supported by the MDI Implementation Guide**
-<table><tr><td><img src="IG-image-MDI-data-flows.png" /></td></tr></table>
 
 ### Current Project
 The scope of the current MDI implementation guide is defining FHIR resources and guidance for the following data flows:
@@ -28,7 +29,7 @@ The MDI specification supports exchange of data among organizations and agencies
 The MDI FHIR implementation guide will continue to develop. Future work likely will include:
 * **Terminology**: Developing vocabularies and terminologies useful to the MDI domain with focus on those for forensic toxicology results 
 * **Vital Records Common Profiles Library**: Evaluating future MDI profiles and extensions for overlap with data concepts in the [Vital Records Common Profiles Library](http://hl7.org/fhir/us/vr-common-library/) and for possible inclusion in the library to better integrate mortality reporting
-* **Resources for Additional Data Flows**: Developing FHIR profiles for transactions between MDI systems and other information sources (EHR, autopsy facilities, etc.) and information recipients (organ procurement organizations, etc.)
+* **Resources for Additional Data Flows**: Developing FHIR profiles for transactions between MDI systems and other information sources (EHR, ***autopsy facilities***, etc.) and information recipients (organ procurement organizations, etc.)
 
 ### Project Team
 * **US Centers for Disease Control and Prevention (CDC), National Center for Health Statistics (NCHS)**: Kate Brett, Cynthia Bush, Alaina Gregory, Margaret Warner

@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-decedent-pregnancy-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-01T17:19:53.055+00:00"/>
-        <source value="#bA5w4W9yn2EYc2DO"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-07-23T13:10:51.134+00:00"/>
+        <source value="#dYhx1aIZUR3QFYiq"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <status value="final"/>
     <code>
         <coding>

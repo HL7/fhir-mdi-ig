@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-death-pregnancy-status"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-14T07:50:59.457+00:00"/>
-        <source value="#PPh0D7viiXFVTmId"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-07-22T18:28:03.578+00:00"/>
+        <source value="#JV1mgkKQmoS16j8l"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-death-pregnancy-status"/>
     <version value="0.1.0"/>
@@ -54,5 +54,9 @@
     <concept>
         <code value="9"/>
         <display value="Unknown if pregnant within the past year"/>
+    </concept>
+    <concept>
+        <code value="8"/>
+        <display value="Not Applicable: Computer generated"/>
     </concept>
 </CodeSystem>

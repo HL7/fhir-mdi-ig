@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-cause-of-death-part1-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-07-04T21:29:34.181+00:00"/>
-        <source value="#TuGB4qAfwNfVM6Ce"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-07-23T13:18:21.529+00:00"/>
+        <source value="#X1KhgQpH6hjkpQtS"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <status value="final"/>
     <code>
         <coding>

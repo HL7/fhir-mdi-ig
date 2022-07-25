@@ -24,12 +24,14 @@ Implementers of this MDI FHIR standard must have the following US Core profiles 
 **MDI systems and EDRS** implementing the Bundle - Document MDI to EDRS for transmitting and receiving a Composition - MDI to EDRS:
 * [US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
 * [US Core Practitioner Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner)
+* ***[US Core Condition Encounter Diagnosis Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-condition-encounter-diagnosis.html) and/or [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-condition-problems-health-concerns.html)***
 * [US Core Location Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-location)
 
 **Forensic toxicology laboratories and MDI systems** implementing the Bundle – Message Toxicology to MDI for transmitting and receiving a DiagnosticReport - Toxicology Lab Result to MDI:
 * [US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
 * [US Core Practitioner Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner)
 * [US Core PractitionerRole Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole)
+* [US Core DiagnosticReport Profile for Laboratory Results Reporting](http://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport-lab.html)
 * [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab)
 
 ### Authors

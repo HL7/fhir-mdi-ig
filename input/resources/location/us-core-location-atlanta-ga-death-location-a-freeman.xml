@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-location-atlanta-ga-death-location-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-01T18:09:05.383+00:00"/>
-        <source value="#gsNPN2nD0eTwQUjk"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-07-23T13:13:12.436+00:00"/>
+        <source value="#FDQp7xNC09xsssIt"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <identifier>
         <system value="http://www.acme.org/location"/>
         <value value="29"/>

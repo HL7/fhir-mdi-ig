@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-how-death-injury-occurred-a-freeman-med-ingest"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-01T17:19:53.056+00:00"/>
-        <source value="#Z98BYGvx2FdhqI8b"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-07-23T13:15:53.024+00:00"/>
+        <source value="#bKhyVdL3S2pujeT3"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <status value="final"/>
     <code>
         <coding>

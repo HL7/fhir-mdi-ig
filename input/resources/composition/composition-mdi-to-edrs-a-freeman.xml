@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-mdi-to-edrs-a-freeman"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2022-03-14T06:14:02.591+00:00"/>
-        <source value="#6wQknTurM38nOiG7"/>
+        <versionId value="15"/>
+        <lastUpdated value="2022-07-23T13:05:55.353+00:00"/>
+        <source value="#kuWI52FigQGliyE4"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     </meta>
+    <text>
+        <status value="extensions"/>
+    </text>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
         <valueIdentifier>
             <type>
@@ -92,10 +95,7 @@
             </coding>
         </code>
         <entry>
-            <reference value="List/list-cause-of-death-pathway-a-freeman"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-condition-contributing-to-death-a-freeman"/>
+            <reference value="Observation/Observation-contributing-cause-of-death-part2-a-freeman"/>
         </entry>
         <entry>
             <reference value="Observation/observation-manner-of-death-a-freeman-accidental"/>

@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-organization-tox-lab"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-12-21T21:10:44.154+00:00"/>
-        <source value="#QAkoip3ekF5aaBd2"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-07-23T13:17:56.745+00:00"/>
+        <source value="#1l0znBKaGAeM3srU"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <identifier>
         <system value="http://hl7.org.fhir/sid/us-npi"/>
         <value value="111223333"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-tox-report-message-a-freeman"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2022-04-18T21:37:41.600+00:00"/>
-        <source value="#a5xZe4RWDB3CDVtF"/>
+        <versionId value="17"/>
+        <lastUpdated value="2022-07-23T12:05:09.245+00:00"/>
+        <source value="#HEdQByJpU3x0TBxw"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     </meta>
     <identifier>
@@ -784,6 +784,54 @@
         <resource>
             <Specimen>
                 <id value="specimen-bile-toxicology-a-freeman"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "specimen-bile-toxicology-a-freeman" </p>
+                        </div>
+                        <p>
+                            <b>accessionIdentifier</b>: id: OO352356
+                        </p>
+                        <p>
+                            <b>status</b>: available
+                        </p>
+                        <p>
+                            <b>type</b>: Bile specimen (specimen) 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#119341000)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="#Patient_us-core-patient-a-freeman">See above (Patient/us-core-patient-a-freeman)</a>
+                        </p>
+                        <p>
+                            <b>receivedTime</b>: 2021-12-03 04:00:00+0000
+                        </p>
+                        <h3>Containers</h3>
+                        <table class="grid">
+                            <tr>
+                                <td>-</td>
+                                <td>
+                                    <b>Description</b>
+                                </td>
+                                <td>
+                                    <b>SpecimenQuantity</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>5mL GT tube</td>
+                                <td>3 ml</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
                 <accessionIdentifier>
                     <system value="http://lab.acme.org/specimens/2021"/>
                     <value value="OO352356"/>
@@ -816,6 +864,54 @@
         <resource>
             <Specimen>
                 <id value="specimen-stomach-contents-toxicology-a-freeman"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "specimen-stomach-contents-toxicology-a-freeman" </p>
+                        </div>
+                        <p>
+                            <b>accessionIdentifier</b>: id: MM352356
+                        </p>
+                        <p>
+                            <b>status</b>: available
+                        </p>
+                        <p>
+                            <b>type</b>: Specimen from stomach (specimen) 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#119379005)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="#Patient_us-core-patient-a-freeman">See above (Patient/us-core-patient-a-freeman)</a>
+                        </p>
+                        <p>
+                            <b>receivedTime</b>: 2021-12-03 04:00:00+0000
+                        </p>
+                        <h3>Containers</h3>
+                        <table class="grid">
+                            <tr>
+                                <td>-</td>
+                                <td>
+                                    <b>Description</b>
+                                </td>
+                                <td>
+                                    <b>SpecimenQuantity</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>5mL GT tube</td>
+                                <td>60 ml</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
                 <accessionIdentifier>
                     <system value="http://lab.acme.org/specimens/2021"/>
                     <value value="MM352356"/>
@@ -848,6 +944,54 @@
         <resource>
             <Specimen>
                 <id value="specimen-liver-toxicology-a-freeman"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative</b>
+                        </p>
+                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                            <p style="margin-bottom: 0px">Resource "specimen-liver-toxicology-a-freeman" </p>
+                        </div>
+                        <p>
+                            <b>accessionIdentifier</b>: id: DD352356
+                        </p>
+                        <p>
+                            <b>status</b>: available
+                        </p>
+                        <p>
+                            <b>type</b>: Tissue specimen from liver (specimen) 
+                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#128168004)
+                            </span>
+                        </p>
+                        <p>
+                            <b>subject</b>: 
+                            <a href="#Patient_us-core-patient-a-freeman">See above (Patient/us-core-patient-a-freeman)</a>
+                        </p>
+                        <p>
+                            <b>receivedTime</b>: 2021-12-03 04:00:00+0000
+                        </p>
+                        <h3>Containers</h3>
+                        <table class="grid">
+                            <tr>
+                                <td>-</td>
+                                <td>
+                                    <b>Description</b>
+                                </td>
+                                <td>
+                                    <b>SpecimenQuantity</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>5mL GT tube</td>
+                                <td>5 ml</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
                 <accessionIdentifier>
                     <system value="http://lab.acme.org/specimens/2021"/>
                     <value value="DD352356"/>

@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-death-date-a-freeman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-03-03T06:04:19.068+00:00"/>
-        <source value="#Bgc5w0haHPAzHFBr"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-07-23T13:11:29.234+00:00"/>
+        <source value="#IZIOoI33t2OLIxey"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     </meta>
+    <text>
+        <status value="extensions"/>
+    </text>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-observation-location">
         <valueReference>
             <reference value="Location/us-core-location-atlanta-ga-death-location-a-freeman"/>

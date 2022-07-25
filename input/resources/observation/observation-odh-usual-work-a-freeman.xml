@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-odh-usual-work-a-freeman"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-07-04T23:23:53.642+00:00"/>
-        <source value="#avmggB7gmldKpQIk"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-07-23T13:14:43.789+00:00"/>
+        <source value="#XdUwhxkyZUn9TIJw"/>
         <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <status value="final"/>
     <code>
         <coding>

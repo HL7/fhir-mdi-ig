@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-03-14T07:08:07.110+00:00"/>
-        <source value="#MCBZeTAsVoWtedW8"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-07-23T13:17:07.726+00:00"/>
+        <source value="#KKr1w299QQKsuyuV"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
+    <text>
+        <status value="generated"/>
+    </text>
     <status value="final"/>
     <category>
         <coding>
@@ -30,11 +33,6 @@
         <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
-    <valueQuantity>
-        <value value="0.16"/>
-        <unit value="g/dL"/>
-        <system value="http://unitsofmeasure.org"/>
-    </valueQuantity>
     <specimen>
         <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
     </specimen>

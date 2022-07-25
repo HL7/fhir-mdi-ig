@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="691"/>
-        <lastUpdated value="2022-07-04T21:31:51.710+00:00"/>
-        <source value="#bnspHHUwHRxGKMLz"/>
+        <versionId value="724"/>
+        <lastUpdated value="2022-07-23T15:43:20.510+00:00"/>
+        <source value="#Bzp4WffW1wjojB48"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
-    <version value="1.0.0-ballot"/>
+    <version value="1.0.0-Pre-Publication-Review"/>
     <name value="MedicolegalDeathInvestigation"/>
     <title value="Medicolegal Death Investigation (MDI)"/>
     <status value="draft"/>
+    <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -32,9 +33,9 @@
     <packageId value="hl7.fhir.us.mdi"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn id="hl7fhiruscore">
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.1"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="4.0.0"/>
+        <version value="5.0.1"/>
     </dependsOn>
     <dependsOn id="hl7fhirusodh">
         <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh"/>
@@ -709,6 +710,101 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
             <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MessageDefinition/toxicology-message-definition"/>
+                <display value="Toxicology System Message Definition"/>
+            </reference>
+            <name value="Toxicology System Message Definition"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="capability-statements"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-time"/>
+                <display value="Extension - Date Time"/>
+            </reference>
+            <name value="Extension - Date Time"/>
+            <description value="The time portion (DD) of the partial date. (Extension)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-day"/>
+                <display value="Extension - Date Day"/>
+            </reference>
+            <name value="Extension - Date Day"/>
+            <description value="The day portion (DD) of the partial date. (Extension)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-month"/>
+                <display value="Extension - Date Month"/>
+            </reference>
+            <name value="Extension - Date Month"/>
+            <description value="The month portion (MM) of the partial date. (Extension)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-year"/>
+                <display value="Extension - Date Year"/>
+            </reference>
+            <name value="Extension - Date Year"/>
+            <description value="The year portion (YYYY) of the partial date. (Extension)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-partial-date-time"/>
+                <display value="Extension - Partial DateTime"/>
+            </reference>
+            <name value="Extension - Partial DateTime"/>
+            <description value="Provides values of a partial dateTime (Extension)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-place-of-death"/>
+                <display value="ValueSet - Place of Death"/>
+            </reference>
+            <name value="ValueSet - Place of Death"/>
+            <description value="Code values reflecting the death location of the decedent (e.g., hospital, home, hospice)."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/local-component-cs"/>
+                <display value="Local Component Codes"/>
+            </reference>
+            <name value="Local Component Codes"/>
+            <description value="Local Component Codes for observation components that lack an appropriate LOINC code"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-local-component-codes"/>
+                <display value="Local Component Codes"/>
+            </reference>
+            <name value="Local Component Codes"/>
+            <description value="Local Component Codes for observation components that lack an appropriate LOINC code"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
+                <display value="Yes No Unknown NotApplicable"/>
+            </reference>
+            <name value="Yes No Unknown NotApplicable"/>
+            <description value="Valueset with Yes, No, Unknown, and Not Applicable."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

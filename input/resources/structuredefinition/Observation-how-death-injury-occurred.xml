@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-how-death-injury-occurred"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2021-12-20T21:33:38.329+00:00"/>
-        <source value="#cVr2u6x3w3Jfvspn"/>
+        <versionId value="13"/>
+        <lastUpdated value="2022-07-22T19:05:59.714+00:00"/>
+        <source value="#Sx4KO11yRzFpEMDY"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     <version value="0.1.0"/>
@@ -62,6 +62,34 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Observation.effective[x]">
+            <path value="Observation.effective[x]"/>
+            <short value="Date/Time of Injury"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+        </element>
+        <element id="Observation.effective[x].extension">
+            <path value="Observation.effective[x].extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Observation.effective[x].extension:partialDateTime">
+            <path value="Observation.effective[x].extension"/>
+            <sliceName value="partialDateTime"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"/>
+            </type>
+        </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
             <short value="Certifier of the explanation."/>
@@ -77,8 +105,13 @@
             <path value="Observation.value[x]"/>
             <min value="1"/>
             <type>
-                <code value="string"/>
+                <code value="CodeableConcept"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x].text">
+            <path value="Observation.value[x].text"/>
+            <short value="Description of how injured"/>
             <mustSupport value="true"/>
         </element>
     </differential>

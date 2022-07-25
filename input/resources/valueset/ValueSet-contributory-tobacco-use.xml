@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-contributory-tobacco-use"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-03-03T04:49:39.578+00:00"/>
-        <source value="#FPa9DQGlEDmjRFsY"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-07-22T18:02:39.572+00:00"/>
+        <source value="#2K5elZQ3vWIqOFPo"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-contributory-tobacco-use"/>
     <version value="0.1.0"/>
@@ -56,8 +56,8 @@
                 <display value="Unknown"/>
             </concept>
             <concept>
-                <code value="NASK"/>
-                <display value="not asked"/>
+                <code value="NI"/>
+                <display value="no information"/>
             </concept>
         </include>
     </compose>

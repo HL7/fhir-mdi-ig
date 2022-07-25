@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-mdi-codes"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2022-03-04T12:47:36.563+00:00"/>
-        <source value="#TmAPwFow7JpYsZY8"/>
+        <versionId value="13"/>
+        <lastUpdated value="2022-07-22T18:29:01.168+00:00"/>
+        <source value="#bFXIkUdpCbtW31wm"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
     <version value="1.0.0"/>
@@ -28,81 +28,65 @@
     <concept>
         <code value="demographics"/>
         <display value="Demographics Section"/>
-        <definition value="Demographic information section"/>
     </concept>
     <concept>
         <code value="circumstances"/>
         <display value="Circumstances of the Death Section"/>
-        <definition value="Circumstances of the death section"/>
     </concept>
     <concept>
         <code value="jurisdiction"/>
         <display value="Jurisdiction Section"/>
-        <definition value="Jurisdiction section"/>
     </concept>
     <concept>
         <code value="cause-manner"/>
         <display value="Cause and Manner of Death Section"/>
-        <definition value="Cause and manner of death section"/>
     </concept>
     <concept>
         <code value="medical-history"/>
         <display value="Medical History Section"/>
-        <definition value="Medical history section"/>
     </concept>
     <concept>
         <code value="exam-autopsy"/>
         <display value="Exam/Autopsy Section"/>
-        <definition value="Exam/Autopsy section"/>
     </concept>
     <concept>
         <code value="mdi-case-number"/>
         <display value="MDI Case Number"/>
-        <definition value="MDI Case Number"/>
     </concept>
     <concept>
         <code value="edrs-file-number"/>
         <display value="EDRS File Number"/>
-        <definition value="EDRS File Number"/>
     </concept>
     <concept>
         <code value="tox-lab-case-number"/>
         <display value="Toxicology Laboratory Case Number"/>
-        <definition value="Toxicology Laboratory Case Number"/>
     </concept>
     <concept>
         <code value="mdi-case-notes-summary"/>
         <display value="MDI Case Notes Summary"/>
-        <definition value="MDI Case Notes Summary"/>
     </concept>
     <concept>
         <code value="mdi-case-history"/>
         <display value="MDI Case History"/>
-        <definition value="MDI Case History"/>
     </concept>
     <concept>
         <code value="tox-result-report"/>
         <display value="Toxicology Lab Results"/>
-        <definition value="Sending of Toxicology Lab Results"/>
     </concept>
     <concept>
         <code value="narratives"/>
         <display value="Narratives"/>
-        <definition value="Narratives"/>
     </concept>
     <concept>
         <code value="exact"/>
         <display value="Exact"/>
-        <definition value="Exact"/>
     </concept>
     <concept>
         <code value="approximate"/>
         <display value="Approximate"/>
-        <definition value="Approximate"/>
     </concept>
     <concept>
         <code value="court-appointed"/>
         <display value="Court Appointed"/>
-        <definition value="Court Appointed"/>
     </concept>
 </CodeSystem>

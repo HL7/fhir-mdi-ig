@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-toxicology-to-mdi"/>
     <meta>
-        <versionId value="58"/>
-        <lastUpdated value="2022-07-06T02:08:42.901+00:00"/>
-        <source value="#dlcGWPQkcAc7Rt2w"/>
+        <versionId value="62"/>
+        <lastUpdated value="2022-07-24T00:41:53.420+00:00"/>
+        <source value="#2bjTwi02p2V6Tdin"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     <name value="DiagnosticReportToxicologyToMDI"/>
@@ -22,50 +22,29 @@
         <element id="DiagnosticReport">
             <path value="DiagnosticReport"/>
         </element>
+        <element id="DiagnosticReport.extension">
+            <path value="DiagnosticReport.extension"/>
+            <sliceName value="extension-tracking-numbers"/>
+            <short value="A tracking number, such as a case number or file number assigned by a case management system or EDRS."/>
+            <definition value="A tracking number, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="DiagnosticReport.identifier">
             <path value="DiagnosticReport.identifier"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="type"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <short value="Identifiers for diagnostic report."/>
-            <definition value="Identifiers for diagnostic report."/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="DiagnosticReport.identifier:tox_case_number">
-            <path value="DiagnosticReport.identifier"/>
-            <sliceName value="tox_case_number"/>
-            <short value="Case number assigned by toxicology lab."/>
-            <definition value="Case number assigned by toxicology lab."/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="DiagnosticReport.identifier:tox_case_number.type">
-            <path value="DiagnosticReport.identifier.type"/>
-            <min value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
-                    <code value="tox-lab-case-number"/>
-                </coding>
-            </patternCodeableConcept>
-            <mustSupport value="true"/>
-        </element>
-        <element id="DiagnosticReport.identifier:tox_case_number.system">
-            <path value="DiagnosticReport.identifier.system"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="DiagnosticReport.identifier:tox_case_number.value">
-            <path value="DiagnosticReport.identifier.value"/>
-            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.subject">
             <path value="DiagnosticReport.subject"/>
             <short value="The subject of the diagnostic report is the decedent."/>
             <definition value="The subject of the diagnostic report is the decedent."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.issued">
+            <path value="DiagnosticReport.issued"/>
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.performer">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="138"/>
-        <lastUpdated value="2022-07-04T16:13:04.739+00:00"/>
-        <source value="#gHUbX29JUIkMteNC"/>
+        <versionId value="139"/>
+        <lastUpdated value="2022-07-22T13:33:06.348+00:00"/>
+        <source value="#HL1pLqmVM096ZTxb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -405,7 +405,8 @@
             <sliceName value="history-condition"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns"/>
             </type>
             <mustSupport value="true"/>
         </element>
