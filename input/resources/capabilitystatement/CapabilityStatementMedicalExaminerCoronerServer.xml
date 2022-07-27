@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement
+    xmlns="http://hl7.org/fhir">
+    <id value="CapabilityStatementMedicalExaminerCoronerServer"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-07-26T12:06:26.702+00:00"/>
+        <source value="#xwXhW3WYQ5tZsm0v"/>
+    </meta>
+    <url value="https://fhir.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-medical-examiner-coroner-server"/>
+    <version value="1.0.0"/>
+    <name value="CapabilityStatementMedicalExaminerCoronerServer"/>
+    <title value="CapabilityStatement - Medical Examiner/Coroner Server"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2022-07-03"/>
+    <description value="This Section describes the expected capabilities of the Coroner/Medical Examiner (C/ME) case management system Server actor which is responsible for providing responses to the queries submitted by the C/ME Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by C/ME Servers are defined. C/ME Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+    <kind value="requirements"/>
+    <fhirVersion value="4.0.1"/>
+    <format value="xml"/>
+    <format value="json"/>
+    <messaging>
+        <supportedMessage>
+            <mode value="receiver"/>
+            <definition value="http://hl7.org/fhir/us/mdi/MessageDefinition/toxicology-message-definition"/>
+        </supportedMessage>
+    </messaging>
+    <document>
+        <mode value="producer"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+    </document>
+    <document>
+        <mode value="consumer"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+    </document>
+</CapabilityStatement>

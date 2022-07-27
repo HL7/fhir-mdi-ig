@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="724"/>
-        <lastUpdated value="2022-07-23T15:43:20.510+00:00"/>
-        <source value="#Bzp4WffW1wjojB48"/>
+        <versionId value="736"/>
+        <lastUpdated value="2022-07-26T12:08:49.854+00:00"/>
+        <source value="#cB9YkenJKmdbMIBH"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -663,30 +663,30 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CapabilityStatement/server-tox"/>
-                <display value="Forensic Toxicology Laboratory Server CapabilityStatement"/>
+                <reference value="CapabilityStatement/CapabilityStatementForensicToxicologyLaboratoryServer"/>
+                <display value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
             </reference>
-            <name value="Forensic Toxicology Laboratory Server CapabilityStatement"/>
+            <name value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
             <description value="This resource describes the expected capabilities of the forensic toxicology LIMS server actor."/>
             <exampleBoolean value="false"/>
             <groupingId value="capability-statements"/>
         </resource>
         <resource>
             <reference>
-                <reference value="CapabilityStatement/server-edrs"/>
-                <display value="Electronic Death Reporting System (EDRS) CapabilityStatement Server"/>
+                <reference value="CapabilityStatement/CapabilityStatementEDRSServer"/>
+                <display value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
             </reference>
-            <name value="Electronic Death Reporting System (EDRS) Server CapabilityStatement"/>
+            <name value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
             <description value="This resource describes the expected capabilities of the Coroner/Medical Examiner (C/ME) case management system server actor responsible for consuming a message bundle received from a forensic toxicology LIMS and exchanging a document bundle with an EDRS for an MDI case record."/>
             <exampleBoolean value="false"/>
             <groupingId value="capability-statements"/>
         </resource>
         <resource>
             <reference>
-                <reference value="CapabilityStatement/server-cms"/>
-                <display value="Coroner/Medical Examiner Server CapabilityStatement"/>
+                <reference value="CapabilityStatement/CapabilityStatementMedicalExaminerCoronerServer"/>
+                <display value="CapabilityStatement - Medical Examiner/Coroner Server"/>
             </reference>
-            <name value="Coroner/Medical Examiner Server CapabilityStatement"/>
+            <name value="CapabilityStatement - Medical Examiner/Coroner Server"/>
             <description value="This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) server actor responsible exchanging a document bundle with an ME/C's case management system server for an MDI case record."/>
             <exampleBoolean value="false"/>
             <groupingId value="capability-statements"/>
@@ -714,10 +714,11 @@
         <resource>
             <reference>
                 <reference value="MessageDefinition/toxicology-message-definition"/>
-                <display value="Toxicology System Message Definition"/>
+                <display value="MessageDefinition-toxicology-system"/>
             </reference>
             <name value="Toxicology System Message Definition"/>
-            <exampleBoolean value="true"/>
+            <description value="This resource defines the characteristics of a message that can be shared between a forensic toxicology system and a medical examiner/coroner system."/>
+            <exampleBoolean value="false"/>
             <groupingId value="capability-statements"/>
         </resource>
         <resource>
@@ -805,6 +806,14 @@
             <name value="Yes No Unknown NotApplicable"/>
             <description value="Valueset with Yes, No, Unknown, and Not Applicable."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MessageDefinition/MessageDefinitionToxicologySystem"/>
+                <display value="MessageDefinition - Toxicology System"/>
+            </reference>
+            <name value="MessageDefinition - Toxicology System"/>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
