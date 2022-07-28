@@ -323,7 +323,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-organization-tox-lab" Version "3" Updated "2022-07-23 01:17:56+0000" </p>
               <p style="margin-bottom: 0px">Information Source: #1l0znBKaGAeM3srU!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-organization.html">US Core Organization Profile</a></p>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-organization.html">US Core Organization Profile</a></p>
             </div>
             <p><b>identifier</b>: id: 111223333</p>
             <p><b>active</b>: true</p>
@@ -380,7 +380,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-practitioner-b-goldberger" Version "4" Updated "2022-07-23 01:23:47+0000" </p>
               <p style="margin-bottom: 0px">Information Source: #Gi1Qo4Db4Wi5bEek!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a></p>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a></p>
             </div>
             <p><b>identifier</b>: id: 555667777</p>
             <p><b>name</b>: Bruce Goldberger (OFFICIAL)</p>
@@ -924,7 +924,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-lab-result-etoh-gas-chromatography-blood-a-freeman" Version "2" Updated "2022-01-03T23:41:55.165Z" </p>
               <p style="margin-bottom: 0px">Information Source: #bkZB6d4oBA9HZXDO!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
               </p>
             </div>
             <p>
@@ -993,7 +993,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-lab-result-4-anpp-blood-a-freeman" Version "3" Updated "2022-01-03T23:40:28.409Z" </p>
               <p style="margin-bottom: 0px">Information Source: #Nb8CUrLPCVwZTv1P!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
               </p>
             </div>
             <p>
@@ -1058,7 +1058,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-lab-result-acetylfentanyl-blood-a-freeman" Version "2" Updated "2022-01-03T23:41:00.696Z" </p>
               <p style="margin-bottom: 0px">Information Source: #vb3I6iYEEx5gAqTL!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
               </p>
             </div>
             <p>
@@ -1127,7 +1127,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-lab-result-fentanyl-blood-a-freeman" Version "2" Updated "2022-01-03T23:41:29.283Z" </p>
               <p style="margin-bottom: 0px">Information Source: #OZELk1x0m1IX4ciu!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
               </p>
             </div>
             <p>
@@ -1196,7 +1196,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-lab-result-etoh-gas-chromatography-urine-a-freeman" Version "3" Updated "2022-01-03T23:43:01.432Z" </p>
               <p style="margin-bottom: 0px">Information Source: #qs2LRsRvYNm989KV!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
               </p>
             </div>
             <p>
@@ -1265,7 +1265,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-lab-result-4-anpp-urine-a-freeman" Version "3" Updated "2022-01-03T23:42:14.51Z" </p>
               <p style="margin-bottom: 0px">Information Source: #v0ONk04HGBiAKaB6!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
               </p>
             </div>
             <p>
@@ -1330,7 +1330,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-lab-result-acetylfentanyl-urine-a-freeman" Version "2" Updated "2022-01-03T23:42:35.886Z" </p>
               <p style="margin-bottom: 0px">Information Source: #FtcTJrp0Bn7VzTvO!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
               </p>
             </div>
             <p>
@@ -1395,7 +1395,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-lab-result-fentanyl-urine-a-freeman" Version "2" Updated "2022-01-03T23:43:25.169Z" </p>
               <p style="margin-bottom: 0px">Information Source: #ZFAO2B3el9c6OgHD!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
               </p>
             </div>
             <p>
@@ -1460,7 +1460,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-lab-result-norfentanyl-urine-a-freeman" Version "2" Updated "2022-01-03T23:43:47.811Z" </p>
               <p style="margin-bottom: 0px">Information Source: #d5v5UuMWBHieRctm!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
               </p>
             </div>
             <p>
@@ -1525,7 +1525,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-lab-result-xylazine-urine-a-freeman" Version "3" Updated "2022-01-03T23:44:08.537Z" </p>
               <p style="margin-bottom: 0px">Information Source: #2UezPlUhsHjItCeB!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
               </p>
             </div>
             <p>
@@ -1590,7 +1590,7 @@
             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
               <p style="margin-bottom: 0px">Resource "us-core-lab-result-etoh-gas-chromatography-vitr-humor-a-freeman" Version "3" Updated "2022-01-03T23:44:34.277Z" </p>
               <p style="margin-bottom: 0px">Information Source: #3XdNnIQRs49EuGm5!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
               </p>
             </div>
             <p>
