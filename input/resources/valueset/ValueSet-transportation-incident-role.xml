@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet
     xmlns="http://hl7.org/fhir">
-    <id value="ValueSet-yes-no-unknown-not-applicable"/>
+    <id value="ValueSet-transportation-incident-role"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-08-02T18:35:41.756+00:00"/>
-        <source value="#HHiZ7tVAQXIsKqkc"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-08-02T18:35:01.522+00:00"/>
+        <source value="#XN0U7wGrc6ApSUep"/>
     </meta>
     <text>
         <status value="extensions"/>
@@ -14,8 +14,8 @@
             <p>This value set includes codes based on the following rules:</p>
             <ul>
                 <li>Include these codes as defined in 
-                    <a href="http://hl7.org/fhir/R4/v2/0136/index.html">
-                        <code>http://terminology.hl7.org/CodeSystem/v2-0136</code>
+                    <a href="http://www.snomed.org/">
+                        <code>http://snomed.info/sct</code>
                     </a>
                     <table class="none">
                         <tr>
@@ -28,15 +28,21 @@
                         </tr>
                         <tr>
                             <td>
-                                <a href="http://hl7.org/fhir/R4/v2/0136/index.html#v2-0136-Y">Y</a>
+                                <a href="http://snomed.info/id/236320001">236320001</a>
                             </td>
-                            <td>Yes</td>
+                            <td>Vehicle driver</td>
                         </tr>
                         <tr>
                             <td>
-                                <a href="http://hl7.org/fhir/R4/v2/0136/index.html#v2-0136-N">N</a>
+                                <a href="http://snomed.info/id/257500003">257500003</a>
                             </td>
-                            <td>No</td>
+                            <td>Passenger</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://snomed.info/id/257518000">257518000</a>
+                            </td>
+                            <td>Pedestrian</td>
                         </tr>
                     </table>
                 </li>
@@ -54,6 +60,18 @@
                             </td>
                             <td>
                                 <b>Definition</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                            </td>
+                            <td>Other</td>
+                            <td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).
+                                <br/>
+                                <br/>**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \*any\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+                                <br/>
+                                <br/>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.
                             </td>
                         </tr>
                         <tr>
@@ -81,43 +99,54 @@
             </ul>
         </div>
     </text>
-    <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
-    <version value="1.0.0-Pre-Publication-Review"/>
-    <name value="ValueSetYesNoUnknownNotApplicable"/>
-    <title value="ValueSet - Yes No Unknown NotApplicable"/>
+    <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-transportation-incident-role"/>
+    <version value="1.9.0"/>
+    <name value="ValueSetTransportationIncidentRole"/>
+    <title value="ValueSet - Transportation Incident Role"/>
     <status value="active"/>
-    <date value="2022-07-22T14:53:51+00:00"/>
-    <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
+    <date value="2022-08-02T13:21:04+00:00"/>
+    <publisher value="HL7 Public Health Working Group"/>
     <contact>
-        <name value="HL7 International - Public Health"/>
+        <name value="HL7 Public Health Working Group"/>
         <telecom>
             <system value="url"/>
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="pher@lists.HL7.org"/>
+        </telecom>
     </contact>
-    <description value="Valueset with Yes, No, Unknown, and Not Applicable."/>
+    <description value="Role of the decedent in a transportation incident resulting in a death-related injury.&#xA;&#xA;Mapping to IJE codes [here](ConceptMap-TransportationIncidentRoleCM.html)."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
-            <display value="United States of America"/>
         </coding>
-        <text value="United States of America"/>
     </jurisdiction>
+    <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
     <compose>
         <include>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+            <system value="http://snomed.info/sct"/>
             <concept>
-                <code value="Y"/>
-                <display value="Yes"/>
+                <code value="236320001"/>
+                <display value="Vehicle driver"/>
             </concept>
             <concept>
-                <code value="N"/>
-                <display value="No"/>
+                <code value="257500003"/>
+                <display value="Passenger"/>
+            </concept>
+            <concept>
+                <code value="257518000"/>
+                <display value="Pedestrian"/>
             </concept>
         </include>
         <include>
             <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <concept>
+                <code value="OTH"/>
+                <display value="Other"/>
+            </concept>
             <concept>
                 <code value="UNK"/>
                 <display value="unknown"/>

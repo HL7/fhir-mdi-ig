@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="736"/>
-        <lastUpdated value="2022-07-26T12:08:49.854+00:00"/>
-        <source value="#cB9YkenJKmdbMIBH"/>
+        <versionId value="740"/>
+        <lastUpdated value="2022-08-02T18:35:42.049+00:00"/>
+        <source value="#SrU1b6p9bl32Azc1"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -718,7 +718,7 @@
             </reference>
             <name value="Toxicology System Message Definition"/>
             <description value="This resource defines the characteristics of a message that can be shared between a forensic toxicology system and a medical examiner/coroner system."/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
             <groupingId value="capability-statements"/>
         </resource>
         <resource>
@@ -803,7 +803,7 @@
                 <reference value="ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
                 <display value="Yes No Unknown NotApplicable"/>
             </reference>
-            <name value="Yes No Unknown NotApplicable"/>
+            <name value="ValueSet - Yes No Unknown NotApplicable"/>
             <description value="Valueset with Yes, No, Unknown, and Not Applicable."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -814,6 +814,15 @@
             </reference>
             <name value="MessageDefinition - Toxicology System"/>
             <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-transportation-incident-role"/>
+                <display value="Transportation Incident Role"/>
+            </reference>
+            <name value="ValueSet - Transportation Incident Role"/>
+            <description value="Role of the decedent in a transportation incident resulting in a death-related injury.&#xA;&#xA;Mapping to IJE codes [here](ConceptMap-TransportationIncidentRoleCM.html)."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="139"/>
-        <lastUpdated value="2022-07-22T13:33:06.348+00:00"/>
-        <source value="#HL1pLqmVM096ZTxb"/>
+        <versionId value="143"/>
+        <lastUpdated value="2022-08-02T18:55:34.594+00:00"/>
+        <source value="#IVeF4y084o5HwSdB"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -109,16 +109,16 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:demographics">
+        <element id="Composition.section:additional-demographics">
             <path value="Composition.section"/>
-            <sliceName value="demographics"/>
+            <sliceName value="additional-demographics"/>
             <short value="This section contains demographic information about the decedent that is not represented in the decedent Patient profile."/>
             <definition value="This section contains demographic information about the decedent that is not represented in the decedent Patient profile."/>
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:demographics.code">
+        <element id="Composition.section:additional-demographics.code">
             <path value="Composition.section.code"/>
             <definition value="Demographic information section"/>
             <min value="1"/>
@@ -130,30 +130,12 @@
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:demographics.entry">
-            <path value="Composition.section.entry"/>
-            <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="$this.resolve()"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
-            <short value="Entries that are contained in the Demographics section"/>
-            <definition value="Entries that are contained in the Demographics section"/>
-            <min value="1"/>
+        <element id="Composition.section:additional-demographics.text">
+            <path value="Composition.section.text"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:demographics.entry:decedent-occupation-industry">
-            <path value="Composition.section.entry"/>
-            <sliceName value="decedent-occupation-industry"/>
-            <short value="The usual work industry and occupation of the decedent"/>
-            <definition value="The usual work industry and occupation of the decedent"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
-            </type>
+        <element id="Composition.section:additional-demographics.code.text">
+            <path value="Composition.section.code.text"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:circumstances">
@@ -389,6 +371,11 @@
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:medical-history.text">
+            <path value="Composition.section.text"/>
+            <short value="Narrative medical condition"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.section:medical-history.entry">
             <path value="Composition.section.entry"/>
             <slicing>
@@ -403,6 +390,7 @@
         <element id="Composition.section:medical-history.entry:history-condition">
             <path value="Composition.section.entry"/>
             <sliceName value="history-condition"/>
+            <short value="Coded medical conditions"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"/>
