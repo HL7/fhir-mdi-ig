@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement
     xmlns="http://hl7.org/fhir">
-    <id value="CapabilityStatementMedicalExaminerCoronerServer"/>
+    <id value="CapabilityStatement-medical-examiner-coroner-server"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-07-26T12:06:26.702+00:00"/>
-        <source value="#xwXhW3WYQ5tZsm0v"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-08-03T02:41:23.074+00:00"/>
+        <source value="#2zQbOJJ45RZMgbyE"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-medical-examiner-coroner-server"/>
     <version value="1.0.0"/>
@@ -22,7 +22,7 @@
     <messaging>
         <supportedMessage>
             <mode value="receiver"/>
-            <definition value="http://hl7.org/fhir/us/mdi/MessageDefinition/toxicology-message-definition"/>
+            <definition value="http://hl7.org/fhir/us/mdi/MessageDefinition/MessageDefinition-toxicology-system"/>
         </supportedMessage>
     </messaging>
     <document>

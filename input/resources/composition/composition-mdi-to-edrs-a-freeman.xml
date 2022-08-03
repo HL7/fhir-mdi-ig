@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-mdi-to-edrs-a-freeman"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2022-07-23T13:05:55.353+00:00"/>
-        <source value="#kuWI52FigQGliyE4"/>
+        <versionId value="16"/>
+        <lastUpdated value="2022-08-03T04:45:27.934+00:00"/>
+        <source value="#Q4B7MMgF6eox4HKt"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     </meta>
     <text>
@@ -95,7 +95,7 @@
             </coding>
         </code>
         <entry>
-            <reference value="Observation/Observation-contributing-cause-of-death-part2-a-freeman"/>
+            <reference value="Observation/observation-contributing-cause-of-death-part2-a-freeman"/>
         </entry>
         <entry>
             <reference value="Observation/observation-manner-of-death-a-freeman-accidental"/>

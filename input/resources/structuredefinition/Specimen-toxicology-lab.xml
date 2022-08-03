@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-toxicology-lab"/>
     <meta>
-        <versionId value="43"/>
-        <lastUpdated value="2022-07-07T13:04:08.913+00:00"/>
-        <source value="#HmlMOPK3cmJWrbMg"/>
+        <versionId value="44"/>
+        <lastUpdated value="2022-08-03T04:13:28.549+00:00"/>
+        <source value="#rQKFpSW8xde0KCyA"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     <name value="SpecimenToxicologyLab"/>
@@ -79,18 +79,18 @@
             <path value="Specimen.collection"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Specimen.collection.collected[x]">
+            <path value="Specimen.collection.collected[x]"/>
+            <label value="Time collected from either the body or the scene"/>
+            <short value="Time collected from either the body or the scene"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Specimen.processing">
             <path value="Specimen.processing"/>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.processing.time[x]">
             <path value="Specimen.processing.time[x]"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Specimen.collection.collected[x]">
-            <path value="Specimen.collection.collected[x]"/>
-            <label value="Time collected from either the body or the scene"/>
-            <short value="Time collected from either the body or the scene"/>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.container.identifier">

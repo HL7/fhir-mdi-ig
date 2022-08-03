@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-patient-a-freeman"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2022-07-23T13:24:19.575+00:00"/>
-        <source value="#rZIZnWXWeO1zTPRN"/>
+        <versionId value="13"/>
+        <lastUpdated value="2022-08-03T03:25:47.196+00:00"/>
+        <source value="#J3ecEOC1HZyqFkKq"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>
@@ -19,6 +19,9 @@
                 <display value="Asian Indian"/>
             </valueCoding>
         </extension>
+        <extension url="text">
+            <valueString value="Asian Indian"/>
+        </extension>
     </extension>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
         <extension url="ombCategory">
@@ -27,6 +30,9 @@
                 <code value="2186-5"/>
                 <display value="Not Hispanic or Latino"/>
             </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="Not Hispanic or Latino"/>
         </extension>
     </extension>
     <identifier>

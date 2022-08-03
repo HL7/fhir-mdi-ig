@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="143"/>
-        <lastUpdated value="2022-08-02T18:55:34.594+00:00"/>
-        <source value="#IVeF4y084o5HwSdB"/>
+        <versionId value="144"/>
+        <lastUpdated value="2022-08-03T04:31:48.849+00:00"/>
+        <source value="#s93Hi0EidDIhU84n"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -130,12 +130,12 @@
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:additional-demographics.text">
-            <path value="Composition.section.text"/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Composition.section:additional-demographics.code.text">
             <path value="Composition.section.code.text"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:additional-demographics.text">
+            <path value="Composition.section.text"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:circumstances">

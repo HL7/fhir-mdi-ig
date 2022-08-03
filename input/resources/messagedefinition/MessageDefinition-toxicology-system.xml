@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MessageDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="toxicology-message-definition"/>
+    <id value="MessageDefinition-toxicology-system"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-07-26T11:47:45.221+00:00"/>
-        <source value="#EvsJrSuokjZWTvrF"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-08-03T02:33:36.894+00:00"/>
+        <source value="#WaeHZR9etJyDPSap"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/MessageDefinition/MessageDefinition-toxicology-system"/>
-    <name value="MessageDefinition-toxicology-system"/>
+    <name value="MessageDefinitionToxicologySystem"/>
     <title value="MessageDefinition - Toxicology System"/>
     <status value="active"/>
     <experimental value="false"/>

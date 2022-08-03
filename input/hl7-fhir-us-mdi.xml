@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="740"/>
-        <lastUpdated value="2022-08-02T18:35:42.049+00:00"/>
-        <source value="#SrU1b6p9bl32Azc1"/>
+        <versionId value="751"/>
+        <lastUpdated value="2022-08-03T04:44:23.596+00:00"/>
+        <source value="#1kvxjn45SeuBKlpD"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -663,36 +663,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CapabilityStatement/CapabilityStatementForensicToxicologyLaboratoryServer"/>
-                <display value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
-            </reference>
-            <name value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
-            <description value="This resource describes the expected capabilities of the forensic toxicology LIMS server actor."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="capability-statements"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/CapabilityStatementEDRSServer"/>
-                <display value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
-            </reference>
-            <name value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
-            <description value="This resource describes the expected capabilities of the Coroner/Medical Examiner (C/ME) case management system server actor responsible for consuming a message bundle received from a forensic toxicology LIMS and exchanging a document bundle with an EDRS for an MDI case record."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="capability-statements"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/CapabilityStatementMedicalExaminerCoronerServer"/>
-                <display value="CapabilityStatement - Medical Examiner/Coroner Server"/>
-            </reference>
-            <name value="CapabilityStatement - Medical Examiner/Coroner Server"/>
-            <description value="This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) server actor responsible exchanging a document bundle with an ME/C's case management system server for an MDI case record."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="capability-statements"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/observation-contributing-cause-of-death-part2-a-freeman"/></reference>
             <name value="Observation - Contributing Cause of Death Part 2 - Freeman"/>
             <description value="Observation - Contributing Cause of Death Part 2: Freeman example"/>
@@ -713,10 +683,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="MessageDefinition/toxicology-message-definition"/>
+                <reference value="MessageDefinition/MessageDefinition-toxicology-system"/>
                 <display value="MessageDefinition-toxicology-system"/>
             </reference>
-            <name value="Toxicology System Message Definition"/>
+            <name value="MessageDefinitionToxicologySystem"/>
             <description value="This resource defines the characteristics of a message that can be shared between a forensic toxicology system and a medical examiner/coroner system."/>
             <exampleBoolean value="true"/>
             <groupingId value="capability-statements"/>
@@ -809,20 +779,47 @@
         </resource>
         <resource>
             <reference>
-                <reference value="MessageDefinition/MessageDefinitionToxicologySystem"/>
-                <display value="MessageDefinition - Toxicology System"/>
-            </reference>
-            <name value="MessageDefinition - Toxicology System"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/ValueSet-transportation-incident-role"/>
                 <display value="Transportation Incident Role"/>
             </reference>
             <name value="ValueSet - Transportation Incident Role"/>
-            <description value="Role of the decedent in a transportation incident resulting in a death-related injury.&#xA;&#xA;Mapping to IJE codes [here](ConceptMap-TransportationIncidentRoleCM.html)."/>
+            <description value="Role of the decedent in a transportation incident resulting in a death-related injury."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/CapabilityStatement-edrs-server"/>
+                <display value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
+            </reference>
+            <name value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
+            <description value="This Section describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server"/>
+                <display value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
+            </reference>
+            <name value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
+            <description value="This Section describes the expected capabilities of the Toxicology lab Server actor which is responsible for providing responses to the queries submitted by Toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Toxicology lab Servers are defined. Toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/CapabilityStatement-medical-examiner-coroner-server"/>
+                <display value="CapabilityStatement - Medical Examiner/Coroner Server"/>
+            </reference>
+            <name value="CapabilityStatement - Medical Examiner/Coroner Server"/>
+            <description value="This Section describes the expected capabilities of the Coroner/Medical Examiner (C/ME) case management system Server actor which is responsible for providing responses to the queries submitted by the C/ME Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by C/ME Servers are defined. C/ME Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Parameters/expansion-parameters-mdi"/></reference>
+            <name value="Parameters - SNOMED US Version"/>
+            <description value="Parameters - SNOMED US Version"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
@@ -854,6 +851,10 @@
                 <generation value="markdown"/>
             </page>
         </page>
+        <parameter>
+            <code value="path-expansion-params"/>
+            <value value="resources/parameters/expansion-parameters-mdi.xml"/>
+        </parameter>
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement
     xmlns="http://hl7.org/fhir">
-    <id value="CapabilityStatementForensicToxicologyLaboratoryServer"/>
+    <id value="CapabilityStatement-forensic-toxicology-laboratory-server"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-07-26T12:04:33.858+00:00"/>
-        <source value="#A0uxrw7zrr6svOPf"/>
+        <lastUpdated value="2022-08-03T02:41:23.075+00:00"/>
+        <source value="#HRJ7LtEgDgy18daW"/>
     </meta>
     <url value="https://fhir.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server"/>
     <version value="1.0.0"/>
@@ -22,7 +22,7 @@
     <messaging>
         <supportedMessage>
             <mode value="sender"/>
-            <definition value="http://hl7.org/fhir/us/mdi/MessageDefinition/toxicology-message-definition"/>
+            <definition value="http://hl7.org/fhir/us/mdi/MessageDefinition/MessageDefinition-toxicology-system"/>
         </supportedMessage>
     </messaging>
 </CapabilityStatement>

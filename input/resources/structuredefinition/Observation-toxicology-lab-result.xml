@@ -3,198 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-toxicology-lab-result"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2022-07-23T01:17:13.259+00:00"/>
-        <source value="#tzBGENyxpEBL8qO5"/>
+        <versionId value="19"/>
+        <lastUpdated value="2022-08-03T04:17:19.660+00:00"/>
+        <source value="#PJD2NxPORHWaFEzp"/>
     </meta>
-    <text>
-        <status value="extensions"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
-                <tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top">
-                    <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a>
-                    </th>
-                    <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a>
-                    </th>
-                    <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a>
-                    </th>
-                    <th style="width: 100px" class="hierarchy">
-                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a>
-                    </th>
-                    <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp;
-                            Constraints</a>
-                        <span style="float: right">
-                            <a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format">
-                                <img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/>
-                            </a>
-                        </span>
-                    </th>
-                </tr>
-                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy">
-                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/>
-                        <a href="StructureDefinition-Observation-toxicology-lab-result-definitions.html#Observation">Observation</a>
-                        <a name="Observation"/>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="opacity: 0.5">0</span>
-                        <span style="opacity: 0.5">..</span>
-                        <span style="opacity: 0.5">*</span>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-lab.html">USCoreLaboratoryResultObservationProfile</a>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="opacity: 0.5">Measurements and simple assertions</span>
-                    </td>
-                </tr>
-                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
-                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/>
-                        <a href="StructureDefinition-Observation-toxicology-lab-result-definitions.html#Observation.code">code</a>
-                        <a name="Observation.code"/>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
-                </tr>
-                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy">
-                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/>
-                        <a href="StructureDefinition-Observation-toxicology-lab-result-definitions.html#Observation.code.coding">coding</a>
-                        <a name="Observation.code.coding"/>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="opacity: 0.5">0</span>
-                        <span style="opacity: 0.5">..</span>
-                        <span style="opacity: 0.5">*</span>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="opacity: 0.5">Code defined by a terminology system</span>
-                    </td>
-                </tr>
-                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy">
-                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/>
-                        <a href="StructureDefinition-Observation-toxicology-lab-result-definitions.html#Observation.code.text">text</a>
-                        <a name="Observation.code.text"/>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..
-                        <span style="opacity: 0.5">1</span>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="opacity: 0.5">Plain text representation of the concept</span>
-                    </td>
-                </tr>
-                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
-                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/>
-                        <a href="StructureDefinition-Observation-toxicology-lab-result-definitions.html#Observation.value[x]">value[x]</a>
-                        <a name="Observation.value_x_"/>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="opacity: 0.5">0</span>..1
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="opacity: 0.5">Result Value</span>
-                    </td>
-                </tr>
-                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
-                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/>
-                        <a href="StructureDefinition-Observation-toxicology-lab-result-definitions.html#Observation.note">note</a>
-                        <a name="Observation.note"/>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="opacity: 0.5">0</span>
-                        <span style="opacity: 0.5">..</span>
-                        <span style="opacity: 0.5">*</span>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="opacity: 0.5">Comments about the observation</span>
-                    </td>
-                </tr>
-                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy">
-                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>
-                        <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/>
-                        <a href="StructureDefinition-Observation-toxicology-lab-result-definitions.html#Observation.specimen">specimen</a>
-                        <a name="Observation.specimen"/>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="opacity: 0.5">0</span>
-                        <span style="opacity: 0.5">..</span>
-                        <span style="opacity: 0.5">1</span>
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <a href="http://hl7.org/fhir/R4/references.html">Reference</a>(
-                        <a href="StructureDefinition-Specimen-toxicology-lab.html">Specimen -
-                            Toxicology Lab</a>)
-                    </td>
-                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-                        <span style="opacity: 0.5">Specimen used for this observation</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="5" class="hierarchy">
-                        <br/>
-                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format">
-                            <img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this
-                            format
-                        </a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </text>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     <version value="1.0.0-Pre-Publication-Review"/>
     <name value="ObservationToxicologyLabResult"/>
@@ -219,36 +31,6 @@
         <text value="United States of America"/>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
-    <mapping>
-        <identity value="workflow"/>
-        <uri value="http://hl7.org/fhir/workflow"/>
-        <name value="Workflow Pattern"/>
-    </mapping>
-    <mapping>
-        <identity value="sct-concept"/>
-        <uri value="http://snomed.info/conceptdomain"/>
-        <name value="SNOMED CT Concept Domain Binding"/>
-    </mapping>
-    <mapping>
-        <identity value="v2"/>
-        <uri value="http://hl7.org/v2"/>
-        <name value="HL7 v2 Mapping"/>
-    </mapping>
-    <mapping>
-        <identity value="rim"/>
-        <uri value="http://hl7.org/v3"/>
-        <name value="RIM Mapping"/>
-    </mapping>
-    <mapping>
-        <identity value="w5"/>
-        <uri value="http://hl7.org/fhir/fivews"/>
-        <name value="FiveWs Pattern Mapping"/>
-    </mapping>
-    <mapping>
-        <identity value="sct-attr"/>
-        <uri value="http://snomed.org/attributebinding"/>
-        <name value="SNOMED CT Attribute Binding"/>
-    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
@@ -258,14 +40,6 @@
         <element id="Observation">
             <path value="Observation"/>
         </element>
-        <element id="Observation.value[x]">
-            <path value="Observation.value[x]"/>
-            <max value="1"/>
-            <type>
-                <code value="string"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
         <element id="Observation.code.coding">
             <path value="Observation.code.coding"/>
             <mustSupport value="true"/>
@@ -273,6 +47,14 @@
         <element id="Observation.code.text">
             <path value="Observation.code.text"/>
             <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.note">

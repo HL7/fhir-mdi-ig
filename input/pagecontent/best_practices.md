@@ -11,6 +11,8 @@ The [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-pa
 * 1..1 gender code (AdministrativeGender). Note modeling gender and sex information is ongoing in HL7. Refer to [US Core Patient profile, “Mandatory and Must Support Data Elements.”](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html#mandatory-and-must-support-data-elements)
 The three data elements may not be known during early stages of medicolegal data collection. US Core provide guidance on such cases of [missing data]( http://hl7.org/fhir/us/core/general-guidance.html#missing-data).
 
+***The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth sex, gender identity, birth date, telecom, address, martial status). The Composition - MDI to EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.***
+
 The [Participant & Supporting Examples](/artifacts.html#participant-supporting-examples) section of the Artifacts page provides an example of a US Core Patient for which no information known about the decedent' name. 
 
 ### Identifiers and Tracking Numbers

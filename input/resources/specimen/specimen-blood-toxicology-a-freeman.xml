@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-blood-toxicology-a-freeman"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-07-23T12:58:20.439+00:00"/>
-        <source value="#wxsQtcbfuuC64FWP"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-08-03T04:20:03.673+00:00"/>
+        <source value="#tJBA5bklQ4Jltmfb"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <text>
@@ -20,9 +20,9 @@
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="258580003"/>
-            <display value="Whole blood sample (specimen)"/>
+            <display value="Whole blood sample"/>
         </coding>
-        <text value="Whole blood sample (specimen)"/>
+        <text value="Whole blood sample"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>

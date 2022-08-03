@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-vitreous-humor-toxicology-a-freeman"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-07-23T12:56:09.412+00:00"/>
-        <source value="#zsSGOI78o6Buh25W"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-08-03T04:19:38.958+00:00"/>
+        <source value="#BC81EEQ5iFwqu6j0"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <text>
@@ -20,9 +20,9 @@
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="258438000"/>
-            <display value="Vitreous humor sample (specimen)"/>
+            <display value="Vitreous humor sample"/>
         </coding>
-        <text value="Vitreous humor sample (specimen)"/>
+        <text value="Vitreous humor sample"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>

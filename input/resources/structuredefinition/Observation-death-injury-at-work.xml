@@ -3,13 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-injury-at-work"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2022-08-02T18:45:39.570+00:00"/>
-        <source value="#b4e3CxTv4nVEDUtV"/>
+        <versionId value="17"/>
+        <lastUpdated value="2022-08-03T03:44:59.596+00:00"/>
+        <source value="#uhcwzC469QssGMOb"/>
     </meta>
-    <text>
-        <status value="generated"/>
-    </text>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
     <version value="1.0.0-Pre-Publication-Review"/>
     <name value="ObservationDeathInjuryAtWork"/>
@@ -79,6 +76,7 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
+            <short value="Injury incident description Narrative"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
