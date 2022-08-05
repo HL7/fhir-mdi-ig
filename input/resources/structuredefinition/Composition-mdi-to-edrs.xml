@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="144"/>
-        <lastUpdated value="2022-08-03T04:31:48.849+00:00"/>
-        <source value="#s93Hi0EidDIhU84n"/>
+        <versionId value="153"/>
+        <lastUpdated value="2022-08-05T01:03:35.863+00:00"/>
+        <source value="#5FgWfbVRWbve5u2r"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -264,6 +264,16 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:jurisdiction.entry:death-certification">
+            <path value="Composition.section.entry"/>
+            <sliceName value="death-certification"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.section:jurisdiction.emptyReason">
             <path value="Composition.section.emptyReason"/>
         </element>
@@ -427,6 +437,18 @@
             <path value="Composition.section.text"/>
             <label value="Description of autopsy findings"/>
             <short value="Description of autopsy findings"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:exam-autopsy.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:exam-autopsy.entry:autopsy-performed">
+            <path value="Composition.section.entry"/>
+            <sliceName value="autopsy-performed"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>

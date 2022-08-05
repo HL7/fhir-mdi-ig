@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="751"/>
-        <lastUpdated value="2022-08-03T04:44:23.596+00:00"/>
-        <source value="#1kvxjn45SeuBKlpD"/>
+        <versionId value="756"/>
+        <lastUpdated value="2022-08-05T00:12:22.566+00:00"/>
+        <source value="#yuFOjmK72BWdRXJV"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -794,6 +794,7 @@
             <name value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
             <description value="This Section describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
             <exampleBoolean value="false"/>
+            <groupingId value="capability-statements"/>
         </resource>
         <resource>
             <reference>
@@ -803,6 +804,7 @@
             <name value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
             <description value="This Section describes the expected capabilities of the Toxicology lab Server actor which is responsible for providing responses to the queries submitted by Toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Toxicology lab Servers are defined. Toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
             <exampleBoolean value="false"/>
+            <groupingId value="capability-statements"/>
         </resource>
         <resource>
             <reference>
@@ -812,6 +814,7 @@
             <name value="CapabilityStatement - Medical Examiner/Coroner Server"/>
             <description value="This Section describes the expected capabilities of the Coroner/Medical Examiner (C/ME) case management system Server actor which is responsible for providing responses to the queries submitted by the C/ME Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by C/ME Servers are defined. C/ME Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
             <exampleBoolean value="false"/>
+            <groupingId value="capability-statements"/>
         </resource>
         <resource>
             <reference>
@@ -820,6 +823,44 @@
             <description value="Parameters - SNOMED US Version"/>
             <exampleBoolean value="true"/>
             <groupingId value="other"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-autopsy-performed-indicator"/>
+                <display value="Observation - Autopsy Performed Indicator"/>
+            </reference>
+            <name value="Observation - Autopsy Performed Indicator"/>
+            <description value="Autopsy Performed Indicator (Observation)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-death-certification"/>
+                <display value="Procedure - Death Certification"/>
+            </reference>
+            <name value="Procedure - Death Certification"/>
+            <description value="Death Certification Procedure (USCoreProcedure). The procedure where the certification of death was performed by the certifier (USCoreProcedure)."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-certifier-types"/>
+                <display value="ValueSet - Certifier Types"/>
+            </reference>
+            <name value="ValueSet - Certifier Types"/>
+            <description value="Certifier Types Value Set."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-yes-no-unknown"/>
+                <display value="ValueSet - Yes No Unknown"/>
+            </reference>
+            <name value="ValueSet - Yes No Unknown"/>
+            <description value="Value set with Yes, No and Unknown."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
