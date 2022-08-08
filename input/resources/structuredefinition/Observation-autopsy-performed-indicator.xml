@@ -84,7 +84,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-yes-no-unknown"/>
             </binding>
         </element>
         <element id="Observation.valueCodeableConcept">
