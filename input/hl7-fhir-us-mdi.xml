@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="756"/>
-        <lastUpdated value="2022-08-05T00:12:22.566+00:00"/>
-        <source value="#yuFOjmK72BWdRXJV"/>
+        <versionId value="757"/>
+        <lastUpdated value="2022-08-08T14:42:14.202+00:00"/>
+        <source value="#iCThIeWZAvmJ4B62"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -36,11 +36,6 @@
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.1"/>
         <packageId value="hl7.fhir.us.core"/>
         <version value="5.0.1"/>
-    </dependsOn>
-    <dependsOn id="hl7fhirusodh">
-        <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh"/>
-        <packageId value="hl7.fhir.us.odh"/>
-        <version value="1.1.0"/>
     </dependsOn>
     <dependsOn id="uscdcphinvads">
         <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>

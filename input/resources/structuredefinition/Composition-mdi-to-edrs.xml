@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="153"/>
-        <lastUpdated value="2022-08-05T01:03:35.863+00:00"/>
-        <source value="#5FgWfbVRWbve5u2r"/>
+        <versionId value="157"/>
+        <lastUpdated value="2022-08-05T20:02:26.633+00:00"/>
+        <source value="#vLdjOOEElkbQz4xe"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -213,6 +213,15 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:circumstances.entry:injury-location">
+            <path value="Composition.section.entry"/>
+            <sliceName value="injury-location"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -449,7 +458,11 @@
         <element id="Composition.section:exam-autopsy.entry:autopsy-performed">
             <path value="Composition.section.entry"/>
             <sliceName value="autopsy-performed"/>
-            <max value="1"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:narratives">
