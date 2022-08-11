@@ -144,7 +144,7 @@ This Implementation Guide is adopting the security considerations from [US Core 
 
 ### Data Models
 ***Figure: MDI Profile Relationships***
-<table><tr><td><img src="MDI-Comp-structure.png" /></td></tr></table>
+<table><tr><td><img src="MDI-Comp-structure-500.png" /></td></tr></table>
 
 ***Figure: Forensic Toxicology Profile Relationships***
-<table><tr><td><img src="Tox-Msg-structure.png" /></td></tr></table>
+<table><tr><td><img src="Tox-Msg-structure-500.png" /></td></tr></table>
