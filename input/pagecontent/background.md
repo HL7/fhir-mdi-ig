@@ -9,7 +9,7 @@ Recognizing that many deaths of significant public health importance are investi
 Medical examiners and coroners (ME/C) access and exchange information with multiple agencies and organizations when building a death investigation case record (e.g., law enforcement, forensic laboratories, EHR systems, jurisdictional death registration systems). Case records are initiated by an ME/C office and may contain entries from both internal (e.g., scene investigation) and external (e.g., laboratory) sources.
 
 ***Figure: Data Flows in the Death Investigation and Reporting System***
-<table><tr><td><img src="IG-image-MDI-data-flows-3-1.png" /></td></tr></table>
+<table><tr><td><img src="IG-image-MDI-data-flows-8-22.png" /></td></tr></table>
 
 
 According to the U.S. Department of Justice, Office of Justice Programs, Bureau of Justice Statistics report, [*Medical Examiner and Coroner Offices, 2018*](https://bjs.ojp.gov/content/pub/pdf/meco18.pdf), in 2018 2,040 ME/C offices accepted 605,000 referrals for investigation to determine the cause and manner of death across federal, state, and local jurisdictions. The information gathered from an MDI is useful to a variety of local, state, and federal agencies, and many entities rely on MDI-generated data. For example, the CDC monitors trends in unintentional injury, homicides, suicides, and sudden or unexpected infant deaths and develops policy recommendations and prevention strategies for such deaths. The National Highway Traffic Safety Administration (NHTSA) monitors trends in traffic-related fatalities and the U.S. Consumer Product Safety Commission (CPSC) uses mortality data to identify problematic products for investigation and potential recall.

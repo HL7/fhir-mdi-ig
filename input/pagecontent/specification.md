@@ -141,3 +141,10 @@ This implementation guide does not define any new FHIR Search capabilities or pa
 
 ### Privacy and Security
 This Implementation Guide is adopting the security considerations from [US Core Security](https://www.hl7.org/fhir/us/core/security.html#security)
+
+### Data Models
+***Figure: MDI Profile Relationships***
+<table><tr><td><img src="MDI-Comp-structure.png" /></td></tr></table>
+
+***Figure: Forensic Toxicology Profile Relationships***
+<table><tr><td><img src="Tox-Msg-structure.png" /></td></tr></table>
