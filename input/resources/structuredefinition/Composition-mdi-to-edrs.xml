@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="157"/>
-        <lastUpdated value="2022-08-05T20:02:26.633+00:00"/>
-        <source value="#vLdjOOEElkbQz4xe"/>
+        <versionId value="161"/>
+        <lastUpdated value="2022-08-12T13:07:07.886+00:00"/>
+        <source value="#bSKcOL2v4IVTPBIp"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -89,10 +89,17 @@
         </element>
         <element id="Composition.attester">
             <path value="Composition.attester"/>
+            <short value="The certifying Medical Examiner/Coroner (Certifier)"/>
+            <min value="1"/>
+            <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.attester.party">
             <path value="Composition.attester.party"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section">

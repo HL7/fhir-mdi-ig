@@ -25,6 +25,8 @@ Agencies and jurisdictions have a range of requirements for certification of inf
 
 This MDI specification provides opportunities on most profiles for naming the responsible party. The legal nature of certification is a business requirement to be assigned by each agency or jurisdiction implementing this specification.
 
+***The Composition - MDI to EDRS attester is required and is the Medical Examiner/Coroner (ME/C) who will be listed as the Certifier on the Death Certificate.***
+
 **Summary: Data Elements Available as Certifiers of MDI Information**
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -50,9 +52,9 @@ This MDI specification provides opportunities on most profiles for naming the re
   </tr>
   <tr>
     <td class="tg-0lax">Composition - MDI to EDRS </td>
-    <td class="tg-0lax">attester</td>
-    <td class="tg-0lax">[0..*], Must Support</td>
-    <td class="tg-0lax">Who attests to accuracy of composition</td>
+    <td class="tg-0lax">attester <br>Reference (US CorePractitioner Profile)</td>
+    <td class="tg-0lax">***[1..1]***, Must Support</td>
+    <td class="tg-0lax">***The ME/C to be listed as the Certifier on the Death Certificate. ***</td>
   </tr>
   <tr>
     <td class="tg-0lax">Observation - Cause of Death Part 1</td>
