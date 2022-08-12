@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="764"/>
-        <lastUpdated value="2022-08-12T13:06:17.224+00:00"/>
-        <source value="#WQaQmcK45EnT38gs"/>
+        <versionId value="767"/>
+        <lastUpdated value="2022-08-12T14:06:32.809+00:00"/>
+        <source value="#lAnMgHiLTGRgVNxj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -134,16 +134,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-observation-location"/>
-                <display value="Extension - Location"/>
-            </reference>
-            <name value="Extension - Location"/>
-            <description value="This Extension contains the location of the observed phenomenon or entity that is the subject of the observation."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/MessageHeader-toxicology-to-mdi"/>
                 <display value="MessageHeaderToxicologyToMDI"/>
             </reference>
@@ -247,7 +237,7 @@
                 <display value="Observation - Death Date"/>
             </reference>
             <name value="Observation - Death Date"/>
-            <description value="This Observation provides the death date, death location, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+            <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -747,19 +737,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CodeSystem/local-component-cs"/>
-                <display value="Local Component Codes"/>
-            </reference>
-            <name value="Local Component Codes"/>
-            <description value="Local Component Codes for observation components that lack an appropriate LOINC code"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="CodeSystem/CodeSystem-local-component-codes"/>
                 <display value="Local Component Codes"/>
             </reference>
-            <name value="Local Component Codes"/>
+            <name value="CodeSystem - Local Component Codes"/>
             <description value="Local Component Codes for observation components that lack an appropriate LOINC code"/>
             <exampleBoolean value="false"/>
         </resource>

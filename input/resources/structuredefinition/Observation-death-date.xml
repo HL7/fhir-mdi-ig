@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date"/>
     <meta>
-        <versionId value="52"/>
-        <lastUpdated value="2022-07-22T15:48:12.691+00:00"/>
-        <source value="#vhzpVg6WoYl9zAOz"/>
+        <versionId value="53"/>
+        <lastUpdated value="2022-08-12T13:21:41.500+00:00"/>
+        <source value="#bj7B6qa8qEHSmTwK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     <name value="ObservationDeathDate"/>
     <title value="Observation - Death Date"/>
     <status value="active"/>
-    <description value="This Observation provides the death date, death location, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+    <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
