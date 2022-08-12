@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="161"/>
-        <lastUpdated value="2022-08-12T13:07:07.886+00:00"/>
-        <source value="#bSKcOL2v4IVTPBIp"/>
+        <versionId value="178"/>
+        <lastUpdated value="2022-08-12T15:09:10.106+00:00"/>
+        <source value="#jS0suwGaZWp8wbTH"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -90,6 +90,7 @@
         <element id="Composition.attester">
             <path value="Composition.attester"/>
             <short value="The certifying Medical Examiner/Coroner (Certifier)"/>
+            <definition value="The certifying Medical Examiner/Coroner (Certifier)"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
@@ -119,7 +120,8 @@
         <element id="Composition.section:additional-demographics">
             <path value="Composition.section"/>
             <sliceName value="additional-demographics"/>
-            <short value="This section contains demographic information about the decedent that is not represented in the decedent Patient profile."/>
+            <label value="This slice contains demographic information about the decedent that is not represented in the decedent Patient profile."/>
+            <short value="This slice contains demographic information about the decedent that is not represented in the decedent Patient profile."/>
             <definition value="This section contains demographic information about the decedent that is not represented in the decedent Patient profile."/>
             <min value="0"/>
             <max value="1"/>
@@ -148,7 +150,8 @@
         <element id="Composition.section:circumstances">
             <path value="Composition.section"/>
             <sliceName value="circumstances"/>
-            <short value="This section contains circumstances of the death."/>
+            <label value="This slice contains circumstances of the death."/>
+            <short value="This slice contains circumstances of the death."/>
             <definition value="This section contains circumstances of the death."/>
             <min value="1"/>
             <max value="1"/>
@@ -182,6 +185,7 @@
         <element id="Composition.section:circumstances.entry:death-location">
             <path value="Composition.section.entry"/>
             <sliceName value="death-location"/>
+            <label value="Apparent address where death actually occurred."/>
             <short value="Apparent address where death actually occurred."/>
             <definition value="Apparent address where death actually occurred."/>
             <type>
@@ -193,6 +197,7 @@
         <element id="Composition.section:circumstances.entry:work-injury">
             <path value="Composition.section.entry"/>
             <sliceName value="work-injury"/>
+            <label value="Whether or not death resulted from events/injury that occurred at work."/>
             <short value="Whether or not death resulted from events/injury that occurred at work."/>
             <definition value="Whether or not death resulted from events/injury that occurred at work."/>
             <type>
@@ -204,6 +209,7 @@
         <element id="Composition.section:circumstances.entry:tobacco-use-contributed-to-death">
             <path value="Composition.section.entry"/>
             <sliceName value="tobacco-use-contributed-to-death"/>
+            <label value="Whether or not tobacco use contributed to death."/>
             <short value="Whether or not tobacco use contributed to death."/>
             <definition value="Whether or not tobacco use contributed to death."/>
             <type>
@@ -215,6 +221,7 @@
         <element id="Composition.section:circumstances.entry:decedent-pregnancy">
             <path value="Composition.section.entry"/>
             <sliceName value="decedent-pregnancy"/>
+            <label value="Pregnancy status of the decedent."/>
             <short value="Pregnancy status of the decedent."/>
             <definition value="Pregnancy status of the decedent."/>
             <type>
@@ -226,6 +233,9 @@
         <element id="Composition.section:circumstances.entry:injury-location">
             <path value="Composition.section.entry"/>
             <sliceName value="injury-location"/>
+            <label value="Apparent address where injury occurred."/>
+            <short value="Apparent address where injury occurred."/>
+            <definition value="Apparent address where injury occurred."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
@@ -234,11 +244,13 @@
         </element>
         <element id="Composition.section:circumstances.emptyReason">
             <path value="Composition.section.emptyReason"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:jurisdiction">
             <path value="Composition.section"/>
             <sliceName value="jurisdiction"/>
-            <short value="This section contains jurisdictional information about the death."/>
+            <label value="This slice contains jurisdictional information about the death."/>
+            <short value="This slice contains jurisdictional information about the death."/>
             <definition value="This section contains jurisdictional information about the death."/>
             <min value="1"/>
             <max value="1"/>
@@ -272,6 +284,7 @@
         <element id="Composition.section:jurisdiction.entry:death-date">
             <path value="Composition.section.entry"/>
             <sliceName value="death-date"/>
+            <label value="The estimated and pronounced date of death, also contains the death pronouncer practitioner"/>
             <short value="The estimated and pronounced date of death, also contains the death pronouncer practitioner"/>
             <definition value="The estimated and pronounced date of death, also contains the death pronouncer practitioner"/>
             <type>
@@ -283,6 +296,9 @@
         <element id="Composition.section:jurisdiction.entry:death-certification">
             <path value="Composition.section.entry"/>
             <sliceName value="death-certification"/>
+            <label value="The procedure where the certification of death was performed by the certifier."/>
+            <short value="The procedure where the certification of death was performed by the certifier."/>
+            <definition value="The procedure where the certification of death was performed by the certifier."/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
@@ -296,7 +312,8 @@
         <element id="Composition.section:cause-manner">
             <path value="Composition.section"/>
             <sliceName value="cause-manner"/>
-            <short value="This section contains information about the cause and manner of death."/>
+            <label value="This slice contains information about the cause and manner of death."/>
+            <short value="This slice contains information about the cause and manner of death."/>
             <definition value="This section contains information about the cause and manner of death."/>
             <min value="1"/>
             <max value="1"/>
@@ -330,6 +347,7 @@
         <element id="Composition.section:cause-manner.entry:cause">
             <path value="Composition.section.entry"/>
             <sliceName value="cause"/>
+            <label value="Up to 5 lines of cause of death."/>
             <short value="Up to 5 lines of cause of death."/>
             <definition value="Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death."/>
             <max value="4"/>
@@ -379,7 +397,8 @@
         <element id="Composition.section:medical-history">
             <path value="Composition.section"/>
             <sliceName value="medical-history"/>
-            <short value="This section contains relevant medical history about the decedent."/>
+            <label value="This slice contains relevant medical history about the decedent."/>
+            <short value="This slice contains relevant medical history about the decedent."/>
             <definition value="This section contains relevant medical history about the decedent."/>
             <min value="1"/>
             <max value="1"/>
@@ -431,7 +450,8 @@
         <element id="Composition.section:exam-autopsy">
             <path value="Composition.section"/>
             <sliceName value="exam-autopsy"/>
-            <short value="This section contains exam and autopsy information."/>
+            <label value="This slice contains exam and autopsy information."/>
+            <short value="This slice contains exam and autopsy information."/>
             <definition value="This section contains exam and autopsy information."/>
             <min value="0"/>
             <max value="1"/>
@@ -475,6 +495,8 @@
         <element id="Composition.section:narratives">
             <path value="Composition.section"/>
             <sliceName value="narratives"/>
+            <label value="This slice contains additional death investigation narrative descriptions."/>
+            <short value="This slice contains additional death investigation narrative descriptions."/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -486,6 +508,10 @@
                     <code value="narratives"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:narratives.text">
+            <path value="Composition.section.text"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:narratives.entry">
