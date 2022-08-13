@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="186"/>
-        <lastUpdated value="2022-08-13T21:20:12.182+00:00"/>
-        <source value="#Nx7v8diapE5kLK9u"/>
+        <versionId value="187"/>
+        <lastUpdated value="2022-08-13T21:39:24.922+00:00"/>
+        <source value="#rV4pNQStbkQM0ZMr"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -523,18 +523,6 @@
             <label value="Additional death investigation narrative descriptions."/>
             <short value="Additional death investigation narrative descriptions."/>
             <definition value="Additional death investigation narrative descriptions."/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:narratives.entry">
-            <path value="Composition.section.entry"/>
-            <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="this.resolve()"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <min value="1"/>
             <mustSupport value="true"/>
         </element>
     </differential>
