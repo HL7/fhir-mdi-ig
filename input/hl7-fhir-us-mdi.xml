@@ -797,7 +797,7 @@
                 <display value="Observation - Autopsy Performed Indicator"/>
             </reference>
             <name value="Observation - Autopsy Performed Indicator"/>
-            <description value="Autopsy Performed Indicator (Observation)"/>
+            <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>

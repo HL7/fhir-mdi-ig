@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="179"/>
-        <lastUpdated value="2022-08-13T21:03:57.773+00:00"/>
-        <source value="#HAuJ1967EIY8Y52b"/>
+        <versionId value="186"/>
+        <lastUpdated value="2022-08-13T21:20:12.182+00:00"/>
+        <source value="#Nx7v8diapE5kLK9u"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -230,6 +230,17 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:circumstances.entry:injury-location">
+            <path value="Composition.section.entry"/>
+            <sliceName value="injury-location"/>
+            <label value="Apparent address where injury occurred."/>
+            <short value="Apparent address where injury occurred."/>
+            <definition value="Apparent address where injury occurred."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+            </type>
+        </element>
         <element id="Composition.section:circumstances.emptyReason">
             <path value="Composition.section.emptyReason"/>
             <mustSupport value="true"/>
@@ -406,7 +417,9 @@
         </element>
         <element id="Composition.section:medical-history.text">
             <path value="Composition.section.text"/>
+            <label value="Narrative medical condition"/>
             <short value="Narrative medical condition"/>
+            <definition value="Narrative medical condition"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:medical-history.entry">
@@ -423,7 +436,9 @@
         <element id="Composition.section:medical-history.entry:history-condition">
             <path value="Composition.section.entry"/>
             <sliceName value="history-condition"/>
+            <label value="Coded medical conditions"/>
             <short value="Coded medical conditions"/>
+            <definition value="Coded medical conditions"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"/>
@@ -461,6 +476,7 @@
             <path value="Composition.section.text"/>
             <label value="Description of autopsy findings"/>
             <short value="Description of autopsy findings"/>
+            <definition value="Description of autopsy findings"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -473,6 +489,9 @@
         <element id="Composition.section:exam-autopsy.entry:autopsy-performed">
             <path value="Composition.section.entry"/>
             <sliceName value="autopsy-performed"/>
+            <label value="If autopsy was performed, if autopsy findings are available, and the autopsy Performer"/>
+            <short value="If autopsy was performed, if autopsy findings are available, and the autopsy Performer"/>
+            <definition value="If autopsy was performed, if autopsy findings are available, and the autopsy Performer"/>
             <max value="*"/>
             <type>
                 <code value="Reference"/>
@@ -485,6 +504,7 @@
             <sliceName value="narratives"/>
             <label value="This slice contains additional death investigation narrative descriptions."/>
             <short value="This slice contains additional death investigation narrative descriptions."/>
+            <definition value="This slice contains additional death investigation narrative descriptions."/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -500,6 +520,9 @@
         </element>
         <element id="Composition.section:narratives.text">
             <path value="Composition.section.text"/>
+            <label value="Additional death investigation narrative descriptions."/>
+            <short value="Additional death investigation narrative descriptions."/>
+            <definition value="Additional death investigation narrative descriptions."/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:narratives.entry">

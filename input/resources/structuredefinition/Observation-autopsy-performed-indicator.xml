@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-performed-indicator"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-08-08T16:21:28.539+00:00"/>
-        <source value="#01QJZnu9bvWelEXK"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-08-13T21:21:48.177+00:00"/>
+        <source value="#bnFaLLemLlNxJBls"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
     <version value="1.9.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="Autopsy Performed Indicator (Observation)"/>
+    <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
