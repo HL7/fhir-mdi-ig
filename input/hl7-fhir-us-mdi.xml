@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="769"/>
-        <lastUpdated value="2022-08-12T14:39:32.060+00:00"/>
-        <source value="#ahm8uOQkBJLzWyGa"/>
+        <versionId value="770"/>
+        <lastUpdated value="2022-08-13T20:12:25.542+00:00"/>
+        <source value="#YFntordtyjOPRCGL"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -335,15 +335,6 @@
             <description value="This Observation provides the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-odh-usual-work-a-freeman"/></reference>
-            <name value="Observation - ODH Usual Work - Freeman"/>
-            <description value="Observation - ODH Usual Work: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
-            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
