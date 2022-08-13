@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="178"/>
-        <lastUpdated value="2022-08-12T15:09:10.106+00:00"/>
-        <source value="#jS0suwGaZWp8wbTH"/>
+        <versionId value="179"/>
+        <lastUpdated value="2022-08-13T21:03:57.773+00:00"/>
+        <source value="#HAuJ1967EIY8Y52b"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -227,18 +227,6 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:circumstances.entry:injury-location">
-            <path value="Composition.section.entry"/>
-            <sliceName value="injury-location"/>
-            <label value="Apparent address where injury occurred."/>
-            <short value="Apparent address where injury occurred."/>
-            <definition value="Apparent address where injury occurred."/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
             </type>
             <mustSupport value="true"/>
         </element>
