@@ -3,19 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-death-date-a-freeman"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-07-23T13:11:29.234+00:00"/>
-        <source value="#IZIOoI33t2OLIxey"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-08-14T21:13:53.809+00:00"/>
+        <source value="#kKOivSEMy8TzRUZt"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     </meta>
     <text>
         <status value="extensions"/>
     </text>
-    <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-observation-location">
-        <valueReference>
-            <reference value="Location/us-core-location-atlanta-ga-death-location-a-freeman"/>
-        </valueReference>
-    </extension>
     <status value="final"/>
     <code>
         <coding>
@@ -31,12 +26,31 @@
     <performer>
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </performer>
-    <valueDateTime value="2022-01-08T14:04:00-05:00"/>
+    <valueDateTime>
+        <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time">
+            <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-day">
+                <valueUnsignedInt value="8"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-year">
+                <valueUnsignedInt value="2022"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-month">
+                <valueUnsignedInt value="1"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-time">
+                <valueTime>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                        <valueCode value="unknown"/>
+                    </extension>
+                </valueTime>
+            </extension>
+        </extension>
+    </valueDateTime>
     <method>
         <coding>
             <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
-            <code value="exact"/>
-            <display value="Exact"/>
+            <code value="approximate"/>
+            <display value="Approximate"/>
         </coding>
     </method>
     <component>
@@ -48,5 +62,20 @@
             </coding>
         </code>
         <valueDateTime value="2022-01-08T15:30:00-05:00"/>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="58332-8"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="63238001"/>
+                <display value="Dead on arrival at hospital"/>
+            </coding>
+        </valueCodeableConcept>
     </component>
 </Observation>
