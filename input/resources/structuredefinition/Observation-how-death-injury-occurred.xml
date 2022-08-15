@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-how-death-injury-occurred"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2022-07-22T19:05:59.714+00:00"/>
-        <source value="#Sx4KO11yRzFpEMDY"/>
+        <versionId value="14"/>
+        <lastUpdated value="2022-08-15T16:19:18.027+00:00"/>
+        <source value="#yym0PK6zfILbuIl9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     <version value="0.1.0"/>
@@ -113,6 +113,128 @@
             <path value="Observation.value[x].text"/>
             <short value="Description of how injured"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component">
+            <path value="Observation.component"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Observation.component:placeOfInjury">
+            <path value="Observation.component"/>
+            <sliceName value="placeOfInjury"/>
+            <short value="Place of injury"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:placeOfInjury.code">
+            <path value="Observation.component.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="69450-5"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.component:placeOfInjury.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+        </element>
+        <element id="Observation.component:placeOfInjury.valueCodeableConcept">
+            <path value="Observation.component.valueCodeableConcept"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Observation.component:placeOfInjury.valueCodeableConcept.text">
+            <path value="Observation.component.valueCodeableConcept.text"/>
+            <short value="Place of Injury - Literal"/>
+        </element>
+        <element id="Observation.component:workInjuryIndicator">
+            <path value="Observation.component"/>
+            <sliceName value="workInjuryIndicator"/>
+            <short value="Injury at Work?"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:workInjuryIndicator.code">
+            <path value="Observation.component.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="69444-8"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.component:workInjuryIndicator.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <short value="Injury at Work?"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-yes-no-unknown-not-applicable-vs"/>
+            </binding>
+        </element>
+        <element id="Observation.component:transportationRole">
+            <path value="Observation.component"/>
+            <sliceName value="transportationRole"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:transportationRole.code">
+            <path value="Observation.component.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="69451-3"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.component:transportationRole.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Transportation role of decedent"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-transportation-incident-role-vs"/>
+            </binding>
+        </element>
+        <element id="Observation.component:transportationRole.valueCodeableConcept">
+            <path value="Observation.component.valueCodeableConcept"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:transportationRole.valueCodeableConcept.text">
+            <path value="Observation.component.valueCodeableConcept.text"/>
+            <short value="Transportation role of decedent, if code = OTH"/>
         </element>
     </differential>
 </StructureDefinition>
