@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="776"/>
-        <lastUpdated value="2022-08-15T19:30:57.066+00:00"/>
-        <source value="#utGDbTl8P704LP7l"/>
+        <versionId value="795"/>
+        <lastUpdated value="2022-08-15T20:01:36.761+00:00"/>
+        <source value="#pbwTmxbkvhqZ1fBb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -213,19 +213,10 @@
                 <reference value="Composition/composition-mdi-to-edrs-a-freeman"/>
                 <display value="MDI to EDRS Composition"/>
             </reference>
-            <name value="MDI to EDRS Composition - Freeman"/>
-            <description value="MDI to EDRS Composition: Freeman example"/>
+            <name value="Composition - MDI to EDRS - Freeman"/>
+            <description value="Composition - MDI to EDRS: Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-death-date-a-freeman"/></reference>
-            <name value="Observation - Death Date - Freeman"/>
-            <description value="Observation - Death Date: Freeman death date, location, death pronouncer example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
             <groupingId value="mdi-examples"/>
         </resource>
         <resource>
@@ -335,15 +326,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-death-injury-at-work-a-freeman"/></reference>
-            <name value="Observation - Death Injury at Work - Freeman"/>
-            <description value="Observation - Death Injury at Work: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Specimen/specimen-urine-toxicology-a-freeman"/></reference>
             <name value="Specimen - Toxicology Lab - Freeman Urine"/>
             <description value="Specimen - Toxicology Lab: Freeman Urine example"/>
@@ -371,15 +353,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-how-death-injury-occurred-a-freeman-med-ingest"/></reference>
-            <name value="Observation - How Death Injury Occurred - Freeman - Medication ingestion"/>
-            <description value="Observation - How Death Injury Occurred: Freeman - Medication ingestion (fentanyl) example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Specimen-toxicology-lab"/>
                 <display value="SpecimenToxicologyLab"/>
             </reference>
@@ -390,24 +363,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-manner-of-death-a-freeman-accidental"/></reference>
-            <name value="Observation - Manner of Death - Freeman"/>
-            <description value="Observation - Manner of Death: Freeman - accidental example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-decedent-pregnancy-a-freeman"/></reference>
-            <name value="Observation - Decedent Pregnancy - Freeman"/>
-            <description value="Observation - Decedent Pregnancy: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Observation-toxicology-lab-result"/>
                 <display value="Observation - Toxicology Lab Result"/>
             </reference>
@@ -415,6 +370,17 @@
             <description value="This Observation profile describes forensic toxicology laboratory test results from analysis of a specimen sent by a Medical Examiner, Coroner, or autopsy performer to the laboratory."/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cause-of-death-part1-a-freeman"/>
+                <display value="observation-cause-of-death-condition-a-freeman-1"/>
+            </reference>
+            <name value="Observation - Cause of Death Part 1 - Freeman"/>
+            <description value="Observation - Cause of Death Part 1: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -490,21 +456,30 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-contributing-cause-of-death-part2-a-freeman"/></reference>
+            <name value="Observation - Contributing Cause of Death Part 2 - Freeman"/>
+            <description value="Observation - Contributing Cause of Death Part 2: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-death-date-a-freeman"/></reference>
+            <name value="Observation - Death Date - Freeman"/>
+            <description value="Observation - Death Date: Freeman death date and death pronouncer example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Specimen/specimen-stomach-contents-toxicology-a-freeman"/></reference>
             <name value="Specimen - Toxicology Lab - Freeman Stomach Contents"/>
             <description value="Specimen - Toxicology Lab: Freeman Stomach Contents example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
             <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-tobacco-use-a-freeman"/></reference>
-            <name value="Observation - Tobacco Use - Freeman"/>
-            <description value="Observation - Tobacco Use: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
-            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -564,6 +539,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-how-death-injury-occurred-a-freeman-med-ingest"/></reference>
+            <name value="Observation - How Death Injury Occurred - Freeman - Medication ingestion"/>
+            <description value="Observation - How Death Injury Occurred: Freeman - Medication ingestion (fentanyl) example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="CodeSystem/CodeSystem-death-pregnancy-status"/>
                 <display value="CodeSystem - Death Pregnancy Status"/>
             </reference>
@@ -584,6 +568,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-manner-of-death-a-freeman-accidental"/></reference>
+            <name value="Observation - Manner of Death - Freeman"/>
+            <description value="Observation - Manner of Death: Freeman - accidental example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/ValueSet-date-establishment-approach"/>
                 <display value="ValueSet - Date Establishment Approach"/>
             </reference>
@@ -601,6 +594,24 @@
             <description value="A set of codes that reflect whether the decedent was pregnant at or around the time of death. Based on [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003)"/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-decedent-pregnancy-a-freeman"/></reference>
+            <name value="Observation - Decedent Pregnancy - Freeman"/>
+            <description value="Observation - Decedent Pregnancy: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-tobacco-use-a-freeman"/></reference>
+            <name value="Observation - Tobacco Use - Freeman"/>
+            <description value="Observation - Tobacco Use: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -641,26 +652,6 @@
             <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-contributing-cause-of-death-part2-a-freeman"/></reference>
-            <name value="Observation - Contributing Cause of Death Part 2 - Freeman"/>
-            <description value="Observation - Contributing Cause of Death Part 2: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-cause-of-death-part1-a-freeman"/>
-                <display value="observation-cause-of-death-condition-a-freeman-1"/>
-            </reference>
-            <name value="Observation - Cause of Death Part 1 - Freeman"/>
-            <description value="Observation - Cause of Death Part 1: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
-            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -842,6 +833,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-autopsy-performed-indicator-a-freeman"/></reference>
+            <name value="Observation - Autopsy Performed Indicator"/>
+            <description value="Observation - Autopsy Performed Indicator: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Procedure/procedure-death-certification-a-freeman"/>
                 <display value="procedure-death-certification-a-freeman"/>
             </reference>
@@ -849,15 +849,6 @@
             <description value="Procedure - Death Certification: Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-autopsy-performed-indicator-a-freeman"/></reference>
-            <name value="Observation - Autopsy Performed Indicator"/>
-            <description value="Observation - Autopsy Performed Indicator: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
             <groupingId value="mdi-examples"/>
         </resource>
         <page>
