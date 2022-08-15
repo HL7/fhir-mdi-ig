@@ -212,6 +212,12 @@ An MDI-based Search API enables MDI systems to search EDRS for decedent cases. T
     <td class="tg-0lax">uri </td>
     <td class="tg-0lax">Resource ID of Composition - MDI to EDRS</td>
   </tr>
+	  <tr>
+    <td class="tg-0lax">***patient***</td>
+    <td class="tg-0lax">***0.. ***</td>
+    <td class="tg-0lax"> </td>
+    <td class="tg-0lax">***One or more decedent related search parameters*** </td>
+  </tr>
   <tr>
     <td class="tg-0lax">patient.birthdate </td>
     <td class="tg-0lax">0..1 </td>
@@ -260,10 +266,32 @@ An MDI-based Search API enables MDI systems to search EDRS for decedent cases. T
   <tr>
     <td class="tg-0lax">return </td>
     <td class="tg-0lax">0..1 </td>
-    <td class="tg-0lax">resource (Bundle - Document MDI to EDRS) </td>
+    <td class="tg-0lax">resource (***Bundle - Searchset or*** Document MDI to EDRS) </td>
     <td class="tg-0lax">Searchset Bundle that includes MDI document bundles. If [id] is supplied, then this should be Bundle - Document MDI to EDRS</td>
   </tr>
 </tbody>
 </table>
 
-The name of search parameters is formatted as [profile].[parameter]. If [profile] is missing, then it applies to the Composition – MDI to EDRS profile.
+***Search parameters related to patient are formatted with “.”. In FHIR, this means that the search parameters after “.” are part of a patient parameter. See the example below. ***
+
+***Code example:***
+{ 
+  "resourceType": "Parameters", 
+  "parameter": [ 
+    { 
+      "name": "patient", 
+      "part": [ 
+        {  
+          "name": "family", 
+          "valueString": "Hans" 
+        }, 
+        {  
+          "name": "given", 
+          "valueString": "Kennoby" 
+        } 
+      ] 
+    } 
+  ] 
+} 
+
+If [id] is provided within URL path (e.g., /Composition/[id]/$mdi-documents), then the output response should be an MDI document bundle as there will be only one or zero result.
