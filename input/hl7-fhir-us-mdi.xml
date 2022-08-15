@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="772"/>
-        <lastUpdated value="2022-08-15T17:35:58.534+00:00"/>
-        <source value="#qaWK2Nbn0oZzuMEB"/>
+        <versionId value="775"/>
+        <lastUpdated value="2022-08-15T18:00:05.531+00:00"/>
+        <source value="#nfJV0iN8kq8ykP5d"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -71,6 +71,12 @@
             <name value="Extensions"/>
             <description value="Extensions defined for this implementation guide"/>
         </grouping>
+        <grouping id="code-systems">
+            <name value="Terminology: Code Systems"/>
+        </grouping>
+        <grouping id="value-sets">
+            <name value="Terminology: Value Sets"/>
+        </grouping>
         <grouping id="other">
             <name value="Other Parameters"/>
             <description value="Other parameters used by this implementation guide"/>
@@ -112,6 +118,7 @@
             <name value="CodeSystem - MDI"/>
             <description value="This code system contains codes for use in MDI."/>
             <exampleBoolean value="false"/>
+            <groupingId value="code-systems"/>
         </resource>
         <resource>
             <reference>
@@ -573,6 +580,7 @@
             <name value="CodeSystem - Death Pregnancy Status"/>
             <description value="Codes that reflect whether the decedent was pregnant at or around the time of death. Includes the concepts defined in [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003) which are from the [PHIN VS (CDC Local Coding System)[2.16.840.1.114222.4.5.274]](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274)"/>
             <exampleBoolean value="false"/>
+            <groupingId value="code-systems"/>
         </resource>
         <resource>
             <reference>
@@ -582,6 +590,7 @@
             <name value="ValueSet - Contributory Tobacco Use"/>
             <description value="A set of codes that reflect the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004)"/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -591,6 +600,7 @@
             <name value="ValueSet - Date Establishment Approach"/>
             <description value="This value set contains codes that describe the approach to establishing a date."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -600,6 +610,7 @@
             <name value="ValueSet - Death Pregnancy Status"/>
             <description value="A set of codes that reflect whether the decedent was pregnant at or around the time of death. Based on [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003)"/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -609,6 +620,7 @@
             <name value="ValueSet - Manner of Death"/>
             <description value="A set of codes to reflect the manner that a person died."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -618,6 +630,7 @@
             <name value="ValueSet - Tracking Number Type"/>
             <description value="This value set contains codes to that identify the type of tracking number."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -627,6 +640,7 @@
             <name value="ValueSet - Units of Age"/>
             <description value="Units of Age"/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -636,6 +650,7 @@
             <name value="ValueSet - Yes, No, Not Applicable"/>
             <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -725,6 +740,7 @@
             <name value="ValueSet - Place of Death"/>
             <description value="Code values reflecting the death location of the decedent (e.g., hospital, home, hospice)."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -734,6 +750,7 @@
             <name value="CodeSystem - Local Component Codes"/>
             <description value="Local Component Codes for observation components that lack an appropriate LOINC code"/>
             <exampleBoolean value="false"/>
+            <groupingId value="code-systems"/>
         </resource>
         <resource>
             <reference>
@@ -743,6 +760,7 @@
             <name value="ValueSet - Yes No Unknown NotApplicable"/>
             <description value="Valueset with Yes, No, Unknown, and Not Applicable."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -752,6 +770,7 @@
             <name value="ValueSet - Transportation Incident Role"/>
             <description value="Role of the decedent in a transportation incident resulting in a death-related injury."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -819,6 +838,7 @@
             <name value="ValueSet - Certifier Types"/>
             <description value="Certifier Types Value Set."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -828,18 +848,27 @@
             <name value="ValueSet - Yes No Unknown"/>
             <description value="Value set with Yes, No and Unknown."/>
             <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Procedure/procedure-death-certification-a-freeman"/></reference>
+                <reference value="Procedure/procedure-death-certification-a-freeman"/>
+                <display value="procedure-death-certification-a-freeman"/>
+            </reference>
+            <name value="Procedure - Death Certification - Freeman"/>
+            <description value="Procedure - Death Certification: Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-autopsy-performed-indicator-a-freeman"/></reference>
+            <name value="Observation - Autopsy Performed Indicator"/>
+            <description value="Observation - Autopsy Performed Indicator: Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

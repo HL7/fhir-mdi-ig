@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="procedure-death-certification-a-freeman"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-08-15T17:32:43.514+00:00"/>
-        <source value="#3u6O3svwoj4nsjEf"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-08-15T19:09:47.315+00:00"/>
+        <source value="#pCPGUVLOunGhVFh4"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
     </meta>
     <identifier>
@@ -35,7 +35,7 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="455381000124109"/>
-                <display value="Medical Examiner/Coroner"/>
+                <display value="Death certification by medical examiner or coroner (procedure)"/>
             </coding>
         </function>
         <actor>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="188"/>
-        <lastUpdated value="2022-08-14T22:45:46.597+00:00"/>
-        <source value="#kdJS6ge0wZahLMtk"/>
+        <versionId value="189"/>
+        <lastUpdated value="2022-08-15T19:14:52.280+00:00"/>
+        <source value="#cLYKfWVS9tkw0HDA"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -191,18 +191,6 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:circumstances.entry:work-injury">
-            <path value="Composition.section.entry"/>
-            <sliceName value="work-injury"/>
-            <label value="Whether or not death resulted from events/injury that occurred at work."/>
-            <short value="Whether or not death resulted from events/injury that occurred at work."/>
-            <definition value="Whether or not death resulted from events/injury that occurred at work."/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
             </type>
             <mustSupport value="true"/>
         </element>
