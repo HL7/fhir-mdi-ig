@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-how-death-injury-occurred-a-freeman-med-ingest"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-08-15T20:34:37.896+00:00"/>
-        <source value="#rigbBKsX1CENkHI3"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-08-15T20:52:05.129+00:00"/>
+        <source value="#amRl9AqJzkFmIFKy"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     </meta>
     <text>
@@ -48,48 +48,6 @@
     <valueCodeableConcept>
         <text value="drug toxicity"/>
     </valueCodeableConcept>
-    <component>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="69444-8"/>
-            </coding>
-        </code>
-        <valueCodeableConcept>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
-                <code value="N"/>
-                <display value="No"/>
-            </coding>
-        </valueCodeableConcept>
-    </component>
-    <component>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="69450-5"/>
-            </coding>
-        </code>
-        <valueCodeableConcept>
-            <text value="Home"/>
-        </valueCodeableConcept>
-    </component>
-    <component>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="69451-3"/>
-            </coding>
-        </code>
-        <valueCodeableConcept>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-                <code value="OTH"/>
-                <display value="Other"/>
-            </coding>
-            <text value="Hoverboard Rider"/>
-        </valueCodeableConcept>
-    </component>
     <component>
         <code>
             <coding>
