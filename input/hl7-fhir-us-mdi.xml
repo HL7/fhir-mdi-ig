@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="797"/>
-        <lastUpdated value="2022-08-15T20:48:37.712+00:00"/>
-        <source value="#jyPHfTQTHH32OO2I"/>
+        <versionId value="798"/>
+        <lastUpdated value="2022-08-15T21:17:56.528+00:00"/>
+        <source value="#fHKxmKMbLroCfwGG"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -860,6 +860,15 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
             <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/us-core-location-atlanta-ga-injury-location-a-freeman"/>
+                <display value="Atlanta GA Injury Location - Freeman"/>
+            </reference>
+            <name value="Atlanta GA Injury Location - Freeman"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-mdi-to-edrs-a-freeman"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2022-08-03T04:45:27.934+00:00"/>
-        <source value="#Q4B7MMgF6eox4HKt"/>
+        <versionId value="17"/>
+        <lastUpdated value="2022-08-15T21:22:58.086+00:00"/>
+        <source value="#BYh23HhgNVp6aFE5"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     </meta>
     <text>
@@ -41,17 +41,20 @@
         <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
     </author>
     <title value="MDI to EDRS Composition"/>
+    <attester>
+        <mode value="professional"/>
+        <party>
+            <reference value="Practitioner/us-core-practitioner-j-jones"/>
+        </party>
+    </attester>
     <section>
-        <title value="Demographic Information Section"/>
+        <title value="Additional Demographic Information Section"/>
         <code>
             <coding>
                 <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
                 <code value="demographics"/>
             </coding>
         </code>
-        <entry>
-            <reference value="Observation/observation-odh-usual-work-a-freeman"/>
-        </entry>
     </section>
     <section>
         <title value="Circumstances Section"/>
@@ -65,13 +68,13 @@
             <reference value="Location/us-core-location-atlanta-ga-death-location-a-freeman"/>
         </entry>
         <entry>
-            <reference value="Observation/observation-death-injury-at-work-a-freeman"/>
-        </entry>
-        <entry>
             <reference value="Observation/observation-tobacco-use-a-freeman"/>
         </entry>
         <entry>
             <reference value="Observation/observation-decedent-pregnancy-a-freeman"/>
+        </entry>
+        <entry>
+            <reference value="Location/us-core-location-atlanta-ga-injury-location-a-freeman"/>
         </entry>
     </section>
     <section>
@@ -85,6 +88,9 @@
         <entry>
             <reference value="Observation/observation-death-date-a-freeman"/>
         </entry>
+        <entry>
+            <reference value="Procedure/procedure-death-certification-a-freeman"/>
+        </entry>
     </section>
     <section>
         <title value="Cause and Manner of Death Section"/>
@@ -94,6 +100,9 @@
                 <code value="cause-manner"/>
             </coding>
         </code>
+        <entry>
+            <reference value="Observation/observation-cause-of-death-part1-a-freeman"/>
+        </entry>
         <entry>
             <reference value="Observation/observation-contributing-cause-of-death-part2-a-freeman"/>
         </entry>
