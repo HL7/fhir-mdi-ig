@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="770"/>
-        <lastUpdated value="2022-08-13T20:12:25.542+00:00"/>
-        <source value="#YFntordtyjOPRCGL"/>
+        <versionId value="772"/>
+        <lastUpdated value="2022-08-15T17:35:58.534+00:00"/>
+        <source value="#qaWK2Nbn0oZzuMEB"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -828,6 +828,18 @@
             <name value="ValueSet - Yes No Unknown"/>
             <description value="Value set with Yes, No and Unknown."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-death-certification-a-freeman"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-autopsy-performed-indicator-a-freeman"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
