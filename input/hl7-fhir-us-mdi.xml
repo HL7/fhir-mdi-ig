@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="775"/>
-        <lastUpdated value="2022-08-15T18:00:05.531+00:00"/>
-        <source value="#nfJV0iN8kq8ykP5d"/>
+        <versionId value="776"/>
+        <lastUpdated value="2022-08-15T19:30:57.066+00:00"/>
+        <source value="#utGDbTl8P704LP7l"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -292,16 +292,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
             <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-death-injury-at-work"/>
-                <display value="Observation - Death Injury/Event Occurred at Work"/>
-            </reference>
-            <name value="Observation - Death Injury/Event Occurred at Work"/>
-            <description value="This Observation identifies whether or not death resulted from events or an injury that occurred at work."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
