@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-cause-of-death-part1-a-freeman"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-07-23T13:18:21.529+00:00"/>
-        <source value="#X1KhgQpH6hjkpQtS"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-08-15T11:05:10.664+00:00"/>
+        <source value="#JB6y5LYf7vKgvofo"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
     </meta>
     <text>
@@ -28,6 +28,15 @@
     <valueCodeableConcept>
         <text value="Fentanyl toxicity"/>
     </valueCodeableConcept>
+    <component>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-local-component-codes"/>
+                <code value="lineNumber"/>
+            </coding>
+        </code>
+        <valueInteger value="1"/>
+    </component>
     <component>
         <code>
             <coding>
