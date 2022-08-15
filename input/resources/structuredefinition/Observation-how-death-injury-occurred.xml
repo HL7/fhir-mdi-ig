@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-how-death-injury-occurred"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2022-08-15T16:19:18.027+00:00"/>
-        <source value="#yym0PK6zfILbuIl9"/>
+        <versionId value="15"/>
+        <lastUpdated value="2022-08-15T16:51:05.617+00:00"/>
+        <source value="#31RaJkBC2pdSHdG6"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     <version value="0.1.0"/>
@@ -189,7 +189,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-yes-no-unknown-not-applicable-vs"/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
             </binding>
         </element>
         <element id="Observation.component:transportationRole">
@@ -224,7 +224,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/vrdr/ValueSet/vrdr-transportation-incident-role-vs"/>
+                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-transportation-incident-role"/>
             </binding>
         </element>
         <element id="Observation.component:transportationRole.valueCodeableConcept">
