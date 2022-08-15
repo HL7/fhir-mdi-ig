@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-tox-report-message-a-freeman"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2022-08-03T02:10:45.550+00:00"/>
-        <source value="#cwMCu9mKlscMejNR"/>
+        <versionId value="19"/>
+        <lastUpdated value="2022-08-15T22:10:35.000+00:00"/>
+        <source value="#VVGdKZ5d0o82mBLz"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     </meta>
     <identifier>
@@ -14,7 +14,7 @@
     </identifier>
     <type value="message"/>
     <entry>
-        <fullUrl value="MessageHeader/messageheader-mdi-tox-result-report-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/MessageHeader/messageheader-mdi-tox-result-report-a-freeman"/>
         <resource>
             <MessageHeader>
                 <id value="mdi-tox-result-report"/>
@@ -46,7 +46,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/>
         <resource>
             <DiagnosticReport>
                 <id value="diagnosticreport-mdi-toxicology-lab-a-freeman"/>
@@ -162,7 +162,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Patient/us-core-patient-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Patient/us-core-patient-a-freeman"/>
         <resource>
             <Patient>
                 <id value="us-core-patient-a-freeman"/>
@@ -218,7 +218,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Organization/us-core-organization-tox-lab"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Organization/us-core-organization-tox-lab"/>
         <resource>
             <Organization>
                 <id value="us-core-organization-tox-lab"/>
@@ -259,7 +259,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Practitioner/us-core-practitioner-b-goldberger"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Practitioner/us-core-practitioner-b-goldberger"/>
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-b-goldberger"/>
@@ -280,7 +280,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Specimen/specimen-blood-toxicology-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Specimen/specimen-blood-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-blood-toxicology-a-freeman"/>
@@ -333,7 +333,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Specimen/specimen-urine-toxicology-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Specimen/specimen-urine-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-urine-toxicology-a-freeman"/>
@@ -371,7 +371,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Specimen/specimen-vitreous-humor-toxicology-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Specimen/specimen-vitreous-humor-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-vitreous-humor-toxicology-a-freeman"/>
@@ -409,7 +409,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Specimen/specimen-bile-toxicology-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Specimen/specimen-bile-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-bile-toxicology-a-freeman"/>
@@ -444,7 +444,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Specimen/specimen-liver-toxicology-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Specimen/specimen-liver-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-stomach-contents-toxicology-a-freeman"/>
@@ -479,7 +479,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Specimen/specimen-stomach-contents-toxicology-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Specimen/specimen-stomach-contents-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-liver-toxicology-a-freeman"/>
@@ -514,7 +514,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
@@ -555,7 +555,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/us-core-lab-result-4-anpp-blood-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Observation/us-core-lab-result-4-anpp-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-blood-a-freeman"/>
@@ -592,7 +592,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Observation/us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
@@ -633,7 +633,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/us-core-lab-result-fentanyl-blood-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Observation/us-core-lab-result-fentanyl-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-blood-a-freeman"/>
@@ -674,7 +674,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Observation/us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
@@ -715,7 +715,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/us-core-lab-result-4-anpp-urine-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Observation/us-core-lab-result-4-anpp-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-urine-a-freeman"/>
@@ -752,7 +752,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Observation/us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
@@ -789,7 +789,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/us-core-lab-result-fentanyl-urine-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Observation/us-core-lab-result-fentanyl-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-urine-a-freeman"/>
@@ -826,7 +826,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/us-core-lab-result-norfentanyl-urine-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Observation/us-core-lab-result-norfentanyl-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-norfentanyl-urine-a-freeman"/>
@@ -863,7 +863,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/us-core-lab-result-xylazine-urine-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Observation/us-core-lab-result-xylazine-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-xylazine-urine-a-freeman"/>
@@ -900,7 +900,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
+        <fullUrl value="https://www.forensic-investigation-agency.org/Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>

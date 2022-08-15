@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-to-edrs-a-freeman"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2022-08-03T02:10:45.533+00:00"/>
-        <source value="#iRbA5l0dgA3xycSm"/>
+        <versionId value="16"/>
+        <lastUpdated value="2022-08-15T22:10:34.999+00:00"/>
+        <source value="#DyJ8WYoVUGw7xAcK"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     </meta>
     <identifier>
@@ -15,7 +15,7 @@
     <type value="document"/>
     <timestamp value="2022-01-04T08:51:14.637+00:00"/>
     <entry>
-        <fullUrl value="Composition/composition-mdi-to-edrs-a-freeman"/>
+        <fullUrl value="https://www.state-edrs.org/Composition/composition-mdi-to-edrs-a-freeman"/>
         <resource>
             <Composition>
                 <id value="composition-mdi-to-edrs-a-freeman"/>
@@ -139,7 +139,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/observation-how-death-injury-occurred-a-freeman-med-ingest"/>
+        <fullUrl value="https://www.state-edrs.org/Observation/observation-how-death-injury-occurred-a-freeman-med-ingest"/>
         <resource>
             <Observation>
                 <id value="observation-how-death-injury-occurred-a-freeman-med-ingest"/>
@@ -172,7 +172,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/observation-death-injury-at-work-a-freeman"/>
+        <fullUrl value="https://www.state-edrs.org/Observation/observation-death-injury-at-work-a-freeman"/>
         <resource>
             <Observation>
                 <id value="observation-death-injury-at-work-a-freeman"/>
@@ -207,7 +207,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/observation-manner-of-death-a-freeman-accidental"/>
+        <fullUrl value="https://www.state-edrs.org/Observation/observation-manner-of-death-a-freeman-accidental"/>
         <resource>
             <Observation>
                 <id value="observation-manner-of-death-a-freeman-accidental"/>
@@ -245,7 +245,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/Observation-contributing-cause-of-death-part2-a-freeman"/>
+        <fullUrl value="https://www.state-edrs.org/Observation/Observation-contributing-cause-of-death-part2-a-freeman"/>
         <resource>
             <Observation>
                 <id value="Observation-contributing-cause-of-death-part2-a-freeman"/>
@@ -279,7 +279,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Practitioner/us-core-practitioner-b-goldberger"/>
+        <fullUrl value="https://www.state-edrs.org/Practitioner/us-core-practitioner-b-goldberger"/>
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-b-goldberger"/>
@@ -300,7 +300,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Location/us-core-location-atlanta-ga-death-location-a-freeman"/>
+        <fullUrl value="https://www.state-edrs.org/Location/us-core-location-atlanta-ga-death-location-a-freeman"/>
         <resource>
             <Location>
                 <id value="us-core-location-atlanta-ga-death-location-a-freeman"/>
@@ -332,7 +332,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Patient/us-core-patient-a-freeman"/>
+        <fullUrl value="https://www.state-edrs.org/Patient/us-core-patient-a-freeman"/>
         <resource>
             <Patient>
                 <id value="us-core-patient-a-freeman"/>
@@ -401,7 +401,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/observation-odh-usual-work-a-freeman"/>
+        <fullUrl value="https://www.state-edrs.org/Observation/observation-odh-usual-work-a-freeman"/>
         <resource>
             <Observation>
                 <id value="observation-odh-usual-work-a-freeman"/>
@@ -465,7 +465,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/observation-tobacco-use-a-freeman"/>
+        <fullUrl value="https://www.state-edrs.org/Observation/observation-tobacco-use-a-freeman"/>
         <resource>
             <Observation>
                 <id value="observation-tobacco-use-a-freeman"/>
@@ -500,7 +500,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/observation-death-date-a-freeman"/>
+        <fullUrl value="https://www.state-edrs.org/Observation/observation-death-date-a-freeman"/>
         <resource>
             <Observation>
                 <id value="observation-death-date-a-freeman"/>
@@ -555,7 +555,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Practitioner/us-core-practitioner-s-jones"/>
+        <fullUrl value="https://www.state-edrs.org/Practitioner/us-core-practitioner-s-jones"/>
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-s-jones"/>
@@ -576,7 +576,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Practitioner/us-core-practitioner-j-jones"/>
+        <fullUrl value="https://www.state-edrs.org/Practitioner/us-core-practitioner-j-jones"/>
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-j-jones"/>
@@ -597,7 +597,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/Observation-cause-of-death-part1-a-freeman"/>
+        <fullUrl value="https://www.state-edrs.org/Observation/Observation-cause-of-death-part1-a-freeman"/>
         <resource>
             <Observation>
                 <id value="Observation-cause-of-death-part1-a-freeman"/>
@@ -641,7 +641,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Observation/observation-decedent-pregnancy-a-freeman"/>
+        <fullUrl value="https://www.state-edrs.org/Observation/observation-decedent-pregnancy-a-freeman"/>
         <resource>
             <Observation>
                 <id value="observation-decedent-pregnancy-a-freeman"/>
