@@ -272,9 +272,11 @@ An MDI-based Search API enables MDI systems to search EDRS for decedent cases. T
 </tbody>
 </table>
 
-***Search parameters related to patient are formatted with “.”. In FHIR, this means that the search parameters after “.” are part of a patient parameter. See the example below. ***
+***Search parameters related to patient are formatted with “.”. In FHIR, this means that the search parameters after “.” are part of a patient parameter. See the example below.***
 
 ***Code example:***
+
+```
 { 
   "resourceType": "Parameters", 
   "parameter": [ 
@@ -295,3 +297,4 @@ An MDI-based Search API enables MDI systems to search EDRS for decedent cases. T
 } 
 
 If [id] is provided within URL path (e.g., /Composition/[id]/$mdi-documents), then the output response should be an MDI document bundle as there will be only one or zero result.
+```

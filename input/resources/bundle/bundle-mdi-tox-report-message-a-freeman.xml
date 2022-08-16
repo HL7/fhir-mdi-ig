@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-tox-report-message-a-freeman"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2022-08-15T22:10:35.000+00:00"/>
-        <source value="#VVGdKZ5d0o82mBLz"/>
+        <versionId value="21"/>
+        <lastUpdated value="2022-08-16T22:41:25.782+00:00"/>
+        <source value="#TR9ib2U1PJYhpW5X"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     </meta>
     <identifier>
@@ -14,31 +14,31 @@
     </identifier>
     <type value="message"/>
     <entry>
-        <fullUrl value="https://www.forensic-investigation-agency.org/MessageHeader/messageheader-mdi-tox-result-report-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/MessageHeader/messageheader-mdi-tox-result-report-a-freeman"/>
         <resource>
             <MessageHeader>
-                <id value="mdi-tox-result-report"/>
-                <text>
-                    <status value="generated"/>
-                </text>
+                <id value="messageheader-mdi-tox-result-report-a-freeman"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+                </meta>
                 <eventCoding>
                     <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
                     <code value="tox-result-report"/>
                 </eventCoding>
-                <destination>
-                    <name value="MDI system"/>
-                    <endpoint value="http://MDIsystem/fhir/"/>
-                </destination>
                 <source>
                     <name value="University of Florida Pathology Labs, Forensic Toxicology Laboratory"/>
-                    <software value="LIMS"/>
+                    <software value="MDI Log"/>
                     <version value="1.2.3.4.5"/>
                     <contact>
                         <system value="phone"/>
                         <value value="+1 (555) 123 4567"/>
                     </contact>
-                    <endpoint value="http://lims.org/fhir/endpoint/1"/>
+                    <endpoint value="http://mdi-log.org/fhir/endpoint/1"/>
                 </source>
+                <response>
+                    <identifier value="5015fe84-8e76-4526-89d8-44b322e8d4fb"/>
+                    <code value="ok"/>
+                </response>
                 <focus>
                     <reference value="DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/>
                 </focus>

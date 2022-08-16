@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Location-death"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-08-16T20:40:54.222+00:00"/>
-        <source value="#QeB4ceb0gGGiibXg"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-08-16T22:14:02.316+00:00"/>
+        <source value="#cRDi3ktFY8yD4Kc6"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
     <name value="LocationDeath"/>
@@ -53,15 +53,15 @@
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
+        <element id="Location.address.text">
+            <path value="Location.address.text"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Location.position">
             <path value="Location.position"/>
             <label value="Location of death lat/long"/>
             <short value="Location of death lat/long"/>
             <definition value="Location of death lat/long"/>
-        </element>
-        <element id="Location.address.text">
-            <path value="Location.address.text"/>
-            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
