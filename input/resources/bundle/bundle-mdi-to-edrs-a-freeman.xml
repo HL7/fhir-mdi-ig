@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-to-edrs-a-freeman"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2022-08-16T05:23:39.237+00:00"/>
-        <source value="#xd1OjfPjsrSZUr6m"/>
+        <versionId value="20"/>
+        <lastUpdated value="2022-08-16T21:07:35.004+00:00"/>
+        <source value="#t2oB2VgDvzN0FOBU"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     </meta>
     <identifier>
@@ -37,42 +37,53 @@
                             <p style="margin-bottom: 0px">Information Source: #rrMJ4KdpMQ2Q66n0!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Composition-mdi-to-edrs.html">Composition - MDI to EDRS</a>
                             </p>
                         </div>
                         <p>
                             <b>Extension - Tracking Number</b>: Birth Certificate: ME21-113
                         
+                        
                         </p>
                         <p>
                             <b>identifier</b>: id: a03eab8c-11e8-4d0c-ad2a-b385395e27de
+                        
                         
                         </p>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>type</b>: Death administrative information Document 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#86807-5)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>date</b>: 2022-02-20
                         
+                        
                         </p>
                         <p>
                             <b>author</b>: 
                             
+                            
                             <a href="Practitioner-us-core-practitioner-b-goldberger.html">Practitioner/us-core-practitioner-b-goldberger</a> " GOLDBERGER"
+                        
                         
                         </p>
                         <p>
                             <b>title</b>: MDI to EDRS Composition
+                        
                         
                         </p>
                         <h3>Attesters</h3>
@@ -91,6 +102,7 @@
                                 <td>professional</td>
                                 <td>
                                     <a href="Practitioner-us-core-practitioner-j-jones.html">Practitioner/us-core-practitioner-j-jones</a> " JONES"
+                                
                                 
                                 </td>
                             </tr>
@@ -256,40 +268,51 @@
                             <p style="margin-bottom: 0px">Information Source: #amRl9AqJzkFmIFKy!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Observation-how-death-injury-occurred.html">Observation - How Death Injury Occurred</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>code</b>: Injury incident description Narrative 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#11374-6)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 
                         
+                        
                         </p>
                         <p>
                             <b>performer</b>: 
                             
+                            
                             <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        
                         
                         </p>
                         <p>
                             <b>value</b>: drug toxicity 
+                            
                             
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span>
                         </p>
@@ -300,18 +323,24 @@
                             <p>
                                 <b>code</b>: Did death result from injury at work 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
+                                    
                                     <a href="https://loinc.org/">LOINC</a>#69444-8)
+                                
                                 
                                 </span>
                             </p>
                             <p>
                                 <b>value</b>: No 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
+                                    
                                     <a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#N)
+                                
                                 
                                 </span>
                             </p>
@@ -323,14 +352,18 @@
                             <p>
                                 <b>code</b>: Place of injury Facility 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
+                                    
                                     <a href="https://loinc.org/">LOINC</a>#69450-5)
+                                
                                 
                                 </span>
                             </p>
                             <p>
                                 <b>value</b>: Private house 
+                                
                                 
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span>
                             </p>
@@ -342,18 +375,24 @@
                             <p>
                                 <b>code</b>: Transportation role of decedent 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
+                                    
                                     <a href="https://loinc.org/">LOINC</a>#69451-3)
+                                
                                 
                                 </span>
                             </p>
                             <p>
                                 <b>value</b>: not applicable 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
+                                    
                                     <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor</a>#NA)
+                                
                                 
                                 </span>
                             </p>
@@ -443,83 +482,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.state-edrs.org/Observation/observation-death-injury-at-work-a-freeman"/>
-        <resource>
-            <Observation>
-                <id value="observation-death-injury-at-work-a-freeman"/>
-                <meta>
-                    <versionId value="6"/>
-                    <lastUpdated value="2022-08-16T00:26:19.379+00:00"/>
-                    <source value="#zA2jghSP0Gv2LSiu"/>
-                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
-                </meta>
-                <text>
-                    <status value="generated"/>
-                    <div
-                        xmlns="http://www.w3.org/1999/xhtml">
-                        <p>
-                            <b>Generated Narrative: Observation</b>
-                        </p>
-                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
-                            <p style="margin-bottom: 0px">Resource Observation "observation-death-injury-at-work-a-freeman" Version "6" Updated "2022-08-16 12:26:19+0000" </p>
-                            <p style="margin-bottom: 0px">Information Source: #zA2jghSP0Gv2LSiu!</p>
-                            <p style="margin-bottom: 0px">Profile: 
-                                
-                                <a href="StructureDefinition-Observation-death-injury-at-work.html">Observation - Death Injury/Event Occurred at Work</a>
-                            </p>
-                        </div>
-                        <p>
-                            <b>status</b>: final
-                        
-                        </p>
-                        <p>
-                            <b>code</b>: Did death result from injury at work 
-                            
-                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
-                                
-                                <a href="https://loinc.org/">LOINC</a>#69444-8)
-                            
-                            </span>
-                        </p>
-                        <p>
-                            <b>subject</b>: 
-                            
-                            <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
-                        
-                        </p>
-                        <p>
-                            <b>value</b>: No 
-                            
-                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
-                                
-                                <a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#N)
-                            
-                            </span>
-                        </p>
-                    </div>
-                </text>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="69444-8"/>
-                        <display value="Did death result from injury at work"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/us-core-patient-a-freeman"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
-                        <code value="N"/>
-                        <display value="No"/>
-                    </coding>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="https://www.state-edrs.org/Observation/observation-manner-of-death-a-freeman-accidental"/>
         <resource>
             <Observation>
@@ -542,40 +504,52 @@
                             <p style="margin-bottom: 0px">Information Source: #7FPFDJUTPmQ168OA!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Observation-manner-of-death.html">Observation - Manner of Death</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>code</b>: Manner of death 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#69449-7)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>performer</b>: 
                             
+                            
                             <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        
                         
                         </p>
                         <p>
                             <b>value</b>: Accidental death 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#7878000)
+                            
                             
                             </span>
                         </p>
@@ -628,36 +602,46 @@
                             <p style="margin-bottom: 0px">Information Source: #oU2L4BJHtu323Zkf!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Observation-contributing-cause-of-death-part2.html">Observation - Contributing Cause of Death Part 2</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>code</b>: Other significant causes or conditions of death 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#69441-4)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>performer</b>: 
                             
+                            
                             <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        
                         
                         </p>
                         <p>
                             <b>value</b>: Hypertensive heart disease 
+                            
                             
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span>
                         </p>
@@ -706,15 +690,18 @@
                             <p style="margin-bottom: 0px">Information Source: #Gi1Qo4Db4Wi5bEek!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>identifier</b>: id: 555667777
                         
+                        
                         </p>
                         <p>
                             <b>name</b>: Bruce Goldberger (OFFICIAL)
+                        
                         
                         </p>
                     </div>
@@ -755,32 +742,40 @@
                             <p style="margin-bottom: 0px">Information Source: #kFpbp1G8yWRwDUrN!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Location-death.html">Location - Death</a>
                             </p>
                         </div>
                         <p>
                             <b>identifier</b>: id: 29
                         
+                        
                         </p>
                         <p>
                             <b>status</b>: active
+                        
                         
                         </p>
                         <p>
                             <b>name</b>: Atlanta GA Death Location - Freeman
                         
+                        
                         </p>
                         <p>
                             <b>type</b>: Death Location 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="CodeSystem-CodeSystem-mdi-codes.html">CodeSystem - MDI</a>#death)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>address</b>: 400 Windstream Street Atlanta GA USA (HOME)
+                        
                         
                         </p>
                     </div>
@@ -832,32 +827,40 @@
                             <p style="margin-bottom: 0px">Information Source: #GeBcnhtxzxp98yjW!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Location-injury.html">Location - Injury</a>
                             </p>
                         </div>
                         <p>
                             <b>identifier</b>: id: 29
                         
+                        
                         </p>
                         <p>
                             <b>status</b>: active
+                        
                         
                         </p>
                         <p>
                             <b>name</b>: Atlanta GA Injury Location - Freeman
                         
+                        
                         </p>
                         <p>
                             <b>type</b>: Injury Location 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="CodeSystem-CodeSystem-mdi-codes.html">CodeSystem - MDI</a>#injury)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>address</b>: 400 Windstream Street Atlanta GA USA (HOME)
+                        
                         
                         </p>
                     </div>
@@ -903,6 +906,7 @@
                         xmlns="http://www.w3.org/1999/xhtml">
                         <p>
                             <b>Alice J. Freeman </b> female, DoB: 1978-03-12 ( Social Security number: 987054321 (USUAL))
+                        
                         
                         </p>
                     </div>
@@ -963,67 +967,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.state-edrs.org/Observation/observation-odh-usual-work-a-freeman"/>
-        <resource>
-            <Observation>
-                <id value="observation-odh-usual-work-a-freeman"/>
-                <meta>
-                    <versionId value="3"/>
-                    <lastUpdated value="2022-03-01T23:28:12.704+00:00"/>
-                    <source value="#SjvIv0MqipjpaPO1"/>
-                    <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="21843-8"/>
-                        <display value="History of Usual occupation"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/us-core-patient-a-freeman"/>
-                </subject>
-                <effectivePeriod>
-                    <start value="1998-06-01"/>
-                    <end value="2022-01-07"/>
-                </effectivePeriod>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.314"/>
-                        <code value="4030"/>
-                        <display value="Food preparation workers"/>
-                    </coding>
-                </valueCodeableConcept>
-                <component>
-                    <code>
-                        <coding>
-                            <system value="http://loinc.org"/>
-                            <code value="21844-6"/>
-                            <display value="History of Usual industry"/>
-                        </coding>
-                    </code>
-                    <valueCodeableConcept>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010"/>
-                            <code value="8680"/>
-                            <display value="Restaurants and other food services"/>
-                        </coding>
-                    </valueCodeableConcept>
-                </component>
-                <component>
-                    <code>
-                        <coding>
-                            <system value="http://loinc.org"/>
-                            <code value="74163-7"/>
-                            <display value="Usual occupation duration"/>
-                        </coding>
-                    </code>
-                </component>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="https://www.state-edrs.org/Observation/observation-tobacco-use-a-freeman"/>
         <resource>
             <Observation>
@@ -1046,34 +989,44 @@
                             <p style="margin-bottom: 0px">Information Source: #NMrUcpOpJwUMo6b9!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Observation-tobacco-use-contributed-to-death.html">Observation - Tobacco Use Contributed to Death</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>code</b>: Did tobacco use contribute to death 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#69443-0)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>value</b>: No 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#373067005)
+                            
                             
                             </span>
                         </p>
@@ -1123,48 +1076,62 @@
                             <p style="margin-bottom: 0px">Information Source: #kKOivSEMy8TzRUZt!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Observation-death-date.html">Observation - Death Date</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>code</b>: Date+time of death 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#81956-5)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>effective</b>: 2022-01-08 03:30:00-0500
                         
+                        
                         </p>
                         <p>
                             <b>performer</b>: 
                             
+                            
                             <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        
                         
                         </p>
                         <p>
                             <b>value</b>: 
                         
+                        
                         </p>
                         <p>
                             <b>method</b>: Approximate 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="CodeSystem-CodeSystem-mdi-codes.html">CodeSystem - MDI</a>#approximate)
+                            
                             
                             </span>
                         </p>
@@ -1175,14 +1142,18 @@
                             <p>
                                 <b>code</b>: Date and time pronounced dead [US Standard Certificate of Death] 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
+                                    
                                     <a href="https://loinc.org/">LOINC</a>#80616-6)
+                                
                                 
                                 </span>
                             </p>
                             <p>
                                 <b>value</b>: 2022-01-08 03:30:00-0500
+                            
                             
                             </p>
                         </blockquote>
@@ -1193,18 +1164,24 @@
                             <p>
                                 <b>code</b>: Location of death 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
+                                    
                                     <a href="https://loinc.org/">LOINC</a>#58332-8)
+                                
                                 
                                 </span>
                             </p>
                             <p>
                                 <b>value</b>: Dead on arrival at hospital 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
+                                    
                                     <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#63238001)
+                                
                                 
                                 </span>
                             </p>
@@ -1304,15 +1281,18 @@
                             <p style="margin-bottom: 0px">Information Source: #ne5AjlHCnwD6pLvO!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>identifier</b>: id: 3333445555
                         
+                        
                         </p>
                         <p>
                             <b>name</b>: Sam Jones (OFFICIAL)
+                        
                         
                         </p>
                     </div>
@@ -1353,15 +1333,18 @@
                             <p style="margin-bottom: 0px">Information Source: #TjTJ6FgkEzGmJcyb!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>identifier</b>: id: 1122334455
                         
+                        
                         </p>
                         <p>
                             <b>name</b>: Jane Jones (OFFICIAL)
+                        
                         
                         </p>
                     </div>
@@ -1402,36 +1385,46 @@
                             <p style="margin-bottom: 0px">Information Source: #JB6y5LYf7vKgvofo!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Observation-cause-of-death-part1.html">Observation - Cause of Death Part 1</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>code</b>: Cause of death [US Standard Certificate of Death] 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#69453-9)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>performer</b>: 
                             
+                            
                             <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        
                         
                         </p>
                         <p>
                             <b>value</b>: Fentanyl toxicity 
+                            
                             
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span>
                         </p>
@@ -1442,14 +1435,18 @@
                             <p>
                                 <b>code</b>: line number 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
+                                    
                                     <a href="CodeSystem-CodeSystem-local-component-codes.html">CodeSystem - Local Component Codes</a>#lineNumber)
+                                
                                 
                                 </span>
                             </p>
                             <p>
                                 <b>value</b>: 1
+                            
                             
                             </p>
                         </blockquote>
@@ -1460,14 +1457,18 @@
                             <p>
                                 <b>code</b>: Disease onset to death interval 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
+                                    
                                     <a href="https://loinc.org/">LOINC</a>#69440-6)
+                                
                                 
                                 </span>
                             </p>
                             <p>
                                 <b>value</b>: minutes to hours
+                            
                             
                             </p>
                         </blockquote>
@@ -1535,34 +1536,44 @@
                             <p style="margin-bottom: 0px">Information Source: #dYhx1aIZUR3QFYiq!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Observation-decedent-pregnancy.html">Observation - Decedent Pregnancy</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
                         
+                        
                         </p>
                         <p>
                             <b>code</b>: Timing of recent pregnancy in relation to death 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#69442-2)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>value</b>: not applicable 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor</a>#NA)
+                            
                             
                             </span>
                         </p>
@@ -1612,43 +1623,55 @@
                             <p style="margin-bottom: 0px">Information Source: #pCPGUVLOunGhVFh4!</p>
                             <p style="margin-bottom: 0px">Profile: 
                                 
+                                
                                 <a href="StructureDefinition-Procedure-death-certification.html">Procedure - Death Certification</a>
                             </p>
                         </div>
                         <p>
                             <b>identifier</b>: id: 180
                         
+                        
                         </p>
                         <p>
                             <b>status</b>: completed
+                        
                         
                         </p>
                         <p>
                             <b>category</b>: Diagnostic procedure 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#103693007)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Death certification 
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#308646001)
+                            
                             
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         </p>
                         <p>
                             <b>performed</b>: 2022-01-18 04:39:40-0500
+                        
                         
                         </p>
                         <h3>Performers</h3>
@@ -1666,14 +1689,18 @@
                                 <td>*</td>
                                 <td>Death certification by medical examiner or coroner (procedure) 
                                     
+                                    
                                     <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                         
+                                        
                                         <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#455381000124109)
+                                    
                                     
                                     </span>
                                 </td>
                                 <td>
                                     <a href="Practitioner-us-core-practitioner-j-jones.html">Practitioner/us-core-practitioner-j-jones</a> " JONES"
+                                
                                 
                                 </td>
                             </tr>

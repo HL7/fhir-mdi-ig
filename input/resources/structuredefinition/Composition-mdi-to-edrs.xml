@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="190"/>
-        <lastUpdated value="2022-08-15T23:33:57.686+00:00"/>
-        <source value="#DaO60aIcIvAKdyhn"/>
+        <versionId value="193"/>
+        <lastUpdated value="2022-08-16T20:31:33.328+00:00"/>
+        <source value="#UKeGX0RmwCxDZWDd"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -93,6 +93,16 @@
             <definition value="The certifying Medical Examiner/Coroner (Certifier)"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.attester.extension">
+            <path value="Composition.attester.extension"/>
+            <short value="If attester is not yet named, use data absent reason"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.attester.party">

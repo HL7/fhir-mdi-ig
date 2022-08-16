@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Location-injury"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-08-15T23:59:28.695+00:00"/>
-        <source value="#Q06nVVnMsqf1gYII"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-08-16T20:41:44.739+00:00"/>
+        <source value="#QOdk5ZmkDjnO89O1"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
     <name value="LocationInjury"/>
@@ -51,6 +51,16 @@
                     <code value="injury"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Location.position">
+            <path value="Location.position"/>
+            <label value="Location of injury lat/long"/>
+            <short value="Location of injury lat/long"/>
+            <definition value="Location of injury lat/long"/>
+        </element>
+        <element id="Location.address.text">
+            <path value="Location.address.text"/>
             <mustSupport value="true"/>
         </element>
     </differential>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="808"/>
-        <lastUpdated value="2022-08-16T00:59:37.290+00:00"/>
-        <source value="#ml4BUYL6sMQgwjbz"/>
+        <versionId value="810"/>
+        <lastUpdated value="2022-08-16T21:02:47.780+00:00"/>
+        <source value="#Kx722l72G7HRc1lM"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -281,16 +281,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
             <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-death-injury-at-work"/>
-                <display value="Observation - Death Injury/Event Occurred at Work"/>
-            </reference>
-            <name value="Observation - Death Injury/Event Occurred at Work"/>
-            <description value="This Observation identifies whether or not death resulted from events or an injury that occurred at work."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -890,15 +880,6 @@
             <description value="Location - Injury:  Atlanta GA Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-death-injury-at-work-a-freeman"/></reference>
-            <name value="Observation - Death Injury at Work - Freeman"/>
-            <description value="Observation - Death Injury at Work: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-injury-at-work"/>
             <groupingId value="mdi-examples"/>
         </resource>
         <page>
