@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-mdi-to-edrs-a-freeman"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2022-08-15T21:22:58.086+00:00"/>
-        <source value="#BYh23HhgNVp6aFE5"/>
+        <versionId value="19"/>
+        <lastUpdated value="2022-08-15T23:49:50.478+00:00"/>
+        <source value="#rrMJ4KdpMQ2Q66n0"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     </meta>
     <text>
@@ -55,6 +55,13 @@
                 <code value="demographics"/>
             </coding>
         </code>
+        <text>
+            <status value="additional"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <p>No additional demographic information</p>
+            </div>
+        </text>
     </section>
     <section>
         <title value="Circumstances Section"/>
@@ -65,7 +72,7 @@
             </coding>
         </code>
         <entry>
-            <reference value="Location/us-core-location-atlanta-ga-death-location-a-freeman"/>
+            <reference value="Location/location-death-atlanta-ga-a-freeman"/>
         </entry>
         <entry>
             <reference value="Observation/observation-tobacco-use-a-freeman"/>
@@ -74,7 +81,7 @@
             <reference value="Observation/observation-decedent-pregnancy-a-freeman"/>
         </entry>
         <entry>
-            <reference value="Location/us-core-location-atlanta-ga-injury-location-a-freeman"/>
+            <reference value="Location/location-injury-atlanta-ga-a-freeman"/>
         </entry>
     </section>
     <section>

@@ -3,13 +3,27 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-patient-unknown-name"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-07-23T13:19:35.192+00:00"/>
-        <source value="#CMhkRStzvpyT8BMM"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-08-16T00:48:48.046+00:00"/>
+        <source value="#M96qCs8z4WVse4Xg"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>
         <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">
+                <b>UNK </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>MR303303305</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </text>
     <identifier>
         <use value="usual"/>

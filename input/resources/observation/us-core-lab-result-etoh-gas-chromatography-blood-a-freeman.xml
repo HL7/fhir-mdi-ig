@@ -3,14 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-07-23T13:22:05.153+00:00"/>
-        <source value="#U7OBCnKo6N5W0ofX"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-08-16T00:44:09.890+00:00"/>
+        <source value="#lKi0lxRBL0rbkhoI"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
-    <text>
-        <status value="generated"/>
-    </text>
     <status value="final"/>
     <category>
         <coding>

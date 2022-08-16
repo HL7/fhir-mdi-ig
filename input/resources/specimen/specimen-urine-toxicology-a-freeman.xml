@@ -3,14 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-urine-toxicology-a-freeman"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-07-23T12:55:37.189+00:00"/>
-        <source value="#OHoCT8tXXVUhktAl"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-08-16T00:58:14.623+00:00"/>
+        <source value="#eZxANbiIGlreQv8w"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
-    <text>
-        <status value="generated"/>
-    </text>
     <accessionIdentifier>
         <system value="http://lab.acme.org/specimens/2021"/>
         <value value="ZZZ352356"/>

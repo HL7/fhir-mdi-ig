@@ -3,14 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-death-date-a-freeman"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-08-14T21:13:53.809+00:00"/>
-        <source value="#kKOivSEMy8TzRUZt"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-08-16T00:44:09.694+00:00"/>
+        <source value="#uVfl0AuS3c0qSrP5"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     </meta>
-    <text>
-        <status value="extensions"/>
-    </text>
     <status value="final"/>
     <code>
         <coding>

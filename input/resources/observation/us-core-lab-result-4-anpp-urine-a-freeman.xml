@@ -3,14 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-4-anpp-urine-a-freeman"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-07-23T13:25:43.028+00:00"/>
-        <source value="#RLDIbxYitmoIrVnb"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-08-16T00:44:09.787+00:00"/>
+        <source value="#g3mtHZM1OkBAjwVb"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
-    <text>
-        <status value="generated"/>
-    </text>
     <status value="final"/>
     <category>
         <coding>

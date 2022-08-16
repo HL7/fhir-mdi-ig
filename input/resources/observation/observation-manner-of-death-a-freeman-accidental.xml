@@ -3,14 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-manner-of-death-a-freeman-accidental"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-07-23T13:10:28.746+00:00"/>
-        <source value="#7FPFDJUTPmQ168OA"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-08-16T00:44:09.693+00:00"/>
+        <source value="#dSX9egkdqu8DrTEb"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
     </meta>
-    <text>
-        <status value="generated"/>
-    </text>
     <status value="final"/>
     <code>
         <coding>

@@ -3,13 +3,29 @@
     xmlns="http://hl7.org/fhir">
     <id value="diagnosticreport-mdi-toxicology-lab-a-freeman"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-07-23T13:12:28.376+00:00"/>
-        <source value="#NIXRAPKfEUPcjUUJ"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-08-16T00:57:24.915+00:00"/>
+        <source value="#hlwUwttHjOkYTdqq"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     </meta>
     <text>
         <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText"> fentaNYL and Norfentanyl panel - Specimen </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Status</td>
+                        <td>FINAL</td>
+                    </tr>
+                    <tr>
+                        <td>Issued</td>
+                        <td> 05 January 2022 11:00:00 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </text>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
         <valueIdentifier>

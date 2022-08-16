@@ -3,14 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-liver-toxicology-a-freeman"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-07-23T12:57:41.731+00:00"/>
-        <source value="#nyFV8R2uXQSYKfuF"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-08-16T00:58:14.624+00:00"/>
+        <source value="#IbInZlV93F4o3XXB"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
-    <text>
-        <status value="generated"/>
-    </text>
     <accessionIdentifier>
         <system value="http://lab.acme.org/specimens/2021"/>
         <value value="DD352356"/>

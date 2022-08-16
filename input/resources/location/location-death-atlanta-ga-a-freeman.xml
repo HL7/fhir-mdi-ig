@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Location
     xmlns="http://hl7.org/fhir">
-    <id value="us-core-location-atlanta-ga-death-location-a-freeman"/>
+    <id value="location-death-atlanta-ga-a-freeman"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-07-23T13:13:12.436+00:00"/>
-        <source value="#FDQp7xNC09xsssIt"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-08-15T23:38:06.991+00:00"/>
+        <source value="#kFpbp1G8yWRwDUrN"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
     </meta>
-    <text>
-        <status value="generated"/>
-    </text>
     <identifier>
         <system value="http://www.acme.org/location"/>
         <value value="29"/>
     </identifier>
     <status value="active"/>
     <name value="Atlanta GA Death Location - Freeman"/>
+    <type>
+        <coding>
+            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+            <code value="death"/>
+        </coding>
+    </type>
     <address>
         <use value="home"/>
         <type value="physical"/>

@@ -3,14 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-lab-result-fentanyl-urine-a-freeman"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-07-23T13:20:38.679+00:00"/>
-        <source value="#PdzNZzkuBYEVW14F"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-08-16T00:44:09.899+00:00"/>
+        <source value="#AShF0kvizcW1dt6C"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
-    <text>
-        <status value="generated"/>
-    </text>
     <status value="final"/>
     <category>
         <coding>

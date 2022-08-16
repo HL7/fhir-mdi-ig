@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="189"/>
-        <lastUpdated value="2022-08-15T19:14:52.280+00:00"/>
-        <source value="#cLYKfWVS9tkw0HDA"/>
+        <versionId value="190"/>
+        <lastUpdated value="2022-08-15T23:33:57.686+00:00"/>
+        <source value="#DaO60aIcIvAKdyhn"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -190,7 +190,7 @@
             <definition value="Apparent address where death actually occurred."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -226,7 +226,7 @@
             <definition value="Apparent address where injury occurred."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+                <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
             </type>
         </element>
         <element id="Composition.section:circumstances.emptyReason">

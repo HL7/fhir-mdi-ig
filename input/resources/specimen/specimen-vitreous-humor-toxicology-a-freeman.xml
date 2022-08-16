@@ -3,14 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-vitreous-humor-toxicology-a-freeman"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-08-03T04:19:38.958+00:00"/>
-        <source value="#BC81EEQ5iFwqu6j0"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-08-16T00:58:14.624+00:00"/>
+        <source value="#GcjfAjz04u7pzXAX"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
-    <text>
-        <status value="generated"/>
-    </text>
     <accessionIdentifier>
         <system value="http://lab.acme.org/specimens/2021"/>
         <value value="XXX352356"/>

@@ -3,14 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-core-practitioner-b-goldberger"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-07-23T13:23:47.528+00:00"/>
-        <source value="#Gi1Qo4Db4Wi5bEek"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-08-16T00:47:10.210+00:00"/>
+        <source value="#OdiTHeKlKbvknstk"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
     </meta>
-    <text>
-        <status value="generated"/>
-    </text>
     <identifier>
         <system value="http://hl7.org/fhir/sid/us-npi"/>
         <value value="555667777"/>
