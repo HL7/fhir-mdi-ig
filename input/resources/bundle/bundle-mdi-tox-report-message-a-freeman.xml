@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Bundle
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-tox-report-message-a-freeman"/>
     <meta>
-        <versionId value="23"/>
+        <versionId value="22"/>
         <lastUpdated value="2022-08-17T00:10:33.190+00:00"/>
         <source value="#ErFFClvqDYQ3TY71"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
@@ -169,7 +168,7 @@
                 <text>
                     <status value="generated"/>
                 </text>
-                <extension url="http://hl7.org/fhir/us/mdi/us/core/StructureDefinition/us-core-race">
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
                     <extension url="detailed">
                         <valueCoding>
                             <system value="urn:oid:2.16.840.1.113883.6.238"/>
@@ -181,7 +180,7 @@
                         <valueString value="Asian Indian"/>
                     </extension>
                 </extension>
-                <extension url="http://hl7.org/fhir/us/mdi/us/core/StructureDefinition/us-core-ethnicity">
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
                     <extension url="ombCategory">
                         <valueCoding>
                             <system value="urn:oid:2.16.840.1.113883.6.238"/>
@@ -226,7 +225,7 @@
                     <versionId value="1"/>
                     <lastUpdated value="2021-12-21T21:10:44.154+00:00"/>
                     <source value="#QAkoip3ekF5aaBd2"/>
-                    <profile value="http://hl7.org/fhir/us/mdi/us/core/StructureDefinition/us-core-organization"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -267,7 +266,7 @@
                     <status value="generated"/>
                 </text>
                 <identifier>
-                    <system value="http://hl7.org/fhir/us/mdi/sid/us-npi"/>
+                    <system value="http://hl7.org/fhir/sid/us-npi"/>
                     <value value="555667777"/>
                 </identifier>
                 <name>
