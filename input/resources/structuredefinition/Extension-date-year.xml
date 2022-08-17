@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-year"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-07-14T17:01:30.209+00:00"/>
-        <source value="#fVPcMY3CdWF6eY68"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-08-17T02:49:16.920+00:00"/>
+        <source value="#daHjURayFxDhuL5O"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-year"/>
     <version value="1.0.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="The year portion (YYYY) of the partial date. (Extension)"/>
+    <description value="The year portion (YYYY) of the partial date."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -78,7 +78,6 @@
             <path value="Extension.valueUnsignedInt"/>
             <min value="1"/>
             <max value="1"/>
-            <minValueInteger value="0"/>
             <maxValueInteger value="9998"/>
         </element>
         <element id="Extension.valueUnsignedInt.extension">

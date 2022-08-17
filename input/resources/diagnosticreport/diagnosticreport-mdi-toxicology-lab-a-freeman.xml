@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="diagnosticreport-mdi-toxicology-lab-a-freeman"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2022-08-16T20:20:27.818+00:00"/>
-        <source value="#3AsdtO9LHCOObL1d"/>
+        <versionId value="13"/>
+        <lastUpdated value="2022-08-17T02:41:36.325+00:00"/>
+        <source value="#xtoIAiQNAmERJ3rp"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     </meta>
     <text>
@@ -22,6 +22,10 @@
                     <tr>
                         <td>Issued</td>
                         <td> 05 January 2022 11:00:00 </td>
+                    </tr>
+                    <tr>
+                        <td>Conclusion</td>
+                        <td>Samples of bile, liver, and stomach contents were contaminated and not analyzed.</td>
                     </tr>
                 </tbody>
             </table>
@@ -132,4 +136,5 @@
         <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
         <display value="ETOH VITREOUS HUMOR: 0.133 g/dL"/>
     </result>
+    <conclusion value="Samples of bile, liver, and stomach contents were contaminated and not analyzed."/>
 </DiagnosticReport>

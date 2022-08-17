@@ -608,7 +608,7 @@
                 <display value="ValueSet - Units of Age"/>
             </reference>
             <name value="ValueSet - Units of Age"/>
-            <description value="Units of Age"/>
+            <description value="A set of codes for specifying the units used when recording age (days, years, etc.)"/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
         </resource>
@@ -658,7 +658,7 @@
                 <display value="Extension - Date Time"/>
             </reference>
             <name value="Extension - Date Time"/>
-            <description value="The time portion (DD) of the partial date. (Extension)"/>
+            <description value="The time portion (DD) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -668,7 +668,7 @@
                 <display value="Extension - Date Day"/>
             </reference>
             <name value="Extension - Date Day"/>
-            <description value="The day portion (DD) of the partial date. (Extension)"/>
+            <description value="The day portion (DD) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -678,7 +678,7 @@
                 <display value="Extension - Date Month"/>
             </reference>
             <name value="Extension - Date Month"/>
-            <description value="The month portion (MM) of the partial date. (Extension)"/>
+            <description value="The month portion (MM) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -688,7 +688,7 @@
                 <display value="Extension - Date Year"/>
             </reference>
             <name value="Extension - Date Year"/>
-            <description value="The year portion (YYYY) of the partial date. (Extension)"/>
+            <description value="The year portion (YYYY) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -698,7 +698,7 @@
                 <display value="Extension - Partial DateTime"/>
             </reference>
             <name value="Extension - Partial DateTime"/>
-            <description value="Provides values of a partial dateTime (Extension)"/>
+            <description value="Provides values of a partial dateTime"/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -796,7 +796,7 @@
                 <display value="Procedure - Death Certification"/>
             </reference>
             <name value="Procedure - Death Certification"/>
-            <description value="Death Certification Procedure (USCoreProcedure). The procedure where the certification of death was performed by the certifier (USCoreProcedure)."/>
+            <description value="This Procedure records the certification of death by the certifier."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -806,7 +806,7 @@
                 <display value="ValueSet - Certifier Types"/>
             </reference>
             <name value="ValueSet - Certifier Types"/>
-            <description value="Certifier Types Value Set."/>
+            <description value="A set of codes indicating the type of certifier (Medical Examiner/Coroner, 	Certifying physician, etc.)"/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
         </resource>
