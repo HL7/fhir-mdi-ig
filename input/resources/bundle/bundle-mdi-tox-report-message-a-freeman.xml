@@ -6,7 +6,7 @@
         <versionId value="23"/>
         <lastUpdated value="2022-08-17T00:10:33.190+00:00"/>
         <source value="#ErFFClvqDYQ3TY71"/>
-        <profile value="http://hl7.org/fhir/us/mdi/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -14,15 +14,15 @@
     </identifier>
     <type value="message"/>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/mdi/us/mdi/MessageHeader/messageheader-mdi-tox-result-report-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/MessageHeader/messageheader-mdi-tox-result-report-a-freeman"/>
         <resource>
             <MessageHeader>
                 <id value="messageheader-mdi-tox-result-report-a-freeman"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/us/mdi/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
                 </meta>
                 <eventCoding>
-                    <system value="http://hl7.org/fhir/us/mdi/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
                     <code value="tox-result-report"/>
                 </eventCoding>
                 <source>
@@ -46,14 +46,14 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/mdi/us/mdi/DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/>
         <resource>
             <DiagnosticReport>
                 <id value="diagnosticreport-mdi-toxicology-lab-a-freeman"/>
                 <text>
                     <status value="generated"/>
                 </text>
-                <extension url="http://hl7.org/fhir/us/mdi/us/mdi/StructureDefinition/Extension-tracking-number">
+                <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
                     <valueIdentifier>
                         <system value="http://florida-investigation-agncy.org/fhir/agency-case-numbers"/>
                         <value value="ME21-111"/>
@@ -62,7 +62,7 @@
                 <identifier>
                     <type>
                         <coding>
-                            <system value="http://hl7.org/fhir/us/mdi/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
                             <code value="tox-lab-case-number"/>
                         </coding>
                     </type>
@@ -162,7 +162,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/mdi/us/mdi/Patient/us-core-patient-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Patient/us-core-patient-a-freeman"/>
         <resource>
             <Patient>
                 <id value="us-core-patient-a-freeman"/>
