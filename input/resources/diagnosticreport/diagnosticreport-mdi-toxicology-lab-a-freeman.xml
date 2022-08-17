@@ -8,25 +8,6 @@
         <source value="#3AsdtO9LHCOObL1d"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <div class="hapiHeaderText"> fentaNYL and Norfentanyl panel - Specimen </div>
-            <table class="hapiPropertyTable">
-                <tbody>
-                    <tr>
-                        <td>Status</td>
-                        <td>FINAL</td>
-                    </tr>
-                    <tr>
-                        <td>Issued</td>
-                        <td> 05 January 2022 11:00:00 </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
         <valueIdentifier>
             <system value="http://florida-investigation-agncy.org/fhir/agency-case-numbers"/>
@@ -132,4 +113,6 @@
         <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
         <display value="ETOH VITREOUS HUMOR: 0.133 g/dL"/>
     </result>
+    <conclusion value="Samples of bile, liver, and stomach contents were contaminated and not analyzed.">
+    </conclusion>
 </DiagnosticReport>
