@@ -2,7 +2,7 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-tox-report-message-a-freeman"/>
     <meta>
-        <versionId value="22"/>
+        <versionId value="23"/>
         <lastUpdated value="2022-08-17T00:10:33.190+00:00"/>
         <source value="#ErFFClvqDYQ3TY71"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
