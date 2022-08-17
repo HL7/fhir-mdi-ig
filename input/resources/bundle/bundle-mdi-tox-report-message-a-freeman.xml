@@ -269,7 +269,7 @@
             <Practitioner>
                 <id value="us-core-practitioner-b-goldberger"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -293,7 +293,7 @@
             <Specimen>
                 <id value="specimen-blood-toxicology-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -349,7 +349,7 @@
             <Specimen>
                 <id value="specimen-urine-toxicology-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -390,7 +390,7 @@
             <Specimen>
                 <id value="specimen-vitreous-humor-toxicology-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -431,7 +431,7 @@
             <Specimen>
                 <id value="specimen-bile-toxicology-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -469,7 +469,7 @@
             <Specimen>
                 <id value="specimen-stomach-contents-toxicology-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -507,7 +507,7 @@
             <Specimen>
                 <id value="specimen-liver-toxicology-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -545,7 +545,7 @@
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -589,7 +589,7 @@
             <Observation>
                 <id value="us-core-lab-result-4-anpp-blood-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -629,7 +629,7 @@
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -673,7 +673,7 @@
             <Observation>
                 <id value="us-core-lab-result-fentanyl-blood-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -717,7 +717,7 @@
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -761,7 +761,7 @@
             <Observation>
                 <id value="us-core-lab-result-4-anpp-urine-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -801,7 +801,7 @@
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -841,7 +841,7 @@
             <Observation>
                 <id value="us-core-lab-result-fentanyl-urine-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -881,7 +881,7 @@
             <Observation>
                 <id value="us-core-lab-result-norfentanyl-urine-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -921,7 +921,7 @@
             <Observation>
                 <id value="us-core-lab-result-xylazine-urine-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -961,7 +961,7 @@
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
                 <meta>
-                    <profile="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
                 <text>
                     <status value="generated"/>
