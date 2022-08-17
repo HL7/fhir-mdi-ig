@@ -6,7 +6,7 @@
         <versionId value="22"/>
         <lastUpdated value="2022-08-17T00:10:33.190+00:00"/>
         <source value="#ErFFClvqDYQ3TY71"/>
-        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
+        <profile value="http://hl7.org/fhir/us/mdi/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -14,15 +14,15 @@
     </identifier>
     <type value="message"/>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/mdi/MessageHeader/messageheader-mdi-tox-result-report-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/us/mdi/MessageHeader/messageheader-mdi-tox-result-report-a-freeman"/>
         <resource>
             <MessageHeader>
                 <id value="messageheader-mdi-tox-result-report-a-freeman"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
                 </meta>
                 <eventCoding>
-                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                    <system value="http://hl7.org/fhir/us/mdi/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
                     <code value="tox-result-report"/>
                 </eventCoding>
                 <source>
@@ -46,14 +46,14 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/mdi/DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/us/mdi/DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/>
         <resource>
             <DiagnosticReport>
                 <id value="diagnosticreport-mdi-toxicology-lab-a-freeman"/>
                 <text>
                     <status value="generated"/>
                 </text>
-                <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
+                <extension url="http://hl7.org/fhir/us/mdi/us/mdi/StructureDefinition/Extension-tracking-number">
                     <valueIdentifier>
                         <system value="http://florida-investigation-agncy.org/fhir/agency-case-numbers"/>
                         <value value="ME21-111"/>
@@ -62,7 +62,7 @@
                 <identifier>
                     <type>
                         <coding>
-                            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                            <system value="http://hl7.org/fhir/us/mdi/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
                             <code value="tox-lab-case-number"/>
                         </coding>
                     </type>
@@ -162,14 +162,14 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Patient/us-core-patient-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/us/mdi/Patient/us-core-patient-a-freeman"/>
         <resource>
             <Patient>
                 <id value="us-core-patient-a-freeman"/>
                 <text>
                     <status value="generated"/>
                 </text>
-                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+                <extension url="http://hl7.org/fhir/us/mdi/us/core/StructureDefinition/us-core-race">
                     <extension url="detailed">
                         <valueCoding>
                             <system value="urn:oid:2.16.840.1.113883.6.238"/>
@@ -181,7 +181,7 @@
                         <valueString value="Asian Indian"/>
                     </extension>
                 </extension>
-                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+                <extension url="http://hl7.org/fhir/us/mdi/us/core/StructureDefinition/us-core-ethnicity">
                     <extension url="ombCategory">
                         <valueCoding>
                             <system value="urn:oid:2.16.840.1.113883.6.238"/>
@@ -218,7 +218,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Organization/us-core-organization-tox-lab"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Organization/us-core-organization-tox-lab"/>
         <resource>
             <Organization>
                 <id value="us-core-organization-tox-lab"/>
@@ -226,7 +226,7 @@
                     <versionId value="1"/>
                     <lastUpdated value="2021-12-21T21:10:44.154+00:00"/>
                     <source value="#QAkoip3ekF5aaBd2"/>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+                    <profile value="http://hl7.org/fhir/us/mdi/us/core/StructureDefinition/us-core-organization"/>
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -259,7 +259,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Practitioner/us-core-practitioner-b-goldberger"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Practitioner/us-core-practitioner-b-goldberger"/>
         <resource>
             <Practitioner>
                 <id value="us-core-practitioner-b-goldberger"/>
@@ -267,7 +267,7 @@
                     <status value="generated"/>
                 </text>
                 <identifier>
-                    <system value="http://hl7.org/fhir/sid/us-npi"/>
+                    <system value="http://hl7.org/fhir/us/mdi/sid/us-npi"/>
                     <value value="555667777"/>
                 </identifier>
                 <name>
@@ -280,7 +280,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Specimen/specimen-blood-toxicology-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Specimen/specimen-blood-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-blood-toxicology-a-freeman"/>
@@ -333,7 +333,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Specimen/specimen-urine-toxicology-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Specimen/specimen-urine-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-urine-toxicology-a-freeman"/>
@@ -371,7 +371,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Specimen/specimen-vitreous-humor-toxicology-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Specimen/specimen-vitreous-humor-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-vitreous-humor-toxicology-a-freeman"/>
@@ -409,7 +409,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Specimen/specimen-bile-toxicology-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Specimen/specimen-bile-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-bile-toxicology-a-freeman"/>
@@ -444,7 +444,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Specimen/specimen-liver-toxicology-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Specimen/specimen-liver-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-stomach-contents-toxicology-a-freeman"/>
@@ -479,7 +479,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Specimen/specimen-stomach-contents-toxicology-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Specimen/specimen-stomach-contents-toxicology-a-freeman"/>
         <resource>
             <Specimen>
                 <id value="specimen-liver-toxicology-a-freeman"/>
@@ -514,7 +514,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
@@ -555,7 +555,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Observation/us-core-lab-result-4-anpp-blood-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-4-anpp-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-blood-a-freeman"/>
@@ -592,7 +592,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Observation/us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
@@ -633,7 +633,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Observation/us-core-lab-result-fentanyl-blood-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-fentanyl-blood-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-blood-a-freeman"/>
@@ -674,7 +674,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
@@ -715,7 +715,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Observation/us-core-lab-result-4-anpp-urine-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-4-anpp-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-4-anpp-urine-a-freeman"/>
@@ -752,7 +752,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Observation/us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
@@ -789,7 +789,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Observation/us-core-lab-result-fentanyl-urine-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-fentanyl-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-fentanyl-urine-a-freeman"/>
@@ -826,7 +826,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Observation/us-core-lab-result-norfentanyl-urine-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-norfentanyl-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-norfentanyl-urine-a-freeman"/>
@@ -863,7 +863,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Observation/us-core-lab-result-xylazine-urine-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-xylazine-urine-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-xylazine-urine-a-freeman"/>
@@ -900,7 +900,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
+        <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
         <resource>
             <Observation>
                 <id value="us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
