@@ -542,14 +542,15 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
                 <meta>
+                    <versionId value="11"/>
+                    <lastUpdated value="2022-08-16T00:44:09.890+00:00"/>
+                    <source value="#lKi0lxRBL0rbkhoI"/>
                     <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                </text>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -572,11 +573,7 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
-                <valueQuantity>
-                    <value value="0.145"/>
-                    <unit value="g/dL"/>
-                    <system value="http://unitsofmeasure.org"/>
-                </valueQuantity>
+                <valueString value="0.145 g/dL"/>
                 <specimen>
                     <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
                 </specimen>
@@ -586,14 +583,15 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-4-anpp-blood-a-freeman"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="us-core-lab-result-4-anpp-blood-a-freeman"/>
                 <meta>
+                    <versionId value="10"/>
+                    <lastUpdated value="2022-08-16T00:44:09.693+00:00"/>
+                    <source value="#opUtthEWlyIl2mWC"/>
                     <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                </text>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -616,7 +614,7 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
-                <valueBoolean value="true"/>
+                <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
                 </specimen>
@@ -626,14 +624,15 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
                 <meta>
+                    <versionId value="10"/>
+                    <lastUpdated value="2022-08-16T00:44:09.849+00:00"/>
+                    <source value="#pjRim4Uyf1gj6nMO"/>
                     <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                </text>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -656,11 +655,7 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
-                <valueQuantity>
-                    <value value="2"/>
-                    <unit value="ng/mL"/>
-                    <system value="http://unitsofmeasure.org"/>
-                </valueQuantity>
+                <valueString value="2 ng/ml"/>
                 <specimen>
                     <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
                 </specimen>
@@ -670,14 +665,15 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-fentanyl-blood-a-freeman"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="us-core-lab-result-fentanyl-blood-a-freeman"/>
                 <meta>
+                    <versionId value="9"/>
+                    <lastUpdated value="2022-08-16T00:44:09.899+00:00"/>
+                    <source value="#p6Xwgen4OETJwwWD"/>
                     <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                </text>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -700,11 +696,7 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
-                <valueQuantity>
-                    <value value="23"/>
-                    <unit value="ng/mL"/>
-                    <system value="http://unitsofmeasure.org"/>
-                </valueQuantity>
+                <valueString value="23 ng/mL"/>
                 <specimen>
                     <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
                 </specimen>
@@ -714,14 +706,15 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/>
                 <meta>
+                    <versionId value="10"/>
+                    <lastUpdated value="2022-08-16T00:44:09.890+00:00"/>
+                    <source value="#dLtWokYVzZ0rdLla"/>
                     <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                </text>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -744,11 +737,7 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
-                <valueQuantity>
-                    <value value="0.16"/>
-                    <unit value="g/dL"/>
-                    <system value="http://unitsofmeasure.org"/>
-                </valueQuantity>
+                <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
                 </specimen>
@@ -758,14 +747,15 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-4-anpp-urine-a-freeman"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="us-core-lab-result-4-anpp-urine-a-freeman"/>
                 <meta>
+                    <versionId value="11"/>
+                    <lastUpdated value="2022-08-16T00:44:09.787+00:00"/>
+                    <source value="#g3mtHZM1OkBAjwVb"/>
                     <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                </text>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -788,7 +778,7 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
-                <valueBoolean value="true"/>
+                <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
                 </specimen>
@@ -798,14 +788,15 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="us-core-lab-result-acetylfentanyl-urine-a-freeman"/>
                 <meta>
+                    <versionId value="10"/>
+                    <lastUpdated value="2022-08-16T00:44:09.889+00:00"/>
+                    <source value="#k5Z5nkTqhiP5DmJB"/>
                     <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                </text>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -828,7 +819,7 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
-                <valueBoolean value="true"/>
+                <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
                 </specimen>
@@ -838,14 +829,15 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-fentanyl-urine-a-freeman"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="us-core-lab-result-fentanyl-urine-a-freeman"/>
                 <meta>
+                    <versionId value="10"/>
+                    <lastUpdated value="2022-08-16T00:44:09.899+00:00"/>
+                    <source value="#AShF0kvizcW1dt6C"/>
                     <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                </text>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -868,7 +860,7 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
-                <valueBoolean value="true"/>
+                <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
                 </specimen>
@@ -878,14 +870,15 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-norfentanyl-urine-a-freeman"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="us-core-lab-result-norfentanyl-urine-a-freeman"/>
                 <meta>
+                    <versionId value="10"/>
+                    <lastUpdated value="2022-08-16T00:44:09.931+00:00"/>
+                    <source value="#beQ4zcdJ3x7JlA0S"/>
                     <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                </text>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -908,7 +901,7 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
-                <valueBoolean value="true"/>
+                <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
                 </specimen>
@@ -918,14 +911,15 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-xylazine-urine-a-freeman"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="us-core-lab-result-xylazine-urine-a-freeman"/>
                 <meta>
+                    <versionId value="10"/>
+                    <lastUpdated value="2022-08-16T00:44:09.931+00:00"/>
+                    <source value="#xOelUWT1C1tNQ2P7"/>
                     <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                </text>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -948,7 +942,7 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
-                <valueBoolean value="true"/>
+                <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
                 </specimen>
@@ -958,14 +952,15 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/mdi/Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/>
                 <meta>
+                    <versionId value="11"/>
+                    <lastUpdated value="2022-08-16T00:33:53.392+00:00"/>
+                    <source value="#ryDgB5MsVvmyP74f"/>
                     <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                </text>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -978,21 +973,17 @@
                 <code>
                     <coding>
                         <system value="http://loinc.org"/>
-                        <code value="46983-3"/>
-                        <display value="Ethanol [Mass/volume] in Urine by Confirmatory method"/>
+                        <code value="12465-1"/>
+                        <display value="Ethanol [Mass/volume] in Vitreous fluid"/>
                     </coding>
-                    <text value="Ethanol [Mass/volume] in Urine by Confirmatory method"/>
+                    <text value="Ethanol [Mass/volume] in Vitreous fluid"/>
                 </code>
                 <subject>
                     <reference value="Patient/us-core-patient-a-freeman"/>
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
-                <valueQuantity>
-                    <value value="0.133"/>
-                    <unit value="g/dL"/>
-                    <system value="http://unitsofmeasure.org"/>
-                </valueQuantity>
+                <valueString value="0.133 g/dL"/>
                 <specimen>
                     <reference value="Specimen/specimen-vitreous-humor-toxicology-a-freeman"/>
                 </specimen>
