@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-death-certification"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-08-04T18:56:38.904+00:00"/>
-        <source value="#3RT1UwklfjoQhJ3h"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-08-17T02:51:08.837+00:00"/>
+        <source value="#hDbX8k0faaSTLfMZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
     <version value="1.9.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="Death Certification Procedure (USCoreProcedure). The procedure where the certification of death was performed by the certifier (USCoreProcedure)."/>
+    <description value="This Procedure records the certification of death by the certifier."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

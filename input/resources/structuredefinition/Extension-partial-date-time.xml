@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-partial-date-time"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-07-22T16:13:26.964+00:00"/>
-        <source value="#2d4jkbBlSu3nPnEj"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-08-17T02:49:35.628+00:00"/>
+        <source value="#17ruKA0Faqj2LCC8"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"/>
     <version value="1.0.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="Provides values of a partial dateTime (Extension)"/>
+    <description value="Provides values of a partial dateTime"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
