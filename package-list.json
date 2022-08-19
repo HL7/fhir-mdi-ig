@@ -21,7 +21,7 @@
         {
             "version": "1.0.0-ballot",
             "date": "2022-03-28",
-            "path": "http://hl7.org/fhir/us/mdi/2022MAY",
+            "path": "http://hl7.org/fhir/us/mdi/2022May",
             "desc": "MDI STU 1 Ballot",
             "fhirversion": "4.0.1",
             "status": "ballot",
