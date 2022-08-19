@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-document-mdi-to-edrs"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-03-14T06:28:19.940+00:00"/>
-        <source value="#smcyaNwQRdP9F1X9"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-08-19T13:01:42.361+00:00"/>
+        <source value="#1CMMFuF5uBRImMhz"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     <version value="0.0.1"/>
@@ -51,6 +51,7 @@
         <element id="Bundle.entry:MDItoEDRSComposition">
             <path value="Bundle.entry"/>
             <sliceName value="MDItoEDRSComposition"/>
+            <short value="The Composition of data sent from an MDI information management system to an EDRS"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>

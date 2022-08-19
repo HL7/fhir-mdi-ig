@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-death-certification"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-08-17T02:51:08.837+00:00"/>
-        <source value="#hDbX8k0faaSTLfMZ"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-08-19T12:53:02.262+00:00"/>
+        <source value="#cCS4qdCThIu43ZGY"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
     <version value="1.9.0"/>
@@ -75,6 +75,7 @@
                     <code value="103693007"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Procedure.code">
             <path value="Procedure.code"/>
@@ -84,6 +85,7 @@
                     <code value="308646001"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Procedure.performed[x]">
             <path value="Procedure.performed[x]"/>
@@ -98,6 +100,7 @@
         <element id="Procedure.performer.function">
             <path value="Procedure.performer.function"/>
             <min value="1"/>
+            <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
                 <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-certifier-types"/>
@@ -109,6 +112,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

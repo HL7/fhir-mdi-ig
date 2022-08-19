@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-contributing-cause-of-death-part2"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-07-06T01:05:08.563+00:00"/>
-        <source value="#y5qQ3CshCxcX70MY"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-08-19T12:46:11.093+00:00"/>
+        <source value="#jvLmxuVV1URdptJC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
     <version value="0.1.0"/>
@@ -54,6 +54,7 @@
                     <code value="69441-4"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
@@ -64,6 +65,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
@@ -75,6 +77,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
@@ -90,6 +93,7 @@
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.valueCodeableConcept">
             <path value="Observation.valueCodeableConcept"/>

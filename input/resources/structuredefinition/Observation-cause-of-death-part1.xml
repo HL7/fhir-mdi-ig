@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cause-of-death-part1"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2022-07-22T18:46:40.214+00:00"/>
-        <source value="#Uoc6ijcxt9qnewDs"/>
+        <versionId value="17"/>
+        <lastUpdated value="2022-08-19T12:44:40.980+00:00"/>
+        <source value="#3coVzQRGOR7iHepl"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
     <version value="1.2.1"/>
@@ -135,6 +135,7 @@
             <short value="Disease onset to death interval"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.component:interval.code">
             <path value="Observation.component.code"/>
@@ -145,6 +146,7 @@
                     <code value="69440-6"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.component:interval.value[x]">
             <path value="Observation.component.value[x]"/>
@@ -160,6 +162,7 @@
             <type>
                 <code value="string"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.component:interval.valueString">
             <path value="Observation.component.valueString"/>

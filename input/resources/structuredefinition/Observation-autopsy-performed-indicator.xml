@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-performed-indicator"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-08-13T21:21:48.177+00:00"/>
-        <source value="#bnFaLLemLlNxJBls"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-08-19T12:51:19.451+00:00"/>
+        <source value="#KkCCIM5ij8xSes3V"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
     <version value="1.9.0"/>
@@ -54,6 +54,7 @@
                     <code value="85699-7"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
@@ -62,6 +63,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
@@ -82,6 +84,7 @@
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
                 <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-yes-no-unknown"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="193"/>
-        <lastUpdated value="2022-08-16T20:31:33.328+00:00"/>
-        <source value="#UKeGX0RmwCxDZWDd"/>
+        <versionId value="195"/>
+        <lastUpdated value="2022-08-19T12:41:47.270+00:00"/>
+        <source value="#FMXVmRnC9QhCkT6J"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -305,6 +305,7 @@
         </element>
         <element id="Composition.section:jurisdiction.emptyReason">
             <path value="Composition.section.emptyReason"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:cause-manner">
             <path value="Composition.section"/>
@@ -390,6 +391,7 @@
         </element>
         <element id="Composition.section:cause-manner.emptyReason">
             <path value="Composition.section.emptyReason"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:medical-history">
             <path value="Composition.section"/>

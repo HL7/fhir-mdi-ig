@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date"/>
     <meta>
-        <versionId value="53"/>
-        <lastUpdated value="2022-08-12T13:21:41.500+00:00"/>
-        <source value="#bj7B6qa8qEHSmTwK"/>
+        <versionId value="54"/>
+        <lastUpdated value="2022-08-19T12:48:19.231+00:00"/>
+        <source value="#wbbuRsacKv3Tyn84"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     <name value="ObservationDeathDate"/>
@@ -37,6 +37,7 @@
                     <code value="81956-5"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
@@ -110,6 +111,7 @@
             <definition value="Notes about the actual or presumed date of death, e.g., the date of death can't be specified as a dateTime and can only be narrowed down to a decade"/>
             <min value="0"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.method">
             <path value="Observation.method"/>
