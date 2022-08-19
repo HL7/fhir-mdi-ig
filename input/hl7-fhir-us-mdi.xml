@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="813"/>
-        <lastUpdated value="2022-08-19T00:23:51.400+00:00"/>
-        <source value="#uyqJCakNHrDtLkd8"/>
+        <versionId value="814"/>
+        <lastUpdated value="2022-08-19T12:32:46.917+00:00"/>
+        <source value="#kEBUCuVfNYluIXA3"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0"/>
@@ -47,39 +47,39 @@
             <name value="Capability Statements"/>
             <description value="The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide. Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements."/>
         </grouping>
-        <grouping id="extensions">
-            <name value="Extensions"/>
-            <description value="Extensions defined for this implementation guide"/>
+        <grouping id="mdi-profiles">
+            <name value="MDI Profiles"/>
+            <description value="Profiles related to the MDI to EDRS data flow."/>
+        </grouping>
+        <grouping id="toxicology-profiles">
+            <name value="Toxicology Profiles"/>
+            <description value="Profiles related to the toxicology data flow."/>
         </grouping>
         <grouping id="mdi-examples">
             <name value="MDI Examples"/>
             <description value="Examples related to the MDI to EDRS data flow."/>
         </grouping>
-        <grouping id="mdi-profiles">
-            <name value="MDI Profiles"/>
-            <description value="Profiles related to the MDI to EDRS data flow."/>
-        </grouping>
-        <grouping id="other">
-            <name value="Other Parameters"/>
-            <description value="Other parameters used by this implementation guide"/>
+        <grouping id="toxicology-examples">
+            <name value="Toxicology Examples"/>
+            <description value="Examples related to the toxicology data flow."/>
         </grouping>
         <grouping id="participant-examples">
             <name value="Participant &amp; Supporting Examples"/>
             <description value="Example participants used in other examples."/>
         </grouping>
-        <grouping id="code-systems">
-            <name value="Terminology: Code Systems"/>
+        <grouping id="extensions">
+            <name value="Extensions"/>
+            <description value="Extensions defined for this implementation guide"/>
         </grouping>
         <grouping id="value-sets">
             <name value="Terminology: Value Sets"/>
         </grouping>
-        <grouping id="toxicology-examples">
-            <name value="Toxicology Examples"/>
-            <description value="Examples related to the toxicology data flow."/>
+        <grouping id="code-systems">
+            <name value="Terminology: Code Systems"/>
         </grouping>
-        <grouping id="toxicology-profiles">
-            <name value="Toxicology Profiles"/>
-            <description value="Profiles related to the toxicology data flow."/>
+        <grouping id="other">
+            <name value="Other Parameters"/>
+            <description value="Other parameters used by this implementation guide"/>
         </grouping>
         <resource>
             <reference>
