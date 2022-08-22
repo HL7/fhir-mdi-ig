@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="820"/>
-        <lastUpdated value="2022-08-22T23:33:16.757+00:00"/>
-        <source value="#wvA5CZIMIob3CU2m"/>
+        <versionId value="821"/>
+        <lastUpdated value="2022-08-22T23:50:06.261+00:00"/>
+        <source value="#rZrWH5SgJX2Hm05B"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0"/>
@@ -865,7 +865,7 @@
                 <reference value="Location/location-death-atlanta-ga-a-freeman"/>
                 <display value="Atlanta GA Death Location - Freeman"/>
             </reference>
-            <name value="Location - Death  - Atlanta GA Freeman"/>
+            <name value="Location - Death - Atlanta GA Freeman"/>
             <description value="Location - Death:  Atlanta GA Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
