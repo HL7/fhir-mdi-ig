@@ -2,3 +2,11 @@
 /fhir_validator.bat
 /validator_cli.jar
 /validation.xml
+/output
+/input-cache
+/temp
+/template
+/FHIR-us-mdi.xml
+/org.hl7.fhir.publisher.jar
+/publisher.bat
+/publisher.sh

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="814"/>
-        <lastUpdated value="2022-08-19T12:32:46.917+00:00"/>
-        <source value="#kEBUCuVfNYluIXA3"/>
+        <versionId value="820"/>
+        <lastUpdated value="2022-08-22T23:33:16.757+00:00"/>
+        <source value="#wvA5CZIMIob3CU2m"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0"/>
@@ -276,7 +276,7 @@
         <resource>
             <reference>
                 <reference value="Observation/us-core-lab-result-fentanyl-blood-a-freeman"/></reference>
-            <name value="Observation  - Toxicology Lab Result - Fentanyl Blood Freeman"/>
+            <name value="Observation - Toxicology Lab Result - Fentanyl Blood Freeman"/>
             <description value="Observation  - Toxicology Lab Result: Fentanyl Blood Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
