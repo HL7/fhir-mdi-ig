@@ -109,13 +109,14 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.note">
-            <path value="Observation.note"/>
-            <mustSupport value="true"/>
-        </element>
+
         <element id="Observation.value[x].text">
             <path value="Observation.value[x].text"/>
             <short value="Description of how injured"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.note">
+            <path value="Observation.note"/>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.component">
