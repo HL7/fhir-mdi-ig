@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Location-death"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-08-16T22:14:02.316+00:00"/>
-        <source value="#cRDi3ktFY8yD4Kc6"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-08-24T16:37:42.572+00:00"/>
+        <source value="#sK5h9mU1nw7lVdGi"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
     <name value="LocationDeath"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element to indicate that this is the location of death."/>
+    <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element to indicate that this is the location of death.&#xA;The MDI Location - Death artifact overlaps with the VRDR Death Location artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

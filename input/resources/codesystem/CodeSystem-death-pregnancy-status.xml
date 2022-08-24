@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-death-pregnancy-status"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-07-22T18:28:03.578+00:00"/>
-        <source value="#JV1mgkKQmoS16j8l"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-08-24T16:51:09.074+00:00"/>
+        <source value="#ljtxjC4tB14HagIp"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-death-pregnancy-status"/>
     <version value="0.1.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="Codes that reflect whether the decedent was pregnant at or around the time of death. Includes the concepts defined in [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003) which are from the [PHIN VS (CDC Local Coding System)[2.16.840.1.114222.4.5.274]](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274)"/>
+    <description value="Codes that reflect whether the decedent was pregnant at or around the time of death. Includes the concepts defined in [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003) which are from the [PHIN VS (CDC Local Coding System)[2.16.840.1.114222.4.5.274]](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274)&#xA;The MDI CodeSystem - Death Pregnancy Status artifact overlaps with the VRDR Pregnancy Status Codes artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

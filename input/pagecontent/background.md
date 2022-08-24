@@ -20,16 +20,16 @@ MDI information management systems vary by organization and location or jurisdic
 The scope of the current MDI implementation guide is defining FHIR resources and guidance for the following data flows:
 * Creation, search, and update of a case record between an MDI system and an EDRS via a document bundle
 * Transmission of diagnostic findings from a forensic toxicology laboratory to an MDI system via a diagnostic report and message bundle
-***The current project has place holders for sections that are expected to have more detail in later versions, such as exam-autopsy and narratives for death scene description and other use. (See Further Work below.)***
+The current project has place holders for sections that are expected to have more detail in later versions, such as exam-autopsy and narratives for death scene description and other use. (See Further Work below.)
 
 ### Relation to Other Standards
-The MDI specification supports exchange of data among organizations and agencies that contribute information to death investigations conducted by ME/Cs as well as transmission of death investigation findings from ME/Cs to the EDRS of state registrars. The Vital Records Death Reporting (VRDR) FHIR implementation guide supports reporting deaths by state registrars to the NCHS. Therefore, the data flows supported by the MDI specification are upstream of the data flows supported by the VRDR specification. While the two implementation guides serve an overlapping set of actors (e.g., EDRS) and data concepts (e.g., death date, manner of death), they do not share profiles because VRDR data elements are constrained to IJE (Inter-Jurisdictional Exchange) data elements definitions.
+The MDI specification supports exchange of data among organizations and agencies that contribute information to death investigations conducted by ME/Cs as well as transmission of death investigation findings from ME/Cs to the EDRS of state registrars. The [Vital Records Death Reporting (VRDR) FHIR implementation guide](http://hl7.org/fhir/us/vrdr/) supports reporting deaths by state registrars to the NCHS. Therefore, the data flows supported by the MDI specification are upstream of the data flows supported by the VRDR specification. While the two implementation guides serve an overlapping set of actors (e.g., EDRS) and data concepts (e.g., death date, manner of death), they do not share profiles because VRDR data elements are constrained to IJE (Inter-Jurisdictional Exchange) data elements definitions.
 
 ### Further Work
 The MDI FHIR implementation guide will continue to develop. Future work likely will include:
 * **Terminology**: Developing vocabularies and terminologies useful to the MDI domain with focus on those for forensic toxicology results 
 * **Vital Records Common Profiles Library**: Evaluating future MDI profiles and extensions for overlap with data concepts in the [Vital Records Common Profiles Library](http://hl7.org/fhir/us/vr-common-library/) and for possible inclusion in the library to better integrate mortality reporting
-* **Resources for Additional Data Flows**: Developing FHIR profiles for transactions between MDI systems and other information sources (EHR, ***autopsy facilities***, etc.) and information recipients (organ procurement organizations, etc.)
+* **Resources for Additional Data Flows**: Developing FHIR profiles for transactions between MDI systems and other information sources (EHR, autopsy facilities, etc.) and information recipients (organ procurement organizations, etc.)
 
 ### Project Team
 * **US Centers for Disease Control and Prevention (CDC), National Center for Health Statistics (NCHS)**: Kate Brett, Cynthia Bush, Alaina Gregory, Margaret Warner

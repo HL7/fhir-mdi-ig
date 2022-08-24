@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-transportation-incident-role"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-08-03T02:23:11.056+00:00"/>
-        <source value="#ppgrZliyKRXedFtH"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-08-24T16:47:39.635+00:00"/>
+        <source value="#AXlmyGVL2ObwuiMk"/>
     </meta>
     <text>
         <status value="extensions"/>
@@ -28,7 +28,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="Role of the decedent in a transportation incident resulting in a death-related injury."/>
+    <description value="Role of the decedent in a transportation incident resulting in a death-related injury.&#xA;The MDI ValueSet - Transportation Incident Role artifact overlaps with the VRDR Transportation Incident Role artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tobacco-use-contributed-to-death"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-07-22T19:02:47.904+00:00"/>
-        <source value="#q7acYDLvczRev9Bo"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-08-24T16:42:21.620+00:00"/>
+        <source value="#tfsoUKLNx2TTsE7L"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
     <version value="1.0"/>
     <name value="ObservationTobaccoUseContributedToDeath"/>
     <title value="Observation - Tobacco Use Contributed to Death"/>
     <status value="draft"/>
-    <description value="This Observation provides the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent."/>
+    <description value="This Observation provides the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent.&#xA;The MDI Observation - Tobacco Use Contributed to Death artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -25,7 +25,6 @@
         </element>
         <element id="Observation.id">
             <path value="Observation.id"/>
-            <short value="id"/>
             <min value="0"/>
             <max value="1"/>
         </element>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-time"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-08-17T02:49:03.532+00:00"/>
-        <source value="#zg28KErO2xruBDmz"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-08-24T16:36:12.221+00:00"/>
+        <source value="#cjcB850z0QV1DQo4"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-time"/>
     <version value="1.3.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="The time portion (DD) of the partial date."/>
+    <description value="The time portion (DD) of the partial date.&#xA;The MDI Extension - Date Time artifact overlaps with the VRDR Date Time artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

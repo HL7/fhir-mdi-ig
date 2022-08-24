@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-yes-no-unknown-not-applicable"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-08-02T18:35:41.756+00:00"/>
-        <source value="#HHiZ7tVAQXIsKqkc"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-08-24T16:50:24.732+00:00"/>
+        <source value="#378bkNU5QybBzfTp"/>
     </meta>
     <text>
         <status value="extensions"/>
@@ -95,7 +95,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Valueset with Yes, No, Unknown, and Not Applicable."/>
+    <description value="Valueset with Yes, No, Unknown, and Not Applicable.&#xA;The MDI ValueSet - Yes No Unknown NotApplicable artifact overlaps with the VRDR Yes No Unknown NotApplicable artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

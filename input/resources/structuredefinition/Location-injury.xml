@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Location-injury"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-08-16T22:25:30.245+00:00"/>
-        <source value="#4QIHzqjNKDzY3IUc"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-08-24T16:38:04.383+00:00"/>
+        <source value="#0ITVWFLjOGOsNs8L"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
     <name value="LocationInjury"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury."/>
+    <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury.&#xA;The MDI Location - Injury artifact overlaps with the VRDR Injury Location artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

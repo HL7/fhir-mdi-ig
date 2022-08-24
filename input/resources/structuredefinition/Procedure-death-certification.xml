@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-death-certification"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-08-19T12:53:02.262+00:00"/>
-        <source value="#cCS4qdCThIu43ZGY"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-08-24T16:42:54.320+00:00"/>
+        <source value="#lkhMfqjAhEYkdYUK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
     <version value="1.9.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="This Procedure records the certification of death by the certifier."/>
+    <description value="This Procedure records the certification of death by the certifier.&#xA;The MDI Procedure - Death Certification artifact overlaps with the VRDR Death Certification Procedure artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-yes-no-unknown"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-08-05T00:12:22.502+00:00"/>
-        <source value="#mV4pSVPZtOFjv0wy"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-08-24T16:49:59.362+00:00"/>
+        <source value="#PT7kcMfB8l4nnI2D"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-yes-no-unknown"/>
     <version value="1.9.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="Value set with Yes, No and Unknown."/>
+    <description value="Value set with Yes, No and Unknown.&#xA;The MDI ValueSet - Yes No Unknown artifact overlaps with the VRDR Yes No Unknown artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

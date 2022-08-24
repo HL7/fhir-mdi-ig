@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="821"/>
-        <lastUpdated value="2022-08-22T23:50:06.261+00:00"/>
-        <source value="#rZrWH5SgJX2Hm05B"/>
+        <versionId value="840"/>
+        <lastUpdated value="2022-08-24T18:41:23.296+00:00"/>
+        <source value="#C9QdD7rKFsI7b1vi"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.0.0"/>
@@ -49,7 +49,7 @@
         </grouping>
         <grouping id="mdi-profiles">
             <name value="MDI Profiles"/>
-            <description value="Profiles related to the MDI to EDRS data flow."/>
+            <description value="Profiles related to the MDI to EDRS data flow. &#xA;Many MDI Profiles overlap with artifacts found in the [Vital Records Death Reporting (VRDR) FHIR implementation guide](http://hl7.org/fhir/us/vrdr/). Definitions here note those relationships. See also [Background](background.html), Relation to Other Standards section."/>
         </grouping>
         <grouping id="toxicology-profiles">
             <name value="Toxicology Profiles"/>
@@ -184,7 +184,7 @@
                 <display value="Observation - Cause Of Death Part 1"/>
             </reference>
             <name value="Observation - Cause of Death Part 1"/>
-            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text."/>
+            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text.&#xA;The MDI Observation - Cause of Death Part 1 artifact overlaps with the VRDR Cause Of Death Part 1 artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -223,7 +223,7 @@
                 <display value="Observation - Contributing Cause of Death Part 2"/>
             </reference>
             <name value="Observation - Contributing Cause of Death Part 2"/>
-            <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
+            <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier.&#xA;The MDI Observation - Contributing Cause of Death Part 2 artifact overlaps with the VRDR Cause of Death Part 2 artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -233,7 +233,7 @@
                 <display value="Observation - Death Date"/>
             </reference>
             <name value="Observation - Death Date"/>
-            <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
+            <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period.&#xA;The MDI Observation - Death Date artifact overlaps with the VRDR Death Date artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -288,7 +288,7 @@
                 <display value="Observation - How Death Injury Occurred"/>
             </reference>
             <name value="Observation - How Death Injury Occurred"/>
-            <description value="This Observation provides the certified explanation of how the injury leading to death occurred."/>
+            <description value="This Observation provides the certified explanation of how the injury leading to death occurred.&#xA;The MDI Observation - How Death Injury Occurred artifact overlaps with the VRDR Injury Incident artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -298,7 +298,7 @@
                 <display value="Observation - Manner of Death"/>
             </reference>
             <name value="Observation - Manner of Death"/>
-            <description value="This Observation provides the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident)."/>
+            <description value="This Observation provides the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident).&#xA;The MDI Observation - Manner of Death artifact overlaps with the VRDR Manner of Death artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -308,7 +308,7 @@
                 <display value="Observation - Decedent Pregnancy"/>
             </reference>
             <name value="Observation - Decedent Pregnancy"/>
-            <description value="This Observation provides an indication of the pregnancy status of the decedent."/>
+            <description value="This Observation provides an indication of the pregnancy status of the decedent.&#xA;The MDI Observation - Decedent Pregnancy artifact overlaps with the VRDR Decedent Pregnancy Status artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -318,7 +318,7 @@
                 <display value="Observation Tobacco Use Contributed To Death"/>
             </reference>
             <name value="Observation - Tobacco Use Contributed to Death"/>
-            <description value="This Observation provides the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent."/>
+            <description value="This Observation provides the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent.&#xA;The MDI Observation - Tobacco Use Contributed to Death artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -548,7 +548,7 @@
                 <display value="CodeSystem - Death Pregnancy Status"/>
             </reference>
             <name value="CodeSystem - Death Pregnancy Status"/>
-            <description value="Codes that reflect whether the decedent was pregnant at or around the time of death. Includes the concepts defined in [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003) which are from the [PHIN VS (CDC Local Coding System)[2.16.840.1.114222.4.5.274]](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274)"/>
+            <description value="Codes that reflect whether the decedent was pregnant at or around the time of death. Includes the concepts defined in [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003) which are from the [PHIN VS (CDC Local Coding System)[2.16.840.1.114222.4.5.274]](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274)&#xA;The MDI CodeSystem - Death Pregnancy Status artifact overlaps with the VRDR Pregnancy Status Codes artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="code-systems"/>
         </resource>
@@ -558,7 +558,17 @@
                 <display value="ValueSet -Contributory Tobbaco Use"/>
             </reference>
             <name value="ValueSet - Contributory Tobacco Use"/>
-            <description value="A set of codes that reflect the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004)"/>
+            <description value="A set of codes that reflect the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004).&#xA;The MDI ValueSet - Contributory Tobacco Use artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-certifier-types"/>
+                <display value="ValueSet - Certifier Types"/>
+            </reference>
+            <name value="ValueSet - Certifier Types"/>
+            <description value="A set of codes indicating the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
         </resource>
@@ -568,7 +578,7 @@
                 <display value="ValueSet - Date Establishment Approach"/>
             </reference>
             <name value="ValueSet - Date Establishment Approach"/>
-            <description value="This value set contains codes that describe the approach to establishing a date."/>
+            <description value="This value set contains codes that describe the approach to establishing a date.&#xA;The MDI ValueSet - Date Establishment Approach artifact overlaps with the VRDR Date of Death Determination Methods Value Set artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
         </resource>
@@ -578,7 +588,7 @@
                 <display value="ValueSet - Death Pregnancy Status"/>
             </reference>
             <name value="ValueSet - Death Pregnancy Status"/>
-            <description value="A set of codes that reflect whether the decedent was pregnant at or around the time of death. Based on [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003)"/>
+            <description value="A set of codes that reflect whether the decedent was pregnant at or around the time of death. Based on [Pregnancy Status (NCHS)[2.16.840.1.114222.4.11.6003]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6003).&#xA;The MDI ValueSet - Death Pregnancy Status artifact overlaps with the VRDR Pregnancy Status artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
         </resource>
@@ -588,7 +598,17 @@
                 <display value="ValueSet - Manner of Death"/>
             </reference>
             <name value="ValueSet - Manner of Death"/>
-            <description value="A set of codes to reflect the manner that a person died."/>
+            <description value="A set of codes to reflect the manner that a person died.&#xA;The MDI ValueSet - Manner of Death artifact overlaps with the VRDR Manner of Death VS artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-place-of-death"/>
+                <display value="ValueSet - Place of Death"/>
+            </reference>
+            <name value="ValueSet - Place of Death"/>
+            <description value="Code values reflecting the death location of the decedent (e.g., hospital, home, hospice).&#xA;The MDI ValueSet - Place of Death artifact overlaps with the VRDR Place of Death VS -- PHVS_PlaceOfDeath_NCHS artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
         </resource>
@@ -599,26 +619,6 @@
             </reference>
             <name value="ValueSet - Tracking Number Type"/>
             <description value="This value set contains codes to that identify the type of tracking number."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="value-sets"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-units-of-age"/>
-                <display value="ValueSet - Units of Age"/>
-            </reference>
-            <name value="ValueSet - Units of Age"/>
-            <description value="A set of codes for specifying the units used when recording age (days, years, etc.)"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="value-sets"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-yes-no-not-applicable"/>
-                <display value="ValueSet - Yes, No, Not Applicable"/>
-            </reference>
-            <name value="ValueSet - Yes, No, Not Applicable"/>
-            <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
         </resource>
@@ -644,6 +644,26 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/ValueSet-transportation-incident-role"/>
+                <display value="Transportation Incident Role"/>
+            </reference>
+            <name value="ValueSet - Transportation Incident Role"/>
+            <description value="Role of the decedent in a transportation incident resulting in a death-related injury.&#xA;The MDI ValueSet - Transportation Incident Role artifact overlaps with the VRDR Transportation Incident Role artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-units-of-age"/>
+                <display value="ValueSet - Units of Age"/>
+            </reference>
+            <name value="ValueSet - Units of Age"/>
+            <description value="A set of codes for specifying the units used when recording age (days, years, etc.).&#xA;The MDI ValueSet - Units of Age artifact overlaps with the VRDR Units of Age artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="MessageDefinition/MessageDefinition-toxicology-system"/>
                 <display value="MessageDefinition-toxicology-system"/>
             </reference>
@@ -654,11 +674,21 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/ValueSet-yes-no-unknown"/>
+                <display value="ValueSet - Yes No Unknown"/>
+            </reference>
+            <name value="ValueSet - Yes No Unknown"/>
+            <description value="Value set with Yes, No and Unknown.&#xA;The MDI ValueSet - Yes No Unknown artifact overlaps with the VRDR Yes No Unknown artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Extension-date-time"/>
                 <display value="Extension - Date Time"/>
             </reference>
             <name value="Extension - Date Time"/>
-            <description value="The time portion (DD) of the partial date."/>
+            <description value="The time portion (DD) of the partial date.&#xA;The MDI Extension - Date Time artifact overlaps with the VRDR Date Time artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -668,7 +698,7 @@
                 <display value="Extension - Date Day"/>
             </reference>
             <name value="Extension - Date Day"/>
-            <description value="The day portion (DD) of the partial date."/>
+            <description value="The day portion (DD) of the partial date.&#xA;The MDI Extension - Date Day artifact overlaps with the VRDR Date Day artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -678,9 +708,29 @@
                 <display value="Extension - Date Month"/>
             </reference>
             <name value="Extension - Date Month"/>
-            <description value="The month portion (MM) of the partial date."/>
+            <description value="The month portion (MM) of the partial date.&#xA;The MDI Extension - Date Month artifact overlaps with the VRDR Date Month artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
+                <display value="Yes No Unknown NotApplicable"/>
+            </reference>
+            <name value="ValueSet - Yes No Unknown NotApplicable"/>
+            <description value="Valueset with Yes, No, Unknown, and Not Applicable.&#xA;The MDI ValueSet - Yes No Unknown NotApplicable artifact overlaps with the VRDR Yes No Unknown NotApplicable artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-yes-no-not-applicable"/>
+                <display value="ValueSet - Yes, No, Not Applicable"/>
+            </reference>
+            <name value="ValueSet - Yes, No, Not Applicable"/>
+            <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -688,7 +738,7 @@
                 <display value="Extension - Date Year"/>
             </reference>
             <name value="Extension - Date Year"/>
-            <description value="The year portion (YYYY) of the partial date."/>
+            <description value="The year portion (YYYY) of the partial date.&#xA;The MDI Extension - Date Year artifact overlaps with the VRDR Date Year artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -698,19 +748,9 @@
                 <display value="Extension - Partial DateTime"/>
             </reference>
             <name value="Extension - Partial DateTime"/>
-            <description value="Provides values of a partial dateTime"/>
+            <description value="Provides values of a partial dateTime&#xA;The MDI Extension - Partial DateTime artifact overlaps with the VRDR Partial Date Time artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-place-of-death"/>
-                <display value="ValueSet - Place of Death"/>
-            </reference>
-            <name value="ValueSet - Place of Death"/>
-            <description value="Code values reflecting the death location of the decedent (e.g., hospital, home, hospice)."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -718,29 +758,9 @@
                 <display value="Local Component Codes"/>
             </reference>
             <name value="CodeSystem - Local Component Codes"/>
-            <description value="Local Component Codes for observation components that lack an appropriate LOINC code"/>
+            <description value="Local Component Codes for observation components that lack an appropriate LOINC code.&#xA;The MDI CodeSystem - Local Component Codes artifact overlaps with the VRDR Local Component Codes artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="code-systems"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
-                <display value="Yes No Unknown NotApplicable"/>
-            </reference>
-            <name value="ValueSet - Yes No Unknown NotApplicable"/>
-            <description value="Valueset with Yes, No, Unknown, and Not Applicable."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="value-sets"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-transportation-incident-role"/>
-                <display value="Transportation Incident Role"/>
-            </reference>
-            <name value="ValueSet - Transportation Incident Role"/>
-            <description value="Role of the decedent in a transportation incident resulting in a death-related injury."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -786,7 +806,7 @@
                 <display value="Observation - Autopsy Performed Indicator"/>
             </reference>
             <name value="Observation - Autopsy Performed Indicator"/>
-            <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."/>
+            <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner).&#xA;The MDI Observation - Autopsy Performed Indicator artifact overlaps with the VRDR Autopsy Performed Indicator artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -796,29 +816,9 @@
                 <display value="Procedure - Death Certification"/>
             </reference>
             <name value="Procedure - Death Certification"/>
-            <description value="This Procedure records the certification of death by the certifier."/>
+            <description value="This Procedure records the certification of death by the certifier.&#xA;The MDI Procedure - Death Certification artifact overlaps with the VRDR Death Certification Procedure artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-certifier-types"/>
-                <display value="ValueSet - Certifier Types"/>
-            </reference>
-            <name value="ValueSet - Certifier Types"/>
-            <description value="A set of codes indicating the type of certifier (Medical Examiner/Coroner, 	Certifying physician, etc.)"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="value-sets"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-yes-no-unknown"/>
-                <display value="ValueSet - Yes No Unknown"/>
-            </reference>
-            <name value="ValueSet - Yes No Unknown"/>
-            <description value="Value set with Yes, No and Unknown."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -846,7 +846,7 @@
                 <display value="Location - Death"/>
             </reference>
             <name value="Location - Death"/>
-            <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element to indicate that this is the location of death."/>
+            <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element to indicate that this is the location of death.&#xA;The MDI Location - Death artifact overlaps with the VRDR Death Location artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -856,7 +856,7 @@
                 <display value="Location - Injury"/>
             </reference>
             <name value="Location - Injury"/>
-            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury."/>
+            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury.&#xA;The MDI Location - Injury artifact overlaps with the VRDR Injury Location artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>

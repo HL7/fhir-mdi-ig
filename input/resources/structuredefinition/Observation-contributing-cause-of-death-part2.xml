@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-contributing-cause-of-death-part2"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-08-19T12:46:11.093+00:00"/>
-        <source value="#jvLmxuVV1URdptJC"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-08-24T16:39:49.100+00:00"/>
+        <source value="#KpcOI7NGOtyvG60Y"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
     <version value="0.1.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
+    <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier.&#xA;The MDI Observation - Contributing Cause of Death Part 2 artifact overlaps with the VRDR Cause of Death Part 2 artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

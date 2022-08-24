@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-performed-indicator"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-08-19T12:51:19.451+00:00"/>
-        <source value="#KkCCIM5ij8xSes3V"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-08-24T16:38:46.078+00:00"/>
+        <source value="#CYHqB1U0DYCF3jzg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
     <version value="1.9.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner)."/>
+    <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner).&#xA;The MDI Observation - Autopsy Performed Indicator artifact overlaps with the VRDR Autopsy Performed Indicator artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

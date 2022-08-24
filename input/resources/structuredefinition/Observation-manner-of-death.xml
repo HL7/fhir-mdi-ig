@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-manner-of-death"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2022-07-22T17:41:31.357+00:00"/>
-        <source value="#kfmd6tVl3hlFicOD"/>
+        <versionId value="19"/>
+        <lastUpdated value="2022-08-24T16:41:56.685+00:00"/>
+        <source value="#iY6aO7UtjwjPARKh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
     <version value="1.0"/>
     <name value="ObservationMannerOfDeath"/>
     <title value="Observation - Manner of Death"/>
     <status value="draft"/>
-    <description value="This Observation provides the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident)."/>
+    <description value="This Observation provides the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident).&#xA;The MDI Observation - Manner of Death artifact overlaps with the VRDR Manner of Death artifact."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -70,8 +70,9 @@
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
-            <label value="Manner of death certifier (coroner or medical examiner)"/>
-            <short value="Manner of death certifier (coroner or medical examiner)"/>
+            <label value="Manner of death certifier"/>
+            <short value="Manner of death certifier"/>
+            <definition value="Manner of death certifier"/>
             <min value="1"/>
             <max value="1"/>
             <type>

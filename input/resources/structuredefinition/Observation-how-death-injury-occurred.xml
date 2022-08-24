@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-how-death-injury-occurred"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2022-08-15T16:51:05.617+00:00"/>
-        <source value="#31RaJkBC2pdSHdG6"/>
+        <versionId value="17"/>
+        <lastUpdated value="2022-08-24T17:14:24.330+00:00"/>
+        <source value="#ECMWuixizeQaOcgZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     <version value="0.1.0"/>
@@ -19,7 +19,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This Observation provides the certified explanation of how the injury leading to death occurred."/>
+    <description value="This Observation provides the certified explanation of how the injury leading to death occurred.&#xA;The MDI Observation - How Death Injury Occurred artifact overlaps with the VRDR Injury Incident artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -107,6 +107,10 @@
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.note">
+            <path value="Observation.note"/>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x].text">
