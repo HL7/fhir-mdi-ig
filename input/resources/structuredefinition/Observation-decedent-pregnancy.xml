@@ -3,17 +3,17 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-decedent-pregnancy"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-08-24T16:40:49.467+00:00"/>
-        <source value="#bbnvDlIaEwpvlhw8"/>
+        <versionId value="12"/>
+        <lastUpdated value="2022-08-25T21:17:45.435+00:00"/>
+        <source value="#JWu3RdUPK1IBP1pj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
     <version value="1.0"/>
     <name value="ObservationDecedentPregnancy"/>
     <title value="Observation - Decedent Pregnancy"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
-    <date value="2020-05-10"/>
+    <date value="2022-08-25"/>
     <publisher value="Health Level Seven"/>
     <description value="This Observation provides an indication of the pregnancy status of the decedent.&#xA;The MDI Observation - Decedent Pregnancy artifact overlaps with the VRDR Decedent Pregnancy Status artifact."/>
     <fhirVersion value="4.0.1"/>

@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-manner-of-death"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2022-08-24T16:41:56.685+00:00"/>
-        <source value="#iY6aO7UtjwjPARKh"/>
+        <versionId value="20"/>
+        <lastUpdated value="2022-08-25T21:16:53.359+00:00"/>
+        <source value="#uEIFoKAUmqqZfQm7"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
     <version value="1.0"/>
     <name value="ObservationMannerOfDeath"/>
     <title value="Observation - Manner of Death"/>
-    <status value="draft"/>
+    <status value="active"/>
+    <date value="2022-08-25"/>
     <description value="This Observation provides the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident).&#xA;The MDI Observation - Manner of Death artifact overlaps with the VRDR Manner of Death artifact."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
