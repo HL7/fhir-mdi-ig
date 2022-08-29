@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tobacco-use-contributed-to-death"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2022-08-25T21:19:23.274+00:00"/>
-        <source value="#Uj8jDdnX3bEx9Pvm"/>
+        <versionId value="13"/>
+        <lastUpdated value="2022-08-29T18:20:11.710+00:00"/>
+        <source value="#jz2Q67tHF0ywVux3"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
     <version value="1.0"/>
@@ -31,7 +31,6 @@
         </element>
         <element id="Observation.status">
             <path value="Observation.status"/>
-            <short value="status"/>
             <min value="1"/>
             <max value="1"/>
             <type>
