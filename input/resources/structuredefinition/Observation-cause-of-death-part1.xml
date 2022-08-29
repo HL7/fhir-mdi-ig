@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cause-of-death-part1"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2022-08-24T16:39:21.215+00:00"/>
-        <source value="#OnWgKndZv0ms3zU8"/>
+        <versionId value="20"/>
+        <lastUpdated value="2022-08-29T16:28:36.228+00:00"/>
+        <source value="#HHUOFmYEbcmVX0bk"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
     <version value="1.2.1"/>
@@ -121,12 +121,18 @@
         </element>
         <element id="Observation.component:lineNumber.value[x]">
             <path value="Observation.component.value[x]"/>
-            <short value="lineNumber"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
             <min value="1"/>
             <type>
                 <code value="integer"/>
             </type>
-            <maxLength value="20"/>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.component:interval">
