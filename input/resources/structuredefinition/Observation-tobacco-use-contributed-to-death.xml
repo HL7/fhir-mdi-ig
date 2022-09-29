@@ -41,13 +41,12 @@
         <element id="Observation.code">
             <path value="Observation.code"/>
             <short value="Did tobacco use contribute to death"/>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="69443-0"/>
-                    <display value="Did tobacco use contribute to death"/>
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.subject">
