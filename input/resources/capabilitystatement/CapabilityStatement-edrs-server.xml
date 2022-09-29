@@ -7,7 +7,7 @@
         <lastUpdated value="2022-08-03T02:41:23.074+00:00"/>
         <source value="#4W49N8hIVJELxUOg"/>
     </meta>
-    <url value="https://fhir.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-edrs-server"/>
+    <url value="http://fhir.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-edrs-server"/>
     <version value="1.0.0"/>
     <name value="CapabilityStatementEDRSServer"/>
     <title value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>

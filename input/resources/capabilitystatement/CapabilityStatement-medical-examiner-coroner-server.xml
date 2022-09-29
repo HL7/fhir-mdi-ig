@@ -7,7 +7,7 @@
         <lastUpdated value="2022-08-03T02:41:23.074+00:00"/>
         <source value="#2zQbOJJ45RZMgbyE"/>
     </meta>
-    <url value="https://fhir.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-medical-examiner-coroner-server"/>
+    <url value="http://fhir.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-medical-examiner-coroner-server"/>
     <version value="1.0.0"/>
     <name value="CapabilityStatementMedicalExaminerCoronerServer"/>
     <title value="CapabilityStatement - Medical Examiner/Coroner Server"/>
