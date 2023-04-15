@@ -6,5 +6,5 @@
 	"desc": "Continuous Integration Build (latest in version control)",
 	"path": "http://build.fhir.org/ig/HL7/fhir-mdi-ig",
 	"status": "draft",
-	"sequence": "STU 1"
+	"sequence": "STU 1.1"
 }

@@ -3,26 +3,22 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cause-of-death-part1"/>
     <meta>
-        <versionId value="21"/>
-        <lastUpdated value="2022-08-29T17:56:52.975+00:00"/>
-        <source value="#qWtz89F6OsmAPAuB"/>
+        <versionId value="24"/>
+        <lastUpdated value="2023-04-14T19:53:13.632+00:00"/>
+        <source value="#TuKjqD9yJTg5szW2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
-    <version value="1.2.1"/>
+    <version value="1.0.0"/>
     <name value="ObservationCauseOfDeathPart1"/>
     <title value="Observation - Cause of Death Part 1"/>
     <status value="active"/>
     <date value="2022-02-27T13:48:44+00:00"/>
-    <publisher value="HL7 Public Health Working Group"/>
+    <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
     <contact>
-        <name value="HL7 Public Health Working Group"/>
+        <name value="HL7 International - Public Health"/>
         <telecom>
             <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="pher@lists.HL7.org"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
     <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text.&#xA;The MDI Observation - Cause of Death Part 1 artifact overlaps with the VRDR Cause Of Death Part 1 artifact."/>
@@ -30,7 +26,9 @@
         <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
+            <display value="United States of America"/>
         </coding>
+        <text value="United States of America"/>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>

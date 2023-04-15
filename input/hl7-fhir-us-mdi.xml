@@ -3,17 +3,17 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="846"/>
-        <lastUpdated value="2022-08-29T17:27:24.859+00:00"/>
-        <source value="#xMyn0Gq9kWsVDIFk"/>
+        <versionId value="876"/>
+        <lastUpdated value="2023-04-14T20:51:23.333+00:00"/>
+        <source value="#uM1bygY1QQ0Scxx7"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
-    <version value="1.0.0"/>
+    <version value="1.1.0-for-comment"/>
     <name value="MedicolegalDeathInvestigation"/>
     <title value="Medicolegal Death Investigation (MDI)"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2022-08-25"/>
+    <date value="2023-04-14"/>
     <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -181,16 +181,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-cause-of-death-part1"/>
-                <display value="Observation - Cause Of Death Part 1"/>
-            </reference>
-            <name value="Observation - Cause of Death Part 1"/>
-            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text.&#xA;The MDI Observation - Cause of Death Part 1 artifact overlaps with the VRDR Cause Of Death Part 1 artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Bundle/bundle-mdi-to-edrs-a-freeman"/></reference>
             <name value="Bundle - MDI to EDRS - Freeman"/>
             <description value="Bundle - MDI to EDRS: Freeman example"/>
@@ -221,10 +211,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-contributing-cause-of-death-part2"/>
-                <display value="Observation - Contributing Cause of Death Part 2"/>
+                <display value="Observation - Contributing Cause of Death Part 2 Vital Records"/>
             </reference>
             <name value="Observation - Contributing Cause of Death Part 2"/>
-            <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier.&#xA;The MDI Observation - Contributing Cause of Death Part 2 artifact overlaps with the VRDR Cause of Death Part 2 artifact."/>
+            <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -689,27 +679,27 @@
                 <display value="Extension - Date Time"/>
             </reference>
             <name value="Extension - Date Time"/>
-            <description value="The time portion (DD) of the partial date.&#xA;The MDI Extension - Date Time artifact overlaps with the VRDR Date Time artifact."/>
+            <description value="The time portion (DD) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-date-day"/>
-                <display value="Extension - Date Day"/>
+                <display value="Extension - Date Day Vital Records"/>
             </reference>
             <name value="Extension - Date Day"/>
-            <description value="The day portion (DD) of the partial date.&#xA;The MDI Extension - Date Day artifact overlaps with the VRDR Date Day artifact."/>
+            <description value="The day portion (DD) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-date-month"/>
-                <display value="Extension - Date Month"/>
+                <display value="Extension - Date Month Vital Records"/>
             </reference>
             <name value="Extension - Date Month"/>
-            <description value="The month portion (MM) of the partial date.&#xA;The MDI Extension - Date Month artifact overlaps with the VRDR Date Month artifact."/>
+            <description value="The month portion (MM) of the partial date."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -746,10 +736,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-partial-date-time"/>
-                <display value="Extension - Partial DateTime"/>
+                <display value="Extension - Partial DateTime Vital Records"/>
             </reference>
             <name value="Extension - Partial DateTime"/>
-            <description value="Provides values of a partial dateTime&#xA;The MDI Extension - Partial DateTime artifact overlaps with the VRDR Partial Date Time artifact."/>
+            <description value="Provides values of a partial dateTime"/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -814,10 +804,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Procedure-death-certification"/>
-                <display value="Procedure - Death Certification"/>
+                <display value="Procedure - Death Certification Vital Records"/>
             </reference>
             <name value="Procedure - Death Certification"/>
-            <description value="This Procedure records the certification of death by the certifier.&#xA;The MDI Procedure - Death Certification artifact overlaps with the VRDR Death Certification Procedure artifact."/>
+            <description value="This Procedure records the certification of death by the certifier."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -844,20 +834,20 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Location-death"/>
-                <display value="Location - Death"/>
+                <display value="Location - Death Vital Records"/>
             </reference>
             <name value="Location - Death"/>
-            <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element to indicate that this is the location of death.&#xA;The MDI Location - Death artifact overlaps with the VRDR Death Location artifact."/>
+            <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element to indicate that this is the location of death."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Location-injury"/>
-                <display value="Location - Injury"/>
+                <display value="Location - Injury Vital Records"/>
             </reference>
             <name value="Location - Injury"/>
-            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury.&#xA;The MDI Location - Injury artifact overlaps with the VRDR Injury Location artifact."/>
+            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -882,6 +872,16 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
             <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-cause-of-death-part1"/>
+                <display value="Observation - Cause of Death Part 1"/>
+            </reference>
+            <name value="Observation - Cause of Death Part 1"/>
+            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text.&#xA;The MDI Observation - Cause of Death Part 1 artifact overlaps with the VRDR Cause Of Death Part 1 artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

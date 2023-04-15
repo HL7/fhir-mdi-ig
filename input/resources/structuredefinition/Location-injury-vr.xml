@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Location-injury"/>
+    <id value="Location-injury-vr"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2023-04-14T20:42:24.371+00:00"/>
-        <source value="#13RG85Nb4Y0A9dj0"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-04-07T01:18:21.982+00:00"/>
+        <source value="#uXA7xtLkZhGawzLj"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
-    <version value="1.0.0"/>
-    <name value="LocationInjury"/>
-    <title value="Location - Injury"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Location-injury-vr"/>
+    <name value="LocationInjuryVitalRecords"/>
+    <title value="Location - Injury Vital Records"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-04-20"/>
@@ -48,7 +47,7 @@
             <max value="1"/>
             <patternCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                    <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-death-reporting-codes-vr"/>
                     <code value="injury"/>
                 </coding>
             </patternCodeableConcept>

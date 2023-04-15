@@ -3,16 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-day"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-08-24T16:35:11.359+00:00"/>
-        <source value="#hLRz6K57FLvMPnsX"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-04-14T20:19:39.112+00:00"/>
+        <source value="#FlYbxKuSpq4aRYF7"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-day"/>
-    <version value="1.3.0"/>
+    <version value="1.0.0"/>
     <name value="ExtensionDateDay"/>
     <title value="Extension - Date Day"/>
     <status value="active"/>
-    <date value="2022-07-13T19:21:56+00:00"/>
     <publisher value="HL7 Public Health Working Group"/>
     <contact>
         <name value="HL7 Public Health Working Group"/>
@@ -25,7 +24,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="The day portion (DD) of the partial date.&#xA;The MDI Extension - Date Day artifact overlaps with the VRDR Date Day artifact."/>
+    <description value="The day portion (DD) of the partial date."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -42,7 +41,15 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Element"/>
+        <expression value="date"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="dateTime"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Extension"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

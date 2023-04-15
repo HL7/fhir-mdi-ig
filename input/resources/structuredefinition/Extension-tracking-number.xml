@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-tracking-number"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2022-08-25T21:22:19.394+00:00"/>
-        <source value="#cvIcksZJHrcB5pYE"/>
+        <versionId value="13"/>
+        <lastUpdated value="2023-04-14T19:33:20.488+00:00"/>
+        <source value="#zfpDekrt73bMNEUX"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
-    <version value="1.0"/>
+    <version value="1.0.0"/>
     <name value="ExtensionTrackingNumber"/>
     <title value="Extension - Tracking Number"/>
     <status value="active"/>

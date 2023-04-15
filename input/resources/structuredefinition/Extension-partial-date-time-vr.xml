@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Extension-partial-date-time"/>
+    <id value="Extension-partial-date-time-vr"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2023-04-14T20:25:08.047+00:00"/>
-        <source value="#5HoKqAbosGBMzY3t"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-04-07T02:05:09.578+00:00"/>
+        <source value="#JLvWqWWggT29WjTZ"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr"/>
     <version value="1.0.0"/>
-    <name value="ExtensionPartialDateTime"/>
-    <title value="Extension - Partial DateTime"/>
+    <name value="ExtensionPartialDateTimeVitalRecords"/>
+    <title value="Extension - Partial DateTime Vital Records"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Working Group"/>
     <contact>
@@ -69,7 +69,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-year"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-year-vr"/>
             </type>
         </element>
         <element id="Extension.extension:month">
@@ -81,7 +81,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-month"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-month-vr"/>
             </type>
         </element>
         <element id="Extension.extension:day">
@@ -93,7 +93,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-day"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-day-vr"/>
             </type>
         </element>
         <element id="Extension.extension:time">
@@ -105,12 +105,12 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-time"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-date-time-vr"/>
             </type>
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"/>
+            <fixedUri value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

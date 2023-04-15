@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="CapabilityStatement-edrs-server"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-09-29T22:47:44.769+00:00"/>
-        <source value="#Hk2bg1oqGx2YUAr0"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-04-14T18:46:54.036+00:00"/>
+        <source value="#2jw7ngwDxoNUZg4q"/>
     </meta>
-    <url value="http://fhir.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-edrs-server"/>
+    <url value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-edrs-server"/>
     <version value="1.0.0"/>
     <name value="CapabilityStatementEDRSServer"/>
     <title value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>

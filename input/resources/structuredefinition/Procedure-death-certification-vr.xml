@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Procedure-death-certification"/>
+    <id value="Procedure-death-certification-vr"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-04-15T00:54:03.689+00:00"/>
-        <source value="#4ObCxAFQOnQfuTK8"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-04-07T00:45:26.949+00:00"/>
+        <source value="#tbAi10318edG9TJ2"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
-    <version value="1.0.0"/>
-    <name value="ProcedureDeathCertification"/>
-    <title value="Procedure - Death Certification"/>
+    <url value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-death-certification-vr"/>
+    <version value="1.9.0"/>
+    <name value="ProcedureDeathCertificationVitalRecords"/>
+    <title value="Procedure - Death Certification Vital Records"/>
     <status value="active"/>
     <date value="2022-08-02T13:21:04+00:00"/>
     <publisher value="HL7 Public Health Working Group"/>
@@ -103,7 +103,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-certifier-types"/>
+                <valueSet value="http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-certifier-types-vr"/>
             </binding>
         </element>
         <element id="Procedure.performer.actor">
