@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="195"/>
-        <lastUpdated value="2022-08-19T12:41:47.270+00:00"/>
-        <source value="#FMXVmRnC9QhCkT6J"/>
+        <versionId value="197"/>
+        <lastUpdated value="2023-04-16T15:31:00.606+00:00"/>
+        <source value="#mySZ8780zisoRKdC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -345,8 +345,8 @@
         <element id="Composition.section:cause-manner.entry:cause">
             <path value="Composition.section.entry"/>
             <sliceName value="cause"/>
-            <label value="Up to 5 lines of cause of death."/>
-            <short value="Up to 5 lines of cause of death."/>
+            <label value="Up to 4 lines of cause of death."/>
+            <short value="Up to 4 lines of cause of death."/>
             <definition value="Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death."/>
             <max value="4"/>
             <type>
@@ -360,7 +360,7 @@
             <sliceName value="other-condition"/>
             <short value="Other significant conditions contributing to death but not resulting in the underlying cause."/>
             <definition value="Other significant conditions contributing to death but not resulting in the underlying cause."/>
-            <max value="*"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
@@ -372,6 +372,7 @@
             <sliceName value="manner"/>
             <short value="Manner of death."/>
             <definition value="The conclusion arrived at upon completion of death investigation regarding the manner of death."/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
@@ -383,6 +384,7 @@
             <sliceName value="how-injury"/>
             <short value="Certified explanation of how injury occurred."/>
             <definition value="Certified explanation of how injury occurred."/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
