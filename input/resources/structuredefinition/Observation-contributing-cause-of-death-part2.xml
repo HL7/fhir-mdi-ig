@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-contributing-cause-of-death-part2"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2023-04-15T01:07:55.085+00:00"/>
-        <source value="#rl4DRBs5c4kEBzXI"/>
+        <versionId value="15"/>
+        <lastUpdated value="2023-04-16T18:43:11.967+00:00"/>
+        <source value="#tNUokmtJcrbT0uVi"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
     <version value="1.0.0"/>
@@ -71,8 +71,6 @@
             <path value="Observation.performer"/>
             <label value="Investigating coroner or medical examiner"/>
             <short value="Investigating coroner or medical examiner"/>
-            <min value="1"/>
-            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>

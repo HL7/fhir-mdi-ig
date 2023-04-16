@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="876"/>
-        <lastUpdated value="2023-04-14T20:51:23.333+00:00"/>
-        <source value="#uM1bygY1QQ0Scxx7"/>
+        <versionId value="887"/>
+        <lastUpdated value="2023-04-16T19:02:31.123+00:00"/>
+        <source value="#Aes7e7DqbVVEliNV"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0-for-comment"/>
@@ -210,6 +210,16 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Observation-cause-of-death-part1"/>
+                <display value="Observation - Cause of Death Part 1"/>
+            </reference>
+            <name value="Observation - Cause of Death Part 1"/>
+            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text.&#xA;The MDI Observation - Cause of Death Part 1 artifact overlaps with the VRDR Cause Of Death Part 1 artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-contributing-cause-of-death-part2"/>
                 <display value="Observation - Contributing Cause of Death Part 2 Vital Records"/>
             </reference>
@@ -295,26 +305,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-decedent-pregnancy"/>
-                <display value="Observation - Decedent Pregnancy"/>
-            </reference>
-            <name value="Observation - Decedent Pregnancy"/>
-            <description value="This Observation provides an indication of the pregnancy status of the decedent.&#xA;The MDI Observation - Decedent Pregnancy artifact overlaps with the VRDR Decedent Pregnancy Status artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
-                <display value="Observation Tobacco Use Contributed To Death"/>
-            </reference>
-            <name value="Observation - Tobacco Use Contributed to Death"/>
-            <description value="This Observation provides the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent.&#xA;The MDI Observation - Tobacco Use Contributed to Death artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Specimen/specimen-urine-toxicology-a-freeman"/></reference>
             <name value="Specimen - Toxicology Lab - Freeman Urine"/>
             <description value="Specimen - Toxicology Lab: Freeman Urine example"/>
@@ -330,6 +320,16 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-decedent-pregnancy"/>
+                <display value="Observation - Decedent Pregnancy"/>
+            </reference>
+            <name value="Observation - Decedent Pregnancy"/>
+            <description value="This Observation provides an indication of the pregnancy status of the decedent.&#xA;The MDI Observation - Decedent Pregnancy artifact overlaps with the VRDR Decedent Pregnancy Status artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -440,6 +440,16 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
+                <display value="Observation Tobacco Use Contributed To Death"/>
+            </reference>
+            <name value="Observation - Tobacco Use Contributed to Death"/>
+            <description value="This Observation provides the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent.&#xA;The MDI Observation - Tobacco Use Contributed to Death artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -872,16 +882,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
             <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-cause-of-death-part1"/>
-                <display value="Observation - Cause of Death Part 1"/>
-            </reference>
-            <name value="Observation - Cause of Death Part 1"/>
-            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text.&#xA;The MDI Observation - Cause of Death Part 1 artifact overlaps with the VRDR Cause Of Death Part 1 artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
