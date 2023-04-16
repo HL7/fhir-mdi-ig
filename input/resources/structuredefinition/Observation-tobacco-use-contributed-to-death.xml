@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tobacco-use-contributed-to-death"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2022-09-29T21:31:06.719+00:00"/>
-        <source value="#dNULYoiWXm8QAFX8"/>
+        <versionId value="16"/>
+        <lastUpdated value="2023-04-16T16:35:02.924+00:00"/>
+        <source value="#Y9Sbi47jwCPSZdpa"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
     <version value="1.0"/>
@@ -39,12 +39,14 @@
             <mustSupport value="true"/>
         </element>
         <element id="Observation.code">
+            <!--Updated MDI-1.1 Observation.code to match VRDR-2.2-->
             <path value="Observation.code"/>
-            <short value="Did tobacco use contribute to death"/>
+            <short value="Did tobacco use contribute to death?"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="69443-0"/>
+                    <display value="Did tobacco use contribute to death"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>

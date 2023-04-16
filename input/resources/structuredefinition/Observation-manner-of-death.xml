@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-manner-of-death"/>
     <meta>
-        <versionId value="20"/>
-        <lastUpdated value="2022-08-25T21:16:53.359+00:00"/>
-        <source value="#uEIFoKAUmqqZfQm7"/>
+        <versionId value="22"/>
+        <lastUpdated value="2023-04-16T16:29:14.483+00:00"/>
+        <source value="#DJ8qcyHkaY3QztMD"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
     <version value="1.0"/>
@@ -23,12 +23,6 @@
     <differential>
         <element id="Observation">
             <path value="Observation"/>
-        </element>
-        <element id="Observation.id">
-            <path value="Observation.id"/>
-            <short value="id"/>
-            <min value="0"/>
-            <max value="1"/>
         </element>
         <element id="Observation.status">
             <path value="Observation.status"/>
