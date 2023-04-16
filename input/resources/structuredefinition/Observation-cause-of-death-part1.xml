@@ -92,13 +92,20 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.value[x].text">
-            <path value="Observation.value[x].text"/>
+        <element id="Observation.valueCodeableConcept">
+            <!--Added Observation.valueCodeableConcept in MDI-1.1 to match VRDR-2.1-->
+            <path value="Observation.valueCodeableConcept"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.valueCodeableConcept.text">
+            <!--Updated Observation.valueCodeableConcept.text in MDI-1.1 to match VRDR-2.1-->
+            <path value="Observation.valueCodeableConcept.text"/>
             <short value="Cause of Death Part 1, Line a,b,c,d"/>
             <min value="1"/>
             <maxLength value="120"/>
-            <mustSupport value="true"/>
         </element>
+
         <element id="Observation.component">
             <path value="Observation.component"/>
             <slicing>
