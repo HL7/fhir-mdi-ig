@@ -4,8 +4,7 @@
     <id value="Bundle-document-mdi-to-edrs"/>
     <meta>
         <versionId value="7"/>
-        <lastUpdated value="2022-08-19T13:01:42.361+00:00"/>
-        <source value="#1CMMFuF5uBRImMhz"/>
+        <lastUpdated value="2022-08-19T17:01:42.361Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     <version value="0.0.1"/>

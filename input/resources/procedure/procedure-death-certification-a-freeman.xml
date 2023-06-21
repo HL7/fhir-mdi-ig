@@ -4,8 +4,7 @@
     <id value="procedure-death-certification-a-freeman"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-08-15T19:09:47.315+00:00"/>
-        <source value="#pCPGUVLOunGhVFh4"/>
+        <lastUpdated value="2022-08-15T23:09:47.315Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
     </meta>
     <identifier>

@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="CapabilityStatement-medical-examiner-coroner-server"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-09-29T19:53:32.933+00:00"/>
-        <source value="#kfysAOG5gpt7mI6G"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-21T15:33:44.521Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-medical-examiner-coroner-server"/>
     <version value="1.0.0"/>
@@ -14,7 +13,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-07-03"/>
-    <description value="This Section describes the expected capabilities of the Coroner/Medical Examiner (C/ME) case management system Server actor which is responsible for providing responses to the queries submitted by the C/ME Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by C/ME Servers are defined. C/ME Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+    <description value="This Section describes the expected capabilities of an MDI case management system (CMS) Server actor which is responsible for providing responses to the queries submitted by the MDI CMS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by MDI CMS Servers are defined. MDI CMS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
     <kind value="requirements"/>
     <fhirVersion value="4.0.1"/>
     <format value="xml"/>

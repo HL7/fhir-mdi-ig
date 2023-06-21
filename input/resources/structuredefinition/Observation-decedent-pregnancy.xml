@@ -4,8 +4,7 @@
     <id value="Observation-decedent-pregnancy"/>
     <meta>
         <versionId value="12"/>
-        <lastUpdated value="2022-08-25T21:17:45.435+00:00"/>
-        <source value="#JWu3RdUPK1IBP1pj"/>
+        <lastUpdated value="2022-08-26T01:17:45.435Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
     <version value="1.0"/>

@@ -4,8 +4,7 @@
     <id value="specimen-bile-toxicology-a-freeman"/>
     <meta>
         <versionId value="6"/>
-        <lastUpdated value="2022-08-16T00:58:14.623+00:00"/>
-        <source value="#P8mGI5DdHVidAJGL"/>
+        <lastUpdated value="2022-08-16T04:58:14.623Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     </meta>
     <accessionIdentifier>

@@ -4,8 +4,7 @@
     <id value="ValueSet-manner-of-death"/>
     <meta>
         <versionId value="6"/>
-        <lastUpdated value="2023-04-14T19:12:09.726+00:00"/>
-        <source value="#6nlevJAzb0QG1ZId"/>
+        <lastUpdated value="2023-04-14T23:12:09.726Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-manner-of-death"/>
     <version value="1.0.0"/>

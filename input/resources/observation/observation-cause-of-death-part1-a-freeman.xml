@@ -4,8 +4,7 @@
     <id value="observation-cause-of-death-part1-a-freeman"/>
     <meta>
         <versionId value="8"/>
-        <lastUpdated value="2022-08-16T00:44:09.694+00:00"/>
-        <source value="#noO36GbxZOsf1Hr1"/>
+        <lastUpdated value="2022-08-16T04:44:09.694Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
     </meta>
     <status value="final"/>

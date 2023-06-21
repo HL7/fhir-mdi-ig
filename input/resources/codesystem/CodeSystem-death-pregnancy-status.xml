@@ -4,8 +4,7 @@
     <id value="CodeSystem-death-pregnancy-status"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2022-09-29T19:32:59.838+00:00"/>
-        <source value="#qA5SSjaecQvAjqaK"/>
+        <lastUpdated value="2022-09-29T23:32:59.838Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-death-pregnancy-status"/>
     <version value="0.1.0"/>

@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cause-of-death-part1"/>
     <meta>
-        <versionId value="27"/>
-        <lastUpdated value="2023-04-16T15:55:04.066+00:00"/>
-        <source value="#boD0XyJTdcHQl6Ew"/>
+        <versionId value="32"/>
+        <lastUpdated value="2023-06-21T16:24:41.474Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
     <version value="1.0.0"/>
@@ -65,8 +64,7 @@
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
-            <label value="Cause of death certifier (coroner or medical examiner)"/>
-            <short value="Cause of death certifier (coroner or medical examiner)"/>
+            <short value="Death certifier"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -76,7 +74,6 @@
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
-            <!--Updated Observation.value[x] in MDI-1.1 to match VRDR-2.1-->
             <path value="Observation.value[x]"/>
             <slicing>
                 <discriminator>
@@ -92,22 +89,24 @@
             </type>
             <mustSupport value="true"/>
         </element>
-
+        <element id="Observation.value[x].text">
+            <path value="Observation.value[x].text"/>
+            <short value="Cause of Death Part 1, Line a,b,c,d"/>
+            <min value="1"/>
+            <maxLength value="120"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Observation.valueCodeableConcept">
-            <!--Updated Observation.valueCodeableConcept in MDI-1.1 to match VRDR-2.1-->
             <path value="Observation.valueCodeableConcept"/>
             <min value="1"/>
             <max value="1"/>
         </element>
-        
         <element id="Observation.valueCodeableConcept.text">
-            <!--Updated Observation.valueCodeableConcept.text in MDI-1.1 to match VRDR-2.1-->
             <path value="Observation.valueCodeableConcept.text"/>
             <short value="Cause of Death Part 1, Line a,b,c,d"/>
             <min value="1"/>
             <maxLength value="120"/>
         </element>
-        
         <element id="Observation.component">
             <path value="Observation.component"/>
             <slicing>
@@ -154,7 +153,6 @@
             <mustSupport value="true"/>
         </element>
         <element id="Observation.component:lineNumber.valueInteger">
-            <!--Added ineNumber.valueInteger in MDI-1.1 to match VRDR-2.1-->
             <path value="Observation.component.valueInteger"/>
             <short value="lineNumber"/>
             <min value="1"/>
@@ -192,6 +190,9 @@
             <min value="1"/>
             <type>
                 <code value="string"/>
+            </type>
+            <type>
+                <code value="Quantity"/>
             </type>
             <mustSupport value="true"/>
         </element>

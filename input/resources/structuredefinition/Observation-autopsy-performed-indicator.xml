@@ -4,8 +4,7 @@
     <id value="Observation-autopsy-performed-indicator"/>
     <meta>
         <versionId value="10"/>
-        <lastUpdated value="2022-08-24T16:38:46.078+00:00"/>
-        <source value="#CYHqB1U0DYCF3jzg"/>
+        <lastUpdated value="2022-08-24T20:38:46.078Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
     <version value="1.9.0"/>

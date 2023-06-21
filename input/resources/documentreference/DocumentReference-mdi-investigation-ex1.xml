@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentReference
+    xmlns="http://hl7.org/fhir">
+    <id value="DocumentReference-mdi-investigation-ex1"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T18:30:43.075Z"/>
+    </meta>
+    <status value="current"/>
+    <docStatus value="final"/>
+    <type>
+        <text value="Site report"/>
+    </type>
+    <date value="2023-01-02T15:52:20.000+00:00"/>
+    <content>
+        <attachment>
+            <contentType value="application/pdf"/>
+            <language value="en-US"/>
+            <url value="Images/MDI-Site-Report-Example"/>
+        </attachment>
+    </content>
+</DocumentReference>

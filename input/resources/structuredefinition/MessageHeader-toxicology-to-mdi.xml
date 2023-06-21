@@ -4,8 +4,7 @@
     <id value="MessageHeader-toxicology-to-mdi"/>
     <meta>
         <versionId value="20"/>
-        <lastUpdated value="2022-07-04T02:01:59.566+00:00"/>
-        <source value="#afI1BLHRFn7RCZJW"/>
+        <lastUpdated value="2022-07-04T06:01:59.566Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
     <name value="MessageHeaderToxicologyToMDI"/>

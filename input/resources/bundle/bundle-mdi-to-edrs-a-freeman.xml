@@ -4,8 +4,7 @@
     <id value="bundle-mdi-to-edrs-a-freeman"/>
     <meta>
         <versionId value="20"/>
-        <lastUpdated value="2022-08-16T21:07:35.004+00:00"/>
-        <source value="#t2oB2VgDvzN0FOBU"/>
+        <lastUpdated value="2022-08-17T01:07:35.004Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     </meta>
     <identifier>

@@ -4,8 +4,7 @@
     <id value="diagnosticreport-mdi-toxicology-lab-a-freeman"/>
     <meta>
         <versionId value="13"/>
-        <lastUpdated value="2022-08-17T02:41:36.325+00:00"/>
-        <source value="#xtoIAiQNAmERJ3rp"/>
+        <lastUpdated value="2022-08-17T06:41:36.325Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     </meta>
     <text>

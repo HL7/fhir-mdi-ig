@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date"/>
     <meta>
-        <versionId value="55"/>
-        <lastUpdated value="2022-08-24T16:40:19.237+00:00"/>
-        <source value="#nDkloB9EY3KorYsm"/>
+        <versionId value="60"/>
+        <lastUpdated value="2023-06-21T16:16:17.031Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     <name value="ObservationDeathDate"/>
@@ -53,8 +52,7 @@
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
-            <label value="Death Pronouncement Performer"/>
-            <short value="Death Pronouncement Performer"/>
+            <short value="Death certifier"/>
             <min value="0"/>
             <max value="1"/>
             <type>

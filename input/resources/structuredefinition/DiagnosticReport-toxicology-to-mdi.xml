@@ -4,8 +4,7 @@
     <id value="DiagnosticReport-toxicology-to-mdi"/>
     <meta>
         <versionId value="62"/>
-        <lastUpdated value="2022-07-24T00:41:53.420+00:00"/>
-        <source value="#2bjTwi02p2V6Tdin"/>
+        <lastUpdated value="2022-07-24T04:41:53.420Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     <name value="DiagnosticReportToxicologyToMDI"/>

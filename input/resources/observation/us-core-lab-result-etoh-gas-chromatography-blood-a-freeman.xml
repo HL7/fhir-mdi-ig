@@ -4,8 +4,7 @@
     <id value="us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/>
     <meta>
         <versionId value="11"/>
-        <lastUpdated value="2022-08-16T00:44:09.890+00:00"/>
-        <source value="#lKi0lxRBL0rbkhoI"/>
+        <lastUpdated value="2022-08-16T04:44:09.890Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
     <status value="final"/>

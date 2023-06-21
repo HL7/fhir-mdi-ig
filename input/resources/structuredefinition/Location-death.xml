@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Location-death"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2023-04-14T20:27:52.236+00:00"/>
-        <source value="#mltVoatvHus8Yxh4"/>
+        <versionId value="15"/>
+        <lastUpdated value="2023-06-21T16:37:33.307Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
     <version value="1.0.0"/>

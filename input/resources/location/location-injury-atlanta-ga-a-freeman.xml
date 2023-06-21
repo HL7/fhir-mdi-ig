@@ -4,8 +4,7 @@
     <id value="location-injury-atlanta-ga-a-freeman"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2022-08-16T00:57:44.523+00:00"/>
-        <source value="#ojwkpWDtFFGEB4jL"/>
+        <lastUpdated value="2022-08-16T04:57:44.523Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
     </meta>
     <identifier>

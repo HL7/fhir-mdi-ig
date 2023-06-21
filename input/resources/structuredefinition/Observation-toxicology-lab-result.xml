@@ -4,8 +4,7 @@
     <id value="Observation-toxicology-lab-result"/>
     <meta>
         <versionId value="19"/>
-        <lastUpdated value="2022-08-03T04:17:19.660+00:00"/>
-        <source value="#PJD2NxPORHWaFEzp"/>
+        <lastUpdated value="2022-08-03T08:17:19.660Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     <version value="1.0.0-Pre-Publication-Review"/>

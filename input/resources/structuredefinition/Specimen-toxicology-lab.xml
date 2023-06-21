@@ -4,8 +4,7 @@
     <id value="Specimen-toxicology-lab"/>
     <meta>
         <versionId value="44"/>
-        <lastUpdated value="2022-08-03T04:13:28.549+00:00"/>
-        <source value="#rQKFpSW8xde0KCyA"/>
+        <lastUpdated value="2022-08-03T08:13:28.549Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
     <name value="SpecimenToxicologyLab"/>

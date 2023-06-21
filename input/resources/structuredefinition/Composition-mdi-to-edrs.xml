@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
     <meta>
-        <versionId value="197"/>
-        <lastUpdated value="2023-04-16T15:31:00.606+00:00"/>
-        <source value="#mySZ8780zisoRKdC"/>
+        <versionId value="202"/>
+        <lastUpdated value="2023-06-21T16:05:47.544Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
@@ -78,12 +77,22 @@
         </element>
         <element id="Composition.author">
             <path value="Composition.author"/>
-            <short value="The author is the medical examiner/coroner (ME/C) responsible for the case. There can be multiple ME/Cs per case."/>
+            <short value="Death certifier"/>
             <definition value="The author is the medical examiner/coroner (ME/C) responsible for the case. There can be multiple ME/Cs per case."/>
             <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.author.extension">
+            <path value="Composition.author.extension"/>
+            <short value="If authoir is not yet named, use data absent reason"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
             </type>
             <mustSupport value="true"/>
         </element>

@@ -4,8 +4,7 @@
     <id value="observation-tobacco-use-a-freeman"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2022-08-16T00:44:09.693+00:00"/>
-        <source value="#MEQxK8gLYc2xN4JW"/>
+        <lastUpdated value="2022-08-16T04:44:09.693Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
     </meta>
     <status value="final"/>

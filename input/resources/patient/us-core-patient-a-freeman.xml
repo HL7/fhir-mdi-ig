@@ -4,8 +4,7 @@
     <id value="us-core-patient-a-freeman"/>
     <meta>
         <versionId value="14"/>
-        <lastUpdated value="2022-08-16T00:48:48.046+00:00"/>
-        <source value="#411pKOLYB8aT0e2j"/>
+        <lastUpdated value="2022-08-16T04:48:48.046Z"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>

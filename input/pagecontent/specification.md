@@ -8,7 +8,7 @@ This page describes normative content of the specification. For an introduction 
 ### Actors & Roles
 This specification defines three actors:
 * **Forensic toxicology LIMS**: This is a data source for the Message Bundle that contains the Toxicology Lab Result to MDI Diagnostic Report.
-* **MDI system**: This is an application used by ME/Cs and is a data consumer of the Message Bundle from the Forensic Toxicology LIMS and a data source of the Document Bundle MDI to EDRS.
+* **MDI CMS**: This is an application used by medical examiner and coroner organizations and is a data consumer of the Message Bundle from the Forensic Toxicology LIMS and a data source of the Document Bundle MDI to EDRS.
 * **Electronic death registration system (EDRS)**: This is an application used by jurisdictional vital records agencies and is both a data source and a data consumer of the Document Bundle MDI to EDRS.
 
 This specification requires two roles in any data exchange:
@@ -37,7 +37,7 @@ This specification requires two roles in any data exchange:
     <td class="tg-0lax">&nbsp;</td>
   </tr>
   <tr>
-    <td class="tg-0lax">MDI System</td>
+    <td class="tg-0lax">MDI CMS</td>
     <td class="tg-0lax">Bundle - Document MDI to EDRS </td>
     <td class="tg-0lax">Bundle - Message Toxicology to MDI <br>Bundle - Document MDI to EDRS </td>
   </tr>
@@ -57,7 +57,7 @@ To claim conformance to this specification, FHIR servers SHALL be able to popula
 * Producing a valid Bundle - Message Toxicology to MDI that includes the DiagnosticReport
 * Sending the Bundle Message to an MDI system data consumer
 
-**MDI system server** is responsible for:
+**MDI CMS server** is responsible for:
 * Consuming a valid Bundle - Message Toxicology to MDI received from a forensic toxicology LIMS
 * Querying an EDRS for an existing case record and receiving a response (Bundle - Document MDI to EDRS) from an EDRS data source
 * Updating an existing Bundle - Document MDI to EDRS
@@ -154,9 +154,6 @@ Systems claiming to conform to an MDI profile SHALL support the elements in the 
 
 ### Search
 This implementation guide does not define any new FHIR Search capabilities or parameters.
-
-### Privacy and Security
-This Implementation Guide is adopting the security considerations from [US Core Security](https://www.hl7.org/fhir/us/core/security.html#security)
 
 ### Data Models
 ***Figure: MDI Profile Relationships***

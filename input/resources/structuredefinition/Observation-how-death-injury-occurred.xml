@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-how-death-injury-occurred"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2023-04-16T16:27:29.604+00:00"/>
-        <source value="#akqOnLGWReMy34Zl"/>
+        <versionId value="22"/>
+        <lastUpdated value="2023-06-21T16:30:07.628Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     <version value="0.1.0"/>

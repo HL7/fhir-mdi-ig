@@ -4,8 +4,7 @@
     <id value="CodeSystem-local-component-codes"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2022-09-29T19:32:59.837+00:00"/>
-        <source value="#iAUsTQT3D4F0sqpY"/>
+        <lastUpdated value="2022-09-29T23:32:59.837Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-local-component-codes"/>
     <version value="1.9.0"/>

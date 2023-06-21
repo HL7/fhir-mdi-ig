@@ -4,8 +4,7 @@
     <id value="CapabilityStatement-forensic-toxicology-laboratory-server"/>
     <meta>
         <versionId value="3"/>
-        <lastUpdated value="2022-09-29T19:53:37.225+00:00"/>
-        <source value="#OvU7b3F5X26Gh0bu"/>
+        <lastUpdated value="2022-09-29T23:53:37.225Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server"/>
     <version value="1.0.0"/>

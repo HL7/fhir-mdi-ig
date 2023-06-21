@@ -4,8 +4,7 @@
     <id value="us-core-lab-result-acetylfentanyl-blood-a-freeman"/>
     <meta>
         <versionId value="10"/>
-        <lastUpdated value="2022-08-16T00:44:09.849+00:00"/>
-        <source value="#pjRim4Uyf1gj6nMO"/>
+        <lastUpdated value="2022-08-16T04:44:09.849Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     </meta>
     <status value="final"/>
