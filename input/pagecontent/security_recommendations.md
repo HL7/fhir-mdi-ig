@@ -16,6 +16,7 @@ In FHIR, SMART on FHIR is a recommended security solution for FHIR. And, it uses
 
 In OAuth2, there are components with different roles. MDI systems should play the roles. And, each system will play different role based on the workflow it operates in. The following table shows roles and what role MDI systems should play in the MDI-EDRS and Toxicology-CMS workflows.
 ***MDI Roles & Responsibilities***
+
 | Role | Responsibility | MDI-EDRS | Tox-CMS |
 | -------- | -------- | -------- | -------- |
 | Authorization Server     | Manages user authorization requests and responses.     | N/A     | N/A     |
