@@ -2,10 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Composition-mdi-to-edrs"/>
-    <meta>
-        <versionId value="202"/>
-        <lastUpdated value="2023-06-21T16:05:47.544Z"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     <name value="CompositionMDIToEDRS"/>
     <title value="Composition - MDI to EDRS"/>
@@ -79,7 +75,7 @@
             <path value="Composition.author"/>
             <short value="Death certifier"/>
             <definition value="The author is the medical examiner/coroner (ME/C) responsible for the case. There can be multiple ME/Cs per case."/>
-            <max value="*"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
@@ -98,20 +94,10 @@
         </element>
         <element id="Composition.attester">
             <path value="Composition.attester"/>
-            <short value="The certifying Medical Examiner/Coroner (Certifier)"/>
+            <short value="Death certifier"/>
             <definition value="The certifying Medical Examiner/Coroner (Certifier)"/>
             <min value="1"/>
             <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.attester.extension">
-            <path value="Composition.attester.extension"/>
-            <short value="If attester is not yet named, use data absent reason"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.attester.party">
@@ -511,6 +497,18 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:exam-autopsy.entry:autopsy-location">
+            <path value="Composition.section.entry"/>
+            <sliceName value="autopsy-location"/>
+            <label value="If autopsy was performed, location"/>
+            <short value="If autopsy was performed, location"/>
+            <definition value="If autopsy was performed, location"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
             </type>
             <mustSupport value="true"/>
         </element>

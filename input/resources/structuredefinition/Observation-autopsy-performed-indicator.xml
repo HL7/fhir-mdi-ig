@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-performed-indicator"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-08-24T20:38:46.078Z"/>
+        <versionId value="16"/>
+        <lastUpdated value="2023-06-21T19:16:31.114Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
     <version value="1.9.0"/>
@@ -68,6 +68,9 @@
             <path value="Observation.performer"/>
             <short value="Autopsy Performer using USCorePractioner"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+            </type>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>

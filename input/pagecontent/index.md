@@ -7,6 +7,7 @@ This MDI implementation guide is based upon FHIR R4.0.1 and is a U.S. Realm Spec
 The STU 1 version of the specification defines FHIR resources to support two dataflows:
 * Death investigation findings sent from an MDI system to an EDRS via a document bundle: Bundle - Document MDI to EDRS
 * Forensic toxicology specimen analysis results sent from a forensic toxicology laboratory to an MDI information system via a message bundle: Bundle – Message Toxicology to MDI
+
 The STU 1.1 version provides updates to align with relevant profiles in the [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/), STU 2.1 and adds new resources and guidance as described in the Change Log.
 
 This guide includes the following sections, listed at the top of each page in the menu bar: 

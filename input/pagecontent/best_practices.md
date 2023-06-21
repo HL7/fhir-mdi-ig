@@ -25,7 +25,10 @@ Agencies and jurisdictions have a range of requirements for certification of inf
 
 This MDI specification provides opportunities on most profiles for naming the responsible party. The legal nature of certification is a business requirement to be assigned by each agency or jurisdiction implementing this specification.
 
-The Composition - MDI to EDRS attester is required and is the individual who will be listed as the Certifier on the Death Certificate.
+The Composition - MDI to EDRS author and attester are required and are the individual who will be listed as the Certifier on the Death Certificate. 
+
+**Unknown author/attester**: Use the dataAbsentReason resource for instances when the author and/or attester is not yet known, for example in initial drafts of the MDI Composition.
+
 ### Death Date
 The Observation – Death Date profile represents the actual or presumed date of death. It should be used to record information about both the date and time of death and the certainty of those data. Note that the US Core Patient profile used for the decedent has an optional Patient.deceased[x] data modifier that may be used in addition to, but not instead of, the Observation – Death Date profile. If the Patient.deceased[x] is used, it must either be Boolean=true or the dateTime must match Observation  – Death Date.
 
@@ -42,7 +45,7 @@ The Observation – Death Date profile provides several opportunities to explain
 * Use the method codes from the extensible ValueSet - Date Establishment Approach (exact, approximate, court-appointed)
 
 ### Causes of Death
-The Observation.value[x].text is limited for both Observation - Cause of Death Condition and Observation - Condition Contributing to Death because the receiving EDRS sends the data to NCHS (ultimate receiving system). That NCHS system restricts the text string length for these data elements. Because the originating MDI case management system (CMS) is certifying the content of the data elements, the data must not risk being truncated or lost by the receiving systems along the entire datflow. Therefore, the originating system must abide by the character limit of the ultimate receiving system at the time of data capture, potentially including direct entry by the user if that is the mechanism of capturing the data.
+The Observation.value[x].text is limited for both Observation - Cause of Death Condition and Observation - Condition Contributing to Death because the receiving EDRS sends the data to NCHS (ultimate receiving system). That NCHS system restricts the text string length for these data elements. Because the originating MDI case management system (CMS) is certifying the content of the data elements, the data must not risk being truncated or lost by the receiving systems along the entire dataflow. Therefore, the originating system must abide by the character limit of the ultimate receiving system at the time of data capture, potentially including direct entry by the user if that is the mechanism of capturing the data.
 
 ### Forensic Toxicology Laboratory Specimens & Results
 **One-to-many specimen to results relationship:** Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result. For example, a single blood specimen may be analyzed for several different analytes or by several different methods. Each of those specimen/analyte or specimen/method combinations will be represented by an Observation - Toxicology Lab Result.

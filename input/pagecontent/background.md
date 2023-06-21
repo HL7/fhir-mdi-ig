@@ -3,8 +3,6 @@ In the investigation and certification of deaths, medical examiners, coroners an
 
 In 2015, changes to the Office of the National Coordinator (ONC) criteria in the health information technology (IT) certification process led electronic health record (EHR) system vendors to implement FHIR standards and incorporate FHIR application programming interfaces (APIs) into their products for hospitals and other health care providers. In 2019, NCHS developed and implemented the FHIR standard for death reporting. The Vital Records Death Reporting (VRDR) FHIR implementation guide was published in October 2020. That guide focused on the dataflow between vital record jurisdictions EDRS and NCHS.
 
-Recognizing that many deaths of significant public health importance are investigated by ME/C offices, NCHS is supporting the development of additional standards and tools for interoperability among ME/C information management systems, forensic toxicology LIMS, and vital records EDRS. This MDI FHIR specification is part of that effort to capture elements and workflows not currently captured in the death reporting implementation guide, and to help standardize disparate systems within the ME/C ecosystem. 
-
 Recognizing that many deaths of significant public health importance are investigated by state medical examiner and coroner organizations, NCHS is supporting the development of additional standards and tools for interoperability among MDI CMS, forensic toxicology LIMS, and vital records EDRS. This MDI FHIR specification is part of that effort to define elements and dataflows to standardize disparate systems within the MDI community.
 
 ### Medicolegal Death Investigation Dataflows
