@@ -15,6 +15,7 @@ A standard authorization protocol that can be used to limit the data access is t
 In FHIR, SMART on FHIR is a recommended security solution for FHIR. And, it uses OAuth2 for the security protocol. The SMART on FHIR is targeting to clinical data access for providers, patients, and clinical systems such as EHR. While SMART on FHIR can also be applied to MDI FHIR systems, this document does not recommend the SMART on FHIR as a minimum-security solution due to its granularity and complexity of access definitions on resources and users. Thus, this document discusses the general OAuth2 as a minimum level of security. However, if a system needs to be maintained at a similar level of security as clinical systems, SMART on FHIR is a recommended protocol. Details on the SMART on FHIR can be found in http://www.hl7.org/fhir/smart-app-launch/. 
 
 In OAuth2, there are components with different roles. MDI systems should play the roles. And, each system will play different role based on the workflow it operates in. The following table shows roles and what role MDI systems should play in the MDI-EDRS and Toxicology-CMS workflows.
+
 ***MDI Roles & Responsibilities***
 
 | Role | Responsibility | MDI-EDRS | Tox-CMS |
@@ -47,5 +48,6 @@ This type of authorization is for client systems (or client applications) that n
 * Step 1: Client request token server for an access token with parameters such as client ID, client_secret or authentication JWT, etc. Authorization server will validate the request.
 * Step 2: Access token is granted to client. There is a timeout. Thus, client may need to refresh the token periodically.
 * Step 3 – 6: From this point, the resources should be available for the client with the access token in the request header. Resource provider will introspect the token to check if it is valid to proceed with the request. The response from Authorization server may contain scopes. If this is the case, the scopes can be used for further access controls.
+* 
 ***Figure: OAuth2 Flow for API Users***
 <table><tr><td><img src="IG-image-OAuth2-API.png" /></td></tr></table>
