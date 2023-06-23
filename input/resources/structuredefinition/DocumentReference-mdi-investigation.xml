@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="DocumentReference-mdi-investigation"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2023-06-19T17:50:10.848Z"/>
+        <versionId value="16"/>
+        <lastUpdated value="2023-06-22T16:09:30.384Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-investigation"/>
     <name value="DocumentReferenceMDIInvestigation"/>
     <title value="DocumentReference - MDI Investigation Report"/>
     <status value="active"/>
-    <description value="This DocumentReference profile supports exchanging death investigation documents, such as Anthropology Reports, Entomology Reports, and Traffic Fatality Reports. The content may be included as inline base64 encoded data or be provided by direct reference (e.g., URL). The document type is an optional CodeableConcept, which identifies the kind of document being exchanged by referencing a terminology (LOINC code, if possible) or by text."/>
+    <description value="This DocumentReference profile supports exchanging death investigation documents, such as an Investigator’s Narrative, Anthropology Reports, or Entomology Reports. The content may be included as inline base64 encoded data or be provided by direct reference (e.g., URL). The document type is an optional CodeableConcept, which identifies the kind of document being exchanged by referencing a terminology (LOINC code, if possible) or by text."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

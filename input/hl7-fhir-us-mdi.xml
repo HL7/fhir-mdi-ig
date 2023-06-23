@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="952"/>
-        <lastUpdated value="2023-06-21T19:08:00.649Z"/>
+        <versionId value="956"/>
+        <lastUpdated value="2023-06-22T16:39:08.361Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0-for-comment"/>
@@ -97,7 +97,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-message-tox-to-mdi"/>
-                <display value="BundleMessageToxToMDI"/>
+                <display value="Bundle - Message Toxicology to MDI"/>
             </reference>
             <name value="Bundle - Message Toxicology to MDI"/>
             <description value="This Bundle profile represents a Message Bundle from a forensic toxicology laboratory to an MDI information management system. It contain a Message Header and a DiagnosticReport - Toxicology Lab Result to MDI."/>
@@ -155,7 +155,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
-                <display value="CompositionToxicologyToMDI"/>
+                <display value="DiagnosticReport - Toxicology Lab Result to MDI"/>
             </reference>
             <name value="DiagnosticReport - Toxicology Lab Result to MDI"/>
             <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a forensic toxicology laboratory information management system to an MDI information management system.&#xA;Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note."/>
@@ -168,7 +168,7 @@
                 <display value="Extension - Tracking Number"/>
             </reference>
             <name value="Extension - Tracking Number"/>
-            <description value="This Extension contains a tracking number, such as a case number or file number assigned by an MDI information management system or EDRS, and can represent other tracking numbers, if required."/>
+            <description value="This Extension contains a tracking number, such as a case number or file number assigned by an MDI organization, EDRS, or other involved organization to facilitate recognition of common case records across disparate systems and over time."/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions"/>
         </resource>
@@ -891,7 +891,7 @@
                 <display value="DocumentReference - MDI Investigation Report"/>
             </reference>
             <name value="DocumentReference - MDI Investigation Report"/>
-            <description value="This DocumentReference profile supports exchanging death investigation documents, such as Anthropology Reports, Entomology Reports, and Traffic Fatality Reports. The content may be included as inline base64 encoded data or be provided by direct reference (e.g., URL). The document type is an optional CodeableConcept, which identifies the kind of document being exchanged by referencing a terminology (LOINC code, if possible) or by text."/>
+            <description value="This DocumentReference profile supports exchanging death investigation documents, such as an Investigator’s Narrative, Anthropology Reports, or Entomology Reports. The content may be included as inline base64 encoded data or be provided by direct reference (e.g., URL). The document type is an optional CodeableConcept, which identifies the kind of document being exchanged by referencing a terminology (LOINC code, if possible) or by text."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative-profiles"/>
         </resource>
@@ -929,7 +929,7 @@
             <reference>
                 <reference value="DocumentReference/DocumentReference-mdi-investigation-ex1"/></reference>
             <name value="DocumentReference - MDI Investigation, example 1"/>
-            <description value="Example of DocumentReference - MDI Investigation, with link to PDF"/>
+            <description value="Example of DocumentReference - MDI Investigation, with link a domain that could host/store a PDF"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-investigation"/>
             <groupingId value="participant-examples"/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-toxicology-to-mdi"/>
     <meta>
-        <versionId value="62"/>
-        <lastUpdated value="2022-07-24T04:41:53.420Z"/>
+        <versionId value="66"/>
+        <lastUpdated value="2023-06-22T16:59:05.424Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
     <name value="DiagnosticReportToxicologyToMDI"/>
@@ -30,10 +30,6 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
             </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="DiagnosticReport.identifier">
-            <path value="DiagnosticReport.identifier"/>
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.subject">

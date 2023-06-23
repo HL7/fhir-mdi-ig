@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-document-mdi-to-edrs"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-08-19T17:01:42.361Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-06-22T16:31:17.282Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
     <version value="0.0.1"/>
@@ -26,7 +26,7 @@
         </element>
         <element id="Bundle.identifier">
             <path value="Bundle.identifier"/>
-            <short value="MDI to EDRS Document Bundle identifier"/>
+            <short value="Persistent, unique identifier of each bundle instance"/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>

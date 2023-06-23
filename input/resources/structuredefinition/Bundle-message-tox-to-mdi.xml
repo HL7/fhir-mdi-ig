@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-message-tox-to-mdi"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2023-06-21T14:55:48.821Z"/>
+        <versionId value="13"/>
+        <lastUpdated value="2023-06-22T16:54:47.066Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     <name value="BundleMessageToxToMDI"/>
@@ -20,11 +20,6 @@
     <differential>
         <element id="Bundle">
             <path value="Bundle"/>
-        </element>
-        <element id="Bundle.identifier">
-            <path value="Bundle.identifier"/>
-            <min value="1"/>
-            <mustSupport value="true"/>
         </element>
         <element id="Bundle.type">
             <path value="Bundle.type"/>

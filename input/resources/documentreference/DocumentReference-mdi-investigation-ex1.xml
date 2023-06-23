@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="DocumentReference-mdi-investigation-ex1"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-06-19T18:30:43.075Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-22T14:16:50.968Z"/>
     </meta>
     <status value="current"/>
     <docStatus value="final"/>
@@ -16,7 +16,8 @@
         <attachment>
             <contentType value="application/pdf"/>
             <language value="en-US"/>
-            <url value="Images/MDI-Site-Report-Example"/>
+            <url value="http://example.org/xds/mhd/Binary/07a6483f-732b-461e-86b6-edb665c45510"/>
+            <title value="Url where the report can be found"/>
         </attachment>
     </content>
 </DocumentReference>

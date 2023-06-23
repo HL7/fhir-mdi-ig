@@ -29,19 +29,12 @@
         <element id="Composition.extension:extension-tracking-numbers">
             <path value="Composition.extension"/>
             <sliceName value="extension-tracking-numbers"/>
-            <short value="A tracking number, such as a case number or file number assigned by a case management system or EDRS."/>
-            <definition value="A tracking number, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."/>
+            <short value="A tracking number (e.g., case number or file number) assigned by an MDI or other organization to facilitate recognition of common case records across disparate systems"/>
+            <definition value="A tracking number (e.g., case number or file number) assigned by an MDI or other organization to facilitate recognition of common case records across disparate systems"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number"/>
             </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.identifier">
-            <path value="Composition.identifier"/>
-            <short value="System-generated identifier for this Composition."/>
-            <definition value="System-generated identifier for this Composition."/>
-            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.status">
@@ -79,16 +72,6 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.author.extension">
-            <path value="Composition.author.extension"/>
-            <short value="If authoir is not yet named, use data absent reason"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -508,6 +491,7 @@
             <definition value="If autopsy was performed, location"/>
             <type>
                 <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
             </type>
             <mustSupport value="true"/>
