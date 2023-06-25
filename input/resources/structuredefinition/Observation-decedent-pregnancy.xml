@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-decedent-pregnancy"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2022-08-26T01:17:45.435Z"/>
+        <versionId value="14"/>
+        <lastUpdated value="2023-06-25T19:03:55.055Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
     <version value="1.0"/>
@@ -27,7 +27,6 @@
         </element>
         <element id="Observation.status">
             <path value="Observation.status"/>
-            <short value="status"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -53,7 +52,6 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
-            <short value="subject"/>
             <min value="1"/>
             <max value="1"/>
             <type>
