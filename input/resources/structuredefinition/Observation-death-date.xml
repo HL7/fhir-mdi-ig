@@ -2,10 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Observation-death-date"/>
-    <meta>
-        <versionId value="60"/>
-        <lastUpdated value="2023-06-21T16:16:17.031Z"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     <name value="ObservationDeathDate"/>
     <title value="Observation - Death Date"/>
@@ -23,8 +19,6 @@
         </element>
         <element id="Observation.status">
             <path value="Observation.status"/>
-            <min value="1"/>
-            <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.code">
@@ -75,6 +69,9 @@
             <definition value="Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
             <type>
                 <code value="dateTime"/>
+            </type>
+            <type>
+                <code value="Period"/>
             </type>
         </element>
         <element id="Observation.valueDateTime">
@@ -151,9 +148,43 @@
         </element>
         <element id="Observation.component:datetimePronouncedDead.value[x]">
             <path value="Observation.component.value[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
             <min value="1"/>
             <type>
                 <code value="dateTime"/>
+            </type>
+        </element>
+        <element id="Observation.component:datetimePronouncedDead.valueDateTime">
+            <path value="Observation.component.valueDateTime"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Observation.component:datetimePronouncedDead.valueDateTime.extension">
+            <path value="Observation.component.valueDateTime.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Observation.component:datetimePronouncedDead.valueDateTime.extension:partialDateTime">
+            <path value="Observation.component.valueDateTime.extension"/>
+            <sliceName value="partialDateTime"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"/>
             </type>
         </element>
         <element id="Observation.component:placeOfDeath">
