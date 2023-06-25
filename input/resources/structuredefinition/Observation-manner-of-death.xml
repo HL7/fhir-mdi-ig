@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-manner-of-death"/>
     <meta>
-        <versionId value="24"/>
-        <lastUpdated value="2023-06-21T16:31:58.187Z"/>
+        <versionId value="25"/>
+        <lastUpdated value="2023-06-25T16:51:07.426Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
     <version value="1.0"/>
@@ -64,8 +64,7 @@
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
-            <label value="Manner of death certifier"/>
-            <short value="Manner of death certifier"/>
+            <short value="Death certifier"/>
             <definition value="Manner of death certifier"/>
             <min value="1"/>
             <max value="1"/>
