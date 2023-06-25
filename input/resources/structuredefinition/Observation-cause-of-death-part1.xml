@@ -2,10 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cause-of-death-part1"/>
-    <meta>
-        <versionId value="32"/>
-        <lastUpdated value="2023-06-21T16:24:41.474Z"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
     <version value="1.0.0"/>
     <name value="ObservationCauseOfDeathPart1"/>
@@ -95,17 +91,6 @@
             <min value="1"/>
             <maxLength value="120"/>
             <mustSupport value="true"/>
-        </element>
-        <element id="Observation.valueCodeableConcept">
-            <path value="Observation.valueCodeableConcept"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Observation.valueCodeableConcept.text">
-            <path value="Observation.valueCodeableConcept.text"/>
-            <short value="Cause of Death Part 1, Line a,b,c,d"/>
-            <min value="1"/>
-            <maxLength value="120"/>
         </element>
         <element id="Observation.component">
             <path value="Observation.component"/>
