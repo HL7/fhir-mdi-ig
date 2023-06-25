@@ -2,10 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Location-death"/>
-    <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2023-06-21T16:37:33.307Z"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
     <version value="1.0.0"/>
     <name value="LocationDeath"/>
@@ -40,6 +36,10 @@
     <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
     <derivation value="constraint"/>
     <differential>
+        <element id="Location.name">
+            <path value="Location.name"/>
+            <short value="Name of Death Location"/>
+        </element>
         <element id="Location.type">
             <path value="Location.type"/>
             <short value="Death location"/>
