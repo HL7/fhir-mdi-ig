@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="988"/>
-        <lastUpdated value="2023-06-27T15:44:15.873Z"/>
+        <versionId value="989"/>
+        <lastUpdated value="2023-06-27T17:15:51.927Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -918,7 +918,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="DocumentReference/DocumentReference-mdi-clinical-ex1"/></reference>
+                <reference value="DocumentReference/documentreference-mdi-clinical-ex1"/></reference>
             <name value="DocumentReference - MDI Clinical, example 1"/>
             <description value="Example of DocumentReference - MDI Clinical, with in-line encoded PDF"/>
             <exampleBoolean value="false"/>
@@ -927,7 +927,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="DocumentReference/DocumentReference-mdi-investigation-ex1"/></reference>
+                <reference value="DocumentReference/documentreference-mdi-investigation-ex1"/></reference>
             <name value="DocumentReference - MDI Investigation, example 1"/>
             <description value="Example of DocumentReference - MDI Investigation, with link a domain that could host/store a PDF"/>
             <exampleBoolean value="false"/>

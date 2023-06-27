@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference
     xmlns="http://hl7.org/fhir">
-    <id value="DocumentReference-mdi-clinical-ex1"/>
+    <id value="documentreference-mdi-clinical-ex1"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-06-27T16:20:32.240Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-27T17:13:23.990Z"/>
     </meta>
     <status value="current"/>
     <docStatus value="final"/>
