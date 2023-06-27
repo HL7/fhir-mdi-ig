@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-death-date-a-freeman"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-08-16T04:44:09.694Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-06-27T16:19:52.003Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     </meta>
     <status value="final"/>

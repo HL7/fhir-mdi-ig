@@ -1,8 +1,8 @@
 == Suppressed Messages ==
 # Examples have optional slices that are not defined in the profile - not matching is expected behavior
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs|1.1.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi|1.1.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|5.0.1
 
 # The URI listed is the Official URI on https://terminology.hl7.org/ (“THO”). There is a PHINVads issue around access to the terminology.
 Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated

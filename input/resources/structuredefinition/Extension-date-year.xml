@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-date-year"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-08-24T20:36:39.394Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-27T14:06:57.809Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-year"/>
     <version value="1.0.0"/>
@@ -41,7 +41,15 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Element"/>
+        <expression value="date"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="dateTime"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Extension"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

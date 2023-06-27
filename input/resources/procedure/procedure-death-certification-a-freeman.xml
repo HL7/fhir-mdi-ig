@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="procedure-death-certification-a-freeman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-08-15T23:09:47.315Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-27T16:14:15.892Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
     </meta>
     <identifier>
@@ -38,7 +38,7 @@
             </coding>
         </function>
         <actor>
-            <reference value="Practitioner/us-core-practitioner-j-jones"/>
+            <reference value="Practitioner/us-core-practitioner-s-jones"/>
         </actor>
     </performer>
 </Procedure>

@@ -259,8 +259,8 @@
         <element id="Composition.section:jurisdiction.entry:death-date">
             <path value="Composition.section.entry"/>
             <sliceName value="death-date"/>
-            <label value="The estimated and pronounced date of death, also contains the death pronouncer practitioner"/>
-            <short value="The estimated and pronounced date of death, also contains the death pronouncer practitioner"/>
+            <label value="The estimated and pronounced date of death"/>
+            <short value="The estimated and pronounced date of death"/>
             <definition value="The estimated and pronounced date of death, also contains the death pronouncer practitioner"/>
             <type>
                 <code value="Reference"/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-death-certification"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-04-15T04:54:03.689Z"/>
+        <versionId value="12"/>
+        <lastUpdated value="2023-06-27T15:48:06.355Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
     <version value="1.0.0"/>
@@ -88,7 +88,7 @@
         </element>
         <element id="Procedure.performed[x]">
             <path value="Procedure.performed[x]"/>
-            <short value="certification Datetime"/>
+            <short value="certification date/time"/>
             <type>
                 <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
                     <valueBoolean value="true"/>
@@ -107,6 +107,7 @@
         </element>
         <element id="Procedure.performer.actor">
             <path value="Procedure.performer.actor"/>
+            <short value="Death certifier"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>

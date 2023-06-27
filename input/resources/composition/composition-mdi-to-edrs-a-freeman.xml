@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-mdi-to-edrs-a-freeman"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2022-08-16T03:49:50.478Z"/>
+        <versionId value="20"/>
+        <lastUpdated value="2023-06-27T15:52:00.397Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
     </meta>
     <text>
@@ -37,13 +37,13 @@
     </subject>
     <date value="2022-02-20"/>
     <author>
-        <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+        <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </author>
     <title value="MDI to EDRS Composition"/>
     <attester>
         <mode value="professional"/>
         <party>
-            <reference value="Practitioner/us-core-practitioner-j-jones"/>
+            <reference value="Practitioner/us-core-practitioner-s-jones"/>
         </party>
     </attester>
     <section>

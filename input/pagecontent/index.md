@@ -17,7 +17,7 @@ This guide includes the following sections, listed at the top of each page in th
 * [Specification](specification.html): Technical details on implementing the specification
 * [Terminology](terminology.html): List of all value sets used in this guide
 * [Downloads](downloads.html): Links for downloading the full implementation guide package as well as format-specific definitions files and example files in XML, JSON, and TTL
-* [Change Log](change_log.md.html): Lists changes made in each published update.
+* [Change Log](change_log.html): Lists changes made in each published update.
 * [Artifacts Index Summary](artifacts.html): List of all FHIR artifacts specified by this guide, with brief descriptions
 
 ### Audience

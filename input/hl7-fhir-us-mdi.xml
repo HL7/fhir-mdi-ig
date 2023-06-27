@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="960"/>
-        <lastUpdated value="2023-06-26T19:59:24.602Z"/>
+        <versionId value="988"/>
+        <lastUpdated value="2023-06-27T15:44:15.873Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
-    <version value="1.1.0-for-comment"/>
+    <version value="1.1.0"/>
     <name value="MedicolegalDeathInvestigation"/>
     <title value="Medicolegal Death Investigation (MDI)"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2023-04-14"/>
+    <date value="2023-06-27"/>
     <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -205,7 +205,7 @@
             <reference>
                 <reference value="Observation/observation-death-date-a-freeman"/></reference>
             <name value="Observation - Death Date - Freeman"/>
-            <description value="Observation - Death Date: Freeman death date, location, death pronouncer example"/>
+            <description value="Observation - Death Date: Freeman death date &amp; location example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
             <groupingId value="mdi-examples"/>
@@ -530,7 +530,7 @@
             <reference>
                 <reference value="Practitioner/us-core-practitioner-s-jones"/></reference>
             <name value="US Core Practitioner - Dr. Sam Jones"/>
-            <description value="Example of US Core Practitioner - Dr. Sam Jones, death pronouncer"/>
+            <description value="Example of US Core Practitioner - Dr. Sam Jones, medical examiner who is the death certifier"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             <groupingId value="participant-examples"/>
