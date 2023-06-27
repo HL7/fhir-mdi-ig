@@ -13,3 +13,19 @@ The entire implementation guide (including the HTML files, definitions, validati
 * [XML](examples.xml.zip)
 * [JSON](examples.json.zip)
 * [TTl](examples.ttl.zip)
+
+### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+### Dependency Table
+
+{% include dependency-table.xhtml %}
+
+### Global Profiles Table
+
+{% include globals-table.xhtml %}
+
+### IP Statements
+
+{% include ip-statements.xhtml %}

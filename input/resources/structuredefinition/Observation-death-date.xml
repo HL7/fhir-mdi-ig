@@ -57,14 +57,6 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <slicing>
-                <discriminator>
-                    <type value="type"/>
-                    <path value="$this"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
             <short value="Date/Time of Death"/>
             <definition value="Actual or presumed date of death. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period."/>
             <type>
@@ -74,13 +66,8 @@
                 <code value="Period"/>
             </type>
         </element>
-        <element id="Observation.valueDateTime">
-            <path value="Observation.valueDateTime"/>
-            <min value="0"/>
-            <max value="1"/>
-        </element>
-        <element id="Observation.valueDateTime.extension">
-            <path value="Observation.valueDateTime.extension"/>
+        <element id="Observation.value[x].extension">
+            <path value="Observation.value[x].extension"/>
             <slicing>
                 <discriminator>
                     <type value="value"/>
@@ -90,8 +77,8 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Observation.valueDateTime.extension:partialDateTime">
-            <path value="Observation.valueDateTime.extension"/>
+        <element id="Observation.value[x].extension:partialDateTime">
+            <path value="Observation.value[x].extension"/>
             <sliceName value="partialDateTime"/>
             <min value="0"/>
             <max value="1"/>
@@ -148,43 +135,12 @@
         </element>
         <element id="Observation.component:datetimePronouncedDead.value[x]">
             <path value="Observation.component.value[x]"/>
-            <slicing>
-                <discriminator>
-                    <type value="type"/>
-                    <path value="$this"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
             <min value="1"/>
             <type>
-                <code value="dateTime"/>
+                <code value="time"/>
             </type>
-        </element>
-        <element id="Observation.component:datetimePronouncedDead.valueDateTime">
-            <path value="Observation.component.valueDateTime"/>
-            <min value="0"/>
-            <max value="1"/>
-        </element>
-        <element id="Observation.component:datetimePronouncedDead.valueDateTime.extension">
-            <path value="Observation.component.valueDateTime.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
-        </element>
-        <element id="Observation.component:datetimePronouncedDead.valueDateTime.extension:partialDateTime">
-            <path value="Observation.component.valueDateTime.extension"/>
-            <sliceName value="partialDateTime"/>
-            <min value="0"/>
-            <max value="1"/>
             <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"/>
+                <code value="dateTime"/>
             </type>
         </element>
         <element id="Observation.component:placeOfDeath">
