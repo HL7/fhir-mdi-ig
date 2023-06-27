@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="993"/>
-        <lastUpdated value="2023-06-27T18:00:12.151Z"/>
+        <versionId value="997"/>
+        <lastUpdated value="2023-06-27T18:25:03.715Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -942,6 +942,11 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-clinical"/>
             <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DocumentReference/	documentreference-mdi-clinical-ex1"/></reference>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
