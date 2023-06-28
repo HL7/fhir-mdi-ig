@@ -688,8 +688,7 @@
                                 &quot;us-core-practitioner-b-goldberger&quot; Version &quot;5&quot; Updated
                                 &quot;2022-08-16 04:47:10+0000&quot; </p>
                             <p style="margin-bottom: 0px">Profile: <a
-                                href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html"
-                                >US Core Practitioner Profile</a></p>
+                                href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a></p>
                         </div>
                         <p><b>identifier</b>: id: 555667777</p>
                         <p><b>name</b>: Bruce Goldberger (OFFICIAL)</p>
@@ -706,8 +705,6 @@
                     <prefix value="Dr."/>
                 </name>
             </Practitioner>
-            
-        
         </resource>
     </entry>
     <entry>
