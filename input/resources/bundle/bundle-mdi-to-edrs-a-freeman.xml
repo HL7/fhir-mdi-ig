@@ -666,48 +666,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.state-edrs.org/Practitioner/us-core-practitioner-b-goldberger"/>
-        <resource>
-            <Practitioner xmlns="http://hl7.org/fhir">
-                <id value="us-core-practitioner-b-goldberger"/>
-                <meta>
-                    <versionId value="5"/>
-                    <lastUpdated value="2022-08-16T04:47:10.210Z"/>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-                </meta>
-                <text>
-                    <status value="generated"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                        <p>
-                            <b>Generated Narrative: Practitioner</b>
-                            <a name="us-core-practitioner-b-goldberger"> </a>
-                        </p>
-                        <div
-                            style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
-                            <p style="margin-bottom: 0px">Resource Practitioner
-                                &quot;us-core-practitioner-b-goldberger&quot; Version &quot;5&quot; Updated
-                                &quot;2022-08-16 04:47:10+0000&quot; </p>
-                            <p style="margin-bottom: 0px">Profile: <a
-                                href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a></p>
-                        </div>
-                        <p><b>identifier</b>: id: 555667777</p>
-                        <p><b>name</b>: Bruce Goldberger (OFFICIAL)</p>
-                    </div>
-                </text>
-                <identifier>
-                    <system value="http://hl7.org/fhir/sid/us-npi"/>
-                    <value value="555667777"/>
-                </identifier>
-                <name>
-                    <use value="official"/>
-                    <family value="Goldberger"/>
-                    <given value="Bruce"/>
-                    <prefix value="Dr."/>
-                </name>
-            </Practitioner>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="https://www.state-edrs.org/Location/location-death-atlanta-ga-a-freeman"/>
         <resource>
             <Location>
