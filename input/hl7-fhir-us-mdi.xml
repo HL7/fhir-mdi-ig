@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1026"/>
-        <lastUpdated value="2023-06-28T21:25:09.235Z"/>
+        <versionId value="1027"/>
+        <lastUpdated value="2023-06-28T22:15:19.074Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -504,15 +504,6 @@
                 <reference value="Practitioner/us-core-practitioner-b-goldberger"/></reference>
             <name value="US Core Practitioner - Dr. Bruce Goldberger"/>
             <description value="Example of US Core Practitioner - Dr. Bruce Goldberger, toxicologist"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/us-core-practitioner-j-jones"/></reference>
-            <name value="US Core Practitioner - Dr. Jane Jones"/>
-            <description value="Example of US Core Practitioner - Dr. Jane Jones, medical examiner"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             <groupingId value="participant-examples"/>
