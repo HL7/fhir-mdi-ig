@@ -66,8 +66,7 @@
         </element>
         <element id="Composition.author">
             <path value="Composition.author"/>
-            <short value="Death certifier"/>
-            <definition value="The author is the medical examiner/coroner (ME/C) responsible for the case. There can be multiple ME/Cs per case."/>
+            <short value="Death certifier. If the author is not available, explain using dataAbsentReason."/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
@@ -77,7 +76,7 @@
         </element>
         <element id="Composition.attester">
             <path value="Composition.attester"/>
-            <short value="Death certifier"/>
+            <short value="Death certifier. If the attester is not available, explain using dataAbsentReason."/>
             <definition value="The certifying Medical Examiner/Coroner (Certifier)"/>
             <min value="1"/>
             <max value="1"/>
@@ -100,7 +99,7 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
-            <short value="The Composition is broken into sections that, where possible, align with the sections in the 'Common data elements working document'."/>
+            <short value="The Composition is broken into sections that, where possible, align with the sections in the 'Common data elements working document'. If no information for a required section, use emptyReason."/>
             <definition value="The Composition is broken into sections that, where possible, align with the sections in the 'Common data elements working document'."/>
             <min value="1"/>
             <mustSupport value="true"/>

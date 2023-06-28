@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="997"/>
-        <lastUpdated value="2023-06-27T18:25:03.715Z"/>
+        <versionId value="1014"/>
+        <lastUpdated value="2023-06-28T01:48:42.157Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -132,15 +132,6 @@
             <description value="This Composition profile represents data sent from an MDI information management system to an EDRS."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/></reference>
-            <name value="DiagnosticReport - Toxicology Lab Result to MDI - Freeman"/>
-            <description value="DiagnosticReport - Toxicology Lab Result to MDI: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
-            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
@@ -910,7 +901,7 @@
                 <reference value="Practitioner/us-core-practitioner-jm-lehz"/>
                 <display value="J.M. Lehz"/>
             </reference>
-            <name value="J.M. Lehz"/>
+            <name value="US Core Practitioner - Dr. J.M. Lehz"/>
             <description value="Example of US Core Practitioner - Dr. J.M. Lehz, autopsy performer"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
@@ -918,18 +909,18 @@
         </resource>
         <resource>
             <reference>
-                <reference value="DocumentReference/documentreference-mdi-clinical-ex1"/></reference>
-            <name value="DocumentReference - MDI Clinical, example 1"/>
-            <description value="Example of DocumentReference - MDI Clinical, with in-line encoded PDF"/>
+                <reference value="DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/></reference>
+            <name value="DiagnosticReport - Toxicology Lab Result to MDI - Freeman"/>
+            <description value="DiagnosticReport - Toxicology Lab Result to MDI: Freeman example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-clinical"/>
-            <groupingId value="participant-examples"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="DocumentReference/documentreference-mdi-investigation-ex1"/></reference>
-            <name value="DocumentReference - MDI Investigation, example 1"/>
-            <description value="Example of DocumentReference - MDI Investigation, with link a domain that could host/store a PDF"/>
+            <name value="DocumentReference - MDI Investigation Example 1"/>
+            <description value="DocumentReference - MDI Investigation Example 1"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-investigation"/>
             <groupingId value="participant-examples"/>
@@ -937,16 +928,20 @@
         <resource>
             <reference>
                 <reference value="DocumentReference/documentreference-mdi-clinical-ex2"/></reference>
-            <name value="DocumentReference - MDI Clinical, example 2"/>
-            <description value="Example of DocumentReference - MDI Clinical, with document type UNK with link a domain that could host/store a PDF"/>
+            <name value="DocumentReference - MDI Clinical Example 2"/>
+            <description value="DocumentReference - MDI Clinical Example 2"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-clinical"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>
-                <reference value="DocumentReference/	documentreference-mdi-clinical-ex1"/></reference>
-            <exampleBoolean value="true"/>
+                <reference value="DocumentReference/documentreference-mdi-clinical-ex1"/></reference>
+            <name value="DocumentReference - MDI Clinical Example 1"/>
+            <description value="DocumentReference - MDI Clinical Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-clinical"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
