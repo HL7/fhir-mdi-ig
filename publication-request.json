@@ -2,7 +2,7 @@
 	"package-id": "hl7.fhir.us.mdi",
 	"version": "1.1.0",
 	"path": "http://hl7.org/fhir/us/mdi/STU1.1",
-	"milestone": true,
+	"mode": milestone,
 	"status": "trial-use",
 	"sequence": "STU 1.1",
 	"desc": ""
