@@ -8,7 +8,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Composition profile represents data sent from an MDI information management system to an EDRS."/>
+    <description value="This Composition profile represents data between an MDI CMS and an EDRS."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

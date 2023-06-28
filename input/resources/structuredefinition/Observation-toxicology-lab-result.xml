@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-toxicology-lab-result"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2022-08-03T08:17:19.660Z"/>
+        <versionId value="21"/>
+        <lastUpdated value="2023-06-28T21:51:07.594Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
     <version value="1.0.0-Pre-Publication-Review"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This Observation profile describes forensic toxicology laboratory test results from analysis of a specimen sent by a Medical Examiner, Coroner, or autopsy performer to the laboratory."/>
+    <description value="This Observation profile describes forensic toxicology laboratory test results from analysis of a specimen sent by a medical examiner, coroner, or autopsy performer to the laboratory."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

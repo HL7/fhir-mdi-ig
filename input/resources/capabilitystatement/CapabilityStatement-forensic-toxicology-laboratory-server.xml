@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="CapabilityStatement-forensic-toxicology-laboratory-server"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-09-29T23:53:37.225Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-28T21:29:29.747Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server"/>
     <version value="1.0.0"/>
@@ -13,7 +13,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-07-03"/>
-    <description value="This Section describes the expected capabilities of the Toxicology lab Server actor which is responsible for providing responses to the queries submitted by Toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Toxicology lab Servers are defined. Toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+    <description value="This resource describes the expected capabilities of the toxicology lab Server actor which is responsible for providing responses to the queries submitted by toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by toxicology lab Servers are defined. toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
     <kind value="requirements"/>
     <fhirVersion value="4.0.1"/>
     <format value="xml"/>

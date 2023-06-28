@@ -1,7 +1,7 @@
 This MDI specification is designed to be flexible to accommodate a variety of systems, recognizing that information management systems used for assembling MDI data vary widely by state, jurisdiction, and agency. This means that many data concepts have few requirements but many “must support” designations. This section provides best practice recommendations on how to address select concepts.
 
 ### Decedent
-This MDI implementation guide uses the US Core Patient for the decedent subject of:
+This MDI IG uses the US Core Patient for the decedent subject of:
 * Composition - MDI to EDRS and the profiles referenced in its section entries
 * DiagnosticReport - Toxicology Lab Result to MDI and the profiles referenced for its specimens and results
 
@@ -11,21 +11,23 @@ The [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-pa
 * 1..1 gender code (AdministrativeGender). Note modeling gender and sex information is ongoing in HL7. Refer to [US Core Patient profile, “Mandatory and Must Support Data Elements.”](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html#mandatory-and-must-support-data-elements)
 The three data elements may not be known during early stages of medicolegal data collection. US Core provide guidance on such cases of [missing data](http://hl7.org/fhir/us/core/general-requirements.html#missing-data).
 
-The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth sex, gender identity, birth date, telecom, address, martial status). The Composition - MDI to EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.
+The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth sex, gender identity, birth date, telecom, address, and martial status). The Composition - MDI to EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.
 
 The [Participant & Supporting Examples](artifacts.html#participant-administrative-examples) section of the Artifacts Index page provides an example of a US Core Patient for which no information known about the decedent's name. 
 
 ### Identifiers and Tracking Numbers
-This MDI implementation guide provides opportunities for both identifiers and tracking numbers. 
+This MDI IG provides opportunities for both identifiers and tracking numbers. 
+
 * **Identifiers**: Identifiers are unique to each individual instance (use) of a FHIR resource being exchanged. They are assigned from the data source and often generated automatically by its system. 
-* **Tracking numbers**: Tracking numbers identify a case or record over time and across many systems for interoperable communication. Tracking numbers in this MDI implementation guide may be assigned by the originating organization, such medical examiner and coroner organizations or an EDRS, and should persist throughout updates to the death investigation data. They are optional and multiple tracking numbers may be recorded. A system receiving a record with a tracking number may append its own tracking number and return/send the record with both tracking numbers. The extensible ValueSet - Tracking Number Type contains codes to identify the type of tracking number and may be augmented by local implementations of this specification.
+* 
+* **Tracking numbers**: Tracking numbers identify a case or record over time and across many systems for interoperable communication. Tracking numbers in this MDI IG may be assigned by the originating organization, such as medical examiner and coroner offices or an EDRS, and should persist throughout updates to the death investigation data. They are optional and multiple tracking numbers may be recorded. A system receiving a record with a tracking number may append its own tracking number and return/send the record with both tracking numbers. The extensible ValueSet - Tracking Number Type contains codes to identify the type of tracking number and may be augmented by local implementations of this specification.
 
 ### Certification
-Agencies and jurisdictions have a range of requirements for certification of information during the process of collecting and exchanging MDI data. Typically, a forensic toxicology diagnostic report will be considered certified when the final version is sent. A document bundle sent from an MDI system to an EDRS can use the status data element to indicate preliminary or final and certified.
+Agencies and jurisdictions have a range of requirements for certification of information during the process of collecting and exchanging MDI data. Typically, a forensic toxicology diagnostic report will be considered certified when the final version is sent. A document bundle sent from an MDI CMS to an EDRS can use the status data element to indicate preliminary or final and certified.
 
 This MDI specification provides opportunities on most profiles for naming the responsible party. The legal nature of certification is a business requirement to be assigned by each agency or jurisdiction implementing this specification.
 
-The Composition - MDI to EDRS author and attester are required and are the individual who will be listed as the Certifier on the Death Certificate. 
+The Composition - MDI to EDRS author and attester are required and are the individual who will be listed as the certifier on the death certificate. 
 
 **Unknown author/attester**: Use the dataAbsentReason resource for instances when the author and/or attester is not yet known, for example in initial drafts of the MDI Composition.
 
@@ -45,28 +47,28 @@ The Observation – Death Date profile provides several opportunities to explain
 * Use the method codes from the extensible ValueSet - Date Establishment Approach (exact, approximate, court-appointed)
 
 ### Causes of Death
-The Observation.value[x].text is limited for both Observation - Cause of Death Condition and Observation - Condition Contributing to Death because the receiving EDRS sends the data to NCHS (ultimate receiving system). That NCHS system restricts the text string length for these data elements. Because the originating MDI case management system (CMS) is certifying the content of the data elements, the data must not risk being truncated or lost by the receiving systems along the entire dataflow. Therefore, the originating system must abide by the character limit of the ultimate receiving system at the time of data capture, potentially including direct entry by the user if that is the mechanism of capturing the data.
+The Observation.value[x].text is limited for both Observation - Cause of Death Condition and Observation - Condition Contributing to Death because the receiving EDRS sends the data to NCHS (ultimate receiving system). That NCHS system restricts the text string length for these data elements. Because the originating MDI CMS certifies the content of the data elements, the data must not risk being truncated or lost by the receiving systems along the entire dataflow. Therefore, the originating system must abide by the character limit of the ultimate receiving system at the time of data capture, potentially including direct entry by the user if that is the mechanism of capturing the data.
 
 ### Forensic Toxicology Laboratory Specimens & Results
 **One-to-many specimen to results relationship:** Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result. For example, a single blood specimen may be analyzed for several different analytes or by several different methods. Each of those specimen/analyte or specimen/method combinations will be represented by an Observation - Toxicology Lab Result.
 
 **Specimens received but not analyzed:** Medical examiners and coroners may need to know if a forensic toxicology laboratory received a specimen but did not analyze it. In such cases, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen's Specimen - Toxicology Lab Specimen.note. Additionally, the Specimen - Toxicology Lab may use the Specimen.condition to describe the state of the specimen via codes from the extensible value set [hl7VS-specimenCondition](https://terminology.hl7.org/ValueSet-v2-0493.html) and/or use the Specimen.note to describe details or issues about the specimen.
 
-**Reporting results:** The result of a specimen analysis is required to be reported as text and may also be represented by a code. This allows exchange of the result meaning among systems that do not share code systems or do not use standardized code systems. The value of the result may be reported in several text formats:
+**Reporting results:** The result of a specimen analysis is required to be reported as text and may also be represented by a code. This choice of text or code allows exchange of results  among systems that do not share code systems or do not use standardized code systems. The value of the result may be reported in several text formats:
 * Word or phrase indicating presence or absences with no quantity (e.g., “Detected”, “Not detected”)
 * Mathematical expression of quantity with units (e.g., “= 0.160 g/dL”)
 * Mathematical expression of quantity range with units (e.g., “< 2.5 ng/mL”)
 
 ### API Specifications & Search Operations
-This MDI specification is designed for RESTful API implementations supporting data exchange interactions between systems via FHIR extended operations. (See [RESTful API](https://hl7.org/FHIR/http.html) for an overview.) The MDI implementation guide uses extended operations with MDI-specific search parameters and a subset of the many [RESTful API operations](https://hl7.org/FHIR/operationslist.html#1.5) defined by FHIR. All API implementations of this MDI specification must conform to common design rules:
+This MDI specification is designed for RESTful API implementations supporting data exchange interactions between systems via FHIR extended operations. (See [RESTful API](https://hl7.org/FHIR/http.html) for an overview.) This MDI IG uses extended operations with MDI-specific search parameters and a subset of the many [RESTful API operations](https://hl7.org/FHIR/operationslist.html#1.5) defined by FHIR. All API implementations of this MDI specification must conform to common design rules:
 * MIME-type for FHIR resources is application/fhir+xml or application/fhir+json. This must be specified for Content-Type in the HTTP header.
 * application/x-www-form-urlencoded can be used for POST search requests if HTTP Form is used.
 
-An MDI-based Search API enables MDI systems to search EDRS for decedent cases. This is an idempotent operation (i.e., it has no additional effect if it is called more than once with the same input parameters). Both POST and GET can be used with the following endpoint URL pattern:
+An MDI-based Search API enables MDI CMS to search EDRS for decedent cases. This is an idempotent operation (i.e., it has no additional effect if it is called more than once with the same input parameters). Both POST and GET can be used with the following endpoint URL pattern:
 * POST [base]/Composition/$mdi-documents
 * GET [base]/Composition/$mdi-documents?name=value&…
 
-**MDI Search Parameter Definition Summary Table**
+***Table: Summary of MDI Search Parameter Definitions***
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -155,7 +157,7 @@ An MDI-based Search API enables MDI systems to search EDRS for decedent cases. T
 </tbody>
 </table>
 
-Search parameters related to patient are formatted with “.”. In FHIR, this means that the search parameters after “.” are part of a patient parameter. See the example below.
+Search parameters related to Patient are formatted with “.”. In FHIR, this means that the search parameters after “.” are part of a patient parameter. See the example below.
 
 Code example:
 

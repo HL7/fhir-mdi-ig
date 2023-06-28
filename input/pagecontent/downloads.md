@@ -1,6 +1,6 @@
 **Full Implementation Guide**
 
-The entire implementation guide (including the HTML files, definitions, validation information, etc.) may be downloaded [here](full-ig.zip).
+The entire IG (including the HTML files, definitions, validation information, etc.) may be downloaded [here](full-ig.zip).
 
 **Definitions Files:** Format-specific definitions files may be downloaded:
 

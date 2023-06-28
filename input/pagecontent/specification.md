@@ -2,18 +2,18 @@ This page describes normative content of the specification. For an introduction 
 
 ### FHIR Exchange Paradigms Supported
 * RESTful API - Optional for all systems
-* Document Bundle - Required for MDI systems & EDRS
-* Message Bundle - Required for Forensic toxicology LIMS & MDI systems
+* Document Bundle - Required for MDI CMS & EDRS
+* Message Bundle - Required for Forensic Toxicology LIMS & MDI CMS
 
 ### Actors & Roles
 This specification defines three actors:
-* **Forensic toxicology LIMS**: This is a data source for the Message Bundle that contains the Toxicology Lab Result to MDI Diagnostic Report.
-* **MDI CMS**: This is an application used by medical examiner and coroner organizations and is a data consumer of the Message Bundle from the Forensic Toxicology LIMS and a data source of the Document Bundle MDI to EDRS.
-* **Electronic death registration system (EDRS)**: This is an application used by jurisdictional vital records agencies and is both a data source and a data consumer of the Document Bundle MDI to EDRS.
+* **Forensic Toxicology LIMS**: A data source for the Message Bundle that contains the Toxicology Lab Result to MDI Diagnostic Report.
+* **MDI CMS**: An application used by medical examiner and coroner offices that is a data consumer of the Message Bundle from the forensic toxicology LIMS and a data source and consumer of the Document Bundle MDI to EDRS.
+* **EDRS**: An application used by jurisdictional vital records agencies that is both a data source and a data consumer of the Document Bundle MDI to EDRS.
 
 This specification requires two roles in any data exchange:
-* Data Source: An application that exposes a FHIR document bundle or message bundle to a data consumer. This can be thought of as the server in a client/server interaction.
-* Data Consumer: An application that consumes a FHIR document bundle or message bundle. This can be thought of as the client in a client/server interaction.
+* **Data Source**: An application that exposes a FHIR document bundle or message bundle to a data consumer. This can be thought of as the server in a client/server interaction.
+* **Data Consumer**: An application that consumes a FHIR document bundle or message bundle. This can be thought of as the client in a client/server interaction.
 
 **MDI Implementation Guide Actors & Roles Summary Table**
 <style type="text/css">
@@ -55,7 +55,7 @@ To claim conformance to this specification, FHIR servers SHALL be able to popula
 **Forensic toxicology LIMS server** is responsible for:
 * Producing a valid DiagnosticReport - Toxicology Lab Result to MDI
 * Producing a valid Bundle - Message Toxicology to MDI that includes the DiagnosticReport
-* Sending the Bundle Message to an MDI system data consumer
+* Sending the Bundle Message to an MDI CMS data consumer
 
 **MDI CMS server** is responsible for:
 * Consuming a valid Bundle - Message Toxicology to MDI received from a forensic toxicology LIMS
@@ -64,10 +64,10 @@ To claim conformance to this specification, FHIR servers SHALL be able to popula
 * Creating a new valid Bundle - Document MDI to EDRS
 * Posting a valid Bundle - Document MDI to EDRS to an EDRS data consumer
 
-**Electronic Death Reporting System (EDRS) server** is responsible for:
-* Receiving a query from an MDI system
-* Returning a valid Bundle - Document MDI to EDRS to an MDI system
-* Receiving and consuming a valid Bundle - Document MDI to EDRS from an MDI system
+**EDRS server** is responsible for:
+* Receiving a query from an MDI CMS
+* Returning a valid Bundle - Document MDI to EDRS to an MDI CMS
+* Receiving and consuming a valid Bundle - Document MDI to EDRS from an MDI CMS
 
 
 ### Conformance to Other Standards
@@ -83,9 +83,9 @@ This specification uses or references US Core profiles:
 * [US Core PractitionerRole Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole)
 
 ### Resources and Profiles
-This specification defines the following resources. An overview and list of examples is available on the Artifact Index page.
+This specification defines the following resources. An overview and list of examples is available on the [Artifacts Index Summary](artifacts.html).
 
-**Profiles defined for MDI to EDRS exchange use case:**
+**Profiles defined for MDI CMS to EDRS exchange use case:**
 * Bundle - Document MDI to EDRS 
 * Composition - MDI to EDRS 
 * Observation - Cause of Death Part 1 
@@ -101,7 +101,7 @@ This specification defines the following resources. An overview and list of exam
 * Location - Injury 
 
 
-**Profiles for forensic toxicology to MDI exchange use case:**
+**Profiles for forensic toxicology to MDI CMS exchange use case:**
 * Bundle - Message Toxicology to MDI
 * MessageHeader - Toxicology to MDI
 * DiagnosticReport - Toxicology Lab Result to MDI
@@ -141,19 +141,19 @@ This specification defines the following resources. An overview and list of exam
 ### MustSupport and Missing Data
 Systems claiming to conform to an MDI profile SHALL support the elements in the profile as defined below. This guide adopts the following definitions of MustSupport for all direct transactions between the data source systems and data consumer systems.
 
-**Data Source Systems**
+**Data Source Systems:**
 * As part of the sending of a Message Bundle or Document Bundle, the Data Source system SHALL be capable of including all elements defined in the profiles that have a MustSupport flag and SHALL populate all elements with a MustSupport flag if the information exists.
 * In situations where information on a particular data element is not present, the Data Source system SHALL NOT include the data element in the resource instance if the cardinality is 0..n.
 * If the information does not exist and the cardinality of the element is >= 1..*, the Data Source system SHALL follow the [US Core Missing Data guidance](https://www.hl7.org/fhir/us/core/general-guidance.html#missing-data).
 
-**Data Consumer Systems**
+**Data Consumer Systems:**
 * Data Consumer systems SHALL be capable of processing resource instances containing required and allowed data elements without generating an error or causing the application to fail.
 * Data Consumer systems SHOULD be capable of processing (display, store, etc.) the data elements based on the utility of the specific element to the receiver.
 * When receiving a transaction from a Data Source system, the Data Consumer system SHALL interpret missing data elements within resource instances as data not present in the Data Source system.
 * Data Consumer systems SHALL be able to process resource instances containing data elements asserting missing information without generating an error or causing the application to fail.
 
 ### Search
-This implementation guide does not define any new FHIR Search capabilities or parameters.
+This IG does not define any new FHIR Search capabilities or parameters.
 
 ### Data Models
 ***Figure: MDI Profile Relationships***

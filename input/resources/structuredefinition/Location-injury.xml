@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Location-injury"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2023-04-15T00:42:24.371Z"/>
+        <versionId value="16"/>
+        <lastUpdated value="2023-06-28T21:45:19.976Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
     <version value="1.0.0"/>
@@ -25,7 +25,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury."/>
+    <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to location of injury."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

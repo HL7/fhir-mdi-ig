@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-message-tox-to-mdi"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2023-06-22T16:54:47.066Z"/>
+        <versionId value="14"/>
+        <lastUpdated value="2023-06-28T21:46:13.212Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     <name value="BundleMessageToxToMDI"/>
     <title value="Bundle - Message Toxicology to MDI"/>
     <status value="active"/>
-    <description value="This Bundle profile represents a Message Bundle from a forensic toxicology laboratory to an MDI information management system. It contains a Message Header and a DiagnosticReport - Toxicology Lab Result to MDI."/>
+    <description value="This Bundle profile represents a Message Bundle from a forensic toxicology laboratory to an MDI CMS. It contains a Message Header and a DiagnosticReport - Toxicology Lab Result to MDI."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

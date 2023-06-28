@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1014"/>
-        <lastUpdated value="2023-06-28T01:48:42.157Z"/>
+        <versionId value="1026"/>
+        <lastUpdated value="2023-06-28T21:25:09.235Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -21,7 +21,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This US-specific implementation guide (IG) provides guidance on the exchange of information to and from medicolegal death investigation (MDI) information systems. It supports interoperability between the MDI case management systems (CMS) used by medical examiner and coroner organizations, forensic toxicology and other laboratory information management systems (LIMS), electronic death registration systems (EDRS) of jurisdictional vital records offices (VROs), and ancillary workflows whose systems have the capability of using Fast Healthcare Interoperability Resources (FHIR). This guide provides MDI CMS developers with the technical details and best practices to standardize MDI fields and interfaces. Stakeholders may use the narrative portions of this guide to inform policies and practices for data exchange between systems contributing to, and using information from, death investigations. This guide can serve as a base for local specifications."/>
+    <description value="This US-specific implementation guide (IG) provides guidance on the exchange of information to and from medicolegal death investigation (MDI) information systems. It supports interoperability between the MDI case management systems (CMS) used by medical examiner and coroner offices; forensic toxicology and other laboratory information management systems (LIMS); electronic death registration systems (EDRS) of jurisdictional vital records offices (VROs); and ancillary workflows whose systems have the capability of using Fast Healthcare Interoperability Resources (FHIR). This guide provides MDI CMS developers with the technical details and best practices to standardize MDI fields and interfaces. Stakeholders may use the narrative portions of this guide to inform policies and practices for data exchange between systems contributing to, and using information from, death investigations. This guide can serve as a base for local specifications."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -45,11 +45,11 @@
     <definition>
         <grouping id="capability-statements">
             <name value="Capability Statements"/>
-            <description value="The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide. Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements."/>
+            <description value="The following artifacts define the specific capabilities that different types of systems are expected to have to comply with this implementation guide. Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements."/>
         </grouping>
         <grouping id="mdi-profiles">
             <name value="MDI Profiles"/>
-            <description value="Profiles related to the MDI to EDRS dataflow. &#xA;Many MDI Profiles overlap with artifacts found in the [Vital Records Death Reporting (VRDR) FHIR implementation guide](http://hl7.org/fhir/us/vrdr/). Definitions here note those relationships. See also [Background](background.html), Relation to Other Standards section."/>
+            <description value="Profiles related to the MDI CMS to EDRS dataflow. &#xA;Many MDI Profiles overlap with artifacts found in the [Vital Records Death Reporting (VRDR) FHIR implementation guide](http://hl7.org/fhir/us/vrdr/). Definitions here note those relationships. See also [Background](background.html), Relation to Other Standards section."/>
         </grouping>
         <grouping id="toxicology-profiles">
             <name value="Toxicology Profiles"/>
@@ -90,7 +90,7 @@
                 <display value="Bundle - Document MDI to EDRS"/>
             </reference>
             <name value="Bundle - Document MDI to EDRS"/>
-            <description value="This Bundle profile represents an MDI to EDRS Document Bundle. It contains a Composition - MDI to EDRS."/>
+            <description value="This Bundle profile represents Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI to EDRS."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -119,7 +119,7 @@
                 <display value="MDI Code System"/>
             </reference>
             <name value="CodeSystem - MDI"/>
-            <description value="This code system contains codes for use in MDI."/>
+            <description value="This code system contains codes for use in MDI CMS."/>
             <exampleBoolean value="false"/>
             <groupingId value="code-systems"/>
         </resource>
@@ -129,7 +129,7 @@
                 <display value="Composition - MDI to EDRS"/>
             </reference>
             <name value="Composition - MDI to EDRS"/>
-            <description value="This Composition profile represents data sent from an MDI information management system to an EDRS."/>
+            <description value="This Composition profile represents data between an MDI CMS and an EDRS."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -139,7 +139,7 @@
                 <display value="MessageHeaderToxicologyToMDI"/>
             </reference>
             <name value="MessageHeader - Toxicology to MDI"/>
-            <description value="This MessageHeader identifies the DiagnosticReport being sent from a forensic toxicology laboratory information system to an MDI information management system."/>
+            <description value="This MessageHeader identifies the DiagnosticReport being sent from a forensic toxicology LIMS to an MDI CMS."/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
         </resource>
@@ -149,7 +149,7 @@
                 <display value="DiagnosticReport - Toxicology Lab Result to MDI"/>
             </reference>
             <name value="DiagnosticReport - Toxicology Lab Result to MDI"/>
-            <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a forensic toxicology laboratory information management system to an MDI information management system.&#xA;Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note."/>
+            <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a forensic toxicology LIMS to an MDI CMS.&#xA;Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note."/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
         </resource>
@@ -226,7 +226,7 @@
                 <display value="Observation - Contributing Cause of Death Part 2"/>
             </reference>
             <name value="Observation - Contributing Cause of Death Part 2"/>
-            <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier."/>
+            <description value="The Observation - Contributing Cause of Death Part 2 profile is used to identify factors contributing to the cause of death as asserted by the death certifier. The MDI Observation – Contributing Cause of Death Part 2 artifact overlaps with the VRDR  Cause of Death Part 2 artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -254,7 +254,7 @@
                 <display value="Observation - Death Date"/>
             </reference>
             <name value="Observation - Death Date"/>
-            <description value="This Observation provides the death date, death pronouncer, and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period.&#xA;The MDI Observation - Death Date artifact overlaps with the VRDR Death Date artifact."/>
+            <description value="This Observation provides the death date and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period.&#xA;The MDI Observation - Death Date artifact overlaps with the VRDR Death Date artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -348,7 +348,7 @@
                 <display value="SpecimenToxicologyLab"/>
             </reference>
             <name value="Specimen - Toxicology Lab"/>
-            <description value="This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note.&#xA;The laboratory may use the Specimen.condition to describe the state of the specimen via codes from the extensible value set hl7VS-specimenCondition and/or use the Specimen.note to describe details or issues about the specimen."/>
+            <description value="This Specimen profile identifies and describes the specimen sent by a medical examiner, coroner, or autopsy performer to a toxicology lab for analysis.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note.&#xA;The laboratory may use the Specimen.condition to describe the state of the specimen via codes from the extensible value set hl7VS-specimenCondition and/or use the Specimen.note to describe details or issues about the specimen."/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
         </resource>
@@ -376,7 +376,7 @@
                 <display value="Observation - Toxicology Lab Result"/>
             </reference>
             <name value="Observation - Toxicology Lab Result"/>
-            <description value="This Observation profile describes forensic toxicology laboratory test results from analysis of a specimen sent by a Medical Examiner, Coroner, or autopsy performer to the laboratory."/>
+            <description value="This Observation profile describes forensic toxicology laboratory test results from analysis of a specimen sent by a medical examiner, coroner, or autopsy performer to the laboratory."/>
             <exampleBoolean value="false"/>
             <groupingId value="toxicology-profiles"/>
         </resource>
@@ -552,7 +552,7 @@
                 <display value="ValueSet -Contributory Tobbaco Use"/>
             </reference>
             <name value="ValueSet - Contributory Tobacco Use"/>
-            <description value="A set of codes that reflect the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004).&#xA;The MDI ValueSet - Contributory Tobacco Use artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
+            <description value="A set of codes that reflect the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004).&#xA;The MDI ValueSet - Contributory Tobacco Use artifact overlaps with the VRDR Contributory Tobacco Use VS artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
         </resource>
@@ -562,7 +562,7 @@
                 <display value="ValueSet - Certifier Types"/>
             </reference>
             <name value="ValueSet - Certifier Types"/>
-            <description value="A set of codes indicating the type of certifier (Medical Examiner/Coroner, Certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
+            <description value="A set of codes indicating the type of certifier (medical examiner/coroner, certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
         </resource>
@@ -762,7 +762,7 @@
                 <display value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
             </reference>
             <name value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
-            <description value="This Section describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor, which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <description value="This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor, which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
             <exampleBoolean value="false"/>
             <groupingId value="capability-statements"/>
         </resource>
@@ -772,7 +772,7 @@
                 <display value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
             </reference>
             <name value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
-            <description value="This Section describes the expected capabilities of the Toxicology lab Server actor which is responsible for providing responses to the queries submitted by Toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Toxicology lab Servers are defined. Toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <description value="This resource describes the expected capabilities of the toxicology lab Server actor which is responsible for providing responses to the queries submitted by toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by toxicology lab Servers are defined. toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
             <exampleBoolean value="false"/>
             <groupingId value="capability-statements"/>
         </resource>
@@ -782,7 +782,7 @@
                 <display value="CapabilityStatement - Medical Examiner/Coroner Server"/>
             </reference>
             <name value="CapabilityStatement - Medical Examiner/Coroner Server"/>
-            <description value="This Section describes the expected capabilities of an MDI case management system (CMS) Server actor which is responsible for providing responses to the queries submitted by the MDI CMS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by MDI CMS Servers are defined. MDI CMS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <description value="This resource describes the expected capabilities of an MDI CMS Server actor which is responsible for providing responses to the queries submitted by the MDI CMS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by MDI CMS Servers are defined. MDI CMS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
             <exampleBoolean value="false"/>
             <groupingId value="capability-statements"/>
         </resource>
@@ -800,7 +800,7 @@
                 <display value="Observation - Autopsy Performed Indicator"/>
             </reference>
             <name value="Observation - Autopsy Performed Indicator"/>
-            <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner).&#xA;The MDI Observation - Autopsy Performed Indicator artifact overlaps with the VRDR Autopsy Performed Indicator artifact."/>
+            <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practitioner).&#xA;The MDI Observation - Autopsy Performed Indicator artifact overlaps with the VRDR Autopsy Performed Indicator artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -840,7 +840,7 @@
                 <display value="Location - Death"/>
             </reference>
             <name value="Location - Death"/>
-            <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element to indicate that this is the location of death."/>
+            <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element location of death."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -850,7 +850,7 @@
                 <display value="Location - Injury Vital Records"/>
             </reference>
             <name value="Location - Injury"/>
-            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to indicate that this is the location of an injury."/>
+            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to location of injury."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
