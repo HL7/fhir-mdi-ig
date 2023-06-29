@@ -108,6 +108,11 @@ This specification defines the following resources. An overview and list of exam
 * Specimen - Toxicology Lab
 * Observation - Toxicology Lab Result
 
+
+**Administrative profiles for exchanging PDF documents:**
+* DocumentReference - MDI Investigation Report
+* DocumentReference - MDI Clinical Report
+
 **Extensions:**
 * Extension - Tracking Number 
 * Extension - Date Time 
@@ -123,14 +128,11 @@ This specification defines the following resources. An overview and list of exam
 * ValueSet - Date Establishment Approach 
 * ValueSet - Death Pregnancy Status 
 * ValueSet - Manner of Death 
-* ValueSet - Place of Death 
+* ValueSet - Place of Death
 * ValueSet - Tracking Number Type 
 * ValueSet - Transportation Incident Role 
-* ValueSet - Units of Age 
 * ValueSet - Yes No Unknown 
 * ValueSet - Yes No Unknown NotApplicable 
-* ValueSet - Yes, No, Not Applicable 
-
 
 **Code System:**
 * CodeSystem - MDI 
