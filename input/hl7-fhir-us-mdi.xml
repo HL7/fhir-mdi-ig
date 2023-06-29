@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1027"/>
-        <lastUpdated value="2023-06-28T22:15:19.074Z"/>
+        <versionId value="1046"/>
+        <lastUpdated value="2023-06-29T16:49:00.849Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -234,7 +234,7 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - Ethanol Blood Freeman"/>
-            <description value="Observation - Toxicology Lab Result: Ethanol Blood Freeman example"/>
+            <description value="Observation - Toxicology Lab Result: Freeman  Ethanol Blood example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -243,7 +243,7 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-4-anpp-blood-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - 4-anpp Blood Freeman"/>
-            <description value="Observation - Toxicology Lab Result:  4-anpp Blood Freeman example"/>
+            <description value="Observation - Toxicology Lab Result:  Freeman 4-anpp Blood example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -262,7 +262,7 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-acetylfentanyl-blood-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - Acetylfentanyl Blood Freeman"/>
-            <description value="Observation - Toxicology Lab Result: Acetylfentanyl Blood Freeman example"/>
+            <description value="Observation - Toxicology Lab Result: Freeman Acetylfentanyl Blood example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -271,7 +271,7 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-fentanyl-blood-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - Fentanyl Blood Freeman"/>
-            <description value="Observation  - Toxicology Lab Result: Fentanyl Blood Freeman example"/>
+            <description value="Observation  - Toxicology Lab Result: Freeman Fentanyl Blood example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result"/>
             <groupingId value="toxicology-examples"/>
@@ -289,7 +289,7 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-urine-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - Ethanol Urine Freeman"/>
-            <description value="Observation - Toxicology Lab Result: Ethanol Urine Freeman example"/>
+            <description value="Observation - Toxicology Lab Result: Freeman Ethanol Urine example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -318,7 +318,7 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-4-anpp-urine-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - 4-anpp Urine Freeman"/>
-            <description value="Observation - Toxicology Lab Result: 4-anpp Urine Freeman example"/>
+            <description value="Observation - Toxicology Lab Result: Freeman 4-anpp Urine example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -327,7 +327,7 @@
             <reference>
                 <reference value="Observation/observation-how-death-injury-occurred-a-freeman-med-ingest"/></reference>
             <name value="Observation - How Death Injury Occurred - Freeman - Medication ingestion"/>
-            <description value="Observation - How Death Injury Occurred: Freeman - Medication ingestion (fentanyl) example"/>
+            <description value="Observation - How Death Injury Occurred: Freeman Medication Ingestion (fentanyl) example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
             <groupingId value="mdi-examples"/>
@@ -356,7 +356,7 @@
             <reference>
                 <reference value="Observation/observation-manner-of-death-a-freeman-accidental"/></reference>
             <name value="Observation - Manner of Death - Freeman"/>
-            <description value="Observation - Manner of Death: Freeman - accidental example"/>
+            <description value="Observation - Manner of Death: Freeman, accidental example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
             <groupingId value="mdi-examples"/>
@@ -384,7 +384,7 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-acetylfentanyl-urine-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - Acetylfentanyl Urine Freeman"/>
-            <description value="Observation - Toxicology Lab Result: Acetylfentanyl Urine Freeman example"/>
+            <description value="Observation - Toxicology Lab Result: Freeman Acetylfentanyl Urine example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -393,7 +393,7 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-fentanyl-urine-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - Fentanyl Urine Freeman"/>
-            <description value="Observation - Toxicology Lab Result: Fentanyl Urine Freeman example"/>
+            <description value="Observation - Toxicology Lab Result: Freeman Fentanyl Urine example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -402,7 +402,7 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-norfentanyl-urine-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - Norfentanyl Urine Freeman"/>
-            <description value="Observation - Toxicology Lab Result: Norfentanyl Urine Freeman example"/>
+            <description value="Observation - Toxicology Lab Result: Freeman Norfentanyl Urine example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -411,7 +411,7 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-xylazine-urine-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - Xylazine Urine Freeman"/>
-            <description value="Observation - Toxicology Lab Result: Xylazine Urine Freeman example"/>
+            <description value="Observation - Toxicology Lab Result: Freeman Xylazine Urine example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -429,7 +429,7 @@
             <reference>
                 <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - Ethanol Vitreous Humor Freeman"/>
-            <description value="Observation - Toxicology Lab Result: Ethanol Vitreous Humor Freeman"/>
+            <description value="Observation - Toxicology Lab Result: Freeman Ethanol Vitreous Humor example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -512,7 +512,7 @@
             <reference>
                 <reference value="Practitioner/us-core-practitioner-s-jones"/></reference>
             <name value="US Core Practitioner - Dr. Sam Jones"/>
-            <description value="Example of US Core Practitioner - Dr. Sam Jones, medical examiner who is the death certifier"/>
+            <description value="Example of US Core Practitioner - Dr. Sam Jones, medical examiner, death certifier"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             <groupingId value="participant-examples"/>
@@ -639,21 +639,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/ValueSet-units-of-age"/>
-                <display value="ValueSet - Units of Age"/>
-            </reference>
-            <name value="ValueSet - Units of Age"/>
-            <description value="A set of codes for specifying the units used when recording age (days, years, etc.).&#xA;The MDI ValueSet - Units of Age artifact overlaps with the VRDR Units of Age artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="value-sets"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="MessageDefinition/MessageDefinition-toxicology-system"/>
                 <display value="MessageDefinition-toxicology-system"/>
             </reference>
             <name value="MessageDefinitionToxicologySystem"/>
-            <description value="This resource defines the characteristics of a message that can be shared between a forensic toxicology system and a medical examiner/coroner system."/>
+            <description value="This resource defines the characteristics of a message that can be shared between a forensic toxicology system and an MDI CMS"/>
             <exampleBoolean value="true"/>
             <groupingId value="capability-statements"/>
         </resource>
@@ -704,16 +694,6 @@
             </reference>
             <name value="ValueSet - Yes No Unknown NotApplicable"/>
             <description value="Valueset with Yes, No, Unknown, and Not Applicable.&#xA;The MDI ValueSet - Yes No Unknown NotApplicable artifact overlaps with the VRDR Yes No Unknown NotApplicable artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="value-sets"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-yes-no-not-applicable"/>
-                <display value="ValueSet - Yes, No, Not Applicable"/>
-            </reference>
-            <name value="ValueSet - Yes, No, Not Applicable"/>
-            <description value="A set of codes used to respond to any question that can be answered Yes, No, or Not Applicable. Based on [Yes No Not Applicable (NCHS)[2.16.840.1.114222.4.11.7486]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)"/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
         </resource>
@@ -911,7 +891,7 @@
             <reference>
                 <reference value="DocumentReference/documentreference-mdi-investigation-ex1"/></reference>
             <name value="DocumentReference - MDI Investigation Example 1"/>
-            <description value="DocumentReference - MDI Investigation Example 1"/>
+            <description value="DocumentReference - MDI Investigation: Site Report example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-investigation"/>
             <groupingId value="participant-examples"/>
@@ -920,7 +900,7 @@
             <reference>
                 <reference value="DocumentReference/documentreference-mdi-clinical-ex2"/></reference>
             <name value="DocumentReference - MDI Clinical Example 2"/>
-            <description value="DocumentReference - MDI Clinical Example 2"/>
+            <description value="DocumentReference - MDI Clinical: Investigator’s Narrative example 2"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-clinical"/>
             <groupingId value="participant-examples"/>
@@ -929,10 +909,52 @@
             <reference>
                 <reference value="DocumentReference/documentreference-mdi-clinical-ex1"/></reference>
             <name value="DocumentReference - MDI Clinical Example 1"/>
-            <description value="DocumentReference - MDI Clinical Example 1"/>
+            <description value="DocumentReference - MDI Clinical: Autopsy Report example 1"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-clinical"/>
             <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-death-string"/>
+                <display value="Atlanta GA Death Location - Freeman (address string)"/>
+            </reference>
+            <name value="Atlanta GA Death Location - Freeman (address string)"/>
+            <description value="Location - Death: address as string example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-death-lat-long"/>
+                <display value="Lake Death Location - Unknown"/>
+            </reference>
+            <name value="Lake Death Location - Lat/Long"/>
+            <description value="Location - Death: latitude &amp; longitude example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-death-date-period"/></reference>
+            <name value="Observation - Death Date - period"/>
+            <description value="Observation - Death Date: period example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-mdi-to-edrs-draft"/>
+                <display value="MDI to EDRS Composition"/>
+            </reference>
+            <name value="MDI to EDRS Composition - draft"/>
+            <description value="Composition - MDI to  EDRS: draft example with status=preliminary, author &amp; attester using data-absent-reason extension"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

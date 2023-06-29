@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="documentreference-mdi-clinical-ex1"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-06-27T19:32:11.195Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-29T15:11:02.781Z"/>
     </meta>
     <status value="current"/>
     <docStatus value="final"/>

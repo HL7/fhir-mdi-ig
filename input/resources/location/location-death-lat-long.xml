@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Location
+    xmlns="http://hl7.org/fhir">
+    <id value="location-death-lat-long"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-29T15:19:29.204Z"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
+    </meta>
+    <identifier>
+        <system value="http://www.acme.org/location"/>
+        <value value="29"/>
+    </identifier>
+    <status value="active"/>
+    <name value="Lake Death Location - Lat/Long"/>
+    <type>
+        <coding>
+            <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+            <code value="death"/>
+        </coding>
+    </type>
+</Location>

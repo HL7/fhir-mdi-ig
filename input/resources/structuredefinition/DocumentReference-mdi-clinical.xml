@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="DocumentReference-mdi-clinical"/>
     <meta>
-        <versionId value="25"/>
-        <lastUpdated value="2023-06-27T23:34:11.823Z"/>
+        <versionId value="28"/>
+        <lastUpdated value="2023-06-29T15:41:49.473Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-clinical"/>
     <name value="DocumentReferenceMDIClinical"/>
@@ -27,11 +27,11 @@
         </element>
         <element id="DocumentReference.type">
             <path value="DocumentReference.type"/>
-            <short value="o	If LOINC code for type is not available, use HL7 v3 Code System NullFlavor (http://terminology.hl7.org/CodeSystem/v3-NullFlavor) code=UNK, display=unknown 'unknown'."/>
+            <short value="If LOINC code for type is not available, use HL7 v3 Code System NullFlavor (http://terminology.hl7.org/CodeSystem/v3-NullFlavor) code=UNK, display=unknown 'unknown'."/>
         </element>
         <element id="DocumentReference.category">
             <path value="DocumentReference.category"/>
-            <short value="o	Reference a terminology (code system &amp; code) or use text to describe the document category."/>
+            <short value="Reference a terminology (code system &amp; code) or use text to describe the document category."/>
         </element>
     </differential>
 </StructureDefinition>

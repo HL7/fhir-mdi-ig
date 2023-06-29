@@ -32,6 +32,10 @@
 
 **DocumentReference - MDI Investigation Report**: Added profile of DocumentReference base resource for exchange of death investigation documents , such as an Investigator’s Narrative. [FHIR-41348](https://jira.hl7.org/browse/FHIR-41348)
 
+#### Terminology
+* Updated code displays to match source code systems (e.g., SNOMED CT)
+* Removed unused valuesets: ValueSet - Units of Age; ValueSet - Yes, No, Not Applicable
+
 #### Narrative Pages
 **Overall**: Clarified language , updating terms such as “MDI system” to “MDI case management system (MDI CMS)” for the electronic data systems [FHIR-36944](https://jira.hl7.org/browse/FHIR-36944)
 

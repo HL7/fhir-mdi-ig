@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="documentreference-mdi-investigation-ex1"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-06-27T19:30:31.976Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-29T15:10:16.422Z"/>
     </meta>
     <status value="current"/>
     <docStatus value="final"/>

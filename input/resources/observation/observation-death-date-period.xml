@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-death-date-a-freeman"/>
+    <id value="observation-death-date-period"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-06-29T14:47:03.970Z"/>
-        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-06-29T14:46:55.571Z"/>
     </meta>
-    <status value="final"/>
+    <status value="preliminary"/>
     <code>
         <coding>
             <system value="http://loinc.org"/>
@@ -16,14 +15,16 @@
         </coding>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-a-freeman"/>
+        <reference value="Patient/us-core-patient-unknown-name"/>
     </subject>
     <effectiveDateTime value="2022-01-08T15:30:00-05:00"/>
     <performer>
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </performer>
-    <valueDateTime value="2022-01-08"/>
-    <!--<extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"><extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-day"><valueUnsignedInt value="8"/></extension><extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-year"><valueUnsignedInt value="2022"/></extension><extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-month"><valueUnsignedInt value="1"/></extension><extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-time"><valueTime><extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason"><valueCode value="unknown"/></extension></valueTime></extension></extension>-->
+    <valuePeriod>
+        <start value="2021-12"/>
+        <end value="2022-01-01"/>
+    </valuePeriod>
     <method>
         <coding>
             <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
@@ -50,10 +51,11 @@
         </code>
         <valueCodeableConcept>
             <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="63238001"/>
-                <display value="Dead on arrival at hospital"/>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                <code value="OTH"/>
+                <display value="Other"/>
             </coding>
+            <text value="Lake"/>
         </valueCodeableConcept>
     </component>
 </Observation>

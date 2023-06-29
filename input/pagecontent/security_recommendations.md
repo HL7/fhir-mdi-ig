@@ -6,9 +6,9 @@ This page describes the recommendations for a minimum level of security when imp
 In most modern systems, digital data are exchanged using web services. FHIR recommends a web service called RESTful Application Programming Interface (REST API) where REST stands for **RE**presentational **S**tate **T**ransfer. REST API uses Transport Layer Security (TLS) for secure transportation. More accurately, TLS 1.2 or higher needs to be used. This is also known as HTTPS. All data exchanges in MDI FHIR IG must be done in HTTPS.
 
 ### Limited Data Access to Authorized Individuals
-A standard authorization protocol that can be used to limit the data access is the OAuth 2.0 Authorization Framework (OAuth2) defined in [RFC 6749](https://www.rfc-editor.org/rfc/rfc6749). Developers should become familiar with the RFC document for the technical details on OAuth2. The following are good additional references for OAuth2:
-* https://auth0.com/docs/authenticate/protocols/oauth 
-* https://www.oauth.com 
+The OAuth 2.0 Authorization Framework (OAuth2), defined in [RFC 6749](https://www.rfc-editor.org/rfc/rfc6749), is a standard authorization protocol that can be used to limit data access. Developers should become familiar with the RFC 6749 document for the technical details on OAuth2. The following are good additional references for OAuth2:
+* [OAuth 2.0 Authorization Framework](https://auth0.com/docs/authenticate/protocols/oauth)
+* [OAuth 2.0 Simplified](https://www.oauth.com)
 
 SMART on FHIR is a recommended security solution for FHIR. And, it uses OAuth2 for the security protocol. The SMART on FHIR is targeting to clinical data access for providers, patients, and clinical systems such as EHR. While SMART on FHIR can also be applied to MDI FHIR systems, this document does not recommend the SMART on FHIR as a minimum-security solution due to its granularity and complexity of access definitions on resources and users. Thus, this document discusses the general OAuth2 as a minimum level of security. However, if a system needs to be maintained at a similar level of security as clinical systems, SMART on FHIR is a recommended protocol. Details on the SMART on FHIR can be found in http://www.hl7.org/fhir/smart-app-launch/. 
 

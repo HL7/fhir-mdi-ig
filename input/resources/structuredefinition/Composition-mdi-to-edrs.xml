@@ -66,7 +66,7 @@
         </element>
         <element id="Composition.author">
             <path value="Composition.author"/>
-            <short value="Death certifier. If the author is not available, explain using dataAbsentReason."/>
+            <short value="Death certifier. If the author is not available, explain using data-absent-reason Extension"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
@@ -76,7 +76,7 @@
         </element>
         <element id="Composition.attester">
             <path value="Composition.attester"/>
-            <short value="Death certifier. If the attester is not available, explain using dataAbsentReason."/>
+            <short value="Death certifier. If the attester is not available, explain using data-absent-reason Extension"/>
             <definition value="The certifying Medical Examiner/Coroner (Certifier)"/>
             <min value="1"/>
             <max value="1"/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="documentreference-mdi-clinical-ex2"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-06-27T22:47:30.405Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-29T15:13:17.195Z"/>
     </meta>
     <status value="current"/>
     <docStatus value="final"/>
@@ -23,7 +23,7 @@
     </subject>
     <date value="2023-01-13T15:52:20.000+00:00"/>
     <authenticator>
-        <reference value="Practitioner/us-core-practitioner-jm-lehz"/>
+        <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </authenticator>
     <content>
         <attachment>
