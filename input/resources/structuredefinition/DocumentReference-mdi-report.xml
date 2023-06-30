@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="DocumentReference-mdi-clinical"/>
+    <id value="DocumentReference-mdi-report"/>
     <meta>
-        <versionId value="28"/>
-        <lastUpdated value="2023-06-29T15:41:49.473Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-30T17:01:57.061Z"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-clinical"/>
-    <name value="DocumentReferenceMDIClinical"/>
-    <title value="DocumentReference - MDI Clinical Report"/>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report"/>
+    <name value="DocumentReferenceMDIReport"/>
+    <title value="DocumentReference - MDI Report"/>
     <status value="active"/>
-    <description value="This DocumentReference profile constrains the US Core DocumentReference Profile to support exchanging death investigation clinical documents, such as Autopsy Reports. The content may be included as inline base64 encoded data or be provided by direct reference (e.g., URL). The document type is required and is constrained by US Core to a LOINC value whose SCALE is DOC in the LOINC database or is the HL7 v3 Code System NullFlavor concept 'unknown'."/>
+    <description value="This DocumentReference profile constrains the US Core DocumentReference Profile to support exchanging death investigation documents, such as an Autopsy Report or Investigator’s Narrative. The content may be included as inline base64 encoded data or be provided by direct reference (e.g., URL). The document type is required and is constrained by US Core to a LOINC value whose SCALE is DOC in the LOINC database or is the HL7 v3 Code System NullFlavor concept 'unknown'."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

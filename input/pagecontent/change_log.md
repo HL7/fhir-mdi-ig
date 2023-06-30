@@ -28,9 +28,7 @@
 
 **Bundle - Message Toxicology to MDI**: made identifier optional [FHIR-39413](https://jira.hl7.org/browse/FHIR-39413)
 
-**DocumentReference - MDI Clinical Report**: Added profile of US Core DocumentReference Profile for exchange of death investigation clinical documents, such as Autopsy Reports. [FHIR-41348](https://jira.hl7.org/browse/FHIR-41348)
-
-**DocumentReference - MDI Investigation Report**: Added profile of DocumentReference base resource for exchange of death investigation documents , such as an Investigator’s Narrative. [FHIR-41348](https://jira.hl7.org/browse/FHIR-41348)
+**DocumentReference - MDI Report**: Added profile of US Core DocumentReference Profile for exchange of death investigation documents, such as Autopsy Reports and Investigator’s Narratives. [FHIR-41348](https://jira.hl7.org/browse/FHIR-41348)
 
 #### Terminology
 * Updated code displays to match source code systems (e.g., SNOMED CT)

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1050"/>
-        <lastUpdated value="2023-06-29T17:25:04.229Z"/>
+        <versionId value="1087"/>
+        <lastUpdated value="2023-06-30T17:40:48.958Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -90,7 +90,7 @@
                 <display value="Bundle - Document MDI to EDRS"/>
             </reference>
             <name value="Bundle - Document MDI to EDRS"/>
-            <description value="This Bundle profile represents Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI to EDRS."/>
+            <description value="This Bundle profile represents a Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI to EDRS."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -129,7 +129,7 @@
                 <display value="Composition - MDI to EDRS"/>
             </reference>
             <name value="Composition - MDI to EDRS"/>
-            <description value="This Composition profile represents data between an MDI CMS and an EDRS."/>
+            <description value="This Composition profile represents data exchanged between an MDI CMS and an EDRS."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -494,7 +494,7 @@
             <reference>
                 <reference value="Patient/us-core-patient-unknown-name"/></reference>
             <name value="US Core Patient - Unknown Name"/>
-            <description value="US Core Patient: Unknown Name - Decedent where there is no information known about the patient. Assume that the system will assign a tracking number (e.g., medical record number, case number, or other)."/>
+            <description value="US Core Patient: Unknown Name - Decedent where there is no information known about the patient. Assume that the system will assign a tracking number (e.g., medical record number, case number, or other). Uses Extension: Data Absent Reason."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             <groupingId value="participant-examples"/>
@@ -849,26 +849,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/DocumentReference-mdi-investigation"/>
-                <display value="DocumentReference - MDI Investigation Report"/>
-            </reference>
-            <name value="DocumentReference - MDI Investigation Report"/>
-            <description value="This DocumentReference profile supports exchanging death investigation documents, such as an Investigator’s Narrative, Anthropology Reports, or Entomology Reports. The content may be included as inline base64 encoded data or be provided by direct reference (e.g., URL). The document type is an optional CodeableConcept, which identifies the kind of document being exchanged by referencing a terminology (LOINC code, if possible) or by text."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="administrative-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/DocumentReference-mdi-clinical"/>
-                <display value="DocumentReference - MDI Clinical Report"/>
-            </reference>
-            <name value="DocumentReference - MDI Clinical Report"/>
-            <description value="This DocumentReference profile constrains the US Core DocumentReference Profile to support exchanging death investigation clinical documents, such as Autopsy Reports. The content may be included as inline base64 encoded data or be provided by direct reference (e.g., URL). The document type is required and is constrained by US Core to a LOINC value whose SCALE is DOC in the LOINC database or is the HL7 v3 Code System NullFlavor concept 'unknown'."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="administrative-profiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Practitioner/us-core-practitioner-jm-lehz"/>
                 <display value="J.M. Lehz"/>
             </reference>
@@ -886,33 +866,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
             <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/documentreference-mdi-investigation-ex1"/></reference>
-            <name value="DocumentReference - MDI Investigation Example 1"/>
-            <description value="DocumentReference - MDI Investigation: Site Report example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-investigation"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/documentreference-mdi-clinical-ex2"/></reference>
-            <name value="DocumentReference - MDI Clinical Example 2"/>
-            <description value="DocumentReference - MDI Clinical: Investigator’s Narrative example 2"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-clinical"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/documentreference-mdi-clinical-ex1"/></reference>
-            <name value="DocumentReference - MDI Clinical Example 1"/>
-            <description value="DocumentReference - MDI Clinical: Autopsy Report example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-clinical"/>
-            <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>
@@ -955,6 +908,34 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
             <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DocumentReference-mdi-report"/>
+                <display value="DocumentReference - MDI Report"/>
+            </reference>
+            <name value="DocumentReference - MDI Report"/>
+            <description value="This DocumentReference profile constrains the US Core DocumentReference Profile to support exchanging death investigation documents, such as an Autopsy Report or Investigator’s Narrative. The content may be included as inline base64 encoded data or be provided by direct reference (e.g., URL). The document type is required and is constrained by US Core to a LOINC value whose SCALE is DOC in the LOINC database or is the HL7 v3 Code System NullFlavor concept 'unknown'."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="administrative-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DocumentReference/documentreference-mdi-autopsy-report-ex"/></reference>
+            <name value="DocumentReference - MDI Report - Autopsy Report example"/>
+            <description value="DocumentReference - MDI Report: Autopsy Report example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DocumentReference/documentreference-mdi-investigator-narrative-ex"/></reference>
+            <name value="DocumentReference - MDI Report - Investigator's Narrative example"/>
+            <description value="DocumentReference - MDI Report: Investigator's Narrative example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

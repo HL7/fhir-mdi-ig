@@ -1,17 +1,28 @@
 This MDI specification is designed to be flexible to accommodate a variety of systems, recognizing that information management systems used for assembling MDI data vary widely by state, jurisdiction, and agency. This means that many data concepts have few requirements but many “must support” designations. This section provides best practice recommendations on how to address select concepts.
 
+### Bi-Directional Exchange: MDI CMS & EDRS
+The **Bundle - Document MDI to EDRS** profile represents a document exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange during the process of case record creation and updating. The Bundle contains a **Composition - MDI to EDRS**.
+The **Composition - MDI to EDRS** profile represents data exchanged between an MDI CMS and an EDRS, which can be in “draft” (non-finalized) by:
+* Setting status=preliminary
+* Using [Extension: Data Absent Reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) for author and attester, when the death certifier is not yet established
+
 ### Decedent
 This MDI IG uses the US Core Patient for the decedent subject of:
-* Composition - MDI to EDRS and the profiles referenced in its section entries
-* DiagnosticReport - Toxicology Lab Result to MDI and the profiles referenced for its specimens and results
+* **Composition - MDI to EDRS** and the profiles referenced in its section entries
+* **DiagnosticReport - Toxicology Lab Result to MDI** and the profiles referenced for its specimens and results
+
+The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth sex, gender identity, birth date, telecom, address, and marital status). The Composition - MDI to EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.
 
 The [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) profile requires 
 * 1..* patient identifier, each identifier specifying a system and value
 * 1..* patient name
 * 1..1 gender code (AdministrativeGender). Note modeling gender and sex information is ongoing in HL7. Refer to [US Core Patient profile, “Mandatory and Must Support Data Elements.”](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html#mandatory-and-must-support-data-elements)
-The three data elements may not be known during early stages of medicolegal data collection. US Core provide guidance on such cases of [missing data](http://hl7.org/fhir/us/core/general-requirements.html#missing-data).
 
-The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth sex, gender identity, birth date, telecom, address, and martial status). The Composition - MDI to EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.
+These three data elements may not be known during early stages of medicolegal data collection. US Core provide guidance on such cases of [missing data](http://hl7.org/fhir/us/core/general-requirements.html#missing-data).
+
+In addition to the Patient.gender required data element described above, implementers have the option to describe the decedent’s sex at birth via the [US Core Birth Sex Extension](http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex), which provides codes for classifying the person’s sex assigned at birth.
+
+The US Core Patient Profile contains the optional data element Patient.deceased. It  may be used to indicate if the individual is deceased or not. An implementer has a choice of using Boolean (true/false) values or dateTime. If dateTime is used, it should match the Observation - Death Date value[x].
 
 The [Participant & Supporting Examples](artifacts.html#participant-administrative-examples) section of the Artifacts Index page provides an example of a US Core Patient for which no information known about the decedent's name. 
 
@@ -19,7 +30,6 @@ The [Participant & Supporting Examples](artifacts.html#participant-administrativ
 This MDI IG provides opportunities for both identifiers and tracking numbers. 
 
 * **Identifiers**: Identifiers are unique to each individual instance (use) of a FHIR resource being exchanged. They are assigned from the data source and often generated automatically by its system. 
-* 
 * **Tracking numbers**: Tracking numbers identify a case or record over time and across many systems for interoperable communication. Tracking numbers in this MDI IG may be assigned by the originating organization, such as medical examiner and coroner offices or an EDRS, and should persist throughout updates to the death investigation data. They are optional and multiple tracking numbers may be recorded. A system receiving a record with a tracking number may append its own tracking number and return/send the record with both tracking numbers. The extensible ValueSet - Tracking Number Type contains codes to identify the type of tracking number and may be augmented by local implementations of this specification.
 
 ### Certification
@@ -29,7 +39,7 @@ This MDI specification provides opportunities on most profiles for naming the re
 
 The Composition - MDI to EDRS author and attester are required and are the individual who will be listed as the certifier on the death certificate. 
 
-**Unknown author/attester**: Use the dataAbsentReason resource for instances when the author and/or attester is not yet known, for example in initial drafts of the MDI Composition.
+**Unknown author/attester**: Use the [Extension: Data Absent Reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) for instances when the author and/or attester is not yet known, for example in initial drafts of the MDI Composition.
 
 ### Death Date
 The Observation – Death Date profile represents the actual or presumed date of death. It should be used to record information about both the date and time of death and the certainty of those data. Note that the US Core Patient profile used for the decedent has an optional Patient.deceased[x] data modifier that may be used in addition to, but not instead of, the Observation – Death Date profile. If the Patient.deceased[x] is used, it must either be Boolean=true or the dateTime must match Observation  – Death Date.
@@ -40,11 +50,10 @@ The Observation – Death Date profile provides several opportunities to explain
 
 **Specific date or range of dates:** If the actual date of death is known (date, date-time, or partial date such as year or year + month), set value resource type to dateTime. If the date of death is not known, and a range is known, set value resource type to Period, defined by a start and end dateTime.
 
-**Unknown date:** Use the dataAbsentReason resource for missing all or part of the decedent's death date (further information can be recorded in the note data element).
-
 **Options for qualifying the accuracy of the date of death:**
 * Use the Observation.status data element for modifiers contained in the value set [ObservationStatus](http://hl7.org/fhir/valueset-observation-status.html) (registered, preliminary, final, etc.). This value set contains eight concepts and is not extensible (cannot be added to by local implementations).
-* Use the method codes from the extensible ValueSet - Date Establishment Approach (exact, approximate, court-appointed)
+* Use the Observation.note data element to record additional information about the death date.
+* Use the Observation.method data element for method codes from the extensible ValueSet - Date Establishment Approach (exact, approximate, court-appointed)
 
 ### Causes of Death
 The Observation.value[x].text is limited for both Observation - Cause of Death Condition and Observation - Condition Contributing to Death because the receiving EDRS sends the data to NCHS (ultimate receiving system). That NCHS system restricts the text string length for these data elements. Because the originating MDI CMS certifies the content of the data elements, the data must not risk being truncated or lost by the receiving systems along the entire dataflow. Therefore, the originating system must abide by the character limit of the ultimate receiving system at the time of data capture, potentially including direct entry by the user if that is the mechanism of capturing the data.

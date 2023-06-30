@@ -76,16 +76,20 @@ This specification is based on US Core 4.0.0. It defines 16 new profiles in tota
 This specification uses or references US Core profiles:
 * [US Core Condition Encounter Diagnosis Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-condition-encounter-diagnosis.html)
 * [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-condition-problems-health-concerns.html)
+* [US Core DiagnosticReport Profile for Laboratory Results Reporting](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab)
+* [US Core DiagnosticReport Profile for Laboratory Results Reporting](http://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport-lab.html)
 * [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab)
 * [US Core Location Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-location)
+* [US Core Organization Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization)
 * [US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
 * [US Core Practitioner Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner)
 * [US Core PractitionerRole Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole)
+* [US Core Procedure Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure)
 
 ### Resources and Profiles
 This specification defines the following resources. An overview and list of examples is available on the [Artifacts Index Summary](artifacts.html).
 
-**Profiles defined for MDI CMS to EDRS exchange use case:**
+**Profiles defined for MDI CMS and EDRS exchange use case:**
 * Bundle - Document MDI to EDRS 
 * Composition - MDI to EDRS 
 * Observation - Cause of Death Part 1 
@@ -109,9 +113,8 @@ This specification defines the following resources. An overview and list of exam
 * Observation - Toxicology Lab Result
 
 
-**Administrative profiles for exchanging PDF documents:**
-* DocumentReference - MDI Investigation Report
-* DocumentReference - MDI Clinical Report
+**Administrative profile for exchanging PDF documents:**
+* DocumentReference - MDI Report
 
 **Extensions:**
 * Extension - Tracking Number 
