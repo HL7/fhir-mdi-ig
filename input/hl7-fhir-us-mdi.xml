@@ -759,6 +759,16 @@
         </resource>
         <resource>
             <reference>
+                <reference value="CapabilityStatement/CapabilityStatement-mdi-cms-server"/>
+                <display value="CapabilityStatement - MDI CMS Server"/>
+            </reference>
+            <name value="CapabilityStatement - MDI CMS Server"/>
+            <description value="This resource describes the expected capabilities of an MDI CMS Server actor which is responsible for providing responses to the queries submitted by the MDI CMS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by MDI CMS Servers are defined. MDI CMS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="capability-statements"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Parameters/expansion-parameters-mdi"/></reference>
             <name value="Parameters - SNOMED US Version"/>
             <description value="Parameters - SNOMED US Version"/>
