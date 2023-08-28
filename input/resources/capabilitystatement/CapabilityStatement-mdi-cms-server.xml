@@ -20,8 +20,8 @@
     <format value="xml"/>
     <format value="application/fhir+json"/>
     <format value="json"/>
-    <format value="html/json"/>
-    <format value="html/xml"/>
+<!--    <format value="html/json"/>
+    <format value="html/xml"/>-->
     <!--From GTRI metadata-->
     <rest>
         <mode value="server"/>
@@ -46,9 +46,9 @@
             </service>
         </security>-->
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="Binary"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Binary"/>
             <interaction>
@@ -116,9 +116,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="Bundle"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
             <interaction>
@@ -214,9 +214,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="4"/>
-            </extension>
+            </extension>-->
             <type value="Composition"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
             <interaction>
@@ -356,9 +356,9 @@
        -->
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="ConceptMap"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/ConceptMap"/>
             <interaction>
@@ -415,9 +415,9 @@
             </operation>-->
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="2"/>
-            </extension>
+            </extension>-->
             <type value="Condition"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
             <interaction>
@@ -502,9 +502,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="Device"/>
             <interaction>
                 <code value="update"/>
@@ -579,9 +579,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="DeviceUseStatement"/>
             <interaction>
                 <code value="update"/>
@@ -658,9 +658,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="DiagnosticReport"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
             <interaction>
@@ -764,9 +764,9 @@
             </operation>-->
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="DocumentReference"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
             <interaction>
@@ -866,9 +866,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="Encounter"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
             <interaction>
@@ -961,9 +961,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="1"/>
-            </extension>
+            </extension>-->
             <type value="List"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/List"/>
             <interaction>
@@ -1054,9 +1054,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="2"/>
-            </extension>
+            </extension>-->
             <type value="Location"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Location"/>
             <interaction>
@@ -1124,9 +1124,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="Medication"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
             <interaction>
@@ -1190,9 +1190,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="MedicationRequest"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
             <interaction>
@@ -1290,9 +1290,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="MedicationStatement"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
             <interaction>
@@ -1397,9 +1397,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="MessageHeader"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/MessageHeader"/>
             <interaction>
@@ -1483,9 +1483,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="4"/>
-            </extension>
+            </extension>-->
             <type value="Observation"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
             <interaction>
@@ -1633,9 +1633,9 @@
             <searchRevInclude value="Specimen:subject"/>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="Organization"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
             <interaction>
@@ -1708,9 +1708,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="Parameters"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
             <interaction>
@@ -1761,9 +1761,9 @@
             <searchRevInclude value="Specimen:subject"/>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="4"/>
-            </extension>
+            </extension>-->
             <type value="Patient"/>
             <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             <interaction>
@@ -1879,9 +1879,9 @@
             </operation>-->
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="5"/>
-            </extension>
+            </extension>-->
             <type value="Practitioner"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
             <interaction>
@@ -1981,9 +1981,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="PractitionerRole"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
             <interaction>
@@ -2077,9 +2077,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="Procedure"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
             <interaction>
@@ -2184,9 +2184,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="RelatedPerson"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
             <interaction>
@@ -2260,9 +2260,9 @@
             </searchParam>
         </resource>
         <resource>
-            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
                 <valueDecimal value="0"/>
-            </extension>
+            </extension>-->
             <type value="Specimen"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
             <interaction>
