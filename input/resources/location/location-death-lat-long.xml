@@ -19,4 +19,8 @@
             <code value="death"/>
         </coding>
     </type>
+    <position>
+        <longitude value="36.146084"/>
+        <latitude value="-114.413155"/>
+    </position>
 </Location>

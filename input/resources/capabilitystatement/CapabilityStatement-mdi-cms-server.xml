@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir">
+    <!--    ***** Capability Statement Notes ***** -->
+    <!--    This CapabilityStatement FHIR resource is based on the Capability Statement of the RESTful test server maintained by Georgia Tech Research Institiute (GTRI) as part of the 
+        Raven Testing Platform, a proof of concept for the MDI FHIR IG. (See: https://raven.heat.icl.gtri.org/ and https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata)
+        This CapabilityStatement describes minimum <interaction> capabilities for search-type and read for a subset of MDI <resource> elements. The kind value="requirement" describes 
+        the capabilities of a desired system, in this case a server storing data related to a detah or death investigation. 
+        This CapabilityStatement does not define <searchRevInclude> or <operation> for any <resource> elements. 
+        Additional MDI <resource> elements that may be of interest to implemntes and additional <interaction> capabilities (update, delete, create) are included as comments. -->
     <id value="CapabilityStatement-mdi-cms-server"/>
-    <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-28T21:31:13.618Z"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-mdi-cms-server"/>
     <name value="CapabilityStatementMdiCmsServer"/>
     <title value="CapabilityStatement - MDI CMS Server"/>
@@ -12,175 +15,39 @@
     <experimental value="false"/>
     <date value="2022-07-03"/>
     <description
-        value="This resource describes the expected capabilities of an MDI CMS Server actor which is responsible for providing responses to the queries submitted by the MDI CMS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by MDI CMS Servers are defined. MDI CMS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+        value="This resource describes expected capabilities of an MDI CMS Server which is responsible for providing responses to the queries submitted by a Client. 
+        It lists FHIR profiles and search parameters that, at a minimum, should be supported by MDI CMS Servers. MDI CMS Clients have the option of choosing from this list to access necessary data."/>
     <kind value="requirements"/>
     <fhirVersion value="4.0.1"/>
-    <!--From GTRI metadata-->
     <format value="application/fhir+xml"/>
     <format value="xml"/>
     <format value="application/fhir+json"/>
     <format value="json"/>
-<!--    <format value="html/json"/>
-    <format value="html/xml"/>-->
-    <!--From GTRI metadata-->
+
     <rest>
         <mode value="server"/>
-<!--        <security>
-            <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris">
-                <extension url="authorize">
-                    <valueUri
-                        value="https://bluejay.heat.icl.gtri.org/mdi-fhir-server/smart/authorize"/>
-                </extension>
-                <extension url="token">
-                    <valueUri value="https://bluejay.heat.icl.gtri.org/mdi-fhir-server/smart/token"
-                    />
-                </extension>
-            </extension>
-            <service>
-                <coding>
-                    <system
-                        value="https://www.hl7.org/fhir/codesystem-restful-security-service.html"/>
-                    <code value="SMART-on-FHIR"/>
-                    <display value="SMART-on-FHIR"/>
-                </coding>
-            </service>
-        </security>-->
+
         <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
-            <type value="Binary"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/Binary"/>
-            <interaction>
-                <code value="update"/>
-            </interaction>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <interaction>
-                <code value="search-type"/>
-            </interaction>
-            <interaction>
-                <code value="delete"/>
-            </interaction>
-            <interaction>
-                <code value="create"/>
-            </interaction>
-            <searchInclude value="*"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-            <searchParam>
-                <name value="_id"/>
-                <type value="token"/>
-                <documentation value="The ID of the resource"/>
-            </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
             <type value="Bundle"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-            <interaction>
+            <!--            <interaction>
                 <code value="update"/>
-            </interaction>
+            </interaction>-->
             <interaction>
                 <code value="read"/>
             </interaction>
             <interaction>
                 <code value="search-type"/>
             </interaction>
-            <interaction>
+            <!--            <interaction>
                 <code value="delete"/>
             </interaction>
             <interaction>
                 <code value="create"/>
-            </interaction>
+            </interaction>-->
             <searchInclude value="*"/>
             <searchInclude value="Bundle:composition"/>
-            <searchInclude value="Bundle:message"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
+            <searchInclude value="Bundle:message"/>      
             <searchParam>
                 <name value="_id"/>
                 <type value="token"/>
@@ -213,72 +80,28 @@
                 />
             </searchParam>
         </resource>
+        
         <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="4"/>
-            </extension>-->
             <type value="Composition"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
-            <interaction>
+<!--            <interaction>
                 <code value="update"/>
-            </interaction>
+            </interaction>-->
             <interaction>
                 <code value="search-type"/>
             </interaction>
             <interaction>
                 <code value="read"/>
             </interaction>
-            <interaction>
+<!--            <interaction>
                 <code value="delete"/>
             </interaction>
             <interaction>
                 <code value="create"/>
-            </interaction>
+            </interaction>-->
             <searchInclude value="*"/>
             <searchInclude value="Composition:patient"/>
             <searchInclude value="Composition:subject"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="date"/>
                 <type value="date"/>
@@ -328,96 +151,9 @@
                 <type value="token"/>
                 <documentation value="The ID of the resource"/>
             </searchParam>
-            
-<!--            <operation>
-                <name value="update-mdi"/>
-                <definition
-                    value="https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/OperationDefinition/Composition-t-update-mdi"
-                />
-            </operation>
-            <operation>
-                <name value="event-detail"/>
-                <definition
-                    value="https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/OperationDefinition/Composition-query-event-detail"
-                />
-            </operation>
-            <operation>
-                <name value="mdi-documents"/>
-                <definition
-                    value="https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/OperationDefinition/Composition-it-mdi-documents"
-                />
-            </operation>
-            <operation>
-                <name value="document"/>
-                <definition
-                    value="https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/OperationDefinition/Composition-i-document"
-                />
-            </operation>
-       -->
         </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
-            <type value="ConceptMap"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/ConceptMap"/>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <searchInclude value="*"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-<!--            <operation>
-                <name value="translate"/>
-                <definition
-                    value="https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/OperationDefinition/ConceptMap-t-translate"
-                />
-            </operation>-->
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="2"/>
-            </extension>-->
+        
+        <!--<resource>
             <type value="Condition"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
             <interaction>
@@ -438,48 +174,6 @@
             <searchInclude value="*"/>
             <searchInclude value="Condition:patient"/>
             <searchInclude value="Condition:subject"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="code"/>
                 <type value="token"/>
@@ -500,167 +194,9 @@
                 <type value="token"/>
                 <documentation value="The ID of the resource"/>
             </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
-            <type value="Device"/>
-            <interaction>
-                <code value="update"/>
-            </interaction>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <interaction>
-                <code value="search-type"/>
-            </interaction>
-            <interaction>
-                <code value="delete"/>
-            </interaction>
-            <searchInclude value="*"/>
-            <searchInclude value="Device:patient"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-            <searchParam>
-                <name value="patient"/>
-                <type value="reference"/>
-                <documentation value="Patient information, if the resource is affixed to a person"/>
-            </searchParam>
-            <searchParam>
-                <name value="type"/>
-                <type value="token"/>
-                <documentation value="The type of the device"/>
-            </searchParam>
-            <searchParam>
-                <name value="_id"/>
-                <type value="token"/>
-                <documentation value="The ID of the resource"/>
-            </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
-            <type value="DeviceUseStatement"/>
-            <interaction>
-                <code value="update"/>
-            </interaction>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <interaction>
-                <code value="search-type"/>
-            </interaction>
-            <interaction>
-                <code value="delete"/>
-            </interaction>
-            <interaction>
-                <code value="create"/>
-            </interaction>
-            <searchInclude value="DeviceUseStatement:device"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-            <searchParam>
-                <name value="_id"/>
-                <type value="token"/>
-                <documentation value="The ID of the resource"/>
-            </searchParam>
-            <searchParam>
-                <name value="patient"/>
-                <type value="reference"/>
-                <documentation value="Search by subject - a patient"/>
-            </searchParam>
-            <searchParam>
-                <name value="subject"/>
-                <type value="reference"/>
-                <documentation value="Search by subject"/>
-            </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
+        </resource>-->
+
+        <!--        <resource>
             <type value="DiagnosticReport"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
             <interaction>
@@ -681,48 +217,6 @@
             <searchInclude value="DiagnosticReport:encounter"/>
             <searchInclude value="DiagnosticReport:patient"/>
             <searchInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="encounter"/>
                 <type value="reference"/>
@@ -756,17 +250,10 @@
                 <type value="token"/>
                 <documentation value="The ID of the resource"/>
             </searchParam>
-<!--            <operation>
-                <name value="toxicology-message"/>
-                <definition
-                    value="https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/OperationDefinition/DiagnosticReport-it-toxicology-message"
-                />
-            </operation>-->
         </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
+        -->
+
+        <!--        <resource>
             <type value="DocumentReference"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
             <interaction>
@@ -787,48 +274,6 @@
             <searchInclude value="DocumentReference:encounter"/>
             <searchInclude value="DocumentReference:patient"/>
             <searchInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="date"/>
                 <type value="date"/>
@@ -865,541 +310,35 @@
                 <documentation value="The ID of the resource"/>
             </searchParam>
         </resource>
+ -->
+
         <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
-            <type value="Encounter"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
-            <interaction>
-                <code value="update"/>
-            </interaction>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <interaction>
-                <code value="search-type"/>
-            </interaction>
-            <interaction>
-                <code value="delete"/>
-            </interaction>
-            <interaction>
-                <code value="create"/>
-            </interaction>
-            <searchInclude value="Encounter:appointment"/>
-            <searchInclude value="Encounter:diagnosis"/>
-            <searchInclude value="Encounter:episodeofcare"/>
-            <searchInclude value="Encounter:incomingreferral"/>
-            <searchInclude value="Encounter:location"/>
-            <searchInclude value="Encounter:part-of"/>
-            <searchInclude value="Encounter:participant"/>
-            <searchInclude value="Encounter:patient"/>
-            <searchInclude value="Encounter:practitioner"/>
-            <searchInclude value="Encounter:service-provider"/>
-            <searchInclude value="Encounter:subject"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-            <searchParam>
-                <name value="_id"/>
-                <type value="token"/>
-                <documentation value="The ID of the resource"/>
-            </searchParam>
-            <searchParam>
-                <name value="diagnosis"/>
-                <type value="reference"/>
-                <documentation value="The diagnosis or procedure relevant to the encounter"/>
-            </searchParam>
-            <searchParam>
-                <name value="patient"/>
-                <type value="reference"/>
-                <documentation value="The patient or group present at the encounter"/>
-            </searchParam>
-            <searchParam>
-                <name value="subject"/>
-                <type value="reference"/>
-                <documentation value="The patient or group present at the encounter"/>
-            </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="1"/>
-            </extension>-->
-            <type value="List"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/List"/>
-            <interaction>
-                <code value="update"/>
-            </interaction>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <interaction>
-                <code value="search-type"/>
-            </interaction>
-            <interaction>
-                <code value="delete"/>
-            </interaction>
-            <interaction>
-                <code value="create"/>
-            </interaction>
-            <searchInclude value="*"/>
-            <searchInclude value="List:patient"/>
-            <searchInclude value="List:source"/>
-            <searchInclude value="List:subject"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-            <searchParam>
-                <name value="code"/>
-                <type value="token"/>
-                <documentation value="What the purpose of this list is"/>
-            </searchParam>
-            <searchParam>
-                <name value="patient"/>
-                <type value="reference"/>
-                <documentation value="If all resources have the same subject"/>
-            </searchParam>
-            <searchParam>
-                <name value="source"/>
-                <type value="reference"/>
-                <documentation value="Who and/or what defined the list contents (aka Author)"/>
-            </searchParam>
-            <searchParam>
-                <name value="subject"/>
-                <type value="reference"/>
-                <documentation value="If all resources have the same subject"/>
-            </searchParam>
-            <searchParam>
-                <name value="_id"/>
-                <type value="token"/>
-                <documentation value="The ID of the resource"/>
-            </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="2"/>
-            </extension>-->
             <type value="Location"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Location"/>
-            <interaction>
+<!--            <interaction>
                 <code value="update"/>
-            </interaction>
+            </interaction>-->
             <interaction>
                 <code value="read"/>
             </interaction>
             <interaction>
                 <code value="search-type"/>
             </interaction>
-            <interaction>
+<!--            <interaction>
                 <code value="delete"/>
             </interaction>
             <interaction>
                 <code value="create"/>
-            </interaction>
+            </interaction>-->
             <searchInclude value="*"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="_id"/>
                 <type value="token"/>
                 <documentation value="The ID of the resource"/>
             </searchParam>
         </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
-            <type value="Medication"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <interaction>
-                <code value="search-type"/>
-            </interaction>
-            <searchInclude value="*"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-            <searchParam>
-                <name value="code"/>
-                <type value="token"/>
-                <documentation value="Returns medications for a specific code"/>
-            </searchParam>
-            <searchParam>
-                <name value="_id"/>
-                <type value="token"/>
-                <documentation value="The ID of the resource"/>
-            </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
-            <type value="MedicationRequest"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
-            <interaction>
-                <code value="update"/>
-            </interaction>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <interaction>
-                <code value="search-type"/>
-            </interaction>
-            <interaction>
-                <code value="delete"/>
-            </interaction>
-            <interaction>
-                <code value="create"/>
-            </interaction>
-            <searchInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-            <searchParam>
-                <name value="_id"/>
-                <type value="token"/>
-                <documentation value="The ID of the resource"/>
-            </searchParam>
-            <searchParam>
-                <name value="authoredon"/>
-                <type value="date"/>
-                <documentation value="Return prescriptions written on this date"/>
-            </searchParam>
-            <searchParam>
-                <name value="code"/>
-                <type value="token"/>
-                <documentation value="Return prescriptions of this medication code"/>
-            </searchParam>
-            <searchParam>
-                <name value="encounter"/>
-                <type value="reference"/>
-                <documentation value="Return prescriptions with this encounter identifier"/>
-            </searchParam>
-            <searchParam>
-                <name value="medication"/>
-                <type value="reference"/>
-                <documentation value="Return prescriptions for this medication reference"/>
-            </searchParam>
-            <searchParam>
-                <name value="patient"/>
-                <type value="reference"/>
-                <documentation value="Returns prescriptions for a specific patient"/>
-            </searchParam>
-            <searchParam>
-                <name value="subject"/>
-                <type value="reference"/>
-                <documentation value="The identity of a patient to list orders  for"/>
-            </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
-            <type value="MedicationStatement"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
-            <interaction>
-                <code value="update"/>
-            </interaction>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <interaction>
-                <code value="search-type"/>
-            </interaction>
-            <interaction>
-                <code value="delete"/>
-            </interaction>
-            <interaction>
-                <code value="create"/>
-            </interaction>
-            <searchInclude value="*"/>
-            <searchInclude value="MedicationStatement:context"/>
-            <searchInclude value="MedicationStatement:patient"/>
-            <searchInclude value="MedicationStatement:source"/>
-            <searchInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-            <searchParam>
-                <name value="code"/>
-                <type value="token"/>
-                <documentation value="Return statements of this medication code"/>
-            </searchParam>
-            <searchParam>
-                <name value="context"/>
-                <type value="reference"/>
-                <documentation
-                    value="Returns statements for a specific context (episode or episode of Care)."
-                />
-            </searchParam>
-            <searchParam>
-                <name value="effective"/>
-                <type value="date"/>
-                <documentation value="Date when patient was taking (or not taking) the medication"/>
-            </searchParam>
-            <searchParam>
-                <name value="patient"/>
-                <type value="reference"/>
-                <documentation value="Returns statements for a specific patient."/>
-            </searchParam>
-            <searchParam>
-                <name value="source"/>
-                <type value="reference"/>
-                <documentation value="Who or where the information in the statement came from"/>
-            </searchParam>
-            <searchParam>
-                <name value="subject"/>
-                <type value="reference"/>
-                <documentation
-                    value="The identity of a patient, animal or group to list statements for"/>
-            </searchParam>
-            <searchParam>
-                <name value="_id"/>
-                <type value="token"/>
-                <documentation value="The ID of the resource"/>
-            </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
+
+        <!--<resource>
             <type value="MessageHeader"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/MessageHeader"/>
             <interaction>
@@ -1419,48 +358,6 @@
             </interaction>
             <searchInclude value="*"/>
             <searchInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="focus"/>
                 <type value="reference"/>
@@ -1481,28 +378,26 @@
                 <type value="token"/>
                 <documentation value="The ID of the resource"/>
             </searchParam>
-        </resource>
+        </resource>-->
+
         <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="4"/>
-            </extension>-->
             <type value="Observation"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-            <interaction>
+<!--            <interaction>
                 <code value="update"/>
-            </interaction>
+            </interaction>-->
             <interaction>
                 <code value="read"/>
             </interaction>
             <interaction>
                 <code value="search-type"/>
             </interaction>
-            <interaction>
+<!--            <interaction>
                 <code value="delete"/>
             </interaction>
             <interaction>
                 <code value="create"/>
-            </interaction>
+            </interaction>-->
             <searchInclude value="Observation:based-on"/>
             <searchInclude value="Observation:context"/>
             <searchInclude value="Observation:device"/>
@@ -1512,48 +407,6 @@
             <searchInclude value="Observation:related-target"/>
             <searchInclude value="Observation:specimen"/>
             <searchInclude value="Observation:subject"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="code"/>
                 <type value="token"/>
@@ -1582,60 +435,8 @@
                 <documentation value="The ID of the resource"/>
             </searchParam>
         </resource>
-        <resource>
-            <type value="OperationDefinition"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <searchInclude value="*"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
+
+<!--        <resource>
             <type value="Organization"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
             <interaction>
@@ -1654,48 +455,6 @@
                 <code value="create"/>
             </interaction>
             <searchInclude value="Organization:partof"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="_id"/>
                 <type value="token"/>
@@ -1707,85 +466,37 @@
                 <documentation value="A portion of the organization's name or alias"/>
             </searchParam>
         </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
+-->
+        <!--<resource>
             <type value="Parameters"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
             <interaction>
                 <code value="read"/>
             </interaction>
             <searchInclude value="*"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-        </resource>
+        </resource>-->
+
         <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="4"/>
-            </extension>-->
             <type value="Patient"/>
             <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-            <interaction>
+<!--            <interaction>
                 <code value="update"/>
-            </interaction>
+            </interaction>-->
             <interaction>
                 <code value="read"/>
             </interaction>
             <interaction>
                 <code value="search-type"/>
             </interaction>
-            <interaction>
+<!--            <interaction>
                 <code value="delete"/>
             </interaction>
             <interaction>
                 <code value="create"/>
-            </interaction>
+            </interaction>-->
             <searchInclude value="Patient:general-practitioner"/>
             <searchInclude value="Patient:link"/>
             <searchInclude value="Patient:organization"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="Observation:subject"/>
             <searchParam>
                 <name value="_id"/>
                 <type value="token"/>
@@ -1871,17 +582,9 @@
                 <type value="token"/>
                 <documentation value="The value in any kind of telecom details of the patient"/>
             </searchParam>
-<!--            <operation>
-                <name value="everything"/>
-                <definition
-                    value="https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/OperationDefinition/Patient-i-everything"
-                />
-            </operation>-->
         </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="5"/>
-            </extension>-->
+
+        <!--<resource>
             <type value="Practitioner"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
             <interaction>
@@ -1900,48 +603,6 @@
                 <code value="create"/>
             </interaction>
             <searchInclude value="*"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="_id"/>
                 <type value="token"/>
@@ -1979,11 +640,9 @@
                     value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
                 />
             </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
+        </resource>-->
+
+        <!--<resource>
             <type value="PractitionerRole"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
             <interaction>
@@ -2004,48 +663,6 @@
             <searchInclude value="*"/>
             <searchInclude value="PractitionerRole:organization"/>
             <searchInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="_id"/>
                 <type value="token"/>
@@ -2075,11 +692,9 @@
                     value="Practitioner that is able to provide the defined services for the organization"
                 />
             </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
+        </resource>-->
+
+        <!--<resource>
             <type value="Procedure"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
             <interaction>
@@ -2100,48 +715,6 @@
             <searchInclude value="Procedure:context"/>
             <searchInclude value="Procedure:patient"/>
             <searchInclude value="Procedure:performer"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="code"/>
                 <type value="token"/>
@@ -2182,87 +755,9 @@
                 <type value="token"/>
                 <documentation value="The ID of the resource"/>
             </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
-            <type value="RelatedPerson"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-            <interaction>
-                <code value="update"/>
-            </interaction>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <interaction>
-                <code value="search-type"/>
-            </interaction>
-            <interaction>
-                <code value="delete"/>
-            </interaction>
-            <interaction>
-                <code value="create"/>
-            </interaction>
-            <searchInclude value="*"/>
-            <searchInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
-            <searchParam>
-                <name value="_id"/>
-                <type value="token"/>
-                <documentation value="The ID of the resource"/>
-            </searchParam>
-            <searchParam>
-                <name value="patient"/>
-                <type value="reference"/>
-                <documentation value="The patient this related person is related to"/>
-            </searchParam>
-        </resource>
-        <resource>
-<!--            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="0"/>
-            </extension>-->
+        </resource>-->
+
+        <!--<resource>
             <type value="Specimen"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
             <interaction>
@@ -2283,48 +778,6 @@
             <searchInclude value="*"/>
             <searchInclude value="Specimen:patient"/>
             <searchInclude value="Specimen:subject"/>
-            <searchRevInclude value="Bundle:composition"/>
-            <searchRevInclude value="Bundle:message"/>
-            <searchRevInclude value="Composition:patient"/>
-            <searchRevInclude value="Composition:subject"/>
-            <searchRevInclude value="Condition:patient"/>
-            <searchRevInclude value="Condition:subject"/>
-            <searchRevInclude value="Device:patient"/>
-            <searchRevInclude value="DeviceUseStatement:patient"/>
-            <searchRevInclude value="DeviceUseStatement:subject"/>
-            <searchRevInclude value="DiagnosticReport:encounter"/>
-            <searchRevInclude value="DiagnosticReport:patient"/>
-            <searchRevInclude value="DiagnosticReport:subject"/>
-            <searchRevInclude value="DocumentReference:encounter"/>
-            <searchRevInclude value="DocumentReference:patient"/>
-            <searchRevInclude value="DocumentReference:subject"/>
-            <searchRevInclude value="Encounter:diagnosis"/>
-            <searchRevInclude value="Encounter:patient"/>
-            <searchRevInclude value="Encounter:subject"/>
-            <searchRevInclude value="List:patient"/>
-            <searchRevInclude value="List:source"/>
-            <searchRevInclude value="List:subject"/>
-            <searchRevInclude value="MedicationRequest:encounter"/>
-            <searchRevInclude value="MedicationRequest:medication"/>
-            <searchRevInclude value="MedicationRequest:patient"/>
-            <searchRevInclude value="MedicationRequest:subject"/>
-            <searchRevInclude value="MedicationStatement:context"/>
-            <searchRevInclude value="MedicationStatement:patient"/>
-            <searchRevInclude value="MedicationStatement:source"/>
-            <searchRevInclude value="MedicationStatement:subject"/>
-            <searchRevInclude value="MessageHeader:focus"/>
-            <searchRevInclude value="Observation:patient"/>
-            <searchRevInclude value="Observation:subject"/>
-            <searchRevInclude value="Patient:organization"/>
-            <searchRevInclude value="PractitionerRole:organization"/>
-            <searchRevInclude value="PractitionerRole:practitioner"/>
-            <searchRevInclude value="Procedure:encounter"/>
-            <searchRevInclude value="Procedure:patient"/>
-            <searchRevInclude value="Procedure:performer"/>
-            <searchRevInclude value="Procedure:subject"/>
-            <searchRevInclude value="RelatedPerson:patient"/>
-            <searchRevInclude value="Specimen:patient"/>
-            <searchRevInclude value="Specimen:subject"/>
             <searchParam>
                 <name value="accession"/>
                 <type value="token"/>
@@ -2345,19 +798,13 @@
                 <type value="token"/>
                 <documentation value="The ID of the resource"/>
             </searchParam>
-        </resource>
+        </resource>-->
+
         <interaction>
             <code value="transaction"/>
         </interaction>
-<!--        <operation>
-            <name value="process-message"/>
-            <definition
-                value="https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/OperationDefinition/-s-process-message"
-            />
-        </operation>-->
     </rest>
 
-    <!--messaging & document from original STU 1 CapabilityStatement-medical-examiner-coroner-server-->
     <messaging>
         <supportedMessage>
             <mode value="receiver"/>
