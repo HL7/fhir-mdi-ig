@@ -506,6 +506,8 @@
         </element>
         <element id="Composition.section:narratives.code">
             <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
