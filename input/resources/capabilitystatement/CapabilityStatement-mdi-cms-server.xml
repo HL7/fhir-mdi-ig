@@ -137,7 +137,8 @@
         <resource>
 <!--            <type value="Location"/>-->
             <type value="Location.address.district"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+<!--            <profile value="http://hl7.org/fhir/StructureDefinition/Location"/>-->
+            <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
             <!--<interaction><code value="update"/></interaction>-->
             <interaction>
                 <code value="read"/>
