@@ -24,17 +24,18 @@
     <format value="json"/>
     <rest>
         <mode value="server"/>
+<!--        
         <resource>
             <type value="Bundle"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-            <!--<interaction><code value="update"/></interaction>-->
+            <!-\-<interaction><code value="update"/></interaction>-\->
             <interaction>
                 <code value="read"/>
             </interaction>
             <interaction>
                 <code value="search-type"/>
             </interaction>
-            <!--<interaction><code value="delete"/></interaction><interaction><code value="create"/></interaction>-->
+            <!-\-<interaction><code value="delete"/></interaction><interaction><code value="create"/></interaction>-\->
             <searchInclude value="*"/>
             <searchInclude value="Bundle:composition"/>
             <searchInclude value="Bundle:message"/>
@@ -64,8 +65,10 @@
                 <documentation value="document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection"/>
             </searchParam>
         </resource>
+        -->
         <resource>
-            <type value="Composition"/>
+<!--            <type value="Composition"/>-->
+            <type value="Composition.id"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
             <!--<interaction><code value="update"/></interaction>-->
             <interaction>
@@ -132,7 +135,8 @@
         <!--<resource><type value="DiagnosticReport"/><profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/><interaction><code value="update"/></interaction><interaction><code value="read"/></interaction><interaction><code value="search-type"/></interaction><interaction><code value="delete"/></interaction><interaction><code value="create"/></interaction><searchInclude value="DiagnosticReport:encounter"/><searchInclude value="DiagnosticReport:patient"/><searchInclude value="DiagnosticReport:subject"/><searchParam><name value="encounter"/><type value="reference"/><documentation value="The Encounter when the order was made"/></searchParam><searchParam><name value="identifier"/><type value="token"/><documentation value="An identifier for the report"/></searchParam><searchParam><name value="mdi-case-number"/><type value="token"/></searchParam><searchParam><name value="patient"/><type value="reference"/><documentation value="The subject of the report if a patient"/></searchParam><searchParam><name value="subject"/><type value="reference"/><documentation value="The subject of the report"/></searchParam><searchParam><name value="tox-lab-case-number"/><type value="token"/></searchParam><searchParam><name value="_id"/><type value="token"/><documentation value="The ID of the resource"/></searchParam></resource>-->
         <!--<resource><type value="DocumentReference"/><profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/><interaction><code value="update"/></interaction><interaction><code value="read"/></interaction><interaction><code value="search-type"/></interaction><interaction><code value="delete"/></interaction><interaction><code value="create"/></interaction><searchInclude value="DocumentReference:encounter"/><searchInclude value="DocumentReference:patient"/><searchInclude value="DocumentReference:subject"/><searchParam><name value="date"/><type value="date"/><documentation value="When this document reference was created"/></searchParam><searchParam><name value="encounter"/><type value="reference"/><documentation value="Context of the document  content"/></searchParam><searchParam><name value="identifier"/><type value="token"/><documentation value="Master Version Specific Identifier"/></searchParam><searchParam><name value="patient"/><type value="reference"/><documentation value="Who/what is the subject of the document"/></searchParam><searchParam><name value="subject"/><type value="reference"/><documentation value="Who/what is the subject of the document"/></searchParam><searchParam><name value="type"/><type value="token"/><documentation value="Kind of document (LOINC if possible)"/></searchParam><searchParam><name value="_id"/><type value="token"/><documentation value="The ID of the resource"/></searchParam></resource>-->
         <resource>
-            <type value="Location"/>
+<!--            <type value="Location"/>-->
+            <type value="Location.address.district"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Location"/>
             <!--<interaction><code value="update"/></interaction>-->
             <interaction>
