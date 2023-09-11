@@ -8,7 +8,22 @@
         This CapabilityStatement does not define <searchRevInclude> or <operation> for any <resource> elements. 
         Additional MDI <resource> elements that may be of interest to implemntes and additional <interaction> capabilities (update, delete, create) are included as comments.-->
     <id value="CapabilityStatement-mdi-cms-server"/>
-<!--<text></text>-->
+<text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+        <h2 id="shall_css" class="no_toc">SHALL Implement All Or Parts Of The Following Capability Statements:</h2>
+        <ul>
+            <li>
+                <a href="CapabilityStatement-mdi-cms-server.html">CapabilityStatement - MDI CMS Server</a>
+            </li>
+        </ul>
+        <h3 id="behavior">FHIR RESTful Capabilities</h3>
+        <p>The MDI CMS Server, at a minimum, <strong>SHALL</strong>:</p>
+    </div>
+</text>
+    
+
+        
     <url value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-mdi-cms-server"/>
     <name value="CapabilityStatementMdiCmsServer"/>
     <title value="CapabilityStatement - MDI CMS Server"/>
