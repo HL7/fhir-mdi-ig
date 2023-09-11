@@ -8,8 +8,9 @@
         This CapabilityStatement does not define <searchRevInclude> or <operation> for any <resource> elements. 
         Additional MDI <resource> elements that may be of interest to implemntes and additional <interaction> capabilities (update, delete, create) are included as comments.-->
     <id value="CapabilityStatement-mdi-cms-server"/>
-<text>
-<!--    <status value="generated"/>-->
+<!--<text>
+<!-\-    <status value="generated"/>-\->
+<!-\-    text.status "generated" does not seem to make a difference in rendering-\->
     <div xmlns="http://www.w3.org/1999/xhtml">
         <h2 id="shall_css" class="no_toc">SHALL Implement All Or Parts Of The Following Capability Statements:</h2>
         <ul>
@@ -20,7 +21,7 @@
         <h3 id="behavior">FHIR RESTful Capabilities</h3>
         <p>The MDI CMS Server, at a minimum, <strong>SHALL</strong>:</p>
     </div>
-</text>
+</text>-->
     
 
         
