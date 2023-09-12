@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1109"/>
-        <lastUpdated value="2023-09-12T01:54:03.052Z"/>
+        <versionId value="1124"/>
+        <lastUpdated value="2023-09-12T13:31:22.348Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -86,11 +86,51 @@
         </grouping>
         <resource>
             <reference>
+                <reference value="CapabilityStatement/CapabilityStatement-mdi-cms-server"/>
+                <display value="CapabilityStatement - MDI CMS Server"/>
+            </reference>
+            <name value="CapabilityStatement - MDI CMS Server"/>
+            <description value="CapabilityStatement - MDI CMS Server"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="capability-statements"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Bundle-document-mdi-to-edrs"/>
                 <display value="Bundle - Document MDI to EDRS"/>
             </reference>
             <name value="Bundle - Document MDI to EDRS"/>
             <description value="This Bundle profile represents a Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI to EDRS."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-document-mdi-and-edrs"/>
+                <display value="Bundle - Document MDI and EDRS"/>
+            </reference>
+            <name value="Bundle - Document MDI and EDRS"/>
+            <description value="This Bundle profile represents a Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI to EDRS."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-mdi-to-edrs"/>
+                <display value="Composition - MDI to EDRS"/>
+            </reference>
+            <name value="Composition - MDI to EDRS"/>
+            <description value="This Composition profile represents data exchanged between an MDI CMS and an EDRS."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-mdi-and-edrs"/>
+                <display value="Composition - MDI and EDRS"/>
+            </reference>
+            <name value="Composition - MDI and EDRS"/>
+            <description value="This Composition profile represents data exchanged between an MDI CMS and an EDRS."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -106,15 +146,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/bundle-mdi-tox-report-message-a-freeman"/></reference>
-            <name value="Bundle - Message Toxicology to MDI - Freeman"/>
-            <description value="Bundle - Message Toxicology to MDI:  Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
-            <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="CodeSystem/CodeSystem-mdi-codes"/>
                 <display value="MDI Code System"/>
             </reference>
@@ -125,13 +156,12 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Composition-mdi-to-edrs"/>
-                <display value="Composition - MDI to EDRS"/>
-            </reference>
-            <name value="Composition - MDI to EDRS"/>
-            <description value="This Composition profile represents data exchanged between an MDI CMS and an EDRS."/>
+                <reference value="Bundle/bundle-mdi-tox-report-message-a-freeman"/></reference>
+            <name value="Bundle - Message Toxicology to MDI - Freeman"/>
+            <description value="Bundle - Message Toxicology to MDI:  Freeman example"/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
+            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
@@ -609,15 +639,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-contributing-cause-of-death-part2-a-freeman"/></reference>
-            <name value="Observation - Contributing Cause of Death Part 2 - Freeman"/>
-            <description value="Observation - Contributing Cause of Death Part 2: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/observation-cause-of-death-part1-a-freeman"/>
                 <display value="observation-cause-of-death-condition-a-freeman-1"/>
             </reference>
@@ -686,6 +707,24 @@
             <description value="This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor, which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
             <exampleBoolean value="false"/>
             <groupingId value="capability-statements"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cause-of-death-part1-freeman-quantity-interval"/></reference>
+            <name value="Observation - Cause of Death Part 1 - Freeman - quantity interval"/>
+            <description value="Observation - Cause of Death Part 1: Freeman example, specifying interval quantity (days)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-contributing-cause-of-death-part2-a-freeman"/></reference>
+            <name value="Observation - Contributing Cause of Death Part 2 - Freeman"/>
+            <description value="Observation - Contributing Cause of Death Part 2: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
+            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -767,16 +806,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Location-injury"/>
-                <display value="Location - Injury Vital Records"/>
-            </reference>
-            <name value="Location - Injury"/>
-            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to location of injury."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Location/location-death-atlanta-ga-a-freeman"/>
                 <display value="Atlanta GA Death Location - Freeman"/>
             </reference>
@@ -796,6 +825,16 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
             <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Location-injury"/>
+                <display value="Location - Injury Vital Records"/>
+            </reference>
+            <name value="Location - Injury"/>
+            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to location of injury."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -886,35 +925,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report"/>
             <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/CapabilityStatement-mdi-cms-server"/>
-                <display value="CapabilityStatement - MDI CMS Server"/>
-            </reference>
-            <name value="CapabilityStatement - MDI CMS Server"/>
-            <description value="CapabilityStatement - MDI CMS Server"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="capability-statements"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-document-mdi-and-edrs"/>
-                <display value="Bundle - Document MDI and EDRS"/>
-            </reference>
-            <name value="Bundle - Document MDI and EDRS"/>
-            <description value="This Bundle profile represents a Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI to EDRS."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Composition-mdi-and-edrs"/>
-                <display value="Composition - MDI and EDRS"/>
-            </reference>
-            <name value="Composition - MDI and EDRS"/>
-            <description value="This Composition profile represents data exchanged between an MDI CMS and an EDRS."/>
-            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
