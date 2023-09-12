@@ -181,5 +181,14 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Observation.component:interval.valueString">
+            <path value="Observation.component.valueString"/>
+            <short value="Interval"/>
+            <maxLength value="20"/>
+        </element>
+        <element id="Observation.component:interval.valueQuantity">
+            <path value="Observation.component.valueQuantity"/>
+            <short value="Interval-quantity"/>
+        </element>
     </differential>
 </StructureDefinition>

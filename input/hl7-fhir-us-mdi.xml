@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1108"/>
-        <lastUpdated value="2023-09-11T23:19:48.683Z"/>
+        <versionId value="1109"/>
+        <lastUpdated value="2023-09-12T01:54:03.052Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -914,15 +914,6 @@
             </reference>
             <name value="Composition - MDI and EDRS"/>
             <description value="This Composition profile represents data exchanged between an MDI CMS and an EDRS."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-cause-of-death-part1-2"/>
-                <display value="Observation - Cause of Death Part 1-2"/>
-            </reference>
-            <name value="Observation - Cause of Death Part 1-2"/>
-            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text.&#xA;The MDI Observation - Cause of Death Part 1 artifact overlaps with the VRDR Cause Of Death Part 1 artifact."/>
             <exampleBoolean value="false"/>
         </resource>
         <page>
