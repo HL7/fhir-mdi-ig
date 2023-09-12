@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-cause-of-death-part1"/>
-    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
+    <id value="Observation-cause-of-death-part1-2"/>
+    <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1-2"/>
     <version value="1.0.0"/>
-    <name value="ObservationCauseOfDeathPart1"/>
-    <title value="Observation - Cause of Death Part 1"/>
+    <name value="ObservationCauseOfDeathPart12"/>
+    <title value="Observation - Cause of Death Part 1-2"/>
     <status value="active"/>
     <date value="2022-02-27T13:48:44+00:00"/>
     <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
@@ -180,6 +180,15 @@
                 <code value="Quantity"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component:interval.valueString">
+            <path value="Observation.component.valueString"/>
+            <short value="Interval"/>
+            <maxLength value="20"/>
+        </element>
+        <element id="Observation.component:interval.valueQuantity">
+            <path value="Observation.component.valueQuantity"/>
+            <short value="Interval-quantity"/>
         </element>
     </differential>
 </StructureDefinition>

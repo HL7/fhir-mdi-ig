@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-how-death-injury-occurred-a-freeman-med-ingest"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-06-27T16:19:21.790Z"/>
+        <versionId value="11"/>
+        <lastUpdated value="2023-09-11T20:01:20.551Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     </meta>
     <status value="final"/>
@@ -19,7 +19,7 @@
         <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
     <effectiveDateTime>
-        <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time">
+        <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime">
             <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-day">
                 <valueUnsignedInt value="8"/>
             </extension>

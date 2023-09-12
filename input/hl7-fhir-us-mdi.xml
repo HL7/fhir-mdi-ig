@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1099"/>
-        <lastUpdated value="2023-08-30T19:21:08.371Z"/>
+        <versionId value="1108"/>
+        <lastUpdated value="2023-09-11T23:19:48.683Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -37,10 +37,10 @@
         <packageId value="hl7.fhir.us.core"/>
         <version value="5.0.1"/>
     </dependsOn>
-    <dependsOn id="uscdcphinvads">
-        <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
-        <packageId value="us.cdc.phinvads"/>
-        <version value="0.12.0"/>
+    <dependsOn id="hl7fhirusvrdr">
+        <uri value="http://hl7.org/fhir/us/vrdr/ImplementationGuide/hl7.fhir.us.vrdr#2.1.0"/>
+        <packageId value="hl7.fhir.us.vrdr"/>
+        <version value="2.1.0"/>
     </dependsOn>
     <definition>
         <grouping id="capability-statements">
@@ -645,7 +645,7 @@
             <name value="MessageDefinitionToxicologySystem"/>
             <description value="This resource defines the characteristics of a message that can be shared between a forensic toxicology system and an MDI CMS"/>
             <exampleBoolean value="true"/>
-            <groupingId value="capability-statements"/>
+            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -659,36 +659,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-date-time"/>
-                <display value="Extension - Date Time"/>
-            </reference>
-            <name value="Extension - Date Time"/>
-            <description value="The time portion (DD) of the partial date."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-date-day"/>
-                <display value="Extension - Date Day Vital Records"/>
-            </reference>
-            <name value="Extension - Date Day"/>
-            <description value="The day portion (DD) of the partial date."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-date-month"/>
-                <display value="Extension - Date Month Vital Records"/>
-            </reference>
-            <name value="Extension - Date Month"/>
-            <description value="The month portion (MM) of the partial date."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
                 <display value="Yes No Unknown NotApplicable"/>
             </reference>
@@ -696,26 +666,6 @@
             <description value="Valueset with Yes, No, Unknown, and Not Applicable.&#xA;The MDI ValueSet - Yes No Unknown NotApplicable artifact overlaps with the VRDR Yes No Unknown NotApplicable artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-date-year"/>
-                <display value="Extension - Date Year"/>
-            </reference>
-            <name value="Extension - Date Year"/>
-            <description value="The year portion (YYYY) of the partial date.&#xA;The MDI Extension - Date Year artifact overlaps with the VRDR Date Year artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-partial-date-time"/>
-                <display value="Extension - Partial DateTime Vital Records"/>
-            </reference>
-            <name value="Extension - Partial DateTime"/>
-            <description value="Provides values of a partial dateTime"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions"/>
         </resource>
         <resource>
             <reference>
@@ -946,6 +896,34 @@
             <description value="CapabilityStatement - MDI CMS Server"/>
             <exampleBoolean value="false"/>
             <groupingId value="capability-statements"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-document-mdi-and-edrs"/>
+                <display value="Bundle - Document MDI and EDRS"/>
+            </reference>
+            <name value="Bundle - Document MDI and EDRS"/>
+            <description value="This Bundle profile represents a Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI to EDRS."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-mdi-and-edrs"/>
+                <display value="Composition - MDI and EDRS"/>
+            </reference>
+            <name value="Composition - MDI and EDRS"/>
+            <description value="This Composition profile represents data exchanged between an MDI CMS and an EDRS."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-cause-of-death-part1-2"/>
+                <display value="Observation - Cause of Death Part 1-2"/>
+            </reference>
+            <name value="Observation - Cause of Death Part 1-2"/>
+            <description value="The Observation - Cause of Death Part 1 profile reflects the ordered causes of death asserted by the death certifier. The cause of death is initially specified with text.&#xA;The MDI Observation - Cause of Death Part 1 artifact overlaps with the VRDR Cause Of Death Part 1 artifact."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

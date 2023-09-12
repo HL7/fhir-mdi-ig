@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-death-date-a-freeman"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-06-29T14:47:03.970Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-09-11T20:01:16.470Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     </meta>
     <status value="final"/>
@@ -23,7 +23,6 @@
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </performer>
     <valueDateTime value="2022-01-08"/>
-    <!--<extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"><extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-day"><valueUnsignedInt value="8"/></extension><extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-year"><valueUnsignedInt value="2022"/></extension><extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-month"><valueUnsignedInt value="1"/></extension><extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-time"><valueTime><extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason"><valueCode value="unknown"/></extension></valueTime></extension></extension>-->
     <method>
         <coding>
             <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>

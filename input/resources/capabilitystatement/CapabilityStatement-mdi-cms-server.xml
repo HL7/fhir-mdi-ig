@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CapabilityStatement xmlns="http://hl7.org/fhir">
+<CapabilityStatement
+    xmlns="http://hl7.org/fhir">
     <!--***** Capability Statement Notes *****-->
     <!--This CapabilityStatement FHIR resource is based on the Capability Statement of the RESTful test server maintained by Georgia Tech Research Institiute (GTRI) as part of the 
         Raven Testing Platform, a proof of concept for the MDI FHIR IG. (See: https://raven.heat.icl.gtri.org/ and https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata)
@@ -8,31 +9,17 @@
         This CapabilityStatement does not define <searchRevInclude> or <operation> for any <resource> elements. 
         Additional MDI <resource> elements that may be of interest to implemntes and additional <interaction> capabilities (update, delete, create) are included as comments.-->
     <id value="CapabilityStatement-mdi-cms-server"/>
-<!--<text>
-<!-\-    <status value="generated"/>-\->
-<!-\-    text.status "generated" does not seem to make a difference in rendering-\->
-    <div xmlns="http://www.w3.org/1999/xhtml">
-        <h2 id="shall_css" class="no_toc">SHALL Implement All Or Parts Of The Following Capability Statements:</h2>
-        <ul>
-            <li>
-                <a href="CapabilityStatement-mdi-cms-server.html">CapabilityStatement - MDI CMS Server</a>
-            </li>
-        </ul>
-        <h3 id="behavior">FHIR RESTful Capabilities</h3>
-        <p>The MDI CMS Server, at a minimum, <strong>SHALL</strong>:</p>
-    </div>
-</text>-->
-    
-
-        
+    <!--<text>
+    <!-\-    <status value="generated"/>-\->
+    <!-\-    text.status "generated" does not seem to make a difference in rendering-\-><div
+    xmlns="http://www.w3.org/1999/xhtml"><h2 id="shall_css" class="no_toc">SHALL Implement All Or Parts Of The Following Capability Statements:</h2><ul><li><a href="CapabilityStatement-mdi-cms-server.html">CapabilityStatement - MDI CMS Server</a></li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The MDI CMS Server, at a minimum, <strong>SHALL</strong>:</p></div></text>-->
     <url value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-mdi-cms-server"/>
     <name value="CapabilityStatementMdiCmsServer"/>
     <title value="CapabilityStatement - MDI CMS Server"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-07-03"/>
-    <description
-        value="This resource describes expected capabilities of an MDI CMS Server which is responsible for providing responses to the queries submitted by a Client. &#xA;        It lists FHIR profiles and search parameters that, at a minimum, should be supported by MDI CMS Servers. MDI CMS Clients have the option of choosing from this list to access necessary data."/>
+    <description value="This resource describes expected capabilities of an MDI CMS Server which is responsible for providing responses to the queries submitted by a Client. &#xA;        It lists FHIR profiles and search parameters that, at a minimum, should be supported by MDI CMS Servers. MDI CMS Clients have the option of choosing from this list to access necessary data."/>
     <kind value="requirements"/>
     <fhirVersion value="4.0.1"/>
     <format value="application/fhir+xml"/>
@@ -41,11 +28,10 @@
     <format value="json"/>
     <rest>
         <mode value="server"/>
-        
-        <!-- Composition-mdi-and-edrs -->
+        <!--Composition-mdi-and-edrs-->
         <resource>
             <type value="Composition"/>
-            <!--            <profile value="http://hl7.org/fhir/StructureDefinition/Composition"/>-->
+            <!--<profile value="http://hl7.org/fhir/StructureDefinition/Composition"/>-->
             <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
             <!--<interaction><code value="update"/></interaction>-->
             <interaction>
@@ -58,11 +44,7 @@
             <searchInclude value="*"/>
             <searchInclude value="Composition:patient"/>
             <searchInclude value="Composition:subject"/>
-            <!--            <searchParam>
-                <name value="date"/>
-                <type value="date"/>
-                <documentation value="Composition editing time"/>
-            </searchParam>-->
+            <!--<searchParam><name value="date"/><type value="date"/><documentation value="Composition editing time"/></searchParam>-->
             <searchParam>
                 <name value="death-date"/>
                 <type value="date"/>
@@ -108,8 +90,7 @@
                 <documentation value="The ID of the resource"/>
             </searchParam>
         </resource>
-        
-        <!-- us-core-patient -->
+        <!--us-core-patient-->
         <resource>
             <type value="Patient"/>
             <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
@@ -137,9 +118,7 @@
             <searchParam>
                 <name value="address"/>
                 <type value="string"/>
-                <documentation
-                    value="A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text"
-                />
+                <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text"/>
             </searchParam>
             <searchParam>
                 <name value="address-city"/>
@@ -189,15 +168,12 @@
             <searchParam>
                 <name value="name"/>
                 <type value="string"/>
-                <documentation
-                    value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
-                />
+                <documentation value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"/>
             </searchParam>
             <searchParam>
                 <name value="organization"/>
                 <type value="reference"/>
-                <documentation value="The organization that is the custodian of the patient record"
-                />
+                <documentation value="The organization that is the custodian of the patient record"/>
             </searchParam>
             <searchParam>
                 <name value="phone"/>
@@ -210,11 +186,10 @@
                 <documentation value="The value in any kind of telecom details of the patient"/>
             </searchParam>
         </resource>
-               
-        <!-- Location-death -->
+        <!--Location-death-->
         <resource>
-                        <type value="Location"/>
-            <!--            <profile value="http://hl7.org/fhir/StructureDefinition/Location"/>-->
+            <type value="Location"/>
+            <!--<profile value="http://hl7.org/fhir/StructureDefinition/Location"/>-->
             <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
             <!--<interaction><code value="update"/></interaction>-->
             <interaction>
@@ -225,22 +200,16 @@
             </interaction>
             <!--<interaction><code value="delete"/></interaction><interaction><code value="create"/></interaction>-->
             <searchInclude value="*"/>
-<!--            <searchParam>
-                <name value="_id"/>
-                <type value="token"/>
-                <documentation value="The ID of the resource"/>
-            </searchParam>-->
+            <!--<searchParam><name value="_id"/><type value="token"/><documentation value="The ID of the resource"/></searchParam>-->
             <searchParam>
                 <name value="_address.district"/>
                 <type value="string"/>
                 <documentation value="District of Death Location"/>
             </searchParam>
         </resource>
-        
-     
         <resource>
             <type value="Observation"/>
-<!--            <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>-->
+            <!--<profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>-->
             <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
             <!--<interaction><code value="update"/></interaction>-->
             <interaction>
@@ -250,19 +219,9 @@
                 <code value="search-type"/>
             </interaction>
             <!--<interaction><code value="delete"/></interaction><interaction><code value="create"/></interaction>-->
-<!--            <searchInclude value="Observation:based-on"/>
-            <searchInclude value="Observation:context"/>
-            <searchInclude value="Observation:device"/>
-            <searchInclude value="Observation:encounter"/>
-            <searchInclude value="Observation:patient"/>
-            <searchInclude value="Observation:performer"/>
-            <searchInclude value="Observation:related-target"/>
-            <searchInclude value="Observation:specimen"/>
-            <searchInclude value="Observation:subject"/>-->
-            
+            <!--<searchInclude value="Observation:based-on"/><searchInclude value="Observation:context"/><searchInclude value="Observation:device"/><searchInclude value="Observation:encounter"/><searchInclude value="Observation:patient"/><searchInclude value="Observation:performer"/><searchInclude value="Observation:related-target"/><searchInclude value="Observation:specimen"/><searchInclude value="Observation:subject"/>-->
             <searchInclude value="Observation:value[x]"/>
             <searchInclude value="Observation:component:datetimePronouncedDead.value[x]"/>
-            
             <searchParam>
                 <name value="code"/>
                 <type value="token"/>
@@ -271,9 +230,7 @@
             <searchParam>
                 <name value="date"/>
                 <type value="date"/>
-                <documentation
-                    value="Obtained date/time. If the obtained element is a period, a date that falls in the period"
-                />
+                <documentation value="Obtained date/time. If the obtained element is a period, a date that falls in the period"/>
             </searchParam>
             <searchParam>
                 <name value="patient"/>
@@ -291,7 +248,6 @@
                 <documentation value="The ID of the resource"/>
             </searchParam>
         </resource>
-   
         <resource>
             <type value="Bundle"/>
             <profile value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
@@ -332,7 +288,6 @@
                 <documentation value="document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection"/>
             </searchParam>
         </resource>
-        
         <interaction>
             <code value="transaction"/>
         </interaction>
@@ -340,9 +295,7 @@
     <messaging>
         <supportedMessage>
             <mode value="receiver"/>
-            <definition
-                value="http://hl7.org/fhir/us/mdi/MessageDefinition/MessageDefinition-toxicology-system"
-            />
+            <definition value="http://hl7.org/fhir/us/mdi/MessageDefinition/MessageDefinition-toxicology-system"/>
         </supportedMessage>
     </messaging>
     <document>

@@ -84,7 +84,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-partial-date-time"/>
+                <profile value="http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime"/>
             </type>
         </element>
         <element id="Observation.note">
