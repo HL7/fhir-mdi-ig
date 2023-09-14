@@ -30,12 +30,12 @@
         <mode value="server"/>
         <!--Composition-mdi-and-edrs-->
         <documentation value="The MDI CMS Server **SHALL**:
-            &#xA;&#xA;1. Support the following US Core profiles: 
-            US Core DiagnosticReport Profile for Laboratory Results Reporting; 
-            US Core Laboratory Result Observation Profile; 
-            US Core Patient Profile; 
-            US Core Practitioner Profile; 
-            US Core PractitionerRole Profile
+            &#xA;&#xA;1. Support the following US Core profiles: US Core Condition Encounter Diagnosis Profile and/or US Core Condition Problems and Health Concerns Profile; 
+            US Core Location Profile
+            US Core Organization Profile
+            US Core Patient Profile
+            US Core Practitioner Profile
+            US Core Procedure Profile
             &#xA;1. Implement the RESTful behavior according to the FHIR specification.
             &#xA;1. Follow the requirements documented in the [General Requirements](general-requirements.html) and [Must Support](must-support.html) pages.
             &#xA;1. Support XML and/or JSON source formats for all US Core interactions.
