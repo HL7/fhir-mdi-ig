@@ -183,12 +183,12 @@
         </element>
         <element id="Observation.component:interval.valueString">
             <path value="Observation.component.valueString"/>
-            <short value="Interval"/>
+            <short value="Interval - string description"/>
             <maxLength value="20"/>
         </element>
         <element id="Observation.component:interval.valueQuantity">
             <path value="Observation.component.valueQuantity"/>
-            <short value="Interval-quantity"/>
+            <short value="Interval - quantity with units of time"/>
         </element>
     </differential>
 </StructureDefinition>
