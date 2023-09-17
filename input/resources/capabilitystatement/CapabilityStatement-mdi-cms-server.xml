@@ -8,10 +8,101 @@
         This CapabilityStatement does not define <searchRevInclude> or <operation> for any <resource> elements. 
         Additional MDI <resource> elements that may be of interest to implemntes and additional <interaction> capabilities (update, delete, create) are included as comments.-->
     <id value="CapabilityStatement-mdi-cms-server"/>
-    <!--<text>
-    <!-\-    <status value="generated"/>-\->
-    <!-\-    text.status "generated" does not seem to make a difference in rendering-\-><div
-    xmlns="http://www.w3.org/1999/xhtml"><h2 id="shall_css" class="no_toc">SHALL Implement All Or Parts Of The Following Capability Statements:</h2><ul><li><a href="CapabilityStatement-mdi-cms-server.html">CapabilityStatement - MDI CMS Server</a></li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The MDI CMS Server, at a minimum, <strong>SHALL</strong>:</p></div></text>-->
+    <text>
+        <h1 id="test1" class="no_toc">API Specifications</h1>
+
+        <h3 id="test3" class="no_toc">Search-3 Operations</h3>
+        <p>The MDI CMS Server uses extended operations with MDI-specific search parameters and a
+            subset of the many (RESTful API)[https://hl7.org/FHIR/http.html].</p>
+        <p>All API implementations of this MDI specification must conform to common design rules:</p>
+        <ul>
+            <li>MIME-type for FHIR resources is application/fhir+xml or application/fhir+json. This must be specified for Content-Type in the HTTP header. </li>
+            <li>application/x-www-form-urlencoded can be used for POST search requests if HTTP Form is used. </li>
+        </ul>
+        <h2 id="test2" class="no_toc">Search-2 Operations</h2>
+        <p>An MDI-based Search API enables MDI CMS to search EDRS server for decedent cases, and vice versa. This is an idempotent operation. 
+        At a minimum, both Both POST and GET can be used should be allowed with the following endpoint URL pattern:</p>
+        <ul>
+            <li>POST [base]/Composition/$mdi-documents </li>
+            <li>GET [base]/Composition/$mdi-documents?name=value… </li>
+        </ul>
+
+        <p id="summary">
+            <strong>Summary of Minimum MDI Search Parameter Definitions</strong>
+        </p>
+        <table class="grid">
+            <thead>
+                <tr>
+                    <th>Search Parameter Name</th>
+                    <th>Cardinality</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>id</td>
+                    <td>0..1</td>
+                    <td>uri</td>
+                    <td>Composition.id of Composition - MDI and EDRS</td>
+                </tr>
+                <tr>
+                    <td>tracking-number</td>
+                    <td>0..*</td>
+                    <td>token</td>
+                    <td>Composition.extension:extension-tracking-number of Composition - MDI and EDRS</td>
+                </tr>
+                <tr>
+                    <td>patient</td>
+                    <td>0..*</td>
+                    <td>  </td>
+                    <td>One or more US Core Patient decedent-related search parameters</td>
+                </tr>
+                <tr>
+                    <td>patient.birthdate</td>
+                    <td>0..1</td>
+                    <td>string</td>
+                    <td>Decedent’s date of birth</td>
+                </tr>
+                <tr>
+                    <td>patient.family</td>
+                    <td>0..1</td>
+                    <td>string</td>
+                    <td>Decedent’s last name</td>
+                </tr>
+                <tr>
+                    <td>patient.given</td>
+                    <td>0..1</td>
+                    <td>string</td>
+                    <td>Decedent’s first name</td>
+                </tr>
+                <tr>
+                    <td>patient.gender</td>
+                    <td>0..1</td>
+                    <td>string</td>
+                    <td>Decedent’s gender</td>
+                </tr>
+                <tr>
+                    <td>death-location</td>
+                    <td>0..1</td>
+                    <td>string</td>
+                    <td>Location.address in Location-death </td>
+                </tr>
+                <tr>
+                    <td>death-date</td>
+                    <td>0..1</td>
+                    <td>string</td>
+                    <td>Value[x] (actual or presumed date of death) in Observation - Death Date (either dateTime or Period)</td>
+                </tr>
+                <tr>
+                    <td>death-date-pronounced</td>
+                    <td>0..1</td>
+                    <td>string</td>
+                    <td>Observation.component:datetimePronouncedDead in Observation - Death Date (either time or dateTime)</td>
+                </tr>
+            </tbody>  
+        </table>
+  </text>
     <url value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-mdi-cms-server"/>
     <name value="CapabilityStatementMdiCmsServer"/>
     <title value="CapabilityStatement - MDI CMS Server"/>
@@ -28,44 +119,17 @@
     <format value="json"/>
     <rest>
         <mode value="server"/>
-        <!--Composition-mdi-and-edrs-->
-        <documentation value="The MDI CMS Server **SHALL**:
-            &#xA;
-            &#xA;1. Support the following US Core profiles: 
-            &#xA;   - US Core Condition Encounter Diagnosis Profile and/or US Core Condition Problems and Health Concerns Profile; 
-            &#xA;   - US Core Location Profile; 
-            &#xA;   - US Core Organization Profile; 
-            &#xA;   - US Core Patient Profile; 
-            &#xA;   - US Core Practitioner Profile; 
-            &#xA;   - US Core Procedure Profile; 
-            
-            &#xA;1. Implement the RESTful behavior according to the FHIR specification.
-            &#xA;1. Follow the requirements documented in the [General Requirements](general-requirements.html) and [Must Support](must-support.html) pages.
-            &#xA;1. Support XML and/or JSON source formats for all US Core interactions.
-            
-            &#xA;&#xA;The US Core Server **SHOULD**:
-            &#xA;1. Follow the guidance documented in the [General Guidance](general-guidance.html) page.
-            
-            &#xA;&#xA;All API implementations of this MDI specification **SHALL**conform to common design rules:
-            &#xA;1. MIME-type for FHIR resources is application/fhir+xml or application/fhir+json. This must be specified for Content-Type in the HTTP header.
-            &#xA;1. application/x-www-form-urlencoded can be used for POST search requests if HTTP Form is used.
-            &#xA;"/>
+        <!-- Composition-mdi-and-edrs, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) -->
         <resource>
             <type value="Composition"/>
-            <!--<profile value="http://hl7.org/fhir/StructureDefinition/Composition"/>-->
-            <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
-            <!--<interaction><code value="update"/></interaction>-->
+            <supportedProfile
+                value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
             <interaction>
                 <code value="search-type"/>
             </interaction>
             <interaction>
                 <code value="read"/>
             </interaction>
-            <!--<interaction><code value="delete"/></interaction><interaction><code value="create"/></interaction>-->
-            <searchInclude value="*"/>
-            <searchInclude value="Composition:patient"/>
-            <searchInclude value="Composition:subject"/>
-            <!--<searchParam><name value="date"/><type value="date"/><documentation value="Composition editing time"/></searchParam>-->
             <searchParam>
                 <name value="death-date"/>
                 <type value="date"/>
@@ -91,6 +155,10 @@
                 <type value="token"/>
             </searchParam>
             <searchParam>
+                <name value="tracking-number"/>
+                <type value="token"/>
+            </searchParam>
+            <searchParam>
                 <name value="patient"/>
                 <type value="reference"/>
                 <documentation value="Who and/or what the composition is about"/>
@@ -111,182 +179,105 @@
                 <documentation value="The ID of the resource"/>
             </searchParam>
         </resource>
-        <!--us-core-patient-->
+
+        <!--US Core Patient, based on US Core (http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-server.html) 
+            & CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) -->
         <resource>
             <type value="Patient"/>
-            <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-            <!--<interaction><code value="update"/></interaction>-->
+            <supportedProfile
+                value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             <interaction>
                 <code value="read"/>
             </interaction>
             <interaction>
                 <code value="search-type"/>
             </interaction>
-            <!--<interaction><code value="delete"/></interaction><interaction><code value="create"/></interaction>-->
-            <!--            <searchInclude value="Patient:general-practitioner"/>
-            <searchInclude value="Patient:link"/>
-            <searchInclude value="Patient:organization"/>-->
             <searchParam>
                 <name value="_id"/>
                 <type value="token"/>
                 <documentation value="The ID of the resource"/>
             </searchParam>
             <searchParam>
-                <name value="active"/>
-                <type value="token"/>
-                <documentation value="Whether the patient record is active"/>
-            </searchParam>
-            <!--            <searchParam>
-                <name value="address"/>
-                <type value="string"/>
-                <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text"/>
-            </searchParam>-->
-            <!--            <searchParam>
-                <name value="address-city"/>
-                <type value="string"/>
-                <documentation value="A city specified in an address"/>
-            </searchParam>-->
-            <!--            <searchParam>
-                <name value="address-postalcode"/>
-                <type value="string"/>
-                <documentation value="A postalCode specified in an address"/>
-            </searchParam>-->
-            <!--            <searchParam>
-                <name value="address-state"/>
-                <type value="string"/>
-                <documentation value="A state specified in an address"/>
-            </searchParam>-->
-            <searchParam>
                 <name value="birthdate"/>
+                <definition
+                    value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate"/>
                 <type value="date"/>
                 <documentation value="The patient's date of birth"/>
             </searchParam>
-            <!--            <searchParam>
-                <name value="email"/>
-                <type value="token"/>
-                <documentation value="A value in an email contact"/>
-            </searchParam>-->
             <searchParam>
                 <name value="family"/>
                 <type value="string"/>
                 <documentation value="A portion of the family name of the patient"/>
             </searchParam>
             <searchParam>
-                <name value="gender"/>
-                <type value="string"/>
-                <documentation value="Gender of the patient"/>
-            </searchParam>
-            <searchParam>
                 <name value="given"/>
+                <definition
+                    value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given"/>
                 <type value="string"/>
                 <documentation value="A portion of the given name of the patient"/>
             </searchParam>
             <searchParam>
-                <name value="identifier"/>
-                <type value="token"/>
-                <documentation value="A patient identifier"/>
+                <name value="gender"/>
+                <definition
+                    value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-gender"/>
+                <type value="string"/>
+                <documentation value="Gender of the patient"/>
             </searchParam>
             <searchParam>
                 <name value="name"/>
+                <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name"/>
                 <type value="string"/>
                 <documentation
                     value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
                 />
             </searchParam>
-            <!--            <searchParam>
-                <name value="organization"/>
-                <type value="reference"/>
-                <documentation value="The organization that is the custodian of the patient record"/>
-            </searchParam>-->
-            <!--            <searchParam>
-                <name value="phone"/>
-                <type value="token"/>
-                <documentation value="A value in a phone contact"/>
-            </searchParam>-->
-            <!--            <searchParam>
-                <name value="telecom"/>
-                <type value="token"/>
-                <documentation value="The value in any kind of telecom details of the patient"/>
-            </searchParam>-->
         </resource>
-        <!--Location-death-->
+
+
+        <!--Location-death, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata -->
         <resource>
             <type value="Location"/>
-            <!--<profile value="http://hl7.org/fhir/StructureDefinition/Location"/>-->
-            <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
-            <!--<interaction><code value="update"/></interaction>-->
+            <supportedProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
             <interaction>
                 <code value="read"/>
             </interaction>
             <interaction>
                 <code value="search-type"/>
             </interaction>
-            <!--<interaction><code value="delete"/></interaction><interaction><code value="create"/></interaction>-->
-            <!--            <searchInclude value="*"/>-->
-            <!--<searchParam><name value="_id"/><type value="token"/><documentation value="The ID of the resource"/></searchParam>-->
             <searchParam>
-                <name value="_address.district"/>
+                <name value="address"/>
                 <type value="string"/>
-                <documentation value="District of Death Location"/>
             </searchParam>
         </resource>
+
+        <!--Observation-death-date, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) -->
         <resource>
             <type value="Observation"/>
-            <!--<profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>-->
-            <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
-            <!--<interaction><code value="update"/></interaction>-->
+            <supportedProfile
+                value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
             <interaction>
                 <code value="read"/>
             </interaction>
             <interaction>
                 <code value="search-type"/>
             </interaction>
-            <!--<interaction><code value="delete"/></interaction><interaction><code value="create"/></interaction>-->
-            <!--<searchInclude value="Observation:based-on"/><searchInclude value="Observation:context"/><searchInclude value="Observation:device"/><searchInclude value="Observation:encounter"/><searchInclude value="Observation:patient"/><searchInclude value="Observation:performer"/><searchInclude value="Observation:related-target"/><searchInclude value="Observation:specimen"/><searchInclude value="Observation:subject"/>-->
-            <searchInclude value="Observation:value[x]"/>
-            <searchInclude value="Observation:component:datetimePronouncedDead.value[x]"/>
-            <searchParam>
-                <name value="code"/>
-                <type value="token"/>
-                <documentation value="The code of the observation type"/>
-            </searchParam>
             <searchParam>
                 <name value="date"/>
                 <type value="date"/>
-                <documentation
-                    value="Obtained date/time. If the obtained element is a period, a date that falls in the period"
-                />
-            </searchParam>
-            <searchParam>
-                <name value="patient"/>
-                <type value="reference"/>
-                <documentation value="The subject that the observation is about (if patient)"/>
-            </searchParam>
-            <searchParam>
-                <name value="subject"/>
-                <type value="reference"/>
-                <documentation value="The subject that the observation is about"/>
-            </searchParam>
-            <searchParam>
-                <name value="_id"/>
-                <type value="token"/>
-                <documentation value="The ID of the resource"/>
             </searchParam>
         </resource>
+
+
+        <!--Returned Searchset Bundle, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) -->
         <resource>
             <type value="Bundle"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-            <!--<interaction><code value="update"/></interaction>-->
+            <supportedProfile value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
             <interaction>
                 <code value="read"/>
             </interaction>
             <interaction>
                 <code value="search-type"/>
             </interaction>
-            <!--<interaction><code value="delete"/></interaction><interaction><code value="create"/></interaction>-->
-            <searchInclude value="*"/>
-            <searchInclude value="Bundle:composition"/>
-            <searchInclude value="Bundle:message"/>
             <searchParam>
                 <name value="_id"/>
                 <type value="token"/>
@@ -319,10 +310,8 @@
                 />
             </searchParam>
         </resource>
-        <interaction>
-            <code value="transaction"/>
-        </interaction>
     </rest>
+
     <messaging>
         <supportedMessage>
             <mode value="receiver"/>
