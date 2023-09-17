@@ -3,6 +3,7 @@
     xmlns="http://hl7.org/fhir">
     <id value="CapabilityStatement-edrs-server"/>
     <text>
+        <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
             <h2 id="test1" class="no_toc">EDRS Server Capabilities Summary</h2>
@@ -83,7 +84,7 @@
                     <tr>
                         <td>patient.gender</td>
                         <td>0..1</td>
-                        <td>string</td>
+                        <td>token</td>
                         <td>Decedent’s gender</td>
                     </tr>
                     <tr>
@@ -221,7 +222,7 @@
             <searchParam>
                 <name value="gender"/>
                 <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-gender"/>
-                <type value="string"/>
+                <type value="token"/>
                 <documentation value="Gender of the patient"/>
             </searchParam>
             <searchParam>
