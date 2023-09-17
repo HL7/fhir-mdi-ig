@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-mdi-and-edrs-a-freeman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-09-17T19:21:59.566Z"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-09-17T20:40:33.595Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs"/>
     </meta>
     <identifier>
@@ -41,12 +41,14 @@
                                 
                                 
                                 
+                                
                                 <a href="StructureDefinition-Composition-mdi-and-edrs.html">Composition - MDI to
                                 EDRS</a>
                             </p>
                         </div>
                         <p>
                             <b>Extension - Tracking Number</b>: Birth Certificate: ME21-113
+                        
                         
                         
                         
@@ -60,9 +62,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>status</b>: final
+                        
                         
                         
                         
@@ -76,13 +80,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#86807-5)
+                            
                             
                             
                             
@@ -97,9 +104,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>author</b>: 
+                            
                             
                             
                             
@@ -111,9 +120,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>title</b>: MDI to EDRS Composition
+                        
                         
                         
                         
@@ -136,6 +147,7 @@
                                 <td>professional</td>
                                 <td>
                                     <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                                
                                 
                                 
                                 
@@ -310,12 +322,14 @@
                                 
                                 
                                 
+                                
                                 <a href="StructureDefinition-Observation-how-death-injury-occurred.html">Observation - How
                                 Death Injury Occurred</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
+                        
                         
                         
                         
@@ -329,13 +343,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#11374-6)
+                            
                             
                             
                             
@@ -350,7 +367,9 @@
                             
                             
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         
                         
@@ -364,9 +383,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>performer</b>: 
+                            
                             
                             
                             
@@ -378,9 +399,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>value</b>: drug toxicity 
+                            
                             
                             
                             
@@ -400,13 +423,16 @@
                                 
                                 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
                                     
                                     
                                     
                                     
+                                    
                                     <a href="https://loinc.org/">LOINC</a>#69444-8)
+                                
                                 
                                 
                                 
@@ -421,13 +447,16 @@
                                 
                                 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
                                     
                                     
                                     
                                     
+                                    
                                     <a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#N)
+                                
                                 
                                 
                                 
@@ -447,7 +476,9 @@
                                 
                                 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                    
                                     
                                     
                                     
@@ -459,10 +490,12 @@
                                 
                                 
                                 
+                                
                                 </span>
                             </p>
                             <p>
                                 <b>value</b>: Private house 
+                                
                                 
                                 
                                 
@@ -483,13 +516,16 @@
                                 
                                 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
                                     
                                     
                                     
                                     
+                                    
                                     <a href="https://loinc.org/">LOINC</a>#69451-3)
+                                
                                 
                                 
                                 
@@ -504,13 +540,16 @@
                                 
                                 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
                                     
                                     
                                     
                                     
+                                    
                                     <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor</a>#NA)
+                                
                                 
                                 
                                 
@@ -631,12 +670,14 @@
                                 
                                 
                                 
+                                
                                 <a href="StructureDefinition-Observation-manner-of-death.html">Observation - Manner of
                                 Death</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
+                        
                         
                         
                         
@@ -650,13 +691,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#69449-7)
+                            
                             
                             
                             
@@ -671,7 +715,9 @@
                             
                             
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         
                         
@@ -685,7 +731,9 @@
                             
                             
                             
+                            
                             <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        
                         
                         
                         
@@ -699,13 +747,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#7878000)
+                            
                             
                             
                             
@@ -765,11 +816,13 @@
                                 
                                 
                                 
+                                
                                 <a href="StructureDefinition-Observation-cause-of-death-part1.html">Observation - Cause of Death Part 1</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
+                        
                         
                         
                         
@@ -783,13 +836,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#69453-9)
+                            
                             
                             
                             
@@ -804,7 +860,9 @@
                             
                             
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         
                         
@@ -818,7 +876,9 @@
                             
                             
                             
+                            
                             <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        
                         
                         
                         
@@ -827,6 +887,7 @@
                         </p>
                         <p>
                             <b>value</b>: Fentanyl toxicity 
+                            
                             
                             
                             
@@ -845,7 +906,9 @@
                                 
                                 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                    
                                     
                                     
                                     
@@ -857,10 +920,12 @@
                                 
                                 
                                 
+                                
                                 </span>
                             </p>
                             <p>
                                 <b>value</b>: 1
+                            
                             
                             
                             
@@ -879,7 +944,9 @@
                                 
                                 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                    
                                     
                                     
                                     
@@ -891,10 +958,12 @@
                                 
                                 
                                 
+                                
                                 </span>
                             </p>
                             <p>
                                 <b>value</b>: minutes to hours
+                            
                             
                             
                             
@@ -969,11 +1038,13 @@
                                 
                                 
                                 
+                                
                                 <a href="StructureDefinition-Observation-contributing-cause-of-death-part2.html">Observation - Contributing Cause of Death Part 2</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
+                        
                         
                         
                         
@@ -987,13 +1058,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#69441-4)
+                            
                             
                             
                             
@@ -1008,7 +1082,9 @@
                             
                             
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         
                         
@@ -1022,7 +1098,9 @@
                             
                             
                             
+                            
                             <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        
                         
                         
                         
@@ -1031,6 +1109,7 @@
                         </p>
                         <p>
                             <b>value</b>: Hypertensive heart disease 
+                            
                             
                             
                             
@@ -1086,11 +1165,13 @@
                                 
                                 
                                 
+                                
                                 <a href="StructureDefinition-Location-death.html">Location - Death</a>
                             </p>
                         </div>
                         <p>
                             <b>identifier</b>: id: 29
+                        
                         
                         
                         
@@ -1104,9 +1185,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>name</b>: Atlanta GA Death Location - Freeman
+                        
                         
                         
                         
@@ -1120,7 +1203,9 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                
                                 
                                 
                                 
@@ -1132,10 +1217,12 @@
                             
                             
                             
+                            
                             </span>
                         </p>
                         <p>
                             <b>address</b>: 400 Windstream Street Atlanta GA USA (HOME)
+                        
                         
                         
                         
@@ -1194,11 +1281,13 @@
                                 
                                 
                                 
+                                
                                 <a href="StructureDefinition-Location-injury.html">Location - Injury</a>
                             </p>
                         </div>
                         <p>
                             <b>identifier</b>: id: 29
+                        
                         
                         
                         
@@ -1212,9 +1301,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>name</b>: Atlanta GA Injury Location - Freeman
+                        
                         
                         
                         
@@ -1228,7 +1319,9 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                
                                 
                                 
                                 
@@ -1240,10 +1333,12 @@
                             
                             
                             
+                            
                             </span>
                         </p>
                         <p>
                             <b>address</b>: 400 Windstream Street Atlanta GA USA (HOME)
+                        
                         
                         
                         
@@ -1291,6 +1386,7 @@
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Alice J. 
+                            
                             
                             
                             
@@ -1406,11 +1502,13 @@
                                 
                                 
                                 
+                                
                                 <a href="StructureDefinition-Observation-tobacco-use-contributed-to-death.html">Observation - Tobacco Use Contributed to Death</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
+                        
                         
                         
                         
@@ -1424,13 +1522,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#69443-0)
+                            
                             
                             
                             
@@ -1445,7 +1546,9 @@
                             
                             
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         
                         
@@ -1459,13 +1562,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#373067005)
+                            
                             
                             
                             
@@ -1522,11 +1628,13 @@
                                 
                                 
                                 
+                                
                                 <a href="StructureDefinition-Observation-death-date.html">Observation - Death Date</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
+                        
                         
                         
                         
@@ -1540,13 +1648,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#81956-5)
+                            
                             
                             
                             
@@ -1561,7 +1672,9 @@
                             
                             
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         
                         
@@ -1575,6 +1688,7 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>performer</b>: 
@@ -1583,7 +1697,9 @@
                             
                             
                             
+                            
                             <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                        
                         
                         
                         
@@ -1597,9 +1713,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>method</b>: Approximate 
+                            
                             
                             
                             
@@ -1611,7 +1729,9 @@
                                 
                                 
                                 
+                                
                                 <a href="CodeSystem-CodeSystem-mdi-codes.html">CodeSystem - MDI</a>#approximate)
+                            
                             
                             
                             
@@ -1630,7 +1750,9 @@
                                 
                                 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                    
                                     
                                     
                                     
@@ -1642,10 +1764,12 @@
                                 
                                 
                                 
+                                
                                 </span>
                             </p>
                             <p>
                                 <b>value</b>: 2022-01-08 15:30:00-0500
+                            
                             
                             
                             
@@ -1664,13 +1788,16 @@
                                 
                                 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
                                     
                                     
                                     
                                     
+                                    
                                     <a href="https://loinc.org/">LOINC</a>#58332-8)
+                                
                                 
                                 
                                 
@@ -1685,13 +1812,16 @@
                                 
                                 
                                 
+                                
                                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                     
                                     
                                     
                                     
                                     
+                                    
                                     <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#63238001)
+                                
                                 
                                 
                                 
@@ -1798,6 +1928,7 @@
                                 
                                 
                                 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                             </p>
                         </div>
@@ -1808,9 +1939,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>name</b>: Sam Jones (OFFICIAL)
+                        
                         
                         
                         
@@ -1858,11 +1991,13 @@
                                 
                                 
                                 
+                                
                                 <a href="StructureDefinition-Observation-decedent-pregnancy.html">Observation - Decedent Pregnancy</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
+                        
                         
                         
                         
@@ -1876,13 +2011,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="https://loinc.org/">LOINC</a>#69442-2)
+                            
                             
                             
                             
@@ -1897,7 +2035,9 @@
                             
                             
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         
                         
@@ -1911,13 +2051,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor</a>#NA)
+                            
                             
                             
                             
@@ -1974,11 +2117,13 @@
                                 
                                 
                                 
+                                
                                 <a href="StructureDefinition-Procedure-death-certification.html">Procedure - Death Certification</a>
                             </p>
                         </div>
                         <p>
                             <b>identifier</b>: id: 180
+                        
                         
                         
                         
@@ -1992,9 +2137,11 @@
                         
                         
                         
+                        
                         </p>
                         <p>
                             <b>category</b>: Diagnostic procedure 
+                            
                             
                             
                             
@@ -2006,7 +2153,9 @@
                                 
                                 
                                 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#103693007)
+                            
                             
                             
                             
@@ -2021,13 +2170,16 @@
                             
                             
                             
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                                 
                                 
                                 
                                 
                                 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#308646001)
+                            
                             
                             
                             
@@ -2042,7 +2194,9 @@
                             
                             
                             
+                            
                             <a href="Patient-us-core-patient-a-freeman.html">Patient/us-core-patient-a-freeman</a> " FREEMAN"
+                        
                         
                         
                         
@@ -2051,6 +2205,7 @@
                         </p>
                         <p>
                             <b>performed</b>: 2022-01-18 16:39:40-0500
+                        
                         
                         
                         
@@ -2076,7 +2231,9 @@
                                     
                                     
                                     
+                                    
                                     <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                        
                                         
                                         
                                         
@@ -2088,10 +2245,12 @@
                                     
                                     
                                     
+                                    
                                     </span>
                                 </td>
                                 <td>
                                     <a href="Practitioner-us-core-practitioner-s-jones.html">Practitioner/us-core-practitioner-s-jones</a> " JONES"
+                                
                                 
                                 
                                 

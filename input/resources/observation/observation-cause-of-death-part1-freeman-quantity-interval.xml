@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-cause-of-death-part1-freeman-quantity-interval"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-09-12T12:41:17.692Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-09-17T20:11:14.188Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
     </meta>
     <status value="final"/>

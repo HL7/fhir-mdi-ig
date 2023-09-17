@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-death-pregnancy-status"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-09-29T23:32:59.838Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-09-17T19:46:34.133Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-death-pregnancy-status"/>
     <version value="0.1.0"/>
@@ -34,7 +34,7 @@
     </jurisdiction>
     <caseSensitive value="true"/>
     <content value="complete"/>
-    <count value="5"/>
+    <count value="6"/>
     <concept>
         <code value="1"/>
         <display value="Not pregnant within past year"/>

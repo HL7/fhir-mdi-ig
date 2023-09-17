@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-death-date-period"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-06-29T14:46:55.571Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-09-17T20:11:14.513Z"/>
     </meta>
     <status value="preliminary"/>
     <code>
