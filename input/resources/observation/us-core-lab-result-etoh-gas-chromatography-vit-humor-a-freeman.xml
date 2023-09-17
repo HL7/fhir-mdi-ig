@@ -29,6 +29,9 @@
         <display value="Alice J. Freeman"/>
     </subject>
     <effectiveDateTime value="2021-12-03"/>
+    <performer>
+        <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+    </performer>
     <valueString value="0.133 g/dL"/>
     <specimen>
         <reference value="Specimen/specimen-vitreous-humor-toxicology-a-freeman"/>

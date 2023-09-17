@@ -18,6 +18,10 @@
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
+    <effectiveDateTime value="2022-02-20"/>
+    <performer>
+        <reference value="Practitioner/us-core-practitioner-s-jones"/>
+    </performer>
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
