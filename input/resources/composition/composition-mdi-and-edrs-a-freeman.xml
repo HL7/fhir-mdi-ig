@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition
+    xmlns="http://hl7.org/fhir">
+    <id value="composition-mdi-and-edrs-a-freeman"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-09-17T18:47:52.296Z"/>
+        <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
+    </meta>
+    <text>
+        <status value="extensions"/>
+    </text>
+    <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
+        <valueIdentifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="BCT"/>
+                </coding>
+            </type>
+            <value value="ME21-113"/>
+        </valueIdentifier>
+    </extension>
+    <identifier>
+        <value value="a03eab8c-11e8-4d0c-ad2a-b385395e27de"/>
+    </identifier>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="86807-5"/>
+            <display value="Death administrative information Document"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/us-core-patient-a-freeman"/>
+    </subject>
+    <date value="2022-02-20"/>
+    <author>
+        <reference value="Practitioner/us-core-practitioner-s-jones"/>
+    </author>
+    <title value="MDI to EDRS Composition"/>
+    <attester>
+        <mode value="professional"/>
+        <party>
+            <reference value="Practitioner/us-core-practitioner-s-jones"/>
+        </party>
+    </attester>
+    <section>
+        <title value="Additional Demographic Information Section"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="demographics"/>
+            </coding>
+        </code>
+        <text>
+            <status value="additional"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <p>No additional demographic information</p>
+            </div>
+        </text>
+    </section>
+    <section>
+        <title value="Circumstances Section"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="circumstances"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Location/location-death-atlanta-ga-a-freeman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-tobacco-use-a-freeman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-decedent-pregnancy-a-freeman"/>
+        </entry>
+        <entry>
+            <reference value="Location/location-injury-atlanta-ga-a-freeman"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Jurisdiction Section"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="jurisdiction"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/observation-death-date-a-freeman"/>
+        </entry>
+        <entry>
+            <reference value="Procedure/procedure-death-certification-a-freeman"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Cause and Manner of Death Section"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="cause-manner"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/observation-cause-of-death-part1-a-freeman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-contributing-cause-of-death-part2-a-freeman"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-manner-of-death-a-freeman-accidental"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-how-death-injury-occurred-a-freeman-med-ingest"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Medical History Section"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>
+                <code value="medical-history"/>
+            </coding>
+        </code>
+        <text>
+            <status value="additional"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <p>No Medical History information</p>
+            </div>
+        </text>
+        <emptyReason>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/list-empty-reason"/>
+                <code value="unavailable"/>
+                <display value="Unavailable"/>
+            </coding>
+            <text value="Decedent's medical history not available"/>
+        </emptyReason>
+    </section>
+</Composition>

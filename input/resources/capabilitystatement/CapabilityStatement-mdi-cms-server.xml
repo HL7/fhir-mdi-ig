@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CapabilityStatement xmlns="http://hl7.org/fhir">
-    <!--***** Capability Statement Notes *****-->
-    <!--This CapabilityStatement FHIR resource is based on the Capability Statement of the RESTful test server maintained by Georgia Tech Research Institiute (GTRI) as part of the 
-        Raven Testing Platform, a proof of concept for the MDI FHIR IG. (See: https://raven.heat.icl.gtri.org/ and https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata)
-        This CapabilityStatement describes minimum <interaction> capabilities for search-type and read for a subset of MDI <resource> elements. The kind value="requirement" describes 
-        the capabilities of a desired system, in this case a server storing data related to a detah or death investigation. 
-        This CapabilityStatement does not define <searchRevInclude> or <operation> for any <resource> elements. 
-        Additional MDI <resource> elements that may be of interest to implemntes and additional <interaction> capabilities (update, delete, create) are included as comments.-->
+<CapabilityStatement
+    xmlns="http://hl7.org/fhir">
     <id value="CapabilityStatement-mdi-cms-server"/>
     <text>
-        <div xmlns="http://www.w3.org/1999/xhtml">
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
             <h2 id="test1" class="no_toc">MDI CMS Server Capabilities Summary</h2>
             <ul>
                 <li>The MDI CMS Server may specify RESTful operations for resources. At a minimum,
@@ -19,7 +14,7 @@
                 <li>The MDI CMS Server should be a producer of Composition-mdi-and-edrs, and may
                     also be a consumer of Composition-mdi-and-edrs </li>
             </ul>
-            <h2 id="test1" class="no_toc">API Specifications Search Operations></h2>
+            <h2 id="test1" class="no_toc">API Specifications Search Operations&gt;</h2>
             <p>The MDI CMS Server may use extended operations with MDI-specific search parameters
                 and a subset of the many (RESTful API)[https://hl7.org/FHIR/http.html].</p>
             <p>All API implementations of this MDI specification must conform to common design
@@ -37,7 +32,6 @@
                 <li>POST [base]/Composition/$mdi-documents </li>
                 <li>GET [base]/Composition/$mdi-documents?name=value… </li>
             </ul>
-
             <p id="summary">
                 <strong>Summary of Minimum MDI Search Parameter Definitions</strong>
             </p>
@@ -67,7 +61,7 @@
                     <tr>
                         <td>patient</td>
                         <td>0..*</td>
-                        <td> </td>
+                        <td/>
                         <td>One or more US Core Patient decedent-related search parameters</td>
                     </tr>
                     <tr>
@@ -124,8 +118,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-07-03"/>
-    <description
-        value="This resource describes expected capabilities of an MDI CMS Server which is responsible for providing responses to the queries submitted by a Client. &#xA;        It lists FHIR profiles and search parameters that, at a minimum, should be supported by MDI CMS Servers. MDI CMS Clients have the option of choosing from this list to access necessary data."/>
+    <description value="This resource describes expected capabilities of an MDI CMS Server which is responsible for providing responses to the queries submitted by a Client. It lists FHIR profiles and search parameters that, at a minimum, should be supported by MDI CMS Servers. MDI CMS Clients have the option of choosing from this list to access necessary data."/>
     <kind value="requirements"/>
     <fhirVersion value="4.0.1"/>
     <format value="application/fhir+xml"/>
@@ -134,11 +127,10 @@
     <format value="json"/>
     <rest>
         <mode value="server"/>
-        <!-- Composition-mdi-and-edrs, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) -->
+        <!--Composition-mdi-and-edrs, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata)-->
         <resource>
             <type value="Composition"/>
-            <supportedProfile
-                value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
             <interaction>
                 <code value="search-type"/>
             </interaction>
@@ -194,13 +186,11 @@
                 <documentation value="The ID of the resource"/>
             </searchParam>
         </resource>
-
         <!--US Core Patient, based on US Core (http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-server.html) 
-            & CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) -->
+            & CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata)-->
         <resource>
             <type value="Patient"/>
-            <supportedProfile
-                value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             <interaction>
                 <code value="read"/>
             </interaction>
@@ -214,8 +204,7 @@
             </searchParam>
             <searchParam>
                 <name value="birthdate"/>
-                <definition
-                    value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate"/>
+                <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate"/>
                 <type value="date"/>
                 <documentation value="The patient's date of birth"/>
             </searchParam>
@@ -226,15 +215,13 @@
             </searchParam>
             <searchParam>
                 <name value="given"/>
-                <definition
-                    value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given"/>
+                <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given"/>
                 <type value="string"/>
                 <documentation value="A portion of the given name of the patient"/>
             </searchParam>
             <searchParam>
                 <name value="gender"/>
-                <definition
-                    value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-gender"/>
+                <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-gender"/>
                 <type value="string"/>
                 <documentation value="Gender of the patient"/>
             </searchParam>
@@ -242,14 +229,10 @@
                 <name value="name"/>
                 <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name"/>
                 <type value="string"/>
-                <documentation
-                    value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
-                />
+                <documentation value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"/>
             </searchParam>
         </resource>
-
-
-        <!--Location-death, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata -->
+        <!--Location-death, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata-->
         <resource>
             <type value="Location"/>
             <supportedProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
@@ -264,12 +247,10 @@
                 <type value="string"/>
             </searchParam>
         </resource>
-
-        <!--Observation-death-date, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) -->
+        <!--Observation-death-date, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata)-->
         <resource>
             <type value="Observation"/>
-            <supportedProfile
-                value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
             <interaction>
                 <code value="read"/>
             </interaction>
@@ -281,9 +262,7 @@
                 <type value="date"/>
             </searchParam>
         </resource>
-
-
-        <!--Returned Searchset Bundle, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) -->
+        <!--Returned Searchset Bundle, based on CapabilityStatement for GTRI's Bluejay FHIR server (https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata)-->
         <resource>
             <type value="Bundle"/>
             <supportedProfile value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
@@ -301,9 +280,7 @@
             <searchParam>
                 <name value="composition"/>
                 <type value="reference"/>
-                <documentation
-                    value="The first resource in the bundle, if the bundle type is &quot;document&quot; - this is a composition, and this parameter provides access to search its contents"
-                />
+                <documentation value="The first resource in the bundle, if the bundle type is &quot;document&quot; - this is a composition, and this parameter provides access to search its contents"/>
             </searchParam>
             <searchParam>
                 <name value="identifier"/>
@@ -313,26 +290,19 @@
             <searchParam>
                 <name value="message"/>
                 <type value="reference"/>
-                <documentation
-                    value="The first resource in the bundle, if the bundle type is &quot;message&quot; - this is a message header, and this parameter provides access to search its contents"
-                />
+                <documentation value="The first resource in the bundle, if the bundle type is &quot;message&quot; - this is a message header, and this parameter provides access to search its contents"/>
             </searchParam>
             <searchParam>
                 <name value="type"/>
                 <type value="token"/>
-                <documentation
-                    value="document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection"
-                />
+                <documentation value="document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection"/>
             </searchParam>
         </resource>
     </rest>
-
     <messaging>
         <supportedMessage>
             <mode value="receiver"/>
-            <definition
-                value="http://hl7.org/fhir/us/mdi/MessageDefinition/MessageDefinition-toxicology-system"
-            />
+            <definition value="http://hl7.org/fhir/us/mdi/MessageDefinition/MessageDefinition-toxicology-system"/>
         </supportedMessage>
     </messaging>
     <document>

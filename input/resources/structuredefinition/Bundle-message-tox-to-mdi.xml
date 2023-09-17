@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-message-tox-to-mdi"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2023-06-28T21:46:13.212Z"/>
+        <versionId value="15"/>
+        <lastUpdated value="2023-09-17T18:15:04.160Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
     <name value="BundleMessageToxToMDI"/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1124"/>
-        <lastUpdated value="2023-09-12T13:31:22.348Z"/>
+        <versionId value="1144"/>
+        <lastUpdated value="2023-09-17T18:50:45.625Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -90,19 +90,29 @@
                 <display value="CapabilityStatement - MDI CMS Server"/>
             </reference>
             <name value="CapabilityStatement - MDI CMS Server"/>
-            <description value="CapabilityStatement - MDI CMS Server"/>
+            <description value="This resource describes expected capabilities of an MDI CMS Server which is responsible for providing responses to the queries submitted by a Client. It lists FHIR profiles and search parameters that, at a minimum, should be supported by MDI CMS Servers. MDI CMS Clients have the option of choosing from this list to access necessary data."/>
             <exampleBoolean value="false"/>
             <groupingId value="capability-statements"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-document-mdi-to-edrs"/>
-                <display value="Bundle - Document MDI to EDRS"/>
+                <reference value="CapabilityStatement/CapabilityStatement-edrs-server"/>
+                <display value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
             </reference>
-            <name value="Bundle - Document MDI to EDRS"/>
-            <description value="This Bundle profile represents a Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI to EDRS."/>
+            <name value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
+            <description value="This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor, which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
+            <groupingId value="capability-statements"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server"/>
+                <display value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
+            </reference>
+            <name value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
+            <description value="This resource describes the expected capabilities of the toxicology lab Server actor which is responsible for providing responses to the queries submitted by toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by toxicology lab Servers are defined. toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="capability-statements"/>
         </resource>
         <resource>
             <reference>
@@ -116,16 +126,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Composition-mdi-to-edrs"/>
-                <display value="Composition - MDI to EDRS"/>
-            </reference>
-            <name value="Composition - MDI to EDRS"/>
-            <description value="This Composition profile represents data exchanged between an MDI CMS and an EDRS."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Composition-mdi-and-edrs"/>
                 <display value="Composition - MDI and EDRS"/>
             </reference>
@@ -133,112 +133,6 @@
             <description value="This Composition profile represents data exchanged between an MDI CMS and an EDRS."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-message-tox-to-mdi"/>
-                <display value="Bundle - Message Toxicology to MDI"/>
-            </reference>
-            <name value="Bundle - Message Toxicology to MDI"/>
-            <description value="This Bundle profile represents a Message Bundle from a forensic toxicology laboratory to an MDI information management system. It contain a Message Header and a DiagnosticReport - Toxicology Lab Result to MDI."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="toxicology-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/CodeSystem-mdi-codes"/>
-                <display value="MDI Code System"/>
-            </reference>
-            <name value="CodeSystem - MDI"/>
-            <description value="This code system contains codes for use in MDI CMS."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="code-systems"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-mdi-tox-report-message-a-freeman"/></reference>
-            <name value="Bundle - Message Toxicology to MDI - Freeman"/>
-            <description value="Bundle - Message Toxicology to MDI:  Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
-            <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/MessageHeader-toxicology-to-mdi"/>
-                <display value="MessageHeaderToxicologyToMDI"/>
-            </reference>
-            <name value="MessageHeader - Toxicology to MDI"/>
-            <description value="This MessageHeader identifies the DiagnosticReport being sent from a forensic toxicology LIMS to an MDI CMS."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="toxicology-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
-                <display value="DiagnosticReport - Toxicology Lab Result to MDI"/>
-            </reference>
-            <name value="DiagnosticReport - Toxicology Lab Result to MDI"/>
-            <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a forensic toxicology LIMS to an MDI CMS.&#xA;Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="toxicology-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-tracking-number"/>
-                <display value="Extension - Tracking Number"/>
-            </reference>
-            <name value="Extension - Tracking Number"/>
-            <description value="This Extension contains a tracking number, such as a case number or file number assigned by an MDI organization, EDRS, or other involved organization to facilitate recognition of common case records across disparate systems and over time."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MessageHeader/messageheader-mdi-tox-result-report-a-freeman"/></reference>
-            <name value="MessageHeader - Toxicology to MDI - Freeman"/>
-            <description value="MessageHeader - Toxicology to MDI: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
-            <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-mdi-to-edrs-a-freeman"/></reference>
-            <name value="Bundle - MDI to EDRS - Freeman"/>
-            <description value="Bundle - MDI to EDRS: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/composition-mdi-to-edrs-a-freeman"/>
-                <display value="MDI to EDRS Composition"/>
-            </reference>
-            <name value="MDI to EDRS Composition - Freeman"/>
-            <description value="MDI to EDRS Composition: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-death-date-a-freeman"/></reference>
-            <name value="Observation - Death Date - Freeman"/>
-            <description value="Observation - Death Date: Freeman death date &amp; location example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Specimen/specimen-blood-toxicology-a-freeman"/></reference>
-            <name value="Specimen - Toxicology Lab - Freeman Blood"/>
-            <description value="Specimen - Toxicology Lab: Freeman Blood examples"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
-            <groupingId value="toxicology-examples"/>
         </resource>
         <resource>
             <reference>
@@ -262,9 +156,404 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Observation-death-date"/>
+                <display value="Observation - Death Date"/>
+            </reference>
+            <name value="Observation - Death Date"/>
+            <description value="This Observation provides the death date and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period.&#xA;The MDI Observation - Death Date artifact overlaps with the VRDR Death Date artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-how-death-injury-occurred"/>
+                <display value="Observation - How Death Injury Occurred"/>
+            </reference>
+            <name value="Observation - How Death Injury Occurred"/>
+            <description value="This Observation provides the certified explanation of how the injury leading to death occurred.&#xA;The MDI Observation - How Death Injury Occurred artifact overlaps with the VRDR Injury Incident artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-manner-of-death"/>
+                <display value="Observation - Manner of Death"/>
+            </reference>
+            <name value="Observation - Manner of Death"/>
+            <description value="This Observation provides the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident).&#xA;The MDI Observation - Manner of Death artifact overlaps with the VRDR Manner of Death artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-decedent-pregnancy"/>
+                <display value="Observation - Decedent Pregnancy"/>
+            </reference>
+            <name value="Observation - Decedent Pregnancy"/>
+            <description value="This Observation provides an indication of the pregnancy status of the decedent.&#xA;The MDI Observation - Decedent Pregnancy artifact overlaps with the VRDR Decedent Pregnancy Status artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
+                <display value="Observation - Tobacco Use Contributed to Death"/>
+            </reference>
+            <name value="Observation - Tobacco Use Contributed to Death"/>
+            <description value="This Observation provides the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent.&#xA;The MDI Observation - Tobacco Use Contributed to Death artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-autopsy-performed-indicator"/>
+                <display value="Observation - Autopsy Performed Indicator"/>
+            </reference>
+            <name value="Observation - Autopsy Performed Indicator"/>
+            <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practitioner).&#xA;The MDI Observation - Autopsy Performed Indicator artifact overlaps with the VRDR Autopsy Performed Indicator artifact."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-death-certification"/>
+                <display value="Procedure - Death Certification Vital Records"/>
+            </reference>
+            <name value="Procedure - Death Certification"/>
+            <description value="This Procedure records the certification of death by the certifier."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Location-death"/>
+                <display value="Location - Death"/>
+            </reference>
+            <name value="Location - Death"/>
+            <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element location of death."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Location-injury"/>
+                <display value="Location - Injury Vital Records"/>
+            </reference>
+            <name value="Location - Injury"/>
+            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to location of injury."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mdi-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-message-tox-to-mdi"/>
+                <display value="Bundle - Message Toxicology to MDI"/>
+            </reference>
+            <name value="Bundle - Message Toxicology to MDI"/>
+            <description value="This Bundle profile represents a Message Bundle from a forensic toxicology laboratory to an MDI CMS. It contains a Message Header and a DiagnosticReport - Toxicology Lab Result to MDI."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="toxicology-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+                <display value="MessageHeaderToxicologyToMDI"/>
+            </reference>
+            <name value="MessageHeader - Toxicology to MDI"/>
+            <description value="This MessageHeader identifies the DiagnosticReport being sent from a forensic toxicology LIMS to an MDI CMS."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="toxicology-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MessageDefinition/MessageDefinition-toxicology-system"/>
+                <display value="MessageDefinition-toxicology-system"/>
+            </reference>
+            <name value="MessageDefinitionToxicologySystem"/>
+            <description value="This resource defines the characteristics of a message that can be shared between a forensic toxicology system and an MDI CMS. This resource is used by CapabilityStatement resources and defines Toxicology Lab Results as the the type of event that initiates the message."/>
+            <exampleBoolean value="true"/>
+            <groupingId value="toxicology-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+                <display value="DiagnosticReport - Toxicology Lab Result to MDI"/>
+            </reference>
+            <name value="DiagnosticReport - Toxicology Lab Result to MDI"/>
+            <description value="This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a forensic toxicology LIMS to an MDI CMS.&#xA;Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="toxicology-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Specimen-toxicology-lab"/>
+                <display value="SpecimenToxicologyLab"/>
+            </reference>
+            <name value="Specimen - Toxicology Lab"/>
+            <description value="This Specimen profile identifies and describes the specimen sent by a medical examiner, coroner, or autopsy performer to a toxicology lab for analysis.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note.&#xA;The laboratory may use the Specimen.condition to describe the state of the specimen via codes from the extensible value set hl7VS-specimenCondition and/or use the Specimen.note to describe details or issues about the specimen."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="toxicology-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-toxicology-lab-result"/>
+                <display value="Observation - Toxicology Lab Result"/>
+            </reference>
+            <name value="Observation - Toxicology Lab Result"/>
+            <description value="This Observation profile describes forensic toxicology laboratory test results from analysis of a specimen sent by a medical examiner, coroner, or autopsy performer to the laboratory."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="toxicology-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-mdi-and-edrs-a-freeman"/></reference>
+            <name value="Bundle - MDI to EDRS - Freeman"/>
+            <description value="Bundle - MDI to EDRS: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-mdi-to-edrs-a-freeman"/></reference>
+            <name value="Bundle - MDI to EDRS - Freeman"/>
+            <description value="Bundle - MDI to EDRS: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-mdi-to-edrs-a-freeman"/>
+                <display value="MDI to EDRS Composition"/>
+            </reference>
+            <name value="MDI to EDRS Composition - Freeman"/>
+            <description value="MDI to EDRS Composition: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-mdi-and-edrs-a-freeman"/>
+                <display value="MDI to EDRS Composition"/>
+            </reference>
+            <name value="MDI and EDRS Composition - Freeman"/>
+            <description value="MDI and EDRS Composition: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-mdi-to-edrs-draft"/>
+                <display value="MDI to EDRS Composition"/>
+            </reference>
+            <name value="MDI to EDRS Composition - draft"/>
+            <description value="Composition - MDI to  EDRS: draft example with status=preliminary, author &amp; attester using data-absent-reason extension"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-mdi-and-edrs-draft"/>
+                <display value="MDI to EDRS Composition"/>
+            </reference>
+            <name value="MDI and EDRS Composition - draft"/>
+            <description value="Composition - MDI and  EDRS: draft example with status=preliminary, author &amp; attester using data-absent-reason extension"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cause-of-death-part1-a-freeman"/>
+                <display value="observation-cause-of-death-condition-a-freeman-1"/>
+            </reference>
+            <name value="Observation - Cause of Death Part 1 - Freeman"/>
+            <description value="Observation - Cause of Death Part 1: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cause-of-death-part1-freeman-quantity-interval"/></reference>
+            <name value="Observation - Cause of Death Part 1 - Freeman - quantity interval"/>
+            <description value="Observation - Cause of Death Part 1: Freeman example, specifying interval quantity (days)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-contributing-cause-of-death-part2-a-freeman"/></reference>
+            <name value="Observation - Contributing Cause of Death Part 2 - Freeman"/>
+            <description value="Observation - Contributing Cause of Death Part 2: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-death-date-a-freeman"/></reference>
+            <name value="Observation - Death Date - Freeman"/>
+            <description value="Observation - Death Date: Freeman death date &amp; location example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-death-date-period"/></reference>
+            <name value="Observation - Death Date - period"/>
+            <description value="Observation - Death Date: period example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-how-death-injury-occurred-a-freeman-med-ingest"/></reference>
+            <name value="Observation - How Death Injury Occurred - Freeman - Medication ingestion"/>
+            <description value="Observation - How Death Injury Occurred: Freeman Medication Ingestion (fentanyl) example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-manner-of-death-a-freeman-accidental"/></reference>
+            <name value="Observation - Manner of Death - Freeman"/>
+            <description value="Observation - Manner of Death: Freeman, accidental example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-decedent-pregnancy-a-freeman"/></reference>
+            <name value="Observation - Decedent Pregnancy - Freeman"/>
+            <description value="Observation - Decedent Pregnancy: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-tobacco-use-a-freeman"/></reference>
+            <name value="Observation - Tobacco Use - Freeman"/>
+            <description value="Observation - Tobacco Use: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-autopsy-performed-indicator-a-freeman"/></reference>
+            <name value="Observation - Autopsy Performed Indicator - Freeman"/>
+            <description value="Observation - Autopsy Performed Indicator: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-death-certification-a-freeman"/>
+                <display value="procedure-death-certification-a-freeman"/>
+            </reference>
+            <name value="Procedure - Death Certification - Freeman"/>
+            <description value="Procedure - Death Certification: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-death-atlanta-ga-a-freeman"/>
+                <display value="Atlanta GA Death Location - Freeman"/>
+            </reference>
+            <name value="Location - Death - Atlanta GA Freeman"/>
+            <description value="Location - Death:  Atlanta GA Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-death-string"/>
+                <display value="Atlanta GA Death Location - Freeman (address string)"/>
+            </reference>
+            <name value="Location - Death - Freeman address string"/>
+            <description value="Location - Death: address as string example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-death-lat-long"/>
+                <display value="Lake Death Location - Unknown"/>
+            </reference>
+            <name value="Location - Death - Lat/Long"/>
+            <description value="Location - Death: latitude &amp; longitude example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-injury-atlanta-ga-a-freeman"/>
+                <display value="Atlanta GA Injury Location - Freeman"/>
+            </reference>
+            <name value="Location - Injury - Atlanta GA Freeman"/>
+            <description value="Location - Injury:  Atlanta GA Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-mdi-tox-report-message-a-freeman"/></reference>
+            <name value="Bundle - Message Toxicology to MDI - Freeman"/>
+            <description value="Bundle - Message Toxicology to MDI:  Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MessageHeader/messageheader-mdi-tox-result-report-a-freeman"/></reference>
+            <name value="MessageHeader - Toxicology to MDI - Freeman"/>
+            <description value="MessageHeader - Toxicology to MDI: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/></reference>
+            <name value="DiagnosticReport - Toxicology Lab Result to MDI - Freeman"/>
+            <description value="DiagnosticReport - Toxicology Lab Result to MDI: Freeman example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-blood-toxicology-a-freeman"/></reference>
+            <name value="Specimen - Toxicology Lab - Freeman Blood"/>
+            <description value="Specimen - Toxicology Lab: Freeman Blood examples"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab"/>
+            <groupingId value="toxicology-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - Ethanol Blood Freeman"/>
-            <description value="Observation - Toxicology Lab Result: Freeman  Ethanol Blood example"/>
+            <description value="Observation - Toxicology Lab Result: Freeman Ethanol Blood example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
@@ -277,16 +566,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-death-date"/>
-                <display value="Observation - Death Date"/>
-            </reference>
-            <name value="Observation - Death Date"/>
-            <description value="This Observation provides the death date and date pronounced dead. If the actual date of death is known, set value to type dateTime. If the date of death is not known, and a range is known, set value to type Period.&#xA;The MDI Observation - Death Date artifact overlaps with the VRDR Death Date artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -326,89 +605,12 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-how-death-injury-occurred"/>
-                <display value="Observation - How Death Injury Occurred"/>
-            </reference>
-            <name value="Observation - How Death Injury Occurred"/>
-            <description value="This Observation provides the certified explanation of how the injury leading to death occurred.&#xA;The MDI Observation - How Death Injury Occurred artifact overlaps with the VRDR Injury Incident artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-manner-of-death"/>
-                <display value="Observation - Manner of Death"/>
-            </reference>
-            <name value="Observation - Manner of Death"/>
-            <description value="This Observation provides the conclusion arrived at upon completion of death investigation regarding the manner of death (e.g., natural, homicide, suicide, accident).&#xA;The MDI Observation - Manner of Death artifact overlaps with the VRDR Manner of Death artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/us-core-lab-result-4-anpp-urine-a-freeman"/></reference>
             <name value="Observation - Toxicology Lab Result - 4-anpp Urine Freeman"/>
             <description value="Observation - Toxicology Lab Result: Freeman 4-anpp Urine example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
             <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-how-death-injury-occurred-a-freeman-med-ingest"/></reference>
-            <name value="Observation - How Death Injury Occurred - Freeman - Medication ingestion"/>
-            <description value="Observation - How Death Injury Occurred: Freeman Medication Ingestion (fentanyl) example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-decedent-pregnancy"/>
-                <display value="Observation - Decedent Pregnancy"/>
-            </reference>
-            <name value="Observation - Decedent Pregnancy"/>
-            <description value="This Observation provides an indication of the pregnancy status of the decedent.&#xA;The MDI Observation - Decedent Pregnancy artifact overlaps with the VRDR Decedent Pregnancy Status artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Specimen-toxicology-lab"/>
-                <display value="SpecimenToxicologyLab"/>
-            </reference>
-            <name value="Specimen - Toxicology Lab"/>
-            <description value="This Specimen profile identifies and describes the specimen sent by a medical examiner, coroner, or autopsy performer to a toxicology lab for analysis.&#xA;For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note.&#xA;The laboratory may use the Specimen.condition to describe the state of the specimen via codes from the extensible value set hl7VS-specimenCondition and/or use the Specimen.note to describe details or issues about the specimen."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="toxicology-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-manner-of-death-a-freeman-accidental"/></reference>
-            <name value="Observation - Manner of Death - Freeman"/>
-            <description value="Observation - Manner of Death: Freeman, accidental example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-manner-of-death"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-decedent-pregnancy-a-freeman"/></reference>
-            <name value="Observation - Decedent Pregnancy - Freeman"/>
-            <description value="Observation - Decedent Pregnancy: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-decedent-pregnancy"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-toxicology-lab-result"/>
-                <display value="Observation - Toxicology Lab Result"/>
-            </reference>
-            <name value="Observation - Toxicology Lab Result"/>
-            <description value="This Observation profile describes forensic toxicology laboratory test results from analysis of a specimen sent by a medical examiner, coroner, or autopsy performer to the laboratory."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -493,15 +695,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-tobacco-use-a-freeman"/></reference>
-            <name value="Observation - Tobacco Use - Freeman"/>
-            <description value="Observation - Tobacco Use: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Organization/us-core-organization-tox-lab"/>
                 <display value="UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
             </reference>
@@ -549,6 +742,45 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Practitioner/us-core-practitioner-jm-lehz"/>
+                <display value="J.M. Lehz"/>
+            </reference>
+            <name value="US Core Practitioner - Dr. J.M. Lehz"/>
+            <description value="Example of US Core Practitioner - Dr. J.M. Lehz, autopsy performer"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DocumentReference/documentreference-mdi-autopsy-report-ex"/></reference>
+            <name value="DocumentReference - MDI Report - Autopsy Report example"/>
+            <description value="DocumentReference - MDI Report: Autopsy Report example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DocumentReference/documentreference-mdi-investigator-narrative-ex"/></reference>
+            <name value="DocumentReference - MDI Report - Investigator's Narrative example"/>
+            <description value="DocumentReference - MDI Report: Investigator's Narrative example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-tracking-number"/>
+                <display value="Extension - Tracking Number"/>
+            </reference>
+            <name value="Extension - Tracking Number"/>
+            <description value="This Extension contains a tracking number, such as a case number or file number assigned by an MDI organization, EDRS, or other involved organization to facilitate recognition of common case records across disparate systems and over time."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="CodeSystem/CodeSystem-death-pregnancy-status"/>
                 <display value="CodeSystem - Death Pregnancy Status"/>
             </reference>
@@ -559,13 +791,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-tobacco-use-contributed-to-death"/>
-                <display value="Observation - Tobacco Use Contributed to Death"/>
+                <reference value="ValueSet/ValueSet-certifier-types"/>
+                <display value="ValueSet - Certifier Types"/>
             </reference>
-            <name value="Observation - Tobacco Use Contributed to Death"/>
-            <description value="This Observation provides the conclusion arrived at during death investigation regarding the extent to which tobacco use contributed to the death of the decedent.&#xA;The MDI Observation - Tobacco Use Contributed to Death artifact overlaps with the VRDR Tobacco Use Contributed To Death artifact."/>
+            <name value="ValueSet - Certifier Types"/>
+            <description value="A set of codes indicating the type of certifier (medical examiner/coroner, certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
             <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
+            <groupingId value="value-sets"/>
         </resource>
         <resource>
             <reference>
@@ -574,16 +806,6 @@
             </reference>
             <name value="ValueSet - Contributory Tobacco Use"/>
             <description value="A set of codes that reflect the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004).&#xA;The MDI ValueSet - Contributory Tobacco Use artifact overlaps with the VRDR Contributory Tobacco Use VS artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="value-sets"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ValueSet-certifier-types"/>
-                <display value="ValueSet - Certifier Types"/>
-            </reference>
-            <name value="ValueSet - Certifier Types"/>
-            <description value="A set of codes indicating the type of certifier (medical examiner/coroner, certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
         </resource>
@@ -639,17 +861,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cause-of-death-part1-a-freeman"/>
-                <display value="observation-cause-of-death-condition-a-freeman-1"/>
-            </reference>
-            <name value="Observation - Cause of Death Part 1 - Freeman"/>
-            <description value="Observation - Cause of Death Part 1: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/ValueSet-transportation-incident-role"/>
                 <display value="Transportation Incident Role"/>
             </reference>
@@ -657,16 +868,6 @@
             <description value="Role of the decedent in a transportation incident resulting in a death-related injury.&#xA;The MDI ValueSet - Transportation Incident Role artifact overlaps with the VRDR Transportation Incident Role artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="value-sets"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MessageDefinition/MessageDefinition-toxicology-system"/>
-                <display value="MessageDefinition-toxicology-system"/>
-            </reference>
-            <name value="MessageDefinitionToxicologySystem"/>
-            <description value="This resource defines the characteristics of a message that can be shared between a forensic toxicology system and an MDI CMS"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="toxicology-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -700,203 +901,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CapabilityStatement/CapabilityStatement-edrs-server"/>
-                <display value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
-            </reference>
-            <name value="CapabilityStatement - Electronic Death Reporting System (EDRS) Server"/>
-            <description value="This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor, which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="capability-statements"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-cause-of-death-part1-freeman-quantity-interval"/></reference>
-            <name value="Observation - Cause of Death Part 1 - Freeman - quantity interval"/>
-            <description value="Observation - Cause of Death Part 1: Freeman example, specifying interval quantity (days)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-cause-of-death-part1"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-contributing-cause-of-death-part2-a-freeman"/></reference>
-            <name value="Observation - Contributing Cause of Death Part 2 - Freeman"/>
-            <description value="Observation - Contributing Cause of Death Part 2: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-contributing-cause-of-death-part2"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server"/>
-                <display value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
-            </reference>
-            <name value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
-            <description value="This resource describes the expected capabilities of the toxicology lab Server actor which is responsible for providing responses to the queries submitted by toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by toxicology lab Servers are defined. toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="capability-statements"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/CapabilityStatement-medical-examiner-coroner-server"/>
-                <display value="CapabilityStatement - Medical Examiner/Coroner Server"/>
-            </reference>
-            <name value="CapabilityStatement - Medical Examiner/Coroner Server"/>
-            <description value="This resource describes the expected capabilities of an MDI CMS Server actor which is responsible for providing responses to the queries submitted by the MDI CMS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by MDI CMS Servers are defined. MDI CMS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="capability-statements"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Parameters/expansion-parameters-mdi"/></reference>
             <name value="Parameters - SNOMED US Version"/>
             <description value="Parameters - SNOMED US Version"/>
             <exampleBoolean value="true"/>
             <groupingId value="other"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-autopsy-performed-indicator"/>
-                <display value="Observation - Autopsy Performed Indicator"/>
-            </reference>
-            <name value="Observation - Autopsy Performed Indicator"/>
-            <description value="This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practitioner).&#xA;The MDI Observation - Autopsy Performed Indicator artifact overlaps with the VRDR Autopsy Performed Indicator artifact."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Procedure-death-certification"/>
-                <display value="Procedure - Death Certification Vital Records"/>
-            </reference>
-            <name value="Procedure - Death Certification"/>
-            <description value="This Procedure records the certification of death by the certifier."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-death-certification-a-freeman"/>
-                <display value="procedure-death-certification-a-freeman"/>
-            </reference>
-            <name value="Procedure - Death Certification - Freeman"/>
-            <description value="Procedure - Death Certification: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Procedure-death-certification"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-autopsy-performed-indicator-a-freeman"/></reference>
-            <name value="Observation - Autopsy Performed Indicator - Freeman"/>
-            <description value="Observation - Autopsy Performed Indicator: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Location-death"/>
-                <display value="Location - Death"/>
-            </reference>
-            <name value="Location - Death"/>
-            <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element location of death."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Location/location-death-atlanta-ga-a-freeman"/>
-                <display value="Atlanta GA Death Location - Freeman"/>
-            </reference>
-            <name value="Location - Death - Atlanta GA Freeman"/>
-            <description value="Location - Death:  Atlanta GA Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Location/location-injury-atlanta-ga-a-freeman"/>
-                <display value="Atlanta GA Injury Location - Freeman"/>
-            </reference>
-            <name value="Location - Injury - Atlanta GA Freeman"/>
-            <description value="Location - Injury:  Atlanta GA Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-injury"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Location-injury"/>
-                <display value="Location - Injury Vital Records"/>
-            </reference>
-            <name value="Location - Injury"/>
-            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to location of injury."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mdi-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/us-core-practitioner-jm-lehz"/>
-                <display value="J.M. Lehz"/>
-            </reference>
-            <name value="US Core Practitioner - Dr. J.M. Lehz"/>
-            <description value="Example of US Core Practitioner - Dr. J.M. Lehz, autopsy performer"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman"/></reference>
-            <name value="DiagnosticReport - Toxicology Lab Result to MDI - Freeman"/>
-            <description value="DiagnosticReport - Toxicology Lab Result to MDI: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi"/>
-            <groupingId value="toxicology-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Location/location-death-string"/>
-                <display value="Atlanta GA Death Location - Freeman (address string)"/>
-            </reference>
-            <name value="Atlanta GA Death Location - Freeman (address string)"/>
-            <description value="Location - Death: address as string example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Location/location-death-lat-long"/>
-                <display value="Lake Death Location - Unknown"/>
-            </reference>
-            <name value="Lake Death Location - Lat/Long"/>
-            <description value="Location - Death: latitude &amp; longitude example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Location-death"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-death-date-period"/></reference>
-            <name value="Observation - Death Date - period"/>
-            <description value="Observation - Death Date: period example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/composition-mdi-to-edrs-draft"/>
-                <display value="MDI to EDRS Composition"/>
-            </reference>
-            <name value="MDI to EDRS Composition - draft"/>
-            <description value="Composition - MDI to  EDRS: draft example with status=preliminary, author &amp; attester using data-absent-reason extension"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
-            <groupingId value="mdi-examples"/>
         </resource>
         <resource>
             <reference>
@@ -910,21 +919,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="DocumentReference/documentreference-mdi-autopsy-report-ex"/></reference>
-            <name value="DocumentReference - MDI Report - Autopsy Report example"/>
-            <description value="DocumentReference - MDI Report: Autopsy Report example"/>
+                <reference value="CodeSystem/CodeSystem-mdi-codes"/>
+                <display value="MDI Code System"/>
+            </reference>
+            <name value="CodeSystem - MDI"/>
+            <description value="This code system contains codes for use in MDI CMS."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/documentreference-mdi-investigator-narrative-ex"/></reference>
-            <name value="DocumentReference - MDI Report - Investigator's Narrative example"/>
-            <description value="DocumentReference - MDI Report: Investigator's Narrative example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report"/>
-            <groupingId value="participant-examples"/>
+            <groupingId value="code-systems"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
