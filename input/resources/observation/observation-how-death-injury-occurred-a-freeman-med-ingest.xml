@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-how-death-injury-occurred-a-freeman-med-ingest"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2023-09-11T20:01:20.551Z"/>
+        <versionId value="12"/>
+        <lastUpdated value="2023-09-17T19:21:59.420Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     </meta>
     <status value="final"/>
@@ -20,16 +20,16 @@
     </subject>
     <effectiveDateTime>
         <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime">
-            <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-day">
+            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day">
                 <valueUnsignedInt value="8"/>
             </extension>
-            <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-year">
+            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year">
                 <valueUnsignedInt value="2022"/>
             </extension>
-            <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-month">
+            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month">
                 <valueUnsignedInt value="1"/>
             </extension>
-            <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-date-time">
+            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Time">
                 <valueTime>
                     <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
                         <valueCode value="unknown"/>

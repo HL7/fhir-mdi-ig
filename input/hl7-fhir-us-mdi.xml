@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1144"/>
-        <lastUpdated value="2023-09-17T18:50:45.625Z"/>
+        <versionId value="1148"/>
+        <lastUpdated value="2023-09-17T19:23:32.388Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -307,30 +307,10 @@
         <resource>
             <reference>
                 <reference value="Bundle/bundle-mdi-and-edrs-a-freeman"/></reference>
-            <name value="Bundle - MDI to EDRS - Freeman"/>
-            <description value="Bundle - MDI to EDRS: Freeman example"/>
+            <name value="Bundle - MDI and EDRS - Freeman"/>
+            <description value="Bundle - MDI and EDRS: Freeman example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-mdi-to-edrs-a-freeman"/></reference>
-            <name value="Bundle - MDI to EDRS - Freeman"/>
-            <description value="Bundle - MDI to EDRS: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-to-edrs"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/composition-mdi-to-edrs-a-freeman"/>
-                <display value="MDI to EDRS Composition"/>
-            </reference>
-            <name value="MDI to EDRS Composition - Freeman"/>
-            <description value="MDI to EDRS Composition: Freeman example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
             <groupingId value="mdi-examples"/>
         </resource>
         <resource>
@@ -346,22 +326,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Composition/composition-mdi-to-edrs-draft"/>
-                <display value="MDI to EDRS Composition"/>
-            </reference>
-            <name value="MDI to EDRS Composition - draft"/>
-            <description value="Composition - MDI to  EDRS: draft example with status=preliminary, author &amp; attester using data-absent-reason extension"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
-            <groupingId value="mdi-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Composition/composition-mdi-and-edrs-draft"/>
                 <display value="MDI to EDRS Composition"/>
             </reference>
             <name value="MDI and EDRS Composition - draft"/>
-            <description value="Composition - MDI and  EDRS: draft example with status=preliminary, author &amp; attester using data-absent-reason extension"/>
+            <description value="Composition - MDI and EDRS: draft example with status=preliminary, author &amp; attester using data-absent-reason extension"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
             <groupingId value="mdi-examples"/>
