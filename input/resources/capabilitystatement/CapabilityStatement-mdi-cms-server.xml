@@ -10,101 +10,114 @@
     <id value="CapabilityStatement-mdi-cms-server"/>
     <text>
         <div xmlns="http://www.w3.org/1999/xhtml">
-        <h1 id="test1" class="no_toc">API Specifications</h1>
+            <h2 id="test1" class="no_toc">MDI CMS Server Capabilities Summary</h2>
+            <ul>
+                <li>The MDI CMS Server may specify RESTful operations for resources. At a minimum,
+                    it should support read and search for the set of resources defiened here.</li>
+                <li>The MDI CMS Server may support messaging with forensic toxicology, for
+                    example.</li>
+                <li>The MDI CMS Server should be a producer of Composition-mdi-and-edrs, and may
+                    also be a consumer of Composition-mdi-and-edrs </li>
+            </ul>
+            <h2 id="test1" class="no_toc">API Specifications Search Operations></h2>
+            <p>The MDI CMS Server may use extended operations with MDI-specific search parameters
+                and a subset of the many (RESTful API)[https://hl7.org/FHIR/http.html].</p>
+            <p>All API implementations of this MDI specification must conform to common design
+                rules:</p>
+            <ul>
+                <li>MIME-type for FHIR resources is application/fhir+xml or application/fhir+json.
+                    This must be specified for Content-Type in the HTTP header. </li>
+                <li>application/x-www-form-urlencoded can be used for POST search requests if HTTP
+                    Form is used. </li>
+            </ul>
+            <p>An MDI-based Search API enables MDI CMS to search EDRS server for decedent cases, and
+                vice versa. This is an idempotent operation. At a minimum, both Both POST and GET
+                can be used should be allowed with the following endpoint URL pattern:</p>
+            <ul>
+                <li>POST [base]/Composition/$mdi-documents </li>
+                <li>GET [base]/Composition/$mdi-documents?name=value… </li>
+            </ul>
 
-        <h3 id="test3" class="no_toc">Search-3 Operations</h3>
-        <p>The MDI CMS Server uses extended operations with MDI-specific search parameters and a
-            subset of the many (RESTful API)[https://hl7.org/FHIR/http.html].</p>
-        <p>All API implementations of this MDI specification must conform to common design rules:</p>
-        <ul>
-            <li>MIME-type for FHIR resources is application/fhir+xml or application/fhir+json. This must be specified for Content-Type in the HTTP header. </li>
-            <li>application/x-www-form-urlencoded can be used for POST search requests if HTTP Form is used. </li>
-        </ul>
-        <h2 id="test2" class="no_toc">Search-2 Operations</h2>
-        <p>An MDI-based Search API enables MDI CMS to search EDRS server for decedent cases, and vice versa. This is an idempotent operation. 
-        At a minimum, both Both POST and GET can be used should be allowed with the following endpoint URL pattern:</p>
-        <ul>
-            <li>POST [base]/Composition/$mdi-documents </li>
-            <li>GET [base]/Composition/$mdi-documents?name=value… </li>
-        </ul>
-
-        <p id="summary">
-            <strong>Summary of Minimum MDI Search Parameter Definitions</strong>
-        </p>
-        <table class="grid">
-            <thead>
-                <tr>
-                    <th>Search Parameter Name</th>
-                    <th>Cardinality</th>
-                    <th>Type</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>id</td>
-                    <td>0..1</td>
-                    <td>uri</td>
-                    <td>Composition.id of Composition - MDI and EDRS</td>
-                </tr>
-                <tr>
-                    <td>tracking-number</td>
-                    <td>0..*</td>
-                    <td>token</td>
-                    <td>Composition.extension:extension-tracking-number of Composition - MDI and EDRS</td>
-                </tr>
-                <tr>
-                    <td>patient</td>
-                    <td>0..*</td>
-                    <td>  </td>
-                    <td>One or more US Core Patient decedent-related search parameters</td>
-                </tr>
-                <tr>
-                    <td>patient.birthdate</td>
-                    <td>0..1</td>
-                    <td>string</td>
-                    <td>Decedent’s date of birth</td>
-                </tr>
-                <tr>
-                    <td>patient.family</td>
-                    <td>0..1</td>
-                    <td>string</td>
-                    <td>Decedent’s last name</td>
-                </tr>
-                <tr>
-                    <td>patient.given</td>
-                    <td>0..1</td>
-                    <td>string</td>
-                    <td>Decedent’s first name</td>
-                </tr>
-                <tr>
-                    <td>patient.gender</td>
-                    <td>0..1</td>
-                    <td>string</td>
-                    <td>Decedent’s gender</td>
-                </tr>
-                <tr>
-                    <td>death-location</td>
-                    <td>0..1</td>
-                    <td>string</td>
-                    <td>Location.address in Location-death </td>
-                </tr>
-                <tr>
-                    <td>death-date</td>
-                    <td>0..1</td>
-                    <td>string</td>
-                    <td>Value[x] (actual or presumed date of death) in Observation - Death Date (either dateTime or Period)</td>
-                </tr>
-                <tr>
-                    <td>death-date-pronounced</td>
-                    <td>0..1</td>
-                    <td>string</td>
-                    <td>Observation.component:datetimePronouncedDead in Observation - Death Date (either time or dateTime)</td>
-                </tr>
-            </tbody>  
-        </table>
+            <p id="summary">
+                <strong>Summary of Minimum MDI Search Parameter Definitions</strong>
+            </p>
+            <table class="grid">
+                <thead>
+                    <tr>
+                        <th>Search Parameter Name</th>
+                        <th>Cardinality</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                        <td>0..1</td>
+                        <td>uri</td>
+                        <td>Composition.id of Composition - MDI and EDRS</td>
+                    </tr>
+                    <tr>
+                        <td>tracking-number</td>
+                        <td>0..*</td>
+                        <td>token</td>
+                        <td>Composition.extension:extension-tracking-number of Composition - MDI and
+                            EDRS</td>
+                    </tr>
+                    <tr>
+                        <td>patient</td>
+                        <td>0..*</td>
+                        <td> </td>
+                        <td>One or more US Core Patient decedent-related search parameters</td>
+                    </tr>
+                    <tr>
+                        <td>patient.birthdate</td>
+                        <td>0..1</td>
+                        <td>string</td>
+                        <td>Decedent’s date of birth</td>
+                    </tr>
+                    <tr>
+                        <td>patient.family</td>
+                        <td>0..1</td>
+                        <td>string</td>
+                        <td>Decedent’s last name</td>
+                    </tr>
+                    <tr>
+                        <td>patient.given</td>
+                        <td>0..1</td>
+                        <td>string</td>
+                        <td>Decedent’s first name</td>
+                    </tr>
+                    <tr>
+                        <td>patient.gender</td>
+                        <td>0..1</td>
+                        <td>string</td>
+                        <td>Decedent’s gender</td>
+                    </tr>
+                    <tr>
+                        <td>death-location</td>
+                        <td>0..1</td>
+                        <td>string</td>
+                        <td>Location.address in Location-death </td>
+                    </tr>
+                    <tr>
+                        <td>death-date</td>
+                        <td>0..1</td>
+                        <td>string</td>
+                        <td>Value[x] (actual or presumed date of death) in Observation - Death Date
+                            (either dateTime or Period)</td>
+                    </tr>
+                    <tr>
+                        <td>death-date-pronounced</td>
+                        <td>0..1</td>
+                        <td>string</td>
+                        <td>Observation.component:datetimePronouncedDead in Observation - Death Date
+                            (either time or dateTime)</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-  </text>
+    </text>
     <url value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-mdi-cms-server"/>
     <name value="CapabilityStatementMdiCmsServer"/>
     <title value="CapabilityStatement - MDI CMS Server"/>
@@ -324,10 +337,10 @@
     </messaging>
     <document>
         <mode value="producer"/>
-        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
     </document>
     <document>
         <mode value="consumer"/>
-        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
     </document>
 </CapabilityStatement>
