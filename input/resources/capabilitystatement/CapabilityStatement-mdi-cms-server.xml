@@ -9,6 +9,7 @@
         Additional MDI <resource> elements that may be of interest to implemntes and additional <interaction> capabilities (update, delete, create) are included as comments.-->
     <id value="CapabilityStatement-mdi-cms-server"/>
     <text>
+        <div xmlns="http://www.w3.org/1999/xhtml">
         <h1 id="test1" class="no_toc">API Specifications</h1>
 
         <h3 id="test3" class="no_toc">Search-3 Operations</h3>
@@ -102,6 +103,7 @@
                 </tr>
             </tbody>  
         </table>
+        </div>
   </text>
     <url value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-mdi-cms-server"/>
     <name value="CapabilityStatementMdiCmsServer"/>
