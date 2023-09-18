@@ -6,26 +6,95 @@
         <status value="generated"/> 
         <div xmlns="http://www.w3.org/1999/xhtml">
             fentaNYL and Norfentanyl panel
-<!--            Subject	Alice J. Freeman female, DoB: 1978-03-12 ( Social Security number: 987054321 (use: USUAL))
-            When For	2021-12-03 11:00:00+0000
-            Reported	2022-01-05 11:00:00+0000
-            Identifier:	Toxicology Laboratory Case Number: R21-01578
-            
-            Report Details
-            Code	Value	When For
-            Ethanol [Mass/volume] in Blood by Gas chromatography	0.145 g/dL	2021-12-03
-            Despropionylfentanyl [Mass/volume] in Serum or Plasma	true	2021-12-03
-            Acetyl norfentanyl [Mass/volume] in Serum, Plasma or Blood by Confirmatory method	2 ng/ml	2021-12-03
-            fentaNYL [Mass/volume] in Blood by Confirmatory method	23 ng/mL	2021-12-03
-            Ethanol [Mass/volume] in Urine by Confirmatory method	true	2021-12-03
-            Despropionylfentanyl [Mass/volume] in Serum or Plasma	true	2021-12-03
-            Acetyl fentanyl [Presence] in Urine by Confirmatory method	true	2021-12-03
-            fentaNYL [Presence] in Urine	true	2021-12-03
-            Norfentanyl [Presence] in Urine	true	2021-12-03
-            Ketamine [Presence] in Urine	true	2021-12-03
-            Ethanol [Mass/volume] in Vitreous fluid	0.133 g/dL	2021-12-03
-            
-            Samples of bile, liver, and stomach contents were contaminated and not analyzed.-->
+            <table class="grid">
+                <tbody>
+                    <tr>
+                        <td>Subject</td>
+                        <td>Alice J. Freeman female, DoB: 1978-03-12 ( Social Security number: 987054321 (use: USUAL))</td>
+                    </tr>
+                    <tr>
+                        <td>When For</td>
+                        <td>2021-12-03 11:00:00+0000</td>
+                    </tr>
+                    <tr>
+                        <td>Reported</td>
+                        <td>2022-01-05 11:00:00+0000</td>
+                    </tr>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>Toxicology Laboratory Case Number: R21-01578</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><b>Report Details</b></p>
+            <table class="grid">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Value</th>
+                        <th>When For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ethanol [Mass/volume] in Blood by Gas chromatography</td>
+                        <td>0.145 g/dL</td>
+                        <td>2021-12-03</td>
+                    </tr>
+                    <tr>
+                        <td>Despropionylfentanyl [Mass/volume] in Serum or Plasma</td>
+                        <td>true</td>
+                        <td>2021-12-03</td>
+                    </tr>
+                    <tr>
+                        <td>Acetyl norfentanyl [Mass/volume] in Serum, Plasma or Blood by Confirmatory method</td>
+                        <td>2 ng/ml</td>
+                        <td>2021-12-03</td>
+                    </tr>
+                    <tr>
+                        <td>fentaNYL [Mass/volume] in Blood by Confirmatory method</td>
+                        <td>23 ng/mL</td>
+                        <td>2021-12-03</td>
+                    </tr>
+                    <tr>
+                        <td>Ethanol [Mass/volume] in Urine by Confirmatory method</td>
+                        <td>true</td>
+                        <td>2021-12-03</td>
+                    </tr>
+                    <tr>
+                        <td>Despropionylfentanyl [Mass/volume] in Serum or Plasma</td>
+                        <td>true</td>
+                        <td>2021-12-03</td>
+                    </tr>
+                    <tr>
+                        <td>Acetyl fentanyl [Presence] in Urine by Confirmatory method</td>
+                        <td>true</td>
+                        <td>2021-12-03</td>
+                    </tr>
+                    <tr>
+                        <td>fentaNYL [Presence] in Urine</td>
+                        <td>true</td>
+                        <td>2021-12-03</td>
+                    </tr>
+                    <tr>
+                        <td>Norfentanyl [Presence] in Urine</td>
+                        <td>true</td>
+                        <td>2021-12-03</td>
+                    </tr>
+                    <tr>
+                        <td>Ketamine [Presence] in Urine</td>
+                        <td>true</td>
+                        <td>2021-12-03</td>
+                    </tr>
+                    <tr>
+                        <td>Ethanol [Mass/volume] in Vitreous fluid</td>
+                        <td>0.133 g/dL</td>
+                        <td>2021-12-03</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><b>Conclusion Notes</b></p>
+            <p>Samples of bile, liver, and stomach contents were contaminated and not analyzed.</p>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
