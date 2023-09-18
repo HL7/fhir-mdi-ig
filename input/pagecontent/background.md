@@ -44,9 +44,9 @@ The MDI FHIR IG will continue to develop to support additional MDI needs beyond 
 * **Lantana Consulting Group**: Dave deRoode, Sarah Gaunt, Diana Wright
 
 ### Acknowledgements
-This guide was developed and produced through the efforts of Health Level Seven (HL7) and created using the Trifolia-on-FHIR tool, provided by Lantana Consulting Group, Inc. The HL7 Project Insight reference number for this project is [1737](https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&ProjectNumber=1737).
+This guide is developed and produced through the efforts of Health Level Seven International (HL7) and created using the Trifolia-on-FHIR tool, provided by Lantana Consulting Group, Inc. The HL7 Project Insight reference number for this project is [1737](https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&ProjectNumber=1737).
 
-The editors appreciate the support and sponsorship of the HL7 Public Health Work Group and all volunteers and staff associated with the creation of this resource. The editors appreciate the wisdom and insights provided by the MDI community, including forensic toxicology laboratories, medical examiners and coroners, and jurisdictional vital records departments.
+The editors appreciate the support and sponsorship of the HL7 Public Health Work Group and all volunteers and staff associated with the creation of this resource. The editors appreciate the wisdom and insights provided by the MDI community, including forensic toxicology laboratories, medical examiners and coroners, and jurisdictional vital records departments. The editors appreciate the leadership of the [CDC Foundation](https://www.cdcfoundation.org/) and the [CDC Collaborating Office for Medical Examiners and Coroners (COMEC)](https://www.cdc.gov/nchs/comec/index.htm) in convening the MDI community for thoughtful discussions and productive testing of this implementation guide.
 
 **The MDI Community:**
 * Alabama: Jefferson County Coroner / Medical Examiner Office

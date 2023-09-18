@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1148"/>
-        <lastUpdated value="2023-09-17T19:23:32.388Z"/>
+        <versionId value="1152"/>
+        <lastUpdated value="2023-09-18T16:03:24.390Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -269,7 +269,7 @@
                 <reference value="MessageDefinition/MessageDefinition-toxicology-system"/>
                 <display value="MessageDefinition-toxicology-system"/>
             </reference>
-            <name value="MessageDefinitionToxicologySystem"/>
+            <name value="MessageDefinition - Toxicology System"/>
             <description value="This resource defines the characteristics of a message that can be shared between a forensic toxicology system and an MDI CMS. This resource is used by CapabilityStatement resources and defines Toxicology Lab Results as the the type of event that initiates the message."/>
             <exampleBoolean value="true"/>
             <groupingId value="toxicology-profiles"/>
