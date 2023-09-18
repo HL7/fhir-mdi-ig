@@ -67,7 +67,7 @@
                     <tr>
                         <td>patient.birthdate</td>
                         <td>0..1</td>
-                        <td>string</td>
+                        <td>date</td>
                         <td>Decedent’s date of birth</td>
                     </tr>
                     <tr>
@@ -85,7 +85,7 @@
                     <tr>
                         <td>patient.gender</td>
                         <td>0..1</td>
-                        <td>string</td>
+                        <td>token</td>
                         <td>Decedent’s gender</td>
                     </tr>
                     <tr>
@@ -97,14 +97,14 @@
                     <tr>
                         <td>death-date</td>
                         <td>0..1</td>
-                        <td>string</td>
+                        <td>date</td>
                         <td>Value[x] (actual or presumed date of death) in Observation - Death Date
                             (either dateTime or Period)</td>
                     </tr>
                     <tr>
                         <td>death-date-pronounced</td>
                         <td>0..1</td>
-                        <td>string</td>
+                        <td>date</td>
                         <td>Observation.component:datetimePronouncedDead in Observation - Death Date
                             (either time or dateTime)</td>
                     </tr>
@@ -222,7 +222,7 @@
             <searchParam>
                 <name value="gender"/>
                 <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-gender"/>
-                <type value="string"/>
+                <type value="token"/>
                 <documentation value="Gender of the patient"/>
             </searchParam>
             <searchParam>
