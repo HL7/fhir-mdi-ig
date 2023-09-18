@@ -68,6 +68,7 @@
         </element>
         <element id="Observation.value[x].extension">
             <path value="Observation.value[x].extension"/>
+            <short value="The expectation is to send a value in addition to the extension, whenever possible. Use a data absent reason for anything not known."></short>
             <slicing>
                 <discriminator>
                     <type value="value"/>
