@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CapabilityStatement xmlns="http://hl7.org/fhir">
+<CapabilityStatement
+    xmlns="http://hl7.org/fhir">
     <id value="CapabilityStatement-forensic-toxicology-laboratory-server"/>
-
     <text>
-        <status value="generated"/> 
-        <div xmlns="http://www.w3.org/1999/xhtml">
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
             <h2 id="test1" class="no_toc">Forensic Toxicology Laboratory Server CapabilityStatement
                 Summary</h2>
             <p>The Forensic Toxicology Laboratory Server is the source of a Message Bundle to an MDI
@@ -12,17 +13,14 @@
                 MDI.</p>
         </div>
     </text>
-
-    <url
-        value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server"/>
+    <url value="http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server"/>
     <version value="1.0.0"/>
     <name value="CapabilityStatementForensicToxicologyLaboratoryServer"/>
     <title value="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-07-03"/>
-    <description
-        value="This resource describes the expected capabilities of the toxicology lab Server actor which is responsible for providing responses to the queries submitted by toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by toxicology lab Servers are defined. toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
+    <description value="This resource describes the expected capabilities of the toxicology lab Server actor which is responsible for providing responses to the queries submitted by toxicology lab Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by toxicology lab Servers are defined. toxicology lab Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/>
     <kind value="requirements"/>
     <fhirVersion value="4.0.1"/>
     <format value="xml"/>
@@ -30,9 +28,7 @@
     <messaging>
         <supportedMessage>
             <mode value="sender"/>
-            <definition
-                value="http://hl7.org/fhir/us/mdi/MessageDefinition/MessageDefinition-toxicology-system"
-            />
+            <definition value="http://hl7.org/fhir/us/mdi/MessageDefinition/MessageDefinition-toxicology-system"/>
         </supportedMessage>
     </messaging>
 </CapabilityStatement>

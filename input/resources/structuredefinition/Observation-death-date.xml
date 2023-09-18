@@ -80,7 +80,7 @@
         <element id="Observation.value[x].extension:partialDateTime">
             <path value="Observation.value[x].extension"/>
             <sliceName value="partialDateTime"/>
-            <short value="The expectation is to send a value in addition to the extension, whenever possible. Use a data absent reason for anything not known."></short>
+            <short value="The expectation is to send a value in addition to the extension, whenever possible. Use a data absent reason for anything not known."/>
             <min value="0"/>
             <max value="1"/>
             <type>

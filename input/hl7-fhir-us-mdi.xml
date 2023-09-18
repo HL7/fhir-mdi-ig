@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1152"/>
-        <lastUpdated value="2023-09-18T16:03:24.390Z"/>
+        <versionId value="1162"/>
+        <lastUpdated value="2023-09-18T22:16:56.934Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -220,7 +220,7 @@
                 <display value="Procedure - Death Certification Vital Records"/>
             </reference>
             <name value="Procedure - Death Certification"/>
-            <description value="This Procedure records the certification of death by the certifier."/>
+            <description value="This Procedure records the certification of death by the certifier. The MDI Procedure - Death Certification  artifact overlaps with the VRDR Death Certification Procedure artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -230,7 +230,7 @@
                 <display value="Location - Death"/>
             </reference>
             <name value="Location - Death"/>
-            <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element location of death."/>
+            <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element location of death. The MDI Location - Death artifact overlaps with the VRDR Death Location artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>
@@ -240,7 +240,7 @@
                 <display value="Location - Injury Vital Records"/>
             </reference>
             <name value="Location - Injury"/>
-            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to location of injury."/>
+            <description value="This Location records the location of an injury. It is based on US Core Location and further constrains the type element to location of injury. The MDI Location – Injury artifact overlaps with the VRDR Injury Location artifact."/>
             <exampleBoolean value="false"/>
             <groupingId value="mdi-profiles"/>
         </resource>

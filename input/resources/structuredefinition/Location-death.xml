@@ -21,7 +21,7 @@
             <value value="pher@lists.HL7.org"/>
         </telecom>
     </contact>
-    <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element location of death."/>
+    <description value="This Location records the location of death. It is based on US Core Location and further constrains the type element location of death. The MDI Location - Death artifact overlaps with the VRDR Death Location artifact."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

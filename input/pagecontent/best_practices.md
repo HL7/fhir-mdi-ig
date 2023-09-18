@@ -73,11 +73,11 @@ This MDI specification is designed for RESTful API implementations supporting da
 * MIME-type for FHIR resources is application/fhir+xml or application/fhir+json. This must be specified for Content-Type in the HTTP header.
 * application/x-www-form-urlencoded can be used for POST search requests if HTTP Form is used.
 
-An MDI-based Search API enables MDI CMS to search EDRS for decedent cases. This is an idempotent operation (i.e., it has no additional effect if it is called more than once with the same input parameters). Both POST and GET can be used with the following endpoint URL pattern:
+An MDI-based Search API enables an MDI CMS to search an EDRS server for decedent cases, and vice versa. This is an idempotent operation (i.e., it has no additional effect if it is called more than once with the same input parameters). At a minimum, both POST and GET should be allowed with the following endpoint URL pattern:
 * POST [base]/Composition/$mdi-documents
 * GET [base]/Composition/$mdi-documents?name=value&…
 
-***Table: Summary of MDI Search Parameter Definitions***
+***Table: Summary of Minimum MDI Search Parameter Definitions***
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -90,27 +90,30 @@ An MDI-based Search API enables MDI CMS to search EDRS for decedent cases. This 
 <table class="tg">
 <thead>
   <tr>
-    <td class="tg-0lax"><b>Name</b> </td>
+    <td class="tg-0lax"><b>Search Parameter Name</b> </td>
     <td class="tg-0lax"><b>Cardinality</b> </td>
     <td class="tg-0lax"><b>Type</b> </td>
-    <td class="tg-0lax"><b>Documentation</b> </td>
+    <td class="tg-0lax"><b>Description</b> </td>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax" colspan="4"><b><i>In Parameters</i></b></td>
-  </tr>
-  <tr>
     <td class="tg-0lax">id </td>
     <td class="tg-0lax">0..1 </td>
     <td class="tg-0lax">uri </td>
-    <td class="tg-0lax">Resource ID of Composition - MDI to EDRS</td>
+    <td class="tg-0lax">Composition.id of Composition - MDI and EDRS</td>
+  </tr>
+	  <tr>
+    <td class="tg-0lax">tracking-number </td>
+    <td class="tg-0lax">0..* </td>
+    <td class="tg-0lax">token </td>
+    <td class="tg-0lax">Composition.extension:extension-tracking-number of Composition - MDI and EDRS</td>
   </tr>
 	  <tr>
     <td class="tg-0lax">patient</td>
-    <td class="tg-0lax">0.. </td>
+    <td class="tg-0lax">0..* </td>
     <td class="tg-0lax"> </td>
-    <td class="tg-0lax">One or more decedent related search parameters </td>
+    <td class="tg-0lax">One or more decedent-related search parameters </td>
   </tr>
   <tr>
     <td class="tg-0lax">patient.birthdate </td>
@@ -137,31 +140,22 @@ An MDI-based Search API enables MDI CMS to search EDRS for decedent cases. This 
     <td class="tg-0lax">Decedent’s gender </td>
   </tr>
   <tr>
-    <td class="tg-0lax">tracking-number</td>
-    <td class="tg-0lax">0..1 </td>
-    <td class="tg-0lax">token </td>
-    <td class="tg-0lax">Search by identifier in Composition - MDI to EDRS</td>
-  </tr>
-  <tr>
     <td class="tg-0lax">death-location</td>
     <td class="tg-0lax">0..1 </td>
     <td class="tg-0lax">string </td>
-    <td class="tg-0lax">District of Death Location </td>
+    <td class="tg-0lax">Location.address in Location-death</td>
   </tr>
   <tr>
-    <td class="tg-0lax">death-date.[actual | pronounced | all]</td>
+    <td class="tg-0lax">death-date</td>
     <td class="tg-0lax">0..1 </td>
     <td class="tg-0lax">date </td>
-    <td class="tg-0lax">Date of Death. “all” applies to both actual/presumed and pronounced</td>
+    <td class="tg-0lax">Value[x] (actual or presumed date of death) in Observation - Death Date (either dateTime or Period)</td>
   </tr>
-  <tr>
-    <td class="tg-0lax" colspan="4"><b><i>Out Parameters</i></b></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">return </td>
+	  <tr>
+    <td class="tg-0lax">death-date-pronounced</td>
     <td class="tg-0lax">0..1 </td>
-    <td class="tg-0lax">resource (Bundle - Searchset or Document MDI to EDRS) </td>
-    <td class="tg-0lax">Searchset Bundle that includes MDI document bundles. If [id] is supplied, then this should be Bundle - Document MDI to EDRS</td>
+    <td class="tg-0lax">date </td>
+    <td class="tg-0lax">Observation.component:datetimePronouncedDead in Observation - Death Date (either time or dateTime)</td>
   </tr>
 </tbody>
 </table>

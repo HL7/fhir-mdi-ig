@@ -2,10 +2,12 @@
 <DiagnosticReport
     xmlns="http://hl7.org/fhir">
     <id value="diagnosticreport-mdi-toxicology-lab-a-freeman"/>
-    <text> 
-        <status value="generated"/> 
-        <div xmlns="http://www.w3.org/1999/xhtml">
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
             fentaNYL and Norfentanyl panel
+            
             <table class="grid">
                 <tbody>
                     <tr>
@@ -26,7 +28,9 @@
                     </tr>
                 </tbody>
             </table>
-            <p><b>Report Details</b></p>
+            <p>
+                <b>Report Details</b>
+            </p>
             <table class="grid">
                 <thead>
                     <tr>
@@ -93,7 +97,9 @@
                     </tr>
                 </tbody>
             </table>
-            <p><b>Conclusion Notes</b></p>
+            <p>
+                <b>Conclusion Notes</b>
+            </p>
             <p>Samples of bile, liver, and stomach contents were contaminated and not analyzed.</p>
         </div>
     </text>
@@ -102,7 +108,7 @@
             <system value="http://florida-investigation-agncy.org/fhir/agency-case-numbers"/>
             <value value="ME21-111"/>
         </valueIdentifier>
-    </extension> 
+    </extension>
     <identifier>
         <type>
             <coding>

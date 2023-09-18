@@ -3,7 +3,7 @@
     xmlns="http://hl7.org/fhir">
     <id value="CapabilityStatement-mdi-cms-server"/>
     <text>
-        <status value="generated"/> 
+        <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
             <h2 id="test1" class="no_toc">MDI CMS Server Capabilities Summary</h2>
