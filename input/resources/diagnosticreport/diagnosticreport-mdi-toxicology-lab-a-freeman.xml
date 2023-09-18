@@ -2,16 +2,38 @@
 <DiagnosticReport
     xmlns="http://hl7.org/fhir">
     <id value="diagnosticreport-mdi-toxicology-lab-a-freeman"/>
-    <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-06-27T19:29:24.287Z"/>
-    </meta>
+    <text> 
+        <status value="generated"/> 
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            fentaNYL and Norfentanyl panel
+<!--            Subject	Alice J. Freeman female, DoB: 1978-03-12 ( Social Security number: 987054321 (use: USUAL))
+            When For	2021-12-03 11:00:00+0000
+            Reported	2022-01-05 11:00:00+0000
+            Identifier:	Toxicology Laboratory Case Number: R21-01578
+            
+            Report Details
+            Code	Value	When For
+            Ethanol [Mass/volume] in Blood by Gas chromatography	0.145 g/dL	2021-12-03
+            Despropionylfentanyl [Mass/volume] in Serum or Plasma	true	2021-12-03
+            Acetyl norfentanyl [Mass/volume] in Serum, Plasma or Blood by Confirmatory method	2 ng/ml	2021-12-03
+            fentaNYL [Mass/volume] in Blood by Confirmatory method	23 ng/mL	2021-12-03
+            Ethanol [Mass/volume] in Urine by Confirmatory method	true	2021-12-03
+            Despropionylfentanyl [Mass/volume] in Serum or Plasma	true	2021-12-03
+            Acetyl fentanyl [Presence] in Urine by Confirmatory method	true	2021-12-03
+            fentaNYL [Presence] in Urine	true	2021-12-03
+            Norfentanyl [Presence] in Urine	true	2021-12-03
+            Ketamine [Presence] in Urine	true	2021-12-03
+            Ethanol [Mass/volume] in Vitreous fluid	0.133 g/dL	2021-12-03
+            
+            Samples of bile, liver, and stomach contents were contaminated and not analyzed.-->
+        </div>
+    </text>
     <extension url="http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number">
         <valueIdentifier>
             <system value="http://florida-investigation-agncy.org/fhir/agency-case-numbers"/>
             <value value="ME21-111"/>
         </valueIdentifier>
-    </extension>
+    </extension> 
     <identifier>
         <type>
             <coding>

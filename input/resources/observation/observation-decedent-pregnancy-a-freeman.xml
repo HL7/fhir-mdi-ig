@@ -18,6 +18,7 @@
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
+    <effectiveDateTime value="2022-02-19"/>
     <performer>
         <reference value="Practitioner/us-core-practitioner-jm-lehz"/>
         <display value="J.M. Lehz"/>
