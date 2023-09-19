@@ -5,5 +5,6 @@
 	"mode": "milestone",
 	"status": "trial-use",
 	"sequence": "STU 1.1",
-	"desc": ""
+	"category": "Public Health",
+	"desc": "Technical corrections and minor updates to STU 1"
 }
