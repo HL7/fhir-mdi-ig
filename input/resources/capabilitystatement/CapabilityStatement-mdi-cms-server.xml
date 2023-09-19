@@ -9,15 +9,15 @@
             <h2 id="test1" class="no_toc">MDI CMS Server Capabilities Summary</h2>
             <ul>
                 <li>The MDI CMS Server may specify RESTful operations for resources. At a minimum,
-                    it should support read and search for the set of resources defiened here.</li>
+                    it should support read and search for the set of resources defined here.</li>
                 <li>The MDI CMS Server may support messaging with forensic toxicology, for
                     example.</li>
                 <li>The MDI CMS Server should be a producer of Composition-mdi-and-edrs, and may
-                    also be a consumer of Composition-mdi-and-edrs </li>
+                    also be a consumer of Composition-mdi-and-edrs.</li>
             </ul>
-            <h2 id="test1" class="no_toc">API Specifications Search Operations&gt;</h2>
+            <h2 id="test1" class="no_toc">API Specifications Search Operations></h2>
             <p>The MDI CMS Server may use extended operations with MDI-specific search parameters
-                and a subset of the many (RESTful API)[https://hl7.org/FHIR/http.html].</p>
+                and a subset of the many [RESTful API](https://hl7.org/FHIR/http.html).</p>
             <p>All API implementations of this MDI specification must conform to common design
                 rules:</p>
             <ul>
