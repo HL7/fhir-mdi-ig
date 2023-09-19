@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-death-date-period"/>
+    <id value="observation-death-date-partialdate"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-09-19T13:59:34.969Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-09-19T14:14:45.259Z"/>
         <profile value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
     </meta>
     <text>
@@ -25,10 +25,29 @@
     <performer>
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </performer>
-    <valuePeriod>
-        <start value="2021-12-01"/>
-        <end value="2022-01-01"/>
-    </valuePeriod>
+    <valueDateTime>
+        <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime">
+            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year">
+                <valueUnsignedInt value="2021"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month">
+                <valueUnsignedInt value="12"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day">
+                <valueUnsignedInt>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                        <valueCode value="unknown"/>
+                    </extension>
+                </valueUnsignedInt>
+            </extension>
+            <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Time">
+                <valueTime value="12:00:00"/>
+            </extension>
+        </extension>
+    </valueDateTime>
+    <note>
+        <text value="Death occured at the noon church bell."/>
+    </note>
     <method>
         <coding>
             <system value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-mdi-codes"/>

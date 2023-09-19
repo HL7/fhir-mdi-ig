@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1162"/>
-        <lastUpdated value="2023-09-18T22:16:56.934Z"/>
+        <versionId value="1169"/>
+        <lastUpdated value="2023-09-19T14:45:35.128Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -12,7 +12,6 @@
     <title value="Medicolegal Death Investigation (MDI)"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2023-06-27"/>
     <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -378,6 +377,15 @@
                 <reference value="Observation/observation-death-date-period"/></reference>
             <name value="Observation - Death Date - period"/>
             <description value="Observation - Death Date: period example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
+            <groupingId value="mdi-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-death-date-partialdate"/></reference>
+            <name value="Observation - Death Date - partial date"/>
+            <description value="Observation - Death Date: partial date/time example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-death-date"/>
             <groupingId value="mdi-examples"/>
