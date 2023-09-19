@@ -14,3 +14,6 @@ US FHIR Usage rules require that all profiles on Observation derive from one of 
 
 # US Core Specimen is not in the latest published version of US Core so there is nothing to derive from
 US FHIR Usage rules require that all profiles on Specimen derive from the core US profile
+
+# This is the code that is used in the Death Certification VRDR profile
+The code '103693007' is valid but is not active
