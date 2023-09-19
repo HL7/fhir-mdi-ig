@@ -777,6 +777,7 @@
                 <subject>
                     <reference value="Patient/us-core-patient-a-freeman"/>
                 </subject>
+                <effectiveDateTime value="2022-02-20"/>
                 <performer>
                     <reference value="Practitioner/us-core-practitioner-s-jones"/>
                 </performer>
@@ -984,6 +985,7 @@
                 <subject>
                     <reference value="Patient/us-core-patient-a-freeman"/>
                 </subject>
+                <effectiveDateTime value="2022-02-20"/>
                 <performer>
                     <reference value="Practitioner/us-core-practitioner-s-jones"/>
                 </performer>
@@ -1130,6 +1132,7 @@
                 <subject>
                     <reference value="Patient/us-core-patient-a-freeman"/>
                 </subject>
+                <effectiveDateTime value="2022-02-20"/>
                 <performer>
                     <reference value="Practitioner/us-core-practitioner-s-jones"/>
                 </performer>
@@ -1592,6 +1595,10 @@
                 <subject>
                     <reference value="Patient/us-core-patient-a-freeman"/>
                 </subject>
+                <effectiveDateTime value="2022-02-20"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-s-jones"/>
+                </performer>
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -2081,6 +2088,10 @@
                 <subject>
                     <reference value="Patient/us-core-patient-a-freeman"/>
                 </subject>
+                <effectiveDateTime value="2022-02-19"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-jm-lehz"/>
+                    <display value="J.M. Lehz"/>
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
