@@ -18,7 +18,8 @@
     <subject>
         <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
-    <effectiveDateTime>
+    <effectiveDateTime value="2022-08-01"/>
+<!--    <effectiveDateTime>
         <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime">
             <extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day">
                 <valueUnsignedInt value="8"/>
@@ -37,7 +38,7 @@
                 </valueTime>
             </extension>
         </extension>
-    </effectiveDateTime>
+    </effectiveDateTime>-->
     <performer>
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </performer>
