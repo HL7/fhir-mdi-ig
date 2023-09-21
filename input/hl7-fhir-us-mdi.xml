@@ -52,7 +52,7 @@
         </grouping>
         <grouping id="mdi-profiles">
             <name value="MDI Profiles"/>
-            <description value="Profiles related to the MDI CMS to EDRS dataflow. &#xA;Many MDI Profiles overlap with artifacts found in the [Vital Records Death Reporting (VRDR) FHIR implementation guide](http://hl7.org/fhir/us/vrdr/). Definitions here note those relationships. See also [Background](background.html), Relation to Other Standards section."/>
+            <description value="Profiles related to the MDI CMS and EDRS dataflows. &#xA;Many MDI Profiles overlap with artifacts found in the [Vital Records Death Reporting (VRDR) FHIR implementation guide](http://hl7.org/fhir/us/vrdr/). Definitions here note those relationships. See also [Background](background.html), Relation to Other Standards section."/>
         </grouping>
         <grouping id="toxicology-profiles">
             <name value="Toxicology Profiles"/>
@@ -63,7 +63,7 @@
         </grouping>
         <grouping id="mdi-examples">
             <name value="MDI Examples"/>
-            <description value="Examples related to the MDI to EDRS dataflow."/>
+            <description value="Examples related to the MDI CMS and EDRS dataflow."/>
         </grouping>
         <grouping id="toxicology-examples">
             <name value="Toxicology Examples"/>
@@ -319,7 +319,7 @@
         <resource>
             <reference>
                 <reference value="Composition/composition-mdi-and-edrs-a-freeman"/>
-                <display value="MDI to EDRS Composition"/>
+                <display value="MDI and EDRS Composition"/>
             </reference>
             <name value="MDI and EDRS Composition - Freeman"/>
             <description value="MDI and EDRS Composition: Freeman example"/>
@@ -330,7 +330,7 @@
         <resource>
             <reference>
                 <reference value="Composition/composition-mdi-and-edrs-draft"/>
-                <display value="MDI to EDRS Composition"/>
+                <display value="MDI and EDRS Composition"/>
             </reference>
             <name value="MDI and EDRS Composition - draft"/>
             <description value="Composition - MDI and EDRS: draft example with status=preliminary, author &amp; attester using data-absent-reason extension"/>
