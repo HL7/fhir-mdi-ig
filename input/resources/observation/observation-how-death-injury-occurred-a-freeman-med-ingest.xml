@@ -19,7 +19,6 @@
         <reference value="Patient/us-core-patient-a-freeman"/>
     </subject>
     <effectiveDateTime value="2022-08-01"/>
-    <!--<effectiveDateTime><extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime"><extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day"><valueUnsignedInt value="8"/></extension><extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year"><valueUnsignedInt value="2022"/></extension><extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month"><valueUnsignedInt value="1"/></extension><extension url="http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Time"><valueTime><extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason"><valueCode value="unknown"/></extension></valueTime></extension></extension></effectiveDateTime>-->
     <performer>
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </performer>
