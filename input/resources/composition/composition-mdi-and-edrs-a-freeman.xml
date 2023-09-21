@@ -39,7 +39,7 @@
     <author>
         <reference value="Practitioner/us-core-practitioner-s-jones"/>
     </author>
-    <title value="MDI to EDRS Composition"/>
+    <title value="MDI and EDRS Composition"/>
     <attester>
         <mode value="professional"/>
         <party>

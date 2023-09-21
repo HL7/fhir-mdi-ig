@@ -46,8 +46,8 @@
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>
-            <short value="MDI to EDRS (Death administrative information Document)"/>
-            <definition value="MDI to EDRS"/>
+            <short value="MDI and EDRS (Death administrative information Document)"/>
+            <definition value="MDI and EDRS"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>

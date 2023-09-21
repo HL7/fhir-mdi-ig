@@ -53,7 +53,7 @@
                         <p><b>author</b>: <a href="Practitioner-us-core-practitioner-s-jones.html"
                                 >Practitioner/us-core-practitioner-s-jones</a> &quot;
                             JONES&quot;</p>
-                        <p><b>title</b>: MDI to EDRS Composition</p>
+                        <p><b>title</b>: MDI and EDRS Composition</p>
                         <h3>Attesters</h3>
                         <table class="grid">
                             <tr>
@@ -105,7 +105,7 @@
                 <author>
                     <reference value="Practitioner/us-core-practitioner-s-jones"/>
                 </author>
-                <title value="MDI to EDRS Composition"/>
+                <title value="MDI and EDRS Composition"/>
                 <attester>
                     <mode value="professional"/>
                     <party>

@@ -301,10 +301,10 @@
     </rest>
     <document>
         <mode value="producer"/>
-        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
     </document>
     <document>
         <mode value="consumer"/>
-        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-to-edrs"/>
+        <profile value="https://fhir.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs"/>
     </document>
 </CapabilityStatement>
