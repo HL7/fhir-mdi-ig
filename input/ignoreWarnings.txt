@@ -1,4 +1,6 @@
 == Suppressed Messages ==
+#Spurious warning - no such parameter in IG file
+Unknown Parameters: [apply-wg=true]
 # Examples have optional slices that are not defined in the profile - not matching is expected behavior
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report|1.1.0
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs|1.1.0
