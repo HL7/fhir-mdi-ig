@@ -1,17 +1,17 @@
 This MDI specification is designed to be flexible to accommodate a variety of systems, recognizing that information management systems used for assembling MDI data vary widely by state, jurisdiction, and agency. This means that many data concepts have few requirements but many “must support” designations. This section provides best practice recommendations on how to address select concepts.
 
 ### Bi-Directional Exchange: MDI CMS & EDRS
-The **Bundle - Document MDI to EDRS** profile represents a document exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange during the process of case record creation and updating. The Bundle contains a **Composition - MDI to EDRS**.
-The **Composition - MDI to EDRS** profile represents data exchanged between an MDI CMS and an EDRS, which can be in “draft” (non-finalized) by:
+The **Bundle - Document MDI and EDRS** profile represents a document exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange during the process of case record creation and updating. The Bundle contains a **Composition - MDI and EDRS**.
+The **Composition - MDI and EDRS** profile represents data exchanged between an MDI CMS and an EDRS, which can be in “draft” (non-finalized) by:
 * Setting status=preliminary
 * Using [Extension: Data Absent Reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) for author and attester, when the death certifier is not yet established
 
 ### Decedent
 This MDI IG uses the US Core Patient for the decedent subject of:
-* **Composition - MDI to EDRS** and the profiles referenced in its section entries
+* **Composition - MDI and EDRS** and the profiles referenced in its section entries
 * **DiagnosticReport - Toxicology Lab Result to MDI** and the profiles referenced for its specimens and results
 
-The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth sex, gender identity, birth date, telecom, address, and marital status). The Composition - MDI to EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.
+The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth sex, gender identity, birth date, telecom, address, and marital status). The Composition - MDI and EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.
 
 The [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) profile requires 
 * 1..* patient identifier, each identifier specifying a system and value
@@ -30,14 +30,14 @@ The [Participant & Supporting Examples](artifacts.html#participant-administrativ
 This MDI IG provides opportunities for both identifiers and tracking numbers. 
 
 * **Identifiers**: Identifiers are unique to each individual instance (use) of a FHIR resource being exchanged. They are assigned from the data source and often generated automatically by its system. 
-* **Tracking numbers**: Tracking numbers identify a case or record over time and across many systems for interoperable communication. Tracking numbers in this MDI IG may be assigned by the originating organization, such as medical examiner and coroner offices or an EDRS, and should persist throughout updates to the death investigation data. They are optional and multiple tracking numbers may be recorded. A system receiving a record with a tracking number may append its own tracking number and return/send the record with both tracking numbers. The extensible ValueSet - Tracking Number Type contains codes to identify the type of tracking number and may be augmented by local implementations of this specification.
+* **Tracking numbers**: Tracking numbers identify a case or record over time and across many systems for interoperable communication. Tracking numbers in this MDI IG may be assigned by the originating organization, such as medical examiner and coroner offices or an EDRS and should persist throughout updates to the death investigation data. They are optional and multiple tracking numbers may be recorded. A system receiving a record with a tracking number may append its own tracking number and return/send the record with both tracking numbers. The extensible ValueSet - Tracking Number Type contains codes to identify the type of tracking number and may be augmented by local implementations of this specification.
 
 ### Certification
 Agencies and jurisdictions have a range of requirements for certification of information during the process of collecting and exchanging MDI data. Typically, a forensic toxicology diagnostic report will be considered certified when the final version is sent. A document bundle sent from an MDI CMS to an EDRS can use the status data element to indicate preliminary or final and certified.
 
 This MDI specification provides opportunities on most profiles for naming the responsible party. The legal nature of certification is a business requirement to be assigned by each agency or jurisdiction implementing this specification.
 
-The Composition - MDI to EDRS author and attester are required and are the individual who will be listed as the certifier on the death certificate. 
+The Composition - MDI and EDRS author and attester are required and are the individual who will be listed as the certifier on the death certificate. 
 
 **Unknown author/attester**: Use the [Extension: Data Absent Reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) for instances when the author and/or attester is not yet known, for example in initial drafts of the MDI Composition.
 

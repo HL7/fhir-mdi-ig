@@ -8,8 +8,8 @@ This page describes normative content of the specification. For an introduction 
 ### Actors & Roles
 This specification defines three actors:
 * **Forensic Toxicology LIMS**: A data source for the Message Bundle that contains the Toxicology Lab Result to MDI Diagnostic Report.
-* **MDI CMS**: An application used by medical examiner and coroner offices that is a data consumer of the Message Bundle from the forensic toxicology LIMS and a data source and consumer of the Document Bundle MDI to EDRS.
-* **EDRS**: An application used by jurisdictional vital records agencies that is both a data source and a data consumer of the Document Bundle MDI to EDRS.
+* **MDI CMS**: An application used by medical examiner and coroner offices that is a data consumer of the Message Bundle from the forensic toxicology LIMS and a data source and consumer of the Document Bundle MDI and EDRS.
+* **EDRS**: An application used by jurisdictional vital records agencies that is both a data source and a data consumer of the Document Bundle MDI and EDRS.
 
 This specification requires two roles in any data exchange:
 * **Data Source**: An application that exposes a FHIR document bundle or message bundle to a data consumer. This can be thought of as the server in a client/server interaction.
@@ -38,13 +38,13 @@ This specification requires two roles in any data exchange:
   </tr>
   <tr>
     <td class="tg-0lax">MDI CMS</td>
-    <td class="tg-0lax">Bundle - Document MDI to EDRS </td>
-    <td class="tg-0lax">Bundle - Message Toxicology to MDI <br>Bundle - Document MDI to EDRS </td>
+    <td class="tg-0lax">Bundle - Document MDI and EDRS </td>
+    <td class="tg-0lax">Bundle - Message Toxicology to MDI <br>Bundle - Document MDI and EDRS </td>
   </tr>
   <tr>
     <td class="tg-0lax">EDRS</td>
-    <td class="tg-0lax">Bundle - Document MDI to EDRS </td>
-    <td class="tg-0lax">Bundle - Document MDI to EDRS </td>
+    <td class="tg-0lax">Bundle - Document MDI and EDRS </td>
+    <td class="tg-0lax">Bundle - Document MDI and EDRS </td>
   </tr>
 </tbody>
 </table>
@@ -59,19 +59,19 @@ To claim conformance to this specification, FHIR servers SHALL be able to popula
 
 **MDI CMS server** is responsible for:
 * Consuming a valid Bundle - Message Toxicology to MDI received from a forensic toxicology LIMS
-* Querying an EDRS for an existing case record and receiving a response (Bundle - Document MDI to EDRS) from an EDRS data source
-* Updating an existing Bundle - Document MDI to EDRS
-* Creating a new valid Bundle - Document MDI to EDRS
-* Posting a valid Bundle - Document MDI to EDRS to an EDRS data consumer
+* Querying an EDRS for an existing case record and receiving a response (Bundle - Document MDI and EDRS) from an EDRS data source
+* Updating an existing Bundle - Document MDI and EDRS
+* Creating a new valid Bundle - Document MDI and EDRS
+* Posting a valid Bundle - Document MDI and EDRS to an EDRS data consumer
 
 **EDRS server** is responsible for:
 * Receiving a query from an MDI CMS
-* Returning a valid Bundle - Document MDI to EDRS to an MDI CMS
-* Receiving and consuming a valid Bundle - Document MDI to EDRS from an MDI CMS
+* Returning a valid Bundle - Document MDI and EDRS to an MDI CMS
+* Receiving and consuming a valid Bundle - Document MDI and EDRS from an MDI CMS
 
 
 ### Conformance to Other Standards
-This specification is based on US Core 4.0.0. It defines 16 new profiles in total. These profiles are based on a US Core profile where possible. Conformance to US Core profiles is expected in all cases where 1) a US Core Profile exists and 2) where no profile has been defined by this MDI specification. For example, instances of Patients, Practitioners, and Organizations are expected to conform to US Core profiles, respectively.
+This specification is based on US Core 5.0.1. It defines 16 new profiles in total. These profiles are based on a US Core profile where possible. Conformance to US Core profiles is expected in all cases where 1) a US Core Profile exists and 2) where no profile has been defined by this MDI specification. For example, instances of Patients, Practitioners, and Organizations are expected to conform to US Core profiles, respectively.
 
 This specification uses or references US Core profiles:
 * [US Core Condition Encounter Diagnosis Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-condition-encounter-diagnosis.html)
@@ -90,8 +90,8 @@ This specification uses or references US Core profiles:
 This specification defines the following resources. An overview and list of examples is available on the [Artifacts Index Summary](artifacts.html).
 
 **Profiles defined for MDI CMS and EDRS exchange use case:**
-* Bundle - Document MDI to EDRS 
-* Composition - MDI to EDRS 
+* Bundle - Document MDI and EDRS 
+* Composition - MDI and EDRS 
 * Observation - Cause of Death Part 1 
 * Observation - Contributing Cause of Death Part 2 
 * Observation - Death Date 

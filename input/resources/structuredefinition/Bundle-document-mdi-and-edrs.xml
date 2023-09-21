@@ -3,17 +3,17 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-document-mdi-and-edrs"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-09-11T18:49:06.073Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-09-21T13:50:34.801Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs"/>
     <version value="0.0.1"/>
-    <name value="BundleDocumentMDIToEDRS"/>
-    <title value="Bundle - Document MDI to EDRS"/>
+    <name value="BundleDocumentMDIAndEDRS"/>
+    <title value="Bundle - Document MDI and EDRS"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Bundle profile represents a Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI to EDRS."/>
+    <description value="This Bundle profile represents a Document Bundle exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange. It contains a Composition - MDI and EDRS."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -47,15 +47,15 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:MDItoEDRSComposition">
+        <element id="Bundle.entry:MDIandEDRSComposition">
             <path value="Bundle.entry"/>
-            <sliceName value="MDItoEDRSComposition"/>
-            <short value="The Composition of data sent from an MDI information management system to an EDRS"/>
+            <sliceName value="MDIandEDRSComposition"/>
+            <short value="The Composition of data sent between an MDI CMS and an EDRS"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:MDItoEDRSComposition.resource">
+        <element id="Bundle.entry:MDIandEDRSComposition.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>

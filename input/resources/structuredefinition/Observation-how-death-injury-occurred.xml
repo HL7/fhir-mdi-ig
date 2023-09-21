@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-how-death-injury-occurred"/>
     <meta>
-        <versionId value="24"/>
-        <lastUpdated value="2023-09-11T20:01:51.910Z"/>
+        <versionId value="25"/>
+        <lastUpdated value="2023-09-21T14:42:13.169Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-how-death-injury-occurred"/>
     <version value="0.1.0"/>
@@ -83,9 +83,10 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Observation.effective[x].extension:partialDateTime">
-            <path value="Observation.effective[x].extension"/>
+        <element id="Observation.value[x].extension:partialDateTime">
+            <path value="Observation.value[x].extension"/>
             <sliceName value="partialDateTime"/>
+            <short value="The expectation is to send a value in addition to the extension, whenever possible. Use a data absent reason for anything not known."/>
             <min value="0"/>
             <max value="1"/>
             <type>

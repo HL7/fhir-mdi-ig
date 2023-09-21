@@ -5,7 +5,7 @@ This US-specific implementation guide (IG) provides guidance on the exchange of 
 This MDI IG is based upon FHIR R4.0.1 and is a U.S. Realm Specification.
 
 The STU 1 version of the specification defines FHIR resources to support two dataflows:
-* Death investigation findings exchanged betwen an MDI system and an EDRS via a document bundle: Bundle - Document MDI to EDRS
+* Death investigation findings exchanged between an MDI system and an EDRS via a document bundle: Bundle - Document MDI and EDRS
 * Forensic toxicology specimen analysis results sent from a forensic toxicology laboratory to an MDI information system via a message bundle: Bundle - Message Toxicology to MDI
 
 The STU 1.1 version provides updates to align with relevant profiles in the [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/), STU 2.1 and adds new resources and guidance as described in the [Change Log](change_log.html).
@@ -24,7 +24,7 @@ This guide includes the following sections, listed at the top of each page in th
 The audience for this IG includes architects and developers of MDI CMS and associated information management systems, such as forensic toxicology LIMS, as well as medical examiners, coroners, death investigators, and other professionals who collect and analyze data for death investigations. Business analysts and policy managers can also benefit from a basic understanding of the use of MDI data exchange to support interoperability.
 Implementers of this MDI FHIR standard must have the following US Core profiles implemented for each applicable use case:
 
-**MDI CMS and EDRS** implementing the Bundle - Document MDI to EDRS for transmitting and receiving a Composition - MDI to EDRS:
+**MDI CMS and EDRS** implementing the Bundle - Document MDI and EDRS for transmitting and receiving a Composition - MDI and EDRS:
 * [US Core Condition Encounter Diagnosis Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-condition-encounter-diagnosis.html) and/or [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-condition-problems-health-concerns.html)
 * [US Core Location Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-location)
 * [US Core Organization Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization)
