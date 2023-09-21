@@ -1,14 +1,12 @@
 == Suppressed Messages ==
 #Spurious warning - no such parameter in IG file
 Unknown Parameters: [apply-wg=true]
+
 # Examples have optional slices that are not defined in the profile - not matching is expected behavior
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report|1.1.0
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs|1.1.0
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi|1.1.0
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|5.0.1
-
-# The URI listed is the Official URI on https://terminology.hl7.org/ (“THO”). There is a PHINVads issue around access to the terminology.
-Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
 
 # APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (Minutes: (https://confluence.hl7.org/pages/viewpage.action?pageId=90341999 & https://confluence.hl7.org/pages/viewpage.action?pageId=90358833)
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
