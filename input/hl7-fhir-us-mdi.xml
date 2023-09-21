@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mdi"/>
     <meta>
-        <versionId value="1188"/>
-        <lastUpdated value="2023-09-21T15:26:48.547Z"/>
+        <versionId value="1191"/>
+        <lastUpdated value="2023-09-21T16:00:08.730Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ImplementationGuide/hl7-fhir-us-mdi"/>
     <version value="1.1.0"/>
@@ -12,12 +12,12 @@
     <title value="Medicolegal Death Investigation (MDI)"/>
     <status value="active"/>
     <experimental value="false"/>
-    <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
+    <publisher value="HL7 International / Public Health and Emergency Response"/>
     <contact>
-        <name value="HL7 International - Public Health"/>
+        <name value="HL7 International / Public Health and Emergency Response"/>
         <telecom>
             <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
+            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
         </telecom>
     </contact>
     <description value="This US-specific implementation guide (IG) provides guidance on the exchange of information to and from medicolegal death investigation (MDI) information systems. It supports interoperability between the MDI case management systems (CMS) used by medical examiner and coroner offices; forensic toxicology and other laboratory information management systems (LIMS); electronic death registration systems (EDRS) of jurisdictional vital records offices (VROs); and ancillary workflows whose systems have the capability of using Fast Healthcare Interoperability Resources (FHIR). This guide provides MDI CMS developers with the technical details and best practices to standardize MDI fields and interfaces. Stakeholders may use the narrative portions of this guide to inform policies and practices for data exchange between systems contributing to, and using information from, death investigations. This guide can serve as a base for local specifications."/>

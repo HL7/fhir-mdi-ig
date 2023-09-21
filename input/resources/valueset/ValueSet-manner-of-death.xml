@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-manner-of-death"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-06-29T16:33:33.887Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-09-21T16:14:31.683Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-manner-of-death"/>
     <version value="1.0.0"/>
@@ -13,18 +13,6 @@
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-03-02T06:38:15+00:00"/>
-    <publisher value="HL7 Public Health Working Group"/>
-    <contact>
-        <name value="HL7 Public Health Working Group"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="pher@lists.HL7.org"/>
-        </telecom>
-    </contact>
     <description value="A set of codes to reflect the manner that a person died.&#xA;The MDI ValueSet - Manner of Death artifact overlaps with the VRDR Manner of Death VS artifact."/>
     <jurisdiction>
         <coding>

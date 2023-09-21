@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="CodeSystem-local-component-codes"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-09-29T23:32:59.837Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-09-21T16:11:43.181Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-local-component-codes"/>
     <version value="1.9.0"/>
@@ -13,18 +13,6 @@
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-07-22T14:53:51+00:00"/>
-    <publisher value="HL7 Public Health Working Group"/>
-    <contact>
-        <name value="HL7 Public Health Working Group"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="pher@lists.HL7.org"/>
-        </telecom>
-    </contact>
     <description value="Local Component Codes for observation components that lack an appropriate LOINC code.&#xA;The MDI CodeSystem - Local Component Codes artifact overlaps with the VRDR Local Component Codes artifact."/>
     <jurisdiction>
         <coding>

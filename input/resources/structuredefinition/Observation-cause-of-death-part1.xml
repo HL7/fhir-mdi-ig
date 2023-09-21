@@ -8,7 +8,6 @@
     <title value="Observation - Cause of Death Part 1"/>
     <status value="active"/>
     <date value="2022-02-27T13:48:44+00:00"/>
-    <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
     <contact>
         <name value="HL7 International - Public Health"/>
         <telecom>

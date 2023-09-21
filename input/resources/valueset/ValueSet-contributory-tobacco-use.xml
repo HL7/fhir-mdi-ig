@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-contributory-tobacco-use"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-06-28T21:54:55.380Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-09-21T16:14:31.506Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-contributory-tobacco-use"/>
     <version value="1.0.0"/>
@@ -13,18 +13,6 @@
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-03-03T14:44:43+00:00"/>
-    <publisher value="HL7 Public Health Working Group"/>
-    <contact>
-        <name value="HL7 Public Health Working Group"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="pher@lists.HL7.org"/>
-        </telecom>
-    </contact>
     <description value="A set of codes that reflect the extent to which tobacco use contributed to the person's death. Based on [Contributory Tobacco Use (NCHS)[2.16.840.1.114222.4.11.6004]](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6004).&#xA;The MDI ValueSet - Contributory Tobacco Use artifact overlaps with the VRDR Contributory Tobacco Use VS artifact."/>
     <jurisdiction>
         <coding>

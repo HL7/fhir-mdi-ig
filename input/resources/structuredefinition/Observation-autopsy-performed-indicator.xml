@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-performed-indicator"/>
     <meta>
-        <versionId value="23"/>
-        <lastUpdated value="2023-06-28T21:44:16.547Z"/>
+        <versionId value="24"/>
+        <lastUpdated value="2023-09-21T16:04:07.780Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-autopsy-performed-indicator"/>
     <version value="1.9.0"/>
@@ -12,7 +12,6 @@
     <title value="Observation - Autopsy Performed Indicator"/>
     <status value="active"/>
     <date value="2022-08-02T13:21:04+00:00"/>
-    <publisher value="HL7 Public Health Working Group"/>
     <contact>
         <name value="HL7 Public Health Working Group"/>
         <telecom>

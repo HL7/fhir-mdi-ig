@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-yes-no-unknown-not-applicable"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-04-14T23:19:30.614Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-09-21T16:14:31.956Z"/>
     </meta>
     <text>
         <status value="extensions"/>
@@ -62,12 +62,19 @@
                             <td>unknown</td>
                             <td>**Description:**A proper value is applicable, but not known. 
                                 <br/>
-                                <br/>**Usage Notes**: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype
-                with this property unless: 
+                                <br/>**Usage Notes**: This means the actual value is not known. If
+                                the only thing that is unknown is how to properly express the value
+                                in the necessary constraints (value set, datatype, etc.), then the
+                                OTH or UNC flavor should be used. No properties should be included
+                                for a datatype with this property unless: 
                                 <br/>
-                                <br/>1. Those properties themselves directly translate to a semantic of "unknown". (E.g. a local code sent as a translation that conveys 'unknown') 
-                                <br/>2. Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of "H" and a URL prefix of "tel:"
-                to convey that it is the home phone number that is unknown.) 
+                                <br/>1. Those properties themselves directly translate to a semantic
+                                of "unknown". (E.g. a local code sent as a translation that conveys
+                                'unknown') 
+                                <br/>2. Those properties further qualify the nature of
+                                what is unknown. (E.g. specifying a use code of "H" and a URL prefix
+                                of "tel:" to convey that it is the home phone number that is
+                                unknown.) 
                             </td>
                         </tr>
                         <tr>
@@ -75,7 +82,8 @@
                                 <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NA">NA</a>
                             </td>
                             <td>not applicable</td>
-                            <td>Known to have no proper value (e.g., last menstrual period for a male).</td>
+                            <td>Known to have no proper value (e.g., last menstrual period for a
+                                male).</td>
                         </tr>
                     </table>
                 </li>
@@ -89,14 +97,6 @@
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-07-22T14:53:51+00:00"/>
-    <publisher value="HL7 Public Health Work Group (http://www.hl7.org/Special/committees/pher/index.cfm)"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
     <description value="Valueset with Yes, No, Unknown, and Not Applicable.&#xA;The MDI ValueSet - Yes No Unknown NotApplicable artifact overlaps with the VRDR Yes No Unknown NotApplicable artifact."/>
     <jurisdiction>
         <coding>

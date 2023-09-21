@@ -9,7 +9,7 @@
 **Capability Statements**:
 * Changed name/title of "CapabilityStatement - Medical Examiner/Coroner Server" to "CapabilityStatement - MDI CMS Server" [FHIR-36944](https://jira.hl7.org/browse/FHIR-36944)
 * Added `rest` definitions to CapabilityStatement - MDI CMS Server and to CapabilityStatement - Electronic Death Reporting System (EDRS) Server [FHIR-41518](https://jira.hl7.org/browse/FHIR-41518)
-* •	Added `text` to CapabilityStatement - MDI CMS Server, CapabilityStatement - Electronic Death Reporting System (EDRS) Server, and CapabilityStatement - Forensic Toxicology Laboratory Server for more informative html rendering of each resource [FHIR-41515](https://jira.hl7.org/browse/FHIR-41515)
+* Added `text` to CapabilityStatement - MDI CMS Server, CapabilityStatement - Electronic Death Reporting System (EDRS) Server, and CapabilityStatement - Forensic Toxicology Laboratory Server for more informative html rendering of each resource [FHIR-41515](https://jira.hl7.org/browse/FHIR-41515)
 
 **Bundle - Document MDI to EDRS**:
 * Changed profile name/title to “Bundle - Document MDI **and** EDRS” [FHIR-41684](https://jira.hl7.org/browse/FHIR-41684)
@@ -36,9 +36,9 @@
 **Observation - Death Date**:
 * Added choice of dateTime or period to Observation.value(x)  [FHIR-40470](https://jira.hl7.org/browse/FHIR-40470)
 * Added time to dateTime as choices for datetimePronouncedDead.value(x) to align with VRDR  [FHIR-40470](https://jira.hl7.org/browse/FHIR-40470)
-* •	Updated Observation.value[x].extension:partialDateTime to reference http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime and updated short description [FHIR-41647](https://jira.hl7.org/browse/FHIR-41647)
+* Updated Observation.value[x].extension:partialDateTime to reference `http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime` and updated short description [FHIR-41647](https://jira.hl7.org/browse/FHIR-41647)
 
-**Observation - How Death Injury Occurred**: Updated Observation.value[x].extension:partialDateTime to reference http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime and updated short description [FHIR-41647](https://jira.hl7.org/browse/FHIR-41647)
+**Observation - How Death Injury Occurred**: Updated Observation.value[x].extension:partialDateTime to reference `http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime` and updated short description [FHIR-41647](https://jira.hl7.org/browse/FHIR-41647)
 
 
 **Observation - Autopsy Performed Indicator**: Constrained performer to US Core Practitioner Profile [FHIR-41346](https://jira.hl7.org/browse/FHIR-41346)

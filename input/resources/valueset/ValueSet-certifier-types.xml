@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-certifier-types"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-06-29T16:23:17.284Z"/>
+        <versionId value="11"/>
+        <lastUpdated value="2023-09-21T16:14:31.414Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mdi/ValueSet/ValueSet-certifier-types"/>
     <version value="1.0.0"/>
@@ -13,18 +13,6 @@
     <status value="active"/>
     <experimental value="false"/>
     <date value="2022-08-02T13:21:04+00:00"/>
-    <publisher value="HL7 Public Health Working Group"/>
-    <contact>
-        <name value="HL7 Public Health Working Group"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="pher@lists.HL7.org"/>
-        </telecom>
-    </contact>
     <description value="A set of codes indicating the type of certifier (medical examiner/coroner, certifying physician, etc.)&#xA;The MDI ValueSet - Certifier Types artifact overlaps with the VRDR Certifier Types VS artifact."/>
     <jurisdiction>
         <coding>
