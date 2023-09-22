@@ -73,7 +73,7 @@ This MDI FHIR IG is designed for RESTful API implementations supporting data exc
 * MIME-type for FHIR resources is application/fhir+xml or application/fhir+json. This must be specified for Content-Type in the HTTP header.
 * application/x-www-form-urlencoded can be used for POST search requests if HTTP Form is used.
 
-The CapabilityStatement resources defined in this MDI FHIR IG are of kind=requirements, so represent recommended capabilities of systems involved in MDI data exhange. They specify the bare minimum interactions and operations for a limited group of MDI resources.
+The CapabilityStatement resources defined in this MDI FHIR IG are of kind=requirements, so represent recommended capabilities of systems involved in MDI data exchange. They specify the bare minimum interactions and operations for a limited group of MDI resources.
 * [CapabilityStatement - MDI CMS Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-mdi-cms-server)
 * [CapabilityStatement - Electronic Death Reporting System (EDRS) Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-edrs-server)
 * [CapabilityStatement - Forensic Toxicology Laboratory Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server)
@@ -84,8 +84,8 @@ It is expected that any specific FHIR server implementing this MDI FHIR IG may a
 * [Raven Documentation](https://ravendocs.readthedocs.io/en/latest/) — End-use and technical manuals
 
 An MDI-based Search API enables an MDI CMS to search an EDRS server for decedent cases, and vice versa. This is an idempotent operation (i.e., it has no additional effect if it is called more than once with the same input parameters). At a minimum, both POST and GET should be allowed with the following endpoint URL pattern:
-* POST [base]/Composition/$mdi-documents
-* GET [base]/Composition/$mdi-documents?name=value&…
+* POST [base]/Composition/$documents
+* GET [base]/Composition/$documents?name=value&…
 
 ***Table: Summary of Minimum MDI Search Parameter Definitions***
 
