@@ -69,9 +69,19 @@ The Observation.value[x].text is limited for both Observation - Cause of Death C
 * Mathematical expression of quantity range with units (e.g., “< 2.5 ng/mL”)
 
 ### API Specifications & Search Operations
-This MDI specification is designed for RESTful API implementations supporting data exchange interactions between systems via FHIR extended operations. (See [RESTful API](https://hl7.org/FHIR/http.html) for an overview.) This MDI IG uses extended operations with MDI-specific search parameters and a subset of the many [RESTful API operations](https://hl7.org/FHIR/operationslist.html#1.5) defined by FHIR. All API implementations of this MDI specification must conform to common design rules:
+This MDI FHIR IG is designed for RESTful API implementations supporting data exchange interactions between systems via FHIR extended operations. (See [RESTful API](https://hl7.org/FHIR/http.html) for an overview.) This MDI IG uses extended operations with MDI-specific search parameters and a subset of the many [RESTful API operations](https://hl7.org/FHIR/operationslist.html#1.5) defined by FHIR. All API implementations of this MDI specification must conform to common design rules:
 * MIME-type for FHIR resources is application/fhir+xml or application/fhir+json. This must be specified for Content-Type in the HTTP header.
 * application/x-www-form-urlencoded can be used for POST search requests if HTTP Form is used.
+
+The CapabilityStatement resources defined in this MDI FHIR IG are of kind=requirements, so represent recommended capabilities of systems involved in MDI data exhange. They specify the bare minimum interactions and operations for a limited group of MDI resources.
+* [CapabilityStatement - MDI CMS Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-mdi-cms-server)
+* [CapabilityStatement - Electronic Death Reporting System (EDRS) Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-edrs-server)
+* [CapabilityStatement - Forensic Toxicology Laboratory Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server)
+
+It is expected that any specific FHIR server implementing this MDI FHIR IG may allow or require more interactions and operations for a larger set of resources than those specified in the CapabilityStatement resources listed above. An example of a CapabilityStatement that defines the full capabilities of a specific FHIR server (kind=instance), is available for the Raven FHIR Server, maintained by Georgia Tech Research Institute (GTRI):
+* [CapabilityStatement](https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) for Raven FHIR Server
+* [Raven Testing Platform](https://apps.hdap.gatech.edu/raven/) — A proof of concept for the MDI FHIR IG. It provides a tool for testing conformance to the MDI FHIR IG, including resource validation, record comparison, and data exchange workflows. 
+* [Raven Documentation](https://ravendocs.readthedocs.io/en/latest/) — End-use and technical manuals
 
 An MDI-based Search API enables an MDI CMS to search an EDRS server for decedent cases, and vice versa. This is an idempotent operation (i.e., it has no additional effect if it is called more than once with the same input parameters). At a minimum, both POST and GET should be allowed with the following endpoint URL pattern:
 * POST [base]/Composition/$mdi-documents
@@ -97,6 +107,12 @@ An MDI-based Search API enables an MDI CMS to search an EDRS server for decedent
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td class="tg-0lax"><b><i>In Parameters</i></b></td>
+    <td class="tg-0lax">  </td>
+    <td class="tg-0lax">  </td>
+    <td class="tg-0lax"> </td>
+  </tr>
   <tr>
     <td class="tg-0lax">id </td>
     <td class="tg-0lax">0..1 </td>
@@ -157,6 +173,18 @@ An MDI-based Search API enables an MDI CMS to search an EDRS server for decedent
     <td class="tg-0lax">date </td>
     <td class="tg-0lax">Observation.component:datetimePronouncedDead in Observation - Death Date (either time or dateTime)</td>
   </tr>
+    <tr>
+    <td class="tg-0lax"><b><i>Out Parameters</i></b></td>
+    <td class="tg-0lax">  </td>
+    <td class="tg-0lax">  </td>
+    <td class="tg-0lax"> </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">return </td>
+    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">Bundle </td>
+    <td class="tg-0lax">Bundle - Searchset or Bundle - Document MDI and EDRS. If [id] is supplied, then this should be Bundle - Document MDI and EDRS</td>
+ </tr>
 </tbody>
 </table>
 
