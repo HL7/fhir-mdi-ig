@@ -1,4 +1,4 @@
-This MDI specification is designed to be flexible to accommodate a variety of systems, recognizing that information management systems used for assembling MDI data vary widely by state, jurisdiction, and agency. This means that many data concepts have few requirements but many “must support” designations. This section provides best practice recommendations on how to address select concepts.
+This MDI FHIR IG is designed to be flexible to accommodate a variety of systems, recognizing that information management systems used for assembling MDI data vary widely by state, jurisdiction, and agency. This means that many data concepts have few requirements but many “must support” designations. This section provides best practice recommendations on how to address select concepts.
 
 ### Bi-Directional Exchange: MDI CMS & EDRS
 The **Bundle - Document MDI and EDRS** profile represents a document exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange during the process of case record creation and updating. The Bundle contains a **Composition - MDI and EDRS**.
@@ -35,7 +35,7 @@ This MDI IG provides opportunities for both identifiers and tracking numbers.
 ### Certification
 Agencies and jurisdictions have a range of requirements for certification of information during the process of collecting and exchanging MDI data. Typically, a forensic toxicology diagnostic report will be considered certified when the final version is sent. A document bundle sent from an MDI CMS to an EDRS can use the status data element to indicate preliminary or final and certified.
 
-This MDI specification provides opportunities on most profiles for naming the responsible party. The legal nature of certification is a business requirement to be assigned by each agency or jurisdiction implementing this specification.
+This MDI FHIR IG provides opportunities on most profiles for naming the responsible party. The legal nature of certification is a business requirement to be assigned by each agency or jurisdiction implementing this specification.
 
 The Composition - MDI and EDRS author and attester are required and are the individual who will be listed as the certifier on the death certificate. 
 
@@ -69,7 +69,7 @@ The Observation.value[x].text is limited for both Observation - Cause of Death C
 * Mathematical expression of quantity range with units (e.g., “< 2.5 ng/mL”)
 
 ### API Specifications & Search Operations
-This MDI FHIR IG is designed for RESTful API implementations supporting data exchange interactions between systems via FHIR extended operations. (See [RESTful API](https://hl7.org/FHIR/http.html) for an overview.) This MDI IG uses extended operations with MDI-specific search parameters and a subset of the many [RESTful API operations](https://hl7.org/FHIR/operationslist.html#1.5) defined by FHIR. All API implementations of this MDI specification must conform to common design rules:
+This MDI FHIR IG is designed for RESTful API implementations supporting data exchange interactions between systems via FHIR extended operations. (See [RESTful API](https://hl7.org/FHIR/http.html) for an overview.) This MDI IG uses extended operations with MDI-specific search parameters and a subset of the many [RESTful API operations](https://hl7.org/FHIR/operationslist.html#1.5) defined by FHIR. All API implementations of this MDI FHIR IG must conform to common design rules:
 * MIME-type for FHIR resources is application/fhir+xml or application/fhir+json. This must be specified for Content-Type in the HTTP header.
 * application/x-www-form-urlencoded can be used for POST search requests if HTTP Form is used.
 
