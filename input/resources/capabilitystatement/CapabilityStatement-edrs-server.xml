@@ -29,8 +29,8 @@
                 vice versa. This is an idempotent operation. At a minimum, both Both POST and GET
                 can be used should be allowed with the following endpoint URL pattern:</p>
             <ul>
-                <li>POST [base]/Composition/$documents </li>
-                <li>GET [base]/Composition/$documents?name=value… </li>
+                <li>POST [base]/Composition/$document </li>
+                <li>GET [base]/Composition/$document?name=value… </li>
             </ul>
             <p id="summary">
                 <strong>Summary of Minimum EDRS Search Parameter Definitions</strong>

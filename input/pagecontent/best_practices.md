@@ -84,8 +84,8 @@ It is expected that any specific FHIR server implementing this MDI FHIR IG may a
 * [Raven Documentation](https://ravendocs.readthedocs.io/en/latest/) — End-use and technical manuals
 
 An MDI-based Search API enables an MDI CMS to search an EDRS server for decedent cases, and vice versa. This is an idempotent operation (i.e., it has no additional effect if it is called more than once with the same input parameters). At a minimum, both POST and GET should be allowed with the following endpoint URL pattern:
-* POST [base]/Composition/$documents
-* GET [base]/Composition/$documents?name=value&…
+* POST [base]/Composition/$document
+* GET [base]/Composition/$document?name=value&…
 
 ***Table: Summary of Minimum MDI Search Parameter Definitions***
 
@@ -213,4 +213,4 @@ Code example:
 } 
 ```
 
-If [id] is provided within URL path (e.g., /Composition/[id]/$mdi-documents), then the output response should be an MDI document bundle as there will be only one or zero result.
+If [id] is provided within URL path (e.g., /Composition/[id]/$document), then the output response should be an MDI document bundle as there will be only one or zero result.
