@@ -6,10 +6,8 @@ This element does not match any known slice defined in the profile http://hl7.or
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi|1.1.0
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|5.0.1
 
-# APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (Minutes: (https://confluence.hl7.org/pages/viewpage.action?pageId=90341999 & https://confluence.hl7.org/pages/viewpage.action?pageId=90358833)
+# APPROVED by HL7 Cross Group Projects WG, Minutes: (https://confluence.hl7.org/pages/viewpage.action?pageId=90341999 & https://confluence.hl7.org/pages/viewpage.action?pageId=90358833)
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-
-# US Core Specimen is not in the latest published version of US Core so there is nothing to derive from
 US FHIR Usage rules require that all profiles on Specimen derive from the core US profile
 
 # This is the code that is used in the Death Certification VRDR profile
