@@ -42,7 +42,6 @@
                 <display value="Disease onset to death interval"/>
             </coding>
         </code>
-        <!--<valueString value="minutes to hours"/>-->
         <valueQuantity>
             <value value="3.5"/>
             <unit value="hours"/>

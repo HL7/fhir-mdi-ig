@@ -37,7 +37,7 @@
     </subject>
     <date value="2022-02-20"/>
     <author>
-        <!--<reference value="Practitioner/us-core-practitioner-s-jones"/>-->
+        <!-- When author is not yet set use data-absent-reason rather than <reference value="Practitioner/us-core-practitioner-s-jones"/>-->
         <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
             <valueCode value="temp-unknown"/>
         </extension>
@@ -47,7 +47,7 @@
     <attester>
         <mode value="professional"/>
         <party>
-            <!--<reference value="Practitioner/us-core-practitioner-s-jones"/>-->
+            <!-- When attester is not yet set use data-absent-reason rather than <reference value="Practitioner/us-core-practitioner-s-jones"/>-->
             <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
                 <valueCode value="temp-unknown"/>
             </extension>
