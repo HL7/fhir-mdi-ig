@@ -1190,6 +1190,9 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </performer>
                 <valueString value="0.145 g/dL"/>
                 <specimen>
                     <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
@@ -1288,6 +1291,9 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </performer>
                 <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
@@ -1386,6 +1392,9 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </performer>
                 <valueString value="2 ng/ml"/>
                 <specimen>
                     <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
@@ -1484,6 +1493,9 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </performer>
                 <valueString value="23 ng/mL"/>
                 <specimen>
                     <reference value="Specimen/specimen-blood-toxicology-a-freeman"/>
@@ -1582,6 +1594,9 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </performer>
                 <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
@@ -1680,6 +1695,9 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </performer>
                 <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
@@ -1778,6 +1796,9 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </performer>
                 <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
@@ -1876,6 +1897,9 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </performer>
                 <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
@@ -1974,6 +1998,9 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </performer>
                 <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
@@ -2072,6 +2099,9 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </performer>
                 <valueString value="true"/>
                 <specimen>
                     <reference value="Specimen/specimen-urine-toxicology-a-freeman"/>
@@ -2170,6 +2200,9 @@
                     <display value="Alice J. Freeman"/>
                 </subject>
                 <effectiveDateTime value="2021-12-03"/>
+                <performer>
+                    <reference value="Practitioner/us-core-practitioner-b-goldberger"/>
+                </performer>
                 <valueString value="0.133 g/dL"/>
                 <specimen>
                     <reference value="Specimen/specimen-vitreous-humor-toxicology-a-freeman"/>
