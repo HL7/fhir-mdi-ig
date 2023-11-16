@@ -16,9 +16,9 @@
     <title value="Medicolegal Death Investigation (MDI)"/>
     <status value="active"/>
     <experimental value="false"/>
-    <publisher value="HL7 International / Public Health and Emergency Response"/>
+    <publisher value="HL7 International / Public Health"/>
     <contact>
-        <name value="HL7 International / Public Health and Emergency Response"/>
+        <name value="HL7 International / Public Health"/>
         <telecom>
             <system value="url"/>
             <value value="http://www.hl7.org/Special/committees/pher"/>
