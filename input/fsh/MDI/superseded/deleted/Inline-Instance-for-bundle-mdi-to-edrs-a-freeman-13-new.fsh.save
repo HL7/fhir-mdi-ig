@@ -1,0 +1,19 @@
+Instance: Inline-Instance-for-bundle-mdi-to-edrs-a-freeman-13-new
+InstanceOf: ObservationCauseOfDeathPart1VitalRecordsNew
+Usage: #inline
+* id = "observation-cause-of-death-part1-a-freeman"
+* meta
+  * versionId = "7"
+  * lastUpdated = "2022-08-15T11:05:10.664+00:00"
+  * source = "#JB6y5LYf7vKgvofo"
+* status = #final
+* code = $loinc#69453-9 "Cause of death [US Standard Certificate of Death]"
+* subject.reference = "Patient/us-core-patient-a-freeman"
+* performer.reference = "Practitioner/us-core-practitioner-s-jones"
+* valueCodeableConcept.text = "Fentanyl toxicity"
+* component[0]
+  * code = CodeSystemLocalComponentCodes#lineNumber
+  * valueInteger = 1
+* component[+]
+  * code = $loinc#69440-6 "Disease onset to death interval"
+  * valueString = "minutes to hours"
