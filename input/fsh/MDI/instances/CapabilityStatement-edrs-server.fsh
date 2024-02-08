@@ -18,7 +18,7 @@ Usage: #definition
 * rest[0]
   * mode = #server
   * insert SupportResource(Composition, #SHALL)
-  * insert SupportProfile(http://hl7.org/fhir/us/vrsandbox/StructureDefinition/Composition-mdi-and-edrs, #SHALL)
+  * insert SupportProfile(http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs, #SHALL)
   * insert SupportInteraction(#read, #SHALL)
   * insert SupportInteraction(#search-type, #SHALL)
   * insert SupportSearchParam(subject, http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier, #token, #SHALL)
@@ -87,13 +87,13 @@ Usage: #definition
 //      * documentation = "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
 //    * fhir_comments = " US Core Patient "
   * insert SupportResource(Location, #SHALL)
-  * insert SupportProfile(http://hl7.org/fhir/us/vrsandbox/StructureDefinition/vrdr-death-location, #SHALL)
+  * insert SupportProfile(http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-location, #SHALL)
   * insert SupportInteraction(#read, #SHALL)
   * insert SupportInteraction(#search-type, #SHALL)
   * insert SupportSearchParam(address, http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address, #string, #SHALL)
 
   * insert SupportResource(Observation, #SHALL)
-  * insert SupportProfile(http://hl7.org/fhir/us/vrsandbox/StructureDefinition/vrdr-death-date, #SHALL)
+  * insert SupportProfile(http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-date, #SHALL)
   * insert SupportInteraction(#read, #SHALL)
   * insert SupportInteraction(#search-type, #SHALL)
   * insert SupportSearchParam(date, http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date, #date, #SHALL)

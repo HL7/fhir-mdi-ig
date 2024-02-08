@@ -27,7 +27,7 @@ The STU 1 version of the specification defines FHIR resources to support two dat
 The STU 1.1 version provides updates to align with relevant profiles in the [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/), STU 2.1 and adds new resources and guidance as described in the [Change Log](mdi_change_log.html).
 
 This guide includes the following sections, listed at the top of each page in the menu bar: 
-* [Home](mdi_index.html): Summary description and technical overview
+* [Home](index.html): Summary description and technical overview
 * [Background](mdi_background.html): Information on MDI dataflows and actors, the current work, and relationship to other IGs, as well as likely future MDI FHIR specification development
 * [Best Practices](mdi_best_practices.html): Guidance on implementation and use of this specification
 * [Specification](mdi_specification.html): Technical details on implementing the specification

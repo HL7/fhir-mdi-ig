@@ -24,7 +24,7 @@ In addition to the Patient.gender required data element described above, impleme
 
 The US Core Patient Profile contains the optional data element Patient.deceased. It  may be used to indicate if the individual is deceased or not. An implementer has a choice of using Boolean (true/false) values or dateTime. If dateTime is used, it should match the Observation - Death Date value[x].
 <!--- TODO add this back when IGs are separated: [Participant & Supporting Examples](artifacts.html#participant-administrative-examples)--->
-The [Participant & Supporting Examples](artifacts.html#12) section of the Artifacts Index page provides an example of a US Core Patient for which no information known about the decedent's name. 
+The [Participant & Supporting Examples](artifacts.html#6) section of the Artifacts Index page provides an example of a US Core Patient for which no information known about the decedent's name. 
 
 ### Identifiers and Tracking Numbers
 This MDI IG provides opportunities for both identifiers and tracking numbers. 

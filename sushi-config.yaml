@@ -54,7 +54,7 @@ dependencies:
 # sub-pages.
 #
 pages:
-  mdi_index.md:
+  index.md:
     title: Home
   mdi-content-transitions.md:
     title: MDI Content Transitions 
@@ -98,7 +98,7 @@ parameters:
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: mdi_index.html
+  Home: index.html
   Background: mdi_background.html
   Best Practices: mdi_best_practices.html
   Security Recommendations: mdi_security_recommendations.html
@@ -229,6 +229,7 @@ groups:
       - composition-mdi-and-edrs-a-freeman
       - composition-mdi-and-edrs-draft
       - diagnosticreport-mdi-toxicology-lab-a-freeman
+      - DecedentDispositionMethod-a-freeman
       - documentreference-mdi-autopsy-report-ex
       - documentreference-mdi-investigator-narrative-ex
       - location-death-atlanta-ga-a-freeman
