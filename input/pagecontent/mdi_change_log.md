@@ -4,7 +4,7 @@ This early  STU2 draft of MDI incorporates refactoring as part of the [harmoniza
 #### Content Changes
 
 #### Harmonization Changes
-* For a detailed description of harmonization changes see [STU1.1 to STU2 Changes](mdi-content-transitions.html).
+* Many of the MDI STU1.1 profiles, valuesets, codesystems, and extensions are [now found elsehwere](mdi-content-transitions.html#removed-profiles).  For a detailed description of harmonization changes see [STU1.1 to STU2 Changes](mdi-content-transitions.html).
 
 ### MDI STU 1.1 (September 2023)
 

@@ -11,7 +11,7 @@ Usage: #example
 * valuePeriod
   * start = "2021-12-01"
   * end = "2022-01-01"
-* method = CodeSystemMDI#approximate "Approximate"
+* method = DateOfDeathDeterminationMethodsCS#approximate "Approximate"
 * component[datetimePronouncedDead].valueDateTime = "2022-01-08T15:30:00-05:00"
 * component[placeOfDeath].valueCodeableConcept = $v3-NullFlavor#OTH "Other"
   * text = "Lake"

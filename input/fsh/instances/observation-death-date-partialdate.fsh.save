@@ -13,7 +13,7 @@ Usage: #example
 * valueDateTime.extension[partialDateTime].extension[day].valueUnsignedInt.extension[dataabsent].valueCode = $dataabsentreason401#unknown
 * valueDateTime.extension[partialDateTime].extension[time].valueTime = "12:00:00"
 * note.text = "Death occured at the noon church bell."
-* method = CodeSystemMDI#approximate "Approximate"
+* method = DateOfDeathDeterminationMethodsCS#approximate "Approximate"
 * component[datetimePronouncedDead].valueDateTime = "2022-01-08T15:30:00-05:00"
 * component[placeOfDeath].valueCodeableConcept = $v3-NullFlavor#OTH "Other"
   * text = "Lake"
