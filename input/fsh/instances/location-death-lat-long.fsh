@@ -8,6 +8,8 @@ Usage: #example
   * value = "29"
 * status = #active
 * name = "Lake Death Location - Lat/Long"
+// Address is a required field by USCore 
+* address.text = "Lake Death"
 * position
   * longitude = 36.146084
   * latitude = -114.413155
