@@ -2,14 +2,11 @@
 
 ####  CI Build for Future STU2 Version of MDI
 
-The version of MDI in production use by NCHS and Jurisdictional Vital Records Offices is [MDI STU1.1](https://hl7.org/fhir/us/mdi/STU1.1/).
+The published version of MDI is [MDI STU1.1](https://hl7.org/fhir/us/mdi/STU1.1/).
 
-This continuous integration build version of STU2 will evolve towards the candidate for a May 2024 STU2 ballot.
+This interim build reflects refactoring of content driven by the [harmonization of vital records FHIR Implementation Guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html).  This involves introduction of a dependency on the [Vital Records Death Reporting STU3-draft FHIR IG](https://build.fhir.org/ig/HL7/vrdr/) and on [Vital Records Common Library STU2-draft FHIR IG](https://build.fhir.org/ig/HL7/vr-common-library).  Much of the MDI STU1.1 content was a recapitulation of VRDR content due limitations of VRDR STU2, and now MDI simply references VRDR STU3 content. The purpose of this build is to enable software development that targets the harmonized MDI IG.
 
-Two types of changes are incorporated:
-
-* Minor extensions to the MDI STU1.1 specification along with minor improvements in documentation.
-* Refactoring of content driven by the [harmonization of vital records FHIR Implementation Guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html).  This involves introduction of a dependency on the [Vital Records Common Library FHIR IG]((https://hl7.org/fhir/us/vr-common-library/2024Jan) and [Vital Records Death Reporting FHIR IG](https://hl7.org/fhir/us/vrdr/).
+This continuous integration build version of MDI STU2 will evolve towards the candidate for a future STU2 ballot that will incorporate new content.  
 
 See the [change log](mdi_change_log.html) for an updated list of changes.
   
