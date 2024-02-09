@@ -1,3 +1,16 @@
+<div class="note-to-balloters" markdown="1">
+
+####  CI Build for Future STU2 Version of MDI
+
+The published version of MDI is [MDI STU1.1](https://hl7.org/fhir/us/mdi/STU1.1/).
+
+This interim build reflects refactoring of content driven by the [harmonization of vital records FHIR Implementation Guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html).  This involves introduction of a dependency on the [Vital Records Death Reporting STU3-draft FHIR IG](https://build.fhir.org/ig/HL7/vrdr/) and on [Vital Records Common Library STU2-draft FHIR IG](https://build.fhir.org/ig/HL7/vr-common-library).  Much of the MDI STU1.1 content was a recapitulation of VRDR content due limitations of VRDR STU2, and now MDI simply references VRDR STU3 content. The purpose of this build is to enable software development that targets the harmonized MDI IG.
+
+This continuous integration build version of MDI STU2 will evolve towards the candidate for a future STU2 ballot that will incorporate new content.  
+
+See the [change log](mdi_change_log.html) for an updated list of changes.
+  
+</div><!-- note-to-balloters -->
 ### Description
 This US-specific implementation guide (IG) provides guidance on the exchange of information to and from medicolegal death investigation (MDI) information systems. It supports interoperability between the MDI case management systems (CMS) used by medical examiner and coroner offices; forensic toxicology and other laboratory information management systems (LIMS); electronic death registration systems (EDRS) of jurisdictional vital records offices (VROs); and ancillary workflows whose systems have the capability of using Fast Healthcare Interoperability Resources (FHIR). This guide provides MDI CMS developers with the technical details and best practices to standardize MDI fields and interfaces. Stakeholders may use the narrative portions of this guide to inform policies and practices for data exchange between systems contributing to, and using information from, death investigations. This guide can serve as a base for local specifications.
 
@@ -8,16 +21,16 @@ The STU 1 version of the specification defines FHIR resources to support two dat
 * Death investigation findings exchanged between an MDI system and an EDRS via a document bundle: Bundle - Document MDI and EDRS
 * Forensic toxicology specimen analysis results sent from a forensic toxicology laboratory to an MDI information system via a message bundle: Bundle - Message Toxicology to MDI
 
-The STU 1.1 version provides updates to align with relevant profiles in the [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/), STU 2.1 and adds new resources and guidance as described in the [Change Log](change_log.html).
+The STU 1.1 version provides updates to align with relevant profiles in the [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/), STU 2.1 and adds new resources and guidance as described in the [Change Log](mdi_change_log.html).
 
 This guide includes the following sections, listed at the top of each page in the menu bar: 
 * [Home](index.html): Summary description and technical overview
-* [Background](background.html): Information on MDI dataflows and actors, the current work, and relationship to other IGs, as well as likely future MDI FHIR specification development
-* [Best Practices](best_practices.html): Guidance on implementation and use of this specification
-* [Specification](specification.html): Technical details on implementing the specification
-* [Terminology](terminology.html): List of all value sets used in this guide
-* [Downloads](downloads.html): Links for downloading the full IG package as well as format-specific definitions files and example files in XML, JSON, and TTL
-* [Change Log](change_log.html): List of changes made in each published update
+* [Background](mdi_background.html): Information on MDI dataflows and actors, the current work, and relationship to other IGs, as well as likely future MDI FHIR specification development
+* [Best Practices](mdi_best_practices.html): Guidance on implementation and use of this specification
+* [Specification](mdi_specification.html): Technical details on implementing the specification
+* [Terminology](mdi_terminology.html): List of all value sets used in this guide
+* [Downloads](mdi_downloads.html): Links for downloading the full IG package as well as format-specific definitions files and example files in XML, JSON, and TTL
+* [Change Log](mdi_change_log.html): List of changes made in each published update
 * [Artifacts Index Summary](artifacts.html): List of all FHIR artifacts specified by this guide, with brief descriptions
 
 ### Audience
