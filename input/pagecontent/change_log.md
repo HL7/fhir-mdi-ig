@@ -1,3 +1,11 @@
+### MDI STU2 Draft (for future Ballot)
+This early  STU2 draft of MDI incorporates refactoring as part of the [harmonization of vital records FHIR implementation guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html)
+
+#### Content Changes
+
+#### Harmonization Changes
+* For a detailed description of harmonization changes see [STU1.1 to STU2 Changes](mdi-content-transitions.html).
+
 ### MDI STU 1.1 (September 2023)
 
 #### Overall
