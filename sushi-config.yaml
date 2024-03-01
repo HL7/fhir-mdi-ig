@@ -236,18 +236,18 @@ groups:
       - documentreference-mdi-investigator-narrative-ex
       - MessageDefinition-toxicology-system
       - messageheader-mdi-tox-result-report-a-freeman
+      - observation-cause-of-death-part1-a-freeman
+      - observation-cause-of-death-part1-freeman-quantity-interval
 
   OtherExamples:
     name: Examples of resources defined elsewhere included in MDI examples 
     resources: 
       - DecedentDispositionMethod-a-freeman
       - location-death-atlanta-ga-a-freeman
-      #- location-death-lat-long
-      #- location-death-string
+      - location-death-lat-long
+      - location-death-string
       - location-injury-atlanta-ga-a-freeman
       - observation-autopsy-performed-indicator-a-freeman
-      - observation-cause-of-death-part1-a-freeman
-      #- observation-cause-of-death-part1-freeman-quantity-interval
       - observation-contributing-cause-of-death-part2-a-freeman
       - observation-death-date-a-freeman
       #- observation-death-date-partialdate
