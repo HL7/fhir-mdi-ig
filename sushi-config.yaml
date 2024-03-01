@@ -185,6 +185,13 @@ menu:
 #
 
 groups:
+  MDICapabilityStatements:
+    name: MDI Capability Statements 
+    resources:
+      - CapabilityStatement-edrs-server
+      - CapabilityStatement-forensic-toxicology-laboratory-server
+      - CapabilityStatement-mdi-cms-server
+ 
   MDIProfiles:
     name: MDI Profiles
     resources:  
@@ -217,27 +224,27 @@ groups:
     name: MDI Parameters
     resources:
       - expansion-parameters-mdi
-  
   MDIExamples:
-    name: MDI Examples
+    name: Examples of MDI-defined resources 
     resources:
       - bundle-mdi-and-edrs-a-freeman
       - bundle-mdi-tox-report-message-a-freeman
-      - CapabilityStatement-edrs-server
-      - CapabilityStatement-forensic-toxicology-laboratory-server
-      - CapabilityStatement-mdi-cms-server
       - composition-mdi-and-edrs-a-freeman
       - composition-mdi-and-edrs-draft
       - diagnosticreport-mdi-toxicology-lab-a-freeman
-      - DecedentDispositionMethod-a-freeman
       - documentreference-mdi-autopsy-report-ex
       - documentreference-mdi-investigator-narrative-ex
+      - MessageDefinition-toxicology-system
+      - messageheader-mdi-tox-result-report-a-freeman
+
+  OtherExamples:
+    name: Examples of resources defined elsewhere included in MDI examples 
+    resources: 
+      - DecedentDispositionMethod-a-freeman
       - location-death-atlanta-ga-a-freeman
       #- location-death-lat-long
       #- location-death-string
       - location-injury-atlanta-ga-a-freeman
-      - MessageDefinition-toxicology-system
-      - messageheader-mdi-tox-result-report-a-freeman
       - observation-autopsy-performed-indicator-a-freeman
       - observation-cause-of-death-part1-a-freeman
       #- observation-cause-of-death-part1-freeman-quantity-interval
@@ -274,8 +281,7 @@ groups:
       - us-core-practitioner-jm-lehz
       - us-core-practitioner-s-jones
 
-
-
+  
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
