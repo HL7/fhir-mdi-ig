@@ -88,6 +88,7 @@ parameters:
   show-inherited-invariants: false
   path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
   path-liquid: liquid
+  version-comparison-master: true 
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
