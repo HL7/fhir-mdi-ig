@@ -5,13 +5,13 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 canonical: http://hl7.org/fhir/us/mdi
 title: "Vital Records Medicolegal Death Investigation (MDI) FHIR Implementation Guide"
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 fhirVersion: 4.0.1
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.us.mdi
 name: MDI
 status: active # draft | active | retired | unknown
-version: 2.0.0-ci-build
+version: 2.0.0-ballot
 copyrightYear: 2023+
 license: CC0-1.0  # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html

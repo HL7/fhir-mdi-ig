@@ -31,5 +31,5 @@ Usage: #example
   * use = #home
   * line = "112 Miramar Ct"
   * city = "Danville"
-  * state = "NS" // "Nova Scotia"
-  * country = "CA"
+  * state = "IL" // was NS -- "Nova Scotia"
+  // * country = "CA"

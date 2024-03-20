@@ -1,5 +1,5 @@
 Instance: documentreference-mdi-investigator-narrative-ex
-InstanceOf: DocumentReference
+InstanceOf: DocumentReferenceMDIReport
 Title: "DocumentReference - MDI Report - Investigator's Narrative example"
 Description: "DocumentReference - MDI Report: Investigator's Narrative example"
 Usage: #example

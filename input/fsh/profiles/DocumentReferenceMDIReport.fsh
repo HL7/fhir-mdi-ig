@@ -6,3 +6,4 @@ Description: "This DocumentReference profile constrains the US Core DocumentRefe
 * status MS
 * type ^short = "If LOINC code for type is not available, use HL7 v3 Code System NullFlavor (http://terminology.hl7.org/CodeSystem/v3-NullFlavor) code=UNK, display=unknown 'unknown'."
 * category ^short = "Reference a terminology (code system & code) or use text to describe the document category."
+* category.text ^short = "If no system/code is available, describe the document category in text"

@@ -74,9 +74,10 @@ This MDI FHIR IG is designed for RESTful API implementations supporting data exc
 * application/x-www-form-urlencoded can be used for POST search requests if HTTP Form is used.
 
 The CapabilityStatement resources defined in this MDI FHIR IG are of kind=requirements, so represent recommended capabilities of systems involved in MDI data exchange. They specify the bare minimum interactions and operations for a limited group of MDI resources.
-* [CapabilityStatement - MDI CMS Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-mdi-cms-server)
-* [CapabilityStatement - Electronic Death Reporting System (EDRS) Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-edrs-server)
-* [CapabilityStatement - Forensic Toxicology Laboratory Server](http://hl7.org/fhir/us/mdi/CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server)
+
+* [CapabilityStatement - MDI CMS Server][CapabilityStatement-mdi-cms-server]
+* [CapabilityStatement - Electronic Death Reporting System (EDRS) Server][CapabilityStatement-edrs-server]
+* [CapabilityStatement - Forensic Toxicology Laboratory Server][CapabilityStatement-forensic-toxicology-laboratory-server]
 
 It is expected that any specific FHIR server implementing this MDI FHIR IG may allow or require more interactions and operations for a larger set of resources than those specified in the CapabilityStatement resources listed above. An example of a CapabilityStatement that defines the full capabilities of a specific FHIR server (kind=instance), is available for the Raven FHIR Server, maintained by Georgia Tech Research Institute (GTRI):
 * [CapabilityStatement](https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) for Raven FHIR Server

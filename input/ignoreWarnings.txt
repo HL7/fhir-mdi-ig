@@ -93,3 +93,41 @@ INFORMATION: Bundle/bundle-mdi-tox-report-message-a-freeman: Bundle.entry[18]: T
 INFORMATION: Bundle/bundle-mdi-tox-report-message-a-freeman: Bundle.entry[19]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi|2.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-mdi-tox-report-message-a-freeman: Bundle.entry[20]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi|2.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-mdi-tox-report-message-a-freeman: Bundle.entry[21]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi|2.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# Draft HL7 Codesystems -- beyond my control 
+INFORMATION: Organization/us-core-organization-tox-lab: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|0.1.0
+INFORMATION: StructureDefinition/Observation-toxicology-lab-result: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+INFORMATION: Bundle/bundle-mdi-tox-report-message-a-freeman: Bundle.entry[1].resource.entry[3].resource/*Organization/us-core-organization-tox-lab*/.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|0.1.0
+
+# OIDs are requested.  Waiting for next build of IG Publisher
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+
+# Variance Requested from TSMG 03/20/24
+INFORMATION: CodeSystem/CodeSystem-vr-codes: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+# This is a bug in the liquid CapStmt rendering code that has been reported - https://github.com/caspears/CapStatement/issues/2
+WARNING: CapabilityStatement/CapabilityStatement-edrs-server: CapabilityStatement.text.div: Hyperlink '#Composition' at 'div/table/tbody/tr/td/a' for 'Composition♦  ' resolves to multiple targets ($/text/div/h4/@id)
+WARNING: CapabilityStatement/CapabilityStatement-edrs-server: CapabilityStatement.text.div: Hyperlink '#Patient' at 'div/table/tbody/tr/td/a' for 'Patient♦  ' resolves to multiple targets ($/text/div/h4/@id)
+WARNING: CapabilityStatement/CapabilityStatement-edrs-server: CapabilityStatement.text.div: Hyperlink '#Location' at 'div/table/tbody/tr/td/a' for 'Location♦  ' resolves to multiple targets ($/text/div/h4/@id)
+WARNING: CapabilityStatement/CapabilityStatement-edrs-server: CapabilityStatement.text.div: Hyperlink '#Observation' at 'div/table/tbody/tr/td/a' for 'Observation♦  ' resolves to multiple targets ($/text/div/h4/@id)
+WARNING: CapabilityStatement/CapabilityStatement-edrs-server: CapabilityStatement.text.div: Hyperlink '#Bundle' at 'div/table/tbody/tr/td/a' for 'Bundle  ' resolves to multiple targets ($/text/div/h4/@id)
+WARNING: CapabilityStatement/CapabilityStatement-mdi-cms-server: CapabilityStatement.text.div: Hyperlink '#Composition' at 'div/table/tbody/tr/td/a' for 'Composition♦  ' resolves to multiple targets ($/text/div/h4/@id)
+WARNING: CapabilityStatement/CapabilityStatement-mdi-cms-server: CapabilityStatement.text.div: Hyperlink '#Patient' at 'div/table/tbody/tr/td/a' for 'Patient♦  ' resolves to multiple targets ($/text/div/h4/@id)
+WARNING: CapabilityStatement/CapabilityStatement-mdi-cms-server: CapabilityStatement.text.div: Hyperlink '#Location' at 'div/table/tbody/tr/td/a' for 'Location♦  ' resolves to multiple targets ($/text/div/h4/@id)
+WARNING: CapabilityStatement/CapabilityStatement-mdi-cms-server: CapabilityStatement.text.div: Hyperlink '#Observation' at 'div/table/tbody/tr/td/a' for 'Observation♦  ' resolves to multiple targets ($/text/div/h4/@id)
+WARNING: CapabilityStatement/CapabilityStatement-mdi-cms-server: CapabilityStatement.text.div: Hyperlink '#Bundle' at 'div/table/tbody/tr/td/a' for 'Bundle  ' resolves to multiple targets ($/text/div/h4/@id)
+
+# This profile defines NO slices on category, so this info message is curious.  The profile says to use the category.text, and that is what this example does. 
+INFORMATION: DocumentReference/documentreference-mdi-investigator-narrative-ex: DocumentReference.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report|2.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
+
