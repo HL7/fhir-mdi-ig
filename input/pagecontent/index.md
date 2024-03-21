@@ -1,12 +1,8 @@
 <div class="note-to-balloters" markdown="1">
 
-####  CI Build for Future STU2 Version of MDI
+This STU2 build of MDI reflects refactoring of content driven by the [harmonization of vital records FHIR Implementation Guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html).  This involves introduction of a dependency on the [Vital Records Death Reporting STU3-draft FHIR IG](https://build.fhir.org/ig/HL7/vrdr/) and on [Vital Records Common Library STU2-draft FHIR IG](https://build.fhir.org/ig/HL7/vr-common-library).  Much of the MDI STU1.1 content was a recapitulation of VRDR content due limitations of VRDR STU2, and now MDI simply references VRDR STU3 content. The purpose of this build is to enable software development that targets the harmonized MDI IG.
 
-The published version of MDI is [MDI STU1.1](https://hl7.org/fhir/us/mdi/STU1.1/).
-
-This interim build reflects refactoring of content driven by the [harmonization of vital records FHIR Implementation Guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html).  This involves introduction of a dependency on the [Vital Records Death Reporting STU3-draft FHIR IG](https://build.fhir.org/ig/HL7/vrdr/) and on [Vital Records Common Library STU2-draft FHIR IG](https://build.fhir.org/ig/HL7/vr-common-library).  Much of the MDI STU1.1 content was a recapitulation of VRDR content due limitations of VRDR STU2, and now MDI simply references VRDR STU3 content. The purpose of this build is to enable software development that targets the harmonized MDI IG.
-
-This continuous integration build version of MDI STU2 will evolve towards the candidate for a future STU2 ballot that will incorporate new content.  
+Other than implementing the harmonization and making minor corrections required by publisher changes, **no material changes have been made between MDI STU1 and MDI STU2.
 
 See the [change log](mdi_change_log.html) for an updated list of changes.
   
