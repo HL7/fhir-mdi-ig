@@ -1,6 +1,6 @@
 {
 	"package-id": "hl7.fhir.us.mdi",
-	"version": "2.0.0",
+	"version": "2.0.0-ballot",
 	"path": "http://hl7.org/fhir/us/mdi/2024May",
 	"mode": "working",
 	"status": "ballot",

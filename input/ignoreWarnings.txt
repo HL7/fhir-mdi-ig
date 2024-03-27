@@ -10,10 +10,7 @@ This element does not match any known slice defined in the profile http://hl7.or
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-mdi-cause-of-death-part1').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab').baseDefinition: US FHIR Usage rules require that all profiles on Specimen derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
-# This is the code that is used in the Death Certification VRDR profile
-The code '103693007' is valid but is not active
-
-# Best practice recommendations relevant?
+# Best practice recommendations are not appropriate for the MDI use case 
 WARNING: Bundle/bundle-mdi-and-edrs-a-freeman: Bundle.entry[2].resource/*Observation/observation-manner-of-death-a-freeman-accidental*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/bundle-mdi-and-edrs-a-freeman: Bundle.entry[3].resource/*Observation/observation-cause-of-death-part1-a-freeman*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/bundle-mdi-and-edrs-a-freeman: Bundle.entry[4].resource/*Observation/observation-contributing-cause-of-death-part2-a-freeman*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()

@@ -5,7 +5,7 @@ Description: "Procedure - Death Certification: Freeman example"
 Usage: #example
 * identifier.value = "180"
 * status = #completed
-* category = $sct#103693007 "Diagnostic procedure"
+* category = $sct#307930005 "Death certificate (record artifact)"
 * code = $sct#308646001 "Death certification"
 * subject.reference = "Patient/us-core-patient-a-freeman"
 * performedDateTime = "2022-01-18T16:39:40-05:00"
