@@ -1,11 +1,5 @@
 == Suppressed Messages ==
 
-# Examples have optional slices that are not defined in the profile - not matching is expected behavior
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report|1.1.0
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs|1.1.0
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi|1.1.0
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|5.0.1
-
 # APPROVED by HL7 Cross Group Projects WG, Minutes: (https://confluence.hl7.org/pages/viewpage.action?pageId=90341999 & https://confluence.hl7.org/pages/viewpage.action?pageId=90358833)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-mdi-cause-of-death-part1').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab').baseDefinition: US FHIR Usage rules require that all profiles on Specimen derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
@@ -66,7 +60,7 @@ INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs a
 # Variance Requested from TSMG 03/20/24
 INFORMATION: CodeSystem/CodeSystem-vr-codes: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# This profile defines NO slices on category, so this info message is curious.  The profile says to use the category.text, and that is what this example does. 
+# This profile is based on USCore Document Reference which defines a slice on category with a valueset containing a single code -- #clinical note. Since this instance doesn't cite that code, it is an unknown slice.  This is expected.  The profile says to use the category.text, and that is what this example does. 
 INFORMATION: DocumentReference/documentreference-mdi-investigator-narrative-ex: DocumentReference.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Open slicing in bundles 

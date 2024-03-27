@@ -6,6 +6,7 @@ Usage: #example
 * status = #current
 * docStatus = #final
 * type = $v3-NullFlavor#UNK "unknown"
+* category = $v3-NullFlavor#OTH "other"
 * category.text = "Investigator’s Narrative"
 * subject = Reference(us-core-patient-a-freeman)
 * date = "2023-01-13T15:52:20.000+00:00"
