@@ -4,7 +4,7 @@
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-mdi-cause-of-death-part1').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab').baseDefinition: US FHIR Usage rules require that all profiles on Specimen derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
-# Best practice recommendations are not appropriate for the MDI use case 
+# Best practice recommendations are not appropriate for the MDI use case. For vital records reporting the performer and effective time are  either/or/both not known, or not important. These are not really clinical observations, but abstracted facts represented using Observation resources. 
 WARNING: Bundle/bundle-mdi-and-edrs-a-freeman: Bundle.entry[2].resource/*Observation/observation-manner-of-death-a-freeman-accidental*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/bundle-mdi-and-edrs-a-freeman: Bundle.entry[3].resource/*Observation/observation-cause-of-death-part1-a-freeman*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/bundle-mdi-and-edrs-a-freeman: Bundle.entry[4].resource/*Observation/observation-contributing-cause-of-death-part2-a-freeman*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
@@ -63,7 +63,7 @@ INFORMATION: CodeSystem/CodeSystem-vr-codes: CodeSystem: Most code systems defin
 # This profile is based on USCore Document Reference which defines a slice on category with a valueset containing a single code -- #clinical note. Since this instance doesn't cite that code, it is an unknown slice.  This is expected.  The profile says to use the category.text, and that is what this example does. 
 INFORMATION: DocumentReference/documentreference-mdi-investigator-narrative-ex: DocumentReference.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# Open slicing in bundles 
+# Does not match any defined slice, but these slices are all correct and expected. 
 INFORMATION: Bundle/bundle-mdi-and-edrs-a-freeman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-mdi-and-edrs-a-freeman: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-mdi-and-edrs-a-freeman: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
