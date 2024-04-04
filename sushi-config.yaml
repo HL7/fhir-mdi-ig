@@ -36,10 +36,10 @@ dependencies:
     id: uscdcphinvads
   hl7.fhir.us.odh: 1.2.0
   hl7.fhir.us.vr-common-library: 
-    version: current 
+    version: 2.0.0-ballot   # current 
     id: hl7fhirusvrcommonlibrary
   hl7.fhir.us.vrdr: 
-    version: current 
+    version: current # 2.0.0-ballot 
     id: hl7fhirusvrdr
 
 # The pages property corresponds to IG.definition.page. SUSHI can
