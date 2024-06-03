@@ -1,3 +1,36 @@
+<style>
+
+:root {
+  --note-background-color: #fff2ff; /* 19. (STU) Note box background color */
+  --note-border-left-color: #ffa0ff; /* 20. (STU) Note box border color */
+}
+
+.note {
+  margin: 5px;
+  padding: 10px;
+  border-left-style: solid;
+  background-color: #9ee2ff;
+  border-left-color: #00b2ff;
+}
+
+.note::before {
+  white-space: pre;
+  content: "May 2024 Snapshot\A ";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+
+</style>
+
+<div class="note" markdown="1">
+
+This is an initial snapshot of the MDI IG following the May 2024 ballot to provide a target for software development efforts that reflects the harmonization of MDI and VRDR.
+MDI Development continues on the [master branch]( https://build.fhir.org/ig/HL7/fhir-mdi-ig/branches/master), and that content will be balloted prior to publication.
+
+This snapshot is not an official publication of HL7 and has not undergone formal approval by the HL7 Public Health Working Group or the HL7 FHIR Management Group. 
+</div><!-- note -->
+
 <div class="note-to-balloters" markdown="1">
 
 This STU2 build of MDI reflects refactoring of content driven by the [harmonization of vital records FHIR Implementation Guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html).  This involves introduction of a dependency on the [Vital Records Death Reporting STU3-draft FHIR IG](https://build.fhir.org/ig/HL7/vrdr/) and on [Vital Records Common Library STU2-draft FHIR IG](https://build.fhir.org/ig/HL7/vr-common-library).  Much of the MDI STU1.1 content was a recapitulation of VRDR content due limitations of VRDR STU2, and now MDI simply references VRDR STU3 content. The purpose of this build is to enable software development that targets the harmonized MDI IG.
