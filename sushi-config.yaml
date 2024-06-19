@@ -10,7 +10,7 @@ fhirVersion: 4.0.1
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.us.mdi
 name: MDI
-status: active # draft | active | retired | unknown
+status: draft # draft | active | retired | unknown
 version: 2.0.0-snapshot1
 copyrightYear: 2023+
 license: CC0-1.0  # https://www.hl7.org/fhir/valueset-spdx-license.html
