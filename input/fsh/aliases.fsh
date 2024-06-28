@@ -14,3 +14,12 @@ Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent
 //Alias: $ValueSet-certifier-types-vr = http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-certifier-types-vr
 Alias: $us-core-documentreference-category = http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category
 Alias: $dataabsentreason401 = http://hl7.org/fhir/CodeSystem/data-absent-reason|4.0.1  
+
+// VRDR FHIR IG
+Alias: DeathCertificate = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate
+Alias: ExaminerContacted = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-examiner-contacted
+
+// Vital Records Common Library
+Alias: CertificateNumberVitalRecords = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber
+Alias: AuxiliaryStateIdentifier1VitalRecords = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1
+Alias: AuxiliaryStateIdentifier2VitalRecords = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier2
