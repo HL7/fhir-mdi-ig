@@ -1,8 +1,8 @@
-Profile: BundleDocumentMDICCRA
+Profile: BundleDocumentMDICCA
 Parent: Bundle
-Id: Bundle-document-mdi-ccr-approval
-Title: "Bundle - Document MDI CCR Approval"
-Description: "This Bundle profile represents a Document Bundle from an EDRS to an MDI CMS for a CCR approval status."
+Id: Bundle-document-mdi-cca
+Title: "Bundle - Document MDI Cremation Clearance Authorization"
+Description: "This Bundle profile represents a Document Bundle from an MDI CMS to an EDRS for a Cremation Clearance Authorization with approval status."
 * identifier 1..
 * identifier.extension contains
     CertificateNumberVitalRecords named certificateNumber 0..1 and
