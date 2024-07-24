@@ -1,0 +1,46 @@
+Instance: death-certificate-004c3928-acad-4942-9d16
+InstanceOf: Composition
+Usage: #inline
+* meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate"
+* extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/StateSpecificField"
+* extension.valueString = "State Specific Content"
+* status = #final
+* type = $loinc#64297-5 "death certificate"
+* subject = Reference(urn:uuid:decedent-9008a8bc-efa7-4c36-b35d)
+* date = "2023-04-27"
+* author = Reference(urn:uuid:certifier-70a8036d-911f-4cb8-853f)
+* title = "Death Certificate"
+* attester.mode = #legal
+* attester.time = "2023-04-27T15:30:00-04:00"
+* attester.party = Reference(urn:uuid:certifier-70a8036d-911f-4cb8-853f)
+* event.code = $sct#103693007 "Diagnostic procedure (procedure)"
+* event.detail = Reference(urn:uuid:death-certification-procedure-36721e5d-13b3-4ec4-8f4f)
+* section.entry[0] = Reference(urn:uuid:decedent-9008a8bc-efa7-4c36-b35d)
+* section.entry[+] = Reference(urn:uuid:death-certification-procedure-36721e5d-13b3-4ec4-8f4f)
+* section.entry[+] = Reference(urn:uuid:interested-party-75836e46-ff80-4481-b0ad)
+* section.entry[+] = Reference(urn:uuid:interested-party-31d4bc9f-8d5d-4acb-8bc5)
+* section.entry[+] = Reference(urn:uuid:decedent-age-0775c072-1bc2-4dd7-9d53)
+* section.entry[+] = Reference(urn:uuid:decedent-military-service-e7f709db-6f9e-41e4-b956)
+* section.entry[+] = Reference(urn:uuid:decedent-father-d8f85433-05f0-4733-8d08)
+* section.entry[+] = Reference(urn:uuid:decedent-mother-4560966b-6b78-4991-ae26)
+* section.entry[+] = Reference(urn:uuid:certifier-70a8036d-911f-4cb8-853f)
+* section.entry[+] = Reference(urn:uuid:mortician-a1f448af-6f76-4d6f-8df8)
+* section.entry[+] = Reference(urn:uuid:disposition-location-ecf38a17-064e-4c85-a364)
+* section.entry[+] = Reference(urn:uuid:disposition-method-ec01beb1-1273-4bec-adce)
+* section.entry[+] = Reference(urn:uuid:funeral-home-03ceee6f-4555-43a4-ae41)
+* section.entry[+] = Reference(urn:uuid:decedent-usual-work-52507e6e-32f4-4cc2-af5b)
+* section.entry[+] = Reference(urn:uuid:decedent-education-level-7086a60f-4a38-4f30-b009)
+* section.entry[+] = Reference(urn:uuid:death-date-62407620-84f8-422d-9fd9)
+* section.entry[+] = Reference(urn:uuid:manner-of-death-aa03e6a9-b5ac-430f-9f21)
+* section.entry[+] = Reference(urn:uuid:death-location-3b957cd9-6c41-41eb-95cd)
+* section.entry[+] = Reference(urn:uuid:cause-of-death-0eb436df-1b59-4f8f-b19e)
+* section.entry[+] = Reference(urn:uuid:contributing-to-death-ac1ba18d-28ea-47e2-902d)
+* section.entry[+] = Reference(urn:uuid:autopsy-performed-3cd47871-819b-4718-b9a1)
+* section.entry[+] = Reference(urn:uuid:tobacco-use-30d4bbf5-23de-455d-9b35)
+* section.entry[+] = Reference(urn:uuid:decedent-pregnancy-03fdf30c-59f0-49c1-a263)
+* section.entry[+] = Reference(urn:uuid:examiner-contacted-582f8d1a-7807-4705-b92f)
+* section.entry[+] = Reference(urn:uuid:injury-incident-a6018f87-33ab-419b-8ab3)
+* section.entry[+] = Reference(urn:uuid:injury-location-b7eb43f3-54c7-4156-8d62)
+* section.entry[+] = Reference(urn:uuid:death-pronouncement-performer-f37cd296-b432-430c-80ed)
+* section.entry[+] = Reference(urn:uuid:ccr-observation-controltype-13fa9922-c3ac-4052-991e)
+* section.entry[+] = Reference(urn:uuid:ccr-relatedperson-cfb860e4-777e-4946-aa2e)
