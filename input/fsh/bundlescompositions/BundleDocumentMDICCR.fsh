@@ -10,7 +10,7 @@ Description: "This Bundle profile represents a Document Bundle from an EDRS to a
 * type = #document (exactly)
 * type MS
 * entry 
-  * ^slicing.discriminator.type = #profile
+  * ^slicing.discriminator.type = #type
   * ^slicing.discriminator.path = "$this.resource"
   * ^slicing.rules = #open
   * ^slicing.description = "Slicing based on the profile"
