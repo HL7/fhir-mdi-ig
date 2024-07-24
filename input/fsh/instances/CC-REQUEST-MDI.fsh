@@ -1,5 +1,5 @@
 Instance: CC-REQUEST-MDI
-InstanceOf: BundleDocumentMDICCRR
+InstanceOf: BundleDocumentMDICCR
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-ccr"
 * identifier.extension[0].url = "http://example-edrs.org/fhir/StructureDefinition/dave-case-id"
