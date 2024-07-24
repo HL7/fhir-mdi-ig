@@ -41,5 +41,3 @@ Usage: #inline
 * section.entry[+] = Reference(urn:uuid:injury-incident-a6018f87-33ab-419b-8ab3)
 * section.entry[+] = Reference(urn:uuid:injury-location-b7eb43f3-54c7-4156-8d62)
 * section.entry[+] = Reference(urn:uuid:death-pronouncement-performer-f37cd296-b432-430c-80ed)
-* section.entry[+] = Reference(urn:uuid:ccr-observation-controltype-13fa9922-c3ac-4052-991e)
-* section.entry[+] = Reference(urn:uuid:ccr-relatedperson-cfb860e4-777e-4946-aa2e)
