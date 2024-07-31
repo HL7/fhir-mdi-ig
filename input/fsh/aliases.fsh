@@ -34,4 +34,4 @@ Alias: ExaminerContacted = http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-
 Alias: CertificateNumberVitalRecords = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber
 Alias: AuxiliaryStateIdentifier1VitalRecords = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1
 Alias: AuxiliaryStateIdentifier2VitalRecords = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier2
-Alias: ObservationAutopsyPerformedIndicatorVitalRecords = http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-autopsy-performed-indicator-vr
+Alias: ObservationAutopsyPerformedIndicatorVitalRecords = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr

@@ -151,7 +151,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
   * entry ^slicing.discriminator.type = #profile
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
-* insert BundleSectionSlice(exam-autopsy, autopsy-performed, 0, *,  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]],  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]], ObservationAutopsyPerformedIndicatorVitalRecords )
+* insert BundleSectionSlice(exam-autopsy, autopsy-performed, 0, *,  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]],  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]], AutopsyPerformedIndicator )
 * insert BundleSectionSlice(exam-autopsy, autopsy-location, 0, *,  [[If autopsy was performed, location.]],  [[If autopsy was performed, location.]], USCoreOrganizationProfile or USCoreLocation )
 
 

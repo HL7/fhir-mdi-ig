@@ -1,8 +1,8 @@
 Instance: observation-autopsy-performed-indicator-a-freeman
-InstanceOf: ObservationAutopsyPerformedIndicatorVitalRecords
+InstanceOf: AutopsyPerformedIndicator
 Title: "Observation - Autopsy Performed Indicator - Freeman"
 Description: "Observation - Autopsy Performed Indicator: Freeman example"
-Usage: #inline
+Usage: #example
 * status = #final
 * code = $loinc#85699-7
 * subject = Reference(us-core-patient-a-freeman)
