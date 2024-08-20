@@ -12,7 +12,7 @@ Description: "This code system contains codes for use in death investigations an
 * #cause-manner "Cause and Manner of Death Section"
 * #medical-history "Medical History Section"
 * #exam-autopsy "Exam/Autopsy Section"
-// Sections for Cremation Clearance Compositions
+// Sections for Death Certificate Review and Cremation Clearance
 * #ccr-authorizing-agent "Cremation Clearance Authorizing Agent Section"
 * #ccr-info "Cremation Clearance Information Section"
 * #Death-Certificate-review "Death Certificate Review Section"
