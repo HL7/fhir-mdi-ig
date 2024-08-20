@@ -18,7 +18,7 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * title = "Composition - Cremation Clearance Request - Example"
 // 
 * section[Death-Certificate-review]
-  * insert addNamedEntryComposition(ObservationCertifiedWorkflow, Observation, observation-certified-workflow-ccr-ex1)
+  * insert addNamedEntryComposition(death-certificate-cert-status, Observation, observation-certified-workflow-ccr-ex1)
 //
 * section[+]
 //  * title = "Cremation Clearance Information Section"
