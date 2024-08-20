@@ -7,12 +7,12 @@ Description: "This Composition contains information for a request to review deat
 * extension[extension-tracking-numbers] 
   * ^short = "A tracking number (e.g., case number or file number) assigned by an EDRS or other organization to facilitate recognition of common case records across disparate systems"
   * ^definition = "A tracking number (e.g., case number or file number) assigned by an EDRS or other organization to facilitate recognition of common case records across disparate systems"
-* extension contains ExtensionDeathCertificateReviewReason named Extension-death-certificate-review-reason 1..*
+* extension contains ExtensionDeathCertificateReviewReason named Extension-death-certificate-review-reason 0..*
 * extension[Extension-death-certificate-review-reason] 
   * ^short = "Reason for the death certificate review"
   * ^definition = "Reason for the death certificate review (e.g., cremation clearance)"
 //Extensions describing the Cremation Clearance statuses
-* extension contains ExtensionCremationClearanceStatus named Extension-cremation-clearance-status 1..1
+* extension contains ExtensionCremationClearanceStatus named Extension-cremation-clearance-status 0..1
 * extension[Extension-cremation-clearance-status] ^short = "Status of the Cremation Clearance (e.g., requested, pending, rejected, approved). Expected to be Requested in Cremation Clearance Request."
   * ^definition = "Status of the Cremation Clearance (e.g., requested, pending, rejected, approved)"
 * extension contains ExtensionMECertificationAffirmation named Extension-me-certification-affirmation 0..1

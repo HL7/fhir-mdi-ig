@@ -4,10 +4,10 @@ Usage: #example
 Title: "Composition - Death Certificate Revirew for Cremation Clearance Request - Example 1"
 Description: "Death Certificate Revirew for Cremation Clearance Request Composition: example 1"
 *  extension[ExtensionDeathCertificateReviewReason].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUEST_Form "Cremation Clearance Request Form"
-*  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = CsCremationClearanceExample#CREM_C_REQUEST "Requested"
-*  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = CsCremationClearanceExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
+*  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUEST "Requested"
+*  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = CsDeathCertReviewExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
 *  extension[ExtensionCremationClearanceCoroner].valueCodeableConcept = $sct#385432009 "Not applicable"
-*  extension[ExtensionCremationClearanceSignature].valueCodeableConcept = CsCremationClearanceExample#CREM_C_UNSIGNED "Unsigned"
+*  extension[ExtensionCremationClearanceSignature].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_UNSIGNED "Unsigned"
 //
 * status = #preliminary
 * type = $loinc#86807-5 "Death administrative information Document"
