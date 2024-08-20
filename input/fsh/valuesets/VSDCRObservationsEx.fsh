@@ -6,8 +6,8 @@ Description: "This value set contains example codes for Death Certificate Review
 * ^experimental = false
 
 // Example Observation codes related to the Decedent
-* CsCremationClearanceExample#Embalmed "Embalmed Observation"
-* CsCremationClearanceExample#CommunicableDisease "Communicable Disease Observation"
+* CsDeathCertReviewExample#Embalmed "Embalmed Observation"
+* CsDeathCertReviewExample#CommunicableDisease "Communicable Disease Observation"
 
 // Example Observation codes related to the Death Certificate review
 * CsDeathCertReviewExample#CertifiedWorkflow "Certified Workflow Observation"
