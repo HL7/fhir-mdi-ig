@@ -1,19 +1,3 @@
-RuleSet: CompositionSectionEntrySlicingMDI(section)
-* section contains {section} 0..1
-* section[{section}].code = CodeSystemMDI#{section}
-* section[{section}] ^label = "{section}"
-* section[{section}] ^short = "{section}"
-* section[{section}].entry ^slicing.discriminator.type = #profile
-* section[{section}].entry ^slicing.discriminator.path = "$this.resolve()"
-* section[{section}].entry ^slicing.rules = #open
-
-RuleSet: CompositionSectionEntryNoSlicingMDI(section)
-* section contains {section} 0..1
-* section[{section}].code = CodeSystemMDI#{section}
-* section[{section}] ^label = "{section}"
-* section[{section}] ^short = "{section}"
-
-
 Profile: CompositionMDIAndEDRS
 Parent: Composition
 Id: Composition-mdi-and-edrs
@@ -48,7 +32,6 @@ Description: "This Composition profile represents data exchanged between an MDI 
   * ^definition = "The Composition is broken into sections that, where possible, align with the sections in the 'Common data elements working document'."
   * code 1..1
 
-//* insert CompositionSectionEntrySlicingMDI(additional-demographics)
 * section contains additional-demographics 0..1
 * section[additional-demographics].entry ^slicing.discriminator.type = #profile
 * section[additional-demographics].entry ^slicing.discriminator.path = "$this.resolve()"
@@ -66,7 +49,8 @@ Description: "This Composition profile represents data exchanged between an MDI 
 * insert CompositionSectionEntrySlicingMDI(cause-manner)
 * insert CompositionSectionEntrySlicingMDI(medical-history)
 * insert CompositionSectionEntrySlicingMDI(exam-autopsy)
-* insert CompositionSectionEntryNoSlicingMDI(narratives )
+* insert CompositionSectionEntryNoSlicingMDI(narratives)
+
 * section[circumstances] ^label = "This slice contains circumstances of the death."
   * ^short = "This slice contains circumstances of the death."
   * ^definition = "This section contains circumstances of the death."
@@ -80,11 +64,10 @@ Description: "This Composition profile represents data exchanged between an MDI 
     * ^short = "Entries that are contained in the Circumstances section"
     * ^definition = "Entries that are contained in the Circumstances section"
   * emptyReason MS
-* insert BundleSectionSlice(circumstances, death-location, 0, 1,  [[Apparent address where death actually occurred.]],  [[Apparent address where death actually occurred.]], DeathLocation )
-* insert BundleSectionSlice(circumstances, tobacco-use-contributed-to-death, 0, 1,  [[Whether or not tobacco use contributed to death.]],  [[Whether or not tobacco use contributed to death.]], TobaccoUseContributedToDeath )
-* insert BundleSectionSlice(circumstances, decedent-pregnancy, 1, 1,  [[Pregnancy status of the decedent.]],  [[Pregnancy status of the decedent.]], DecedentPregnancyStatus )
-* insert BundleSectionSlice(circumstances, injury-location, 1, 1,  [[Apparent address where injury occurred.]],  [[Apparent address where injury occurred.]], InjuryLocation )
-
+* insert CompositionSectionSlice(circumstances, death-location, 0, 1,  [[Apparent address where death actually occurred.]],  [[Apparent address where death actually occurred.]], DeathLocation )
+* insert CompositionSectionSlice(circumstances, tobacco-use-contributed-to-death, 0, 1,  [[Whether or not tobacco use contributed to death.]],  [[Whether or not tobacco use contributed to death.]], TobaccoUseContributedToDeath )
+* insert CompositionSectionSlice(circumstances, decedent-pregnancy, 1, 1,  [[Pregnancy status of the decedent.]],  [[Pregnancy status of the decedent.]], DecedentPregnancyStatus )
+* insert CompositionSectionSlice(circumstances, injury-location, 1, 1,  [[Apparent address where injury occurred.]],  [[Apparent address where injury occurred.]], InjuryLocation )
 
 * section[jurisdiction] ^label = "This slice contains jurisdictional information about the death."
   * ^short = "This slice contains jurisdictional information about the death."
@@ -99,8 +82,8 @@ Description: "This Composition profile represents data exchanged between an MDI 
     * ^short = "Entries that are contained in the Jurisdiction section"
     * ^definition = "Entries that are contained in the Jurisdiction section"
   * emptyReason MS
-* insert BundleSectionSlice(jurisdiction, death-date, 0, 1,  [[The estimated and pronounced date of death, also contains the death pronouncer practitioner.]],  [[The estimated and pronounced date of death, also contains the death pronouncer practitioner.]], DeathDate )
-* insert BundleSectionSlice(jurisdiction, death-certification, 0, 1,  [[The procedure where the certification of death was performed by the certifier.]],  [[The procedure where the certification of death was performed by the certifier.]], DeathCertification )
+* insert CompositionSectionSlice(jurisdiction, death-date, 0, 1,  [[The estimated and pronounced date of death, also contains the death pronouncer practitioner.]],  [[The estimated and pronounced date of death, also contains the death pronouncer practitioner.]], DeathDate )
+* insert CompositionSectionSlice(jurisdiction, death-certification, 0, 1,  [[The procedure where the certification of death was performed by the certifier.]],  [[The procedure where the certification of death was performed by the certifier.]], DeathCertification )
 
 * section[cause-manner] ^label = "This slice contains information about the cause and manner of death."
   * ^short = "This slice contains information about the cause and manner of death."
@@ -115,11 +98,10 @@ Description: "This Composition profile represents data exchanged between an MDI 
     * ^short = "Entries that are contained in the Cause-Manner section"
     * ^definition = "Entries that are contained in the Cause-Manner section"
   * emptyReason MS
-* insert BundleSectionSlice(cause-manner, cause, 0, 4,  [[Up to 4 lines of cause of death.]],  [[Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death.]], MDICauseOfDeathPart1 )
-* insert BundleSectionSlice(cause-manner, other-condition, 0, 1,  [[Other significant conditions contributing to death but not resulting in the underlying cause.]],  [[Other significant conditions contributing to death but not resulting in the underlying cause.]], CauseOfDeathPart2 )
-* insert BundleSectionSlice(cause-manner, manner, 0, 1,  [[Manner of death]],  [[The conclusion arrived at upon completion of death investigation regarding the manner of death.]], MannerOfDeath )
-* insert BundleSectionSlice(cause-manner, how-injury, 0, 1,  [[Certified explanation of how injury occurred.]],  [[Certified explanation of how injury occurred.]], InjuryIncident )
-
+* insert CompositionSectionSlice(cause-manner, cause, 0, 4,  [[Up to 4 lines of cause of death.]],  [[Up to 5 lines of cause of death providing the ordered chain of events with a causal relationship to the decedent’s death.]], MDICauseOfDeathPart1 )
+* insert CompositionSectionSlice(cause-manner, other-condition, 0, 1,  [[Other significant conditions contributing to death but not resulting in the underlying cause.]],  [[Other significant conditions contributing to death but not resulting in the underlying cause.]], CauseOfDeathPart2 )
+* insert CompositionSectionSlice(cause-manner, manner, 0, 1,  [[Manner of death]],  [[The conclusion arrived at upon completion of death investigation regarding the manner of death.]], MannerOfDeath )
+* insert CompositionSectionSlice(cause-manner, how-injury, 0, 1,  [[Certified explanation of how injury occurred.]],  [[Certified explanation of how injury occurred.]], InjuryIncident )
 
 * section[medical-history] ^label = "This slice contains relevant medical history about the decedent."
   * ^short = "This slice contains relevant medical history about the decedent."
@@ -136,7 +118,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
   * emptyReason MS
-* insert BundleSectionSlice(medical-history, history-condition, 0, 1,  [[Coded medical conditions.]],  [[Coded medical conditions.]], USCoreConditionEncounterDiagnosisProfile or USCoreConditionProblemsHealthConcernsProfile )
+* insert CompositionSectionSlice(medical-history, history-condition, 0, 1,  [[Coded medical conditions.]],  [[Coded medical conditions.]], USCoreConditionEncounterDiagnosisProfile or USCoreConditionProblemsHealthConcernsProfile )
 
 * section[exam-autopsy] ^label = "This slice contains exam and autopsy information."
   * ^short = "This slice contains exam and autopsy information."
@@ -151,9 +133,8 @@ Description: "This Composition profile represents data exchanged between an MDI 
   * entry ^slicing.discriminator.type = #profile
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
-* insert BundleSectionSlice(exam-autopsy, autopsy-performed, 0, *,  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]],  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]], AutopsyPerformedIndicator )
-* insert BundleSectionSlice(exam-autopsy, autopsy-location, 0, *,  [[If autopsy was performed, location.]],  [[If autopsy was performed, location.]], USCoreOrganizationProfile or USCoreLocation )
-
+* insert CompositionSectionSlice(exam-autopsy, autopsy-performed, 0, *,  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]],  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]], AutopsyPerformedIndicator )
+* insert CompositionSectionSlice(exam-autopsy, autopsy-location, 0, *,  [[If autopsy was performed, location.]],  [[If autopsy was performed, location.]], USCoreOrganizationProfile or USCoreLocation )
 
 * section[narratives] ^label = "This slice contains additional death investigation narrative descriptions."
   * ^short = "This slice contains additional death investigation narrative descriptions."

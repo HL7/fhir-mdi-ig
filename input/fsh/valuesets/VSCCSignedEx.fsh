@@ -4,5 +4,5 @@ Title: "ValueSet - Cremation Clearance Signed example"
 Description: "This value set contains example codes for the signature status of the Cremation Clearance."
 * ^status = #active
 * ^experimental = false
-* CsCremationClearanceExample#CREM_C_SIGNED "Signed"
-* CsCremationClearanceExample#CREM_C_UNSIGNED "Unsigned"
+* CsDeathCertReviewExample#CREM_C_SIGNED "Signed"
+* CsDeathCertReviewExample#CREM_C_UNSIGNED "Unsigned"
