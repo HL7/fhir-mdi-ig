@@ -23,6 +23,7 @@ Alias: $location-physical-type = http://terminology.hl7.org/CodeSystem/location-
 Alias: $id_1 = http://snomed.info/id
 Alias: $organization-type = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: $controltype = http://example-edrs.org/fhir/controltype
+Alias: $vrdr-document-section-cs = http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs
 
 
 
