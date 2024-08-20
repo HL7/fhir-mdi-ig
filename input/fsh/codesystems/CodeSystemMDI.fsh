@@ -5,12 +5,18 @@ Description: "This code system contains codes for use in death investigations an
 * ^caseSensitive = true
 * ^content = #complete
 * ^experimental = false
+// Sections for MDI and EDRS Composition
 * #demographics "Demographics Section"
 * #circumstances "Circumstances of the Death Section"
 * #jurisdiction "Jurisdiction Section"
 * #cause-manner "Cause and Manner of Death Section"
 * #medical-history "Medical History Section"
 * #exam-autopsy "Exam/Autopsy Section"
+// Sections for Cremation Clearance Compositions
+* #ccr-authorizing-agent "Cremation Clearance Authorizing Agent Section"
+* #ccr-info "Cremation Clearance Information Section"
+* #Death-Certificate-review "Death Certificate Review Section"
+
 * #mdi-case-number "MDI Case Number"
 * #edrs-file-number "EDRS File Number"
 * #tox-lab-case-number "Toxicology Laboratory Case Number"
