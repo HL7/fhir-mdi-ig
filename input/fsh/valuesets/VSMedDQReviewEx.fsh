@@ -1,7 +1,7 @@
-ValueSet: VSDCRreasonsEx
-Id: vs-dc-review-reasons-example
-Title: "ValueSet - Death Certificate Review Reasons example"
-Description: "This value set contains example codes for death crtificate review reasons."
+ValueSet: VSMedDQReviewEx
+Id: vs-med-dq-review-example
+Title: "ValueSet - Medical Data Quality Review example"
+Description: "This value set contains example codes for medical data quality review."
 * ^status = #active
 * ^experimental = false
 * CsDeathCertReviewExample#MED_INF_DQ_MEDICAL_VALID "Medical Data Valid"
