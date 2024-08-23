@@ -41,27 +41,25 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 // Usual work creates error here. Review and add back after VRDR publishes in 2024
 //
 * section[DeathInvestigation]
-* section[+].code = $vrdr-document-section-cs#DeathInvestigation
-* section[=].entry[0] = Reference(Observation/examiner-contacted-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/decedent-pregnancy-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/tobacco-use-ccr-ex1)
-* section[=].entry[+] = Reference(Location/death-location-ccr-ex1)
-* section[=].entry[+] = Reference(Location/injury-location-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/injury-incident-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/autopsy-performed-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/death-date-ccr-ex1)
-//  * section[=].entry[+] = Reference(Organization/interested-party-ccr-ex1)
+  * insert addNamedEntryComposition(ExaminerContacted, Observation, examiner-contacted-ccr-ex1)
+  * insert addNamedEntryComposition(PregnancyStatus, Observation, decedent-pregnancy-ccr-ex1)
+  * insert addNamedEntryComposition(TobaccoUse, Observation, tobacco-use-ccr-ex1)
+  * insert addNamedEntryComposition(DeathLocation, Location, death-location-ccr-ex1)
+  * insert addNamedEntryComposition(InjuryLocation, Location, injury-location-ccr-ex1)
+  * insert addNamedEntryComposition(InjuryIncident, Observation, injury-incident-ccr-ex1)
+  * insert addNamedEntryComposition(Autopsy, Observation, autopsy-performed-ccr-ex1)
+  * insert addNamedEntryComposition(DeathDate, Observation, death-date-ccr-ex1)
+//  Should decide on interested-party-ccr-ex1
+//
 * section[DeathCertification]
-* section[+].code = $vrdr-document-section-cs#DeathCertification
-* section[=].entry[0] = Reference(Practitioner/certifier-ccr-ex1)
-* section[=].entry[+] = Reference(Procedure/death-certification-procedure-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/manner-of-death-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/cause-of-death-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/contributing-to-death-ccr-ex1)
+  * insert addNamedEntryComposition(Certifier, Practitioner, certifier-ccr-ex1)
+  * insert addNamedEntryComposition(DeathCertification, Procedure, death-certification-procedure-ccr-ex1)
+  * insert addNamedEntryComposition(MannerOfDeath, Observation, manner-of-death-ccr-ex1)
+  * insert addNamedEntryComposition(CauseOfDeathPart1, Observation, cause-of-death-ccr-ex1)
+  * insert addNamedEntryComposition(CauseOfDeathPart2, Observation, contributing-to-death-ccr-ex1)
 //
 * section[DecedentDisposition]
-* section[+].code = $vrdr-document-section-cs#DecedentDisposition
-* section[=].entry[0] = Reference(Location/disposition-location-ccr-ex1)
-* section[=].entry[+] = Reference(Organization/funeral-home-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/disposition-method-ccr-ex1)
-* section[=].entry[+] = Reference(Practitioner/mortician-ccr-ex1)
+  * insert addNamedEntryComposition(DispositionLocation, Location, disposition-location-ccr-ex1)
+  * insert addNamedEntryComposition(FuneralHome, Organization, funeral-home-ccr-ex1)
+  * insert addNamedEntryComposition(DispositionMethod, Observation, disposition-method-ccr-ex1)
+  * insert addNamedEntryComposition(Mortician, Practitioner, mortician-ccr-ex1)
