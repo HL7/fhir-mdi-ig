@@ -11,5 +11,4 @@ Description: "This Observation profile describes TBD."
 * value[x] only CodeableConcept
 * value[x] from VSPerDQReviewEx (example)
   * ^short = "Personal information data quality review conclusion."
-  * ^binding.description = "Vital Records Education Level (NCHS)"
-//* note MS
+* note MS
