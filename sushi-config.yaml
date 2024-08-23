@@ -101,6 +101,7 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Contents: toc.html
   Background: mdi_background.html
   Best Practices: mdi_best_practices.html
   Security Recommendations: mdi_security_recommendations.html
@@ -109,11 +110,13 @@ menu:
   Downloads: mdi_downloads.html
   Changes: mdi_change_log.html
   Content Transitions: mdi-content-transitions.html
-  Artifacts:
-    All FHIR Artifacts: artifacts.html
-    Capability Statement EDRS: CapabilityStatement-CapabilityStatement-edrs-server.html
-    Capability Statement Toxicology: CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server.html
-    Capability Statement ME/C: CapabilityStatement-CapabilityStatement-mdi-cms-server.html
+  Artifacts: artifacts.html
+
+  #
+  #  All FHIR Artifacts: artifacts.html
+  #  Capability Statement EDRS: CapabilityStatement-CapabilityStatement-edrs-server.html
+  #  Capability Statement Toxicology: CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server.html
+  #  Capability Statement ME/C: CapabilityStatement-CapabilityStatement-mdi-cms-server.html
     
 
 
