@@ -5,4 +5,5 @@ Title: "Observation - Communicable Disease"
 Description: "This Observation profile describes TBD."
 * subject 1..1
 * subject only Reference(Decedent)
+* value[x] 1..1
 * value[x] only boolean or CodeableConcept

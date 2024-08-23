@@ -7,4 +7,8 @@ Description: "This Observation profile describes TBD."
 * subject only Reference(Decedent)
 * focus 1..1
 * focus only Reference(DeathCertificate)
-* value[x] only boolean or CodeableConcept
+* value[x] 1..1
+* value[x] only CodeableConcept
+* value[x] from VSMedDQReviewEx (example)
+  * ^short = "Medical information data quality review conclusion."
+* note MS
