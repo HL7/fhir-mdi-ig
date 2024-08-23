@@ -1,8 +1,8 @@
-Instance: composition-mdi-ccr-ex1
+Instance: composition-mdi-ccr-ex3
 InstanceOf: CompositionMDIDCR
 Usage: #example
-Title: "Composition - Death Certificate Revirew for Cremation Clearance Request - Example 1"
-Description: "Death Certificate Revirew for Cremation Clearance Request Composition: example 1"
+Title: "Composition - Death Certificate Revirew for Cremation Clearance Request - Example 3"
+Description: "Death Certificate Revirew for Cremation Clearance Request Composition: example 3"
 *  extension[ExtensionDeathCertificateReviewReason].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUEST_Form "Cremation Clearance Request Form"
 *  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUEST "Requested"
 *  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = CsDeathCertReviewExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
@@ -17,14 +17,12 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * title = "Composition - Cremation Clearance Request - Example"
 // 
 * section[Death-Certificate-review]
-* section[Death-Certificate-review].code = CodeSystemMDI#Death-Certificate-review
   * insert addNamedEntryComposition(death-certificate-cert-status, Observation, observation-registration-ccr-ex1)
   * insert addNamedEntryComposition(death-certificate-reg-status, Observation, observation-certified-workflow-ccr-ex1)
   * insert addNamedEntryComposition(med-info-quality-review, Observation, observation-medical-information-data-quality-ccr-ex1)
   * insert addNamedEntryComposition(personal-info-quality-review, Observation, observation-personal-information-data-quality-ccr-ex1)
 //
 * section[ccr-info]
-* section[ccr-info].code = CodeSystemMDI#ccr-info
   * insert addNamedEntryComposition(authorizing-agent, RelatedPerson, decedent-father-ccr-ex1)
   * insert addNamedEntryComposition(embalmed, Observation, observation-embalmed-ccr-ex1)
   * insert addNamedEntryComposition(communicable-disease, Observation, observation-communicable-disease-ccr-ex1)
@@ -33,7 +31,6 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
   * insert addNamedEntryComposition(mortician, Practitioner, mortician-ccr-ex1)
 //
 * section[DecedentDemographics]
-* section[DecedentDemographics].code = $vrdr-document-section-cs#DecedentDemographics
   * insert addNamedEntryComposition(Decedent, Patient, decedent-ccr-ex1) 
   * insert addNamedEntryComposition(Father, RelatedPerson, decedent-father-ccr-ex1) 
   * insert addNamedEntryComposition(Mother, RelatedPerson, Ddecedent-mother-ccr-ex1) 
@@ -41,15 +38,6 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
   * insert addNamedEntryComposition(Age, Observation, decedent-age-ccr-ex1) 
   * insert addNamedEntryComposition(EducationLevel, Observation, decedent-education-level-ccr-ex1) 
   * insert addNamedEntryComposition(MilitaryService, Observation, decedent-military-service-ccr-ex1) 
-  * insert addNamedEntryComposition(UsualWork, Observation, DecedentUsualWork-Example1) 
-  * insert addNamedEntryComposition(InputRaceAndEthnicity, Observation, InputRaceAndEthnicity-Example1) 
-  * insert addNamedEntryComposition(EmergingIssues, Observation, EmergingIssues-Example1)
-//  * section[DecedentDemographics].entry[0] = Reference(Patient/decedent-ccr-ex1)
-//  * section[DecedentDemographics].entry[+] = Reference(RelatedPerson/decedent-father-ccr-ex1)
-//  * section[DecedentDemographics].entry[+] = Reference(RelatedPerson/decedent-mother-ccr-ex1)
-//  * section[DecedentDemographics].entry[+] = Reference(Observation/decedent-age-ccr-ex1)
-//  * section[DecedentDemographics].entry[+] = Reference(Observation/decedent-education-level-ccr-ex1)
-//  * section[DecedentDemographics].entry[+] = Reference(Observation/decedent-military-service-ccr-ex1)
 // Usual work creates error here. Review and add back after VRDR publishes in 2024
 //
 * section[DeathInvestigation]
