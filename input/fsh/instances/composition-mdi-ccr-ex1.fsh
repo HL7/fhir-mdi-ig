@@ -16,11 +16,11 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * author = Reference(us-core-practitioner-s-jones) // author should be the EDRS ?
 * title = "Composition - Cremation Clearance Request - Example"
 // 
-* section[0]
+* section[Death-Certificate-review]
 * section[0].code = CodeSystemMDI#Death-Certificate-review
 * section[=].entry[0] = Reference(Observation/observation-certified-workflow-ccr-ex1)
 //
-* section[+]
+* section[ccr-info]
 * section[+].code = CodeSystemMDI#ccr-info
 * section[=].entry[0] = Reference(RelatedPerson/decedent-father-ccr-ex1)
 * section[=].entry[+] = Reference(Observation/observation-embalmed-ccr-ex1)
@@ -29,7 +29,7 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * section[=].entry[+] = Reference(Organization/funeral-home-ccr-ex1)
 * section[=].entry[+] = Reference(Practitioner/mortician-ccr-ex1)
 //
-* section[+]
+* section[DecedentDemographics]
 * section[+].code = $vrdr-document-section-cs#DecedentDemographics
 * section[=].entry[0] = Reference(Patient/decedent-ccr-ex1)
 * section[=].entry[+] = Reference(RelatedPerson/decedent-father-ccr-ex1)
@@ -39,7 +39,7 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * section[=].entry[+] = Reference(Observation/decedent-military-service-ccr-ex1)
 // Usual work creates error here. Review and add back after VRDR publishes in 2024
 //
-* section[+]
+* section[DeathInvestigation]
 * section[+].code = $vrdr-document-section-cs#DeathInvestigation
 * section[=].entry[0] = Reference(Observation/examiner-contacted-ccr-ex1)
 * section[=].entry[+] = Reference(Observation/decedent-pregnancy-ccr-ex1)
@@ -50,7 +50,7 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * section[=].entry[+] = Reference(Observation/autopsy-performed-ccr-ex1)
 * section[=].entry[+] = Reference(Observation/death-date-ccr-ex1)
 //  * section[=].entry[+] = Reference(Organization/interested-party-ccr-ex1)
-* section[+]
+* section[DeathCertification]
 * section[+].code = $vrdr-document-section-cs#DeathCertification
 * section[=].entry[0] = Reference(Practitioner/certifier-ccr-ex1)
 * section[=].entry[+] = Reference(Procedure/death-certification-procedure-ccr-ex1)
@@ -58,7 +58,7 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * section[=].entry[+] = Reference(Observation/cause-of-death-ccr-ex1)
 * section[=].entry[+] = Reference(Observation/contributing-to-death-ccr-ex1)
 //
-* section[+]
+* section[DecedentDisposition]
 * section[+].code = $vrdr-document-section-cs#DecedentDisposition
 * section[=].entry[0] = Reference(Location/disposition-location-ccr-ex1)
 * section[=].entry[+] = Reference(Organization/funeral-home-ccr-ex1)
