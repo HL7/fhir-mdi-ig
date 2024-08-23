@@ -33,8 +33,7 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * section[DecedentDemographics]
   * insert addNamedEntryComposition(Decedent, Patient, decedent-ccr-ex1) 
   * insert addNamedEntryComposition(Father, RelatedPerson, decedent-father-ccr-ex1) 
-  * insert addNamedEntryComposition(Mother, RelatedPerson, Ddecedent-mother-ccr-ex1) 
-  * insert addNamedEntryComposition(Spouse, RelatedPerson, DecedentSpouse-Example1) 
+  * insert addNamedEntryComposition(Mother, RelatedPerson, decedent-mother-ccr-ex1) 
   * insert addNamedEntryComposition(Age, Observation, decedent-age-ccr-ex1) 
   * insert addNamedEntryComposition(EducationLevel, Observation, decedent-education-level-ccr-ex1) 
   * insert addNamedEntryComposition(MilitaryService, Observation, decedent-military-service-ccr-ex1) 

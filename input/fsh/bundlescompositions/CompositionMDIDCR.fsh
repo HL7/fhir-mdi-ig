@@ -11,6 +11,10 @@ Description: "This Composition contains information for a request to review deat
 * extension[Extension-death-certificate-review-reason] 
   * ^short = "Reason for the death certificate review"
   * ^definition = "Reason for the death certificate review (e.g., cremation clearance)"
+* extension contains ExtensionDeathCertificateStatus named Extension-death-certificate-status 0..*
+* extension[Extension-death-certificate-status] 
+  * ^short = "Death Certificate workflow status"
+  * ^definition = "Death Certificate workflow status"
 //Extensions describing the Cremation Clearance statuses
 * extension contains ExtensionCremationClearanceStatus named Extension-cremation-clearance-status 0..1
 * extension[Extension-cremation-clearance-status] ^short = "Status of the Cremation Clearance (e.g., requested, pending, rejected, approved). Expected to be Requested in Cremation Clearance Request."
