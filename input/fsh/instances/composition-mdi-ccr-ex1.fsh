@@ -17,26 +17,39 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * title = "Composition - Cremation Clearance Request - Example"
 // 
 * section[Death-Certificate-review]
-* section[0].code = CodeSystemMDI#Death-Certificate-review
-* section[=].entry[0] = Reference(Observation/observation-certified-workflow-ccr-ex1)
+* section[Death-Certificate-review].code = CodeSystemMDI#Death-Certificate-review
+  * insert addNamedEntryComposition(death-certificate-cert-status, Observation, observation-registration-ccr-ex1)
+  * insert addNamedEntryComposition(death-certificate-reg-status, Observation, observation-certified-workflow-ccr-ex1)
+  * insert addNamedEntryComposition(med-info-quality-review, Observation, observation-medical-information-data-quality-ccr-ex1)
+  * insert addNamedEntryComposition(personal-info-quality-review, Observation, observation-personal-information-data-quality-ccr-ex1)
 //
 * section[ccr-info]
-* section[+].code = CodeSystemMDI#ccr-info
-* section[=].entry[0] = Reference(RelatedPerson/decedent-father-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/observation-embalmed-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/observation-communicable-disease-ccr-ex1)
-* section[=].entry[+] = Reference(Practitioner/certifier-ccr-ex1)
-* section[=].entry[+] = Reference(Organization/funeral-home-ccr-ex1)
-* section[=].entry[+] = Reference(Practitioner/mortician-ccr-ex1)
+* section[ccr-info].code = CodeSystemMDI#ccr-info
+  * insert addNamedEntryComposition(authorizing-agent, RelatedPerson, decedent-father-ccr-ex1)
+  * insert addNamedEntryComposition(embalmed, Observation, observation-embalmed-ccr-ex1)
+  * insert addNamedEntryComposition(communicable-disease, Observation, observation-communicable-disease-ccr-ex1)
+  * insert addNamedEntryComposition(cause-of-death-certifier, Practitioner, certifier-ccr-ex1)
+  * insert addNamedEntryComposition(funeral-home, Organization, funeral-home-ccr-ex1)
+  * insert addNamedEntryComposition(mortician, Practitioner, mortician-ccr-ex1)
 //
 * section[DecedentDemographics]
 * section[DecedentDemographics].code = $vrdr-document-section-cs#DecedentDemographics
-* section[DecedentDemographics].entry[0] = Reference(Patient/decedent-ccr-ex1)
-* section[DecedentDemographics].entry[+] = Reference(RelatedPerson/decedent-father-ccr-ex1)
-* section[DecedentDemographics].entry[+] = Reference(RelatedPerson/decedent-mother-ccr-ex1)
-* section[DecedentDemographics].entry[+] = Reference(Observation/decedent-age-ccr-ex1)
-* section[DecedentDemographics].entry[+] = Reference(Observation/decedent-education-level-ccr-ex1)
-* section[DecedentDemographics].entry[+] = Reference(Observation/decedent-military-service-ccr-ex1)
+  * insert addNamedEntryComposition(Decedent, Patient, decedent-ccr-ex1) 
+  * insert addNamedEntryComposition(Father, RelatedPerson, decedent-father-ccr-ex1) 
+  * insert addNamedEntryComposition(Mother, RelatedPerson, Ddecedent-mother-ccr-ex1) 
+  * insert addNamedEntryComposition(Spouse, RelatedPerson, DecedentSpouse-Example1) 
+  * insert addNamedEntryComposition(Age, Observation, decedent-age-ccr-ex1) 
+  * insert addNamedEntryComposition(EducationLevel, Observation, decedent-education-level-ccr-ex1) 
+  * insert addNamedEntryComposition(MilitaryService, Observation, decedent-military-service-ccr-ex1) 
+  * insert addNamedEntryComposition(UsualWork, Observation, DecedentUsualWork-Example1) 
+  * insert addNamedEntryComposition(InputRaceAndEthnicity, Observation, InputRaceAndEthnicity-Example1) 
+  * insert addNamedEntryComposition(EmergingIssues, Observation, EmergingIssues-Example1)
+//  * section[DecedentDemographics].entry[0] = Reference(Patient/decedent-ccr-ex1)
+//  * section[DecedentDemographics].entry[+] = Reference(RelatedPerson/decedent-father-ccr-ex1)
+//  * section[DecedentDemographics].entry[+] = Reference(RelatedPerson/decedent-mother-ccr-ex1)
+//  * section[DecedentDemographics].entry[+] = Reference(Observation/decedent-age-ccr-ex1)
+//  * section[DecedentDemographics].entry[+] = Reference(Observation/decedent-education-level-ccr-ex1)
+//  * section[DecedentDemographics].entry[+] = Reference(Observation/decedent-military-service-ccr-ex1)
 // Usual work creates error here. Review and add back after VRDR publishes in 2024
 //
 * section[DeathInvestigation]
