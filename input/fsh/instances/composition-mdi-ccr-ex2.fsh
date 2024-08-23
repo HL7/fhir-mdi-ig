@@ -1,8 +1,8 @@
-Instance: composition-mdi-ccr-ex1
+Instance: composition-mdi-ccr-ex2
 InstanceOf: CompositionMDIDCR
 Usage: #example
-Title: "Composition - Death Certificate Revirew for Cremation Clearance Request - Example 1"
-Description: "Death Certificate Revirew for Cremation Clearance Request Composition: example 1"
+Title: "Composition - Death Certificate Revirew for Cremation Clearance Request - Example 2"
+Description: "Death Certificate Revirew for Cremation Clearance Request Composition: example 2"
 *  extension[ExtensionDeathCertificateReviewReason].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUEST_Form "Cremation Clearance Request Form"
 *  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUEST "Requested"
 *  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = CsDeathCertReviewExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
@@ -16,11 +16,11 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * author = Reference(us-core-practitioner-s-jones) // author should be the EDRS ?
 * title = "Composition - Cremation Clearance Request - Example"
 // 
-* section[0]
-* section[0].code = CodeSystemMDI#Death-Certificate-review
-* section[=].entry[0] = Reference(Observation/observation-certified-workflow-ccr-ex1)
+* section[Death-Certificate-review]
+  * code = CodeSystemMDI#Death-Certificate-review
+  * entry[0] = Reference(Observation/observation-certified-workflow-ccr-ex1)
 //
-* section[+]
+* section[ccr-info]
 * section[+].code = CodeSystemMDI#ccr-info
 * section[=].entry[0] = Reference(RelatedPerson/decedent-father-ccr-ex1)
 * section[=].entry[+] = Reference(Observation/observation-embalmed-ccr-ex1)
