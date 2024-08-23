@@ -30,13 +30,13 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * section[=].entry[+] = Reference(Practitioner/mortician-ccr-ex1)
 //
 * section[DecedentDemographics]
-* section[+].code = $vrdr-document-section-cs#DecedentDemographics
-* section[=].entry[0] = Reference(Patient/decedent-ccr-ex1)
-* section[=].entry[+] = Reference(RelatedPerson/decedent-father-ccr-ex1)
-* section[=].entry[+] = Reference(RelatedPerson/decedent-mother-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/decedent-age-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/decedent-education-level-ccr-ex1)
-* section[=].entry[+] = Reference(Observation/decedent-military-service-ccr-ex1)
+* section[DecedentDemographics].code = $vrdr-document-section-cs#DecedentDemographics
+* section[DecedentDemographics].entry[0] = Reference(Patient/decedent-ccr-ex1)
+* section[DecedentDemographics].entry[+] = Reference(RelatedPerson/decedent-father-ccr-ex1)
+* section[DecedentDemographics].entry[+] = Reference(RelatedPerson/decedent-mother-ccr-ex1)
+* section[DecedentDemographics].entry[+] = Reference(Observation/decedent-age-ccr-ex1)
+* section[DecedentDemographics].entry[+] = Reference(Observation/decedent-education-level-ccr-ex1)
+* section[DecedentDemographics].entry[+] = Reference(Observation/decedent-military-service-ccr-ex1)
 // Usual work creates error here. Review and add back after VRDR publishes in 2024
 //
 * section[DeathInvestigation]
