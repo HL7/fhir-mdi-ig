@@ -10,12 +10,12 @@ Description: "This Extension indicates Death Certificate workflow status."
 * extension[DCcertification] 
   * ^short = "Death Certificate certification status"
   * ^definition = "Death Certificate certification status"
-* value[x] 0..1
-* value[x] only CodeableConcept
-* value[x] from VSCertifiedWorkflowEx (example)
+  * value[x] 0..1
+  * value[x] only CodeableConcept
+  * value[x] from VSCertifiedWorkflowEx (example)
 * extension[DCregistration] 
   * ^short = "Death Certificate registration status"
   * ^definition = "Death Certificate registration status"
-* value[x] 0..1
-* value[x] only CodeableConcept
-* value[x] from VSRegistrationEx (example)
+  * value[x] 0..1
+  * value[x] only CodeableConcept
+  * value[x] from VSRegistrationEx (example)
