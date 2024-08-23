@@ -7,4 +7,9 @@ Description: "This Observation profile describes TBD."
 * subject only Reference(Decedent)
 * focus 1..1
 * focus only Reference(DeathCertificate)
-* value[x] only boolean or CodeableConcept
+* value[x] 1..1
+* value[x] only CodeableConcept
+* value[x] from VSPerDQReviewEx (example)
+  * ^short = "Personal information data quality review conclusion."
+  * ^binding.description = "Vital Records Education Level (NCHS)"
+//* note MS
