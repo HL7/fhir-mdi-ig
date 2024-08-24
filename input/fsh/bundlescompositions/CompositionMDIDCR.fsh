@@ -3,14 +3,17 @@ Parent: Composition
 Id: Composition-mdi-dcr
 Title: "Composition - Death Certificate Review"
 Description: "This Composition contains information for a request to review death certificate data, for death data quality improvement, cremation clearance, and other workflows. It can contain EDRS death certificate structured data."
+//
 * extension contains ExtensionTrackingNumber named extension-tracking-numbers 0..*
 * extension[extension-tracking-numbers] 
   * ^short = "A tracking number (e.g., case number or file number) assigned by an EDRS or other organization to facilitate recognition of common case records across disparate systems"
   * ^definition = "A tracking number (e.g., case number or file number) assigned by an EDRS or other organization to facilitate recognition of common case records across disparate systems"
+//
 * extension contains ExtensionDeathCertificateReviewReason named Extension-death-certificate-review-reason 0..*
 * extension[Extension-death-certificate-review-reason] 
   * ^short = "Reason for the death certificate review"
   * ^definition = "Reason for the death certificate review (e.g., cremation clearance)"
+//
 * extension contains ExtensionDeathCertificateStatus named Extension-death-certificate-status 0..*
 * extension[Extension-death-certificate-status] 
   * ^short = "Death Certificate workflow status"
@@ -71,7 +74,7 @@ Description: "This Composition contains information for a request to review deat
 * insert CompositionSectionSlice(ccr-info, cause-of-death-certifier, 0, 1,  [[Death Certificate certifier, often attending physician]],  [[Death Certificate certifier, often attending physician]], Certifier )
 * insert CompositionSectionSlice(ccr-info, funeral-home, 0, 1,  [[Funeral home]],  [[Funeral home]], FuneralHome )
 * insert CompositionSectionSlice(ccr-info, mortician, 0, 1,  [[Mortician]],  [[Mortician]], Mortician )
-* insert CompositionSectionSlice(ccr-info, crematorium, 0, 1,  [[Crematorium]],  [[Crematorium]], Organization )
+* insert CompositionSectionSlice(ccr-info, crematorium, 0, 1,  [[Crematorium]],  [[Crematorium]], USCoreOrganizationProfile )
 //
 * section contains DecedentDemographics 0..1
 * section[DecedentDemographics] 
