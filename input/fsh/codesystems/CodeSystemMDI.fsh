@@ -29,3 +29,18 @@ Description: "This code system contains codes for use in death investigations an
 // * #court-appointed "Court Appointed"
 // * #injury "Injury Location"
 // * #death "Death Location"
+
+// Observation codes related to the Decedent
+* #Embalmed "Embalmed Observation"
+* #CommunicableDisease "Communicable Disease Observation"
+
+// Observation codes related to the Death Certificate review
+* #CertifiedWorkflow "Certified Workflow Observation"
+* #Registration "Registration Observation"
+* #MedicalInformationDataQuality "Medical Information Data Quality Observation"
+* #PersonalInformationDataQuality "Personal Information Data Quality Observation"
+
+// Observation codes related to the Cremation Clearance 
+* #MECertificationAffirmation "Medical Examiner Certification Affirmation Observation"
+* #CoronerWorkflow "Coroner Workflow Observation"
+* #SignedWorkflow "Signed Workflow Observation"

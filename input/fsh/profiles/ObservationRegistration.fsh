@@ -3,6 +3,9 @@ Parent: Observation
 Id: Observation-registration
 Title: "Observation - Registration"
 Description: "This Observation profile describes Death Certificate registration status."
+* code only CodeableConcept
+* code = CodeSystemMDI#Registration
+  * ^short = "Registration Observation"
 * subject 1..1
 * subject only Reference(Decedent)
 * focus 1..1

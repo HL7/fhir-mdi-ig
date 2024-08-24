@@ -3,6 +3,9 @@ Parent: Observation
 Id: Observation-medical-information-data-quality
 Title: "Observation - Medical Information Data Quality"
 Description: "This Observation profile describes TBD."
+* code only CodeableConcept
+* code = CodeSystemMDI#MedicalInformationDataQuality
+  * ^short = "Medical Information Data Quality Observation"
 * subject 1..1
 * subject only Reference(Decedent)
 * focus 1..1
