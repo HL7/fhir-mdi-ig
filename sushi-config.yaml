@@ -87,7 +87,8 @@ parameters:
   show-inherited-invariants: false
   path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
   path-liquid: liquid
-  version-comparison-master: true 
+//  version-comparison-master: true 
+  version-comparison-master: 1.1.0
   auto-oid-root: 2.16.840.1.113883.4.642.40.11
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
