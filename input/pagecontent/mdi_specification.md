@@ -166,3 +166,18 @@ This IG does not define any new FHIR Search capabilities or parameters.
 
 ***Figure: Forensic Toxicology Profile Relationships***
 <table><tr><td><img src="Tox-Msg-structure-500.png" /></td></tr></table>
+
+### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+### Dependency Table
+{% include dependency-table.xhtml %}
+
+### Global Profiles Table
+
+{% include globals-table.xhtml %}
+
+### IP Statements
+
+{% include ip-statements.xhtml %}
