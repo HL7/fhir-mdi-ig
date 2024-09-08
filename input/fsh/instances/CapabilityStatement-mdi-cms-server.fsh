@@ -4,7 +4,7 @@ Alias: $uscorepatient = http://hl7.org/fhir/us/core/StructureDefinition/us-core-
 Instance: CapabilityStatement-mdi-cms-server
 InstanceOf: CapabilityStatement
 Title: "CapabilityStatement - MDI CMS Server"
-Description: "This resource describes expected capabilities of an MDI CMS Server which is responsible for providing responses to the queries submitted by a Client. It lists FHIR profiles and search parameters that, at a minimum, should be supported by MDI CMS Servers. MDI CMS Clients have the option of choosing from this list to access necessary data."
+Description: "This resource describes expected minimum capabilities of an MDI CMS server which is responsible for providing responses to the queries submitted by a client. Clients have the option of choosing from this list to access necessary data."
 Usage: #definition
 * name = "CapabilityStatementMdiCmsServer"
 * title = "CapabilityStatement - MDI CMS Server"

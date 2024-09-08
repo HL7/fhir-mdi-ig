@@ -9,7 +9,7 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2022-07-03"
-* description = "This resource describes the expected capabilities of the Electronic Death Registration System (EDRS) Server actor, which is responsible for providing responses to the queries submitted by the EDRS Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by EDRS Servers are defined. EDRS Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."
+* description = "This resource describes the expected minimum capabilities of the Electronic Death Registration System (EDRS) server, which is responsible for providing responses to the queries submitted by a client. Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."
 * kind = #requirements
 * format[0] = #application/fhir+xml
 * format[+] = #xml
