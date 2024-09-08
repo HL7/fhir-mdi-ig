@@ -26,7 +26,7 @@ The scope of the current MDI IG is defining FHIR resources and guidance for the 
 The current project has place-holders for sections that are expected to have more detail in later versions, such as exam-autopsy results and narratives for death scene description and other uses. (See Further Work, below.)
 
 ### Relation to Other Standards
-The MDI specification supports exchange of data among organizations and agencies that contribute information to death investigations conducted by medical examiner and coroner offices as well as transmission of death investigation findings between MDI CMS and EDRS of state registrars. The [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/) supports reporting deaths by state registrars to the NCHS. Therefore, the dataflows supported by the MDI specification are upstream of the dataflows supported by the VRDR specification. While the two IGs serve an overlapping set of actors (e.g., EDRS) and data concepts (e.g., death date, manner of death), they do not share profiles because VRDR data elements are constrained to IJE (Inter-Jurisdictional Exchange) data elements definitions.
+The MDI specification supports exchange of data among organizations and agencies that contribute information to death investigations conducted by medical examiner and coroner offices as well as transmission of death investigation findings between MDI CMS and EDRS of state registrars. The [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/) supports reporting deaths by state registrars to the NCHS. Therefore, **several dataflows supported by this MDI specification are upstream of the dataflows supported by the VRDR specification. The two IGs serve an overlapping set of actors (e.g., EDRS) and data concepts (e.g., death date, manner of death). For that reason, this MDI FHIR IG references and has a dependency on VRDR and on the [Vital Records Common Library (VRCL)](https://hl7.org/fhir/us/vr-common-library/).**
 
 ### Further Work
 Georgia Tech Research Institute (GTRI) provides tools for exploring and testing MDI FHIR data.
@@ -35,7 +35,6 @@ Georgia Tech Research Institute (GTRI) provides tools for exploring and testing 
 
 The MDI FHIR IG will continue to develop to support additional MDI needs beyond death reporting to EDRS for the death certificate. Future work likely will include:
 * **Terminology**: Developing vocabularies and terminologies useful to the MDI domain with focus on those for forensic toxicology results 
-* **Vital Records Common Profiles Library**: Evaluating future MDI profiles and extensions for overlap with data concepts in the [Vital Records Common Profiles Library](http://hl7.org/fhir/us/vr-common-library/) and for possible inclusion in the library to better integrate mortality reporting
 * **Resources for Additional Dataflows**: Developing FHIR profiles for transactions between MDI CMS and other information sources (EHR, autopsy facilities, etc.) and information recipients (organ and tissue procurement organizations, state health surveillance systems, etc.).
 
 ### IG Development Team
