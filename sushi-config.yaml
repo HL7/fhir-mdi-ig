@@ -56,23 +56,22 @@ dependencies:
 pages:
   index.md:
     title: Home
-  mdi-content-transitions.md:
-    title: MDI Content Transitions 
   mdi_background.md:
     title: MDI Background
   mdi_best_practices.md:
     title: MDI Best Practices
-  mdi_change_log.md:
-    title: MDI Changes
-  mdi_downloads.md:
-    title: MDI Downloads
   mdi_security_recommendations.md:
     title: MDI Security Recommendations
   mdi_specification.md:
     title: MDI Specification
   mdi_terminology.md:
     title: MDI Terminology
-
+  mdi_downloads.md:
+    title: MDI Downloads
+  mdi_change_log.md:
+    title: MDI Changes
+  mdi-content-transitions.md:
+    title: MDI Content Transitions 
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
