@@ -13,20 +13,3 @@ The entire IG (including the HTML files, definitions, validation information, et
 * [XML](examples.xml.zip)
 * [JSON](examples.json.zip)
 * [TTl](examples.ttl.zip)
-
-### Cross Version Analysis
-
-{% include cross-version-analysis.xhtml %}
-
-<!--- TODO add this back after IG's are separated --->
-### Dependency Table
-<!--- {% include dependency-table.xhtml %} --->
-
-
-### Global Profiles Table
-
-{% include globals-table.xhtml %}
-
-### IP Statements
-
-{% include ip-statements.xhtml %}
