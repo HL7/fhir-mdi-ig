@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 canonical: http://hl7.org/fhir/us/mdi
-title: "Vital Records Medicolegal Death Investigation (MDI) FHIR Implementation Guide"
+title: "Medicolegal Death Investigation (MDI) FHIR Implementation Guide"
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 fhirVersion: 4.0.1
 applyExtensionMetadataToRoot: false
