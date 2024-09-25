@@ -190,44 +190,74 @@ menu:
 
 groups:
   MDICapabilityStatements:
-    name: MDI Capability Statements 
+    name: Capability Statements 
     resources:
       - CapabilityStatement-edrs-server
       - CapabilityStatement-forensic-toxicology-laboratory-server
       - CapabilityStatement-mdi-cms-server
  
   MDIProfiles:
-    name: MDI Profiles
+    name: Death Investigation Profiles
     resources:  
       - BundleDocumentMDIAndEDRS 
-      - BundleMessageToxToMDI
       - CompositionMDIAndEDRS
+      - MDICauseOfDeathPart1
+      - BundleMessageToxToMDI
+      - MessageHeaderToxicologyToMDI
       - DiagnosticReportToxicologyToMDI 
       - DocumentReferenceMDIReport
-      - MDICauseOfDeathPart1
-      - MessageHeaderToxicologyToMDI
       - ObservationToxicologyLabResult
       - SpecimenToxicologyLab
 
+  DeathCertificateReviewProfiles:
+    name: Death Certificate Review Profiles
+    resources: 
+     - BundleMessageDCR
+     - MessageHeaderDCR
+     - BundleDocumentMDIDCR
+     - CompositionMDIDCR
+     - ObservationCommunicableDisease
+     - ObservationEmbalmed
+     - ObservationMedicalInformationDataQuality
+     - ObservationPersonalInformationDataQuality
+
   MDIExtensions:
-    name: MDI Extensions 
+    name: Extensions 
     resources:
+      - ExtensionCremationClearanceCoroner
+      - ExtensionCremationClearanceSignature
+      - ExtensionCremationClearanceStatus
+      - ExtensionDeathCertificateStatus
+      - ExtensionMECertificationAffirmation
       - ExtensionTrackingNumber
 
   MDICodeSystems:
-    name: MDI CodeSystems
+    name: CodeSystems
     resources:
       - CodeSystemMDI
+      - CsDeathCertReviewExample
 
   MDIValuesetS:
-    name: MDI Value Set
+    name: Value Set
     resources:
       - ValueSetTrackingNumberType
+      - VSCCObservationsEx
+      - VSCCSignedEx
+      - VSCCStatusEx
+      - VSCertifiedWorkflowEx
+      - VSDCRObservationsEx
+      - VSDCRreasonEx
+      - VSEmablmedEx
+      - VSMECertAffirmationEx
+      - VSMedDQReviewEx
+      - VSPerDQReviewEx
+      - VSRegistrationEx
 
   MDIParameters:
-    name: MDI Parameters
+    name: Parameters
     resources:
       - expansion-parameters-mdi
+      
   MDIExamples:
     name: Examples of MDI-defined resources 
     resources:

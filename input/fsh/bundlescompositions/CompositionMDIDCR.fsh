@@ -9,10 +9,10 @@ Description: "This Composition contains information for a request to review deat
   * ^short = "A tracking number (e.g., case number or file number) assigned by an EDRS or other organization to facilitate recognition of common case records across disparate systems"
   * ^definition = "A tracking number (e.g., case number or file number) assigned by an EDRS or other organization to facilitate recognition of common case records across disparate systems"
 //
-* extension contains ExtensionDeathCertificateReviewReason named Extension-death-certificate-review-reason 0..*
-* extension[Extension-death-certificate-review-reason] 
-  * ^short = "Reason for the death certificate review"
-  * ^definition = "Reason for the death certificate review (e.g., cremation clearance)"
+//* extension contains ExtensionDeathCertificateReviewReason named Extension-death-certificate-review-reason 0..*
+//* extension[Extension-death-certificate-review-reason] 
+//  * ^short = "Reason for the death certificate review"
+//  * ^definition = "Reason for the death certificate review (e.g., cremation clearance)"
 //
 * extension contains ExtensionDeathCertificateStatus named Extension-death-certificate-status 0..*
 * extension[Extension-death-certificate-status] 
@@ -41,44 +41,9 @@ Description: "This Composition contains information for a request to review deat
 * section ^slicing.rules = #open
 * section.code 1..1
 //
-* section contains Death-Certificate-review 0..1
-* section[Death-Certificate-review] 
-  * ^label = "Death Certificate review information"
-  * ^short = "Death Certificate review information"
-  * ^definition = "Death-Certificate-review"
-  * code  = CodeSystemMDI#Death-Certificate-review
-  * code 1..
-  * entry
-    * ^slicing.discriminator.type = #profile
-    * ^slicing.discriminator.path = "$this.resolve()"
-    * ^slicing.rules = #open
-* insert CompositionSectionSlice(Death-Certificate-review, death-certificate-cert-status, 0, 1,  [[Death Certificate certification status]],  [[Death Certificate certification status]], ObservationCertifiedWorkflow )
-* insert CompositionSectionSlice(Death-Certificate-review, death-certificate-reg-status, 0, 1,  [[Death Certificate registration status]],  [[Death Certificate registration status]], ObservationRegistration )
-* insert CompositionSectionSlice(Death-Certificate-review, med-info-quality-review, 0, 1,  [[Medical information data quality review status]],  [[Medical information data quality review status]], ObservationMedicalInformationDataQuality )
-* insert CompositionSectionSlice(Death-Certificate-review, personal-info-quality-review, 0, 1,  [[Personal information data quality review status]],  [[Personal information data quality review status]], ObservationPersonalInformationDataQuality )
-//
-* section contains ccr-info 0..1
-* section[ccr-info] 
-  * ^label = "Cremation Clearance information"
-  * ^short = "Cremation Clearance information"
-  * ^definition = "ccr-info"
-  * code  = CodeSystemMDI#ccr-info
-  * code 1..
-  * entry
-    * ^slicing.discriminator.type = #profile
-    * ^slicing.discriminator.path = "$this.resolve()"
-    * ^slicing.rules = #open
-* insert CompositionSectionSlice(ccr-info, authorizing-agent, 0, 1,  [[Individual authorizing cremation, often next-of-kin]],  [[Individual authorizing cremation, often next-of-kin]], USCoreRelatedPersonProfile or USCorePractitionerProfile or USCoreOrganizationProfile)
-* insert CompositionSectionSlice(ccr-info, embalmed, 0, 1,  [[Was body embalmed?]],  [[Was body embalmed?]], ObservationEmbalmed )
-* insert CompositionSectionSlice(ccr-info, communicable-disease, 0, 1,  [[Did Decedent have a communicable disease?]],  [[Did Decedent have a communicable disease?]], ObservationCommunicableDisease )
-* insert CompositionSectionSlice(ccr-info, cause-of-death-certifier, 0, 1,  [[Death Certificate certifier, often attending physician]],  [[Death Certificate certifier, often attending physician]], Certifier )
-* insert CompositionSectionSlice(ccr-info, funeral-home, 0, 1,  [[Funeral home]],  [[Funeral home]], FuneralHome )
-* insert CompositionSectionSlice(ccr-info, mortician, 0, 1,  [[Mortician]],  [[Mortician]], Mortician )
-* insert CompositionSectionSlice(ccr-info, crematorium, 0, 1,  [[Crematorium]],  [[Crematorium]], USCoreOrganizationProfile )
-//
 * section contains DecedentDemographics 0..1
 * section[DecedentDemographics] 
-  * ^label = "DecedentDemographics"
+  * ^label = "DecedentDemographics section from VRDR Death Certificate Composition for review"
   * ^short = "DecedentDemographics section from VRDR Death Certificate Composition for review"
   * ^definition = "DecedentDemographics section from vrdr-death-certificate"
   * code  = DocumentSectionCS#DecedentDemographics
@@ -103,7 +68,7 @@ Description: "This Composition contains information for a request to review deat
 //
 * section contains DeathInvestigation 0..1
 * section[DeathInvestigation] 
-  * ^label = "DeathInvestigation"
+  * ^label = "DeathInvestigation section from VRDR Death Certificate Composition for review"
   * ^short = "DeathInvestigation section from VRDR Death Certificate Composition for review"
   * ^definition = "DeathInvestigation section from vrdr-death-certificate"
   * code  = DocumentSectionCS#DeathInvestigation
@@ -124,7 +89,7 @@ Description: "This Composition contains information for a request to review deat
 //
 * section contains DeathCertification 0..1
 * section[DeathCertification] 
-  * ^label = "DeathCertification"
+  * ^label = "DeathCertification section from VRDR Death Certificate Composition for review"
   * ^short = "DeathCertification section from VRDR Death Certificate Composition for review"
   * ^definition = "DeathCertification section from vrdr-death-certificate"
   * code  = DocumentSectionCS#DeathCertification
@@ -141,7 +106,7 @@ Description: "This Composition contains information for a request to review deat
 //
 * section contains DecedentDisposition 0..1
 * section[DecedentDisposition] 
-  * ^label = "DecedentDisposition"
+  * ^label = "DecedentDisposition section from VRDR Death Certificate Composition for review"
   * ^short = "DecedentDisposition section from VRDR Death Certificate Composition for review"
   * ^definition = "DecedentDisposition section from vrdr-death-certificate"
   * code  = DocumentSectionCS#DecedentDisposition
@@ -155,3 +120,35 @@ Description: "This Composition contains information for a request to review deat
 * insert CompositionSectionSlice(DecedentDisposition, DispositionMethod,  0, 1, DispositionMethod, DispositionMethod, DecedentDispositionMethod)
 * insert CompositionSectionSlice(DecedentDisposition, Mortician,  0, 1, Mortician, Mortician, Mortician)
 //
+* section contains Death-Certificate-data-review 0..1
+* section[Death-Certificate-data-review] 
+  * ^label = "Death Certificate Data Review Results Section"
+  * ^short = "Death Certificate Data Review Results Section"
+  * ^definition = "Death Certificate Data Review Results Section"
+  * code  = CodeSystemMDI#Death-Certificate-data-review
+  * code 1..
+  * entry
+    * ^slicing.discriminator.type = #profile
+    * ^slicing.discriminator.path = "$this.resolve()"
+    * ^slicing.rules = #open
+* insert CompositionSectionSlice(Death-Certificate-data-review, med-info-quality-review, 0, 1,  [[Medical information data quality review status]],  [[Medical information data quality review status]], ObservationMedicalInformationDataQuality )
+* insert CompositionSectionSlice(Death-Certificate-data-review, personal-info-quality-review, 0, 1,  [[Personal information data quality review status]],  [[Personal information data quality review status]], ObservationPersonalInformationDataQuality )
+//
+* section contains cremation-clearance-info 0..1
+* section[cremation-clearance-info] 
+  * ^label = "Cremation Clearance information"
+  * ^short = "Cremation Clearance information"
+  * ^definition = "cremation-clearance-info"
+  * code  = CodeSystemMDI#cremation-clearance-info
+  * code 1..
+  * entry
+    * ^slicing.discriminator.type = #profile
+    * ^slicing.discriminator.path = "$this.resolve()"
+    * ^slicing.rules = #open
+* insert CompositionSectionSlice(cremation-clearance-info, authorizing-agent, 0, 1,  [[Individual authorizing cremation, often next-of-kin]],  [[Individual authorizing cremation, often next-of-kin]], USCoreRelatedPersonProfile or USCorePractitionerProfile or USCoreOrganizationProfile)
+* insert CompositionSectionSlice(cremation-clearance-info, embalmed, 0, 1,  [[Was body embalmed?]],  [[Was body embalmed?]], ObservationEmbalmed )
+* insert CompositionSectionSlice(cremation-clearance-info, communicable-disease, 0, 1,  [[Did Decedent have a communicable disease?]],  [[Did Decedent have a communicable disease?]], ObservationCommunicableDisease )
+* insert CompositionSectionSlice(cremation-clearance-info, cause-of-death-certifier, 0, 1,  [[Death Certificate certifier, often attending physician]],  [[Death Certificate certifier, often attending physician]], Certifier )
+* insert CompositionSectionSlice(cremation-clearance-info, funeral-home, 0, 1,  [[Funeral home]],  [[Funeral home]], FuneralHome )
+* insert CompositionSectionSlice(cremation-clearance-info, mortician, 0, 1,  [[Mortician]],  [[Mortician]], Mortician )
+* insert CompositionSectionSlice(cremation-clearance-info, crematorium, 0, 1,  [[Crematorium]],  [[Crematorium]], USCoreOrganizationProfile )
