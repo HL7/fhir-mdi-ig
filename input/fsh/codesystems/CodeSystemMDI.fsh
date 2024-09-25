@@ -12,18 +12,18 @@ Description: "This code system contains codes for use in death investigations an
 * #cause-manner "Cause and Manner of Death Section"
 * #medical-history "Medical History Section"
 * #exam-autopsy "Exam/Autopsy Section"
+* #narratives "Narratives"
 // Sections for Death Certificate Data Review and Cremation Clearance
 * #ccr-authorizing-agent "Cremation Clearance Authorizing Agent Section"
 * #cremation-clearance-info "Cremation Clearance Information Section"
 * #Death-Certificate-data-review "Death Certificate Data Review Results Section"
+// Tracking number types
 * #mdi-case-number "MDI Case Number"
 * #edrs-file-number "EDRS File Number"
 * #tox-lab-case-number "Toxicology Laboratory Case Number"
-* #mdi-case-notes-summary "MDI Case Notes Summary"
-* #mdi-case-history "MDI Case History"
+// MessageHeader.event types
 * #tox-result-report "Toxicology Lab Results"
 * #death-certificate-review "Death Certificate Review"
-* #narratives "Narratives"
 // Observation codes related to the Decedent
 * #Embalmed "Embalmed Observation"
 * #CommunicableDisease "Communicable Disease Observation"
@@ -36,3 +36,6 @@ Description: "This code system contains codes for use in death investigations an
 * #MECertificationAffirmation "Medical Examiner Certification Affirmation Observation"
 * #CoronerWorkflow "Coroner Workflow Observation"
 * #SignedWorkflow "Signed Workflow Observation"
+// Unused codes?
+//* #mdi-case-notes-summary "MDI Case Notes Summary"
+//* #mdi-case-history "MDI Case History"
