@@ -36,7 +36,7 @@ Description: "This Composition contains information for a request to review deat
 * subject only Reference(Decedent)
 //
 // Composition-mdi-and-edrs uses type = #value here, while vrdr-death-certificate uses type = #pattern here 
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section.code 1..1
