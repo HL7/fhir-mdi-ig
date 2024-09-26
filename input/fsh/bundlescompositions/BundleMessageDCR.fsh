@@ -9,7 +9,11 @@ Description: "This Bundle profile represents a Message Bundle about a Death Cert
 * entry ^slicing.discriminator.type = #profile
   * ^slicing.discriminator.path = "$this.resource"
   * ^slicing.rules = #open
+//
 * entry contains DCRMessage 1..1 MS
-
 * entry[DCRMessage].resource 1..
 * entry[DCRMessage].resource only MessageHeaderDCR
+//
+* entry contains DCRDocument 1..1 MS
+* entry[DCRDocument].resource 1..
+* entry[DCRDocument].resource only BundleDocumentMDIDCR
