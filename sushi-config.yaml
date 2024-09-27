@@ -280,7 +280,7 @@ groups:
       - messageheader-mdi-tox-result-report-a-freeman
       - observation-cause-of-death-part1-a-freeman
       - observation-cause-of-death-part1-freeman-quantity-interval
-            - specimen-bile-toxicology-a-freeman
+      - specimen-bile-toxicology-a-freeman
       - specimen-blood-toxicology-a-freeman
       - specimen-liver-toxicology-a-freeman
       - specimen-stomach-contents-toxicology-a-freeman
