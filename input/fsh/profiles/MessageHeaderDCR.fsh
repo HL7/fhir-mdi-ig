@@ -7,6 +7,12 @@ Description: "This MessageHeader identifies a Death Certificate Review document 
 * ^status = #active
 * . ^short = "Identifies a Death Certificate Review document bundle and additional review information."
   * ^definition = "Identifies a Death Certificate Review document bundle and additional review information."
+//
+* extension contains ExtensionDeathCertificateStatus named Extension-death-certificate-status 0..*
+* extension[Extension-death-certificate-status] 
+  * ^short = "Death Certificate workflow status"
+  * ^definition = "Death Certificate workflow status"
+//
 * event[x] only Coding
 * event[x] = CodeSystemMDI#death-certificate-review
 * event[x] MS
