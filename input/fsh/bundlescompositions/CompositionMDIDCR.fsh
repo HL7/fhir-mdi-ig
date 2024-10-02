@@ -140,7 +140,8 @@ Description: "This Composition contains information for a request to review deat
     * ^slicing.discriminator.type = #profile
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
-* insert CompositionSectionSlice(cremation-clearance-info, authorizing-agent, 0, 1,  [[Individual authorizing cremation, often next-of-kin]],  [[Individual authorizing cremation, often next-of-kin]], USCoreRelatedPersonProfile or USCorePractitionerProfile or USCoreOrganizationProfile)
+* insert CompositionSectionSlice(cremation-clearance-info, authorizing-agent, 0, 1,  [[Individual authorizing cremation, often next-of-kin]],  [[Individual authorizing cremation, often next-of-kin]], USCoreRelatedPersonProfile)
+// Removed option for authorizing agent to be or USCorePractitionerProfile or USCoreOrganizationProfile
 * insert CompositionSectionSlice(cremation-clearance-info, embalmed, 0, 1,  [[Was body embalmed?]],  [[Was body embalmed?]], ObservationEmbalmed )
 * insert CompositionSectionSlice(cremation-clearance-info, communicable-disease, 0, 1,  [[Did Decedent have a communicable disease?]],  [[Did Decedent have a communicable disease?]], ObservationCommunicableDisease )
 * insert CompositionSectionSlice(cremation-clearance-info, cause-of-death-certifier, 0, 1,  [[Death Certificate certifier, often attending physician]],  [[Death Certificate certifier, often attending physician]], Certifier )
