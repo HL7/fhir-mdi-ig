@@ -129,6 +129,7 @@ Description: "This Composition contains information for a request to review deat
 * insert CompositionSectionSlice(Death-Certificate-data-review, med-info-quality-review, 0, 1,  [[Medical information data quality review status]],  [[Medical information data quality review status]], ObservationMedicalInformationDataQuality )
 * insert CompositionSectionSlice(Death-Certificate-data-review, personal-info-quality-review, 0, 1,  [[Personal information data quality review status]],  [[Personal information data quality review status]], ObservationPersonalInformationDataQuality )
 //
+// Removed option for authorizing agent to be or USCorePractitionerProfile or USCoreOrganizationProfile
 * section contains cremation-clearance-info 0..1
 * section[cremation-clearance-info] 
   * ^label = "Cremation Clearance information"
@@ -141,7 +142,6 @@ Description: "This Composition contains information for a request to review deat
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
 * insert CompositionSectionSlice(cremation-clearance-info, authorizing-agent, 0, 1,  [[Individual authorizing cremation, often next-of-kin]],  [[Individual authorizing cremation, often next-of-kin]], USCoreRelatedPersonProfile)
-// Removed option for authorizing agent to be or USCorePractitionerProfile or USCoreOrganizationProfile
 * insert CompositionSectionSlice(cremation-clearance-info, embalmed, 0, 1,  [[Was body embalmed?]],  [[Was body embalmed?]], ObservationEmbalmed )
 * insert CompositionSectionSlice(cremation-clearance-info, communicable-disease, 0, 1,  [[Did Decedent have a communicable disease?]],  [[Did Decedent have a communicable disease?]], ObservationCommunicableDisease )
 * insert CompositionSectionSlice(cremation-clearance-info, cause-of-death-certifier, 0, 1,  [[Death Certificate certifier, often attending physician]],  [[Death Certificate certifier, often attending physician]], Certifier )
