@@ -36,6 +36,5 @@ Description: "This code system contains codes for use in death investigations an
 * #MECertificationAffirmation "Medical Examiner Certification Affirmation Observation"
 * #CoronerWorkflow "Coroner Workflow Observation"
 * #SignedWorkflow "Signed Workflow Observation"
-// Unused codes?
-//* #mdi-case-notes-summary "MDI Case Notes Summary"
-//* #mdi-case-history "MDI Case History"
+// Other codes
+* #crematorium "Crematorium"
