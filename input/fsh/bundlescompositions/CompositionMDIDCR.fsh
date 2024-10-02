@@ -9,22 +9,22 @@ Description: "This Composition contains information for a request to review deat
   * ^short = "A tracking number (e.g., case number or file number) assigned by an EDRS or other organization to facilitate recognition of common case records across disparate systems"
   * ^definition = "A tracking number (e.g., case number or file number) assigned by an EDRS or other organization to facilitate recognition of common case records across disparate systems"
 //
-* extension contains ExtensionDeathCertificateStatus named Extension-death-certificate-status 0..*
-* extension[Extension-death-certificate-status] 
+* extension contains ExtensionDeathCertificateStatus named extension-death-certificate-status 0..*
+* extension[extension-death-certificate-status] 
   * ^short = "Death Certificate workflow status"
   * ^definition = "Death Certificate workflow status"
 //Extensions describing the Cremation Clearance statuses
-* extension contains ExtensionCremationClearanceStatus named Extension-cremation-clearance-status 0..1
-* extension[Extension-cremation-clearance-status] ^short = "Status of the Cremation Clearance (e.g., requested, pending, rejected, approved). Expected to be Requested in Cremation Clearance Request."
+* extension contains ExtensionCremationClearanceStatus named extension-cremation-clearance-status 0..1
+* extension[extension-cremation-clearance-status] ^short = "Status of the Cremation Clearance (e.g., requested, pending, rejected, approved). Expected to be Requested in Cremation Clearance Request."
   * ^definition = "Status of the Cremation Clearance (e.g., requested, pending, rejected, approved)"
-* extension contains ExtensionMECertificationAffirmation named Extension-me-certification-affirmation 0..1
-* extension[Extension-me-certification-affirmation] ^short = "Indicates whether the Medical Examiner certification has been affirmed or not"
+* extension contains ExtensionMECertificationAffirmation named extension-me-certification-affirmation 0..1
+* extension[extension-me-certification-affirmation] ^short = "Indicates whether the Medical Examiner certification has been affirmed or not"
   * ^definition = "Indicates whether the Medical Examiner certification has been affirmed or not"
-* extension contains ExtensionCremationClearanceCoroner named Extension-cremation-clearance-coroner 0..1
-* extension[Extension-cremation-clearance-coroner] ^short = "Indicates whether the Cremation Clearance is a Coroner workflow or not"
+* extension contains ExtensionCremationClearanceCoroner named extension-cremation-clearance-coroner 0..1
+* extension[extension-cremation-clearance-coroner] ^short = "Indicates whether the Cremation Clearance is a Coroner workflow or not"
   * ^definition = "Indicates whether the Cremation Clearance is a Cononer workflow or not"
-* extension contains ExtensionCremationClearanceSignature named Extension-cremation-clearance-signature 0..1
-* extension[Extension-cremation-clearance-signature] ^short = "Indicates whether the Cremation Clearance has been signed or not. Expected to be unsigned in Cremation Clearance Request."
+* extension contains ExtensionCremationClearanceSignature named extension-cremation-clearance-signature 0..1
+* extension[extension-cremation-clearance-signature] ^short = "Indicates whether the Cremation Clearance has been signed or not. Expected to be unsigned in Cremation Clearance Request."
   * ^definition = "Indicates whether the Cremation Clearance has been signed or not"
 //
 * subject 1..1
