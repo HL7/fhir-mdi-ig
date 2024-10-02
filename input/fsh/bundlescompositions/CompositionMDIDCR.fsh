@@ -146,4 +146,4 @@ Description: "This Composition contains information for a request to review deat
 * insert CompositionSectionSlice(cremation-clearance-info, cause-of-death-certifier, 0, 1,  [[Death Certificate certifier, often attending physician]],  [[Death Certificate certifier, often attending physician]], Certifier )
 * insert CompositionSectionSlice(cremation-clearance-info, funeral-home, 0, 1,  [[Funeral home]],  [[Funeral home]], FuneralHome )
 * insert CompositionSectionSlice(cremation-clearance-info, mortician, 0, 1,  [[Mortician]],  [[Mortician]], Mortician )
-* insert CompositionSectionSlice(cremation-clearance-info, crematorium, 0, 1,  [[Crematorium]],  [[Crematorium]], USCoreOrganizationProfile )
+* insert CompositionSectionSlice(cremation-clearance-info, crematorium, 0, 1,  [[Crematorium]],  [[Crematorium]], OrganizationCrematorium )
