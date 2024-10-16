@@ -1,7 +1,7 @@
-Instance: location-death-string
+Instance: vrdr-death-location-string
 InstanceOf: DeathLocation
-Title: "Location - Death - Freeman address string"
-Description: "Location - Death: address as string example"
+Title: "vrdr-death-location - Freeman address string"
+Description: "vrdr-death-location: address as string example"
 Usage: #example
 * identifier
   * system = "http://www.acme.org/location"

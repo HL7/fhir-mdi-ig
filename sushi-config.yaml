@@ -303,9 +303,9 @@ groups:
     description: Examples of resources defined elsewhere included in MDI examples.
     resources: 
       - DecedentDispositionMethod-a-freeman
-      - location-death-atlanta-ga-a-freeman
-      - location-death-lat-long
-      - location-death-string
+      - vrdr-death-location-atlanta-ga-a-freeman
+      - vrdr-death-location-lat-long
+      - vrdr-death-location-string
       - location-injury-atlanta-ga-a-freeman
       - observation-autopsy-performed-indicator-a-freeman
       - observation-contributing-cause-of-death-part2-a-freeman

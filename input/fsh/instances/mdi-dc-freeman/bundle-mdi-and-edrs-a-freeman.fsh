@@ -13,7 +13,7 @@ Usage: #example
 * insert addentry(Observation, observation-manner-of-death-a-freeman-accidental)
 * insert addentry(Observation, observation-cause-of-death-part1-a-freeman)
 * insert addentry(Observation, observation-contributing-cause-of-death-part2-a-freeman)
-* insert addentry(Location,location-death-atlanta-ga-a-freeman)
+* insert addentry(Location,vrdr-death-location-atlanta-ga-a-freeman)
 * insert addentry(Location,location-injury-atlanta-ga-a-freeman)
 * insert addentry(Patient, us-core-patient-a-freeman)
 * insert addentry(Observation, observation-tobacco-use-a-freeman)

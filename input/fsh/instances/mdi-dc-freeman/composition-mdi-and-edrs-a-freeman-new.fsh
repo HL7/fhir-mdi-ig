@@ -26,7 +26,7 @@ Usage: #example
 * section[+]
   * title = "Circumstances Section"
   * code = CodeSystemMDI#circumstances
-  * entry[0] = Reference(location-death-atlanta-ga-a-freeman)
+  * entry[0] = Reference(vrdr-death-location-atlanta-ga-a-freeman)
   * entry[+] = Reference(observation-tobacco-use-a-freeman)
   * entry[+] = Reference(observation-decedent-pregnancy-a-freeman)
   * entry[+] = Reference(location-injury-atlanta-ga-a-freeman)

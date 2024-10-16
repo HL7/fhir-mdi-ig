@@ -1,7 +1,7 @@
-Instance: location-death-lat-long
+Instance: vrdr-death-location-lat-long
 InstanceOf: DeathLocation
-Title: "Location - Death - Lat/Long"
-Description: "Location - Death: latitude & longitude example"
+Title: "vrdr-death-location - Lat/Long"
+Description: "vrdr-death-location: latitude & longitude example"
 Usage: #example
 * identifier
   * system = "http://www.acme.org/location"
