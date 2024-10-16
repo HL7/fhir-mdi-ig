@@ -302,27 +302,27 @@ groups:
     name: Other Examples
     description: Examples of resources defined elsewhere included in MDI examples. These are examples of profiles defined in Vital Records Death Reporting (VRDR), Vital Records Common Library (VRCL), US Core. and the base FHIR specification.
     resources: 
-      - DecedentDispositionMethod-a-freeman
-      - vrdr-death-location-atlanta-ga-a-freeman
-      - vrdr-death-location-lat-long
-      - vrdr-death-location-string
-      - location-injury-atlanta-ga-a-freeman
-      - observation-autopsy-performed-indicator-a-freeman
-      - observation-contributing-cause-of-death-part2-a-freeman
-      - observation-death-date-a-freeman
-      #- observation-death-date-partialdate
-      #- observation-death-date-period
-      - observation-decedent-pregnancy-a-freeman
-      - observation-manner-of-death-a-freeman-accidental
-      - observation-tobacco-use-a-freeman
-      - observation-how-death-injury-occurred-a-freeman-med-ingest
-      - procedure-death-certification-a-freeman
       - us-core-organization-tox-lab
       - us-core-patient-a-freeman
       - us-core-patient-unknown-name
       - us-core-practitioner-b-goldberger
       - us-core-practitioner-jm-lehz
+      - vrdr-autopsy-performed-indicator-a-freeman
+      - vrdr-cause-of-death-part2-a-freeman
+      - vrdr-death-certification-a-freeman
+      - vrdr-death-date-a-freeman
+      - vrdr-death-location-atlanta-ga-a-freeman
+      - vrdr-death-location-lat-long
+      - vrdr-death-location-string
+      - vrdr-decedent-disposition-method-a-freeman
+      - vrdr-decedent-pregnancy-status-a-freeman
+      - vrdr-injury-incident-a-freeman-med-ingest
+      - vrdr-injury-location-atlanta-ga-a-freeman
+      - vrdr-manner-of-death-a-freeman-accidental
+      - vrdr-tobacco-use-a-freeman
       - vr-practitioner-s-jones
+      #- observation-death-date-partialdate
+      #- observation-death-date-period
 
   
 #
