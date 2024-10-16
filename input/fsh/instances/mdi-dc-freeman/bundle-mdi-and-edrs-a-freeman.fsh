@@ -18,7 +18,7 @@ Usage: #example
 * insert addentry(Patient, us-core-patient-a-freeman)
 * insert addentry(Observation, observation-tobacco-use-a-freeman)
 * insert addentry(Observation, observation-death-date-a-freeman )
-* insert addentry(Practitioner, us-core-practitioner-s-jones)
+* insert addentry(Practitioner, vr-practitioner-s-jones)
 * insert addentry(Practitioner, us-core-practitioner-jm-lehz)
 * insert addentry(Observation, observation-decedent-pregnancy-a-freeman)
 * insert addentry(Procedure, procedure-death-certification-a-freeman)

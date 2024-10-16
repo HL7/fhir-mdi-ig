@@ -5,6 +5,6 @@ Usage: #example
 Description: "Observation - Disposition Method: Freeman example"
 * status = #final
 * subject = Reference(us-core-patient-a-freeman)
-* performer = Reference(us-core-practitioner-s-jones)
+* performer = Reference(vr-practitioner-s-jones)
 * valueCodeableConcept = $sct#449971000124106 "Burial"
 //* extension[dispositionLocationReference].valueReference  = Reference(DispositionLocation-Example1)

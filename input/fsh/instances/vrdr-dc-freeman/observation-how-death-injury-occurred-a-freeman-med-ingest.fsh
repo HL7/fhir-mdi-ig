@@ -9,7 +9,7 @@ Usage: #example
 * effectiveDateTime.extension[partialDateTime].extension[month].valueUnsignedInt = 1
 * effectiveDateTime.extension[partialDateTime].extension[year].valueUnsignedInt = 2022
 * effectiveDateTime.extension[partialDateTime].extension[time].valueTime.extension[dataabsent].valueCode = $dataabsentreason401#unknown
-* performer.reference = "Practitioner/us-core-practitioner-s-jones"
+* performer.reference = "Practitioner/vr-practitioner-s-jones"
 * valueCodeableConcept.text = "drug toxicity"
 * component[workInjuryIndicator]
   * valueCodeableConcept = $v2-0136#N "No"

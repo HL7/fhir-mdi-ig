@@ -7,7 +7,7 @@ Usage: #example
 * code = $loinc#81956-5 "Date+time of death"
 * subject.reference = "Patient/us-core-patient-a-freeman"
 * effectiveDateTime = "2022-01-08T15:30:00-05:00"
-* performer.reference = "Practitioner/us-core-practitioner-s-jones"
+* performer.reference = "Practitioner/vr-practitioner-s-jones"
 * valueDateTime = "2022-01-08"
 // PartialDateTime should not be used when the datetime can be represented using the FHIR dateTime.
 // * valueDateTime.extension[partialDateTime].extension[day].valueUnsignedInt = 8

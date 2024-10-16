@@ -7,7 +7,7 @@ Usage: #example
 * code = $loinc#69453-9 "Cause of death [US Standard Certificate of Death]"
 * subject = Reference(us-core-patient-a-freeman)
 * effectiveDateTime = "2022-02-20"
-* performer = Reference(us-core-practitioner-s-jones)
+* performer = Reference(vr-practitioner-s-jones)
 * valueCodeableConcept.text = "Fentanyl toxicity"
 * component[lineNumber]
   * valueInteger = 1

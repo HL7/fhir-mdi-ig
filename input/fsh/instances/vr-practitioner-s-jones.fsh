@@ -1,7 +1,7 @@
-Instance: us-core-practitioner-s-jones
+Instance: vr-practitioner-s-jones
 InstanceOf: PractitionerVitalRecords
-Title: "US Core Practitioner - Dr. Sam Jones"
-Description: "Example of US Core Practitioner - Dr. Sam Jones, death pronouncer"
+Title: "Practitioner - Vital Records - Dr. Sam Jones"
+Description: "Example of Practitioner - Vital Records - Dr. Sam Jones, medical examiner and death pronouncer"
 Usage: #example
 
 * identifier

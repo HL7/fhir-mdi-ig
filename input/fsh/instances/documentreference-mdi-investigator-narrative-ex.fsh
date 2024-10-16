@@ -10,7 +10,7 @@ Usage: #example
 * category.text = "Investigator’s Narrative"
 * subject = Reference(us-core-patient-a-freeman)
 * date = "2023-01-13T15:52:20.000+00:00"
-* authenticator = Reference(us-core-practitioner-s-jones)
+* authenticator = Reference(vr-practitioner-s-jones)
 * content.attachment
   * contentType = #application/pdf
   * language = #en-US

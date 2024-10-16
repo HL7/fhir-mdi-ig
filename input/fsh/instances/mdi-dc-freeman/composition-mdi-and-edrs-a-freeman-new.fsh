@@ -12,11 +12,11 @@ Usage: #example
 * type = $loinc#86807-5 "Death administrative information Document"
 * subject = Reference(us-core-patient-a-freeman)
 * date = "2022-02-20"
-* author = Reference(us-core-practitioner-s-jones)
+* author = Reference(vr-practitioner-s-jones)
 * title = "MDI to EDRS Composition"
 * attester
   * mode = #professional
-  * party = Reference(us-core-practitioner-s-jones)
+  * party = Reference(vr-practitioner-s-jones)
 * section[0]
   * title = "Additional Demographic Information Section"
   * code = CodeSystemMDI#demographics

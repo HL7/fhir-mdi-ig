@@ -5,7 +5,7 @@ Description: "Observation - Cause of Death Part 1: Freeman example"
 Usage: #example
 * status = #final
 * subject = Reference(us-core-patient-a-freeman) 
-* performer = Reference(us-core-practitioner-s-jones)
+* performer = Reference(vr-practitioner-s-jones)
 * valueCodeableConcept.text = "Fentanyl toxicity"
 * component[lineNumber]
   * valueInteger = 1

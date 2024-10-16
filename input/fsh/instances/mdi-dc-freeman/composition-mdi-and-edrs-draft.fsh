@@ -16,7 +16,7 @@ Usage: #example
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
     * valueCode = #temp-unknown
-//    * fhir_comments = " When author is not yet set use data-absent-reason rather than <reference value=\"Practitioner/us-core-practitioner-s-jones\"/>"
+//    * fhir_comments = " When author is not yet set use data-absent-reason rather than <reference value=\"Practitioner/vr-practitioner-s-jones\"/>"
   * display = "Temporarily Unknown"
 * title = "MDI and EDRS Composition"
 * attester
@@ -25,7 +25,7 @@ Usage: #example
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
       * valueCode = #temp-unknown
-//      * fhir_comments = " When attester is not yet set use data-absent-reason rather than <reference value=\"Practitioner/us-core-practitioner-s-jones\"/>"
+//      * fhir_comments = " When attester is not yet set use data-absent-reason rather than <reference value=\"Practitioner/vr-practitioner-s-jones\"/>"
     * display = "Temporarily Unknown"
 * section[0]
   * title = "Additional Demographic Information Section"

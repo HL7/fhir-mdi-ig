@@ -13,7 +13,7 @@ Description: "Death Certificate Revirew for Cremation Clearance Request Composit
 * type = $loinc#86807-5 "Death administrative information Document"
 * subject = Reference(decedent-ccr-ex1)
 * date = "2023-05-02"
-* author = Reference(us-core-practitioner-s-jones) // author should be the EDRS ?
+* author = Reference(vr-practitioner-s-jones) // author should be the EDRS ?
 * title = "Composition - Cremation Clearance Request - Example"
 //
 * section[DecedentDemographics]
