@@ -198,8 +198,8 @@ groups:
       - CapabilityStatement-mdi-cms-server
  
   MDIProfiles:
-    name: Death Investigation Profiles
-    description: Profiles defined for exchanging death investigation data between and MDI CMS and and EDRS.
+    name: MDI Profiles for Death Certificate
+    description: Profiles defined for exchanging death investigation data between and MDI CMS and EDRS for death certificate development.
     resources:  
       - BundleDocumentMDIAndEDRS 
       - CompositionMDIAndEDRS
