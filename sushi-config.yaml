@@ -300,7 +300,7 @@ groups:
 
   OtherExamples:
     name: Other Examples
-    description: Examples of resources defined elsewhere included in MDI examples.
+    description: Examples of resources defined elsewhere included in MDI examples. These are examples of profiles defined in Vital Records Death Reporting (VRDR), Vital Records Common Library (VRCL), US Core. and the base FHIR specification.
     resources: 
       - DecedentDispositionMethod-a-freeman
       - vrdr-death-location-atlanta-ga-a-freeman
@@ -317,23 +317,6 @@ groups:
       - observation-tobacco-use-a-freeman
       - observation-how-death-injury-occurred-a-freeman-med-ingest
       - procedure-death-certification-a-freeman
-      #- specimen-bile-toxicology-a-freeman
-      #- specimen-blood-toxicology-a-freeman
-      #- specimen-liver-toxicology-a-freeman
-      #- specimen-stomach-contents-toxicology-a-freeman
-      #- specimen-urine-toxicology-a-freeman
-      #- specimen-vitreous-humor-toxicology-a-freeman
-      #- us-core-lab-result-4-anpp-blood-a-freeman
-      #- us-core-lab-result-4-anpp-urine-a-freeman
-      #- us-core-lab-result-acetylfentanyl-blood-a-freeman
-      #- us-core-lab-result-acetylfentanyl-urine-a-freeman
-      #- us-core-lab-result-etoh-gas-chromatography-blood-a-freeman
-      #- us-core-lab-result-etoh-gas-chromatography-urine-a-freeman
-      #- us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman
-      #- us-core-lab-result-fentanyl-blood-a-freeman
-      #- us-core-lab-result-fentanyl-urine-a-freeman
-      #- us-core-lab-result-norfentanyl-urine-a-freeman
-      #- us-core-lab-result-xylazine-urine-a-freeman
       - us-core-organization-tox-lab
       - us-core-patient-a-freeman
       - us-core-patient-unknown-name
