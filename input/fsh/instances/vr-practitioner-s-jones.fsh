@@ -1,7 +1,7 @@
 Instance: vr-practitioner-s-jones
 InstanceOf: PractitionerVitalRecords
 Title: "Practitioner - Vital Records - Dr. Sam Jones"
-Description: "Example of Practitioner - Vital Records - Dr. Sam Jones, medical examiner and death pronouncer"
+Description: "Example of Practitioner - Vital Records: Dr. Sam Jones, medical examiner and death pronouncer for Freeman death investigation examples."
 Usage: #example
 
 * identifier
