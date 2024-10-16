@@ -1,7 +1,7 @@
-Instance: observation-decedent-pregnancy-a-freeman
+Instance: vrdr-decedent-pregnancy-status-a-freeman
 InstanceOf: DecedentPregnancyStatus
-Title: "Observation - Decedent Pregnancy - Freeman"
-Description: "Observation - Decedent Pregnancy: Freeman example"
+Title: "VRDR Decedent Pregnancy - Freeman"
+Description: "Decedent Pregnancy: Freeman example (vrdr-decedent-pregnancy-status)"
 Usage: #example
 * status = #final
 * code = $loinc#69442-2 "Timing of recent pregnancy in relation to death"

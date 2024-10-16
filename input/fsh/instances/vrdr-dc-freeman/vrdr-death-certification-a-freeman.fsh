@@ -1,7 +1,7 @@
-Instance: procedure-death-certification-a-freeman
+Instance: vrdr-death-certification-a-freeman
 InstanceOf: DeathCertification
-Title: "Procedure - Death Certification - Freeman"
-Description: "Procedure - Death Certification: Freeman example"
+Title: "VRDR Death Certification Procedure - Freeman"
+Description: "Death Certification Procedure: Freeman example (vrdr-death-certification)"
 Usage: #example
 * identifier.value = "180"
 * status = #completed

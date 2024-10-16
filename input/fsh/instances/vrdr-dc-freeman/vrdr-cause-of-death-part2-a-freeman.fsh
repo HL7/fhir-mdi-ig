@@ -1,7 +1,7 @@
-Instance: observation-contributing-cause-of-death-part2-a-freeman
+Instance: vrdr-cause-of-death-part2-a-freeman
 InstanceOf: CauseOfDeathPart2
-Title: "Observation - Contributing Cause of Death Part 2 - Freeman"
-Description: "Observation - Contributing Cause of Death Part 2: Freeman example"
+Title: "VRDR Cause of Death Part 2 - Freeman"
+Description: "Cause of Death Part 2: Freeman example (vrdr-cause-of-death-part2)"
 Usage: #example
 * status = #final
 * subject = Reference(us-core-patient-a-freeman) 

@@ -1,7 +1,7 @@
-Instance: observation-how-death-injury-occurred-a-freeman-med-ingest
+Instance: vrdr-injury-incident-a-freeman-med-ingest
 InstanceOf: InjuryIncident
-Title: "Observation - How Death Injury Occurred - Freeman - Medication ingestion"
-Description: "Observation - How Death Injury Occurred: Freeman - Medication ingestion (fentanyl) example"
+Title: "VRDR Injury Incident - Freeman"
+Description: "Injury Incident: Freeman medication ingestion example (vrdr-injury-incident)"
 Usage: #example
 * status = #final
 * subject.reference = "Patient/us-core-patient-a-freeman"

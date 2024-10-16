@@ -1,7 +1,7 @@
-Instance: observation-death-date-a-freeman
+Instance: vrdr-death-date-a-freeman
 InstanceOf: DeathDate
-Title: "Observation - Death Date - Freeman"
-Description: "Observation - Death Date: Freeman death date, location, death pronouncer example"
+Title: "VRDR Death Date - Freeman"
+Description: "Death Date: Freeman death date, location, death pronouncer example (vrdr-death-date)"
 Usage: #example
 * status = #final
 * code = $loinc#81956-5 "Date+time of death"

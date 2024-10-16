@@ -1,7 +1,7 @@
 Instance: vrdr-death-location-string
 InstanceOf: DeathLocation
-Title: "vrdr-death-location - Freeman address string"
-Description: "vrdr-death-location: address as string example"
+Title: "VRDR Death Location - address string"
+Description: "Death Location: address as string, Freeman example (vrdr-death-location)"
 Usage: #example
 * identifier
   * system = "http://www.acme.org/location"

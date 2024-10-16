@@ -27,21 +27,21 @@ Usage: #example
   * title = "Circumstances Section"
   * code = CodeSystemMDI#circumstances
   * entry[0] = Reference(vrdr-death-location-atlanta-ga-a-freeman)
-  * entry[+] = Reference(observation-tobacco-use-a-freeman)
-  * entry[+] = Reference(observation-decedent-pregnancy-a-freeman)
-  * entry[+] = Reference(location-injury-atlanta-ga-a-freeman)
+  * entry[+] = Reference(vrdr-tobacco-use-a-freeman)
+  * entry[+] = Reference(vrdr-decedent-pregnancy-status-a-freeman)
+  * entry[+] = Reference(vrdr-injury-location-atlanta-ga-a-freeman)
 * section[+]
   * title = "Jurisdiction Section"
   * code = CodeSystemMDI#jurisdiction
-  * entry[0] = Reference(observation-death-date-a-freeman)
-  * entry[+] = Reference(procedure-death-certification-a-freeman)
+  * entry[0] = Reference(vrdr-death-date-a-freeman)
+  * entry[+] = Reference(vrdr-death-certification-a-freeman)
 * section[+]
   * title = "Cause and Manner of Death Section"
   * code = CodeSystemMDI#cause-manner
   * entry[0] = Reference(observation-cause-of-death-part1-a-freeman)
-  * entry[+] = Reference(observation-contributing-cause-of-death-part2-a-freeman)
-  * entry[+] = Reference(observation-manner-of-death-a-freeman-accidental)
-  * entry[+] = Reference(observation-how-death-injury-occurred-a-freeman-med-ingest)
+  * entry[+] = Reference(vrdr-cause-of-death-part2-a-freeman)
+  * entry[+] = Reference(vrdr-manner-of-death-a-freeman-accidental)
+  * entry[+] = Reference(vrdr-injury-incident-a-freeman-med-ingest)
 * section[+]
   * title = "Medical History Section"
   * code = CodeSystemMDI#medical-history

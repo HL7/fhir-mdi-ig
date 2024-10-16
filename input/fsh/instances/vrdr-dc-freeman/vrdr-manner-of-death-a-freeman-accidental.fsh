@@ -1,7 +1,7 @@
-Instance: observation-manner-of-death-a-freeman-accidental
+Instance: vrdr-manner-of-death-a-freeman-accidental
 InstanceOf: MannerOfDeath
-Title: "Observation - Manner of Death - Freeman"
-Description: "Observation - Manner of Death: Freeman - accidental example"
+Title: "VRDR Manner of Death - Freeman"
+Description: "Manner of Death: Freeman - accidental example (vrdr-manner-of-death)"
 Usage: #example
 * status = #final
 * code = $loinc#69449-7 "Manner of death"

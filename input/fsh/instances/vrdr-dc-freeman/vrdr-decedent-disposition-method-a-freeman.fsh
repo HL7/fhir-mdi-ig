@@ -1,8 +1,8 @@
-Instance: DecedentDispositionMethod-a-freeman
+Instance: vrdr-decedent-disposition-method-a-freeman
 InstanceOf: DecedentDispositionMethod
-Title: "Observation - Disposition Method - Freeman"
+Title: "VRDR Disposition Method - Freeman"
 Usage: #example
-Description: "Observation - Disposition Method: Freeman example"
+Description: "Disposition Method: Freeman example (vrdr-decedent-disposition-method)"
 * status = #final
 * subject = Reference(us-core-patient-a-freeman)
 * performer = Reference(vr-practitioner-s-jones)

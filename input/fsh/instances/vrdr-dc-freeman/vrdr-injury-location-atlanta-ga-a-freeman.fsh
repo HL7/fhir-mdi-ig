@@ -1,7 +1,7 @@
-Instance: location-injury-atlanta-ga-a-freeman
+Instance: vrdr-injury-location-atlanta-ga-a-freeman
 InstanceOf: InjuryLocation
-Title: "Location - Injury - Atlanta GA Freeman"
-Description: "Location - Injury:  Atlanta GA Freeman example"
+Title: "VRDR Injury Location - Atlanta GA"
+Description: "Injury Location:  Atlanta GA, Freeman example (vrdr-injury-location)"
 Usage: #example
 * identifier
   * system = "http://www.acme.org/location"

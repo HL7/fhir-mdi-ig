@@ -1,7 +1,7 @@
-Instance: observation-autopsy-performed-indicator-a-freeman
+Instance: vrdr-autopsy-performed-indicator-a-freeman
 InstanceOf: AutopsyPerformedIndicator
-Title: "Observation - Autopsy Performed Indicator - Freeman"
-Description: "Observation - Autopsy Performed Indicator: Freeman example"
+Title: "VRDR Autopsy Performed Indicator - Freeman"
+Description: "Autopsy Performed Indicator: Freeman example (vrdr-autopsy-performed-indicator)"
 Usage: #example
 * status = #final
 * code = $loinc#85699-7
