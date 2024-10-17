@@ -4,7 +4,7 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-injury-incident"
 * status = #final
 * code = $loinc#11374-6 "Injury incident description"
-* subject = Reference(decedent-ccr-ex1)
+* subject = Reference(vrdr-decedent-dcr-ex1)
 * effectiveDateTime = "2000-01-01"
 * valueCodeableConcept.text  = "shot by other"
 * component[0].code = $loinc#69444-8 "Did death result from injury at work"

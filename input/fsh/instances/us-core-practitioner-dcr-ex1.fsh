@@ -1,4 +1,4 @@
-Instance: uscore-practitioner-dcr-ex1
+Instance: us-core-practitioner-dcr-ex1
 InstanceOf: USCorePractitionerProfile
 Usage: #example
 // death-pronouncement-performer

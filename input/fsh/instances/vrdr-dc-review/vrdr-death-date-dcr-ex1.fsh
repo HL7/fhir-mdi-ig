@@ -4,7 +4,7 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-date"
 * status = #final
 * code = $loinc#81956-5 "Date+time of death"
-* subject = Reference(decedent-ccr-ex1)
+* subject = Reference(vrdr-decedent-dcr-ex1)
 //Is this local system extension needed?
 //* effectiveDateTime.extension[0].extension.url = "long"
 //* effectiveDateTime.extension[=].extension.valueString = "202304240100"
@@ -13,7 +13,7 @@ Usage: #example
 //* effectiveDateTime.extension[=].extension.valueString = "AM"
 //* effectiveDateTime.extension[=].url = "http://example-edrs.org/fhir/StructureDefinition/datetime-modifier"
 * effectiveDateTime = "2023-04-24T01:00:00-04:00"
-* performer = Reference(death-pronouncement-performer-ccr-ex1)
+* performer = Reference(us-core-practitioner-dcr-ex1)
 //Is this local system extension needed?
 //* valueDateTime.extension[0].extension.url = "long"
 //* valueDateTime.extension[=].extension.valueString = "202304240100"

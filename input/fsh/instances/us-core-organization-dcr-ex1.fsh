@@ -1,4 +1,4 @@
-Instance: uscore-organization-dcr-ex1
+Instance: us-core-organization-dcr-ex1
 InstanceOf: USCoreOrganizationProfile
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
