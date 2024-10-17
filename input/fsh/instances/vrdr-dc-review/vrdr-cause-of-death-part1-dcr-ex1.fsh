@@ -1,4 +1,4 @@
-Instance: cause-of-death-ccr-ex1
+Instance: vrdr-cause-of-death-part1-dcr-ex1
 InstanceOf: CauseOfDeathPart1
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part1"
