@@ -1,4 +1,4 @@
-Instance: disposition-method-ccr-ex1
+Instance: vrdr-decedent-disposition-method-dcr-ex1
 InstanceOf: DecedentDispositionMethod
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-disposition-method"

@@ -1,4 +1,4 @@
-Instance: decedent-ccr-ex1
+Instance: vrdr-decedent-dcr-ex1
 InstanceOf: Decedent
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent"

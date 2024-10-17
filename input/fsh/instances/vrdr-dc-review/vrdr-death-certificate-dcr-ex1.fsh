@@ -1,4 +1,4 @@
-Instance: death-certificate-ccr-ex1
+Instance: vrdr-death-certificate-dcr-ex1
 InstanceOf: DeathCertificate
 Usage: #example
 Description: "Death Certificate - CCR example 1"

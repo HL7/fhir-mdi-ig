@@ -1,4 +1,4 @@
-Instance: manner-of-death-ccr-ex1
+Instance: vrdr-manner-of-death-dcr-ex1
 InstanceOf: MannerOfDeath
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-manner-of-death"

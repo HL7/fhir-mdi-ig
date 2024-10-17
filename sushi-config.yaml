@@ -273,6 +273,7 @@ groups:
       - bundle-mdi-tox-report-message-a-freeman
       - composition-mdi-and-edrs-a-freeman
       - composition-mdi-and-edrs-draft
+      - composition-mdi-ccr-ex2
       - diagnosticreport-mdi-toxicology-lab-a-freeman
       - documentreference-mdi-autopsy-report-ex
       - documentreference-mdi-investigator-narrative-ex
@@ -280,6 +281,10 @@ groups:
       - messageheader-mdi-tox-result-report-a-freeman
       - observation-cause-of-death-part1-a-freeman
       - observation-cause-of-death-part1-freeman-quantity-interval
+      - observation-communicable-disease-ccr-ex1
+      - observation-embalmed-ccr-ex1
+      - observation-medical-information-data-quality-ccr-ex1
+      - observation-personal-information-data-quality-ccr-ex1
       - specimen-bile-toxicology-a-freeman
       - specimen-blood-toxicology-a-freeman
       - specimen-liver-toxicology-a-freeman
@@ -302,27 +307,56 @@ groups:
     name: Other Examples
     description: Examples of resources defined elsewhere included in MDI examples. These are examples of profiles defined in Vital Records Death Reporting (VRDR), Vital Records Common Library (VRCL), US Core. and the base FHIR specification.
     resources: 
+      #- observation-death-date-partialdate
+      #- observation-death-date-period
+      - us-core-organization-dcr-ex1
+      - us-core-organization-ga-dph
       - us-core-organization-tox-lab
       - us-core-patient-a-freeman
       - us-core-patient-unknown-name
       - us-core-practitioner-b-goldberger
+      - us-core-practitioner-dcr-ex1
       - us-core-practitioner-jm-lehz
       - vrdr-autopsy-performed-indicator-a-freeman
+      - vrdr-autopsy-performed-indicator-dcr-ex1
+      - vrdr-cause-of-death-part1-dcr-ex1
       - vrdr-cause-of-death-part2-a-freeman
+      - vrdr-cause-of-death-part2-dcr-ex1
+      - vrdr-certifier-dcr-ex1
+      - vrdr-death-certificate-dcr-ex1
       - vrdr-death-certification-a-freeman
+      - vrdr-death-certification-dcr-ex1
       - vrdr-death-date-a-freeman
+      - vrdr-death-date-dcr-ex1
       - vrdr-death-location-atlanta-ga-a-freeman
+      - vrdr-death-location-dcr-ex1
       - vrdr-death-location-lat-long
       - vrdr-death-location-string
+      - vrdr-decedent-age-dcr-ex1
+      - vrdr-decedent-dcr-ex1
       - vrdr-decedent-disposition-method-a-freeman
+      - vrdr-decedent-disposition-method-dcr-ex1
+      - vrdr-decedent-education-level-dcr-ex1
+      - vrdr-decedent-father-dcr-ex1
+      - vrdr-decedent-military-service-dcr-ex1
+      - vrdr-decedent-mother-dcr-ex1
       - vrdr-decedent-pregnancy-status-a-freeman
+      - vrdr-decedent-pregnancy-status-dcr-ex1
+      - vrdr-decedent-usual-work-dcr-ex1
+      - vrdr-disposition-location-dcr-ex1
+      - vrdr-examiner-contacted-dcr-ex1
+      - vrdr-funeral-home-dcr-ex1
       - vrdr-injury-incident-a-freeman-med-ingest
+      - vrdr-injury-incident-dcr-ex1
       - vrdr-injury-location-atlanta-ga-a-freeman
+      - vrdr-injury-location-dcr-ex1
       - vrdr-manner-of-death-a-freeman-accidental
+      - vrdr-manner-of-death-dcr-ex1
+      - vrdr-mortician-dcr-ex1
       - vrdr-tobacco-use-a-freeman
+      - vrdr-tobacco-use-dcr-ex1
       - vr-practitioner-s-jones
-      #- observation-death-date-partialdate
-      #- observation-death-date-period
+
 
   
 #

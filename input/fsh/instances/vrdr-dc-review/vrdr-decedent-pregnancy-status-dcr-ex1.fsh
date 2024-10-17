@@ -1,4 +1,4 @@
-Instance: decedent-pregnancy-ccr-ex1
+Instance: vrdr-decedent-pregnancy-status-dcr-ex1
 InstanceOf: DecedentPregnancyStatus
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-pregnancy-status"

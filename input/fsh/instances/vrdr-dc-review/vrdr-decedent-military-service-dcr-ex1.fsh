@@ -1,4 +1,4 @@
-Instance: decedent-military-service-ccr-ex1
+Instance: vrdr-decedent-military-service-dcr-ex1
 InstanceOf: DecedentMilitaryService
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-military-service"

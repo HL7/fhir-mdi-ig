@@ -1,6 +1,7 @@
-Instance: death-pronouncement-performer-ccr-ex1
+Instance: uscore-practitioner-dcr-ex1
 InstanceOf: USCorePractitionerProfile
 Usage: #example
+// death-pronouncement-performer
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "1234567"

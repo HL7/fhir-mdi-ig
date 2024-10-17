@@ -1,4 +1,4 @@
-Instance: examiner-contacted-ccr-ex1
+Instance: vrdr-examiner-contacted-dcr-ex1
 InstanceOf: ExaminerContacted
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-examiner-contacted"

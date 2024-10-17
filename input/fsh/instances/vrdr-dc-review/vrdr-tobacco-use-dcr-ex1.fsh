@@ -1,4 +1,4 @@
-Instance: tobacco-use-ccr-ex1
+Instance: vrdr-tobacco-use-dcr-ex1
 InstanceOf: TobaccoUseContributedToDeath
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-tobacco-use-contributed-to-death"

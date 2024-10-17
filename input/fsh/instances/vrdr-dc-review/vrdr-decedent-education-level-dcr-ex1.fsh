@@ -1,4 +1,4 @@
-Instance: decedent-education-level-ccr-ex1
+Instance: vrdr-decedent-education-level-dcr-ex1
 InstanceOf: DecedentEducationLevel
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-education-level"

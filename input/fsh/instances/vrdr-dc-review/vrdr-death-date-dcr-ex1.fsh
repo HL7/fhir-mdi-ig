@@ -1,4 +1,4 @@
-Instance: death-date-ccr-ex1
+Instance: vrdr-death-date-dcr-ex1
 InstanceOf: DeathDate
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-date"

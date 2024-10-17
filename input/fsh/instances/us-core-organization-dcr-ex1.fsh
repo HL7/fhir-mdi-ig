@@ -1,5 +1,5 @@
-Instance: interested-party-ccr-ex1
-InstanceOf: Organization
+Instance: uscore-organization-dcr-ex1
+InstanceOf: USCoreOrganizationProfile
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
 * identifier.system = "http://Tahoe.Web/Insurity.Tahoe.Organization.Entity.BusinessUnitCode"

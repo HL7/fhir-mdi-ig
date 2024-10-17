@@ -1,4 +1,4 @@
-Instance: death-certification-procedure-ccr-ex1
+Instance: vrdr-death-certification-dcr-ex1
 InstanceOf: DeathCertification
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certification"

@@ -1,4 +1,4 @@
-Instance: mortician-ccr-ex1
+Instance: vrdr-mortician-dcr-ex1
 InstanceOf: Mortician
 Usage: #example
 //* meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-mortician"

@@ -1,4 +1,4 @@
-Instance: funeral-home-ccr-ex1
+Instance: vrdr-funeral-home-dcr-ex1
 InstanceOf: FuneralHome
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-funeral-home"

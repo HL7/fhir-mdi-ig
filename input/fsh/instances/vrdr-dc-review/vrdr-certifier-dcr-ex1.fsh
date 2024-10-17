@@ -1,4 +1,4 @@
-Instance: certifier-ccr-ex1
+Instance: vrdr-certifier-dcr-ex1
 InstanceOf: Certifier
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-certifier"

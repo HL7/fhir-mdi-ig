@@ -1,4 +1,4 @@
-Instance: autopsy-performed-ccr-ex1
+Instance: vrdr-autopsy-performed-indicator-dcr-ex1
 InstanceOf: AutopsyPerformedIndicator
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-autopsy-performed-indicator"

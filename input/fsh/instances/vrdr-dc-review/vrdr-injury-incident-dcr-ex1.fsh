@@ -1,4 +1,4 @@
-Instance: injury-incident-ccr-ex1
+Instance: vrdr-injury-incident-dcr-ex1
 InstanceOf: InjuryIncident
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-injury-incident"

@@ -1,4 +1,4 @@
-Instance: death-location-ccr-ex1
+Instance: vrdr-death-location-dcr-ex1
 InstanceOf: DeathLocation
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-location"

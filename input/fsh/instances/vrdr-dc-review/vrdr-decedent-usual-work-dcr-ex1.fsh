@@ -1,4 +1,4 @@
-Instance: decedent-usual-work-ccr-ex1
+Instance: vrdr-decedent-usual-work-dcr-ex1
 InstanceOf: DecedentUsualWork
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-usual-work"

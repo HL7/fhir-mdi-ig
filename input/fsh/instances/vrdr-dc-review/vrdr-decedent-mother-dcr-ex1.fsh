@@ -1,4 +1,4 @@
-Instance: decedent-mother-ccr-ex1
+Instance: vrdr-decedent-mother-dcr-ex1
 InstanceOf: DecedentMother
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-mother"

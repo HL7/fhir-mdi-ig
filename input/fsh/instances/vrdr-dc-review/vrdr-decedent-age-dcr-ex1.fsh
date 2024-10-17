@@ -1,4 +1,4 @@
-Instance: decedent-age-ccr-ex1
+Instance: vrdr-decedent-age-dcr-ex1
 InstanceOf: DecedentAge
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-age"
