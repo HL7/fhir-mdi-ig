@@ -223,6 +223,7 @@ groups:
      - ObservationEmbalmed
      - ObservationMedicalInformationDataQuality
      - ObservationPersonalInformationDataQuality
+     - OrganizationCrematorium
 
   MDIExtensions:
     name: Extensions
@@ -231,6 +232,7 @@ groups:
       - ExtensionCremationClearanceCoroner
       - ExtensionCremationClearanceSignature
       - ExtensionCremationClearanceStatus
+      - ExtensionDeathCertificateReviewReason
       - ExtensionDeathCertificateStatus
       - ExtensionMECertificationAffirmation
       - ExtensionTrackingNumber
