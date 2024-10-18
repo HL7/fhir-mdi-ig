@@ -283,7 +283,7 @@ groups:
     resources:
       - bundle-mdi-tox-report-message-a-freeman
       - messageheader-mdi-tox-result-report-a-freeman
-      - messagedefinition-toxicology-system
+      - MessageDefinition-toxicology-system
       - diagnosticreport-mdi-toxicology-lab-a-freeman
       - specimen-bile-toxicology-a-freeman
       - specimen-blood-toxicology-a-freeman
