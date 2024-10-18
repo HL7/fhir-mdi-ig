@@ -197,21 +197,31 @@ groups:
       - CapabilityStatement-forensic-toxicology-laboratory-server
       - CapabilityStatement-mdi-cms-server
  
-  MDIProfiles:
+  MDIProfiles1:
     name: MDI Profiles for Death Certificate
     description: Profiles defined for exchanging death investigation data between and MDI CMS and EDRS for death certificate development.
     resources:  
       - BundleDocumentMDIAndEDRS 
       - CompositionMDIAndEDRS
       - MDICauseOfDeathPart1
+
+  MDIProfiles2:
+    name: Forensic Toxicology Profiles
+    description: Profiles defined for exchanging forensic toxicology data.
+    resources:  
       - BundleMessageToxToMDI
       - MessageHeaderToxicologyToMDI
       - DiagnosticReportToxicologyToMDI 
-      - DocumentReferenceMDIReport
       - ObservationToxicologyLabResult
       - SpecimenToxicologyLab
 
-  DeathCertificateReviewProfiles:
+  MDIProfiles3:
+    name: MDI Administrative Profiles
+    description: Profile for supporting exchange of death investigation documents.
+    resources:  
+      - DocumentReferenceMDIReport
+
+  MDIProfiles4:
     name: Death Certificate Review Profiles
     description: Profiles defined for death certificate review use cases.
     resources: 
@@ -267,26 +277,25 @@ groups:
     resources:
       - expansion-parameters-mdi
       
-  MDIExamples:
-    name: MDI-defined Resource Examples
-    description: Examples of MDI-defined resources.
+  MDIExamples1:
+    name: MDI-defined Resource Examples for Death Certificate
+    description: Examples of MDI-defined resources for death certificate development.
     resources:
       - bundle-mdi-and-edrs-a-freeman
-      - bundle-mdi-tox-report-message-a-freeman
       - composition-mdi-and-edrs-a-freeman
       - composition-mdi-and-edrs-draft
-      - composition-mdi-ccr-ex2
-      - diagnosticreport-mdi-toxicology-lab-a-freeman
-      - documentreference-mdi-autopsy-report-ex
-      - documentreference-mdi-investigator-narrative-ex
-      - MessageDefinition-toxicology-system
-      - messageheader-mdi-tox-result-report-a-freeman
       - observation-cause-of-death-part1-a-freeman
       - observation-cause-of-death-part1-freeman-quantity-interval
-      - observation-communicable-disease-ccr-ex1
-      - observation-embalmed-ccr-ex1
-      - observation-medical-information-data-quality-ccr-ex1
-      - observation-personal-information-data-quality-ccr-ex1
+
+  MDIExamples2:
+    name: MDI-defined Resource Examples for
+    description: Examples of MDI-defined resources.
+    resources:
+
+      - bundle-mdi-tox-report-message-a-freeman
+      - messageheader-mdi-tox-result-report-a-freeman
+      - MessageDefinition-toxicology-system
+      - diagnosticreport-mdi-toxicology-lab-a-freeman
       - specimen-bile-toxicology-a-freeman
       - specimen-blood-toxicology-a-freeman
       - specimen-liver-toxicology-a-freeman
@@ -304,6 +313,13 @@ groups:
       - us-core-lab-result-fentanyl-urine-a-freeman
       - us-core-lab-result-norfentanyl-urine-a-freeman
       - us-core-lab-result-xylazine-urine-a-freeman
+      - documentreference-mdi-autopsy-report-ex
+      - documentreference-mdi-investigator-narrative-ex
+      - composition-mdi-ccr-ex2
+      - observation-communicable-disease-ccr-ex1
+      - observation-embalmed-ccr-ex1
+      - observation-medical-information-data-quality-ccr-ex1
+      - observation-personal-information-data-quality-ccr-ex1
 
   OtherExamples:
     name: Other Examples
