@@ -283,7 +283,7 @@ groups:
     resources:
       - bundle-mdi-tox-report-message-a-freeman
       - messageheader-mdi-tox-result-report-a-freeman
-      - MessageDefinition-toxicology-system
+      - messagedefinition-toxicology-system
       - diagnosticreport-mdi-toxicology-lab-a-freeman
       - specimen-bile-toxicology-a-freeman
       - specimen-blood-toxicology-a-freeman
@@ -310,7 +310,7 @@ groups:
       - documentreference-mdi-investigator-narrative-ex
   MDIExamples4:
     name: MDI-defined Resource Examples for Death Certificate Review
-      description: Examples of MDI-defined resources for death certificate review use cases.
+    description: Examples of MDI-defined resources for death certificate review use cases.
       - composition-mdi-ccr-ex2
       - observation-communicable-disease-ccr-ex1
       - observation-embalmed-ccr-ex1
