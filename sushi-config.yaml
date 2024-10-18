@@ -196,7 +196,6 @@ groups:
       - CapabilityStatement-edrs-server
       - CapabilityStatement-forensic-toxicology-laboratory-server
       - CapabilityStatement-mdi-cms-server
- 
   MDIProfiles1:
     name: MDI Profiles for Death Certificate
     description: Profiles defined for exchanging death investigation data between and MDI CMS and EDRS for death certificate development.
@@ -204,7 +203,6 @@ groups:
       - BundleDocumentMDIAndEDRS 
       - CompositionMDIAndEDRS
       - MDICauseOfDeathPart1
-
   MDIProfiles2:
     name: Forensic Toxicology Profiles
     description: Profiles defined for exchanging forensic toxicology data.
@@ -214,27 +212,24 @@ groups:
       - DiagnosticReportToxicologyToMDI 
       - ObservationToxicologyLabResult
       - SpecimenToxicologyLab
-
   MDIProfiles3:
     name: MDI Administrative Profiles
     description: Profile for supporting exchange of death investigation documents.
     resources:  
       - DocumentReferenceMDIReport
-
   MDIProfiles4:
     name: Death Certificate Review Profiles
     description: Profiles defined for death certificate review use cases.
     resources: 
-     - BundleMessageDCR
-     - MessageHeaderDCR
-     - BundleDocumentMDIDCR
-     - CompositionMDIDCR
-     - ObservationCommunicableDisease
-     - ObservationEmbalmed
-     - ObservationMedicalInformationDataQuality
-     - ObservationPersonalInformationDataQuality
-     - OrganizationCrematorium
-
+      - BundleMessageDCR
+      - MessageHeaderDCR
+      - BundleDocumentMDIDCR
+      - CompositionMDIDCR
+      - ObservationCommunicableDisease
+      - ObservationEmbalmed
+      - ObservationMedicalInformationDataQuality
+      - ObservationPersonalInformationDataQuality
+      - OrganizationCrematorium
   MDIExtensions:
     name: Extensions
     description: Extensions defined by this IG.
@@ -246,14 +241,12 @@ groups:
       - ExtensionDeathCertificateStatus
       - ExtensionMECertificationAffirmation
       - ExtensionTrackingNumber
-
   MDICodeSystems:
     name: CodeSystems
     description: Code systems defined by this IG. Examplecode systems contain examples of codes typically defined by each implementation or jurisdiction.
     resources:
       - CodeSystemMDI
       - CsDeathCertReviewExample
-
   MDIValuesets:
     name: Value Set
     description: Values sets defined by this IG. Example values sets contain examples of codes typically defined by each implementation or jurisdiction.
@@ -270,13 +263,11 @@ groups:
       - VSMedDQReviewEx
       - VSPerDQReviewEx
       - VSRegistrationEx
-
   MDIParameters:
     name: Parameters
     description: TBD
     resources:
       - expansion-parameters-mdi
-
   MDIExamples1:
     name: MDI-defined Resource Examples for Death Certificate
     description: Examples of MDI-defined resources for death certificate development.
@@ -286,7 +277,6 @@ groups:
       - composition-mdi-and-edrs-draft
       - observation-cause-of-death-part1-a-freeman
       - observation-cause-of-death-part1-freeman-quantity-interval
-
   MDIExamples2:
     name: MDI-defined Resource Examples for Forensic Toxicology
     description: Examples of MDI-defined resources for forensic toxicology data exchange.
@@ -312,14 +302,12 @@ groups:
       - us-core-lab-result-fentanyl-urine-a-freeman
       - us-core-lab-result-norfentanyl-urine-a-freeman
       - us-core-lab-result-xylazine-urine-a-freeman
-
   MDIExamples3:
     name: MDI-defined Resource Examples for Administrative Profiles
     description: Examples of MDI-defined resources for exchange of death investigation documents.
     resources:  
       - documentreference-mdi-autopsy-report-ex
       - documentreference-mdi-investigator-narrative-ex
-
   MDIExamples4:
     name: MDI-defined Resource Examples for Death Certificate Review
       description: Examples of MDI-defined resources for death certificate review use cases.
@@ -328,7 +316,6 @@ groups:
       - observation-embalmed-ccr-ex1
       - observation-medical-information-data-quality-ccr-ex1
       - observation-personal-information-data-quality-ccr-ex1
-
   OtherExamples:
     name: Other Examples
     description: Examples of resources defined elsewhere and included in (used by) MDI examples. These are examples of profiles defined in Vital Records Death Reporting (VRDR), Vital Records Common Library (VRCL), US Core, and the base FHIR specification.
