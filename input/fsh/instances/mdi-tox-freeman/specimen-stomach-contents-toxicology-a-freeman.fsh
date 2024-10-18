@@ -1,7 +1,7 @@
 Instance: specimen-stomach-contents-toxicology-a-freeman
 InstanceOf: SpecimenToxicologyLab
 Title: "Specimen - Toxicology Lab - Freeman Stomach Contents"
-Description: "Specimen - Toxicology Lab: Freeman Stomach Contents example"
+Description: "Specimen - Toxicology Lab: Freeman stomach contents example"
 Usage: #example
 * meta
   * versionId = "6"

@@ -1,7 +1,7 @@
-Instance: MessageDefinition-toxicology-system
+Instance: messagedefinition-toxicology-system
 InstanceOf: MessageDefinition
-Title: "Message Definition Toxicology System"
-Description: "This resource defines the characteristics of a message that can be shared between a forensic toxicology system and a medical examiner/coroner system."
+Title: "MessageDefinition - Toxicology System"
+Description: "MessageDefinition - Toxicology System: This resource defines the characteristics of a message that can be shared between a forensic toxicology system and a medical examiner/coroner system."
 Usage: #example
 * status = #active
 * experimental = false

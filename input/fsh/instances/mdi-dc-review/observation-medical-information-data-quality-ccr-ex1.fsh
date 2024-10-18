@@ -1,5 +1,7 @@
 Instance: observation-medical-information-data-quality-ccr-ex1
 InstanceOf: ObservationMedicalInformationDataQuality
+Title: "Observation - Medical Information Data Quality - ex1"
+Description: "Observation - Medical Information Data Quality: example 1"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-medical-information-data-quality"
 * status = #preliminary

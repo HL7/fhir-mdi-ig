@@ -1,7 +1,7 @@
 Instance: specimen-blood-toxicology-a-freeman
 InstanceOf: SpecimenToxicologyLab
 Title: "Specimen - Toxicology Lab - Freeman Blood"
-Description: "Specimen - Toxicology Lab: Freeman Blood examples"
+Description: "Specimen - Toxicology Lab: Freeman blood examples"
 Usage: #example
 * accessionIdentifier
   * system = "http://lab.acme.org/specimens/2021"

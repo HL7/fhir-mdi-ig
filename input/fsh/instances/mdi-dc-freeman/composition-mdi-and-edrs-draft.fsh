@@ -1,7 +1,7 @@
 Instance: composition-mdi-and-edrs-draft
 InstanceOf: CompositionMDIAndEDRS
 Title: "MDI and EDRS Composition - draft"
-Description: "Composition - MDI and EDRS: draft example with status=preliminary, author & attester using data-absent-reason extension"
+Description: "MDI and EDRS Composition: Draft example with status=preliminary, author & attester using data-absent-reason extension"
 Usage: #example
 * extension[ExtensionTrackingNumber]
   * valueIdentifier
