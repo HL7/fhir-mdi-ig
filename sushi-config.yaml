@@ -254,7 +254,7 @@ groups:
       - CodeSystemMDI
       - CsDeathCertReviewExample
 
-  MDIValuesetS:
+  MDIValuesets:
     name: Value Set
     description: Values sets defined by this IG. Example values sets contain examples of codes typically defined by each implementation or jurisdiction.
     resources:
@@ -276,7 +276,7 @@ groups:
     description: TBD
     resources:
       - expansion-parameters-mdi
-      
+
   MDIExamples1:
     name: MDI-defined Resource Examples for Death Certificate
     description: Examples of MDI-defined resources for death certificate development.
@@ -288,10 +288,9 @@ groups:
       - observation-cause-of-death-part1-freeman-quantity-interval
 
   MDIExamples2:
-    name: MDI-defined Resource Examples for
-    description: Examples of MDI-defined resources.
+    name: MDI-defined Resource Examples for Forensic Toxicology
+    description: Examples of MDI-defined resources for forensic toxicology data exchange.
     resources:
-
       - bundle-mdi-tox-report-message-a-freeman
       - messageheader-mdi-tox-result-report-a-freeman
       - MessageDefinition-toxicology-system
@@ -313,8 +312,17 @@ groups:
       - us-core-lab-result-fentanyl-urine-a-freeman
       - us-core-lab-result-norfentanyl-urine-a-freeman
       - us-core-lab-result-xylazine-urine-a-freeman
+
+  MDIExamples3:
+    name: MDI-defined Resource Examples for Administrative Profiles
+    description: Examples of MDI-defined resources for exchange of death investigation documents.
+    resources:  
       - documentreference-mdi-autopsy-report-ex
       - documentreference-mdi-investigator-narrative-ex
+
+  MDIExamples4:
+    name: MDI-defined Resource Examples for Death Certificate Review
+      description: Examples of MDI-defined resources for death certificate review use cases.
       - composition-mdi-ccr-ex2
       - observation-communicable-disease-ccr-ex1
       - observation-embalmed-ccr-ex1
@@ -323,7 +331,7 @@ groups:
 
   OtherExamples:
     name: Other Examples
-    description: Examples of resources defined elsewhere included in MDI examples. These are examples of profiles defined in Vital Records Death Reporting (VRDR), Vital Records Common Library (VRCL), US Core. and the base FHIR specification.
+    description: Examples of resources defined elsewhere and included in (used by) MDI examples. These are examples of profiles defined in Vital Records Death Reporting (VRDR), Vital Records Common Library (VRCL), US Core, and the base FHIR specification.
     resources: 
       #- observation-death-date-partialdate
       #- observation-death-date-period
@@ -374,8 +382,6 @@ groups:
       - vrdr-tobacco-use-a-freeman
       - vrdr-tobacco-use-dcr-ex1
       - vr-practitioner-s-jones
-
-
   
 #
 # The ImplementationGuide resource defines several other properties
