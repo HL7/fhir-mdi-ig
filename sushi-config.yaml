@@ -311,6 +311,7 @@ groups:
   MDIExamples4:
     name: MDI-defined Resource Examples for Death Certificate Review
     description: Examples of MDI-defined resources for death certificate review use cases.
+    resources:
       - composition-mdi-ccr-ex2
       - observation-communicable-disease-ccr-ex1
       - observation-embalmed-ccr-ex1
