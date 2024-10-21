@@ -58,6 +58,8 @@ pages:
     title: Home
   mdi_background.md:
     title: MDI Background
+  mdi_use_cases.md:
+    title: MDI Use Cases
   mdi_best_practices.md:
     title: MDI Best Practices
   mdi_security_recommendations.md:
@@ -102,6 +104,7 @@ menu:
   Home: index.html
   Contents: toc.html
   Background: mdi_background.html
+  Use Cases: mdi_use_cases.html
   Best Practices: mdi_best_practices.html
   Security Recommendations: mdi_security_recommendations.html
   Specification: mdi_specification.html
@@ -263,11 +266,6 @@ groups:
       - VSMedDQReviewEx
       - VSPerDQReviewEx
       - VSRegistrationEx
-  MDIParameters:
-    name: Parameters
-    description: TBD
-    resources:
-      - expansion-parameters-mdi
   MDIExamples1:
     name: MDI-defined Resource Examples for Death Certificate
     description: Examples of MDI-defined resources for death certificate development.
@@ -370,7 +368,12 @@ groups:
       - vrdr-tobacco-use-a-freeman
       - vrdr-tobacco-use-dcr-ex1
       - vr-practitioner-s-jones
-  
+  MDIParameters:
+    name: Parameters
+    description: TBD
+    resources:
+      - expansion-parameters-mdi
+      - mdi-tracking-number-search
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
