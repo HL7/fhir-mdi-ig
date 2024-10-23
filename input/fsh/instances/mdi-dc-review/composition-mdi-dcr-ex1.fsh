@@ -3,17 +3,17 @@ InstanceOf: CompositionMDIDCR
 Usage: #example
 Title: "Death Certificate Review example for death data review request (example 1)"
 Description: "Death Certificate Review for death data review request"
-*  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUESTED "Requested"
-*  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = CsDeathCertReviewExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
-*  extension[ExtensionCremationClearanceCoroner].valueCodeableConcept = $sct#385432009 "Not applicable"
-*  extension[ExtensionCremationClearanceSignature].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_UNSIGNED "Unsigned"
+//*  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUESTED "Requested"
+//*  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = CsDeathCertReviewExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
+//*  extension[ExtensionCremationClearanceCoroner].valueCodeableConcept = $sct#385432009 "Not applicable"
+//*  extension[ExtensionCremationClearanceSignature].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_UNSIGNED "Unsigned"
 //
 * status = #preliminary
 * type = $loinc#86807-5 "Death administrative information Document"
 * subject = Reference(vrdr-decedent-dcr-ex1)
 * date = "2023-05-02"
 * author = Reference(us-core-organization-ga-dph)
-* title = "Composition - Cremation Clearance Request - Example"
+* title = "Death Certificate Review request for death data quality"
 //
 * section[DecedentDemographics]
   * insert addNamedEntryComposition(Decedent, Patient, vrdr-decedent-dcr-ex1) 
@@ -48,14 +48,14 @@ Description: "Death Certificate Review for death data review request"
   * insert addNamedEntryComposition(DispositionMethod, Observation, vrdr-decedent-disposition-method-dcr-ex1)
   * insert addNamedEntryComposition(Mortician, Practitioner, vrdr-mortician-dcr-ex1)
 // 
-* section[Death-Certificate-data-review]
-  * insert addNamedEntryComposition(med-info-quality-review, Observation, observation-medical-information-data-quality-ccr-ex1)
-  * insert addNamedEntryComposition(personal-info-quality-review, Observation, observation-personal-information-data-quality-ccr-ex1)
+//* section[Death-Certificate-data-review]
+//  * insert addNamedEntryComposition(med-info-quality-review, Observation, observation-medical-information-data-quality-ccr-ex1)
+//  * insert addNamedEntryComposition(personal-info-quality-review, Observation, observation-personal-information-data-quality-ccr-ex1)
 //
-* section[cremation-clearance-info]
-  * insert addNamedEntryComposition(authorizing-agent, RelatedPerson, vrdr-decedent-father-dcr-ex1)
-  * insert addNamedEntryComposition(embalmed, Observation, observation-embalmed-ccr-ex1)
-  * insert addNamedEntryComposition(communicable-disease, Observation, observation-communicable-disease-ccr-ex1)
-  * insert addNamedEntryComposition(cause-of-death-certifier, Practitioner, vrdr-certifier-dcr-ex1)
-  * insert addNamedEntryComposition(funeral-home, Organization, vrdr-funeral-home-dcr-ex1)
-  * insert addNamedEntryComposition(mortician, Practitioner, vrdr-mortician-dcr-ex1)
+//* section[cremation-clearance-info]
+//  * insert addNamedEntryComposition(authorizing-agent, RelatedPerson, vrdr-decedent-father-dcr-ex1)
+//  * insert addNamedEntryComposition(embalmed, Observation, observation-embalmed-ccr-ex1)
+//  * insert addNamedEntryComposition(communicable-disease, Observation, observation-communicable-disease-ccr-ex1)
+//  * insert addNamedEntryComposition(cause-of-death-certifier, Practitioner, vrdr-certifier-dcr-ex1)
+//  * insert addNamedEntryComposition(funeral-home, Organization, vrdr-funeral-home-dcr-ex1)
+//  * insert addNamedEntryComposition(mortician, Practitioner, vrdr-mortician-dcr-ex1)
