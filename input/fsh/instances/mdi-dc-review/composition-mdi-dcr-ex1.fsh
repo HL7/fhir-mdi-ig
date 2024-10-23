@@ -1,8 +1,8 @@
 Instance: composition-mdi-dcr-ex1
 InstanceOf: CompositionMDIDCR
 Usage: #example
-Title: "Death Certificate Review example for death data review request"
-Description: "Death Certificate Review for Cremation Clearance Request Composition: example 2"
+Title: "Death Certificate Review example for death data review request (example 1)"
+Description: "Death Certificate Review for death data review request"
 *  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUESTED "Requested"
 *  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = CsDeathCertReviewExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
 *  extension[ExtensionCremationClearanceCoroner].valueCodeableConcept = $sct#385432009 "Not applicable"
