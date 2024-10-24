@@ -13,7 +13,7 @@ Description: "Death Certificate Review for death data review response"
 //*  extension[ExtensionCremationClearanceCoroner].valueCodeableConcept = $sct#385432009 "Not applicable"
 //*  extension[ExtensionCremationClearanceSignature].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_UNSIGNED "Unsigned"
 //
-* status = #preliminary
+* status = #final
 * type = $loinc#86807-5 "Death administrative information Document"
 * subject = Reference(vrdr-decedent-dcr-ex1)
 * date = "2023-05-02"

@@ -3,12 +3,19 @@ InstanceOf: CompositionMDIDCR
 Usage: #example
 Title: "Death Certificate Review example for death data review request (example 1)"
 Description: "Death Certificate Review for death data review request"
+* extension[ExtensionTrackingNumber]
+  * valueIdentifier
+    * type = $v2-0203#DCFN
+    * value = "123456"
+* extension[ExtensionDeathCertificateStatus]
+  * extension[DCcertification].valueCodeableConcept = CsDeathCertReviewExample#DEATH_CERT_CERT "Certified"
+  * extension[DCregistration].valueCodeableConcept = CsDeathCertReviewExample#DEATH_CERT_NOT_REG "Not Registered"
 //*  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUESTED "Requested"
 //*  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = CsDeathCertReviewExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
 //*  extension[ExtensionCremationClearanceCoroner].valueCodeableConcept = $sct#385432009 "Not applicable"
 //*  extension[ExtensionCremationClearanceSignature].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_UNSIGNED "Unsigned"
 //
-* status = #preliminary
+* status = #final
 * type = $loinc#86807-5 "Death administrative information Document"
 * subject = Reference(vrdr-decedent-dcr-ex1)
 * date = "2023-05-02"
