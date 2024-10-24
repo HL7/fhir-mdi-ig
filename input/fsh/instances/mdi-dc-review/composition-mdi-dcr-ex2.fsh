@@ -3,6 +3,11 @@ InstanceOf: CompositionMDIDCR
 Usage: #example
 Title: "Death Certificate Review example for death data review response (example 2)"
 Description: "Death Certificate Review for death data review response"
+* extension[ExtensionTrackingNumber]
+  * valueIdentifier
+    * type = $v2-0203#DCFN
+    * value = "123456"
+// Add extension-death-certificate-status
 //*  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUESTED "Requested"
 //*  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = CsDeathCertReviewExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
 //*  extension[ExtensionCremationClearanceCoroner].valueCodeableConcept = $sct#385432009 "Not applicable"
