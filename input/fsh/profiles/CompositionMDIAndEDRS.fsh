@@ -66,8 +66,8 @@ Description: "This Composition profile represents data exchanged between an MDI 
   * emptyReason MS
 * insert CompositionSectionSlice(circumstances, death-location, 0, 1,  [[Apparent address where death actually occurred.]],  [[Apparent address where death actually occurred.]], DeathLocation )
 * insert CompositionSectionSlice(circumstances, tobacco-use-contributed-to-death, 0, 1,  [[Whether or not tobacco use contributed to death.]],  [[Whether or not tobacco use contributed to death.]], TobaccoUseContributedToDeath )
-* insert CompositionSectionSlice(circumstances, decedent-pregnancy, 1, 1,  [[Pregnancy status of the decedent.]],  [[Pregnancy status of the decedent.]], DecedentPregnancyStatus )
-* insert CompositionSectionSlice(circumstances, injury-location, 1, 1,  [[Apparent address where injury occurred.]],  [[Apparent address where injury occurred.]], InjuryLocation )
+* insert CompositionSectionSlice(circumstances, decedent-pregnancy, 0, 1,  [[Pregnancy status of the decedent.]],  [[Pregnancy status of the decedent.]], DecedentPregnancyStatus )
+* insert CompositionSectionSlice(circumstances, injury-location, 0, 1,  [[Apparent address where injury occurred.]],  [[Apparent address where injury occurred.]], InjuryLocation )
 
 * section[jurisdiction] ^label = "This slice contains jurisdictional information about the death."
   * ^short = "This slice contains jurisdictional information about the death."
@@ -118,7 +118,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
   * emptyReason MS
-* insert CompositionSectionSlice(medical-history, history-condition, 0, 1,  [[Coded medical conditions.]],  [[Coded medical conditions.]], USCoreConditionEncounterDiagnosisProfile or USCoreConditionProblemsHealthConcernsProfile )
+* insert CompositionSectionSlice(medical-history, history-condition, 0, *,  [[Coded medical conditions.]],  [[Coded medical conditions.]], USCoreConditionEncounterDiagnosisProfile or USCoreConditionProblemsHealthConcernsProfile )
 
 * section[exam-autopsy] ^label = "This slice contains exam and autopsy information."
   * ^short = "This slice contains exam and autopsy information."
@@ -133,8 +133,8 @@ Description: "This Composition profile represents data exchanged between an MDI 
   * entry ^slicing.discriminator.type = #profile
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
-* insert CompositionSectionSlice(exam-autopsy, autopsy-performed, 0, *,  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]],  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]], AutopsyPerformedIndicator )
-* insert CompositionSectionSlice(exam-autopsy, autopsy-location, 0, *,  [[If autopsy was performed, location.]],  [[If autopsy was performed, location.]], USCoreOrganizationProfile or USCoreLocation )
+* insert CompositionSectionSlice(exam-autopsy, autopsy-performed, 0, 1,  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]],  [[If autopsy was performed, if autopsy findings are available, and the autopsy Performer.]], AutopsyPerformedIndicator )
+* insert CompositionSectionSlice(exam-autopsy, autopsy-location, 0, 1,  [[If autopsy was performed, location.]],  [[If autopsy was performed, location.]], USCoreOrganizationProfile or USCoreLocation )
 
 * section[narratives] ^label = "This slice contains additional death investigation narrative descriptions."
   * ^short = "This slice contains additional death investigation narrative descriptions."
