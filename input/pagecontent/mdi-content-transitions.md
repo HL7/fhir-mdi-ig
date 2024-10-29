@@ -86,7 +86,7 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Previous Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='CodeSystem-CodeSystem-vr-codes.html'>CodeSystemMDI</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/CodeSystem-CodeSystem-mdi-codes.html'>MDI</a> </td><td>-</td></tr>
+<tr><td> <a href='CodeSystem-CodeSystem-mdi-codes.html'>CodeSystemMDI</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/CodeSystem-CodeSystem-mdi-codes.html'>MDI</a> </td><td>-</td></tr>
 </tbody>
 </table>
 
