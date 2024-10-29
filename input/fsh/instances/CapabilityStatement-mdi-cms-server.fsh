@@ -42,10 +42,10 @@ Usage: #definition
 //       * documentation = "A server should be capable of generating a bundled document from a composition resource with all the referenced resources and either returns a full document bundle, or returns an error."
 // //    * fhir_comments = " Composition-mdi-and-edrs "
 // NEW to allow search on tracking number (e.g., case ID)
-  * insert SupportResource(Extension, #SHALL)
-  * insert SupportProfile(http://hl7.http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number, #SHALL)
-  * insert SupportInteraction(#read, #SHALL)
-  * insert SupportInteraction(#search-type, #SHALL)
+//  * insert SupportResource(Extension, #SHALL)
+//  * insert SupportProfile(http://hl7.http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number, #SHALL)
+//  * insert SupportInteraction(#read, #SHALL)
+//  * insert SupportInteraction(#search-type, #SHALL)
   * insert SupportResource(Patient, #SHALL)
   * insert SupportProfile(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient, #SHALL)
   * insert SupportInteraction(#read, #SHALL)
