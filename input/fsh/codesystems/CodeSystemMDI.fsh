@@ -1,5 +1,5 @@
 CodeSystem: CodeSystemMDI
-Id: CodeSystem-vr-codes
+Id: CodeSystem-mdi-codes
 Title: "CodeSystem - MDI"
 Description: "Local codes for items that lack an appropriate LOINC code. This codesystem is only for use in the MDI use cases supported by this implementation guide, and should not be used elsewhere."
 // old Description: "This code system contains codes for use in death investigations and reporting."
