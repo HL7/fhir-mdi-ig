@@ -7,5 +7,7 @@ Usage: #example
 * status = #final
 // * code = CsDeathCertReviewExample#Embalmed "Embalmed Observation"
 * subject = Reference(vrdr-decedent-dcr-ex1)
+* effectiveDateTime = "2023-05-02"
+* performer = Reference(us-core-organization-ga-dph)
 * valueCodeableConcept = $sct#373067005 "No"
 * valueCodeableConcept.text = "No"

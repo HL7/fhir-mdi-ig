@@ -8,5 +8,7 @@ Usage: #example
 // * code = CsDeathCertReviewExample#PersonalInformationDataQuality "Personal Information Data Quality Observation"
 * subject = Reference(vrdr-decedent-dcr-ex1)
 * focus = Reference(vrdr-death-certificate-dcr-ex1)
+* effectiveDateTime = "2023-05-02"
+* performer = Reference(us-core-organization-dcr-ex1)
 * valueCodeableConcept = CsDeathCertReviewExample#PER_INF_DQ_PERSONAL_INVALID "Personal Invalid"
 * valueCodeableConcept.text = "Personal Invalid"
