@@ -7,7 +7,7 @@ Usage: #example
   * system = "urn:ietf:rfc:3986"
   * value = "urn:uuid:933dde44f7664b03a20b6324f23986c0"
 * type = #document
-* timestamp = "2023-05-02"
+* timestamp = "2023-05-02T08:51:14.637+00:00"
 * insert addentry(Composition, composition-mdi-dcr-ex1)
 * insert addentry(Patient, vrdr-decedent-dcr-ex1)
 * insert addentry(Organization, us-core-organization-ga-dph)
