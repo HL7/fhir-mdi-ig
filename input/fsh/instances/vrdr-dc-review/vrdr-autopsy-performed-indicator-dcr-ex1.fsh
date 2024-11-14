@@ -1,5 +1,7 @@
 Instance: vrdr-autopsy-performed-indicator-dcr-ex1
 InstanceOf: AutopsyPerformedIndicator
+Title: "VRDR Autopsy Performed Indicator"
+Description: "Example of VRDR Autopsy Performed Indicator (Observation) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-autopsy-performed-indicator"
 * status = #final
