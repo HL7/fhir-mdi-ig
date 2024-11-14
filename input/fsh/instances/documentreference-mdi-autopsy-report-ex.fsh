@@ -1,5 +1,5 @@
 Instance: documentreference-mdi-autopsy-report-ex
-InstanceOf: DocumentReference
+InstanceOf: DocumentReferenceMDIReport
 Title: "DocumentReference - MDI Report - Autopsy Report example"
 Description: "DocumentReference - MDI Report: Autopsy Report example"
 Usage: #example
