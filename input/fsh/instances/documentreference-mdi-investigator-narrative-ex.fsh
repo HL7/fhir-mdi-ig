@@ -6,7 +6,10 @@ Usage: #example
 * status = #current
 * docStatus = #final
 * type = $v3-NullFlavor#UNK "unknown"
-* category = $v3-NullFlavor#OTH "other"
+//* category = $us-core-documentreference-category#clinical-note "Clinical Note"
+//  * text = "Clinical Note"
+//* category = $v3-NullFlavor#OTH "other"
+* category = $loinc#47046-8 "Summary of death note"
 * category.text = "Investigator’s Narrative"
 * subject = Reference(us-core-patient-a-freeman)
 * date = "2023-01-13T15:52:20.000+00:00"
