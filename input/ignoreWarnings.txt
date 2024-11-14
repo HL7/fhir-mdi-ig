@@ -6,3 +6,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mdi/StructureDe
 
 # Variance Requested from TSMG 03/20/24
 INFORMATION: CodeSystem/CodeSystem-vr-codes: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+# Bundle examples have optional slices that are not defined in the profile; not matching is expected behavior. All slices have been reviewed and verified.
+INFORMATION: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs|2.0.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi|2.0.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
