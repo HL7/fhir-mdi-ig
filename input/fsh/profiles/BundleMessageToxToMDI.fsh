@@ -9,7 +9,11 @@ Description: "This Bundle profile represents a Message Bundle from a forensic to
 * entry ^slicing.discriminator.type = #profile
   * ^slicing.discriminator.path = "$this.resource"
   * ^slicing.rules = #open
+//
 * entry contains ToxtoMDIMessage 1..1 MS
-
 * entry[ToxtoMDIMessage].resource 1..
 * entry[ToxtoMDIMessage].resource only MessageHeaderToxicologyToMDI
+//
+* entry contains ToxtoMDIDiagnosticReport 1..1 MS
+* entry[DCRDocument].resource 1..
+* entry[DCRDocument].resource only DiagnosticReportToxicologyToMDI
