@@ -1,5 +1,7 @@
 Instance: vrdr-injury-incident-dcr-ex1
 InstanceOf: InjuryIncident
+Title: "VRDR Injury Incident"
+Description: "Example of VRDR Injury Incident (Observation) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-injury-incident"
 * status = #final

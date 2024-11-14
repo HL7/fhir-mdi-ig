@@ -1,5 +1,7 @@
 Instance: vrdr-tobacco-use-dcr-ex1
 InstanceOf: TobaccoUseContributedToDeath
+Title: "VRDR Tobacco Use Contributed To Death"
+Description: "Example of VRDR Tobacco Use Contributed To Death (Observation) for death certificate review examples"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-tobacco-use-contributed-to-death"
 * status = #final

@@ -1,5 +1,7 @@
 Instance: vrdr-decedent-pregnancy-status-dcr-ex1
 InstanceOf: DecedentPregnancyStatus
+Title: "VRDR Decedent Pregnancy"
+Description: "Example of VRDR Decedent Pregnancy (Observation) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-pregnancy-status"
 * status = #final

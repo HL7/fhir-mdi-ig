@@ -1,5 +1,7 @@
 Instance: us-core-organization-dcr-ex1
 InstanceOf: USCoreOrganizationProfile
+Title: "US Core Organization – State Medical Examiner"
+Description: "Example of US Core Organization - State Medical Examiner Office"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
 * identifier.system = "http://Tahoe.Web/Insurity.Tahoe.Organization.Entity.BusinessUnitCode"

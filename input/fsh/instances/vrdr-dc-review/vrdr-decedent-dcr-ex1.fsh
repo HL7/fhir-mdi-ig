@@ -1,5 +1,7 @@
 Instance: vrdr-decedent-dcr-ex1
 InstanceOf: Decedent
+Title: "VRDR Decedent "
+Description: "Example of VRDR Decedent (Patient) for death certificate review examples"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent"
 * extension[0].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"

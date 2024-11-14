@@ -1,5 +1,7 @@
 Instance: vrdr-decedent-disposition-method-dcr-ex1
 InstanceOf: DecedentDispositionMethod
+Title: "VRDR Decedent Disposition Method"
+Description: "Example of VRDR Decedent Disposition Method (Observation) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-disposition-method"
 * status = #final

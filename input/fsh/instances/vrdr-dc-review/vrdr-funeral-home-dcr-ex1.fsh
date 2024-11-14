@@ -1,5 +1,7 @@
 Instance: vrdr-funeral-home-dcr-ex1
 InstanceOf: FuneralHome
+Title: "VRDR Funeral Home"
+Description: "Example of VRDR Funeral Home (Organization) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-funeral-home"
 * identifier.value = "139"

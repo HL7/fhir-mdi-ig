@@ -1,5 +1,7 @@
 Instance: vrdr-decedent-military-service-dcr-ex1
 InstanceOf: DecedentMilitaryService
+Title: "VRDR Decedent Military Service"
+Description: "Example of VRDR Decedent Military Service (Observation) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-military-service"
 * status = #final

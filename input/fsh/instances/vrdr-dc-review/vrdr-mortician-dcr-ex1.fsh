@@ -1,5 +1,7 @@
 Instance: vrdr-mortician-dcr-ex1
 InstanceOf: Mortician
+Title: "VRDR Mortician"
+Description: "Example of VRDR Mortician (Practitioner) for death certificate review examples."
 Usage: #example
 //* meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-mortician"
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"

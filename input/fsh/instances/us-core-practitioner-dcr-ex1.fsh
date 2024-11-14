@@ -1,7 +1,8 @@
 Instance: us-core-practitioner-dcr-ex1
 InstanceOf: USCorePractitionerProfile
+Title: "US Core Practitioner – Death Pronouncement Performer"
+Description: "Example of US Core Practitioner - Death Pronouncement Performer, used in the VRDR    Observation. Performer role."
 Usage: #example
-// death-pronouncement-performer
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "1234567"

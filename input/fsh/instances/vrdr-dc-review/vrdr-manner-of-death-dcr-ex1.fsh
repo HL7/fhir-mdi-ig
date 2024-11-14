@@ -1,5 +1,7 @@
 Instance: vrdr-manner-of-death-dcr-ex1
 InstanceOf: MannerOfDeath
+Title: "VRDR Manner of Death"
+Description: "Example of VRDR Mortician (Practitioner) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-manner-of-death"
 * status = #final

@@ -1,5 +1,7 @@
 Instance: vrdr-death-location-dcr-ex1
 InstanceOf: DeathLocation
+Title: "VRDR Death Location"
+Description: "Example of VRDR Death Location (Location) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-location"
 * identifier.system = "http://Tahoe.Web/Insurity.Tahoe.Organization.Entity.BusinessUnitCode"

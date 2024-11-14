@@ -1,5 +1,7 @@
 Instance: vrdr-examiner-contacted-dcr-ex1
 InstanceOf: ExaminerContacted
+Title: "VRDR Examiner Contacted"
+Description: "Example of VRDR Examiner Contacted (Observation) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-examiner-contacted"
 * status = #final

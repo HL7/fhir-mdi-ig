@@ -1,5 +1,7 @@
 Instance: vrdr-death-date-dcr-ex1
 InstanceOf: DeathDate
+Title: "VRDR Death Date"
+Description: "Example of VRDR Death Date (Observation) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-date"
 * status = #final

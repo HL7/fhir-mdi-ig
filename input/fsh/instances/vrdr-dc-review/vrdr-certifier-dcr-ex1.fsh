@@ -1,5 +1,7 @@
 Instance: vrdr-certifier-dcr-ex1
 InstanceOf: Certifier
+Title: "VRDR Death Certifier"
+Description: "Example of VRDR Death Certifier (Practitioner) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-certifier"
 * identifier.value = "987654"

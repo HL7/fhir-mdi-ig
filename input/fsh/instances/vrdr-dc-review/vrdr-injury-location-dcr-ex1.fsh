@@ -1,5 +1,7 @@
 Instance: vrdr-injury-location-dcr-ex1
 InstanceOf: InjuryLocation
+Title: "VRDR Injury Location"
+Description: "Example of VRDR Injury Location for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-injury-location"
 * name = "Home"
