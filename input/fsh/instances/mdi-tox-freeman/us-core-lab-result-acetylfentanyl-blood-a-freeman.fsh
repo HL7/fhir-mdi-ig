@@ -8,5 +8,6 @@ Usage: #example
   * text = "Acetyl norfentanyl [Mass/volume] in Serum, Plasma or Blood by Confirmatory method"
 * subject = Reference(us-core-patient-a-freeman) "Alice J. Freeman"
 * effectiveDateTime = "2021-12-03"
+* performer = Reference(us-core-practitioner-b-goldberger)
 * valueString = "2 ng/ml"
 * specimen.reference = "Specimen/specimen-blood-toxicology-a-freeman"

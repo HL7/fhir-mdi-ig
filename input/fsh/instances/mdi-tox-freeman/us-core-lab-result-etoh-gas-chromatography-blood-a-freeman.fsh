@@ -8,5 +8,6 @@ Usage: #example
   * text = "Ethanol [Mass/volume] in Blood by Gas chromatography"
 * subject = Reference(us-core-patient-a-freeman) "Alice J. Freeman"
 * effectiveDateTime = "2021-12-03"
+* performer = Reference(us-core-practitioner-b-goldberger)
 * valueString = "0.145 g/dL"
 * specimen.reference = "Specimen/specimen-blood-toxicology-a-freeman"

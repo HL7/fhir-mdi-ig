@@ -8,5 +8,6 @@ Usage: #example
   * text = "Despropionylfentanyl [Mass/volume] in Serum or Plasma"
 * subject = Reference(us-core-patient-a-freeman) "Alice J. Freeman"
 * effectiveDateTime = "2021-12-03"
+* performer = Reference(us-core-practitioner-b-goldberger)
 * valueString = "true"
 * specimen.reference = "Specimen/specimen-urine-toxicology-a-freeman"
