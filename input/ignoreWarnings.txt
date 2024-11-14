@@ -10,7 +10,26 @@ INFORMATION: CodeSystem/CodeSystem-vr-codes: CodeSystem: Most code systems defin
 # Examples of Vital Records Death Reporting (VRDR) FHIR IG Observation profiles included in this MDI IG follow the VRDR pattern, which states the following: "For vital records reporting the performer and effective time are either/or/both not known, or not important. These are not really clinical observations, but abstracted facts represented using Observation resources."
 WARNING: Observation/vrdr-autopsy-performed-indicator-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/vrdr-autopsy-performed-indicator-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-
+WARNING: Observation/vrdr-cause-of-death-part1-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/vrdr-cause-of-death-part1-dcr-ex1: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/vrdr-cause-of-death-part2-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/vrdr-cause-of-death-part2-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/vrdr-decedent-age-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/vrdr-decedent-age-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/vrdr-decedent-education-level-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/vrdr-decedent-education-level-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/vrdr-decedent-military-service-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/vrdr-decedent-military-service-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/vrdr-decedent-pregnancy-status-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/vrdr-decedent-pregnancy-status-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/vrdr-decedent-usual-work-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/vrdr-decedent-usual-work-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/vrdr-examiner-contacted-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/vrdr-examiner-contacted-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/vrdr-manner-of-death-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/vrdr-manner-of-death-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/vrdr-tobacco-use-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/vrdr-tobacco-use-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 
 # Bundle examples have optional slices that are not defined in the profile; not matching is expected behavior. All slices have been reviewed and verified.
 INFORMATION: Bundle/bundle-mdi-and-edrs-a-freeman: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs|2.0.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
