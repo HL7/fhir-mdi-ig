@@ -15,5 +15,5 @@ Description: "This Bundle profile represents a Message Bundle from a forensic to
 * entry[ToxtoMDIMessage].resource only MessageHeaderToxicologyToMDI
 //
 * entry contains ToxtoMDIDiagnosticReport 1..1 MS
-* entry[DCRDocument].resource 1..
-* entry[DCRDocument].resource only DiagnosticReportToxicologyToMDI
+* entry[ToxtoMDIDiagnosticReport].resource 1..
+* entry[ToxtoMDIDiagnosticReport].resource only DiagnosticReportToxicologyToMDI
