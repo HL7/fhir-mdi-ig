@@ -18,7 +18,7 @@ INFORMATION: CodeSystem/CodeSystem-vr-codes: CodeSystem: Most code systems defin
 WARNING: Observation/vrdr-autopsy-performed-indicator-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/vrdr-autopsy-performed-indicator-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Observation/vrdr-cause-of-death-part1-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Observation/vrdr-cause-of-death-part1-dcr-ex1: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/vrdr-cause-of-death-part1-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Observation/vrdr-cause-of-death-part2-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/vrdr-cause-of-death-part2-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Observation/vrdr-decedent-age-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
