@@ -1,5 +1,5 @@
 CodeSystem: CsDeathCertReviewExample
-Id: cs-death-cert-review-example
+Id: cs-death-cert-review-example2
 Title: "CodeSystem - Death Certificate Review - example"
 Description: "This code system contains example codes for death certificate review."
 * ^caseSensitive = true
