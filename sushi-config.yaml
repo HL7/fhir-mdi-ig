@@ -238,7 +238,6 @@ groups:
       - ExtensionCremationClearanceCoroner
       - ExtensionCremationClearanceSignature
       - ExtensionCremationClearanceStatus
-      - ExtensionDeathCertificateReviewReason
       - ExtensionDeathCertificateStatus
       - ExtensionMECertificationAffirmation
       - ExtensionTrackingNumber
