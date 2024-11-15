@@ -247,6 +247,8 @@ groups:
     resources:
       - CodeSystemMDI
       - CsDeathCertReviewExample
+      - DeathCertReviewExample
+      - MDIcodes
   MDIValuesets:
     name: Value Set
     description: Values sets defined by this IG. Example values sets contain examples of codes typically defined by each implementation or jurisdiction.
