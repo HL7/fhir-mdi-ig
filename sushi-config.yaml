@@ -245,7 +245,6 @@ groups:
     name: CodeSystems
     description: Code systems defined by this IG. Examplecode systems contain examples of codes typically defined by each implementation or jurisdiction.
     resources:
-      - CodeSystemMDI
       - DeathCertReviewExample
       - MDIcodes
   MDIValuesets:
