@@ -11,10 +11,11 @@ Description: "This Extension contains a tracking number, such as a case number o
   * ^definition = "Contains multiple tracking numbers, such as a case number or file number assigned by a case management system or EDRS, and can represent other tracking numbers, if required."
 * url MS
 * value[x] only Identifier
-* value[x] MS
-  * ^short = "Value of extension"
-  * type MS
-  * type from VSTrackingNumberType (extensible)
-    * ^short = "Tracking Number Type (extensible value set)"
-  * system MS
-  * value MS
+* value[x] from VSTrackingNumberType (extensible)
+//* value[x] MS
+//  * ^short = "Value of extension"
+//  * type MS
+//  * type from VSTrackingNumberType (extensible)
+//    * ^short = "Tracking Number Type (extensible value set)"
+//  * system MS
+//  * value MS
