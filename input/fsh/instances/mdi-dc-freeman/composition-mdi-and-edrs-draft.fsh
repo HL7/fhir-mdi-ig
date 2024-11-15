@@ -29,32 +29,32 @@ Usage: #example
     * display = "Temporarily Unknown"
 * section[0]
   * title = "Additional Demographic Information Section"
-  * code = CodeSystemMDI#demographics
+  * code = MDIcodes#demographics
   * text
     * status = #additional
     * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No additional demographic information</p></div>"
 * section[+]
   * title = "Circumstances Section"
-  * code = CodeSystemMDI#circumstances
+  * code = MDIcodes#circumstances
   * entry[0].reference = "Location/vrdr-death-location-atlanta-ga-a-freeman"
   * entry[+].reference = "Observation/vrdr-tobacco-use-a-freeman"
   * entry[+].reference = "Observation/vrdr-decedent-pregnancy-status-a-freeman"
   * entry[+].reference = "Location/vrdr-injury-location-atlanta-ga-a-freeman"
 * section[+]
   * title = "Jurisdiction Section"
-  * code = CodeSystemMDI#jurisdiction
+  * code = MDIcodes#jurisdiction
   * entry[0].reference = "Observation/vrdr-death-date-a-freeman"
   * entry[+].reference = "Procedure/vrdr-death-certification-a-freeman"
 * section[+]
   * title = "Cause and Manner of Death Section"
-  * code = CodeSystemMDI#cause-manner
+  * code = MDIcodes#cause-manner
   * entry[0].reference = "Observation/observation-cause-of-death-part1-a-freeman"
   * entry[+].reference = "Observation/vrdr-cause-of-death-part2-a-freeman"
   * entry[+].reference = "Observation/vrdr-manner-of-death-a-freeman-accidental"
   * entry[+].reference = "Observation/vrdr-injury-incident-a-freeman-med-ingest"
 * section[+]
   * title = "Medical History Section"
-  * code = CodeSystemMDI#medical-history
+  * code = MDIcodes#medical-history
   * text
     * status = #additional
     * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No Medical History information</p></div>"

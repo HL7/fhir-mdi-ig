@@ -8,7 +8,7 @@ Usage: #example
     * system = "http://florida-investigation-agncy.org/fhir/agency-case-numbers"
     * value = "ME21-111"
 * identifier
-  * type = CodeSystemMDI#tox-lab-case-number
+  * type = MDIcodes#tox-lab-case-number
   * system = "http://uf-path-labs.org/fhir/lab-cases"
   * value = "R21-01578"
   * assigner = Reference(us-core-organization-tox-lab)

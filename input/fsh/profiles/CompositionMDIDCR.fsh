@@ -120,7 +120,7 @@ Description: "This Composition contains information for a request to review deat
   * ^label = "Death Certificate Data Review Results Section"
   * ^short = "Death Certificate Data Review Results Section"
   * ^definition = "Death Certificate Data Review Results Section"
-  * code  = CodeSystemMDI#Death-Certificate-data-review
+  * code  = MDIcodes#Death-Certificate-data-review
   * code 1..
   * entry
     * ^slicing.discriminator.type = #profile
@@ -135,7 +135,7 @@ Description: "This Composition contains information for a request to review deat
   * ^label = "Cremation Clearance information"
   * ^short = "Cremation Clearance information"
   * ^definition = "cremation-clearance-info"
-  * code  = CodeSystemMDI#cremation-clearance-info
+  * code  = MDIcodes#cremation-clearance-info
   * code 1..
   * entry
     * ^slicing.discriminator.type = #profile

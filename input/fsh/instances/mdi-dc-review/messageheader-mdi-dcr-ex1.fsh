@@ -3,7 +3,7 @@ InstanceOf: MessageHeaderDCR
 Title: "MessageHeader - Death Certificate Review Example 1"
 Description: "MessageHeader - Death Certificate Review, example 1"
 Usage: #example
-* eventCoding = CodeSystemMDI#death-certificate-review
+* eventCoding = MDIcodes#death-certificate-review
 * source
   * name = "State VRO"
   * software = "EDRS"

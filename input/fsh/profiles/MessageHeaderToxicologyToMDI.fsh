@@ -8,7 +8,7 @@ Description: "This MessageHeader identifies the DiagnosticReport being sent from
 * . ^short = "Identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."
   * ^definition = "Identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."
 * event[x] only Coding
-* event[x] = CodeSystemMDI#tox-result-report
+* event[x] = MDIcodes#tox-result-report
 * event[x] MS
   * ^short = "Toxicology Lab Results"
 * focus 1..1 MS

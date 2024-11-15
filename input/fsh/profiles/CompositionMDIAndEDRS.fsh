@@ -39,7 +39,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
 * section[additional-demographics] ^label = "This slice contains demographic information about the decedent that is not represented in the decedent Patient profile."
   * ^short = "This slice contains demographic information about the decedent that is not represented in the decedent Patient profile."
   * ^definition = "This section contains demographic information about the decedent that is not represented in the decedent Patient profile."
-  * code  = CodeSystemMDI#demographics
+  * code  = MDIcodes#demographics
   * code 1.. MS
     * ^definition = "Demographic information section"
     * text MS
@@ -54,7 +54,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
 * section[circumstances] ^label = "This slice contains circumstances of the death."
   * ^short = "This slice contains circumstances of the death."
   * ^definition = "This section contains circumstances of the death."
-  * code  = CodeSystemMDI#circumstances
+  * code  = MDIcodes#circumstances
   * code 1.. MS
     * ^definition = "Circumstances of the death section"
   * entry MS
@@ -72,7 +72,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
 * section[jurisdiction] ^label = "This slice contains jurisdictional information about the death."
   * ^short = "This slice contains jurisdictional information about the death."
   * ^definition = "This section contains jurisdictional information about the death."
-  * code = CodeSystemMDI#jurisdiction
+  * code = MDIcodes#jurisdiction
   * code 1..1
     * ^definition = "Jurisdiction section"
   * entry MS
@@ -89,7 +89,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
   * ^short = "This slice contains information about the cause and manner of death."
   * ^definition = "This section contains information about the cause and manner of death."
   * code 1.. MS
-  * code = CodeSystemMDI#cause-manner
+  * code = MDIcodes#cause-manner
     * ^definition = "Cause and manner of death section"
   * entry MS
     * ^slicing.discriminator.type = #profile
@@ -106,7 +106,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
 * section[medical-history] ^label = "This slice contains relevant medical history about the decedent."
   * ^short = "This slice contains relevant medical history about the decedent."
   * ^definition = "This section contains relevant medical history about the decedent."
-  * code = CodeSystemMDI#medical-history
+  * code = MDIcodes#medical-history
   * code 1.. MS
     * ^definition = "Medical history section"
   * text MS
@@ -123,7 +123,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
 * section[exam-autopsy] ^label = "This slice contains exam and autopsy information."
   * ^short = "This slice contains exam and autopsy information."
   * ^definition = "This section contains exam and autopsy information."
-  * code = CodeSystemMDI#exam-autopsy
+  * code = MDIcodes#exam-autopsy
   * code 1.. MS
     * ^definition = "Exam/Autopsy section"
   * text ..1 MS
@@ -139,7 +139,7 @@ Description: "This Composition profile represents data exchanged between an MDI 
 * section[narratives] ^label = "This slice contains additional death investigation narrative descriptions."
   * ^short = "This slice contains additional death investigation narrative descriptions."
   * ^definition = "This slice contains additional death investigation narrative descriptions."
-  * code = CodeSystemMDI#narratives
+  * code = MDIcodes#narratives
   * code 1..1 MS
   * text MS
     * ^label = "Additional death investigation narrative descriptions."

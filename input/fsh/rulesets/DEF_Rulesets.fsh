@@ -1,12 +1,12 @@
 RuleSet: CompositionSectionEntryNoSlicingMDI(section)
 * section contains {section} 0..1
-* section[{section}].code = CodeSystemMDI#{section}
+* section[{section}].code = MDIcodes#{section}
 * section[{section}] ^label = "{section}"
 * section[{section}] ^short = "{section}"
 
 RuleSet: CompositionSectionEntrySlicingMDI(section)
 * section contains {section} 0..1
-* section[{section}].code = CodeSystemMDI#{section}
+* section[{section}].code = MDIcodes#{section}
 * section[{section}] ^label = "{section}"
 * section[{section}] ^short = "{section}"
 * section[{section}].entry ^slicing.discriminator.type = #profile

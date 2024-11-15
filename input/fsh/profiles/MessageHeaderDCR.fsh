@@ -10,7 +10,7 @@ Description: "This MessageHeader identifies a Death Certificate Review document 
 
 //
 * event[x] only Coding
-* event[x] = CodeSystemMDI#death-certificate-review
+* event[x] = MDIcodes#death-certificate-review
 * event[x] MS
   * ^short = "Death Certificate Review"
 * reason 1..1 MS

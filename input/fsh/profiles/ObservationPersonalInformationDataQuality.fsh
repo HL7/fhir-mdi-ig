@@ -4,7 +4,7 @@ Id: Observation-personal-information-data-quality
 Title: "Observation - Personal Information Data Quality"
 Description: "This Observation profile describes TBD."
 * code only CodeableConcept
-* code = CodeSystemMDI#PersonalInformationDataQuality
+* code = MDIcodes#PersonalInformationDataQuality
   * ^short = "Personal Information Data Quality Observation"
 * subject 1..1
 * subject only Reference(Decedent)

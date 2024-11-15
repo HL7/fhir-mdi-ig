@@ -3,7 +3,7 @@ InstanceOf: MessageHeaderToxicologyToMDI
 Title: "MessageHeader - Toxicology to MDI - Freeman"
 Description: "MessageHeader - Toxicology to MDI: Freeman example"
 Usage: #example
-* eventCoding = CodeSystemMDI#tox-result-report
+* eventCoding = MDIcodes#tox-result-report
 * source
   * name = "University of Florida Pathology Labs, Forensic Toxicology Laboratory"
   * software = "MDI Log"

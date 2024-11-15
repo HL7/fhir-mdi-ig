@@ -6,5 +6,5 @@ Usage: #example
 * status = #active
 * experimental = false
 * date = "2022-07-09"
-* eventCoding = CodeSystemMDI#tox-result-report
+* eventCoding = MDIcodes#tox-result-report
 * category = #notification
