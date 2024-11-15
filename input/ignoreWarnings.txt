@@ -22,6 +22,7 @@ WARNING: StructureDefinition​.snapshot​.element[12]​.slicing​.discrimina
 WARNING: StructureDefinition​.snapshot​.element[14]​.slicing​.discriminator[0]: New Rule: The discriminator type 'pattern' has been deprecated. Use type=fixed with a pattern[x] instead
 WARNING: StructureDefinition​.snapshot​.element[13]​.slicing​.discriminator[0]: New Rule: The discriminator type 'pattern' has been deprecated. Use type=fixed with a pattern[x] instead
 WARNING: StructureDefinition​.snapshot​.element[9]​.slicing​.discriminator[0]: New Rule: The discriminator type 'pattern' has been deprecated. Use type=fixed with a pattern[x] instead 
+INFORMATION: Organization/organization-crematorium-ex1: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|5.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Examples of Vital Records Death Reporting (VRDR) FHIR IG Observation profiles included in this MDI IG follow the VRDR pattern, which states the following: "For vital records reporting the performer and effective time are either/or/both not known, or not important. These are not really clinical observations, but abstracted facts represented using Observation resources."
 WARNING: Observation/vrdr-autopsy-performed-indicator-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
