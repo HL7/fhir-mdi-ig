@@ -1,4 +1,4 @@
-Instance: bundle-mdi-dcr-ex-1
+Instance: bundle-doc-mdi-dcr-ex-1
 InstanceOf: BundleDocumentMDIDCR
 Title: "Bundle - Document Death Certificate Review, example 1"
 Description: "Bundle - Document Death Certificate Review example 1"
