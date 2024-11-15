@@ -12,7 +12,7 @@ Usage: #example
 //    * system = #phone
 //    * value = "+1 (555) 123 4567"
   * endpoint = "http://edrs-example.org/fhir/endpoint/1"
-* reason = CsDeathCertReviewExample#CREM_C_REQUEST	"Cremation Clearance Request"
+* reason = DeathCertReviewExample#CREM_C_REQUEST	"Cremation Clearance Request"
 //* response
 //  * identifier = "5015fe84-8e76-4526-89d8-44b322e8d4fb"
 //  * code = #ok

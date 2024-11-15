@@ -5,7 +5,7 @@ Description: "Observation - Embalmed: example 1"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-embalmed"
 * status = #final
-// * code = CsDeathCertReviewExample#Embalmed "Embalmed Observation"
+// * code = DeathCertReviewExample#Embalmed "Embalmed Observation"
 * subject = Reference(vrdr-decedent-dcr-ex1)
 * effectiveDateTime = "2023-05-02"
 * performer = Reference(us-core-organization-ga-dph)

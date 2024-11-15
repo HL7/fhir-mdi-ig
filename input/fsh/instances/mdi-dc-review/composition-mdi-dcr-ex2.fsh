@@ -8,10 +8,10 @@ Description: "Death Certificate Review for death data review response"
     * type = $v2-0203#DCFN
     * value = "123456"
 // Add extension-death-certificate-status
-//*  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_REQUESTED "Requested"
-//*  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = CsDeathCertReviewExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
+//*  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = DeathCertReviewExample#CREM_C_REQUESTED "Requested"
+//*  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = DeathCertReviewExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
 //*  extension[ExtensionCremationClearanceCoroner].valueCodeableConcept = $sct#385432009 "Not applicable"
-//*  extension[ExtensionCremationClearanceSignature].valueCodeableConcept = CsDeathCertReviewExample#CREM_C_UNSIGNED "Unsigned"
+//*  extension[ExtensionCremationClearanceSignature].valueCodeableConcept = DeathCertReviewExample#CREM_C_UNSIGNED "Unsigned"
 //
 * status = #final
 * type = $loinc#86807-5 "Death administrative information Document"
