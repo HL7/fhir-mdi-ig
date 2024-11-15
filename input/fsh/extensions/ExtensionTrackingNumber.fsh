@@ -14,7 +14,7 @@ Description: "This Extension contains a tracking number, such as a case number o
 * value[x] MS
   * ^short = "Value of extension"
   * type MS
-  * type from ValueSetTrackingNumberType (extensible)
+  * type from VSTrackingNumberType (extensible)
     * ^short = "Tracking Number Type (extensible value set)"
   * system MS
   * value MS
