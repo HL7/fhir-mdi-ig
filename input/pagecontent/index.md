@@ -1,3 +1,7 @@
+<div class="note-to-implementers" markdown="1">
+Test
+</div><!-- note-to-implementers -->
+
 <div class="note-to-balloters" markdown="1">
 
 This STU2 build of MDI reflects refactoring of content driven by the [harmonization of vital records FHIR Implementation Guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html).  This involves introduction of a dependency on the [Vital Records Death Reporting STU3-draft FHIR IG](https://build.fhir.org/ig/HL7/vrdr/) and on [Vital Records Common Library STU2-draft FHIR IG](https://build.fhir.org/ig/HL7/vr-common-library).  Much of the MDI STU1.1 content was a recapitulation of VRDR content due limitations of VRDR STU2, and now MDI simply references VRDR STU3 content. The purpose of this build is to enable software development that targets the harmonized MDI IG.
