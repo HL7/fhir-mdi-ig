@@ -49,7 +49,7 @@ WARNING: Observation/vrdr-tobacco-use-dcr-ex1: Observation: Best Practice Recomm
 WARNING: Observation/vrdr-tobacco-use-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[5]​.resource​/*Observation​/vrdr-decedent-age-dcr-ex1*: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[5]​.resource​/*Observation​/vrdr-decedent-age-dcr-ex1: 	Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[6]​.resource​/*Observation​/vrdr-decedent-education-level-dcr-ex1*/: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[6]​.resource​/Observation​/vrdr-decedent-education-level-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[6]​.resource​/*Observation​/vrdr-decedent-education-level-dcr-ex1*​​/: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[7]​.resource​/*Observation​/vrdr-decedent-military-service-dcr-ex1*​​​/: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[7]​.resource​/*Observation​/vrdr-decedent-military-service-dcr-ex1*​/: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
