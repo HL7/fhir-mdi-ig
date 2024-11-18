@@ -11,7 +11,7 @@ Usage: #example
 * insert addentry(Composition, composition-mdi-and-edrs-a-freeman)
 * insert addentry(Observation, vrdr-injury-incident-a-freeman-med-ingest)
 * insert addentry(Observation, vrdr-manner-of-death-a-freeman-accidental)
-* insert addentry(Observation, observation-cause-of-death-part1-a-freeman)
+* insert addentry(Observation, observation-mdi-cause-of-death-part1-a-freeman)
 * insert addentry(Observation, vrdr-cause-of-death-part2-a-freeman)
 * insert addentry(Location,vrdr-death-location-atlanta-ga-a-freeman)
 * insert addentry(Location,vrdr-injury-location-atlanta-ga-a-freeman)
