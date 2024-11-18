@@ -2,7 +2,7 @@
 **For Implementers:**
 * Implementers wishing to test the MDI IG STU 1.1 content with the harmonization of MDI and VRDR should refer to the 2.0.0-snapshot1 - Pre-publication Snapshot at [https://hl7.org/fhir/us/mdi/2.0.0-snapshot1/](https://hl7.org/fhir/us/mdi/2.0.0-snapshot1/)
 
-**For Jan-2025 Ballot Reviwers:**
+**For Jan-2025 Ballot Reviewers:**
 
 This STU2 build of MDI reflects two sets of changes from STU 1.1:
 * Refactoring of content driven by the harmonization of vital records FHIR implementation guides, as described in the [Vital Records Common Library (VRCL) Jan-2024 ballot](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html). For this MDI FHIR IG, this involved introduction of a dependency on the [Vital Records Death Reporting STU3 FHIR IG](https://hl7.org/fhir/us/vrdr/) and on [VRCL STU2](https://hl7.org/fhir/us/vr-common-library/). This harmonization was balloted in May 2024.  (1st STU2 ballot)

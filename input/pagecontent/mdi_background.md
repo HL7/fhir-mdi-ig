@@ -19,14 +19,12 @@ MDI CMS vary by organization and location or jurisdiction, and these systems are
 
 ### Current Project
 The scope of the current MDI IG is defining FHIR resources and guidance for the following dataflows:
-* Creation, search, and update of a case record between an MDI CMS and an EDRS via a document bundle
+* Creation, search, and update of a case record between an MDI CMS and an EDRS via a document bundle for development of a death certificate
 * Transmission of diagnostic findings from a forensic toxicology laboratory to an MDI system via a diagnostic report and message bundle
 * Transmission of PDF reports within the MDI community
+* Transmission of a completed death certificate for review
 
-The current project has place-holders for sections that are expected to have more detail in later versions, such as exam-autopsy results and narratives for death scene description and other uses. (See Further Work, below.)
-
-### Relation to Other Standards
-The MDI specification supports exchange of data among organizations and agencies that contribute information to death investigations conducted by medical examiner and coroner offices as well as transmission of death investigation findings between MDI CMS and EDRS of state registrars. The [Vital Records Death Reporting (VRDR) FHIR IG](http://hl7.org/fhir/us/vrdr/) supports reporting deaths by state registrars to the NCHS. Therefore, **several dataflows supported by this MDI specification are upstream of the dataflows supported by the VRDR specification. The two IGs serve an overlapping set of actors (e.g., EDRS) and data concepts (e.g., death date, manner of death). For that reason, this MDI FHIR IG references and has a dependency on VRDR and on the [Vital Records Common Library (VRCL)](https://hl7.org/fhir/us/vr-common-library/).**
+For more details, see the [Use Cases](mdi_use_cases.html) page.
 
 ### Further Work
 Georgia Tech Research Institute (GTRI) provides tools for exploring and testing MDI FHIR data.
@@ -34,7 +32,7 @@ Georgia Tech Research Institute (GTRI) provides tools for exploring and testing 
 * [**Raven Documentation**](https://ravendocs.readthedocs.io/en/latest//)—End-use and technical manuals
 
 The MDI FHIR IG will continue to develop to support additional MDI needs beyond death reporting to EDRS for the death certificate. Future work likely will include:
-* **Terminology**: Developing vocabularies and terminologies useful to the MDI domain with focus on those for forensic toxicology results 
+* **Terminology**: Developing vocabularies and terminologies useful to the MDI domain with focus on those for forensic toxicology results
 * **Resources for Additional Dataflows**: Developing FHIR profiles for transactions between MDI CMS and other information sources (EHR, autopsy facilities, etc.) and information recipients (organ and tissue procurement organizations, state health surveillance systems, etc.).
 
 ### IG Development Team
@@ -43,7 +41,7 @@ The MDI FHIR IG will continue to develop to support additional MDI needs beyond 
 * **Lantana Consulting Group**: Dave deRoode, Sarah Gaunt, Diana Wright
 
 ### Acknowledgements
-This guide was developed and produced through the efforts of Health Level Seven (HL7) and created using the Trifolia-on-FHIR tool, provided by Lantana Consulting Group, Inc. The HL7 Project Insight reference number for this project is [1737](https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&ProjectNumber=1737).
+This guide was developed and produced through the efforts of Health Level Seven (HL7) under Project Insight reference number [1737](https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&ProjectNumber=1737).
 
 The STU2 ballot version was refactored as part of the [harmonization of vital records FHIR Implementation Guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html) by the MITRE corporation, under contract to NCHS.  As part of this effort, the IG artifacts were transitioned to FHIR shorthand.   The capability statement rendering is provided by the [CapStmt](https://github.com/caspears/CapStatement) liquid template developed by Corey Spears based on original code by Eric Haas.
 
@@ -73,13 +71,6 @@ The editors appreciate the support and sponsorship of the HL7 Public Health Work
 * QuincyTech (CT MDI system vendor)
 * VertiQ (AK, WA and MN MDI CMS vendor)
 * VitalChek (CT EDRS vendor)
-
-Health Level Seven, HL7, FHIR and the [FLAME DESIGN] are registered trademarks of Health Level Seven International, registered in the US Trademark Office.
-This material contains content from [SNOMED CT](http://www.ihtsdo.org/snomed-ct/). SNOMED CT is a registered trademark of the International Health Terminology Standard Development Organization (IHTSDO).
-
-This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2021, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at [https://loinc.org/kb/license/](https://loinc.org/kb/license/). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
-
-This guide links terminology directly to the FHIR® Terminology Service for VSAC Resources [(Value Set Authority Center (VSAC) - NIH)](https://vsac.nlm.nih.gov/) where applicable using a RESTful API service for accessing the VSAC value sets and supported code systems. It is a requirement of VSAC to log in using your own Unified Medical Language System (UMLS) API Key to view the value sets. See: [VSAC UMLS Licensing information.](https://www.nlm.nih.gov/vsac/support/usingvsac/requestumlslicense.html)
 
 ### References
 * National Institute of Standards and Technology (NIST), [“Medicolegal death investigation data commonly collected and exchanged,”](https://www.nist.gov/system/files/documents/2021/07/14/MDI%20data%20commonly%20collected%20and%20exchanged_REFERENCE_07092021_0.pdf) (7/9/2021)
