@@ -1,8 +1,16 @@
-### STU2 Ballot
-The STU2 ballot version of MDI incorporates refactoring as part of the [harmonization of vital records FHIR implementation guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html)
+### STU2 Ballots
+The 2nd STU2 ballot (Jan. 2025) adds 9 new profiles for Death Certificate review workflow plus supporting extensions and example codes:
+* Bundle - Message Death Certificate Review
+* MessageHeader - Death Certificate Review
+* Bundle - Document Death Certificate Review
+* Composition - Death Certificate Review 
+* Observation - Medical Information Data Quality 
+* Observation - Personal Information Data Quality 
+* Observation - Communicable Disease
+* Observation – Embalmed
+* Organization – Crematorium
 
- Many of the MDI STU1.1 profiles, valuesets, codesystems, and extensions are now found [elsehwere]
- (mdi-content-transitions.html#removed-profiles).  For a detailed description of harmonization changes see [STU1.1 to STU2 Changes](mdi-content-transitions.html).
+The 1st STU2 ballot (May 2024) of MDI incorporated refactoring, as described in the VRCL, Vital Records FHIR Implementation Guide Harmonization Plan page. Many of the MDI STU1.1 profiles, valuesets, codesystems, and extensions are now found elsewhere. For a detailed description of harmonization changes in the MDI IG, see the Content Transitions page.
 
 ### MDI STU 1.1 (September 2023)
 

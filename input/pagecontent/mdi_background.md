@@ -26,7 +26,7 @@ The scope of the current MDI IG is defining FHIR resources and guidance for the 
 
 For more details, see the [Use Cases](mdi_use_cases.html) page.
 
-### Further Work
+### Future Work
 Georgia Tech Research Institute (GTRI) provides tools for exploring and testing MDI FHIR data.
 * [**Raven Testing Platform**](https://apps.hdap.gatech.edu/raven/)—A proof of concept for the MDI FHIR IG. It provides a tool for testing conformance to the MDI FHIR IG, including resource validation, record comparison, and data exchange workflows.
 * [**Raven Documentation**](https://ravendocs.readthedocs.io/en/latest//)—End-use and technical manuals
