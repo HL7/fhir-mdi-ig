@@ -270,8 +270,8 @@ groups:
       - bundle-mdi-and-edrs-a-freeman
       - composition-mdi-and-edrs-a-freeman
       - composition-mdi-and-edrs-draft
-      - observation-cause-of-death-part1-a-freeman
-      - observation-cause-of-death-part1-freeman-quantity-interval
+      - observation-mdi-cause-of-death-part1-a-freeman
+      - observation-mdi-cause-of-death-part1-freeman-quantity-interval
   MDIExamples2:
     name: MDI-defined Resource Examples for Forensic Toxicology
     description: Examples of MDI-defined resources for forensic toxicology data exchange.

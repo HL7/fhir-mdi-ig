@@ -1,4 +1,4 @@
-Instance: observation-cause-of-death-part1-a-freeman
+Instance: observation-mdi-cause-of-death-part1-a-freeman
 InstanceOf: MDICauseOfDeathPart1
 Title: "MDI Cause of Death Part 1 - Freeman"
 Description: "MDI Cause of Death Part 1 (Observation): Freeman example"

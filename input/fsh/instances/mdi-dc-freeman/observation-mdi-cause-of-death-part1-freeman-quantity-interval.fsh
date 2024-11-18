@@ -1,4 +1,4 @@
-Instance: observation-cause-of-death-part1-freeman-quantity-interval
+Instance: observation-mdi-cause-of-death-part1-freeman-quantity-interval
 InstanceOf: MDICauseOfDeathPart1
 Title: "MDI Cause of Death Part 1 - Freeman, quantity interval"
 Description: "MDI Cause of Death Part 1 (Observation): Freeman example, specifying interval quantity (days)"

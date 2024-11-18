@@ -48,7 +48,7 @@ Usage: #example
 * section[+]
   * title = "Cause and Manner of Death Section"
   * code = MDIcodes#cause-manner
-  * entry[0].reference = "Observation/observation-cause-of-death-part1-a-freeman"
+  * entry[0].reference = "Observation/observation-mdi-cause-of-death-part1-a-freeman"
   * entry[+].reference = "Observation/vrdr-cause-of-death-part2-a-freeman"
   * entry[+].reference = "Observation/vrdr-manner-of-death-a-freeman-accidental"
   * entry[+].reference = "Observation/vrdr-injury-incident-a-freeman-med-ingest"
