@@ -117,7 +117,7 @@ This specification defines the following resources. An overview and list of exam
 * [Observation - Toxicology Lab Result](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result) 
 
 **Administrative profile for exchanging PDF documents:**
-* [DocumentReference - MDI Report (http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report) 
+* [DocumentReference - MDI Report](http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report) 
 
 **Profiles for Death Certificate Review:**
 * [Bundle - Message Death Certificate Review](http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-death-certificate-review) 
@@ -145,7 +145,7 @@ This specification defines the following resources. An overview and list of exam
 * [Cremation Clearance Status example](http://hl7.org/fhir/us/mdi/ValueSet/vs-cremation-clearance-status-example) 
 * [Death Certificate Review Observations example](http://hl7.org/fhir/us/mdi/ValueSet/vs-death-certificate-review-observations-example) 
 * [Death Certificate Review Reason example](http://hl7.org/fhir/us/mdi/ValueSet/vs-dcr-reason-example) 
-* [Embalmed example (http://hl7.org/fhir/us/mdi/ValueSet/vs-embalmed-example) 
+* [Embalmed example](http://hl7.org/fhir/us/mdi/ValueSet/vs-embalmed-example) 
 * [Medical Data Quality Review example](http://hl7.org/fhir/us/mdi/ValueSet/vs-med-dq-review-example) 
 * [Medical Examiner Certification Affirmation example](http://hl7.org/fhir/us/mdi/ValueSet/vs-me-cert-affirmation-example) 
 * [Personal Data Quality Review example](http://hl7.org/fhir/us/mdi/ValueSet/vs-per-dq-review-example) 
@@ -171,4 +171,4 @@ Systems claiming to conform to an MDI profile SHALL support the elements in the 
 * Data Consumer systems SHALL be able to process resource instances containing data elements asserting missing information without generating an error or causing the application to fail.
 
 ### Search
-This IG defines a new FHIR Search parameter: [MDI Tracking Number Search] (http://hl7.org/fhir/us/mdi/SearchParameter/mdi-tracking-number-search)
+This IG defines a new FHIR Search parameter: [MDI Tracking Number Search](http://hl7.org/fhir/us/mdi/SearchParameter/mdi-tracking-number-search)
