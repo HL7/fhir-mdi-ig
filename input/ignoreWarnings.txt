@@ -50,28 +50,44 @@ WARNING: Observation/vrdr-tobacco-use-dcr-ex1: Observation: Best Practice Recomm
 WARNING: Observation/vrdr-tobacco-use-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 
 # For VRDR Observation profile examples included in the Bundle-document-mdi-dcr example (bundle-doc-mdi-dcr-ex1) in this MDI IG. -- Ignore Msg NOT YET WORKING --
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[5]​.resource​/*Observation​/vrdr-decedent-age-dcr-ex1*: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[5]​.resource​/*Observation​/vrdr-decedent-age-dcr-ex1: 	Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[6]​.resource​/Observation​/vrdr-decedent-education-level-dcr-ex1: Observation: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[6]​.resource​/*Observation​/vrdr-decedent-education-level-dcr-ex1*​​/: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[7]​.resource​/*Observation​/vrdr-decedent-military-service-dcr-ex1*​​​/: Observation: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[7]​.resource​/*Observation​/vrdr-decedent-military-service-dcr-ex1*​/: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[8]​.resource​/*Observation​/vrdr-examiner-contacted-dcr-ex1*​/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[8]​.resource​/*Observation​/vrdr-examiner-contacted-dcr-ex1*​/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[9]​.resource​/*Observation​/vrdr-decedent-pregnancy-status-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[9]​.resource​/*Observation​/vrdr-decedent-pregnancy-status-dcr-ex1*​/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[10]​.resource​/*Observation​/vrdr-tobacco-use-dcr-ex1*​​/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[10]​.resource​/*Observation​/vrdr-tobacco-use-dcr-ex1*​​/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[13]​.resource​/*Observation​/vrdr-injury-incident-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[13]​.resource​/*Observation​/vrdr-injury-incident-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[14]​.resource​/*Observation​/vrdr-autopsy-performed-indicator-dcr-ex1*​/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[14]​.resource​/*Observation​/vrdr-autopsy-performed-indicator-dcr-ex1*​/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[18]​.resource​/*Observation​/vrdr-manner-of-death-dcr-ex1*​​/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[18]​.resource​/*Observation​/vrdr-manner-of-death-dcr-ex1*​​/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[19]​.resource​/*Observation​/vrdr-cause-of-death-part1-dcr-ex1*​/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[19]​.resource​/*Observation​/vrdr-cause-of-death-part1-dcr-ex1*​/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[20]​.resource​/*Observation​/vrdr-cause-of-death-part2-dcr-ex1*​/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle​.entry[20]​.resource​/*Observation​/vrdr-cause-of-death-part2-dcr-ex1*​/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[5].resource/*Observation/vrdr-decedent-age-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[5].resource/*Observation/vrdr-decedent-age-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[6].resource/*Observation/vrdr-decedent-education-level-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[6].resource/*Observation/vrdr-decedent-education-level-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[7].resource/*Observation/vrdr-decedent-military-service-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[7].resource/*Observation/vrdr-decedent-military-service-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[8].resource/*Observation/vrdr-examiner-contacted-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[8].resource/*Observation/vrdr-examiner-contacted-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[9].resource/*Observation/vrdr-decedent-pregnancy-status-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[9].resource/*Observation/vrdr-decedent-pregnancy-status-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[10].resource/*Observation/vrdr-tobacco-use-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[10].resource/*Observation/vrdr-tobacco-use-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[13].resource/*Observation/vrdr-injury-incident-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[14].resource/*Observation/vrdr-autopsy-performed-indicator-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[14].resource/*Observation/vrdr-autopsy-performed-indicator-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[18].resource/*Observation/vrdr-manner-of-death-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[19].resource/*Observation/vrdr-cause-of-death-part1-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[19].resource/*Observation/vrdr-cause-of-death-part1-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[20].resource/*Observation/vrdr-cause-of-death-part2-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[13].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[14].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[14].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[18].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[19].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[19].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[20].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 
 # For VRDR Observation profile examples included in the Bundle-message-death-certificate-review example (bundle-msg-mdi-dcr-ex1) in this MDI IG. -- Ignore Msg NOT YET WORKING --
 WARNING: Bundle/bundle-msg-mdi-dcr-ex1: Bundle​.entry[1]​.resource​/*Bundle​/bundle-doc-mdi-dcr-ex1*​/​.entry[5]​.resource: Best Practice Recommendation: In general, all observations should have a performer
