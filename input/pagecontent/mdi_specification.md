@@ -171,7 +171,7 @@ Systems claiming to conform to an MDI profile SHALL support the elements in the 
 * Data Consumer systems SHALL be able to process resource instances containing data elements asserting missing information without generating an error or causing the application to fail.
 
 ### Search
-This IG defines a new FHIR Search parameter: [MDI Tracking Number Search](http://hl7.org/fhir/us/mdi/SearchParameter/mdi-tracking-number-search)
+This IG defines a new FHIR Search parameter: MDI Tracking Number Search
 
 #### Cross Version Analysis
 

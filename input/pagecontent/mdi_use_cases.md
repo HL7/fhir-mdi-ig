@@ -15,19 +15,20 @@ Death data for a case record can be exchanged bidirectionally between an MDI cas
 4.	MDI CMS sends updated case record in new Document Bundle to EDRS
 5.	EDRS completes death certificate
 
-**FHIR Resources:**
-* [Bundle - Document MDI and EDRS](http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs): Document bundle profile providing a FHIR “wrapper” to contain a composition document.
-* [Composition - MDI and EDRS](http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs): Composition profile representing a data document exchanged between an MDI CMS and an EDRS that includes death investigation findings, such as:
+**FHIR Resources** listed on Artifacts, [MDI Profiles for Death Certificate](artifacts.html#mdi-profiles-for-death-certificate):
+* Bundle - Document MDI and EDRS: Document bundle profile providing a FHIR “wrapper” to contain a composition document.
+* Composition - MDI and EDRS: Composition profile representing a data document exchanged between an MDI CMS and an EDRS that includes death investigation findings, such as:
   * Circumstances of death
   * Death date and certification of death
   * Cause and manner of death
   * Additional information, such as autopsy results, medical history, etc.
+* MDI Cause Of Death Part 1
 
-The Composition - MDI and EDRS provides the [Extension - Tracking Number](http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number) for including case or file numbers used by various systems to identify the case. One Composition can have multiple tracking numbers with additional tracking numbers added over time, e.g., MDI CMS case number added to a file with an EDRS record number.
+The Composition - MDI and EDRS provides the Tracking Number Extension for including case or file numbers used by various systems to identify the case. One Composition can have multiple tracking numbers with additional tracking numbers added over time, e.g., MDI CMS case number added to a file with an EDRS record number.
 
-The Composition - MDI and EDRS uses many of the same profiles as (i.e., references) the VRDR & VRCL FHIR IGs. One exception is the [MDI Cause Of Death Part 1](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-mdi-cause-of-death-part1), which is based on the VRDR Cause Of Death Part 1 profile, but requires a performer, which is the cause of death certifier (coroner or medical examiner).
+The Composition - MDI and EDRS uses many of the same profiles as (i.e., references) the VRDR & VRCL FHIR IGs. One exception is the MDI Cause Of Death Part 1 profile, which is based on the VRDR Cause Of Death Part 1 profile, but requires a performer, which is the cause of death certifier (coroner or medical examiner).
 
-**Examples** listed on Artifacts, [MDI-defined Resource Examples for Death Certificate](artifacts.html):
+**Examples** listed on Artifacts, [MDI-defined Resource Examples for Death Certificate](artifacts.html#mdi-defined-resource-examples-for-death-certificate):
 * Bundle - MDI and EDRS - Freeman: Document bundle for the Freeman example case.
 * MDI and EDRS Composition - Freeman: Completed data document composition for the Freeman example case record.
 * MDI and EDRS Composition - draft: Draft data document, with status = preliminary, and author and attester = "Temporarily Unknown", using the data-absent-reason extension.
@@ -36,23 +37,26 @@ The Composition - MDI and EDRS uses many of the same profiles as (i.e., referenc
 ### Transmission of Forensic Toxicology Diagnostic Findings from LIMS to MDI CMS
 Data from a forensic toxicology laboratory information management systems (LIMS) can be sent to an MDI CMS via a diagnostic report and message bundle.
 
-**FHIR Resources:**
-* [Bundle - Message Toxicology to MDI](http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi): Message bundle profile providing a FHIR “wrapper” to contain a message header and a diagnostic report from a forensic toxicology laboratory.
-* [MessageHeader - Toxicology to MDI](http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi): Message header profile indicating that a diagnostic report is the focus of the message.
-* [DiagnosticReport - Toxicology Lab Result to MDI](http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi): Diagnostic report profile providing forensic toxicology findings ([Observation - Toxicology Lab Result](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result)) on specimens ([Specimen - Toxicology Lab](http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab)).
+**FHIR Resources** listed on Artifacts, [Forensic Toxicology Profiles](artifacts.html#forensic-toxicology-profiles):
+* Bundle - Message Toxicology to MDI: Message bundle profile providing a FHIR “wrapper” to contain a message header and a diagnostic report from a forensic toxicology laboratory.
+* MessageHeader - Toxicology to MDI: Message header profile indicating that a diagnostic report is the focus of the message.
+* DiagnosticReport - Toxicology Lab Result to MDI: Diagnostic report profile providing forensic toxicology findings
+* Specimen - Toxicology Lab
+* Observation - Toxicology Lab Result: Analysis of specimen
 
-**Examples** listed on Artifacts, [Forensic Toxicology Profiles](artifacts.html):
+**Examples** listed on Artifacts, [MDI-defined Resource Examples for Forensic Toxicology](artifacts.html#mdi-defined-resource-examples-for-forensic-toxicology):
 * Bundle - Message Toxicology to MDI - Freeman: Message bundle for the Freeman example case.
 * MessageHeader - Toxicology to MDI - Freeman: Message header specifying the focus of the message and providing source and endpoint example information.
 * DiagnosticReport - Toxicology Lab Result to MDI - Freeman: Diagnostic report for the Freeman example case.
-* Specimen & lab result observation examples are listed on the Artifacts page under [Other Example](https://build.fhir.org/ig/HL7/fhir-mdi-ig/branches/master/artifacts.html#other-examples)
+* Specimen & lab result observation examples (many))
 
 ### Exchange of a PDF Report within the MDI Community
 A PDF report, such as an Autopsy Report or Investigator’s Narrative, can be exchanged between an MDI CMS and another FHIR-enabled data system. The content may be included as inline base64 encoded data or be provided by direct reference (e.g., URL). 
 
-**FHIR Resource:** [DocumentReference - MDI Report](http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report): The document type is required and is constrained by US Core to a LOINC value whose SCALE is DOC in the LOINC database or is the HL7 v3 Code System NullFlavor concept 'unknown'.
+**FHIR Resource** listed on Artifacts, [MDI Administrative Profiles](artifacts.html#mdi-administrative-profiles): 
+* DocumentReference - MDI Report: The document type is required and is constrained by US Core to a LOINC value whose SCALE is DOC in the LOINC database or is the HL7 v3 Code System NullFlavor concept 'unknown'.
 
-**Examples** listed on Artifacts, [MDI Administrative Profiles](artifacts.html):
+**Examples** listed on Artifacts, [MDI-defined Resource Examples for Administrative Profiles ](artifacts.html#mdi-defined-resource-examples-for-administrative-profiles):
 * DocumentReference - MDI Report - Autopsy Report example: Example autopsy report included as a base-64 encoded PDF. 
 * DocumentReference - MDI Report - Investigator's Narrative example: Example investigator’s narrative referenced by example URL.
 
@@ -76,27 +80,27 @@ Part 20 - ICD-10 Cause-of-Death Querying (2013)](https://www.cdc.gov/nchs/data/d
 
 This IG provides FHIR messaging artifacts for exchanging document bundles containing the death certificate information for review and additional information for cremation clearance, if needed.
 
-**FHIR Resource:**
-* [Bundle - Message Death Certificate Review](http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-death-certificate-review): Message bundle profile providing a FHIR “wrapper” to contain a message header and a document bundle for death certificate review workflows.
-* [MessageHeader - Death Certificate Review](http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-death-certificate-review): Message header profile indicating that a document bundle is the focus of the message, the reason for the message (e.g., cremation clearance), and additional information about the status of the death certificate.
-* [Bundle - Document Death Certificate Review](http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-dcr): Document bundle profile providing a FHIR “wrapper” to contain a composition document.
-* [Composition - Death Certificate Review](http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-dcr): Composition profile containing Death Certificate components defined in the Vital Records Death Reporting (VRDR) FHIR Implementation Guide as the first sections. Additional sections represent information often used for cremation clearance workflows and data quality reviews.
-* [Observation - Medical Information Data Quality](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-medical-information-data-quality)
-* [Observation - Personal Information Data Quality](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-personal-information-data-quality)
-* [Observation - Communicable Disease](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-communicable-disease)
-* [Observation - Embalmed](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-embalmed)
-* [Organization - Crematorium](http://hl7.org/fhir/us/mdi/StructureDefinition/Organization-crematorium)
+**FHIR Resource** listed on Artifacts, [Death Certificate Review Profiles](artifacts.html#death-certificate-review-profiles): 
+* Bundle - Message Death Certificate Review: Message bundle profile providing a FHIR “wrapper” to contain a message header and a document bundle for death certificate review workflows.
+* MessageHeader - Death Certificate Review: Message header profile indicating that a document bundle is the focus of the message, the reason for the message (e.g., cremation clearance), and additional information about the status of the death certificate.
+* Bundle - Document Death Certificate Review: Document bundle profile providing a FHIR “wrapper” to contain a composition document.
+* Composition - Death Certificate Review: Composition profile containing Death Certificate components defined in the Vital Records Death Reporting (VRDR) FHIR Implementation Guide as the first sections. Additional sections represent information often used for cremation clearance workflows and data quality reviews.
+* Observation - Medical Information Data Quality
+* Observation - Personal Information Data Quality
+* Observation - Communicable Disease
+* Observation - Embalmed
+* Organization - Crematorium
 
 This implementation guide does not define FHIR resources for other aspects of the cremation clearance workflow, such as fee payment.
 
-**Examples** listed on Artifacts, [Death Certificate Review Profiles](artifacts.html):
+**Examples** listed on Artifacts, [MDI-defined Resource Examples for Death Certificate Review](artifacts.html#mdi-defined-resource-examples-for-death-certificate-review):
 * Bundle - Message Death Certificate Review example
 * MessageHeader - Death Certificate Review example
 * Bundle - Document Death Certificate Review example
-* Death Certificate Review example for death data review request (example 1): Death data review request example
-* Death Certificate Review example for death data review response (example 2): Death data review response example
-* Death Certificate Review example for cremation clearance request (example 3): Cremation clearance request example
-* Death Certificate Review example for cremation clearance response (example 4): Cremation clearance response example
+* Death Certificate Review Composition example for death data review request (example 1): Death data review request example
+* Death Certificate Review Composition example for death data review response (example 2): Death data review response example
+* Death Certificate Review Composition example for cremation clearance request (example 3): Cremation clearance request example
+* Death Certificate Review Composition example for cremation clearance response (example 4): Cremation clearance response example
 * Observation - Medical Information Data Quality example
 * Observation - Personal Information Data Quality example
 * Observation - Communicable Disease example
