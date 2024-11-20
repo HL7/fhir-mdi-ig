@@ -10,7 +10,7 @@ This specification requires two roles in any data exchange:
 * **Data Source**: An application that exposes a FHIR document bundle or message bundle to a data consumer. This can be thought of as the server in a client/server interaction.
 * **Data Consumer**: An application that consumes a FHIR document bundle or message bundle. This can be thought of as the client in a client/server interaction.
 
-**MDI Implementation Guide Actors & Roles Summary Table**
+***MDI Implementation Guide Actors & Roles Summary Table***
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px; overflow:hidden;padding:2px 2px;word-break:normal;}
