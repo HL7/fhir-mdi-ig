@@ -105,56 +105,56 @@ This MDI FHIR IG is based on US Core 5.0.1 and directly references and/or furthe
 This specification defines the following resources. An overview and list of examples is available on the [Artifacts Index Summary](artifacts.html).
 
 **Profiles for Death Certificate development:**
-* [Bundle - Document MDI and EDRS](http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-and-edrs)
-* [Composition - MDI and EDRS](http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-and-edrs)
-* [MDI Cause Of Death Part 1](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-mdi-cause-of-death-part1)
+* Bundle - Document MDI and EDRS
+* Composition - MDI and EDRS
+* MDI Cause Of Death Part 1
 
 **Profiles for forensic toxicology to MDI CMS exchange:**
-* [Bundle - Message Toxicology to MDI](http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-tox-to-mdi) 
-* [MessageHeader - Toxicology to MDI](http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-toxicology-to-mdi) 
-* [DiagnosticReport - Toxicology Lab Result to MDI](http://hl7.org/fhir/us/mdi/StructureDefinition/DiagnosticReport-toxicology-to-mdi) 
-* [Specimen - Toxicology Lab](http://hl7.org/fhir/us/mdi/StructureDefinition/Specimen-toxicology-lab) 
-* [Observation - Toxicology Lab Result](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-toxicology-lab-result) 
+* Bundle - Message Toxicology to MDI
+* MessageHeader - Toxicology to MDI
+* DiagnosticReport - Toxicology Lab Result to MDI
+* Specimen - Toxicology Lab
+* Observation - Toxicology Lab Result
 
 **Administrative profile for exchanging PDF documents:**
-* [DocumentReference - MDI Report](http://hl7.org/fhir/us/mdi/StructureDefinition/DocumentReference-mdi-report) 
+* DocumentReference - MDI Report
 
 **Profiles for Death Certificate Review:**
-* [Bundle - Message Death Certificate Review](http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-message-death-certificate-review) 
-* [MessageHeader - Death Certificate Review](http://hl7.org/fhir/us/mdi/StructureDefinition/MessageHeader-death-certificate-review) 
-* [Bundle - Document Death Certificate Review](http://hl7.org/fhir/us/mdi/StructureDefinition/Bundle-document-mdi-dcr) 
-* [Composition - Death Certificate Review](http://hl7.org/fhir/us/mdi/StructureDefinition/Composition-mdi-dcr) 
-* [Observation - Medical Information Data Quality](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-embalmed) 
-* [Observation - Personal Information Data Quality](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-personal-information-data-quality) 
-* [Observation - Communicable Disease](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-communicable-disease) 
-* [Observation – Embalmed](http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-embalmed) 
-* [Organization – Crematorium](http://hl7.org/fhir/us/mdi/StructureDefinition/Organization-crematorium) 
+* Bundle - Message Death Certificate Review
+* MessageHeader - Death Certificate Review
+* Bundle - Document Death Certificate Review
+* Composition - Death Certificate Review
+* Observation - Medical Information Data Quality
+* Observation - Personal Information Data Quality
+* Observation - Communicable Disease
+* Observation – Embalmed
+* Organization – Crematorium
 
 **Extensions:**
-* [Extension - Cremation Clearance Authorization Status](http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-cremation-clearance-status) 
-* [Extension - Cremation Clearance Coroner Status](http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-cremation-clearance-coroner) 
-* [Extension - Cremation Clearance Signature Status](http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-cremation-clearance-signature) 
-* [Extension - Death Certificate Status](http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-death-certificate-status) 
-* [Extension - Medical Examiner Certification Affirmation](http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-me-certification-affirmation) 
-* [Extension - Tracking Number](http://hl7.org/fhir/us/mdi/StructureDefinition/Extension-tracking-number) 
+* Cremation Clearance Authorization Status
+* Cremation Clearance Coroner Status
+* Cremation Clearance Signature Status
+* Death Certificate Status
+* Medical Examiner Certification Affirmation 
+* Tracking Number
 
 **Value Sets:**
-* [Certified Workflow example](http://hl7.org/fhir/us/mdi/ValueSet/vs-certified-workflow-example) 
-* [Cremation Clearance Observations example](http://hl7.org/fhir/us/mdi/ValueSet/vs-cremation-clearance-observations-example) 
-* [Cremation Clearance Signed example](http://hl7.org/fhir/us/mdi/ValueSet/vs-cremation-clearance-signed-example) 
-* [Cremation Clearance Status example](http://hl7.org/fhir/us/mdi/ValueSet/vs-cremation-clearance-status-example) 
-* [Death Certificate Review Observations example](http://hl7.org/fhir/us/mdi/ValueSet/vs-death-certificate-review-observations-example) 
-* [Death Certificate Review Reason example](http://hl7.org/fhir/us/mdi/ValueSet/vs-dcr-reason-example) 
-* [Embalmed example](http://hl7.org/fhir/us/mdi/ValueSet/vs-embalmed-example) 
-* [Medical Data Quality Review example](http://hl7.org/fhir/us/mdi/ValueSet/vs-med-dq-review-example) 
-* [Medical Examiner Certification Affirmation example](http://hl7.org/fhir/us/mdi/ValueSet/vs-me-cert-affirmation-example) 
-* [Personal Data Quality Review example](http://hl7.org/fhir/us/mdi/ValueSet/vs-per-dq-review-example) 
-* [Registration example](http://hl7.org/fhir/us/mdi/ValueSet/vs-registration-example) 
-* [Tracking Number Type](http://hl7.org/fhir/us/mdi/ValueSet/vs-tracking-number-type) 
+* Certified Workflow example
+* Cremation Clearance Observations example
+* Cremation Clearance Signed example
+* Cremation Clearance Status example
+* Death Certificate Review Observations example
+* Death Certificate Review Reason example
+* Embalmed example
+* Medical Data Quality Review example
+* Medical Examiner Certification Affirmation example
+* Personal Data Quality Review example
+* Registration example
+* Tracking Number Type
 
 **Code Systems:**
-* [Death Certificate Review Example](http://hl7.org/fhir/us/mdi/CodeSystem/cs-death-cert-review-example) 
-* [Medicolegal Death Investigation Codes](http://hl7.org/fhir/us/mdi/CodeSystem/cs-mdi-codes)
+* Death Certificate Review Example
+* Medicolegal Death Investigation Codes
 
 ### MustSupport and Missing Data
 Systems claiming to conform to an MDI profile SHALL support the elements in the profile as defined below. This guide adopts the following definitions of MustSupport for all direct transactions between the data source systems and data consumer systems.
