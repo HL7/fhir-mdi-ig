@@ -172,3 +172,19 @@ Systems claiming to conform to an MDI profile SHALL support the elements in the 
 
 ### Search
 This IG defines a new FHIR Search parameter: [MDI Tracking Number Search](http://hl7.org/fhir/us/mdi/SearchParameter/mdi-tracking-number-search)
+
+#### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+#### Dependency Table
+
+{% include dependency-table.xhtml %}
+
+#### Globals Table
+
+{% include globals-table.xhtml %}
+
+#### IP Statements
+
+{% include ip-statements.xhtml %}
