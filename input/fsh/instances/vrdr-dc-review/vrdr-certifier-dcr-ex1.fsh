@@ -4,6 +4,7 @@ Title: "VRDR Death Certifier"
 Description: "Example of VRDR Death Certifier (Practitioner) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-certifier"
+* identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "987654"
 * name.use = #official
 * name.family = "Examiner"
