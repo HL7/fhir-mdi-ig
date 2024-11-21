@@ -40,6 +40,7 @@ Description: "Death Certificate Review for death data review request"
   * insert addNamedEntryComposition(InjuryIncident, Observation, vrdr-injury-incident-dcr-ex1)
   * insert addNamedEntryComposition(Autopsy, Observation, vrdr-autopsy-performed-indicator-dcr-ex1)
   * insert addNamedEntryComposition(DeathDate, Observation, vrdr-death-date-dcr-ex1)
+//  * insert addentry(Practitioner, us-core-practitioner-dcr-ex1)
 //  Should decide on interested-party-ccr-ex1
 //
 * section[DeathCertification]

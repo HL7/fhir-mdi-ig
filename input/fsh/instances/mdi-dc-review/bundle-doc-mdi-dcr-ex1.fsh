@@ -25,6 +25,7 @@ Usage: #example
 * insert addentry(Observation, vrdr-autopsy-performed-indicator-dcr-ex1)
 * insert addentry(Observation, vrdr-death-date-dcr-ex1)
 * insert addentry(Practitioner, vr-practitioner-ex1)
+* insert addentry(Practitioner, us-core-practitioner-dcr-ex1)
 * insert addentry(Procedure, vrdr-death-certification-dcr-ex1)
 * insert addentry(Observation, vrdr-manner-of-death-dcr-ex1)
 * insert addentry(Observation, vrdr-cause-of-death-part1-dcr-ex1)
