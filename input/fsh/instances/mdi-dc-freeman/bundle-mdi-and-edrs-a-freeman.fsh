@@ -19,7 +19,7 @@ Usage: #example
 * insert addentry(Observation, vrdr-tobacco-use-a-freeman)
 * insert addentry(Observation, vrdr-death-date-a-freeman)
 * insert addentry(Practitioner, vr-practitioner-s-jones)
-//* insert addentry(Practitioner, us-core-practitioner-jm-lehz)
+* insert addentry(Practitioner, us-core-practitioner-jm-lehz)
 * insert addentry(Observation, vrdr-decedent-pregnancy-status-a-freeman)
 * insert addentry(Procedure, vrdr-death-certification-a-freeman)
 
