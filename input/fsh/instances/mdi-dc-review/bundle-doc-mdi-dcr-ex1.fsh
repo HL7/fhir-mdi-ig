@@ -34,5 +34,6 @@ Usage: #example
 * insert addentry(Organization, vrdr-funeral-home-dcr-ex1)
 * insert addentry(Observation, vrdr-decedent-disposition-method-dcr-ex1)
 * insert addentry(Practitioner, vrdr-mortician-dcr-ex1)
+* insert addentry(Practitioner, vrdr-certifier-dcr-ex1)
 
   
