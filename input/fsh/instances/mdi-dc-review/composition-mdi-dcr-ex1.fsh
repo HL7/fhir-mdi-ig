@@ -43,7 +43,7 @@ Description: "Death Certificate Review for death data review request"
 //  Should decide on interested-party-ccr-ex1
 //
 * section[DeathCertification]
-  * insert addNamedEntryComposition(Certifier, Practitioner, vrdr-certifier-dcr-ex1)
+  * insert addNamedEntryComposition(Certifier, Practitioner, vr-practitioner-ex1)
   * insert addNamedEntryComposition(DeathCertification, Procedure, vrdr-death-certification-dcr-ex1)
   * insert addNamedEntryComposition(MannerOfDeath, Observation, vrdr-manner-of-death-dcr-ex1)
   * insert addNamedEntryComposition(CauseOfDeathPart1, Observation, vrdr-cause-of-death-part1-dcr-ex1)
