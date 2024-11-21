@@ -38,7 +38,8 @@ Title: "Death Certificate for review for cremation clearance request"
 * section[=].entry[+] = Reference(Observation/vrdr-death-date-dcr-ex1)
 //* section[=].entry[+] = Reference(Organization/interested-party-ccr-ex1)
 * section[+].code = $vrdr-document-section-cs#DeathCertification
-* section[=].entry[0] = Reference(Practitioner/vrdr-certifier-dcr-ex1)
+//* section[=].entry[0] = Reference(Practitioner/vrdr-certifier-dcr-ex1)
+* section[=].entry[0] = Reference(Practitioner/vr-practitioner-ex1)
 * section[=].entry[+] = Reference(Procedure/vrdr-death-certification-dcr-ex1)
 * section[=].entry[+] = Reference(Observation/vrdr-manner-of-death-dcr-ex1)
 * section[=].entry[+] = Reference(Observation/vrdr-cause-of-death-part1-dcr-ex1)
