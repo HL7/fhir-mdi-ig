@@ -64,8 +64,6 @@ pages:
     title: MDI Security Recommendations
   mdi_specification.md:
     title: MDI Specification
-  mdi_terminology.md:
-    title: MDI Terminology
   mdi_downloads.md:
     title: MDI Downloads
   mdi_change_log.md:
@@ -106,7 +104,6 @@ menu:
   Best Practices: mdi_best_practices.html
   Security Recommendations: mdi_security_recommendations.html
   Specification: mdi_specification.html
-  Terminology: mdi_terminology.html
   Downloads: mdi_downloads.html
   Changes: mdi_change_log.html
   Content Transitions: mdi-content-transitions.html
