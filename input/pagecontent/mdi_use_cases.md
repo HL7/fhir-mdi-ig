@@ -35,7 +35,7 @@ The Composition - MDI and EDRS uses many of the same profiles as (i.e., referenc
 * MDI Cause of Death Part 1 – Freeman: Observation with practitioner, who is the Cause of Death certifier (coroner or medical examiner)
 
 ### Transmission of Forensic Toxicology Diagnostic Findings from LIMS to MDI CMS
-Data from a forensic toxicology laboratory information management systems (LIMS) can be sent to an MDI CMS via a diagnostic report and message bundle.
+Data from a forensic toxicology laboratory information management system (LIMS) can be sent to an MDI CMS via a diagnostic report and message bundle.
 
 **FHIR Resources** listed on Artifacts, [Forensic Toxicology Profiles](artifacts.html#forensic-toxicology-profiles):
 * Bundle - Message Toxicology to MDI: Message bundle profile providing a FHIR “wrapper” to contain a message header and a diagnostic report from a forensic toxicology laboratory.

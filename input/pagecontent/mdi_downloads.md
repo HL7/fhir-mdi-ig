@@ -12,4 +12,4 @@ The entire IG (including the HTML files, definitions, validation information, et
 
 * [XML](examples.xml.zip)
 * [JSON](examples.json.zip)
-* [TTl](examples.ttl.zip)
+* [TTL](examples.ttl.zip)

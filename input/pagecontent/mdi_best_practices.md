@@ -81,13 +81,13 @@ The CapabilityStatement resources defined in this MDI FHIR IG are of kind=requir
 
 
 It is expected that any specific FHIR server implementing this MDI FHIR IG may allow or require more interactions and operations for a larger set of resources than those specified in the CapabilityStatement resources listed above. An example of a CapabilityStatement that defines the full capabilities of a specific FHIR server (kind=instance), is available for the Raven FHIR Server, maintained by Georgia Tech Research Institute (GTRI):
-* [CapabilityStatement](https://bluejay.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) for Raven FHIR Server
+* [CapabilityStatement](https://raven.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) for Raven FHIR Server
 * [Raven Testing Platform](https://apps.hdap.gatech.edu/raven/) — A proof of concept for the MDI FHIR IG. It provides a tool for testing conformance to the MDI FHIR IG, including resource validation, record comparison, and data exchange workflows. 
 * [Raven Documentation](https://ravendocs.readthedocs.io/en/latest/) — End-use and technical manuals
 
 An MDI-based Search API enables an MDI CMS to search an EDRS server for decedent cases, and vice versa. This is an idempotent operation (i.e., it has no additional effect if it is called more than once with the same input parameters). At a minimum, both POST and GET should be allowed with the following endpoint URL pattern:
 * POST [base]/Composition/$document
-* GET [base]/Composition/$document?name=value&…
+* GET [base]/Composition/$document?name1=value&name2=value2
 
 ***Table: Summary of Minimum MDI Search Parameter Definitions***
 
@@ -129,31 +129,31 @@ An MDI-based Search API enables an MDI CMS to search an EDRS server for decedent
   </tr>
 	  <tr>
     <td class="tg-0lax">patient</td>
-    <td class="tg-0lax">0..* </td>
+    <td class="tg-0lax">0..1 </td>
     <td class="tg-0lax"> </td>
     <td class="tg-0lax">One or more decedent-related search parameters </td>
   </tr>
   <tr>
-    <td class="tg-0lax">patient.birthdate </td>
-    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">  patient.birthdate </td>
+    <td class="tg-0lax">0..* </td>
     <td class="tg-0lax">date </td>
     <td class="tg-0lax">Decedent’s date of birth </td>
   </tr>
   <tr>
-    <td class="tg-0lax">patient.family </td>
-    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">  patient.family </td>
+    <td class="tg-0lax">0..* </td>
     <td class="tg-0lax">string </td>
     <td class="tg-0lax">Decedent’s last name </td>
   </tr>
   <tr>
-    <td class="tg-0lax">patient.given </td>
-    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">  patient.given </td>
+    <td class="tg-0lax">0..* </td>
     <td class="tg-0lax">string </td>
     <td class="tg-0lax">Decedent’s first name </td>
   </tr>
   <tr>
-    <td class="tg-0lax">patient.gender </td>
-    <td class="tg-0lax">0..1 </td>
+    <td class="tg-0lax">  patient.gender </td>
+    <td class="tg-0lax">0..* </td>
     <td class="tg-0lax">token </td>
     <td class="tg-0lax">Decedent’s gender </td>
   </tr>
@@ -184,7 +184,7 @@ An MDI-based Search API enables an MDI CMS to search an EDRS server for decedent
   <tr>
     <td class="tg-0lax">return </td>
     <td class="tg-0lax">0..1 </td>
-    <td class="tg-0lax">Bundle </td>
+    <td class="tg-0lax">resource </td>
     <td class="tg-0lax">Bundle - Searchset or Bundle - Document MDI and EDRS. If [id] is supplied, then this should be Bundle - Document MDI and EDRS</td>
  </tr>
 </tbody>
