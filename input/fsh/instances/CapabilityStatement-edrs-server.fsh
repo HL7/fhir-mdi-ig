@@ -24,7 +24,7 @@ Usage: #definition
   * insert SupportSearchParam(subject, http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier, #token, #SHALL)
   * insert SupportSearchParam(patient, http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier, #token, #SHALL)
 //  * insert SupportSearchParam(Composition.extension, http://hl7.org/fhir/us/mdi/SearchParameter/mdi-tracking-number-search, #token, #SHALL)
-  * insert SupportSearchParam(extension, http://hl7.org/fhir/us/mdi/SearchParameter/mdi-tracking-number-search, #token, #SHALL)
+//  * insert SupportSearchParam(extension, http://hl7.org/fhir/us/mdi/SearchParameter/mdi-tracking-number-search, #token, #SHALL)
   * insert SupportOperation(operation-composition-document, https://hl7.org/fhir/operation-composition-document, #SHALL)
 //  * resource[0]
 //    * type = #Composition
