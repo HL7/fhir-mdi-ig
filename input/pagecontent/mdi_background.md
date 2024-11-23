@@ -27,18 +27,21 @@ The scope of the current MDI IG is defining FHIR resources and guidance for the 
 For more details, see the [Use Cases](mdi_use_cases.html) page.
 
 ### Future Work
+The MDI FHIR IG will continue to develop to support additional MDI needs beyond death reporting to EDRS for the death certificate. Future work likely will include:
+* **Terminology**: Developing vocabularies and terminologies useful to the MDI domain with focus on those for forensic toxicology results
+* **Resources for Additional Dataflows**: Developing FHIR profiles for transactions between MDI CMS and other information sources (EHR, autopsy facilities, etc.) and information recipients (organ and tissue procurement organizations, state health surveillance systems, etc.).
+
 Georgia Tech Research Institute (GTRI) provides tools for exploring and testing MDI FHIR data.
 * [**Raven Testing Platform**](https://apps.hdap.gatech.edu/raven/)—A proof of concept for the MDI FHIR IG. It provides a tool for testing conformance to the MDI FHIR IG, including resource validation, record comparison, and data exchange workflows.
 * [**Raven Documentation**](https://ravendocs.readthedocs.io/en/latest//)—End-use and technical manuals
 
-The MDI FHIR IG will continue to develop to support additional MDI needs beyond death reporting to EDRS for the death certificate. Future work likely will include:
-* **Terminology**: Developing vocabularies and terminologies useful to the MDI domain with focus on those for forensic toxicology results
-* **Resources for Additional Dataflows**: Developing FHIR profiles for transactions between MDI CMS and other information sources (EHR, autopsy facilities, etc.) and information recipients (organ and tissue procurement organizations, state health surveillance systems, etc.).
+CDC Foundation provides administrative and project management support for medical examiner and coroner jurisdictions, data sharing partners, and software vendors participating in FHIR pilot projects. CDC Foundation also provides a forum for a community of support through [MDI Connect](https://www.cdcfoundation.org/MDI-Connect) to advance solutions for simplifying data sharing between MDI offices and their partners.
 
 ### IG Development Team
 * **CDC, NCHS**: Kate Brett, Cynthia Bush, Margaret Warner
 * **GTRI**: Myung Choi, Tia Pope, Alexandra Ramirez, Michael Riley 
 * **Lantana Consulting Group**: Dave deRoode, Sarah Gaunt, Diana Wright
+* **CDC Foundation**: Gina Wiser, Michele Trofatter
 
 ### Acknowledgements
 This guide was developed and produced through the efforts of Health Level Seven (HL7) under Project Insight reference number [1737](https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&ProjectNumber=1737).
