@@ -16,11 +16,11 @@ Usage: #definition
 //* contact.telecom[+].system = #email
 //* contact.telecom[=].value = "cgp@lists.HL7.org"
 //* description = "Returns conditions with an [assertedDate extension](http://hl7.org/fhir/StructureDefinition/condition-assertedDate) matching the specified date (dateTime)."
-* description = "TBD"
+* description = "Returns conditions with an [assertedDate extension](http://hl7.org/fhir/StructureDefinition/condition-assertedDate) matching the specified date (dateTime)."
 //* jurisdiction = urn:iso:std:iso:3166#US
 //* code = #asserted-date
 // code is Recommended name for parameter in search url
-* code = #TBD
+* code = #tracking-number
 // base is The resource type(s) this search parameter applies to
 * base = #Composition
 // type must be number | date | string | token | reference | composite | quantity | uri | special

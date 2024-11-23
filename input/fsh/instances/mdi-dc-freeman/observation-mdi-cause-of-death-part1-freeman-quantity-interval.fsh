@@ -1,7 +1,7 @@
 Instance: observation-mdi-cause-of-death-part1-freeman-quantity-interval
 InstanceOf: MDICauseOfDeathPart1
 Title: "MDI Cause of Death Part 1 - Freeman, quantity interval"
-Description: "MDI Cause of Death Part 1 (Observation): Freeman example, specifying interval quantity (days)"
+Description: "MDI Cause of Death Part 1 (Observation): Freeman example, specifying interval quantity"
 Usage: #example
 * status = #final
 * code = $loinc#69453-9 "Cause of death [US Standard Certificate of Death]"

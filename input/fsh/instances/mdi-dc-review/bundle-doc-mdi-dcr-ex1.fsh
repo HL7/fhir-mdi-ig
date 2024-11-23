@@ -1,7 +1,7 @@
 Instance: bundle-doc-mdi-dcr-ex1
 InstanceOf: BundleDocumentMDIDCR
-Title: "Bundle - Document Death Certificate Review, example 1"
-Description: "Bundle - Document Death Certificate Review example 1"
+Title: "Bundle - Document Death Certificate Review example"
+Description: "Bundle - Document Death Certificate Review example"
 Usage: #example
 * identifier
   * system = "urn:ietf:rfc:3986"

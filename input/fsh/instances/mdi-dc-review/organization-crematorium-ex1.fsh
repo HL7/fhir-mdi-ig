@@ -1,7 +1,7 @@
 Instance: organization-crematorium-ex1
 InstanceOf: OrganizationCrematorium
 Title: "Organization – Crematorium example"
-Description: "Example of Organization - Crematorium"
+Description: "Organization - Crematorium example"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Organization-crematorium"
 * identifier.system = "http://Tahoe.Web/Insurity.Tahoe.Organization.Entity.BusinessUnitCode"

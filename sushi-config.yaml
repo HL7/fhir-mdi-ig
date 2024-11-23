@@ -371,10 +371,9 @@ groups:
 
   MDIParameters:
     name: Parameters
-    description: Parameters defined for search and other functions.
+    description: Parameters defined for this IG.
     resources:
       - expansion-parameters-mdi
-      - mdi-tracking-number-search
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and

@@ -1,7 +1,7 @@
 Instance: messageheader-mdi-dcr-ex1
 InstanceOf: MessageHeaderDCR
-Title: "MessageHeader - Death Certificate Review Example 1"
-Description: "MessageHeader - Death Certificate Review, example 1"
+Title: "MessageHeader - Death Certificate Review example"
+Description: "MessageHeader - Death Certificate Review example"
 Usage: #example
 * eventCoding = MDIcodes#death-certificate-review
 * source

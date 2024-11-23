@@ -1,7 +1,7 @@
 Instance: observation-communicable-disease-ccr-ex1
 InstanceOf: ObservationCommunicableDisease
-Title: "Observation - Communicable Disease - ex1"
-Description: "Observation - Communicable Disease: example 1"
+Title: "Observation - Communicable Disease example"
+Description: "Observation - Communicable Disease example"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-communicable-disease"
 * status = #final

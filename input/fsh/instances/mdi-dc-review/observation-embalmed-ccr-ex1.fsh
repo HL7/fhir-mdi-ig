@@ -1,7 +1,7 @@
 Instance: observation-embalmed-ccr-ex1
 InstanceOf: ObservationEmbalmed
-Title: "Observation - Embalmed - ex1"
-Description: "Observation - Embalmed: example 1"
+Title: "Observation - Embalmed example"
+Description: "Observation - Embalmedexample"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Observation-embalmed"
 * status = #final
