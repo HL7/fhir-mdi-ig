@@ -2,7 +2,7 @@ Profile: ObservationCommunicableDisease
 Parent: Observation
 Id: Observation-communicable-disease
 Title: "Observation - Communicable Disease"
-Description: "This Observation profile describes TBD."
+Description: "Observation indicating if the decedent body harbors a communicable disease."
 * code only CodeableConcept
 * code = MDIcodes#CommunicableDisease
   * ^short = "Communicable Disease Observation"

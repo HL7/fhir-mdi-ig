@@ -2,7 +2,7 @@ Profile: ObservationPersonalInformationDataQuality
 Parent: Observation
 Id: Observation-personal-information-data-quality
 Title: "Observation - Personal Information Data Quality"
-Description: "This Observation profile describes TBD."
+Description: "Observation describing the personal information data quality findings that result from a death certificate review. The value[x] (CodeableConcept) is the personal information data quality review conclusion. Use the Observation.note for details."
 * code only CodeableConcept
 * code = MDIcodes#PersonalInformationDataQuality
   * ^short = "Personal Information Data Quality Observation"

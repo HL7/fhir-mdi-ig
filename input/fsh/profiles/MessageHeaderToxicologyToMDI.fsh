@@ -2,7 +2,7 @@ Profile: MessageHeaderToxicologyToMDI
 Parent: MessageHeader
 Id: MessageHeader-toxicology-to-mdi
 Title: "MessageHeader - Toxicology to MDI"
-Description: "This MessageHeader identifies the DiagnosticReport being sent from a forensic toxicology laboratory information system to an MDI information management system."
+Description: "Identification of a DiagnosticReport - Toxicology Lab Result to MDI being sent in a message from a forensic toxicology laboratory information system to an MDI CMS."
 
 * ^status = #active
 * . ^short = "Identifies the DiagnosticReport being sent from a toxicology lab information system to an MDI case management system."

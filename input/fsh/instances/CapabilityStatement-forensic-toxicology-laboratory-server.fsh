@@ -1,7 +1,7 @@
 Instance: CapabilityStatement-forensic-toxicology-laboratory-server
 InstanceOf: CapabilityStatement
 Title: "CapabilityStatement - Forensic Toxicology Laboratory Server"
-Description: "This resource describes the expected minimum capabilities of the toxicology lab server."
+Description: "Description of the expected minimum capabilities of the toxicology lab server."
 Usage: #definition
 * name = "CapabilityStatementForensicToxicologyLaboratoryServer"
 * title = "CapabilityStatement - Forensic Toxicology Laboratory Server"

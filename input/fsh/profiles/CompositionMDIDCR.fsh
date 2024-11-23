@@ -2,7 +2,7 @@ Profile: CompositionMDIDCR
 Parent: Composition
 Id: Composition-mdi-dcr
 Title: "Composition - Death Certificate Review"
-Description: "This Composition contains information for a request to review death certificate data, for death data quality improvement, cremation clearance, and other workflows. It can contain EDRS death certificate structured data."
+Description: "The body of a document exchanged between an EDRS and an MDI CMS for a death certificate review for the purpose of death data quality improvement, cremation clearance, or other workflow. It can contain EDRS death certificate structured data."
 //
 * extension contains ExtensionTrackingNumber named extension-tracking-numbers 0..*
 * extension[extension-tracking-numbers] 

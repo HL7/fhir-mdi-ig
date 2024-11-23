@@ -2,7 +2,7 @@ Profile: ObservationEmbalmed
 Parent: Observation
 Id: Observation-embalmed
 Title: "Observation - Embalmed"
-Description: "This Observation profile indicates if the decedent body was embalmed."
+Description: "Observation indicating if the decedent body was embalmed."
 * code only CodeableConcept
 * code = MDIcodes#Embalmed
   * ^short = "Embalmed Observation"

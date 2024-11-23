@@ -2,7 +2,7 @@ Profile: CompositionMDIAndEDRS
 Parent: Composition
 Id: Composition-mdi-and-edrs
 Title: "Composition - MDI and EDRS"
-Description: "The body of the document exchanged between an MDI CMS and an EDRS for development of a death certificate."
+Description: "The body of a document exchanged between an MDI CMS and an EDRS for development of a death certificate."
 * extension contains ExtensionTrackingNumber named extension-tracking-numbers 0..* MS
 * extension[extension-tracking-numbers] ^short = "A tracking number (e.g., case number or file number) assigned by an MDI or other organization to facilitate recognition of common case records across disparate systems"
   * ^definition = "A tracking number (e.g., case number or file number) assigned by an MDI or other organization to facilitate recognition of common case records across disparate systems"

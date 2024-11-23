@@ -3,7 +3,7 @@ Profile: BundleMessageDCR
 Parent: Bundle
 Id: Bundle-message-death-certificate-review
 Title: "Bundle - Message Death Certificate Review"
-Description: "This Bundle profile represents a Message Bundle about a Death Certificate Review."
+Description: "A container for a message exchanged between an EDRS and an MDI CMS (bi-directional exchange) about a Death Certificate Review. It contains a MessageHeader - Death Certificate Review and a Bundle - Document Death Certificate Review."
 * type = #message (exactly)
 * type MS
 * entry ^slicing.discriminator.type = #profile

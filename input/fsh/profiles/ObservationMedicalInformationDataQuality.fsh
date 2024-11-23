@@ -2,7 +2,7 @@ Profile: ObservationMedicalInformationDataQuality
 Parent: Observation
 Id: Observation-medical-information-data-quality
 Title: "Observation - Medical Information Data Quality"
-Description: "This Observation profile describes TBD."
+Description: "Observation describing the medical information data quality findings that result from a death certificate review. The value[x] (CodeableConcept) is the medical information data quality review conclusion. Use the Observation.note for details."
 * code only CodeableConcept
 * code = MDIcodes#MedicalInformationDataQuality
   * ^short = "Medical Information Data Quality Observation"
