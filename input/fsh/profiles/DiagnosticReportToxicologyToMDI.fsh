@@ -3,9 +3,7 @@ Parent: USCoreDiagnosticReportProfileLaboratoryReporting
 Id: DiagnosticReport-toxicology-to-mdi
 Title: "DiagnosticReport - Toxicology Lab Result to MDI"
 
-Description: """This profile contains constraints to the US Core Diagnostic Report Profile to address the use case for sending data from a forensic toxicology laboratory information management system to an MDI information management system.
-Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result.
-For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note."""
+Description: "The findings and interpretation of diagnostic tests performed during a death investigation and sent from a forensic toxicology laboratory information management system (LIMS) to an MDI CMS. Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result. For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note."
 
 * extension only ExtensionTrackingNumber
 * extension MS

@@ -1,10 +1,7 @@
-Alias: $compositionmdiandedrs = http://hl7.org/fhir/us/vrsandbox/StructureDefinition/Composition-mdi-and-edrs
-Alias: $uscorepatient = http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
-
 Instance: CapabilityStatement-mdi-cms-server
 InstanceOf: CapabilityStatement
 Title: "CapabilityStatement - MDI CMS Server"
-Description: "This resource describes expected minimum capabilities of an MDI CMS server which is responsible for providing responses to the queries submitted by a client. Clients have the option of choosing from this list to access necessary data."
+Description: "This resource describes expected minimum capabilities of an MDI CMS server, which is responsible for providing responses to the queries submitted by a client. Clients have the option of choosing from this list to access necessary data."
 Usage: #definition
 * name = "CapabilityStatementMdiCmsServer"
 * title = "CapabilityStatement - MDI CMS Server"

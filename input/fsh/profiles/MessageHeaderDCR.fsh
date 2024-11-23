@@ -2,7 +2,7 @@ Profile: MessageHeaderDCR
 Parent: MessageHeader
 Id: MessageHeader-death-certificate-review
 Title: "MessageHeader - Death Certificate Review"
-Description: "This MessageHeader identifies a Death Certificate Review document bundle and additional review information."
+Description: "Identification of a DiagnosticReport being sent in a message from a forensic toxicology laboratory information system to an MDI information management system."
 
 * ^status = #active
 * . ^short = "Identifies a Death Certificate Review document bundle and additional review information."

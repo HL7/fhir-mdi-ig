@@ -2,9 +2,7 @@ Profile: SpecimenToxicologyLab
 Parent: Specimen
 Id: Specimen-toxicology-lab
 Title: "Specimen - Toxicology Lab"
-Description: """This Specimen profile identifies and describes the specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis.
-For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note.
-The laboratory may use the Specimen.condition to describe the state of the specimen via codes from the extensible value set hl7VS-specimenCondition and/or use the Specimen.note to describe details or issues about the specimen."""
+Description: "Identification and description of a specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis. For specimens received but not analyzed, the laboratory should provide a reason for no analysis in the DiagnosticReport.conclusion and/or each unanalyzed specimen’s Specimen - Toxicology Lab Specimen.note. The laboratory may use the Specimen.condition to describe the state of the specimen via codes from the extensible value set hl7VS-specimenCondition and/or use the Specimen.note to describe details or issues about the specimen."
 * ^status = #active
 * . ^short = "The specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."
   * ^definition = "The specimen sent by a Medical Examiner, Coroner, or autopsy performer to a toxicology lab for analysis."

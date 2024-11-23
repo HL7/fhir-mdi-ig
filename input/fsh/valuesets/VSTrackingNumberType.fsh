@@ -1,7 +1,7 @@
 ValueSet: VSTrackingNumberType
 Id: vs-tracking-number-type
 Title: "Tracking Number Type"
-Description: "This value set contains codes to that identify the type of tracking number."
+Description: "Type of tracking number"
 * ^meta.versionId = "7"
 * ^meta.lastUpdated = "2023-04-14T19:13:21.832+00:00"
 * ^meta.source = "#YbS8tk1sFzfTLrQI"
