@@ -70,7 +70,7 @@ The editors appreciate the support and sponsorship of the HL7 Public Health Work
 * South Carolina: Charleston County Coroner's Office; SC Law Enforcement Division; Greenville County Coroner’s Office, Washington/Baltimore High Intensity Drug Trafficking Area
 * Washington: King County Medical Examiner's Office; WA State Department of Health Vital Records Office
 
-**The IT vendor community:**
+**The IT Vendor Community:**
 * Axiell (MS EDRS vendor)
 * Cohero (PA MDI CMS vendor)
 * CNSI (NH EDRS vendor)
