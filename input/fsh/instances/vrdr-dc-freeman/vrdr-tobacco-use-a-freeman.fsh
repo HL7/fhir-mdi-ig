@@ -1,7 +1,7 @@
 Instance: vrdr-tobacco-use-a-freeman
 InstanceOf: TobaccoUseContributedToDeath
 Title: "VRDR Tobacco Use Contributed To Death - Freeman"
-Description: "obacco Use Contributed To Death: Freeman example (vrdr-tobacco-use-contributed-to-death)"
+Description: "Tobacco Use Contributed To Death: Freeman example (vrdr-tobacco-use-contributed-to-death)"
 Usage: #example
 * status = #final
 * code = $loinc#69443-0 "Did tobacco use contribute to death"

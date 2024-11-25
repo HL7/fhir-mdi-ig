@@ -1,7 +1,7 @@
 CodeSystem: MDIcodes
 Id: cs-mdi-codes
 Title: "Medicolegal Death Investigation Codes"
-Description: "Local codes for items that lack an appropriate LOINC code. This codesystem is only for use in the MDI use cases supported by this implementation guide, and should not be used elsewhere."
+Description: "Local codes for items that lack an appropriate LOINC code. This code system is only for use in the MDI use cases supported by this implementation guide and should not be used elsewhere."
 // old Description: "This code system contains codes for use in death investigations and reporting."
 * ^caseSensitive = true
 * ^content = #complete
