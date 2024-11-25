@@ -11,7 +11,7 @@ This MDI FHIR specification is part of that effort to define elements and datafl
 Medical examiner and coroner offices access and exchange information with multiple agencies and organizations when building a death investigation case record (e.g., law enforcement, forensic laboratories, EHR systems, jurisdictional EDRS). Case records are created in the MDI case management system (CMS) and may contain entries from both internal sources (e.g., scene investigation) and external sources (e.g., laboratory analysis results).
 
 ***Figure: Dataflows in the Death Investigation and Reporting System***
-<table><tr><td><img src="IG-image-MDI-data-flows-500.png" /></td></tr></table>
+<table><tr><td><img src="MDI-data-flow-STU2.png" /></td></tr></table>
 
 According to the U.S. Department of Justice, Office of Justice Programs, Bureau of Justice Statistics report, [*Medical Examiner and Coroner Offices, 2018*](https://bjs.ojp.gov/content/pub/pdf/meco18.pdf), in 2018 2,040 medical examiner and coroner offices accepted 605,000 referrals for investigation to determine the cause and manner of death across federal, state, and local jurisdictions. The information gathered during a death investigation is useful to a variety of local, state, and federal agencies, and many entities rely on MDI-generated data. For example, the CDC monitors trends in unintentional injury, homicides, suicides, and sudden or unexpected infant deaths and develops policy recommendations and prevention strategies for such deaths. The National Highway Traffic Safety Administration (NHTSA) monitors trends in traffic-related fatalities and the U.S. Consumer Product Safety Commission (CPSC) uses mortality data to identify problematic products for investigation and potential recall.
 

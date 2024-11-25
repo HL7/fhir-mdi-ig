@@ -26,7 +26,7 @@ Death data for a case record can be exchanged bidirectionally between an MDI cas
 
 The Composition - MDI and EDRS provides the Tracking Number Extension for including case or file numbers used by various systems to identify the case. One Composition can have multiple tracking numbers with additional tracking numbers added over time, e.g., MDI CMS case number added to a file with an EDRS record number.
 
-The Composition - MDI and EDRS uses many of the same profiles as (i.e., references) the VRDR & VRCL FHIR IGs. One exception is the MDI Cause Of Death Part 1 profile, which is based on the VRDR Cause Of Death Part 1 profile, but requires a performer, which is the cause of death certifier (coroner or medical examiner).
+The Composition - MDI and EDRS uses many of the same profiles as (i.e., references) the VRDR & VRCL FHIR IGs. One exception is the MDI Cause Of Death Part 1 profile, which is based on the VRDR Cause Of Death Part 1 profile, but requires a performer, which is the cause of death certifier (coroner or medical examiner). The rationale for the heavier constraint here is to preserve the chain of cause-of-death determination and who made the determination.
 
 **Examples** listed on Artifacts, [MDI-defined Resource Examples for Death Certificate](artifacts.html#mdi-defined-resource-examples-for-death-certificate):
 * Bundle - MDI and EDRS - Freeman: Document bundle for the Freeman example case.
