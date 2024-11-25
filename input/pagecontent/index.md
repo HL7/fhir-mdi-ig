@@ -39,8 +39,36 @@ This guide includes the following sections, listed at the top of each page in th
 The audience for this IG includes architects and developers of MDI CMS and associated information management systems, such as forensic toxicology LIMS, as well as medical examiners, coroners, death investigators, and other professionals who collect and analyze data for death investigations. Business analysts and policy managers can also benefit from a basic understanding of the use of MDI data exchange to support interoperability.
 
 ### Authors
-* HL7 International - Public Health Work Group, [http://www.hl7.org/Special/committees/pher](http://www.hl7.org/Special/committees/pher)
-* Cynthia Bush (OD), pdz1@cdc.gov
-* Kate Brett (DVS), kmb5@cdc.gov
-* Margaret Warner (DVS), mmw9@cdc.gov
-* Diana Wright, diana.wright@lantanagroup.com
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email/URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HL7 International - Public Health</td>
+<td><a href="http://www.hl7.org/Special/committees/pher" target="_new">http://www.hl7.org/Special/committees/pher</a></td>
+</tr>
+<tr>
+<td>Cynthia Bush, Health Scientist (Informatics), CDC/National Center for Health Statistics</td>
+<td><a href="mailto:pdz1@cdc.gov">pdz1@cdc.gov</a></td>
+</tr>
+<tr>
+<td>Margaret Warner, Senior Epidemiologist, CDC/National Center for Health Statistics</td>
+<td><a href="mailto:mmw9@cdc.gov">mmw9@cdc.gov</a></td>
+</tr>
+<tr>
+<td>Daian Wright, Lantana Consulting Group</td>
+<td><a href="mailto:diana.wright@lantanagroup.com">diana.wright@lantanagroup.com</a></td>
+</tr>
+<tr>
+<td>Saul A. Kravitz, MITRE Corporation</td>
+<td><a href="mailto:saul@mitre.org">saul@mitre.org</a></td>
+</tr>
+</tbody>
+</table>
+
+See also the Background page, [IG Development Team](mdi_background.html#ig-development-team)

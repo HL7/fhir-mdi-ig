@@ -13,7 +13,7 @@ The 2nd STU2 ballot (Jan. 2025) made the following changes:
 * **Code systems**:
   * Renamed CodeSystem - MDI (CodeSystem-mdi-codes, CodeSystemMDI) to Medicolegal Death Investigation Codes (cs-mdi-codes, MDIcodes) per TSMG guidance
   * Added Death Certificate Review Example (cs-death-cert-review-example, DeathCertReviewExample)
-* **Added Use Cases** narrative page and **removed Terminology** narrative pages (no longer needed)
+* **Added Use Cases** narrative page and **removed Terminology** narrative page (no longer needed)
 
 The 1st STU2 ballot (May 2024) of MDI incorporated refactoring, as described in the VRCL, Vital Records FHIR Implementation Guide Harmonization Plan page. Many of the MDI STU1.1 profiles, valuesets, codesystems, and extensions are now found elsewhere. For a detailed description of harmonization changes in the MDI IG, see the Content Transitions page.
 

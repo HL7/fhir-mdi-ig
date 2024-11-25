@@ -38,10 +38,11 @@ Georgia Tech Research Institute (GTRI) provides tools for exploring and testing 
 CDC Foundation provides administrative and project management support for medical examiner and coroner jurisdictions, data sharing partners, and software vendors participating in FHIR pilot projects. CDC Foundation also provides a forum for a community of support through [MDI Connect](https://www.cdcfoundation.org/MDI-Connect) to advance solutions for simplifying data sharing between MDI offices and their partners.
 
 ### IG Development Team
-* **CDC, NCHS**: Kate Brett, Cynthia Bush, Margaret Warner, Jenny Couse
+* **CDC, NCHS**: Jenny Couse, Kate Brett, Cynthia Bush, Chris Harrison, Mark Montgomery, Margaret Warner
+* **CDC Foundation**: Dan Chaput, Michele Trofatter, Gina Wiser
 * **GTRI**: Myung Choi, Tia Pope, Alexandra Ramirez, Michael Riley 
 * **Lantana Consulting Group**: Dave deRoode, Sarah Gaunt, Diana Wright
-* **CDC Foundation**: Gina Wiser, Michele Trofatter
+* **MITRE Corporation**: Saul A. Kravitz
 
 ### Acknowledgements
 This guide was developed and produced through the efforts of Health Level Seven (HL7) under Project Insight reference number [1737](https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&ProjectNumber=1737).
@@ -57,23 +58,32 @@ The editors appreciate the support and sponsorship of the HL7 Public Health Work
 * Florida: Division Forensic Medicine, University of Florida
 * Georgia: DeKalb County Medical Examiner's Office; GA Department of Public Health, State Office of Vital Records
 * Illinois: Cook County Medical Examiner's Office
+* Indiana: Marion County Coroner’s Office; Indiana Department of Health
 * NMS Labs
-* Michigan: Sparrow Foundation; MI Department of Health and Human Services; MI Health Information Network Shared Services (MiHIN); MiCelerity
+* Michigan: Sparrow Foundation; MI Department of Health and Human Services; MI Health Information Network Shared Services (MiHIN); MiCelerity; Wayne County Medical Examiner’s Office; Wayne State University
 * Minnesota: Midwest Medical Examiner's Office; MN IT Services (MNIT) 
+* Mississippi: Mississippi Department of Public Safety: MS State Department of Health
+* Nevada: Clark County Office of the Coroner/Medical Examiner
 * New Hampshire: Office of the Chief Medical Examiner; Secretary of State, Division of Vital Records Administration
-* South Carolina: Charleston County Coroner's Office; SC Law Enforcement Division
+* Ohio: Butler County Coroner’s Office; Butler County General Health District
+* Pennsylvania: York County Coroner’s Office
+* South Carolina: Charleston County Coroner's Office; SC Law Enforcement Division; Greenville County Coroner’s Office, Washington/Baltimore High Intensity Drug Trafficking Area
 * Washington: King County Medical Examiner's Office; WA State Department of Health Vital Records Office
 
 **The IT vendor community:**
+* Axiell (MS EDRS vendor)
+* Cohero (PA MDI CMS vendor)
 * CNSI (NH EDRS vendor)
 * Genesis (GA EDRS vendor)
 * LabLynx (IL MDI CMS vendor)
-* MDILog (GA, MI, NH, and SC MDI CMS vendor)
+* MAPSYS (OH MDI CMS vendor)
+* MDILog (GA, MI, NH, MS and SC MDI CMS vendor)
 * NetSmart (AK EDRS vendor)
-* Porter Lee Corporation, Crime Fighter BEAST (SC forensic lab vendor) 
-* QuincyTech (CT MDI system vendor)
-* VertiQ (AK, WA and MN MDI CMS vendor)
-* VitalChek (CT EDRS vendor)
+* Porter Lee Corporation, Crime Fighter BEAST (SC forensic lab vendor)
+* QuincyTech (CT, and MI MDI system CMS vendor)
+* VertiQ (AK, NV, WA and MN MDI CMS vendor)
+* VitalChek (CT, IN, MI EDRS vendor)
+
 
 ### References
 * National Institute of Standards and Technology (NIST), [“Medicolegal death investigation data commonly collected and exchanged,”](https://www.nist.gov/system/files/documents/2021/07/14/MDI%20data%20commonly%20collected%20and%20exchanged_REFERENCE_07092021_0.pdf) (7/9/2021)
