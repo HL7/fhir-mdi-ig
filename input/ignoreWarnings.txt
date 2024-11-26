@@ -157,3 +157,6 @@ INFORMATION: Organization/organization-crematorium-ex1: Organization.identifier[
 INFORMATION: Organization/vrdr-funeral-home-dcr-ex1: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-funeral-home|3.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Organization/us-core-organization-dcr-ex1: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|5.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 % The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+
+#11 -  dom-6: 'A resource should have narrative for robust management'. Narrative is not expected in content coming from EDRS.
+Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
