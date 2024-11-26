@@ -13,16 +13,19 @@ Description: "The body of a document exchanged between an EDRS and an MDI CMS fo
 * extension[extension-death-certificate-status] 
   * ^short = "Death Certificate workflow status"
   * ^definition = "Death Certificate workflow status"
-//Extensions describing the Cremation Clearance statuses
+//
 * extension contains ExtensionCremationClearanceStatus named extension-cremation-clearance-status 0..1
 * extension[extension-cremation-clearance-status] ^short = "Status of the Cremation Clearance (e.g., requested, pending, rejected, approved). Expected to be Requested in Cremation Clearance Request."
   * ^definition = "Status of the Cremation Clearance (e.g., requested, pending, rejected, approved)"
+//
 * extension contains ExtensionMECertificationAffirmation named extension-me-certification-affirmation 0..1
 * extension[extension-me-certification-affirmation] ^short = "Indicates whether the Medical Examiner certification has been affirmed or not"
   * ^definition = "Indicates whether the Medical Examiner certification has been affirmed or not"
+//
 * extension contains ExtensionCremationClearanceCoroner named extension-cremation-clearance-coroner 0..1
 * extension[extension-cremation-clearance-coroner] ^short = "Indicates whether the Cremation Clearance is a Coroner workflow or not"
   * ^definition = "Indicates whether the Cremation Clearance is a Cononer workflow or not"
+//
 * extension contains ExtensionCremationClearanceSignature named extension-cremation-clearance-signature 0..1
 * extension[extension-cremation-clearance-signature] ^short = "Indicates whether the Cremation Clearance has been signed or not. Expected to be unsigned in Cremation Clearance Request."
   * ^definition = "Indicates whether the Cremation Clearance has been signed or not"
@@ -30,7 +33,6 @@ Description: "The body of a document exchanged between an EDRS and an MDI CMS fo
 * subject 1..1
 * subject only Reference(Decedent)
 //
-// Composition-mdi-and-edrs uses type = #value here, while vrdr-death-certificate uses type = #pattern here 
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open

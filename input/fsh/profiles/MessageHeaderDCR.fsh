@@ -11,12 +11,12 @@ Description: "Identification of a Bundle - Document Death Certificate Review bei
 //
 * event[x] only Coding
 * event[x] = MDIcodes#death-certificate-review
-* event[x] MS
+* event[x]
   * ^short = "Death Certificate Review"
-* reason 1..1 MS
+* reason 1..1
 * reason only CodeableConcept 
 * reason from VSDCRreasonEx (example)
-* focus 1..1 MS
+* focus 1..1
 * focus only Reference(BundleDocumentMDIDCR)
   * ^short = "The focus of this message header is the Bundle - Document Death Certificate Review."
   * ^definition = "The focus of this message header is the Bundle - Document Death Certificate Review."

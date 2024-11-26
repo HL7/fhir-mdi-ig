@@ -6,7 +6,6 @@ Description: "A container for a document exchanged between an EDRS and an MDI CM
 * identifier 1.. 
   * ^short = "Persistent, unique identifier of each bundle instance"
 * type = #document (exactly)
-* type 
 * entry 
   * ^slicing.discriminator.type = #profile
   * ^slicing.discriminator.path = "$this.resource"
