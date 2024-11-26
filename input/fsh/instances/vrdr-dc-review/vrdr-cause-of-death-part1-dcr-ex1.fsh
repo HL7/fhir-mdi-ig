@@ -8,4 +8,4 @@ Usage: #example
 * valueCodeableConcept.text = "Gunshot Wound of Head"
 * subject = Reference(vrdr-decedent-dcr-ex1)
 * component[lineNumber].valueInteger = 1
-* component[interval].valueString = "1 year"
+* component[interval].valueString = "1 hour"

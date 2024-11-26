@@ -9,4 +9,4 @@ Usage: #example
 * subject = Reference(vrdr-decedent-dcr-ex1)
 * performer = Reference(us-core-practitioner-dcr-ex1)
 * valueCodeableConcept = $sct#27935005 "Homicide"
-* valueCodeableConcept.text = "Homicide"
+//* valueCodeableConcept.text = "Homicide"
