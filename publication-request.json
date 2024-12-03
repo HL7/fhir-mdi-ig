@@ -1,9 +1,9 @@
 {
 	"package-id": "hl7.fhir.us.mdi",
-	"version": "2.0.0-ballot",
-	"path": "http://hl7.org/fhir/us/mdi/2024May",
+	"version": "2.0.0-ballot2",
+	"path": "http://hl7.org/fhir/us/mdi/2025Jan",
 	"mode": "working",
 	"status": "ballot",
 	"sequence": "STU 2",
-	"desc": "Ballot version for STU2"
+	"desc": "2nd Ballot version for STU2"
 }
