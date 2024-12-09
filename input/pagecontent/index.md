@@ -61,7 +61,7 @@ The audience for this IG includes architects and developers of MDI CMS and assoc
 <td><a href="mailto:mmw9@cdc.gov">mmw9@cdc.gov</a></td>
 </tr>
 <tr>
-<td>Daian Wright, Lantana Consulting Group</td>
+<td>Diana Wright, Lantana Consulting Group</td>
 <td><a href="mailto:diana.wright@lantanagroup.com">diana.wright@lantanagroup.com</a></td>
 </tr>
 <tr>
