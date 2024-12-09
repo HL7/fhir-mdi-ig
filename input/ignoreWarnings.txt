@@ -67,7 +67,6 @@ WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[14].resource/*Observation/v
 WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[14].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[14].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[19].resource/*Observation/vrdr-manner-of-death-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[19].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[19].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[20].resource/*Observation/vrdr-cause-of-death-part1-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-doc-mdi-dcr-ex1: Bundle.entry[20].resource/*Observation/vrdr-cause-of-death-part1-dcr-ex1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
