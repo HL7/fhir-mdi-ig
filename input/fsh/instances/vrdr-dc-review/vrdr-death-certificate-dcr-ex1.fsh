@@ -1,7 +1,7 @@
 Instance: vrdr-death-certificate-dcr-ex1
 InstanceOf: DeathCertificate
 Usage: #example
-Description: "Death Certificate - CCR example 1"
+Description: "VRDR Death Certificate - CCR example 1"
 Title: "Death Certificate for review for cremation clearance request"
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate"
 * extension.url = "http://hl7.org/fhir/us/vrdr/StructureDefinition/StateSpecificField"
