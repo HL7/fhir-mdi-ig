@@ -1,6 +1,6 @@
-ValueSet: VSCertifiedWorkflowEx
-Id: vs-certified-workflow-example
-Title: "ValueSet - Certified Workflow example"
+ValueSet: VSCertifiedWorkflow
+Id: vs-certified-workflow
+Title: "ValueSet - Certified Workflow"
 Description: "This value set contains example codes for Death Certificate certification workflow status."
 * ^status = #active
 * ^experimental = false

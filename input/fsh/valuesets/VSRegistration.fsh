@@ -1,6 +1,6 @@
-ValueSet: VSRegistrationEx
-Id: vs-registration-example
-Title: "Registration example"
+ValueSet: VSRegistration
+Id: vs-registration
+Title: "Registration Value Set"
 Description: "This value set contains example codes for Death Certificate registration status."
 * ^status = #active
 * ^experimental = false

@@ -1,6 +1,6 @@
-ValueSet: VSMECertAffirmationEx
-Id: vs-me-cert-affirmation-example
-Title: "ValueSet - Medical Examiner Certification Affirmation example"
+ValueSet: VSMECertAffirmation
+Id: vs-me-cert-affirmation
+Title: "ValueSet - Medical Examiner Certification Affirmation"
 Description: "This value set contains example codes for the status of Medical Examiner Certification Affirmation."
 * ^status = #active
 * ^experimental = false

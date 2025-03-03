@@ -1,6 +1,6 @@
-ValueSet: VSMedDQReviewEx
-Id: vs-med-dq-review-example
-Title: "ValueSet - Medical Data Quality Review example"
+ValueSet: VSMedDQReview
+Id: vs-med-dq-review
+Title: "ValueSet - Medical Data Quality Review"
 Description: "This value set contains example codes for medical data quality review."
 * ^status = #active
 * ^experimental = false

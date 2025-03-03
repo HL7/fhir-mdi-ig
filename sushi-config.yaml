@@ -249,13 +249,13 @@ groups:
     description: Value sets defined by this IG. Example value sets contain examples of codes typically defined by each implementation or jurisdiction.
     resources:
       - VSTrackingNumberType
-      - VSCCStatusEx
-      - VSCertifiedWorkflowEx
-      - VSDCRreasonEx
-      - VSMECertAffirmationEx
-      - VSMedDQReviewEx
-      - VSPerDQReviewEx
-      - VSRegistrationEx
+      - VSCCStatus
+      - VSCertifiedWorkflow
+      - VSDCRreason
+      - VSMECertAffirmation
+      - VSMedDQReview
+      - VSPerDQReview
+      - VSRegistration
   MDIExamples1:
     name: MDI-defined Resource Examples for Death Certificate
     description: Examples of MDI-defined resources for death certificate development.
