@@ -30,6 +30,11 @@ Description: "The body of a document exchanged between an EDRS and an MDI CMS fo
 * extension[extension-cremation-clearance-signature] ^short = "Indicates whether the Cremation Clearance has been signed or not. Expected to be unsigned in Cremation Clearance Request."
   * ^definition = "Indicates whether the Cremation Clearance has been signed or not"
 //
+* status MS
+* type = MDIcodes#death-certificate-data-review-doc
+* type MS
+  * ^short = "Death Certificate Data Review Document"
+  * ^definition = "Death Certificate Data Review Document"
 * subject 1..1
 * subject only Reference(Decedent)
 //
