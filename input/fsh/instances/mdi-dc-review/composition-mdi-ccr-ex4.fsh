@@ -9,7 +9,7 @@ Description: "Death Certificate Review for cremation clearance response"
 *  extension[ExtensionCremationClearanceSignature].valueCodeableConcept = DeathCertReviewExample#CREM_C_UNSIGNED "Unsigned"
 //
 * status = #preliminary
-* type = $loinc#86807-5 "Death administrative information Document"
+* type = MDIcodes#death-certificate-data-review-doc "Death Certificate Data Review Document"
 * subject = Reference(vrdr-decedent-dcr-ex1)
 * date = "2023-05-02"
 * author = Reference(us-core-organization-ga-dph)
