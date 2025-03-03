@@ -10,9 +10,9 @@ Description: "Identification of a Bundle - Document Death Certificate Review bei
 
 //
 * event[x] only Coding
-* event[x] = MDIcodes#death-certificate-review
+* event[x] = MDIcodes#death-certificate-review-event
 * event[x]
-  * ^short = "Death Certificate Review"
+  * ^short = "Death Certificate Review Event"
 * reason 1..1
 * reason only CodeableConcept 
 * reason from VSDCRreasonEx (example)

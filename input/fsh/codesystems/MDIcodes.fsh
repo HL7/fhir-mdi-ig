@@ -24,18 +24,11 @@ Description: "Local codes for items that lack an appropriate LOINC code. This co
 * #tox-lab-case-number "Toxicology Laboratory Case Number"
 // MessageHeader.event types
 * #tox-result-report "Toxicology Lab Results"
-* #death-certificate-review "Death Certificate Review"
-// Observation codes related to Detah Certificate Review Observations
-* #Embalmed "Embalmed Observation"
-* #CommunicableDisease "Communicable Disease Observation"
-// Observation codes related to the Death Certificate review NO LONGER NEEDED?
-//* #CertifiedWorkflow "Certified Workflow Observation"
-//* #Registration "Registration Observation"
-* #MedicalInformationDataQuality "Medical Information Data Quality Observation"
-* #PersonalInformationDataQuality "Personal Information Data Quality Observation"
-// Observation codes related to the Cremation Clearance NO LONGER NEEDED?
-//* #MECertificationAffirmation "Medical Examiner Certification Affirmation Observation"
-//* #CoronerWorkflow "Coroner Workflow Observation"
-//* #SignedWorkflow "Signed Workflow Observation"
-// Other type codes
+* #death-certificate-review-event "Death Certificate Review Event"
+// Observation codes related to Death Certificate Review Observations
+* #embalmed-obs "Embalmed Observation"
+* #communicable-disease-obs "Communicable Disease Observation"
+* #med-info-data-quality-obs "Medical Information Data Quality Observation"
+* #personal-info-data-quality-obs "Personal Information Data Quality Observation"
+// Observation codes related to the Cremation Clearance
 * #crematorium "Crematorium"

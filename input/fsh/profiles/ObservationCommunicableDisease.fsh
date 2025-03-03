@@ -4,7 +4,7 @@ Id: Observation-communicable-disease
 Title: "Observation - Communicable Disease"
 Description: "Observation indicating if the decedent body harbors a communicable disease."
 * code only CodeableConcept
-* code = MDIcodes#CommunicableDisease
+* code = MDIcodes#communicable-disease-obs
   * ^short = "Communicable Disease Observation"
 * subject 1..1
 * subject only Reference(Decedent)
