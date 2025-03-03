@@ -12,6 +12,6 @@ Description: "Observation describing the medical information data quality findin
 * focus only Reference(DeathCertificate)
 * value[x] 1..1
 * value[x] only CodeableConcept
-* value[x] from VSMedDQReviewEx (example)
+* value[x] from VSMedDQReview (example)
   * ^short = "Medical information data quality review conclusion."
 * note MS

@@ -6,4 +6,4 @@ Description: "This Extension indicates whether the Medical Examiner certificatio
 * ^context[=].expression = "Composition"
 * value[x] 0..1
 * value[x] only CodeableConcept
-* value[x] from VSMECertAffirmationEx (example)
+* value[x] from VSMECertAffirmation (example)

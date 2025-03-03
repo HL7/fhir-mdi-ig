@@ -15,7 +15,7 @@ Description: "Identification of a Bundle - Document Death Certificate Review bei
   * ^short = "Death Certificate Review Event"
 * reason 1..1
 * reason only CodeableConcept 
-* reason from VSDCRreasonEx (example)
+* reason from VSDCRreason (example)
 * focus 1..1
 * focus only Reference(BundleDocumentMDIDCR)
   * ^short = "The focus of this message header is the Bundle - Document Death Certificate Review."

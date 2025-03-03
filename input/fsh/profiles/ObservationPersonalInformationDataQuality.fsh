@@ -12,6 +12,6 @@ Description: "Observation describing the personal information data quality findi
 * focus only Reference(DeathCertificate)
 * value[x] 1..1
 * value[x] only CodeableConcept
-* value[x] from VSPerDQReviewEx (example)
+* value[x] from VSPerDQReview (example)
   * ^short = "Personal information data quality review conclusion."
 * note MS
