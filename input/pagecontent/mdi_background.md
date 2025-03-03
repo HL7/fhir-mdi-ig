@@ -47,7 +47,7 @@ CDC Foundation provides administrative and project management support for medica
 ### Acknowledgements
 This guide was developed and produced through the efforts of Health Level Seven (HL7) under Project Insight reference number [1737](https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&ProjectNumber=1737).
 
-The STU2 ballot version was refactored as part of the [harmonization of vital records FHIR Implementation Guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html) by the MITRE corporation, under contract to NCHS.  As part of this effort, the IG artifacts were transitioned to FHIR shorthand.   The capability statement rendering is provided by the [CapStmt](https://github.com/caspears/CapStatement) liquid template developed by Corey Spears based on original code by Eric Haas.
+The STU2 version was refactored as part of the [harmonization of vital records FHIR Implementation Guides](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html) by the MITRE corporation, under contract to NCHS.  As part of this effort, the IG artifacts were transitioned to FHIR shorthand.   The capability statement rendering is provided by the [CapStmt](https://github.com/caspears/CapStatement) liquid template developed by Corey Spears based on original code by Eric Haas.
 
 The editors appreciate the support and sponsorship of the HL7 Public Health Work Group and all volunteers and staff associated with the creation of this resource. The editors appreciate the wisdom and insights provided by the MDI community, including forensic toxicology laboratories, medical examiners and coroners, and jurisdictional vital records departments.
 

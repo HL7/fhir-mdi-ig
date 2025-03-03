@@ -1,17 +1,3 @@
-<div class="note-to-balloters" markdown="1">
-**For Implementers:**
-* Implementers wishing to test the MDI IG STU 1.1 content with the harmonization of MDI and VRDR should refer to the 2.0.0-snapshot1 - Pre-publication Snapshot at [https://hl7.org/fhir/us/mdi/2.0.0-snapshot1/](https://hl7.org/fhir/us/mdi/2.0.0-snapshot1/)
-
-**For Jan-2025 Ballot Reviewers:**
-
-This STU2 build of MDI reflects two sets of changes from STU 1.1:
-* Refactoring of content driven by the harmonization of vital records FHIR implementation guides, as described in the [Vital Records Common Library (VRCL) Jan-2024 ballot](https://hl7.org/fhir/us/vr-common-library/2024Jan/vr_ig_harmonization.html). For this MDI FHIR IG, this involved introduction of a dependency on the [Vital Records Death Reporting STU3 FHIR IG](https://hl7.org/fhir/us/vrdr/) and on [VRCL STU2](https://hl7.org/fhir/us/vr-common-library/). This harmonization was balloted in May 2024.  (1st STU2 ballot)
-* New content supporting additional workflows, to be balloted January 2025. (2nd STU2 ballot)
-
-See the [change log](mdi_change_log.html) for an updated list of changes.
-  
-</div><!-- note-to-balloters -->
-
 ### Description
 This US-specific implementation guide (IG) provides guidance on the exchange of information to and from medicolegal death investigation (MDI) information systems. It supports interoperability between the MDI case management systems (CMS) used by medical examiner and coroner offices; forensic toxicology and other laboratory information management systems (LIMS); electronic death registration systems (EDRS) of jurisdictional vital records offices (VROs); and ancillary workflows whose systems have the capability of using Fast Healthcare Interoperability Resources (FHIR). This guide provides MDI CMS developers with the technical details and best practices to standardize MDI fields and interfaces. Stakeholders may use the narrative portions of this guide to inform policies and practices for data exchange between systems contributing to, and using information from, death investigations. This guide can serve as a base for local specifications.
 

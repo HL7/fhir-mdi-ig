@@ -11,16 +11,14 @@ This MDI IG uses the US Core Patient for the decedent subject of:
 * **Composition - MDI and EDRS** and the profiles referenced in its section entries
 * **DiagnosticReport - Toxicology Lab Result to MDI** and the profiles referenced for its specimens and results
 
-The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth sex, gender identity, birth date, telecom, address, and marital status). The Composition - MDI and EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.
+The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth date, telecom, address, marital status, etc.). The Composition - MDI and EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.
 
 The [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) profile requires 
 * 1..* patient identifier, each identifier specifying a system and value
 * 1..* patient name
-* 1..1 gender code (AdministrativeGender). Note modeling gender and sex information is ongoing in HL7. Refer to [US Core Patient profile, “Mandatory and Must Support Data Elements.”](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html#mandatory-and-must-support-data-elements)
+* 1..1 gender code (AdministrativeGender). See: [US Core Patient profile, “Mandatory and Must Support Data Elements.”](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html#mandatory-and-must-support-data-elements)
 
 These three data elements may not be known during early stages of medicolegal data collection. US Core provide guidance on such cases of [missing data](http://hl7.org/fhir/us/core/general-requirements.html#missing-data).
-
-In addition to the Patient.gender required data element described above, implementers have the option to describe the decedent’s sex at birth via the [US Core Birth Sex Extension](http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex), which provides codes for classifying the person’s sex assigned at birth.
 
 The US Core Patient Profile contains the optional data element Patient.deceased. It  may be used to indicate if the individual is deceased or not. An implementer has a choice of using Boolean (true/false) values or dateTime. If dateTime is used, it should match the Observation - Death Date value[x].
 <!--- TODO add this back when IGs are separated: [Participant & Supporting Examples](artifacts.html#participant-administrative-examples)--->
