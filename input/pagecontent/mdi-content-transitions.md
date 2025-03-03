@@ -35,9 +35,9 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Previous Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='StructureDefinition-Bundle-document-mdi-and-edrs.html'>BundleDocumentMDIToEDRS</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Bundle-document-mdi-and-edrs.html'>MDI</a> </td><td>-</td></tr>
+<tr><td> <a href='StructureDefinition-Bundle-document-mdi-and-edrs.html'>BundleDocumentMDIAndEDRS</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Bundle-document-mdi-and-edrs.html'>MDI</a> </td><td>-</td></tr>
 <tr><td> <a href='StructureDefinition-Bundle-message-tox-to-mdi.html'>BundleMessageToxToMDI</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Bundle-message-tox-to-mdi.html'>MDI</a> </td><td>-</td></tr>
-<tr><td> <a href='StructureDefinition-Observation-mdi-cause-of-death-part1.html'>ObservationMDICauseOfDeathPart1</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Observation-cause-of-death-part1.html'>MDI</a> </td><td>Profile of <a href='https://hl7.org/fhir/us/vrdr/STU3/StructureDefinition-vrdr-cause-of-death-part1.html'>VRDR</a> version</td></tr>
+<tr><td> <a href='StructureDefinition-Observation-mdi-cause-of-death-part1.html'>MDICauseOfDeathPart1</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Observation-cause-of-death-part1.html'>MDI</a> </td><td>Profile of <a href='https://hl7.org/fhir/us/vrdr/STU3/StructureDefinition-vrdr-cause-of-death-part1.html'>VRDR</a> version</td></tr>
 <tr><td> <a href='StructureDefinition-Composition-mdi-and-edrs.html'>CompositionMDIAndEDRS</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-Composition-mdi-and-edrs.html'>MDI</a> </td><td>-</td></tr>
 <tr><td> <a href='StructureDefinition-DiagnosticReport-toxicology-to-mdi.html'>DiagnosticReportToxicologyToMDI</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-DiagnosticReport-toxicology-to-mdi.html'>MDI</a> </td><td>-</td></tr>
 <tr><td> <a href='StructureDefinition-MessageHeader-toxicology-to-mdi.html'>MessageHeaderToxicologyToMDI</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/StructureDefinition-MessageHeader-toxicology-to-mdi.html'>MDI</a> </td><td>-</td></tr>
@@ -72,7 +72,7 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Previous Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='ValueSet-vs-tracking-number-type.html'>ValueSetTrackingNumberType</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/ValueSet-ValueSet-tracking-number-type.html'>MDI</a> </td><td>-</td></tr>
+<tr><td> <a href='ValueSet-vs-tracking-number-type.html'>VSTrackingNumberType</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/ValueSet-ValueSet-tracking-number-type.html'>MDI</a> </td><td>-</td></tr>
 </tbody>
 </table>
 
@@ -86,7 +86,7 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Previous Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='CodeSystem-cs-mdi-codes.html'>CodeSystemMDI</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/CodeSystem-CodeSystem-mdi-codes.html'>MDI</a> </td><td>-</td></tr>
+<tr><td> <a href='CodeSystem-cs-mdi-codes.html'>MDIcodes</a> </td><td><a href='https://hl7.org/fhir/us/mdi/STU1.1/CodeSystem-CodeSystem-mdi-codes.html'>MDI</a> </td><td>-</td></tr>
 </tbody>
 </table>
 
