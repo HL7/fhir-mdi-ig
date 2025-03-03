@@ -6,9 +6,12 @@ Description: "This code system contains example codes for death certificate revi
 * ^content = #complete
 * ^experimental = false
 // Example codes for Death Certificate Review MessageHeader.reason
-* #DC_MED_DATA_Q "Death Certificate Medical Data Quality Review"
-* #DC_PER_DATA-Q "Death Certificate Personal Data Quality Review"
-* #CREM_C_REQUEST "Cremation Clearance Request"
+* #DC_MED_DATA_Q_REQ "Death Certificate Medical Data Quality Review Request"
+* #DC_MED_DATA_Q_RSP "Death Certificate Medical Data Quality Review Response"
+* #DC_PER_DATA_Q_REQ "Death Certificate Personal Data Quality Review Request"
+* #DC_PER_DATA_Q_RSP "Death Certificate Personal Data Quality Review Response"
+* #CREM_C_REQ "Cremation Clearance Request"
+* #CREM_C_RSP "Cremation Clearance Response"
 // Example Observation codes related to the Decedent
 * #Embalmed "Embalmed Observation"
 * #CommunicableDisease "Communicable Disease Observation"
