@@ -249,13 +249,9 @@ groups:
     description: Value sets defined by this IG. Example value sets contain examples of codes typically defined by each implementation or jurisdiction.
     resources:
       - VSTrackingNumberType
-      - VSCCObservationsEx
-      - VSCCSignedEx
       - VSCCStatusEx
       - VSCertifiedWorkflowEx
-      - VSDCRObservationsEx
       - VSDCRreasonEx
-      - VSEmablmedEx
       - VSMECertAffirmationEx
       - VSMedDQReviewEx
       - VSPerDQReviewEx
