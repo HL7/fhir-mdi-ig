@@ -138,15 +138,15 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Current Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='https://hl7.org/fhir/us/mdi/ValueSet/ValueSet-certifier-types'>ValueSetCertifierTypes</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-certifier-types-vs.html'>VRDR</a> </td><td>-</td></tr>
-<tr><td> <a href='https://hl7.org/fhir/us/mdi/ValueSet/ValueSet-contributory-tobacco-use'>ValueSetContributoryTobaccoUse</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-contributory-tobacco-use-vs.html'>VRDR</a> </td><td>-</td></tr>
-<tr><td> <a href='https://hl7.org/fhir/us/mdi/ValueSet/ValueSet-date-establishment-approach'>ValueSetDateEstablishmentApproach</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-date-of-death-determination-methods-vs.html'>VRDR</a> </td><td>-</td></tr>
-<tr><td> <a href='https://hl7.org/fhir/us/mdi/ValueSet/ValueSet-death-pregnancy-status.html'>ValueSetDeathPregnancyStatus</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-death-pregnancy-status-vs.html'>VRDR</a> </td><td>-</td></tr>
-<tr><td> <a href='https://hl7.org/fhir/us/mdi/ValueSet/ValueSet-manner-of-death.html'>ValueSetMannerOfDeath</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-manner-of-death-vs.html'>VRDR</a> </td><td>-</td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/mdi/STU1.1/ValueSet-ValueSet-certifier-types.html'>ValueSetCertifierTypes</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-certifier-types-vs.html'>VRDR</a> </td><td>-</td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/mdi/STU1.1/ValueSet-ValueSet-contributory-tobacco-use.html'>ValueSetContributoryTobaccoUse</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-contributory-tobacco-use-vs.html'>VRDR</a> </td><td>-</td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/mdi/STU1.1/ValueSet-ValueSet-date-establishment-approach.html'>ValueSetDateEstablishmentApproach</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-date-of-death-determination-methods-vs.html'>VRDR</a> </td><td>-</td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/mdi/STU1.1/ValueSet-ValueSet-death-pregnancy-status.html'>ValueSetDeathPregnancyStatus</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-death-pregnancy-status-vs.html'>VRDR</a> </td><td>-</td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/mdi/STU1.1/ValueSet-ValueSet-manner-of-death.html'>ValueSetMannerOfDeath</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-manner-of-death-vs.html'>VRDR</a> </td><td>-</td></tr>
 <tr><td> <a href='https://hl7.org/fhir/us/mdi/STU1.1/ValueSet-ValueSet-place-of-death.html'>ValueSetPlaceOfDeath</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-place-of-death-vs.html'>VRDR</a> </td><td>-</td></tr>
 <tr><td> <a href='https://hl7.org/fhir/us/mdi/STU1.1/ValueSet-ValueSet-transportation-incident-role.html'>ValueSetTransportationIncidentRole</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/ValueSet-vrdr-transportation-incident-role-vs.html'>VRDR</a> </td><td>-</td></tr>
-<tr><td> <a href='https://hl7.org/fhir/us/mdi/ValueSet/ValueSet-yes-no-unknown.html'>ValueSetYesNoUnknown</a> </td><td><a href='https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-yes-no-unknown-vr.html'>VRCL</a> </td><td>-</td></tr>
-<tr><td> <a href='https://hl7.org/fhir/us/mdi/ValueSet/ValueSet-yes-no-unknown-not-applicable.html'>ValueSetYesNoUnknownNotApplicable</a> </td><td><a href='https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-yes-no-unknown-not-applicable-vr.html'>VRCL</a> </td><td>-</td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/mdi/STU1.1/ValueSet-ValueSet-yes-no-unknown.html'>ValueSetYesNoUnknown</a> </td><td><a href='https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-yes-no-unknown-vr.html'>VRCL</a> </td><td>-</td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/mdi/STU1.1/ValueSet-ValueSet-yes-no-unknown-not-applicable.html'>ValueSetYesNoUnknownNotApplicable</a> </td><td><a href='https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-yes-no-unknown-not-applicable-vr.html'>VRCL</a> </td><td>-</td></tr>
 </tbody>
 </table>
 
@@ -160,8 +160,8 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Current Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='https://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-death-pregnancy-status.html'>CodeSystemDeathPregnancyStatus</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/CodeSystem-CodeSystem-death-pregnancy-status.html'>VRDR</a> </td><td>-</td></tr>
-<tr><td> <a href='https://hl7.org/fhir/us/mdi/CodeSystem/CodeSystem-local-component-codes.html'>CodeSystemLocalComponentCodes</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/CodeSystem-vrdr-component-cs.html'>VRDR</a> </td><td>-</td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/mdi/STU1.1/CodeSystem-CodeSystem-death-pregnancy-status.html'>CodeSystemDeathPregnancyStatus</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/CodeSystem-CodeSystem-death-pregnancy-status.html'>VRDR</a> </td><td>-</td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/mdi/STU1.1/CodeSystem-CodeSystem-local-component-codes.html'>CodeSystemLocalComponentCodes</a> </td><td><a href='https://hl7.org/fhir/us/vrdr/STU3/CodeSystem-vrdr-component-cs.html'>VRDR</a> </td><td>-</td></tr>
 </tbody>
 </table>
 
