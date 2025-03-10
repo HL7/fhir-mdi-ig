@@ -23,6 +23,7 @@ Description: "Local codes for items that lack an appropriate LOINC code. This co
 * #mdi-case-number "MDI Case Number"
 * #edrs-file-number "EDRS File Number"
 * #tox-lab-case-number "Toxicology Laboratory Case Number"
+* #funeral-home-case-number "Funeral Home Case Number"
 // MessageHeader.event types
 * #tox-result-report "Toxicology Lab Results"
 * #death-certificate-review-event "Death Certificate Review Event"
