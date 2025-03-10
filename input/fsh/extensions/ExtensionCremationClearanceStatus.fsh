@@ -6,4 +6,4 @@ Description: "This Extension indicates the authorization status of the Cremation
 * ^context[=].expression = "Composition"
 * value[x] 1..1
 * value[x] only CodeableConcept
-* value[x] from VSCCStatus (example)
+* value[x] from VSCCStatus (extensible)
