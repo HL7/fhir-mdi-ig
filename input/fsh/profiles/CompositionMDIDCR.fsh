@@ -133,8 +133,8 @@ Description: "The body of a document exchanged between an EDRS and an MDI CMS fo
     * ^slicing.discriminator.type = #profile
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
-* insert CompositionSectionSlice(Death-Certificate-data-review, med-info-quality-review, 0, 1,  [[Medical information data quality review status]],  [[Medical information data quality review status]], ObservationMedicalInformationDataQuality )
-* insert CompositionSectionSlice(Death-Certificate-data-review, personal-info-quality-review, 0, 1,  [[Personal information data quality review status]],  [[Personal information data quality review status]], ObservationPersonalInformationDataQuality )
+* insert CompositionSectionSlice(death-certificate-data-review, med-info-quality-review, 0, 1,  [[Medical information data quality review status]],  [[Medical information data quality review status]], ObservationMedicalInformationDataQuality )
+* insert CompositionSectionSlice(death-certificate-data-review, personal-info-quality-review, 0, 1,  [[Personal information data quality review status]],  [[Personal information data quality review status]], ObservationPersonalInformationDataQuality )
 //
 // Removed option for authorizing agent to be or USCorePractitionerProfile or USCoreOrganizationProfile
 * section contains cremation-clearance-info 0..1
