@@ -15,9 +15,9 @@ Description: "This code system contains example codes for death certificate revi
 // REMOVED -- Example Observation codes related to the Decedent
 // * #Embalmed "Embalmed Observation"
 // * #CommunicableDisease "Communicable Disease Observation"
-// Example Extension codes
-* #CertifiedWorkflow "Certified Workflow Observation"
-* #Registration "Registration Observation"
+// REMOVED -- Example Extension codes
+// * #CertifiedWorkflow "Certified Workflow Observation"
+// * #Registration "Registration Observation"
 // REMOVED -- Example Observation codes related to the Death Certificate review
 // * #MedicalInformationDataQuality "Medical Information Data Quality Observation"
 // * #PersonalInformationDataQuality "Personal Information Data Quality Observation"
