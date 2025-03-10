@@ -38,5 +38,4 @@ Alias: AuxiliaryStateIdentifier1VitalRecords = http://hl7.org/fhir/us/vr-common-
 Alias: AuxiliaryStateIdentifier2VitalRecords = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier2
 Alias: CertificateNumberVitalRecords = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber
 Alias: ObservationAutopsyPerformedIndicatorVitalRecords = http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr
-Alias: $vrYNU = http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown-vr
 
