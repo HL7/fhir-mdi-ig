@@ -18,7 +18,7 @@ Description: "Local codes for items that lack an appropriate LOINC code. This co
 // Sections for Death Certificate Data Review Composition
 * #ccr-authorizing-agent "Cremation Clearance Authorizing Agent Section"
 * #cremation-clearance-info "Cremation Clearance Information Section"
-* #Death-Certificate-data-review "Death Certificate Data Review Results Section"
+* #death-certificate-data-review "Death Certificate Data Review Results Section"
 // MDI tracking number types
 * #mdi-case-number "MDI Case Number"
 * #edrs-file-number "EDRS File Number"

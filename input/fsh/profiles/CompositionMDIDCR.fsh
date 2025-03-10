@@ -127,7 +127,7 @@ Description: "The body of a document exchanged between an EDRS and an MDI CMS fo
   * ^label = "Death Certificate Data Review Results Section"
   * ^short = "Death Certificate Data Review Results Section"
   * ^definition = "Death Certificate Data Review Results Section"
-  * code  = MDIcodes#Death-Certificate-data-review
+  * code  = MDIcodes#death-certificate-data-review
   * code 1..
   * entry
     * ^slicing.discriminator.type = #profile

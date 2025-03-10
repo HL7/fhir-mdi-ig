@@ -56,7 +56,7 @@ Description: "Death Certificate Review for death data review request"
   * insert addNamedEntryComposition(DispositionMethod, Observation, vrdr-decedent-disposition-method-dcr-ex1)
   * insert addNamedEntryComposition(Mortician, Practitioner, vrdr-mortician-dcr-ex1)
 // 
-//* section[Death-Certificate-data-review]
+//* section[death-certificate-data-review]
 //  * insert addNamedEntryComposition(med-info-quality-review, Observation, observation-medical-information-data-quality-ccr-ex1)
 //  * insert addNamedEntryComposition(personal-info-quality-review, Observation, observation-personal-information-data-quality-ccr-ex1)
 //
