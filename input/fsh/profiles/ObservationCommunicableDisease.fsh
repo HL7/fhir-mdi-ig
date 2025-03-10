@@ -9,4 +9,8 @@ Description: "Observation indicating if the decedent body harbors a communicable
 * subject 1..1
 * subject only Reference(Decedent)
 * value[x] 1..1
-* value[x] only boolean or CodeableConcept
+* value[x] only CodeableConcept
+* value[x] from http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown-vr
+* note
+  * ^short = "Use Observation.note for additional information about the communicable disease"
+  * ^definition = "Additional information about the communicable disease"
