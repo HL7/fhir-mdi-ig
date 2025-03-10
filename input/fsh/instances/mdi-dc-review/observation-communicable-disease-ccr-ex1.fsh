@@ -9,4 +9,4 @@ Usage: #example
 * subject = Reference(vrdr-decedent-dcr-ex1)
 * effectiveDateTime = "2023-05-02"
 * performer = Reference(us-core-organization-ga-dph)
-* valueBoolean = false
+* valueCodeableConcept = $vrYNU#N "No"

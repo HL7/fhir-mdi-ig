@@ -47,6 +47,6 @@ Description: "This code system contains example codes for death certificate revi
 * #ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
 * #ME_AFFIRM_CERTIFICATION_NOT_AFFIRMED "ME Certification Affirmation Not Affirmed"
 // Additional example codes
-* #ME "Medical Examiner"
-* #AME "Assistant Medical Examiner"
-* #CREM_C_Form "Cremation Clearance Form"
+// * #ME "Medical Examiner"
+// * #AME "Assistant Medical Examiner"
+// * #CREM_C_Form "Cremation Clearance Form"
