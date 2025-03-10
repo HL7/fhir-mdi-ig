@@ -1,6 +1,6 @@
 ValueSet: VSDCRreason
 Id: vs-dcr-reason
-Title: "ValueSet - Death Certificate Review Reason"
+Title: "Death Certificate Review Reason"
 Description: "This value set contains example codes for the reason for a death certificate review."
 * ^status = #active
 * ^experimental = false

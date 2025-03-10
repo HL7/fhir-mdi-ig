@@ -1,6 +1,6 @@
 ValueSet: VSCCStatus
 Id: vs-cremation-clearance-status
-Title: "ValueSet - Cremation Clearance Status"
+Title: "Cremation Clearance Status"
 Description: "This value set contains example codes for Cremation Clearance status."
 * ^status = #active
 * ^experimental = false

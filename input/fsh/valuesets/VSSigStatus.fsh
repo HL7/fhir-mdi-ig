@@ -1,6 +1,6 @@
 ValueSet: VSSigStatus
 Id: vs-signature-status
-Title: "ValueSet - Signature Status"
+Title: "Signature Status"
 Description: "This value set contains example codes for the signature status."
 * ^status = #active
 * ^experimental = false

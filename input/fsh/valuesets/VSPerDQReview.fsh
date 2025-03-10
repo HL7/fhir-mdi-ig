@@ -1,6 +1,6 @@
 ValueSet: VSPerDQReview
 Id: vs-per-dq-review
-Title: "ValueSet - Personal Data Quality Review"
+Title: "Personal Data Quality Review"
 Description: "This value set contains example codes for personal data quality review."
 * ^status = #active
 * ^experimental = false
