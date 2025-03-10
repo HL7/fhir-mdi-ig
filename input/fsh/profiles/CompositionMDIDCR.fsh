@@ -122,8 +122,8 @@ Description: "The body of a document exchanged between an EDRS and an MDI CMS fo
 * insert CompositionSectionSlice(DecedentDisposition, DispositionMethod,  0, 1, DispositionMethod, DispositionMethod, DecedentDispositionMethod)
 * insert CompositionSectionSlice(DecedentDisposition, Mortician,  0, 1, Mortician, Mortician, Mortician)
 //
-* section contains death-dertificate-data-review 0..1
-* section[death-dertificate-data-review] 
+* section contains death-certificate-data-review 0..1
+* section[death-certificate-data-review] 
   * ^label = "Death Certificate Data Review Results Section"
   * ^short = "Death Certificate Data Review Results Section"
   * ^definition = "Death Certificate Data Review Results Section"
