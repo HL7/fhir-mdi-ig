@@ -5,7 +5,7 @@ Title: "Death Certificate Review example for cremation clearance response (examp
 Description: "Death Certificate Review for cremation clearance response"
 *  extension[ExtensionCremationClearanceStatus].valueCodeableConcept = DeathCertReviewExample#CREM_C_REQUESTED "Requested"
 *  extension[ExtensionMECertificationAffirmation].valueCodeableConcept = DeathCertReviewExample#ME_AFFIRM_CERTIFICATION_AFFIRMED "ME Certification Affirmation Affirmed"
-*  extension[ExtensionCremationClearanceCoroner].valueCodeableConcept = $sct#385432009 "Not applicable"
+*  extension[ExtensionCremationClearanceCoroner].valueCodeableConcept = $v3-NullFlavor "unknown"
 *  extension[ExtensionCremationClearanceSignature].valueCodeableConcept = DeathCertReviewExample#CREM_C_UNSIGNED "Unsigned"
 //
 * status = #preliminary
