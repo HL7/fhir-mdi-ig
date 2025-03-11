@@ -11,6 +11,13 @@ applyExtensionMetadataToRoot: false
 id: hl7.fhir.us.mdi
 name: MDI
 status: active # draft | active | retired | unknown
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: pher 
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: 3
 version: 2.0.0-ballot2
 copyrightYear: 2023+
 license: CC0-1.0  # https://www.hl7.org/fhir/valueset-spdx-license.html
@@ -423,10 +430,3 @@ instanceOptions:
   # if InstanceOf references a profile:
   #
   # setId: always # always | standalone-only
-extension:
-  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
-    valueCode: pher
-  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-    valueCode: trial-use
-  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
-    valueInteger value="3"
