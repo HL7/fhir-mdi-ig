@@ -255,6 +255,7 @@ groups:
       - VSMECertAffirmation
       - VSPerDQReview
       - VSRegistration
+      - VSSigStatus
       - VSTrackingNumberType
   MDIExamples1:
     name: MDI-defined Resource Examples for Death Certificate
