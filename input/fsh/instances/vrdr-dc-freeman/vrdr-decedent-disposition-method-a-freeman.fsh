@@ -8,4 +8,4 @@ Description: "Disposition Method: Freeman example (vrdr-decedent-disposition-met
 * effectiveDateTime = "2022-01-10"
 * performer = Reference(vr-practitioner-s-jones)
 * valueCodeableConcept = $sct#449971000124106 "Burial"
-//* extension[dispositionLocationReference].valueReference  = Reference(DispositionLocation-Example1)
+// "Patient status determination, deceased and buried (finding)"
