@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 canonical: http://hl7.org/fhir/us/mdi
 title: "Medicolegal Death Investigation (MDI) FHIR Implementation Guide"
-releaseLabel: STU2 ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: STU2 snapshot2 # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 fhirVersion: 4.0.1
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.us.mdi
