@@ -3,7 +3,7 @@
 	"version": "2.0.0-snapshot2",
 	"path": "http://hl7.org/fhir/us/mdi/2.0.0-snapshot2",
 	"mode": "working",
-	"status": "trial-use",
+	"status": "preview",
 	"sequence": "STU 2",
 	"desc": "2nd Snapshot version for STU2"
 }
