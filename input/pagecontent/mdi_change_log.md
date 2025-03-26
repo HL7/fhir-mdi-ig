@@ -1,4 +1,8 @@
-### STU2 Ballots
+### MDI STU 2
+The MDI FHIR IG held two ballots, May 2024 and January 2025.
+
+The 1st STU2 ballot (May 2024) of MDI incorporated refactoring, as described in the VRCL, Vital Records FHIR Implementation Guide Harmonization Plan page. Many of the MDI STU1.1 profiles, valuesets, codesystems, and extensions are now found elsewhere. For a detailed description of harmonization changes in the MDI IG, see the Content Transitions page.
+
 The 2nd STU2 ballot (Jan. 2025) made the following changes:
 * **Added 9 new profiles** for Death Certificate review workflow plus supporting extensions and example codes:
   * Bundle - Message Death Certificate Review
@@ -14,8 +18,6 @@ The 2nd STU2 ballot (Jan. 2025) made the following changes:
   * Renamed CodeSystem - MDI (CodeSystem-mdi-codes, CodeSystemMDI) to Medicolegal Death Investigation Codes (cs-mdi-codes, MDIcodes) per TSMG guidance
   * Added Death Certificate Review Example (cs-death-cert-review-example, DeathCertReviewExample)
 * **Added Use Cases** narrative page and **removed Terminology** narrative page (no longer needed)
-
-The 1st STU2 ballot (May 2024) of MDI incorporated refactoring, as described in the VRCL, Vital Records FHIR Implementation Guide Harmonization Plan page. Many of the MDI STU1.1 profiles, valuesets, codesystems, and extensions are now found elsewhere. For a detailed description of harmonization changes in the MDI IG, see the Content Transitions page.
 
 ### MDI STU 1.1 (September 2023)
 
