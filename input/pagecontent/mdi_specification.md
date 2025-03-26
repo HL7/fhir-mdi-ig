@@ -170,21 +170,18 @@ Systems claiming to conform to an MDI profile SHALL support the elements in the 
 * When receiving a transaction from a Data Source system, the Data Consumer system SHALL interpret missing data elements within resource instances as data not present in the Data Source system.
 * Data Consumer systems SHALL be able to process resource instances containing data elements asserting missing information without generating an error or causing the application to fail.
 
-### Search
-This IG defines a new FHIR Search parameter: MDI Tracking Number Search
-
-#### Cross Version Analysis
+### Cross Version Analysis
 
 {% include cross-version-analysis.xhtml %}
 
-#### Dependency Table
+### Dependency Table
 
 {% include dependency-table.xhtml %}
 
-#### Globals Table
+### Globals Table
 
 {% include globals-table.xhtml %}
 
-#### IP Statements
+### IP Statements
 
 {% include ip-statements.xhtml %}
