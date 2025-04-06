@@ -5,8 +5,8 @@ Title: "MessageHeader - Death Certificate Review"
 Description: "Identification of a Bundle - Document Death Certificate Review being sent in a message between an EDRS and an MDI CMS."
 
 * ^status = #active
-* . ^short = "Identifies a Death Certificate Review document bundle and additional review information."
-  * ^definition = "Identifies a Death Certificate Review document bundle and additional review information."
+  * ^short = "Identifies a Death Certificate Review document bundle and additional review information."
+  * ^definition = "Def: Identifies a Death Certificate Review document bundle and additional review information."
 
 //
 * event[x] only Coding
