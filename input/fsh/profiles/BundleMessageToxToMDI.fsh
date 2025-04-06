@@ -4,7 +4,6 @@ Parent: Bundle
 Id: Bundle-message-tox-to-mdi
 Title: "Bundle - Message Toxicology to MDI"
 Description: "A container for a message from a forensic toxicology laboratory to an MDI information management system. It contains a MessageHeader - Toxicology to MDI and a DiagnosticReport - Toxicology Lab Result to MDI."
-* version = "2.0.0"
 * type = #message (exactly)
 * type MS
 * entry ^slicing.discriminator.type = #profile
