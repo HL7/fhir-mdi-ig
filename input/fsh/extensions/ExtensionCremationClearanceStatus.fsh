@@ -1,6 +1,6 @@
 Extension: ExtensionCremationClearanceStatus
 Id: Extension-cremation-clearance-status
-Title: "Extension - Cremation Clearance Authorization Status"
+Title: "Cremation Clearance Authorization Status"
 Description: "This Extension indicates the authorization status of the Cremation Clearance."
 * ^context[0].type = #element
 * ^context[=].expression = "Composition"

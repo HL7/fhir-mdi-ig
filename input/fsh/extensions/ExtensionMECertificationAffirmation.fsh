@@ -1,6 +1,6 @@
 Extension: ExtensionMECertificationAffirmation
 Id: Extension-me-certification-affirmation
-Title: "Extension - Medical Examiner Certification Affirmation"
+Title: "Medical Examiner Certification Affirmation"
 Description: "This Extension indicates whether the Medical Examiner certification has been affirmed or not."
 * ^context[0].type = #element
 * ^context[=].expression = "Composition"

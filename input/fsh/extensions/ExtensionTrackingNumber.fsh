@@ -1,6 +1,6 @@
 Extension: ExtensionTrackingNumber
 Id: Extension-tracking-number
-Title: "Extension - Tracking Number"
+Title: "Tracking Number"
 Description: "Tracking number, such as a case number or file number assigned by an MDI CMS or EDRS, and can represent other tracking numbers, if required.."
 * ^context[0].type = #element
 * ^context[=].expression = "Composition"

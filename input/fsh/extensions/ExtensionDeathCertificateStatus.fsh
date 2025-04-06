@@ -1,6 +1,6 @@
 Extension: ExtensionDeathCertificateStatus
 Id: Extension-death-certificate-status
-Title: "Extension - Death Certificate Status"
+Title: "Death Certificate Status"
 Description: "This Extension indicates Death Certificate workflow status."
 * ^context[0].type = #element
 * ^context[=].expression = "Composition"

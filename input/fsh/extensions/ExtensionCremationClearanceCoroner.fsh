@@ -1,6 +1,6 @@
 Extension: ExtensionCremationClearanceCoroner
 Id: Extension-cremation-clearance-coroner
-Title: "Extension - Cremation Clearance Coroner Status"
+Title: "Cremation Clearance Coroner Status"
 Description: "This Extension indicates whether the Cremation Clearance is a coroner workflow or not."
 * ^context[0].type = #element
 * ^context[=].expression = "Composition"

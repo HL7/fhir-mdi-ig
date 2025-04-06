@@ -139,17 +139,14 @@ This specification defines the following resources. An overview and list of exam
 * Tracking Number
 
 **Value Sets:**
-* Certified Workflow example
-* Cremation Clearance Observations example
-* Cremation Clearance Signed example
-* Cremation Clearance Status example
-* Death Certificate Review Observations example
-* Death Certificate Review Reason example
-* Embalmed example
-* Medical Data Quality Review example
-* Medical Examiner Certification Affirmation example
-* Personal Data Quality Review example
-* Registration example
+* Certified Workflow
+* Cremation Clearance Status
+* Death Certificate Review Reason
+* Medical Data Quality Review
+* Medical Examiner Certification Affirmation
+* Personal Data Quality Review
+* Registration
+* Signature Status
 * Tracking Number Type
 
 **Code Systems:**
