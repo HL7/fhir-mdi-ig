@@ -3,6 +3,8 @@ Parent: Bundle
 Id: Bundle-document-mdi-dcr
 Title: "Bundle - Document Death Certificate Review"
 Description: "A container for a document exchanged between an EDRS and an MDI CMS (bi-directional exchange) for a Death Certificate Review. It contains a Composition - Death Certificate Review."
+* . ^short = "Container for Death Certificate Review document"
+* . ^definition = "Def: Bundle - Document Death Certificate Review"
 * identifier 1.. 
   * ^short = "Persistent, unique identifier of each bundle instance"
 * type = #document (exactly)
