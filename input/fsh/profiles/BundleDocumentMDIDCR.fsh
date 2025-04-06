@@ -11,6 +11,7 @@ Description: "A container for a document exchanged between an EDRS and an MDI CM
   * ^slicing.discriminator.path = "$this.resource"
   * ^slicing.rules = #open
 * entry contains DCR_Composition 1..1 
-* entry[DCR_Composition] ^short = "The Composition of data sent from an EDRS for a Death Certificate Review."
+//* entry[DCR_Composition] ^short = "The Composition of data sent between an EDRS and MDI CMS for review."
+//* entry[DCR_Composition] ^definition = "def: Composition - Death Certificate Review."
   * resource 1.. 
   * resource only CompositionMDIDCR

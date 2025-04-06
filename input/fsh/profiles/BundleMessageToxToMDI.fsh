@@ -13,7 +13,11 @@ Description: "A container for a message from a forensic toxicology laboratory to
 * entry contains ToxtoMDIMessage 1..1 MS
 * entry[ToxtoMDIMessage].resource 1..
 * entry[ToxtoMDIMessage].resource only MessageHeaderToxicologyToMDI
+//* entry[ToxtoMDIMessage] ^short = "MessageHeader for the forensic lab report"
+//* entry[ToxtoMDIMessage] ^definition = "def: MessageHeader - Toxicology to MDI"
 //
 * entry contains ToxtoMDIDiagnosticReport 1..1 MS
 * entry[ToxtoMDIDiagnosticReport].resource 1..
 * entry[ToxtoMDIDiagnosticReport].resource only DiagnosticReportToxicologyToMDI
+//* entry[ToxtoMDIDiagnosticReport] ^short = "Forensic toxicology lab report"
+//* entry[ToxtoMDIDiagnosticReport] ^definition = "def: DiagnosticReport - Toxicology Lab Result to MDI"

@@ -12,6 +12,7 @@ Description: "A container for a document exchanged between an MDI CMS and EDRS (
   * ^slicing.discriminator.path = "$this.resource"
   * ^slicing.rules = #open
 * entry contains MDIandEDRSComposition 1..1 
-* entry[MDIandEDRSComposition] ^short = "The Composition of data sent between an MDI CMS and an EDRS"
+//* entry[MDIandEDRSComposition] ^short = "The Composition of data sent between an MDI CMS and an EDRS"
+//* entry[MDIandEDRSComposition] ^definition = def: Composition - MDI and EDRS"
   * resource 1.. 
   * resource only CompositionMDIAndEDRS

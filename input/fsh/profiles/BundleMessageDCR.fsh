@@ -12,9 +12,11 @@ Description: "A container for a message exchanged between an EDRS and an MDI CMS
 * entry contains DCRMessage 1..1
 * entry[DCRMessage].resource 1..
 * entry[DCRMessage].resource only MessageHeaderDCR
-* entry[DCRMessage] ^short = "short1"
-* entry[DCRMessage] ^definition = "definition1"
+//* entry[DCRMessage] ^short = "MessageHeader for this review"
+//* entry[DCRMessage] ^definition = "def: MessageHeader for this review"
 //
 * entry contains DCRDocument 1..1
 * entry[DCRDocument].resource 1..
 * entry[DCRDocument].resource only BundleDocumentMDIDCR
+//* entry[DCRDocument] ^short = "Document Bundle for review"
+//* entry[DCRDocument] ^definition = "def: Document Bundle for review"
