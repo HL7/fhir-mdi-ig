@@ -10,6 +10,7 @@ Description: "A container for a document exchanged between an EDRS and an MDI CM
   * ^slicing.discriminator.type = #profile
   * ^slicing.discriminator.path = "$this.resource"
   * ^slicing.rules = #open
-* entry contains DCR_Composition 1..1 
+* entry contains DCR_Composition 1..1
+ entry[DCR_Composition]
   * resource 1.. 
   * resource only CompositionMDIDCR
