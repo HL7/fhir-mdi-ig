@@ -21,8 +21,8 @@ The [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-pa
 These three data elements may not be known during early stages of medicolegal data collection. US Core provide guidance on such cases of [missing data](http://hl7.org/fhir/us/core/general-requirements.html#missing-data).
 
 The US Core Patient Profile contains the optional data element Patient.deceased. It  may be used to indicate if the individual is deceased or not. An implementer has a choice of using Boolean (true/false) values or dateTime. If dateTime is used, it should match the Observation - Death Date value[x].
-<!--- TODO add this back when IGs are separated: [Participant & Supporting Examples](artifacts.html#participant-administrative-examples)--->
-The [Participant & Supporting Examples](artifacts.html#6) section of the Artifacts Index page provides an example of a US Core Patient for which no information known about the decedent's name. 
+
+The [Other Examples](artifacts.html#6) section of the Artifacts Index page provides an example of a US Core Patient for which no information known about the decedent's name. 
 
 ### Identifiers and Tracking Numbers
 This MDI IG provides opportunities for both identifiers and tracking numbers. 

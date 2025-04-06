@@ -29,8 +29,8 @@ The audience for this IG includes architects and developers of MDI CMS and assoc
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Email/URL</th>
+<th><b>Name</b></th>
+<th><b>Email/URL</b></th>
 </tr>
 </thead>
 <tbody>
@@ -43,16 +43,12 @@ The audience for this IG includes architects and developers of MDI CMS and assoc
 <td><a href="mailto:pdz1@cdc.gov">pdz1@cdc.gov</a></td>
 </tr>
 <tr>
-<td>Margaret Warner, Senior Epidemiologist, CDC/National Center for Health Statistics</td>
-<td><a href="mailto:mmw9@cdc.gov">mmw9@cdc.gov</a></td>
+<td>Carri Cottengim, Health Scientist, CDC/National Center for Health Statistics</td>
+<td><a href="mailto:wsh2@cdc.gov">wsh2@cdc.gov</a></td>
 </tr>
 <tr>
 <td>Diana Wright, Lantana Consulting Group</td>
 <td><a href="mailto:diana.wright@lantanagroup.com">diana.wright@lantanagroup.com</a></td>
-</tr>
-<tr>
-<td>Saul A. Kravitz, MITRE Corporation</td>
-<td><a href="mailto:saul@mitre.org">saul@mitre.org</a></td>
 </tr>
 </tbody>
 </table>

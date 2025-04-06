@@ -11,7 +11,7 @@ This MDI FHIR specification is part of that effort to define elements and datafl
 Medical examiner and coroner offices access and exchange information with multiple agencies and organizations when building a death investigation case record (e.g., law enforcement, forensic laboratories, EHR systems, jurisdictional EDRS). Case records are created in the MDI case management system (CMS) and may contain entries from both internal sources (e.g., scene investigation) and external sources (e.g., laboratory analysis results).
 
 ***Figure: Dataflows in the Death Investigation and Reporting System***
-<table><tr><td><img src="MDI-data-flow-STU2.png" /></td></tr></table>
+<table><tr><td><img src="MDI-data-flow-STU2-2025.png" /></td></tr></table>
 
 According to the U.S. Department of Justice, Office of Justice Programs, Bureau of Justice Statistics report, [*Medical Examiner and Coroner Offices, 2018*](https://bjs.ojp.gov/content/pub/pdf/meco18.pdf), in 2018 2,040 medical examiner and coroner offices accepted 605,000 referrals for investigation to determine the cause and manner of death across federal, state, and local jurisdictions. The information gathered during a death investigation is useful to a variety of local, state, and federal agencies, and many entities rely on MDI-generated data. For example, the CDC monitors trends in unintentional injury, homicides, suicides, and sudden or unexpected infant deaths and develops policy recommendations and prevention strategies for such deaths. The National Highway Traffic Safety Administration (NHTSA) monitors trends in traffic-related fatalities and the U.S. Consumer Product Safety Commission (CPSC) uses mortality data to identify problematic products for investigation and potential recall.
 
@@ -22,7 +22,7 @@ The scope of the current MDI IG is defining FHIR resources and guidance for the 
 * Creation, search, and update of a case record between an MDI CMS and an EDRS via a document bundle for development of a death certificate
 * Transmission of diagnostic findings from a forensic toxicology laboratory to an MDI system via a diagnostic report and message bundle
 * Transmission of PDF reports within the MDI community
-* Transmission of a completed death certificate for review
+* Transmission of a completed death certificate for review for several cases other than death certification
 
 For more details, see the [Use Cases](mdi_use_cases.html) page.
 
@@ -38,8 +38,10 @@ Georgia Tech Research Institute (GTRI) provides tools for exploring and testing 
 CDC Foundation provides administrative and project management support for medical examiner and coroner jurisdictions, data sharing partners, and software vendors participating in FHIR pilot projects. CDC Foundation also provides a forum for a community of support through [MDI Connect](https://www.cdcfoundation.org/MDI-Connect) to advance solutions for simplifying data sharing between MDI offices and their partners.
 
 ### IG Development Team
-* **CDC, NCHS**: Jenny Couse, Kate Brett, Cynthia Bush, Chris Harrison, Mark Montgomery, Margaret Warner
+Many people have contributed to the development of this implementation guide, including:
+* **CDC, NCHS**: Kate Brett, Cynthia Bush, Carri Cottengim, Jenny Couse, Chris Harrison, Mark Montgomery, Margaret Warner
 * **CDC Foundation**: Dan Chaput, Michele Trofatter, Gina Wiser
+* **Association of State and Territorial Health Officials (ASTHO)**: Ashley Ottewell, Dan Tauriello
 * **GTRI**: Myung Choi, Tia Pope, Alexandra Ramirez, Michael Riley 
 * **Lantana Consulting Group**: Dave deRoode, Sarah Gaunt, Diana Wright
 * **MITRE Corporation**: Saul A. Kravitz
@@ -67,12 +69,13 @@ The editors appreciate the support and sponsorship of the HL7 Public Health Work
 * New Hampshire: Office of the Chief Medical Examiner; Secretary of State, Division of Vital Records Administration
 * Ohio: Butler County Coroner’s Office; Butler County General Health District
 * Pennsylvania: York County Coroner’s Office
-* South Carolina: Charleston County Coroner's Office; SC Law Enforcement Division; Greenville County Coroner’s Office, Washington/Baltimore High Intensity Drug Trafficking Area
+* South Carolina: Charleston County Coroner's Office; SC Law Enforcement Division; Greenville County Coroner’s Office, Washington/Baltimore High Intensity Drug Trafficking Area, Anderson County Coroner’s Office
 * Washington: King County Medical Examiner's Office; WA State Department of Health Vital Records Office
 
 **The IT Vendor Community:**
 * Axiell (MS EDRS vendor)
 * Cohero (PA MDI CMS vendor)
+* Coroner Files (SC CMS vendor)
 * CNSI (NH EDRS vendor)
 * Genesis (GA EDRS vendor)
 * LabLynx (IL MDI CMS vendor)
