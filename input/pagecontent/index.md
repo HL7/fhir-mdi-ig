@@ -18,7 +18,7 @@ This guide includes the following sections, listed at the top of each page in th
 * [Specification](mdi_specification.html): Technical details on implementing the specification
 * [Downloads](mdi_downloads.html): Links for downloading the full IG package as well as format-specific definitions files and example files in XML, JSON, and TTL
 * [Changes](mdi_change_log.html): List of changes made in each published update
-* [Content Transformation](mdi-content-transitions.html): Tables of changes to resource locations during harmonization between the MDI, VRDR, and VRCL FHIR IGs.]
+* [Content Transformation](mdi-content-transitions.html): Tables of changes to resource locations during harmonization between the MDI, VRDR, and VRCL FHIR IGs.
 * [Artifacts](artifacts.html): List of all FHIR artifacts specified by this guide, with brief descriptions
 
 ### Audience

@@ -65,17 +65,17 @@ Death certificate information may be exchanged for review in several cases:
 * **Death Data Quality Improvement**: An EDRS may request review of a death certificate by a medical examiner or coroner to improve the quality and completeness of death reporting. Such a review may be triggered if areas of the death certificate appear to be incomplete or inconsistent, for example a required field was left blank or data provided is not appropriate or is out-of-range. A review might also be required by law or policy for deaths within a given jurisdiction and meeting specific criteria.
 * **Cremation Clearance** (also known as "cremation authorization"): Many states and jurisdictions require cremation clearance from a medical examiner / coroner to make sure the physical evidence is not needed for any further inquiries into the death. The rules about when cremation clearance is required vary among jurisdictions, but typically it is needed when the cause and manner of death information for the death certificate is provided by an attending physician or other provider, rather than the jurisdiction's medical examiner / coroner.
 
-The death certificate sent for review may or may not be certified by the receiving MDI CMS. Transmission of a Death Certificate for Review and it's returned response (i.e., bidirectional exchange) is supported by the following FHIR Messaging structure:
+The death certificate sent for review may or may not be certified by the receiving MDI CMS. Transmission of a Death Certificate for Review and its returned response (i.e., bidirectional exchange) is supported by the following FHIR Messaging structure:
 * Bundle - Message Death Certificate Review: includes an optional Bundle.identifier (persistent identifier for the message bundle)
-** MessageHeader - Death Certificate Review: includes MessageHeader.reason (ex: Cremation Clearance Request)
-** Bundle - Document Death Certificate Review: includes a required Bundle.identifier (persistent identifier for the document bundle)
-*** Composition - Death Certificate Review: includes information on:
-**** tracking numbers
-**** Death Certificate workflow status
-**** Cremation Clearance status and authorizer information
-**** Death Certificate data for review (DecedentDemographics, DeathInvestigation, DeathCertification, DecedentDisposition) 
-**** Death Certificate Data Review results section for medical examiner / coroner assessments
-**** Cremation Clearance information section
+    * MessageHeader - Death Certificate Review: includes MessageHeader.reason (ex: Cremation Clearance Request)
+    * Bundle - Document Death Certificate Review: includes a required Bundle.identifier (persistent identifier for the document bundle)
+        * Composition - Death Certificate Review: includes information on:
+            * tracking numbers
+            * Death Certificate workflow status
+            * Cremation Clearance status and authorizer information
+            * Death Certificate data for review (DecedentDemographics, DeathInvestigation, DeathCertification, DecedentDisposition) 
+            * Death Certificate Data Review results section for medical examiner / coroner assessments
+            * Cremation Clearance information section
 
 *Data Quality Improvement Use Case Steps:*
 1.	EDRS sends the death certificate to MDI case management system (CMS) for review.
