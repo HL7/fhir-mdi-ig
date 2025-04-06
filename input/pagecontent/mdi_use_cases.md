@@ -80,7 +80,7 @@ The death certificate sent for review may or may not be certified by the receivi
 *Data Quality Improvement Use Case Steps:*
 1.	EDRS sends the death certificate to MDI case management system (CMS) for review.
 2.	Medical examiner / coroner reviews death certificate information, particularly the cause and manner of death
-3.	MDI CMS sends response with additional information . in the Death Certificate Data Review results section of a return Bundle - Message Death Certificate Review. The original or updated death certificate structured data sections (DecedentDemographics, DeathInvestigation, DeathCertification, DecedentDisposition) may be included in the return Bundle - Message Death Certificate Review.
+3.	MDI CMS sends response with additional information in the Death Certificate Data Review results section of a return Bundle - Message Death Certificate Review. The original or updated death certificate structured data sections (DecedentDemographics, DeathInvestigation, DeathCertification, DecedentDisposition) may be included in the return Bundle - Message Death Certificate Review.
 
 *Cremation Clearance Use Case Steps* - The cremation clearance workflow starts after the death certificate is largely complete. A typical workflow, at a high level, includes:
 1.	Next of kin (or other authorized person or organization) requests cremation be the method of disposal and signs a cremation clearance request (CCR).
@@ -92,15 +92,15 @@ The death certificate sent for review may or may not be certified by the receivi
 This IG provides FHIR messaging artifacts for exchanging document bundles containing the death certificate information for review and additional information for cremation clearance, if needed.
 
 **FHIR Resource** listed on Artifacts, [Death Certificate Review Profiles](artifacts.html#death-certificate-review-profiles): 
-* Bundle - Message Death Certificate Review: Message bundle profile providing a FHIR “wrapper” to contain a message header and a document bundle for death certificate review workflows.
-* MessageHeader - Death Certificate Review: Message header profile indicating that a document bundle is the focus of the message, the reason for the message (e.g., cremation clearance), and additional information about the status of the death certificate.
-* Bundle - Document Death Certificate Review: Document bundle profile providing a FHIR “wrapper” to contain a composition document.
-* Composition - Death Certificate Review: Composition profile containing Death Certificate components defined in the Vital Records Death Reporting (VRDR) FHIR Implementation Guide as the first sections. Additional sections represent information often used for cremation clearance workflows and data quality reviews.
-* Observation - Medical Information Data Quality
-* Observation - Personal Information Data Quality
-* Observation - Communicable Disease
-* Observation - Embalmed
-* Organization - Crematorium
+* **Bundle - Message Death Certificate Review**: Message bundle profile providing a FHIR “wrapper” to contain a message header and a document bundle for death certificate review workflows.
+* **MessageHeader - Death Certificate Review**: Message header profile indicating that a document bundle is the focus of the message, the reason for the message (e.g., cremation clearance), and additional information about the status of the death certificate.
+* **Bundle - Document Death Certificate Review**: Document bundle profile providing a FHIR “wrapper” to contain a composition document.
+* **Composition - Death Certificate Review**: Composition profile containing Death Certificate components defined in the Vital Records Death Reporting (VRDR) FHIR Implementation Guide as the first sections. Additional sections represent information often used for cremation clearance workflows and data quality reviews.
+* **Observation - Medical Information Data Quality**
+* **Observation - Personal Information Data Quality**
+* **Observation - Communicable Disease**
+* **Observation - Embalmed**
+* **Organization - Crematorium**
 
 This implementation guide does not define FHIR resources for other aspects of the cremation clearance workflow, such as fee payment.
 
