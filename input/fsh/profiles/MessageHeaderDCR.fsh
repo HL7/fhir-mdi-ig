@@ -15,5 +15,5 @@ Description: "Identification of a Bundle - Document Death Certificate Review bei
 * reason from VSDCRreason (extensible)
 * focus 1..1
 * focus only Reference(BundleDocumentMDIDCR)
-  * . ^short = "The focus of this message header is the Bundle - Document Death Certificate Review."
-  * . ^definition = "The focus of this message header is the Bundle - Document Death Certificate Review."
+  * ^short = "The focus of this message header is the Bundle - Document Death Certificate Review."
+  * ^definition = "Def: Focus of message header is the Bundle - Document Death Certificate Review."
