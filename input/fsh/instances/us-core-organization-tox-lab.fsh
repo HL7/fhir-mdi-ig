@@ -4,7 +4,7 @@ Title: "US Core Organization - UF Health Pathology Labs, Forensic Toxicology Lab
 Description: "Example of US Core Organization - UF Health Pathology Labs, Forensic Toxicology Laboratory"
 Usage: #example
 * identifier
-  * system = "http://hl7.org.fhir/sid/us-npi"
+  * system = "http://example.org/fhir/sid/us-npi"
   * value = "111223333"
 * active = true
 * type = $organization-type#prov "Healthcare Provider"

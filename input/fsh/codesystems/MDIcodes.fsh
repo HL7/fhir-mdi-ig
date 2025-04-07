@@ -16,7 +16,6 @@ Description: "Local codes for items that lack an appropriate LOINC code. This co
 * #exam-autopsy "Exam/Autopsy Section"
 * #narratives "Narratives Section"
 // Sections for Death Certificate Data Review Composition
-// * #ccr-authorizing-agent "Cremation Clearance Authorizing Agent Section"
 * #cremation-clearance-info "Cremation Clearance Information Section"
 * #death-certificate-data-review "Death Certificate Data Review Results Section"
 // MDI tracking number types

@@ -12,19 +12,6 @@ Description: "This code system contains example codes for death certificate revi
 * #DC_PER_DATA_Q_RSP "Death Certificate Personal Data Quality Review Response"
 * #CREM_C_REQ "Cremation Clearance Request"
 * #CREM_C_RSP "Cremation Clearance Response"
-// REMOVED -- Example Observation codes related to the Decedent
-// * #Embalmed "Embalmed Observation"
-// * #CommunicableDisease "Communicable Disease Observation"
-// REMOVED -- Example Extension codes
-// * #CertifiedWorkflow "Certified Workflow Observation"
-// * #Registration "Registration Observation"
-// REMOVED -- Example Observation codes related to the Death Certificate review
-// * #MedicalInformationDataQuality "Medical Information Data Quality Observation"
-// * #PersonalInformationDataQuality "Personal Information Data Quality Observation"
-// REMOVED -- Example Observation codes related to the Cremation Clearance 
-// * #MECertificationAffirmation "Medical Examiner Certification Affirmation Observation"
-// * #CoronerWorkflow "Coroner Workflow Observation"
-// * #SignedWorkflow "Signed Workflow Observation"
 // Example Death Certificate Status Codes (for ObservationRegistration and ObservationCertifiedWorkflow)
 * #DEATH_CERT_CERT "Certified"
 * #DEATH_CERT_NOT_CERT "Not Certified"
