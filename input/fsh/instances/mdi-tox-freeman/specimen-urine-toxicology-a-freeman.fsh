@@ -3,10 +3,10 @@ InstanceOf: SpecimenToxicologyLab
 Title: "Specimen - Toxicology Lab - Freeman Urine"
 Description: "Specimen - Toxicology Lab: Freeman urine example"
 Usage: #example
-* meta
-  * versionId = "6"
-  * lastUpdated = "2022-08-16T00:58:14.623+00:00"
-  * source = "#eZxANbiIGlreQv8w"
+//* meta
+//  * versionId = "6"
+//  * lastUpdated = "2022-08-16T00:58:14.623+00:00"
+//  * source = "#eZxANbiIGlreQv8w"
 * accessionIdentifier
   * system = "http://lab.acme.org/specimens/2021"
   * value = "ZZZ352356"
