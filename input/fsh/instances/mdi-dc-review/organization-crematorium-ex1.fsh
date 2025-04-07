@@ -4,7 +4,7 @@ Title: "Organization – Crematorium example"
 Description: "Organization - Crematorium example"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/mdi/StructureDefinition/Organization-crematorium"
-* identifier.system = "http://Tahoe.Web/Insurity.Tahoe.Organization.Entity.BusinessUnitCode"
+* identifier.system = "http://example.org/fhir/Insurity.Tahoe.Organization.Entity.BusinessUnitCode"
 * identifier.value = "State Crematorium"
 * active = true
 * name = "State Crematorium"

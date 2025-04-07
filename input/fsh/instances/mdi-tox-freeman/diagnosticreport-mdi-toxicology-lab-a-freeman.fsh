@@ -5,11 +5,11 @@ Description: "DiagnosticReport - Toxicology Lab Result to MDI: Freeman example"
 Usage: #example
 * extension[Extension-tracking-number]
   * valueIdentifier
-    * system = "http://florida-investigation-agncy.org/fhir/agency-case-numbers"
+    * system = "http://example.org/fhir/florida-investigation-agncy.org/fhir/agency-case-numbers"
     * value = "ME21-111"
 * identifier
   * type = MDIcodes#tox-lab-case-number
-  * system = "http://uf-path-labs.org/fhir/lab-cases"
+  * system = "http://example.org/fhir/uf-path-labs-org/fhir/lab-cases"
   * value = "R21-01578"
   * assigner = Reference(us-core-organization-tox-lab)
 * status = #final

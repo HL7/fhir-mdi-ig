@@ -4,7 +4,7 @@ Title: "US Core Organization – State Medical Examiner"
 Description: "Example of US Core Organization - State Medical Examiner Office"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
-* identifier.system = "http://Tahoe.Web/Insurity.Tahoe.Organization.Entity.BusinessUnitCode"
+* identifier.system = "http://example.org/fhir/Insurity.Tahoe.Organization.Entity.BusinessUnitCode"
 * identifier.value = "STATE_MEDICAL_EXAMINER_OFFICE_STATE_MEDICAL_EXAMIN"
 * active = true
 * name = "Office of Chief Medical Examiner"

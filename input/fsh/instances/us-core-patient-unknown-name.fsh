@@ -7,7 +7,7 @@ Usage: #example
   * use = #usual
   * type = $v2-0203#MR "Medical Record Number"
     * text = "Medical Record Number"
-  * system = "http://hospital.smarthealthit.org"
+  * system = "http://example.org/fhir/hospital.smarthealthit.org"
   * value = "MR303303305"
 * active = true
 * name.family = "UNK"
