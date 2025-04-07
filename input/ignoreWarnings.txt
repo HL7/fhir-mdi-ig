@@ -245,3 +245,7 @@ INFORMATION: Bundle/bundle-msg-mdi-dcr-ex1: Bundle.entry[1].resource/*Bundle/bun
 
 # 11 -  dom-6: 'A resource should have narrative for robust management'. Narrative is not expected in content coming from EDRS.
 % Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+
+# 12 - This IG is dependent on hl7.fhir.us.vr-common-library 2.0.0 and hl7.fhir.us.vrdr 3.0.0, which are both FHIR R4 and dependent on us.cdc.phinvads 0.12.0 and hl7.fhir.us.core 5.0.1
+WARNING: ImplementationGuide/hl7.fhir.us.mdi: ImplementationGuide.dependsOn[3].uri: Canonical URL 'http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads' does not resolve
+WARNING: ImplementationGuide/hl7.fhir.us.mdi: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#5.0.1 released on 2022-06-22, but the most recent appropriate version is 7.0.0. This reference is getting old and the more recent version should be considered
