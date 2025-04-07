@@ -7,6 +7,8 @@ Recognizing that many deaths of significant public health importance are investi
 
 This MDI FHIR specification is part of that effort to define elements and dataflows to standardize disparate systems within the MDI community.
 
+Additional reference documents can be found [here](https://github.com/HL7/fhir-mdi-ig/tree/master/references).
+
 ### Medicolegal Death Investigation Dataflows
 Medical examiner and coroner offices access and exchange information with multiple agencies and organizations when building a death investigation case record (e.g., law enforcement, forensic laboratories, EHR systems, jurisdictional EDRS). Case records are created in the MDI case management system (CMS) and may contain entries from both internal sources (e.g., scene investigation) and external sources (e.g., laboratory analysis results).
 
