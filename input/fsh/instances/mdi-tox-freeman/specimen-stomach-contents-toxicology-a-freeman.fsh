@@ -3,10 +3,6 @@ InstanceOf: SpecimenToxicologyLab
 Title: "Specimen - Toxicology Lab - Freeman Stomach Contents"
 Description: "Specimen - Toxicology Lab: Freeman stomach contents example"
 Usage: #example
-//* meta
-//  * versionId = "6"
-//  * lastUpdated = "2022-08-16T00:58:14.623+00:00"
-//  * source = "#r9ZzhRg7oy7Ffv52"
 * accessionIdentifier
   * system = "http://lab.acme.org/specimens/2021"
   * value = "MM352356"

@@ -3,10 +3,6 @@ InstanceOf: SpecimenToxicologyLab
 Title: "Specimen - Toxicology Lab - Freeman Vitreous Humor"
 Description: "Specimen - Toxicology Lab: Freeman vitreous humor example"
 Usage: #example
-//* meta
-//  * versionId = "10"
-//  * lastUpdated = "2022-08-16T00:58:14.624+00:00"
-//  * source = "#GcjfAjz04u7pzXAX"
 * accessionIdentifier
   * system = "http://lab.acme.org/specimens/2021"
   * value = "XXX352356"
