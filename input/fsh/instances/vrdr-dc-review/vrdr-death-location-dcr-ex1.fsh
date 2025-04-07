@@ -4,7 +4,7 @@ Title: "VRDR Death Location"
 Description: "Example of VRDR Death Location (Location) for death certificate review examples."
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-location"
-* identifier.system = "http://Tahoe.Web/Insurity.Tahoe.Organization.Entity.BusinessUnitCode"
+* identifier.system = " http://example.org/fhir/Insurity.Tahoe.Organization.Entity.BusinessUnitCode"
 * identifier.value = "LOADED_FACILITY_20022"
 * name = "Lawrence & Memorial Hospital"
 //* type = $sct#450391000124102 "Death in emergency Room/Outpatient"
