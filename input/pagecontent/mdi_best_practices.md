@@ -79,8 +79,7 @@ The CapabilityStatement resources defined in this MDI FHIR IG are of kind=requir
 
 
 It is expected that any specific FHIR server implementing this MDI FHIR IG may allow or require more interactions and operations for a larger set of resources than those specified in the CapabilityStatement resources listed above. An example of a CapabilityStatement that defines the full capabilities of a specific FHIR server (kind=instance), is available for the Raven FHIR Server, maintained by Georgia Tech Research Institute (GTRI):
-* [CapabilityStatement](https://raven.heat.icl.gtri.org/mdi-fhir-server/fhir/metadata) for Raven FHIR Server
-* [Raven Testing Platform](https://apps.hdap.gatech.edu/raven/) — A proof of concept for the MDI FHIR IG. It provides a tool for testing conformance to the MDI FHIR IG, including resource validation, record comparison, and data exchange workflows. 
+* [Raven Testing Platform](https://raven.heat.icl.gtri.org/) — A proof of concept for the MDI FHIR IG. It provides a tool for testing conformance to the MDI FHIR IG, including resource validation, record comparison, and data exchange workflows. 
 * [Raven Documentation](https://ravendocs.readthedocs.io/en/latest/) — End-use and technical manuals
 
 An MDI-based Search API enables an MDI CMS to search an EDRS server for decedent cases, and vice versa. This is an idempotent operation (i.e., it has no additional effect if it is called more than once with the same input parameters). At a minimum, both POST and GET should be allowed with the following endpoint URL pattern:
