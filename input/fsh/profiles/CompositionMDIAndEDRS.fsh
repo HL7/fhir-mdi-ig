@@ -60,7 +60,7 @@ Description: "The body of a document exchanged between an MDI CMS and an EDRS fo
   * code  = MDIcodes#circumstances
   * code 1.. MS
     * ^definition = "Circumstances of the death section"
-  * entry MS
+  * entry
     * ^slicing.discriminator.type = #profile
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
