@@ -27,7 +27,7 @@ Description: "The body of a document exchanged between an MDI CMS and an EDRS fo
   * ^definition = "The certifying Medical Examiner/Coroner (Certifier)"
   * party only Reference(PractitionerVitalRecords)
   * party MS
-* section 1.. MS
+* section 1..
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "code"
   * ^slicing.rules = #open
