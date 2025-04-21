@@ -9,7 +9,7 @@ Description: "The MDI Cause of Death Part 1 (Observation) profile places constra
 * performer 1..1
   * ^label = "Cause of death certifier (coroner or medical examiner). If the certifier is not available, explain using data-absent-reason Extension."
   * ^short = "Cause of death certifier (coroner or medical examiner). If the certifier is not available, explain using data-absent-reason Extension."
-* performer.extension contains DataAbsentReason named data-absent-reason 0..1 MS
+* performer.extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0 named data-absent-reason 0..1 MS
 * performer.extension[data-absent-reason] ^short = "data-absent-reason"
 * component[interval] 1..1  
 
