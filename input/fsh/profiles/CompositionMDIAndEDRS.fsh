@@ -78,7 +78,7 @@ Description: "The body of a document exchanged between an MDI CMS and an EDRS fo
   * code = MDIcodes#jurisdiction
   * code 1..1
     * ^definition = "Jurisdiction section"
-  * entry MS
+  * entry
     * ^slicing.discriminator.type = #profile
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
@@ -94,7 +94,7 @@ Description: "The body of a document exchanged between an MDI CMS and an EDRS fo
   * code 1.. MS
   * code = MDIcodes#cause-manner
     * ^definition = "Cause and manner of death section"
-  * entry MS
+  * entry
     * ^slicing.discriminator.type = #profile
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
@@ -116,7 +116,7 @@ Description: "The body of a document exchanged between an MDI CMS and an EDRS fo
     * ^label = "Narrative medical condition"
     * ^short = "Narrative medical condition"
     * ^definition = "Narrative medical condition"
-  * entry MS
+  * entry
     * ^slicing.discriminator.type = #profile
     * ^slicing.discriminator.path = "$this.resolve()"
     * ^slicing.rules = #open
