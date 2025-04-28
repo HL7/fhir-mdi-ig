@@ -71,11 +71,11 @@ The death certificate sent for review may or may not be certified by the receivi
     * Bundle - Document Death Certificate Review: includes a required Bundle.identifier (persistent identifier for the document bundle)
       * Composition - Death Certificate Review: includes information on:
         * Tracking numbers
-            * Death Certificate workflow status
-            * Cremation Clearance status and authorizer information
-            * Death Certificate data for review (DecedentDemographics, DeathInvestigation, DeathCertification, DecedentDisposition) 
-            * Death Certificate Data Review results section for medical examiner / coroner assessments
-            * Cremation Clearance information section
+        * Death Certificate workflow status
+        * Cremation Clearance status and authorizer information
+        * Death Certificate data for review (DecedentDemographics, DeathInvestigation, DeathCertification, DecedentDisposition) 
+        * Death Certificate Data Review results section for medical examiner / coroner assessments
+        * Cremation Clearance information section
 
 *Data Quality Improvement Use Case Steps:*
 1.	EDRS sends the death certificate to MDI CMS for review.
