@@ -2,7 +2,7 @@ This page describes normative content of the specification. For an introduction 
 
 ### FHIR Exchange Paradigms Supported
 * RESTful API - Optional for all systems
-* Document Bundle - Required for MDI CMS & EDRS
+* Document Bundle - Required for MDI case management systems (CMS) & electronic death registration systems (EDRS)
 * Message Bundle - Required for Forensic Toxicology LIMS & MDI CMS
 
 ### Actors & Roles

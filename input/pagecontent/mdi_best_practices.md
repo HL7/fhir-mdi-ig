@@ -1,7 +1,7 @@
 This MDI FHIR IG is designed to be flexible to accommodate a variety of systems, recognizing that information management systems used for assembling MDI data vary widely by state, jurisdiction, and agency. This means that many data concepts have few requirements but many “must support” designations. This section provides best practice recommendations on how to address select concepts.
 
 ### Bi-Directional Exchange: MDI CMS & EDRS
-The **Bundle - Document MDI and EDRS** profile represents a document exchanged between an MDI CMS and EDRS. It can be used for bi-directional exchange during the process of case record creation and updating. The Bundle contains a **Composition - MDI and EDRS**.
+The **Bundle - Document MDI and EDRS** profile represents a document exchanged between an MDI case management systems (CMS) and electronic death registration systems (EDRS). It can be used for bi-directional exchange during the process of case record creation and updating. The Bundle contains a **Composition - MDI and EDRS**.
 The **Composition - MDI and EDRS** profile represents data exchanged between an MDI CMS and an EDRS, which can be in “draft” (non-finalized) by:
 * Setting status=preliminary
 * Using [Extension: Data Absent Reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) for author and attester, when the death certifier is not yet established
@@ -13,7 +13,7 @@ This MDI IG uses the US Core Patient for the decedent subject of:
 
 The US Core Patient provides structure for capturing basic demographic information (race, ethnicity, birth date, telecom, address, marital status, etc.). The Composition - MDI and EDRS also provides a section, additional-demographics for text on demographic information about the decedent that is not represented in the decedent Patient profile.
 
-The [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) profile requires 
+The [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) profile requires:
 * 1..* patient identifier, each identifier specifying a system and value
 * 1..* patient name
 * 1..1 gender code (AdministrativeGender). See: [US Core Patient profile, “Mandatory and Must Support Data Elements.”](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html#mandatory-and-must-support-data-elements)
@@ -51,10 +51,10 @@ The Observation – Death Date profile provides several opportunities to explain
 **Options for qualifying the accuracy of the date of death:**
 * Use the Observation.status data element for modifiers contained in the value set [ObservationStatus](http://hl7.org/fhir/valueset-observation-status.html) (registered, preliminary, final, etc.). This value set contains eight concepts and is not extensible (cannot be added to by local implementations).
 * Use the Observation.note data element to record additional information about the death date.
-* Use the Observation.method data element for method codes from the extensible ValueSet - Date Establishment Approach (exact, approximate, court-appointed)
+* Use the Observation.method data element for method codes from the extensible ValueSet - Date Establishment Approach (exact, approximate, court-appointed).
 
 ### Causes of Death
-The Observation.value[x].text is limited for both Observation - Cause of Death Condition and Observation - Condition Contributing to Death because the receiving EDRS sends the data to NCHS (ultimate receiving system). That NCHS system restricts the text string length for these data elements. Because the originating MDI CMS certifies the content of the data elements, the data must not risk being truncated or lost by the receiving systems along the entire dataflow. Therefore, the originating system must abide by the character limit of the ultimate receiving system at the time of data capture, potentially including direct entry by the user if that is the mechanism of capturing the data.
+The Observation.value[x].text is limited for both Observation - Cause of Death Condition and Observation - Condition Contributing to Death because the receiving EDRS sends the data to National Center for Health Statistics (NCHS), the ultimate receiving system. That NCHS system restricts the text string length for these data elements. Because the originating MDI CMS certifies the content of the data elements, the data must not risk being truncated or lost by the receiving systems along the entire dataflow. Therefore, the originating system must abide by the character limit of the ultimate receiving system at the time of data capture, potentially including direct entry by the user if that is the mechanism of capturing the data.
 
 ### Forensic Toxicology Laboratory Specimens & Results
 **One-to-many specimen to results relationship:** Each analyzed specimen, represented by a Specimen - Toxicology Lab resource, must be referenced by at least one Observation - Toxicology Lab Result and may be referenced by more than one Observation - Toxicology Lab Result. For example, a single blood specimen may be analyzed for several different analytes or by several different methods. Each of those specimen/analyte or specimen/method combinations will be represented by an Observation - Toxicology Lab Result.

@@ -21,7 +21,7 @@ The 2nd STU2 ballot (Jan. 2025) made the following changes:
   * Death Certificate Status
   * Medical Examiner Certification Affirmation 	
 * **Code systems**:
-  * Renamed CodeSystem - MDI (CodeSystem-mdi-codes, CodeSystemMDI) to Medicolegal Death Investigation Codes (cs-mdi-codes, MDIcodes) per TSMG guidance
+  * Renamed CodeSystem - MDI (CodeSystem-mdi-codes, CodeSystemMDI) to Medicolegal Death Investigation Codes (cs-mdi-codes, MDIcodes) per HL7 Terminology Services Management Group (TSMG) guidance
   * Added Death Certificate Review Example (cs-death-cert-review-example, DeathCertReviewExample)
 * **Narrative pages**:
   * Added *Use Cases* page 

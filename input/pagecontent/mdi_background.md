@@ -40,7 +40,7 @@ Georgia Tech Research Institute (GTRI) provides tools for exploring and testing 
 CDC Foundation provides administrative and project management support for medical examiner and coroner jurisdictions, data sharing partners, and software vendors participating in FHIR pilot projects. CDC Foundation also provides a forum for a community of support through [MDI Connect](https://www.cdcfoundation.org/MDI-Connect) to advance solutions for simplifying data sharing between MDI offices and their partners.
 
 ### IG Development Team
-Many people have contributed to the development of this implementation guide, including:
+Many people have contributed to the development of this guide, including:
 * **CDC, NCHS**: Kate Brett, Cynthia Bush, Carri Cottengim, Jenny Couse, Chris Harrison, Mark Montgomery, Margaret Warner
 * **CDC Foundation**: Dan Chaput, Michele Trofatter, Gina Wiser
 * **Association of State and Territorial Health Officials (ASTHO)**: Ashley Ottewell, Dan Tauriello
