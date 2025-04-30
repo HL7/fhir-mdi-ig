@@ -37,7 +37,7 @@ Georgia Tech Research Institute (GTRI) provides tools for exploring and testing 
 * [**Raven Testing Platform**](https://raven.heat.icl.gtri.org/)—A proof of concept for the MDI FHIR IG. It provides a tool for testing conformance to the MDI FHIR IG, including resource validation, record comparison, and data exchange workflows.
 * [**Raven Documentation**](https://ravendocs.readthedocs.io/en/latest//)—End-use and technical manuals
 
-CDC Foundation provides administrative and project management support for medical examiner and coroner jurisdictions, data sharing partners, and software vendors participating in FHIR pilot projects. CDC Foundation also provides a forum for a community of support through [MDI Connect](https://www.cdcfoundation.org/MDI-Connect) to advance solutions for simplifying data sharing between MDI offices and their partners.
+CDC Foundation provides administrative and project management support for medical examiner and coroner jurisdictions, data sharing partners, and software vendors participating in FHIR pilot projects. CDC Foundation also provides a forum for a community of support through [MDI Connect](https://www.cdcfoundation.org/MDI-Connect) to advance solutions for simplifying data sharing between medical examiner and coroner offices and their partners.
 
 ### IG Development Team
 Many people have contributed to the development of this guide, including:
