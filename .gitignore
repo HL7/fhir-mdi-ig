@@ -10,3 +10,5 @@
 /org.hl7.fhir.publisher.jar
 /publisher.bat
 /publisher.sh
+/fsh-generated
+/_delete-folders.bat
