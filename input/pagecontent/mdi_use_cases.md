@@ -63,7 +63,7 @@ A PDF report, such as an Autopsy Report or Investigator’s Narrative, can be ex
 ### Transmission of a Death Certificate for Review
 Death certificate information may be exchanged for review in several cases:
 * **Death Data Quality Improvement**: An EDRS may request review of a death certificate by a medical examiner or coroner to improve the quality and completeness of death reporting. Such a review may be triggered if areas of the death certificate appear to be incomplete or inconsistent, for example a required field was left blank or data provided is not appropriate or is out-of-range. A review might also be required by law or policy for deaths within a given jurisdiction and meeting specific criteria.
-* **Cremation Clearance** (also known as "cremation authorization"): Many states and jurisdictions require cremation clearance from a medical examiner / coroner to make sure the physical evidence is not needed for any further inquiries into the death. The rules about when cremation clearance is required vary among jurisdictions, but typically it is needed when the cause and manner of death information for the death certificate is provided by an attending physician or other provider, rather than the jurisdiction's medical examiner / coroner.
+* **Cremation Clearance** (also known as "cremation authorization"): Many states and jurisdictions require cremation clearance from a medical examiner or coroner to make sure the physical evidence is not needed for any further inquiries into the death. The rules about when cremation clearance is required vary among jurisdictions, but typically it is needed when the cause and manner of death information for the death certificate is provided by an attending physician or other provider, rather than the jurisdiction's medical examiner or coroner.
 
 The death certificate sent for review may or may not be certified by the receiving MDI CMS. Transmission of a Death Certificate for Review and its returned response (i.e., bidirectional exchange) is supported by the following FHIR Messaging structure:
 * **Bundle - Message Death Certificate Review**: includes an optional Bundle.identifier (persistent identifier for the message bundle)
@@ -74,19 +74,19 @@ The death certificate sent for review may or may not be certified by the receivi
       * Death Certificate workflow status
       * Cremation Clearance status and authorizer information
       * Death Certificate data for review (DecedentDemographics, DeathInvestigation, DeathCertification, DecedentDisposition) 
-      * Death Certificate Data Review results section for medical examiner / coroner assessments
+      * Death Certificate Data Review results section for medical examiner or coroner assessments
       * Cremation Clearance information section
 
 *Data Quality Improvement Use Case Steps:*
 1.	EDRS sends the death certificate to MDI CMS for review.
-2.	Medical examiner / coroner reviews death certificate information, particularly the cause and manner of death.
+2.	Medical examiner or coroner reviews death certificate information, particularly the cause and manner of death.
 3.	MDI CMS sends response with additional information in the Death Certificate Data Review results section of a return Bundle - Message Death Certificate Review. The original or updated death certificate structured data sections (DecedentDemographics, DeathInvestigation, DeathCertification, DecedentDisposition) may be included in the return Bundle - Message Death Certificate Review.
 
 *Cremation Clearance Use Case Steps* - The cremation clearance workflow starts after the death certificate is largely complete. A typical workflow, at a high level, includes:
-1.	Next of kin (or other authorized person or organization) requests cremation be the method of disposal and signs a cremation clearance request (CCR).
+1.	Next of kin (or other authorized person or organization) requests cremation be the method of disposition and signs a cremation clearance request (CCR).
 2.	Funeral home provides death certificate information and submits the CCR to the jurisdiction's vital records office (VRO) EDRS.
 3.	EDRS sends the CCR with the death certificate to MDI CMS for review.
-4.	Medical examiner / coroner reviews death certificate information, particularly the cause and manner of death, and makes a determination.
+4.	Medical examiner or coroner reviews death certificate information, particularly the cause and manner of death, and makes a determination.
 5.	MDI CMS sends to EDRS a cremation clearance authorization document with the status of the request in the Cremation Clearance information section of a return Bundle - Message Death Certificate Review. The original death certificate structured data sections (DecedentDemographics, DeathInvestigation, DeathCertification, DecedentDisposition) may be included in the return Bundle - Message Death Certificate Review.
 
 This IG provides FHIR messaging artifacts for exchanging document bundles containing the death certificate information for review and additional information for cremation clearance, if needed.
