@@ -63,7 +63,6 @@ The editors appreciate the support and sponsorship of the HL7 Public Health Work
 * Georgia: DeKalb County Medical Examiner's Office; GA Department of Public Health, State Office of Vital Records
 * Illinois: Cook County Medical Examiner's Office
 * Indiana: Marion County Coroner’s Office; Indiana Department of Health
-* NMS Labs
 * Michigan: Sparrow Foundation; MI Department of Health and Human Services; MI Health Information Network Shared Services (MiHIN); MiCelerity; Wayne County Medical Examiner’s Office; Wayne State University
 * Minnesota: Midwest Medical Examiner's Office; MN IT Services (MNIT) 
 * Mississippi: Mississippi Department of Public Safety: MS State Department of Health
@@ -71,7 +70,8 @@ The editors appreciate the support and sponsorship of the HL7 Public Health Work
 * New Hampshire: Office of the Chief Medical Examiner; Secretary of State, Division of Vital Records Administration
 * Ohio: Butler County Coroner’s Office; Butler County General Health District
 * Pennsylvania: York County Coroner’s Office
-* South Carolina: Charleston County Coroner's Office; SC Law Enforcement Division; Greenville County Coroner’s Office, Washington/Baltimore High Intensity Drug Trafficking Area, Anderson County Coroner’s Office
+* South Carolina: Charleston County Coroner's Office; SC Law Enforcement Division; Greenville County Coroner’s Office
+* Maryland/District of Columbia: Washington/Baltimore High Intensity Drug Trafficking Area
 * Washington: King County Medical Examiner's Office; WA State Department of Health Vital Records Office
 
 **The IT Vendor Community:**
@@ -84,6 +84,7 @@ The editors appreciate the support and sponsorship of the HL7 Public Health Work
 * MAPSYS (OH MDI CMS vendor)
 * MDILog (GA, MI, NH, MS and SC MDI CMS vendor)
 * NetSmart (AK EDRS vendor)
+* NMS Labs (NM, PA, IL, forensic lab vendor)  
 * Porter Lee Corporation, Crime Fighter BEAST (SC forensic lab vendor)
 * QuincyTech (CT, and MI MDI system CMS vendor)
 * VertiQ (AK, NV, WA and MN MDI CMS vendor)
