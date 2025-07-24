@@ -31,13 +31,15 @@ For more details, see the [Use Cases](mdi_use_cases.html) page.
 ### Future Work
 The MDI FHIR IG will continue to develop to support additional MDI needs beyond death reporting to EDRS for the death certificate. Future work likely will include:
 * **Terminology**: Developing vocabularies and terminologies useful to the MDI domain with focus on those for forensic toxicology results
-* **Resources for Additional Dataflows**: Developing FHIR profiles for transactions between MDI CMS and other information sources (EHR, autopsy facilities, etc.) and information recipients (organ and tissue procurement organizations, state health surveillance systems, etc.).
+* **Resources for Additional Dataflows**: Developing FHIR profiles for transactions between MDI CMS and other information sources (EHR, autopsy facilities, etc.) and information recipients (organ and tissue procurement organizations, state health surveillance systems, etc.). Draft FHIR resources for exchanging data from violent death and overdose investigations are being developed in the Violent Death and Overdose Reporting (VDOR) FHIR IG (https://build.fhir.org/ig/HL7/fhir-vdor/, https://github.com/HL7/fhir-vdor/) and may be incorporated into the MDI IG. 
 
-Georgia Tech Research Institute (GTRI) provides tools for exploring and testing MDI FHIR data.
+Georgia Tech Research Institute (GTRI) is leading the VDOR development effort and provides tools for exploring and testing MDI FHIR data.
 * [**Raven Testing Platform**](https://raven.heat.icl.gtri.org/)—A proof of concept for the MDI FHIR IG. It provides a tool for testing conformance to the MDI FHIR IG, including resource validation, record comparison, and data exchange workflows.
-* [**Raven Documentation**](https://ravendocs.readthedocs.io/en/latest//)—End-use and technical manuals
+* [**Raven Documentation**](https://ravendocs.readthedocs.io/en/latest/)—End-use and technical manuals
 
-CDC Foundation provides administrative and project management support for medical examiner and coroner jurisdictions, data sharing partners, and software vendors participating in FHIR pilot projects. CDC Foundation also provides a forum for a community of support through [MDI Connect](https://www.cdcfoundation.org/MDI-Connect) to advance solutions for simplifying data sharing between medical examiner and coroner offices and their partners.
+The CDC Foundation and the Association of State and Territorial Health Officials (ASTHO) provide administrative and project management support for medical examiner and coroner jurisdictions, data sharing partners, and software vendors participating in FHIR pilot projects. They also provide a forum for a community of support through [MDI Connect](https://www.cdcfoundation.org/MDI-Connect) to advance solutions for simplifying data sharing between medical examiner and coroner offices and their partners. 
+
+Partners interested in working on MDI FHIR workflows can reach out to members listed in the IG Development Team section of this IG or on the HL7 Public Health Work Group MDI project page on Confluence, [https://confluence.hl7.org/spaces/PHWG/pages/79513666/Medicolegal+Death+Investigation+MDI](https://confluence.hl7.org/spaces/PHWG/pages/79513666/Medicolegal+Death+Investigation+MDI)
 
 ### IG Development Team
 Many people have contributed to the development of this guide, including:
